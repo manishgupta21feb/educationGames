@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    iframe {
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+
+    #frameone_state {
+      width: 300px;
+    }
+
+    .button-container {
+      display: flex;
+      position: relative;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .button-container button {
+      cursor: pointer;
+      padding: 6px 12px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <textarea id="frameone_state" data-frame-id="frameone" value="" rows=5 cols=20></textarea>
+  <div class='button-container'>
+    <button id="check_state">Check State</button>
+    <button id="send_state">Send State</button>
+    <button id="delete_state">Delete State</button>
+  </div>
+  <!-- <iframe src="http://magicwebs.magicsw.com/Accelerate_Learning/MagicInternal/kingdomBuilder?iframeId=frameone&lang=en" id="frameone" style="width: 100%; height:100%; position:absolute;"></iframe> -->
+  <iframe id="frameone"></iframe>
+  <!-- <iframe src="http://localhost/2873-accelerate-learning-inc-science-simulations/dist/boilerplate/index.html?iframeId=frameone&lang=en" id="frameone" style="width: 100%; height:100%; position:absolute;"></iframe> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    // send message to iframe to get state
+    function checkState() {
+      let data = { 'eventName': 'getCurrentState' };
+      $('#frameone')[0].contentWindow.postMessage(data, '*');
+      // $('#'+data['iframeId'])[0].contentWindow.postMessage(data, '*');
+    };
+
+    // send previously saved state to iframe 
+    function sendState() {
+      $('textarea').each(function () {
+        let current_state = localStorage.getItem('state');
+        let current_data = { 'eventName': 'setCurrentState', 'state': JSON.parse(current_state) };
+        $('#' + $(this).data('frameId'))[0].contentWindow.postMessage(current_data, '*');
+      });
+    };
+
+    function deleteState() {
+      localStorage.removeItem('state');
+    }
+
+    function handleOnReady(data) {
+      // let current_state = $('#'+data['iframeId']+'_state').val();
+      let current_state = localStorage.getItem('state');
+
+      // if the page has current state page send it to iframe
+      if (current_state !== '' && current_state !== undefined && current_state !== null) {
+        let current_data = { 'eventName': 'setCurrentState', 'state': JSON.parse(current_state) };
+        $('#' + data['iframeId'])[0].contentWindow.postMessage(current_data, '*')
+      } else {
+        let current_data = { 'eventName': 'setCurrentState', 'state': {} };
+        // if page hasn't current state
+        $('#' + data['iframeId'] + '_state').val('Loaded');
+        $('#' + data['iframeId'])[0].contentWindow.postMessage(current_data, '*')
+      }
+    };
+
+    function handleCurrentState(data) {
+      $('#' + data['iframeId'] + '_state').val(JSON.stringify(data['state']));
+      localStorage.setItem('state', JSON.stringify(data['state']));
+    };
+
+    // using this function the page can catch iframe's message
+    $(window).on("message", function (e) {
+      let data = e.originalEvent.data;
+      // localStorage.removeItem('state');
+      switch (data['eventName']) {
+        case 'onReady': // check that iframe is loaded
+          handleOnReady(data);
+          break;
+        case 'currentState': // get current state of iframe
+          handleCurrentState(data);
+          break;
+      };
+    });
+
+    $(window).ready(function () {
+      let url = window.location.href;
+      let data = {};
+      let hashes = url.split("?")[1];
+      if (hashes == undefined) {
+        $('#check_state').click(function () { checkState(); });
+        $('#send_state').click(function () { sendState(); });
+        $('#delete_state').click(function () { deleteState(); });
+        document.getElementById("frameone").src = 'http://localhost:4000/';
+        return;
+      }
+
+      document.getElementById("frameone").src = 'http://localhost:4000/?' + hashes;
+      $('#check_state').click(function () { checkState(); });
+      $('#send_state').click(function () { sendState(); });
+      $('#delete_state').click(function () { deleteState(); });
+    });
+  </script>
+</body>
+
+</html>
