@@ -1,0 +1,119 @@
+.screen-container {
+  height: 100%;
+  margin: 0 24px;
+  .top-para {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    position: relative;
+    top: 60px;
+    padding-right: 1px;
+  }
+  .img--container {
+    height: 206px;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img {
+      width: 407px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-size: contain;
+      &--birds {
+        background-image: url("../../../assets/images/birds.png");
+      }
+      &--tiger {
+        background-image: url("../../../assets/images/tiger.png");
+      }
+      &--autumn {
+        background-image: url("../../../assets/images/hummingBIRD.png");
+      }
+      &--snake {
+        background-image: url("../../../assets/images/SNAKE.png");
+      }
+      &--tortoise {
+        background-image: url("../../../assets/images/tortoise.png");
+      }
+      &--elephant {
+        background-image: url("../../../assets/images/elephant.png");
+      }
+      &--monkey {
+        background-image: url("../../../assets/images/monkey.png");
+      }
+      &--spider {
+        background-image: url("../../../assets/images/spider.png");
+      }
+      &--plant {
+        background-image: url("../../../assets/images/plant_2.png");
+      }
+      &--banana {
+        background-image: url("../../../assets/images/banana.png");
+      }
+      &--buffalo {
+        background-image: url("../../../assets/images/buffalo.png");
+      }
+      &--palm {
+        background-image: url("../../../assets/images/palm.png");
+      }
+      &--sunlight {
+        background-image: url("../../../assets/images/house_plant.png");
+      }
+      &--tiger_strips {
+        background-image: url("../../../assets/images/tiger_strips.png");
+      }
+      &--trampled {
+        background-image: url("../../../assets/images/sunlight.png");
+      }
+      &--turtle {
+        background-image: url("../../../assets/images/turtle.png");
+      }
+    }
+    .show {
+      opacity: 1;
+    }
+    .hide {
+      opacity: 0;
+    }
+  }
+
+  h2 {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    position: relative;
+    top: 87px;
+  }
+  .mcq-question-area {
+    height: 176px;
+    top: 95px;
+    .inner-wrapper {
+      .radiobuttons {
+        flex-direction: row;
+        li:nth-child(2) {
+          margin-left: 145px;
+        }
+        .radiobutton {
+          .radiobutton-inner-wrapper {
+            label {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+      .submit-button {
+        position: fixed;
+        top: 534px;
+        bottom: 24px;
+      }
+    }
+  }
+}

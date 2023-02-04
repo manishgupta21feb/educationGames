@@ -1,0 +1,18 @@
+.leftright {
+  .right {
+    // overflow-y: auto;
+  }
+}
+
+.dialog-container {
+  .info-popup-para {
+    &:first-child {
+      margin-bottom: 8px;
+    }
+  }
+  > div {
+    p {
+      font-variant: lining-nums;
+    }
+  }
+}

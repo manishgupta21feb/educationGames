@@ -1,0 +1,28 @@
+.instruction-text {
+  font-size: 14px;
+  color: #052978;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.25;
+}
+.screen-3-bottom-wrapper {
+  height: 100%;
+  #mcq-question-heading {
+    p {
+      margin-bottom: 15px;
+    }
+  }
+  .radiobuttons {
+    flex-direction: row;
+    .radiobutton {
+      width: 25%;
+      margin-bottom: 0;
+      .radiobutton-inner-wrapper {
+        align-items: flex-start !important;
+        label {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

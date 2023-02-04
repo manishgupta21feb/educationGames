@@ -1,0 +1,157 @@
+.thumbnails-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  visibility: hidden;
+  position: relative;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+
+  &.selected {
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .thumbnails-heading {
+    font-size: 14px;
+    color: #052978;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: 0.25px;
+  }
+
+  .thumbnails {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .thumbnail {
+      position: relative;
+      border-radius: 2px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .btn {
+        padding: 0;
+        border-radius: 6px;
+        &:hover:not(:disabled) {
+          padding: 0;
+          border: none;
+          box-shadow: none;
+        }
+        &:focus:not(:disabled) {
+          padding: 0;
+          border: none;
+        }
+        &.icon-only {
+          &.basketball {
+            .icon {
+              background-image: url("../../../assets/images/basketButton.png");
+            }
+          }
+
+          &.bicycle {
+            .icon {
+              background-image: url("../../../assets/images/bicycleButton.png");
+            }
+          }
+
+          &.waterfall {
+            .icon {
+              background-image: url("../../../assets/images/waterfallButton.png");
+            }
+          }
+
+          &.marquee {
+            .icon {
+              background-image: url("../../../assets/images/theatreButton.png");
+            }
+          }
+
+          &.basketball,
+          &.bicycle,
+          &.waterfall,
+          &.marquee {
+            .icon {
+              width: 240px;
+              height: 180px;
+              border-radius: 6px;
+              box-shadow: 0px 0px 2px 0px grey;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-left: 120px;
+        margin-right: 40px;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        margin-left: 40px;
+        margin-right: 120px;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 32px;
+      }
+
+      .play-icon {
+        top: 0;
+        left: 0;
+        width: 240px;
+        height: 180px;
+        border-radius: 6px;
+        position: absolute;
+        pointer-events: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          width: 48px;
+          height: 48px;
+          display: block;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../../app/assets/images/play_state_icon.svg);
+        }
+      }
+
+      .label {
+        font-size: 14px;
+        margin-top: 8px;
+        color: #6b6b76;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+}
+
+.popups-container {
+  &.popup-show {
+    .popup-container {
+      &.popup-show {
+        #dialog-description-db3 {
+          > h1 {
+            &:first-child {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.leftright.screen4 {
+  .left {
+    .left-wrapper {
+      .hertzsprung-russell-diagram {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/images/hertzsprung-russell-diagram.png);
+
+        .accessible-list {
+          ul {
+            li {
+              position: absolute;
+
+              a {
+                padding: 0;
+                width: 48px;
+                height: 40px;
+                display: block;
+              }
+
+              &.item0 {
+                top: 335px;
+                left: 200px;
+              }
+              &.item1 {
+                top: 220px;
+                left: 370px;
+              }
+              &.item2 {
+                top: 340px;
+              left: 425px;
+              }
+              &.item3 {
+                top: 200px;
+    left: 300px;
+              }
+            }
+          }
+        }
+
+        .dropzones {
+          .dropzone-wrapper {
+            height: 40px;
+            width: 48px;
+            border-radius: 4px;
+            position: absolute;
+            border: 2px solid #052978;
+            background-color: rgba(217, 235, 255, 0.24);
+
+            &.hide {
+              opacity: 0;
+            }
+
+            .dropzone {
+              width: 100%;
+              height: 100%;
+            }
+
+            &.item0 {
+              top: 335px;
+              left: 200px;
+            }
+            &.item1 {
+              top: 220px;
+              left: 370px;
+            }
+            &.item2 {
+              top: 340px;
+              left: 425px;
+            }
+            &.item3 {
+              top: 200px;
+              left: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    .right-wrapper {
+      padding-top: 80px;
+      .draggables {
+        position: relative;
+
+        .draggable {
+          &.inactive {
+            .draggable-element {
+              touch-action: none;
+              pointer-events: none;
+              width: calc(100% + 1px);
+              height: calc(100% + 1px);
+              border: 2px solid #c9c9cf;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../stylesheets/common/functions.scss";
+@import "./accessible-list";
+
+.droppable {
+  @include rectangle(132px, 59px, rgba(255, 255, 255, 1));
+  $position: -27px;
+  box-sizing: border-box;
+  border: 1px dashed #0056b3;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.dropContainer {
+  position: absolute;
+  top: 73px;
+  left: 5px;
+  height: 229px;
+}
+
+.dropHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 11px 0px;
+  height: 100%;
+  align-items: center;
+  width: 140px;
+}
+
+.replicaDrop {
+  box-sizing: border-box;
+  height: 56px;
+  width: 120px;
+  border: 1px solid #d3d2d2;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

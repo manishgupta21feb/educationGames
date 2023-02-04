@@ -1,0 +1,145 @@
+.video-screen-container {
+  width: 100%;
+  height: 100%;
+  font-variant: lining-nums;
+
+  h2 {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 67px;
+    margin-left: 24px;
+  }
+  .time-distance-container {
+    width: 370px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-left: 24px;
+    .time {
+      box-sizing: border-box;
+      height: 48px;
+      width: 104px;
+      border: 1px solid #979797;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .time-label {
+        margin-left: 7px;
+        color: #052978;
+
+        font-size: 20px;
+        letter-spacing: 0.15px;
+        line-height: 28px;
+        text-align: center;
+        text-align: center;
+      }
+      div {
+        display: flex;
+        margin-right: 10px;
+        color: #052978;
+
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.15px;
+        line-height: 28px;
+
+        p:nth-child(2) {
+          margin-left: 2px;
+        }
+      }
+    }
+    .distance {
+      box-sizing: border-box;
+      height: 48px;
+      width: 231px;
+      border: 1px solid #979797;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .distance-label {
+        margin-left: 8px;
+        color: #052978;
+
+        font-size: 20px;
+        letter-spacing: 0.15px;
+        line-height: 28px;
+        text-align: center;
+      }
+      div {
+        display: flex;
+        margin-right: 10px;
+        color: #052978;
+
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.15px;
+        line-height: 28px;
+
+        p:nth-child(2) {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+.video-component-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  .video-container {
+    .video-wrapper {
+      video {
+        &.ambulance {
+          background: transparent
+            url(../../../assets/images/Ambulence/image1.png) center / contain
+            no-repeat;
+        }
+        &.lawn_mover {
+          background: transparent
+            url(../../../assets/images/lawn_mower/image.png) center / contain
+            no-repeat;
+        }
+        &.truck {
+          background: transparent
+            url(../../../assets/images/ice_cream/Image.png) center / contain
+            no-repeat;
+        }
+      }
+    }
+    .play-pause-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        position: unset;
+        opacity: 1;
+      }
+    }
+  }
+}
+.hospital {
+  position: absolute;
+  top: 289px;
+  left: 75px;
+  width: 74px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  .hospital-label {
+    color: #052978;
+
+    font-size: 14px;
+    letter-spacing: 0.15px;
+    line-height: 13px;
+  }
+}

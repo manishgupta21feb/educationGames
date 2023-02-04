@@ -1,0 +1,550 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+
+  div[role="main"] {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .preload-images {
+      display: none;
+    }
+
+    .read-only-text {
+      width: 100%;
+      height: 217px;
+      font-size: 16px;
+      letter-spacing: 0.15px;
+      line-height: 24px;
+    }
+
+    .intro-popup-img-container {
+      position: relative;
+      width: 100%;
+      height: 120px;
+      margin-top: 18px;
+      display: flex;
+
+      .intro-popup-img-1 {
+        background-image: url("../assets/images/1.png");
+        width: 195px;
+        height: 110px;
+        background-size: contain;
+        box-sizing: border-box;
+        border: 1px solid #979797;
+
+        .alttxt-only {
+          width: 195px;
+          height: 110px;
+        }
+        .text-common {
+          position: absolute;
+          font-size: 6px;
+          line-height: 1 !important;
+        }
+
+        .dna-text {
+          width: 20px;
+          height: 9px;
+          background-color: #9dacd8;
+          color: #121b4e;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 43px;
+        }
+
+        .proteinChain-text {
+          width: 41px;
+          height: 11px;
+          background-color: #9dacd8;
+          color: #121b4e;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 11px;
+          top: 56px;
+        }
+
+        .mRNA-text {
+          width: 20px;
+          height: 7px;
+          font-size: 6px;
+          background-color: #fce3e9;
+          color: #c92639;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 28px;
+          top: 37px;
+        }
+
+        .mRNA-text-2 {
+          top: 78px;
+          left: 122px;
+        }
+        .mRNA-text-3 {
+          top: 94px !important;
+          left: 55px !important;
+        }
+
+        .nucleus-text {
+          left: 67px;
+          top: 21px;
+        }
+        .messengerRNA-text {
+          font-size: 5px !important;
+          top: 45px;
+          left: 20px;
+        }
+
+        .codon-text {
+          top: 64px;
+          left: 106px;
+        }
+
+        .aminoAcids-text {
+          top: 52px;
+          left: 68px;
+        }
+
+        .ribosome-text {
+          bottom: 11px;
+          left: 81px;
+        }
+
+        .tRNA-text {
+          left: 128px;
+          top: 48px;
+          width: 17px;
+          height: 6px;
+          font-size: 5px !important;
+          background-color: #bfe97d;
+          color: #224c15;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .mRNAMovesOutOfNucleus-text {
+          top: 73px;
+          width: 40px;
+          font-size: 5px !important;
+          line-height: 1.2 !important;
+        }
+
+        .cytopiasm-text {
+          top: 94px;
+          left: 107px;
+          font-size: 6px !important;
+        }
+
+        .transferRNA-text {
+          top: 56px;
+          left: 123px;
+          font-size: 4px !important;
+        }
+        .right-text-container {
+          position: absolute;
+          left: 153px;
+          width: 41px;
+          height: 90%;
+          top: 0;
+          text-align: center;
+
+          .right-common {
+            font-size: 6px;
+            line-height: 1;
+          }
+
+          .dna-right-text {
+            width: 100%;
+            height: 11px;
+            background-color: #9dacd8;
+            color: #121b4e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 2px;
+          }
+
+          .mRNA-right-text {
+            width: 100%;
+            height: 11px;
+            background-color: #fce3e9;
+            color: #c92639;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 1px;
+          }
+
+          .transcription-text {
+            top: 5px;
+            font-size: 4px !important;
+            color: #d93025;
+          }
+
+          .mRNAAndtRNA-text {
+            top: 8px;
+            font-size: 5px !important;
+            width: 100%;
+            height: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #bfe97d;
+            color: #224c15;
+          }
+
+          .down-blue-arrow-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .down-blue-arrow {
+              background-image: url("../assets/images/arrow1.png");
+              width: 6px;
+              height: 12px;
+              background-size: cover;
+              margin-top: 4px;
+            }
+          }
+
+          .down-green-arrow-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: absolute;
+            top: 63px;
+
+            .down-green-arrow {
+              background-image: url("../assets/images/arrow2.png");
+              width: 6px;
+              height: 12px;
+              background-size: cover;
+            }
+          }
+
+          .protien-text {
+            width: 100%;
+            height: 11px;
+            background-color: #9dacd8;
+            color: #121b4e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 23px;
+          }
+
+          .translation-text {
+            top: 27px;
+            font-size: 4px !important;
+            color: #121b4e;
+          }
+        }
+      }
+
+      .intro-popup-img-2 {
+        background-image: url("../assets/images/2.png");
+        // position: relative;
+        width: 122px;
+        height: 110px;
+        background-size: contain;
+        box-sizing: border-box;
+        border: 1px solid #979797;
+        margin-left: 12.5px;
+        margin-right: 12.3px;
+
+        .alttxt2-only {
+          width: 122px;
+          height: 110px;
+          left: 210px;
+        }
+        .tail {
+          position: absolute;
+          width: 15px;
+          border-top: 1px solid black;
+          transform-origin: 0;
+        }
+        .tail-point {
+          position: absolute;
+          width: 2px;
+          height: 2px;
+          border-radius: 50px;
+          background-color: var(--secondary-attention-dark);
+        }
+
+        .common-text2 {
+          font-size: 5px;
+          position: absolute;
+          line-height: 1;
+        }
+
+        .ribosome-text2 {
+          font-size: 10px;
+          position: absolute;
+          left: 240px;
+          top: -3px;
+          font-weight: bold;
+        }
+
+        .text2-container-aminoAcid {
+          position: absolute;
+          top: 25px;
+          left: 291px;
+          width: 35px;
+
+          .tail-point {
+            top: 20px;
+            left: 15px;
+          }
+          .tail {
+            transform: translate(16px, 5px) rotate(90deg);
+          }
+        }
+
+        .text2-container-aminoAcidChain {
+          position: absolute;
+          top: 36px;
+          left: 210px;
+          width: 40px;
+
+          .tail-point {
+            top: -9px;
+            left: 39px;
+          }
+          .tail {
+            transform: translate(29px, 2px) rotate(-44deg);
+          }
+        }
+
+        .text2-container-largeSubunit {
+          position: absolute;
+          top: 56px;
+          left: 211px;
+
+          .tail-point {
+            top: 12px;
+            left: 26px;
+          }
+          .tail {
+            transform: translate(16px, 3px) rotate(40deg);
+          }
+        }
+
+        .text2-container-smallSubunit {
+          position: absolute;
+          top: 98px;
+          left: 220px;
+
+          .tail-point {
+            top: -2px;
+            left: 29px;
+          }
+          .tail {
+            transform: translate(16px, 3px) rotate(-18deg);
+          }
+        }
+
+        .text2-container-codon {
+          position: absolute;
+          top: 60px;
+          left: 305px;
+          .tail-point {
+            top: 12px;
+            left: 2px;
+          }
+          .tail {
+            width: 10px !important;
+            transform: translate(8px, 5px) rotate(123deg);
+          }
+        }
+
+        .text2-container-mRNA {
+          position: absolute;
+          top: 93px;
+          left: 305px;
+
+          .tail-point {
+            top: -13px;
+            left: 7px;
+          }
+          .tail {
+            width: 10px !important;
+            transform: translate(8px, -12px) rotate(95deg);
+          }
+        }
+
+        .text2-container-tRNA {
+          position: absolute;
+          top: 50px;
+          left: 314px;
+          .tail-point {
+            top: 2px;
+            left: -17px;
+          }
+          .tail {
+            transform: translate(-1px, 2px) rotate(178deg);
+          }
+        }
+      }
+      .intro-popup-img-3 {
+        background-image: url("../assets/images/3.png");
+        width: 276px;
+        height: 110px;
+        background-size: contain;
+        box-sizing: border-box;
+        border: 1px solid #979797;
+
+        .alttxt3-only {
+          width: 276px;
+          height: 110px;
+          left: 345px;
+        }
+        .chromosome11-text3 {
+          font-size: 6px;
+          font-weight: bold;
+          position: absolute;
+          top: 27px;
+          right: 236px;
+          line-height: 1;
+        }
+        .hbs-text3 {
+          position: absolute;
+          color: #ff0000;
+          font-weight: bold;
+          top: 61px;
+          right: 223px;
+          font-size: 13px;
+        }
+
+        .hbb-text3 {
+          position: absolute;
+          font-size: 6px;
+          right: 249px;
+          line-height: 1;
+          top: 35px;
+          font-weight: bold;
+          color: #02aeae;
+        }
+
+        .p-text3 {
+          width: max-content;
+          font-size: 8px;
+          position: relative;
+          left: 12px;
+          top: 9px;
+        }
+        .q-text3 {
+          width: max-content;
+          font-size: 8px;
+          position: relative;
+          left: 12px;
+          top: 13px;
+        }
+
+        .intro-img-3-top-container {
+          width: 100%;
+          height: 27px;
+          display: flex;
+          justify-content: space-around;
+          margin-left: -9px;
+          margin-top: 2px;
+
+          .top-common-img3 {
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+
+        .intro-img-3-left-container {
+          position: absolute;
+          width: 21px;
+          margin-left: 31px;
+          height: 56px;
+          top: 43px;
+
+          .left-common-img3 {
+            line-height: 1;
+            font-size: 3px;
+          }
+
+          .t11p15-text3 {
+            top: -2px;
+            left: -1px;
+          }
+
+          .t11p11-text3 {
+            top: 13px;
+          }
+          .t11q12-text3 {
+            top: 14px;
+          }
+
+          .t11q25-text3 {
+            top: 45px;
+          }
+        }
+        .intro-img-3-right-container {
+          width: 100px;
+          height: 82px;
+          position: absolute;
+          bottom: 13px;
+          right: 24px;
+
+          .right-common-img3 {
+            line-height: 1;
+            font-size: 4px;
+            position: absolute;
+          }
+
+          .healthy-text3 {
+            top: 5px;
+            left: 14px;
+          }
+
+          .sickleCellAnemia-text3 {
+            left: 58px;
+            top: 5px;
+          }
+
+          .normalRedBloodCell-text3 {
+            top: 35px;
+            left: -2px;
+          }
+
+          .sickleRedBloodCell-text3 {
+            top: 35px;
+            left: 56px;
+          }
+
+          .unrestrictedBloodFlow-text3 {
+            top: 70px;
+          }
+          .sickleCellsBlockingBloodFlow-text3 {
+            top: 70px;
+            left: 54px;
+            width: 39px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &.z-index {
+      z-index: 1;
+    }
+  }
+
+  @import "./activity/main.scss";
+}

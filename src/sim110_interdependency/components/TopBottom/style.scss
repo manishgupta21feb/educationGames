@@ -1,0 +1,351 @@
+.top-area {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  .strawberryPlant {
+    background-image: url("../../assets/images/plant.png");
+    height: 266px;
+    width: 245.62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2%;
+    left: 35%;
+  }
+  .staticplantTxt1 {
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    top: 284px;
+    left: 366px;
+  }
+  .beardedDragon {
+    background-image: url("../../assets/images/dragon.png");
+    height: 241px;
+    width: 289px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 28%;
+  }
+
+  .staticsunLabel {
+    position: absolute;
+    top: 291px;
+    left: 175px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .staticsPlantLabel {
+    position: absolute;
+    top: 291px;
+    left: 330px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .staticdragon {
+    position: absolute;
+    top: 291px;
+    left: 330px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .staticarrowLabel {
+    background-image: url("../../assets/images/arrow.png");
+    height: 18px;
+    width: 100.62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 94%;
+    left: 26%;
+  }
+  .staticarrowLabe2 {
+    background-image: url("../../assets/images/arrow.png");
+    height: 18px;
+    width: 100.62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 94%;
+    left: 54%;
+  }
+  .mcqarrowLabe3 {
+    background-image: url("../../assets/images/arrow.png");
+    height: 18px;
+    width: 84.62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 63%;
+    left: 27%;
+  }
+  .mcqarrowLabe4 {
+    background-image: url("../../assets/images/arrow.png");
+    height: 18px;
+    width: 84.62px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 63%;
+    left: 56%;
+  }
+  .mcqhelps {
+    position: absolute;
+    top: 182px;
+    left: 217px;
+    width: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > span {
+      color: #052978;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  .mcqfeed {
+    position: absolute;
+    top: 182px;
+    left: 448px;
+    width: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > span {
+      color: #052978;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  .rockCave {
+    background-image: url("../../assets/images/rock.png");
+    height: 175px;
+    width: 246px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 21%;
+    left: 35%;
+  }
+  .staticrockTxt1 {
+    position: absolute;
+    top: 291px;
+    left: 361px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .waterBowl {
+    background-image: url("../../assets/images/water.png");
+    height: 115px;
+    width: 246px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+  .staticwaterText1 {
+    position: absolute;
+    top: 291px;
+    left: 387px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .rockQuestion {
+    background-image: url("../../assets/images/rock.png");
+    height: 177px;
+    width: 246px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+  .mcqrockLabel {
+    position: absolute;
+    top: 291px;
+    left: 371px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .waterBowlQuestion {
+    background-image: url("../../assets/images/water.png");
+    height: 115px;
+    width: 246px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+  .mcqwaterLabel {
+    position: absolute;
+    top: 291px;
+    left: 377px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .foodChainQuestion {
+    background-image: url("../../assets/images/foodChain.png");
+    height: 219px;
+    width: 570px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16%;
+    left: 15%;
+  }
+  .mcqsunLabel {
+    position: absolute;
+    top: 291px;
+    left: 134px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .mcqsPlantLabel {
+    position: absolute;
+    top: 291px;
+    left: 362px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .mcqdragonLabel {
+    position: absolute;
+    top: 291px;
+    left: 570px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .plantQuestion {
+    background-image: url("../../assets/images/plant.png");
+    height: 266px;
+    width: 207px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7%;
+    left: 37%;
+  }
+  .mcqplantLabel {
+    position: absolute;
+    top: 291px;
+    left: 387px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.bottom-paraScreen1 {
+  color: #052978;
+
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+.mcq-question-area {
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: unset;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: var(--question-text-blue);
+  }
+  .inner-wrapper {
+    .question {
+      margin-bottom: unset;
+    }
+    .radiobuttons {
+      justify-content: space-between;
+      flex-direction: row;
+
+      .radiobutton {
+        width: unset;
+
+        label {
+          font-variant: lining-nums;
+          margin-top: 4px;
+        }
+      }
+    }
+    .submit-button {
+      bottom: 0px;
+      top: 215px;
+
+      position: fixed;
+    }
+  }
+}

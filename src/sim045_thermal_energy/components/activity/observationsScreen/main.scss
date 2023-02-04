@@ -1,0 +1,242 @@
+.questionIntroHeading {
+  color: var(--question-heading-bluish);
+  letter-spacing: 0.15px;
+  width: 752px;
+  margin-top: 5px;
+}
+
+.topMainContainer {
+  height: 100%;
+  position: relative;
+
+  .video-container {
+    .video-wrapper {
+      video {
+        &.te_video_1 {
+          background: transparent url(../../../assets/images/exp1.png) center /
+            contain no-repeat;
+        }
+        &.te_video_2 {
+          background: transparent url(../../../assets/images/exp2.png) center /
+            contain no-repeat;
+        }
+        &.te_video_3 {
+          background: transparent url(../../../assets/images/exp3.png) center /
+            contain no-repeat;
+        }
+      }
+    }
+    .play-pause-buttons {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+
+  .degree-3 {
+    font-variant: lining-nums;
+    position: absolute;
+    left: 337px;
+    font-size: 18px;
+    bottom: 60px;
+    font-family: "digital7";
+    color: var(--grey-text);
+  }
+
+  .animate-objects {
+    .cup-a {
+      position: absolute;
+      top: 189px;
+      font-size: 14px;
+      left: 289px;
+    }
+
+    .cup-a-es {
+      position: absolute;
+      top: 189px;
+      font-size: 14px;
+      left: 287px;
+    }
+
+    .cup-b-es {
+      position: absolute;
+      top: 189px;
+      font-size: 14px;
+      left: 460px;
+    }
+    .cup-b {
+      position: absolute;
+      top: 189px;
+      font-size: 14px;
+      left: 465px;
+    }
+
+    .digitalText {
+      font-family: "digital7";
+      font-size: 22px;
+      color: var(--grey-text);
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .meter-1 {
+      position: absolute;
+      top: 58px;
+      left: 232px;
+      font-variant: lining-nums;
+      font-size: 13px;
+    }
+    .meter1-es {
+      left: 231px;
+    }
+    .meter-2 {
+      position: absolute;
+      top: 58px;
+      left: 519px;
+      font-variant: lining-nums;
+      font-size: 13px;
+    }
+    .meter2-es {
+      left: 517px;
+    }
+    .degree-1 {
+      // position: absolute;
+      font-size: 13px;
+      // left: 18px;
+      // top: 1px;
+      font-variant: lining-nums;
+
+      // position: absolute;
+      // font-size: 9px;
+      // left: 15px;
+      // top: -1px;
+      // font-variant: lining-nums;
+    }
+
+    .degree-1-es {
+      font-size: 12px;
+      position: relative;
+      left: 2px;
+    }
+    .degree-2 {
+      position: absolute;
+      left: 15px;
+      font-size: 13px;
+      top: -3px;
+      font-variant: lining-nums;
+    }
+
+    .degree-2-es {
+    }
+
+    .arrow {
+      position: absolute;
+      top: 39px;
+      left: 365px;
+      height: 20px;
+      width: 66px;
+      transition: transform 3s;
+      background-image: url("../../../assets/images/arrows.png");
+      &.animate {
+        animation: animateArrow 3s steps(7) infinite;
+      }
+    }
+    @keyframes animateArrow {
+      to {
+        background-position: -462px;
+      }
+    }
+  }
+
+  .labels {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    border-radius: 9.5px;
+    padding: 2px 8px;
+    line-height: 1.4;
+
+    &__metal-bar {
+      position: absolute;
+      top: 267px;
+      left: 646px;
+      height: 20px;
+      width: 79px;
+    }
+
+    &__metal-bar-es {
+      position: absolute;
+      top: 267px;
+      left: 629px;
+      height: 20px;
+    }
+
+    &__two-cup {
+      position: absolute;
+      top: 267px;
+      left: 305px;
+      height: 20px;
+      width: 185px;
+    }
+    &__water {
+      position: absolute;
+      top: 117px;
+      left: 205px;
+      height: 20px;
+      width: 55px;
+      color: black;
+    }
+    &__hot-plate {
+      position: absolute;
+      top: 284px;
+      left: 306px;
+      height: 20px;
+      width: 77px;
+    }
+    &__hot-plate-es {
+      position: absolute;
+      top: 284px;
+      left: 290px;
+      height: 20px;
+    }
+    &__uncooked-rice {
+      position: absolute;
+      top: 284px;
+      left: 506px;
+      height: 20px;
+      width: 113px;
+    }
+
+    &__uncooked-rice-es {
+      position: absolute;
+      top: 284px;
+      left: 516px;
+      height: 20px;
+      width: 113px;
+    }
+    &__heat-lamp {
+      position: absolute;
+      top: 38px;
+      left: 258px;
+      height: 20px;
+      color: black;
+    }
+
+    &__heat-lamp-es {
+      position: absolute;
+      top: 38px;
+      left: 218px;
+      height: 20px;
+      /* width: 85px; */
+      color: black;
+    }
+    &__radiometer {
+      position: absolute;
+      top: 198px;
+      left: 468px;
+      height: 20px;
+      width: 89px;
+      color: white;
+    }
+  }
+}

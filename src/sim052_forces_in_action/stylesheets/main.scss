@@ -1,0 +1,29 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+
+  div[role="main"] {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  
+  .paragraph{
+    color: var(--question-text-blue);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+  }
+  
+  @import "./activity/main.scss";
+}

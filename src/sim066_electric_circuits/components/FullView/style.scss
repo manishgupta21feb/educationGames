@@ -1,0 +1,292 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .full-view-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .full-view-inner {
+      position: relative;
+      margin: 80px 24px 0 24px;
+      height: calc(100% - 80px);
+
+      .instructions {
+        // top: 0;
+        // left: 0;
+        // position: absolute;
+        // margin: 80px 24px 0 24px;
+        z-index: 2;
+        color: var(--primary-blue);
+        p {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        h2 {
+          color: #052978;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+          // font-size: 12px;
+          // line-height: 20px;
+          // font-weight: 100;
+        }
+        h2 {
+          &:nth-child(2) {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .main-screen {
+        width: 634px;
+        // top: 201px;
+        // margin-left: 83px;
+        // position: absolute;
+
+        margin: 0 auto;
+        display: flex;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        .circuit-box {
+          width: 305px;
+          height: 247px;
+          border-radius: 9px;
+          border: 1px solid #35374c;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .images {
+            width: 227px;
+            height: 140px;
+            position: relative;
+            background-size: contain;
+            background-repeat: no-repeat;
+            > div {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+            }
+            &.series-circuit {
+              background-image: url("../../assets/images/series_circuit.png");
+              > div {
+                top: -53px;
+                left: -37px;
+              }
+            }
+
+            &.parallel-circuit {
+              background-image: url("../../assets/images/parallel_circuit.png");
+              > div {
+                top: -54px;
+                left: -368px;
+              }
+            }
+          }
+        }
+
+        .button-option {
+          display: flex;
+          justify-content: center;
+          margin-top: 16px;
+        }
+
+        .labels {
+          font-variant: lining-nums;
+          position: absolute;
+
+          &.label1 {
+            top: 34px;
+            left: 55px;
+          }
+
+          &.label2 {
+            top: 34px;
+            left: 149px;
+          }
+
+          &.label3 {
+            top: 34px;
+            left: 255px;
+          }
+
+          &.label4 {
+            top: 109px;
+            left: 262px;
+          }
+
+          &.label5 {
+            top: 186px;
+            left: 254px;
+          }
+
+          &.label6 {
+            top: 186px;
+            left: 150px;
+          }
+
+          &.label7 {
+            top: 186px;
+            left: 58px;
+          }
+
+          &.label01 {
+            top: 34px;
+            left: 384px;
+          }
+
+          &.label02 {
+            top: 34px;
+            left: 482px;
+          }
+
+          &.label03 {
+            top: 34px;
+            left: 532px;
+          }
+
+          &.label04 {
+            top: 34px;
+            left: 581px;
+          }
+
+          &.label05 {
+            top: 186px;
+            left: 584px;
+          }
+
+          &.label06 {
+            top: 186px;
+            left: 531px;
+          }
+
+          &.label07 {
+            top: 186px;
+            left: 482px;
+          }
+
+          &.label08 {
+            top: 186px;
+            left: 381px;
+          }
+
+          &.label09 {
+            top: 111px;
+            left: 493px;
+          }
+
+          &.label010 {
+            top: 111px;
+            left: 545px;
+          }
+
+          &.label011 {
+            top: 111px;
+            left: 595px;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    // top: 100px;
+    // left: 23px;
+    // width: 96%;
+    // height: 84%;
+    position: relative;
+    // background-color: aqua;
+
+    .circuit-board {
+      top: 106px;
+      width: 490px;
+      bottom: 97px;
+      height: 295px;
+      margin-left: 154px;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/images/pcb_board.png");
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .pins {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/images/clip.png");
+
+      &.pin1 {
+        left: 38px;
+        top: 38px;
+      }
+
+      &.pin2 {
+        left: 211px;
+        top: 38px;
+      }
+
+      &.pin3 {
+        left: 384px;
+        top: 38px;
+      }
+
+      &.pin4 {
+        left: 384px;
+        top: 223px;
+      }
+
+      &.pin5 {
+        left: 211px;
+        top: 223px;
+      }
+
+      &.pin6 {
+        left: 38px;
+        top: 223px;
+      }
+    }
+  }
+
+  .checkButton {
+    position: absolute;
+    height: 65px;
+    width: 408px;
+    bottom: 24px;
+    left: 365px;
+    display: flex;
+    justify-content: space-between;
+
+    .clearButton {
+      width: 74px;
+      height: 40px;
+      bottom: 28px;
+      // background-color: #0056b3;
+      // border-radius: 8px;
+      .btn {
+        &.primary {
+          background: var(--primary-blue);
+        }
+      }
+    }
+
+    .check {
+      width: 74px;
+      height: 40px;
+      bottom: 28px;
+      // background-color: blue;
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.view-container {
+  position: absolute;
+  .full-view {
+    .full-view-wrapper {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      .fullview {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: contain;
+        opacity: 0;
+        &.show {
+          opacity: 1;
+        }
+        &.carvscar {
+          background-image: url(../../../assets/images/carvscarintro.png);
+        }
+        &.carvstruck {
+          background-image: url(../../../assets/images/carvstruckintro.png);
+        }
+        &.truckvstruck {
+          background-image: url(../../../assets/images/truckvstruckintro.png);
+        }
+        &.carvsbuilding {
+          background-image: url(../../../assets/images/carintro.png);
+        }
+      }
+    }
+    .video-container {
+      z-index: 0;
+      position: absolute;
+      .video-wrapper {
+        z-index: 0;
+      }
+    }
+    .btn.toast-secondary-buttonplay {
+      left: 50%;
+      left: 50%;
+      top: 306px;
+      z-index: 1;
+      right: unset;
+      position: absolute;
+      background-color: #0056b3;
+      transform: translateX(-50%);
+      bottom: 254px;
+      z-index: 1;
+      right: unset;
+      position: absolute;
+
+      background-color: #0056b3;
+      transform: translateX(-50%);
+    }
+     .screenheading {
+    
+      &.hide {
+        display: none;
+      }
+
+      .reading-screen {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 20px;
+        height: 113px;
+
+        .screen-left {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../assets/images/board.png);
+
+          position: relative;
+
+          width: 138px;
+          .leftScreenHeading {
+            position: absolute;
+
+      
+            top: -14px;
+            color: #052978;
+            font-weight: 500;
+            
+            margin-left: 4px;
+          }
+          p {
+            margin-left: 24px;
+            color: #ffffff;
+
+            line-height: 17px;
+            letter-spacing: 0.21px;
+            font-variant: lining-nums;
+          }
+          .left-mass {
+            font-size: 12px;
+            margin-top: 15px;
+          }
+          .leftScreenMassNo {
+            font-size: 14px;
+          }
+          .left-velocity {
+            font-size: 12px;
+            margin-top: 10px;
+          }
+          .velocityleftnumber {
+            font-size: 14px;
+          }
+        }
+        .screen-right {
+          width: 138px;
+          position: relative;
+
+          margin-left: 24px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../assets/images/board.png);
+          .rightScreenHeading {
+            position: absolute;
+      
+            top: -14px;
+            color: #052978;
+            font-weight: 500;
+            
+            margin-left: 4px;
+          }
+          p {
+            color: #ffffff;
+
+            line-height: 17px;
+            letter-spacing: 0.21px;
+            margin-left: 24px;
+            font-variant: lining-nums;
+          }
+          .right-mass {
+            font-size: 12px;
+            margin-top: 15px;
+          }
+          .rightScreenMassNo {
+            font-size: 14px;
+          }
+          .right-velocity {
+            font-size: 12px;
+            margin-top: 10px;
+          }
+          .velocityrightnumber {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .main-heading {
+      z-index: 1;
+      font-size: 14px;
+      font-weight: 500;
+      color: #052978;
+      line-height: 20px;
+      position: absolute;
+      top: 178px;
+      margin: 0 24px 0;
+      letter-spacing: 0.25px;
+    }
+
+    .slidercontainer {
+      display: flex;
+      flex-direction: row;
+      top: 234px;
+      position: absolute;
+
+      margin: 0 24px 0;
+
+      .sliderHeadingText {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        &.hide {
+          display: none;
+        }
+      }
+
+      p {
+        color: #052978;
+        letter-spacing: 0.25px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        width: 212px;
+      }
+      .sliderleftvehicle {
+        .slider-container {
+          position: relative;
+          margin-top: 4px;
+          justify-content: flex-start;
+          width: 194px;
+
+          .slider .datalist.show-label-only .list-item .value .list-label {
+            display: block;
+            font-size: 14px;
+            top: 4px;
+            left: -8px;
+            font-variant: lining-nums;
+            line-height: 20px;
+            font-weight: 500;
+            color: #052978;
+          }
+        }
+      }
+      .sliderrightvehicle {
+        margin-left: 334px;
+        .slider-container {
+          position: relative;
+          margin-top: 0px;
+
+          width: 212px;
+          .slider .datalist.show-label-only .list-item .value .list-label {
+            display: block;
+            font-size: 14px;
+            top: 4px;
+            left: -8px;
+            font-variant: lining-nums;
+            line-height: 20px;
+            font-weight: 500;
+            color: #052978;
+          }
+        }
+      }
+    }
+    .play-pause-buttons {
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

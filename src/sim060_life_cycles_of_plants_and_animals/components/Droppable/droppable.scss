@@ -1,0 +1,117 @@
+@import "../../stylesheets/common/functions.scss";
+@import './lives-bg';
+@import './accessible-list';
+
+$arrow: "../../assets/images/arrow.png";
+$arrow2: "../../assets/images/arrow2.png";
+$arrow3: "../../assets/images/arrow3.png";
+$arrow4: "../../assets/images/arrow4.png";
+
+.box {
+  @include square(350px);
+  @extend %relative, %center-both;
+  &--three {
+    .arrow {
+      width: 160px;
+      height: 160px;
+      background-image: url($arrow3);
+    }
+    .arrow--1 {
+      margin: -18px -44px;
+      transform: rotate(-105deg);
+    }
+    .arrow--2 {
+      margin: 2px -60px;
+      transform: rotate(0deg);
+    }
+    .arrow--3 {
+      transform: rotate(0);
+      margin: -125px 20px;
+      width: 303px;
+      height: 160px;
+      background-image: url($arrow4);
+    }
+    .droppable--2 {
+      transform: translate(27px, 0);
+    }
+    .droppable--3 {
+      transform: translate(-27px, -50%);
+      left: 0;
+      .droppable__count {
+        left: initial;
+        right: -27px;
+        @extend %center-vert;
+      }
+    }
+  }
+}
+
+.droppable {
+  @include square(120px, false, 1px dashed #052978);
+  background-color: #F6FAFF;
+  border-radius: 4px;
+  $position: -27px;
+  & > &__count {
+    @include square(20px, var(--lightgrey));
+    @extend %center-text, %inline-block;
+    border-radius: 8px;
+    line-height: 1.3;
+  }
+  &--1 {
+    @extend %center-hrzn;
+    transform: translate(-50%, -27px);
+    .droppable__count {
+      bottom: $position;
+      @extend %center-hrzn;
+    }
+  }
+  &--2 {
+    @extend %center-vert, %right-zero;
+    transform: translate(27px, -50%);
+    .droppable__count {
+      left: $position;
+      @extend %center-vert;
+    }
+  }
+  &--3 {
+    @extend %center-hrzn, %bottom-zero;
+    transform: translate(-50%, 27px);
+    .droppable__count {
+      top: $position;
+      @extend %center-hrzn;
+    }
+  }
+  &--4 {
+    @extend %center-vert;
+    transform: translate(-27px, -50%);
+    .droppable__count {
+      right: $position;
+      @extend %center-vert;
+    }
+  }
+}
+
+
+.arrow {
+  @include square(100px);
+  @extend %absolute;
+  background: {
+    image: url($arrow);
+    size: contain;
+    repeat: no-repeat;
+  }
+  &--1 {
+    transform: rotate(-90deg);
+  }
+  &--2 {
+    @extend %right-zero;
+  }
+  &--3 {
+    @extend %bottom-zero, %right-zero;
+    transform: rotate(90deg);
+  }
+  &--4 {
+    @extend %bottom-zero;
+    transform: rotate(180deg);
+  }
+}

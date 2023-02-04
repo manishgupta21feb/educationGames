@@ -1,0 +1,247 @@
+.position {
+  margin-top: 80px;
+}
+
+.codon-chart-container {
+  height: 24px;
+  width: 212px;
+  margin-top: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+
+  .codon-chart-txt {
+    height: 16px;
+    width: 72px;
+    color: #35374c;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    margin-left: 8px;
+  }
+
+  .codon-chart-button {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 6px;
+    border: none;
+    background: none;
+
+    .codon-chart-mark {
+      border-radius: 50px;
+      height: 9px;
+      width: 9px;
+      font-size: 8px;
+      background-color: #052978;
+      color: white;
+      text-align: center;
+      margin-bottom: 1px;
+    }
+  }
+}
+.card {
+  cursor: grab;
+  height: 65px;
+  width: 65px;
+  background-color: #f8f8f8;
+  border: 1px dashed #0056b3;
+  outline: 1px solid transparent;
+  border-radius: 4px;
+
+  &.ui-draggable-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: 2px solid #c9c9cf;
+    background-color: #ffffff;
+  }
+  &.ui-draggable-dragging {
+    cursor: grabbing;
+    z-index: 2;
+  }
+  &.ui-draggable-handle {
+    z-index: 2;
+  }
+  &--text {
+    width: 49px;
+    color: #000000;
+
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 14px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.disable {
+  pointer-events: none;
+}
+.draggables {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+
+  .drag-box {
+    width: 218px;
+    height: 30px;
+    margin-top: 17px;
+    position: relative;
+
+    &.drag-box-thirdScreen {
+      margin-top: 8px !important;
+    }
+
+    .accessible-button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: relative;
+      background: transparent;
+      border-radius: 1px;
+    }
+
+    .draggable-card {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.fifthScreen-draggable-card {
+        width: max-content !important;
+        padding: 5px !important;
+      }
+
+      span {
+        box-sizing: border-box;
+        height: 20px;
+        width: 203px;
+        border: 1px solid #35374c;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+        padding-top: 3px;
+        color: #0056b3;
+      }
+
+      .fifthScreen-span {
+        width: max-content !important;
+        padding: 3px !important;
+      }
+    }
+  }
+}
+
+.disable_card {
+  pointer-events: none;
+  background-color: gray;
+}
+
+.right-text {
+  width: 212px;
+  color: #052978;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+.second-screen-right-text {
+  height: 80px;
+}
+.third-screen-right-text {
+  height: 140px;
+}
+
+.codon-chart-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.36);
+  height: 100%;
+  width: 100%;
+}
+.codon-chart-main {
+  position: relative;
+  box-sizing: border-box;
+  height: 326px;
+  width: 567px;
+  border: 2px solid #ba5b08;
+  border-radius: 8px;
+  background-color: #fbf1e9;
+}
+
+.codon-chart-wrapper {
+  .codon-chart-main {
+    .btn.toast-button.positive.icon-only {
+      right: 0;
+      border: none;
+      color: transparent;
+      position: absolute;
+    }
+    .close-btn {
+      width: 100%;
+
+      .btn {
+        &:hover {
+          .icon {
+            box-shadow: -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+              -2px 4px 8px 0 rgba(53, 55, 76, 0.08) !important;
+          }
+        }
+      }
+    }
+    .codon-chart {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 50px;
+
+      table {
+        width: 95%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tbody {
+        td {
+          &:last-child {
+            background-color: #dcdcdc;
+          }
+        }
+      }
+      th {
+        &:first-child {
+          width: 80px;
+        }
+        &:last-child {
+          width: 80px;
+        }
+      }
+      th,
+      td {
+        border: 1px solid black;
+        font-size: 9px;
+        color: black;
+        font-weight: bold;
+        background-color: #fee9b5;
+        &[rowSpan] {
+          background-color: #dcdcdc;
+        }
+      }
+    }
+  }
+}

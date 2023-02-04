@@ -1,0 +1,101 @@
+@import "../../stylesheets/common/functions.scss";
+// @import './accessible-list';
+
+.placement {
+  @include rectangle(122px, 84px, 1px dashed #0056b3);
+  @extend %cursor-pointer, %bg-white;
+  opacity: 0.6;
+  position: relative;
+  &--placed {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+.wrapper--placement {
+  @extend %absolute, %full-width;
+  bottom: 115px;
+  padding: 0 24px;
+}
+
+.oil {
+  .placement {
+    div:nth-child(2) {
+      @extend %full-object;
+      background: {
+        size: cover;
+        repeat: no-repeat;
+      }
+      &.one {
+        background-image: url("../../assets/images/oil/oil-step1.png");
+      }
+      &.two {
+        background-image: url("../../assets/images/oil/oil-step2.png");
+      }
+      &.three {
+        background-image: url("../../assets/images/oil/oil-step3.png");
+      }
+      &.four {
+        background-image: url("../../assets/images/oil/oil-step4.png");
+      }
+      &.five {
+        background-image: url("../../assets/images/oil/oil-step5.png");
+      }
+      &.six {
+        background-image: url("../../assets/images/oil/oil-step6.png");
+      }
+    }
+  }
+}
+
+.coal {
+  .placement {
+    div:nth-child(2) {
+      @extend %full-object;
+      background: {
+        size: cover;
+        repeat: no-repeat;
+      }
+      &.one {
+        background-image: url("../../assets/images/coal/coal-step1.png");
+      }
+      &.two {
+        background-image: url("../../assets/images/coal/coal-step2.png");
+      }
+      &.three {
+        background-image: url("../../assets/images/coal/coal-step3.png");
+      }
+      &.four {
+        background-image: url("../../assets/images/coal/coal-step4.png");
+      }
+      &.five {
+        background-image: url("../../assets/images/coal/coal-step5.png");
+      }
+    }
+  }
+}
+
+.sedimentary {
+  .placement {
+    div:nth-child(2) {
+      @extend %full-object;
+      background: {
+        size: cover;
+        repeat: no-repeat;
+      }
+
+      &.one {
+        background-image: url("../../assets/images/sedimentary/sedimentary-step1.png");
+      }
+      &.two {
+        background-image: url("../../assets/images/sedimentary/sedimentary-step2.png");
+      }
+      &.three {
+        background-image: url("../../assets/images/sedimentary/sedimentary-step3.png");
+      }
+      &.four {
+        background-image: url("../../assets/images/sedimentary/sedimentary-step4.png");
+      }
+    }
+  }
+}

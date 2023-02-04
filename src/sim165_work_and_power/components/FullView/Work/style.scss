@@ -1,0 +1,49 @@
+.power-container {
+  position: relative;
+  height: 100%;
+  .heading {
+    height: 20px;
+    width: 752px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .dropDown {
+    width: 314px;
+    position: absolute;
+    right: 39px;
+    top: 30px;
+    display: flex;
+    > :last-child {
+      margin-left: 24px;
+    }
+    .select-dropdown {
+      min-width: 150px;
+    }
+  }
+  .platform {
+    background-image: url("../../../assets/images/base.png");
+    width: 800px;
+    height: 123px;
+    position: absolute;
+    bottom: 81px;
+  }
+  .defaultValueHolder {
+    position: relative;
+    left: 449px;
+    top: 19px;
+    .forceHolder {
+      color: #352103;
+      font-size: 14px;
+      font-weight: 500;
+      font-variant-numeric: lining-nums;
+    }
+  }
+  .sr-Boundary {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 10px;
+    min-height: 10px;
+  }
+}

@@ -1,0 +1,341 @@
+.left-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../../assets/images/bg.png");
+  background-size: cover;
+
+  .accessible-button {
+    padding: 0;
+    box-shadow: none;
+    justify-content: center;
+    border-radius: 4px;
+
+    &:not(:disabled) {
+      border-radius: 4px;
+      &:focus {
+        outline: none;
+        overflow: hidden;
+        box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+      }
+    }
+  }
+
+  .insects-positions {
+    .disabled {
+      border: 2px solid #c9c9cf !important;
+    }
+
+    .imgarea {
+      position: absolute;
+      width: 104px;
+      height: 66px;
+      border: 2px solid #0000;
+      opacity: 0;
+
+      &__show {
+        opacity: 1;
+      }
+
+      &__hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .light-insects {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        background-image: url("../../assets/images/light_color_insects.png");
+
+        &__disabled {
+          opacity: 0.6;
+        }
+
+        &__hidden {
+          opacity: 0;
+          z-index: -1;
+        }
+
+        &__show {
+          z-index: 1;
+          opacity: 1;
+        }
+      }
+      .dark-insects {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        background-image: url("../../assets/images/dark_color_insects.png");
+
+        &__disabled {
+          opacity: 0.6;
+        }
+
+        &__hidden {
+          opacity: 0;
+          z-index: -1;
+        }
+
+        &__show {
+          display: inline;
+          opacity: 1;
+          z-index: 1;
+        }
+      }
+    }
+
+    .imgarea:nth-child(1) {
+      top: 155px;
+      left: 5px;
+    }
+    .imgarea:nth-child(2) {
+      top: 155px;
+      left: 148px;
+    }
+    .imgarea:nth-child(3) {
+      top: 155px;
+      left: 290px;
+    }
+    .imgarea:nth-child(4) {
+      top: 155px;
+      left: 410px;
+    }
+    .imgarea:nth-child(5) {
+      top: 232px;
+      left: 72px;
+    }
+    .imgarea:nth-child(6) {
+      top: 232px;
+      left: 209px;
+    }
+    .imgarea:nth-child(7) {
+      top: 232px;
+      left: 356px;
+    }
+    .imgarea:nth-child(8) {
+      top: 308px;
+      left: 5px;
+    }
+    .imgarea:nth-child(9) {
+      top: 308px;
+      left: 148px;
+    }
+    .imgarea:nth-child(10) {
+      top: 308px;
+      left: 290px;
+    }
+    .imgarea:nth-child(11) {
+      top: 308px;
+      left: 410px;
+    }
+    .imgarea:nth-child(12) {
+      top: 385px;
+      left: 72px;
+    }
+    .imgarea:nth-child(13) {
+      top: 385px;
+      left: 209px;
+    }
+    .imgarea:nth-child(14) {
+      top: 385px;
+      left: 356px;
+    }
+    .imgarea:nth-child(15) {
+      top: 463px;
+      left: 5px;
+    }
+    .imgarea:nth-child(16) {
+      top: 463px;
+      left: 148px;
+    }
+    .imgarea:nth-child(17) {
+      top: 463px;
+      left: 290px;
+    }
+    .imgarea:nth-child(18) {
+      top: 463px;
+      left: 410px;
+    }
+  }
+
+  .insects-positions-btn {
+    .disabled {
+      border: 2px solid #c9c9cf !important;
+      cursor: default;
+    }
+
+    .imgarea {
+      position: absolute;
+      width: 104px;
+      height: 66px;
+      border: 2px solid #0000;
+      opacity: 0;
+      visibility: none;
+      cursor: pointer;
+      &__show {
+        opacity: 1;
+      }
+      .light-insects {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        background-image: url("../../assets/images/light_color_insects.png");
+        &__disabled {
+          opacity: 0.6;
+          cursor: default;
+        }
+        &__hidden {
+          opacity: 0;
+          z-index: -1;
+        }
+
+        &__show {
+          display: inline;
+          z-index: 1;
+          opacity: 1;
+        }
+      }
+      .dark-insects {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        background-image: url("../../assets/images/dark_color_insects.png");
+        &__disabled {
+          opacity: 0.6;
+          cursor: default;
+        }
+
+        &__hidden {
+          opacity: 0;
+          z-index: -1;
+        }
+
+        &__show {
+          display: inline;
+          z-index: 1;
+          opacity: 1;
+        }
+      }
+
+      &:hover:not(:disabled) {
+        border: 2px solid #052978;
+        padding: 0px;
+        margin: 0px;
+        outline: none;
+        overflow: hidden;
+      }
+    }
+
+    .imgarea:nth-child(1) {
+      top: 155px;
+      left: 5px;
+    }
+    .imgarea:nth-child(2) {
+      top: 155px;
+      left: 148px;
+    }
+    .imgarea:nth-child(3) {
+      top: 155px;
+      left: 290px;
+    }
+    .imgarea:nth-child(4) {
+      top: 155px;
+      left: 410px;
+    }
+    .imgarea:nth-child(5) {
+      top: 232px;
+      left: 72px;
+    }
+    .imgarea:nth-child(6) {
+      top: 232px;
+      left: 209px;
+    }
+    .imgarea:nth-child(7) {
+      top: 232px;
+      left: 356px;
+    }
+    .imgarea:nth-child(8) {
+      top: 308px;
+      left: 5px;
+    }
+    .imgarea:nth-child(9) {
+      top: 308px;
+      left: 148px;
+    }
+    .imgarea:nth-child(10) {
+      top: 308px;
+      left: 290px;
+    }
+    .imgarea:nth-child(11) {
+      top: 308px;
+      left: 410px;
+    }
+    .imgarea:nth-child(12) {
+      top: 385px;
+      left: 72px;
+    }
+    .imgarea:nth-child(13) {
+      top: 385px;
+      left: 209px;
+    }
+    .imgarea:nth-child(14) {
+      top: 385px;
+      left: 356px;
+    }
+    .imgarea:nth-child(15) {
+      top: 463px;
+      left: 5px;
+    }
+    .imgarea:nth-child(16) {
+      top: 463px;
+      left: 148px;
+    }
+    .imgarea:nth-child(17) {
+      top: 463px;
+      left: 290px;
+    }
+    .imgarea:nth-child(18) {
+      top: 463px;
+      left: 410px;
+    }
+  }
+
+  .finish-label {
+    right: 33px;
+    bottom: 100px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+  }
+}

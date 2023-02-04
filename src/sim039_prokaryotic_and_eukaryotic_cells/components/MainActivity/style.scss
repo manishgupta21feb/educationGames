@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: 80px;
+  padding-left: 16px;
+  min-height: 520px;
+  min-width: 800px;
+
+  .instructor {
+    padding-left: 8px;
+    .heading {
+      color: var(--question-text-blue);
+      margin-bottom: 8px;
+      margin-right: 24px;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+  }
+}

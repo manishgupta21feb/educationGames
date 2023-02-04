@@ -1,0 +1,119 @@
+@mixin tableBorder {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+@mixin tableFormatting {
+  color: #352103;
+  font-size: 14px;
+  font-weight: 500;
+  font-variant: lining-nums;
+}
+
+@mixin outerShellFormat {
+  box-sizing: border-box;
+  border: 1px dashed #0056b3;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableDndHolder {
+  padding-top: 84px;
+  height: 100%;
+  .heading {
+    height: 20px;
+    width: 752px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 24px;
+  }
+  .tableContainer {
+    margin-top: 40px;
+    margin-left: 24px;
+    width: 750px;
+    position: relative;
+    table {
+      border: 1px solid #bccbd3;
+      border: 1px solid var(--cloudy);
+      border-collapse: collapse;
+
+      caption {
+        margin-bottom: 18.5px;
+        color: #352103;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 14px;
+        border: none;
+      }
+      th {
+        height: 40px;
+        width: 150px;
+        background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+        @include tableBorder();
+        @include tableFormatting();
+      }
+      td {
+        height: 77px;
+        width: 150px;
+        text-align: center;
+        @include tableFormatting();
+      }
+      td {
+        @include tableBorder();
+      }
+      .row1 {
+        background-color: rgba(255, 144, 0, 0.24);
+      }
+      .row2 {
+        background-color: rgba(255, 81, 0, 0.24);
+      }
+      .row3 {
+        background-color: rgba(123, 40, 2, 0.24);
+      }
+    }
+    .dropHolder {
+      .outerShell {
+        @include outerShellFormat();
+        height: 59px;
+        width: 132px;
+      }
+    }
+    .dragObjectsHolder {
+      display: flex;
+      gap: 24px;
+      margin-left: 20%;
+      .outerShell {
+        height: 70px;
+        width: 133px;
+        @include outerShellFormat();
+      }
+      .dropSty {
+        box-sizing: border-box;
+        height: 56px;
+        width: 120px;
+        border: 1px solid #d3d2d2;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+
+        color: #352103;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+  .btn.toast-secondary-button {
+    bottom: unset;
+    right: 2px;
+  }
+}
+
+.beforeDrop {
+  color: transparent !important;
+  font-size: 1px !important;
+}

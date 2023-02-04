@@ -1,0 +1,12 @@
+.instruction-area {
+  height: 100%;
+  position: relative;
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: var(--question-text-blue);
+  }
+}

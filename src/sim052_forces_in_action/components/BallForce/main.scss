@@ -1,0 +1,45 @@
+.ballForceContainer {
+  width: 100%;
+  height: 602px;
+  .imagesContainer {
+    img {
+      background-size: cover;
+      width: 100%;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .headerContainer {
+    width: 642px;
+    position: relative;
+    top: 86px;
+    left: 24px;
+    z-index: 4;
+    h2 {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    p {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 8px;
+      font-variant: lining-nums;
+    }
+  }
+  .baseImage {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+  }
+
+  .continue {
+    z-index: 4;
+  }
+  .exitActivity {
+    background-color: red;
+  }
+}

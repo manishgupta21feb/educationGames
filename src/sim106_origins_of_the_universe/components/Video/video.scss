@@ -1,0 +1,30 @@
+@import "../../stylesheets/common/functions.scss";
+
+.video-container .play-pause-buttons {
+  .btn {
+    @extend %center-both, %opacity-show;
+  }
+}
+
+.video-container {
+  @extend %full-width,
+  %absolute,
+  %bottom-zero;
+  height: 441px;
+  .play-pause-buttons .btn{
+    top: 26px;
+    right: 24px;
+    left: initial;
+    transform: initial;
+  }
+  .video-wrapper {
+    video {
+      &.question1 {
+        //  background: transparent url("../../assets/images/redshift.png") center / cover no-repeat;
+        // height: 381px;
+        }
+      &.question6 {
+      }
+    }
+  }
+}

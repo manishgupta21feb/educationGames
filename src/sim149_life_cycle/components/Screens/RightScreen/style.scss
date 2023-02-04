@@ -1,0 +1,197 @@
+.right-container {
+  h2,
+  p {
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 70px;
+    h3 {
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+  }
+  .hotspot-img {
+    box-sizing: border-box;
+
+    border: 2px solid #ba5b08;
+    border-radius: 8px;
+    background-color: #fbf1e9;
+
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .img-hot {
+      &--butter_eggs {
+        height: 131px;
+        width: 208px;
+        background-image: url("../../../assets/images/butter_eggs.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4px;
+      }
+      &--butter_larva {
+        height: 130px;
+        width: 208px;
+        background-image: url("../../../assets/images/butter_larva.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4px;
+      }
+      &--butter_pupa {
+        height: 206px;
+        width: 107px;
+        background-image: url("../../../assets/images/butter_pupa.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &--butter_adult {
+        height: 163px;
+        width: 200px;
+        background-image: url("../../../assets/images/butter_adult.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4px;
+      }
+
+      &--frog_eggs {
+        height: 166px;
+        width: 208px;
+        background-image: url("../../../assets/images/frog_eggs.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4px;
+      }
+      &--frog_larva {
+        height: 68px;
+        width: 208px;
+        background-image: url("../../../assets/images/frog_larva.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4px;
+      }
+      &--frog_pupa {
+        height: 70px;
+        width: 208px;
+        background-image: url("../../../assets/images/frog_pupa.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 4px;
+      }
+      &--frog_adult {
+        height: 132px;
+        width: 208px;
+        background-image: url("../../../assets/images/frog_adult.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 2px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.rightdnd-container {
+  width: 100%;
+  height: 100%;
+  h2 {
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 80px;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    outline: 1px solid transparent;
+    .drag-box {
+      margin-top: 20px;
+      margin-right: 8px;
+      position: relative;
+      height: 28px;
+      width: 62px;
+      .accessible {
+        height: 28px;
+        width: 66px;
+        border: 1px solid transparent;
+        position: relative;
+        background: transparent;
+        border-radius: 16px;
+        &:focus:not(:disabled) {
+          outline: none;
+          box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+            -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+            -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+        }
+      }
+      .card {
+        top: 0;
+        left: 0;
+        position: absolute;
+        box-sizing: border-box;
+        outline: 1px solid transparent;
+        height: 28px;
+        width: 66px;
+        border: 1px dashed #0056b3;
+        border-radius: 16px;
+        background-color: #ffffff;
+        padding: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        color: #0056b3;
+      }
+      .ui-draggable {
+        cursor: grab;
+      }
+      .ui-draggable-dragging {
+        cursor: grabbing;
+        z-index: 2;
+      }
+      .ui-draggable-disabled {
+        opacity: 0.6;
+        cursor: default;
+        box-sizing: border-box;
+        height: 28px;
+        width: 66px;
+        border: 2px solid #c9c9cf;
+        border-radius: 16px;
+        background-color: #ffffff;
+
+        color: #6b6b76;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+
+      .no-outline {
+        .card.ui-draggable-disabled {
+          border: 2px solid #c9c9cf;
+          cursor: unset;
+          .card:focus {
+            border: 1px dashed #0056b3;
+            cursor: unset;
+          }
+        }
+      }
+    }
+  }
+}

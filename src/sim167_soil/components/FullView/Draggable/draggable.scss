@@ -1,0 +1,118 @@
+@import "../../../stylesheets/common/functions.scss";
+
+.draggable {
+  height: 70px;
+  width: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed #0056b3;
+  border-radius: 4px;
+  background-color: #ffffff;
+  justify-content: center;
+
+  &:not(:nth-last-child(-n + 1)) {
+    margin-right: 24px;
+  }
+
+  &__box {
+    @include rectangle(120px, 56px, rgba(255, 255, 255, 0.11));
+
+    background-color: initial;
+    border: 1px solid #d3d2d2;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-top: 16px;
+
+    &:focus {
+      outline: unset;
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+    }
+    &.accessible {
+      @extend %absolute;
+      /* z-index: -1; */
+      pointer-events: none;
+    }
+    &.non-accessible {
+      cursor: grab;
+      &:not(:disabled):hover {
+        border: none; //1px dashed var(--primary-blue);
+        background-color: var(--hover-state-color);
+      }
+      &.ui-draggable-dragging {
+        border: none; //1px dashed var(--primary-blue);
+        background-color: #f1f1f1 !important;
+        border: 1px solid #d3d2d2 !important;
+        @extend %index-9;
+      }
+      &.hide {
+        visibility: hidden;
+      }
+    }
+    &:disabled {
+      opacity: 0.6;
+      cursor: default;
+      border: none; // 1px solid var(--dark-grey) !important;
+    }
+  }
+  &__boxNonDragable {
+    @include rectangle(120px, 56px, rgba(255, 255, 255, 0.11));
+
+    background-color: initial;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;
+    border: none;
+
+    &:focus {
+      outline: unset;
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+    }
+    &.accessible {
+      @extend %absolute;
+      /* z-index: -1; */
+      pointer-events: none;
+    }
+    &.non-accessible {
+      cursor: grab;
+      &:not(:disabled):hover {
+        border: none; //1px dashed var(--primary-blue);
+        background-color: var(--hover-state-color);
+      }
+      &.ui-draggable-dragging {
+        border: none; //1px dashed var(--primary-blue);
+        background-color: #fff !important;
+        border: 1px solid #d3d2d2 !important;
+        @extend %index-9;
+      }
+      &.hide {
+        visibility: hidden;
+      }
+    }
+    &:disabled {
+      opacity: 0.6;
+      cursor: default;
+      border: none; // 1px solid var(--dark-grey) !important;
+    }
+  }
+  &__title {
+    height: 21px;
+    width: 9px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.no-outline {
+  .draggable__box {
+    border: none; // 1px dashed var(--primary-blue) !important;
+    outline: 1px solid transparent;
+    &:disabled {
+      border: none; // 1px solid var(--dark-grey) !important;
+    }
+  }
+}

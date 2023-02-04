@@ -1,0 +1,1331 @@
+.left-static {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  .heading_img {
+    // height: 16px;
+    width: 180px;
+    color: #35374c;
+    font-size: 12px;
+    font-style: italic;
+    top: 80px;
+    left: 24px;
+    position: absolute;
+  }
+  .img1 {
+    width: 100%;
+    height: 100%;
+
+    .y-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      transform: rotate(2070deg);
+      position: absolute;
+      top: 352px;
+    }
+
+    .x-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 100px;
+      left: 151px;
+    }
+
+    .main-graph {
+      position: absolute;
+      top: -21px;
+      left: -14px;
+      width: 100%;
+      height: 100%;
+
+      .graph_1 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 55px;
+        height: 500px;
+        width: 500px;
+        left: 28px;
+        background-image: url("../../../assets/images/graph_1.png");
+      }
+      .graph_2 {
+        background-image: url("../../../assets/images/graph_6.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 39px;
+        position: absolute;
+        height: 500px;
+        left: 32px;
+        width: 500px;
+      }
+
+      .graph_3 {
+        position: absolute;
+        background-image: url("../../../assets/images/graph_3.png");
+        height: 180px;
+        width: 269px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .graph_4 {
+        position: absolute;
+        background-image: url("../../../assets/images/graph_4.png");
+        height: 180px;
+        width: 269px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .graph_5 {
+        background-image: url("../../../assets/images/graph_5.png");
+        height: 180px;
+        width: 269px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .graph_6 {
+        background-image: url("../../../assets/images/graph_6.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 175px;
+        position: absolute;
+        height: 332px;
+        left: 114px;
+        width: 288px;
+      }
+      .graph_7 {
+        background-image: url("../../../assets/images/graph_7.png");
+        height: 180px;
+        width: 269px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      top: 273px;
+      left: 361px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+    }
+
+    .label2 {
+      position: absolute;
+      top: 331px;
+      left: 337px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label4 {
+      position: absolute;
+      top: 377px;
+      left: 336px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label3 {
+      position: absolute;
+      top: 304px;
+      left: 148px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .y-axis-numbers {
+      font-size: 14px;
+      & p:nth-child(1) {
+        position: absolute;
+        top: 204px;
+        font-variant: lining-nums;
+        left: 87px;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 273px;
+        left: 95px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        top: 400px;
+        left: 95px;
+        font-variant: lining-nums;
+      }
+    }
+    .dottedLineDown {
+      width: 171px;
+      top: 408px;
+      left: 183px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+    .allArrows {
+      .arrowBothSide {
+        position: absolute;
+        top: 281px;
+        left: 314px;
+        height: 127px;
+        width: 14px;
+      }
+      .arrowRight {
+        position: absolute;
+        top: 483px;
+        height: 11px;
+        left: 286px;
+      }
+      .arrowUp {
+        height: 85px;
+        position: absolute;
+        top: 199px;
+        left: 62px;
+      }
+
+      .arrowUp1 {
+        position: absolute;
+        top: 218px;
+        height: 78px;
+        left: 162px;
+      }
+
+      .arrowUp2 {
+        height: 71px;
+        left: 162px;
+        position: absolute;
+        top: 335px;
+        transform: rotate(180deg);
+      }
+    }
+
+    .dottedLineUp {
+      width: 138px;
+      top: 215px;
+      left: 119px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+  .img2 {
+    width: 100%;
+    height: 100%;
+
+    .y-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      transform: rotate(2070deg);
+      position: absolute;
+      top: 352px;
+    }
+
+    .x-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 100px;
+      left: 151px;
+    }
+
+    .main-graph {
+      position: absolute;
+      top: -21px;
+      left: -14px;
+      width: 100%;
+      height: 100%;
+
+      .graph_1 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 55px;
+        height: 500px;
+        width: 500px;
+        left: 28px;
+        background-image: url("../../../assets/images/graph_1.png");
+      }
+      .graph_2 {
+        background-image: url("../../../assets/images/graph_3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 50px;
+        position: absolute;
+        height: 520px;
+        left: 32px;
+        width: 500px;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      top: 265px;
+      left: 140px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      background-color: #f4f4f4;
+      z-index: 1;
+    }
+
+    .label2 {
+      position: absolute;
+      top: 319px;
+      left: 140px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label4 {
+      position: absolute;
+      top: 354px;
+      left: 372px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label3 {
+      position: absolute;
+      top: 293px;
+      left: 401px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label5 {
+      position: absolute;
+      top: 273px;
+      left: 142px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      background-color: #f4f4f4;
+    }
+
+    .y-axis-numbers {
+      font-size: 14px;
+      & p:nth-child(1) {
+        position: absolute;
+        top: 229px;
+        left: 87px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 295px;
+        left: 95px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        top: 357px;
+        left: 95px;
+        font-variant: lining-nums;
+      }
+    }
+    .dottedLineDown {
+      width: 204px;
+      top: 366px;
+      left: 117px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .dottedLineMid {
+      width: 101px;
+      top: 303px;
+      left: 291px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .allArrows {
+      .arrowUp2 {
+        height: 71px;
+        left: 162px;
+        position: absolute;
+        top: 335px;
+        transform: rotate(180deg);
+      }
+      .arrowBothSide {
+        position: absolute;
+        top: 307px;
+        left: 312px;
+        height: 53px;
+      }
+
+      .arrowRight {
+        position: absolute;
+        top: 483px;
+        height: 11px;
+        left: 286px;
+      }
+
+      .arrowUp {
+        height: 85px;
+        position: absolute;
+        top: 199px;
+        left: 62px;
+      }
+
+      .arrowUp1 {
+        position: absolute;
+        top: 241px;
+        height: 68px;
+        left: 153px;
+      }
+    }
+
+    .dottedLineUp {
+      width: 127px;
+      top: 240px;
+      left: 116px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+  .img3 {
+    width: 100%;
+    height: 100%;
+
+    .y-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      transform: rotate(2070deg);
+      position: absolute;
+      top: 352px;
+    }
+
+    .x-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 100px;
+      left: 151px;
+    }
+
+    .main-graph {
+      position: absolute;
+      top: -21px;
+      left: -14px;
+      width: 100%;
+      height: 100%;
+
+      .graph_1 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 55px;
+        height: 500px;
+        width: 500px;
+        left: 28px;
+        background-image: url("../../../assets/images/graph_1.png");
+      }
+      .graph_2 {
+        background-image: url("../../../assets/images/graph_5.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 38px;
+        position: absolute;
+        height: 520px;
+        left: 19px;
+        width: 500px;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      top: 433px;
+      left: 357px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label2 {
+      position: absolute;
+      top: 387px;
+      left: 130px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label4 {
+      position: absolute;
+      top: 321px;
+      left: 393px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label3 {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 293px;
+      left: 137px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 10px;
+    }
+
+    .label5 {
+      position: absolute;
+      top: 299px;
+      left: 142px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      background-color: #f4f4f4;
+    }
+
+    .y-axis-numbers {
+      font-size: 14px;
+      & p:nth-child(1) {
+        position: absolute;
+        top: 259px;
+        left: 93px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 319px;
+        left: 96px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        top: 432px;
+        left: 101px;
+        font-variant: lining-nums;
+      }
+    }
+    .dottedLineDown {
+      width: 190px;
+      top: 444px;
+      left: 117px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .dottedLineMid {
+      width: 103px;
+      top: 330px;
+      left: 282px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .allArrows {
+      .arrowUp2 {
+        height: 71px;
+        left: 162px;
+        position: absolute;
+        top: 335px;
+        transform: rotate(180deg);
+      }
+      .arrowBothSide {
+        position: absolute;
+        top: 274px;
+        left: 149px;
+        height: 58px;
+      }
+
+      .arrowBothSideMid {
+        top: 334px;
+        position: absolute;
+        height: 109px;
+        left: 314px;
+        width: 13px;
+      }
+
+      .arrowRight {
+        position: absolute;
+        top: 483px;
+        height: 11px;
+        left: 286px;
+      }
+
+      .arrowUp {
+        height: 85px;
+        position: absolute;
+        top: 199px;
+        left: 62px;
+      }
+
+      .arrowUp1 {
+        position: absolute;
+        top: 241px;
+        height: 68px;
+        left: 153px;
+      }
+    }
+
+    .dottedLineUp {
+      width: 127px;
+      top: 271px;
+      left: 116px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+  .img4 {
+    width: 100%;
+    height: 100%;
+
+    .y-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      transform: rotate(2070deg);
+      position: absolute;
+      top: 352px;
+    }
+
+    .x-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 100px;
+      left: 151px;
+    }
+
+    .main-graph {
+      position: absolute;
+      top: -21px;
+      left: -14px;
+      width: 100%;
+      height: 100%;
+
+      .graph_1 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 55px;
+        height: 500px;
+        width: 500px;
+        left: 28px;
+        background-image: url("../../../assets/images/graph_1.png");
+      }
+      .graph_2 {
+        background-image: url("../../../assets/images/graph_3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 38px;
+        position: absolute;
+        height: 520px;
+        left: 19px;
+        width: 500px;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      top: 343px;
+      left: 357px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+    }
+
+    .label2 {
+      position: absolute;
+      top: 312px;
+      left: 130px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label4 {
+      position: absolute;
+      top: 313px;
+      left: 332px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label3 {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 254px;
+      left: 134px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      z-index: 1;
+    }
+
+    .label5 {
+      position: absolute;
+      top: 256px;
+      left: 139px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      background-color: #f4f4f4;
+    }
+
+    .y-axis-numbers {
+      font-size: 14px;
+      font-variant: lining-nums;
+      & p:nth-child(1) {
+        position: absolute;
+        top: 227px;
+        left: 91px;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 284px;
+        left: 96px;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        top: 344px;
+        left: 97px;
+      }
+    }
+    .dottedLineDown {
+      width: 105px;
+      top: 290px;
+      left: 276px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .dottedLineMid {
+      width: 101px;
+      top: 230px;
+      left: 118px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .allArrows {
+      .arrowUp2 {
+        height: 71px;
+        left: 162px;
+        position: absolute;
+        top: 335px;
+        transform: rotate(180deg);
+      }
+      .arrowBothSide {
+        position: absolute;
+        top: 232px;
+        left: 149px;
+        height: 62px;
+      }
+
+      .arrowBothSideMid {
+        top: 295px;
+        position: absolute;
+        height: 56px;
+        left: 314px;
+      }
+
+      .arrowRight {
+        position: absolute;
+        top: 483px;
+        height: 11px;
+        left: 286px;
+      }
+
+      .arrowUp {
+        height: 85px;
+        position: absolute;
+        top: 199px;
+        left: 62px;
+      }
+
+      .arrowUp1 {
+        position: absolute;
+        top: 241px;
+        height: 68px;
+        left: 153px;
+      }
+    }
+
+    .dottedLineUp {
+      width: 187px;
+      top: 352px;
+      left: 117px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+  .img5 {
+    width: 100%;
+    height: 100%;
+
+    .y-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      transform: rotate(2070deg);
+      position: absolute;
+      top: 352px;
+    }
+
+    .x-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 100px;
+      left: 151px;
+    }
+
+    .main-graph {
+      position: absolute;
+      top: -21px;
+      left: -14px;
+      width: 100%;
+      height: 100%;
+
+      .graph_1 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 55px;
+        height: 500px;
+        width: 500px;
+        left: 28px;
+        background-image: url("../../../assets/images/graph_1.png");
+      }
+      .graph_2 {
+        background-image: url("../../../assets/images/graph_2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 53px;
+        position: absolute;
+        height: 545px;
+        left: 19px;
+        width: 500px;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      top: 307px;
+      left: 379px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label2 {
+      position: absolute;
+      top: 325px;
+      left: 330px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label4 {
+      position: absolute;
+      top: 313px;
+      left: 330px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label3 {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 310px;
+      left: 132px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      border-radius: 50%;
+    }
+
+    .label5 {
+      position: absolute;
+      top: 321px;
+      left: 138px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+      background-color: #f4f4f4;
+      z-index: 1;
+    }
+
+    .y-axis-numbers {
+      font-size: 14px;
+      & p:nth-child(1) {
+        position: absolute;
+        top: 289px;
+        left: 90px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 313px;
+        left: 92px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        top: 332px;
+        left: 95px;
+        font-variant: lining-nums;
+      }
+    }
+    .dottedLineDown {
+      width: 105px;
+      top: 296px;
+      left: 276px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .dottedLineMid {
+      width: 119px;
+      top: 300px;
+      left: 118px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .allArrows {
+      .arrowUp2 {
+        height: 71px;
+        left: 162px;
+        position: absolute;
+        top: 335px;
+        transform: rotate(180deg);
+      }
+      .arrowBothSide {
+        position: absolute;
+        top: 301px;
+        left: 149px;
+        height: 39px;
+      }
+
+      .arrowBothSideMid {
+        top: 319px;
+        position: absolute;
+        height: 21px;
+        left: 322px;
+      }
+
+      .arrowRight {
+        position: absolute;
+        top: 483px;
+        height: 11px;
+        left: 286px;
+      }
+
+      .arrowUp {
+        height: 85px;
+        position: absolute;
+        top: 199px;
+        left: 62px;
+      }
+
+      .arrowUp1 {
+        position: absolute;
+        top: 241px;
+        height: 68px;
+        left: 153px;
+      }
+    }
+
+    .dottedLineUp {
+      width: 198px;
+      top: 340px;
+      left: 170px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+
+  .img6 {
+    width: 100%;
+    height: 100%;
+
+    .y-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      transform: rotate(2070deg);
+      position: absolute;
+      top: 352px;
+    }
+
+    .x-axis-text {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 100px;
+      left: 151px;
+    }
+
+    .main-graph {
+      position: absolute;
+      top: -21px;
+      left: -14px;
+      width: 100%;
+      height: 100%;
+
+      .graph_1 {
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 55px;
+        height: 500px;
+        width: 500px;
+        left: 28px;
+        background-image: url("../../../assets/images/graph_1.png");
+      }
+      .graph_2 {
+        background-image: url("../../../assets/images/graph_6.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 47px;
+        position: absolute;
+        height: 505px;
+        left: 19px;
+        width: 500px;
+      }
+    }
+
+    .label1 {
+      position: absolute;
+      top: 288px;
+      left: 352px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label2 {
+      position: absolute;
+      top: 343px;
+      left: 322px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label4 {
+      position: absolute;
+      top: 427px;
+      left: 139px;
+      color: #35374c;
+      font-size: 11px;
+      letter-spacing: 0.25px;
+      line-height: 11px;
+    }
+
+    .label3 {
+      background-color: #f4f4f4;
+      position: absolute;
+      top: 316px;
+      left: 130px;
+      color: #35374c;
+      font-size: 11px;
+      line-height: 11px;
+      z-index: 1;
+      padding: 5px;
+    }
+
+    .label5 {
+      position: absolute;
+      top: 321px;
+      left: 139px;
+      color: #35374c;
+      font-size: 12px;
+      line-height: 11px;
+      background-color: #f4f4f4;
+    }
+
+    .y-axis-numbers {
+      font-size: 14px;
+      & p:nth-child(1) {
+        position: absolute;
+        top: 220px;
+        left: 91px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(2) {
+        position: absolute;
+        top: 308px;
+        left: 92px;
+        font-variant: lining-nums;
+      }
+
+      & p:nth-child(3) {
+        position: absolute;
+        top: 408px;
+        left: 95px;
+        font-variant: lining-nums;
+      }
+    }
+    .dottedLineDown {
+      width: 105px;
+      top: 296px;
+      left: 276px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    .dottedLineMid {
+      width: 119px;
+      top: 227px;
+      left: 118px;
+      border: 2px dashed;
+      border-top: 2px;
+      border-left: 0px;
+      border-right: 0px;
+      position: absolute;
+    }
+
+    .allArrows {
+      .arrowUp2 {
+        height: 71px;
+        left: 162px;
+        position: absolute;
+        top: 335px;
+        transform: rotate(180deg);
+      }
+      .arrowBothSide {
+        position: absolute;
+        top: 228px;
+        left: 149px;
+        height: 190px;
+        width: 10px;
+      }
+
+      .arrowBothSideMid {
+        top: 290px;
+        position: absolute;
+        height: 130px;
+        left: 301px;
+        width: 10px;
+      }
+
+      .arrowRight {
+        position: absolute;
+        top: 483px;
+        height: 11px;
+        left: 286px;
+      }
+
+      .arrowUp {
+        height: 85px;
+        position: absolute;
+        top: 199px;
+        left: 62px;
+      }
+
+      .arrowUp1 {
+        position: absolute;
+        top: 241px;
+        height: 68px;
+        left: 153px;
+      }
+    }
+
+    .dottedLineUp {
+      width: 198px;
+      top: 418px;
+      left: 170px;
+      border: 2px dashed;
+      border-top: 2px;
+      position: absolute;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+
+  .element {
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    color: #052978;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .dotted-box {
+    top: 46%;
+    left: 50%;
+    width: 317px;
+    height: 317px;
+    border-radius: 5px;
+    position: absolute;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    border: 2px dashed var(--primary-blue);
+  }
+
+  .image-footer {
+    top: 456px;
+    left: 180px;
+    width: 180px;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      font-size: 12px;
+      color: #35374c;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      font-variant: lining-nums;
+    }
+  }
+
+  .left-bottom {
+    width: 270px;
+    height: 16px;
+    bottom: 60px;
+    left: 135px;
+    display: flex;
+    font-size: 12px;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--question-heading-bluish);
+
+    .labels {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      > div {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+        margin-bottom: 4px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

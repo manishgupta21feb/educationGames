@@ -1,0 +1,51 @@
+.top-view {
+ 
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-image: url(../../../assets/images/sim65.png);
+  &.es {
+    background-image: url(../../../assets/images/sim65spanish.png); 
+  }
+  .equipmenttext {
+   
+    display: flex;
+    flex-wrap: wrap;
+
+    .equipment0 {
+      position: absolute;
+      top: 280px;
+      left: 75px;
+      &.es {
+        left: 52px;
+      }
+    }
+    .equipment1 {
+      position: absolute;
+      top: 280px;
+      left: 255px;
+      &.es {
+        left: 285px;
+      }
+    }
+    .equipment2 {
+      position: absolute;
+      top: 280px;
+      left: 490px;
+      &.es {
+        left: 470px;
+      }
+    }
+    .equipment3 {
+      position: absolute;
+      top: 280px;
+      left: 695px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}

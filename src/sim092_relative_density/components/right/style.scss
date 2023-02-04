@@ -1,0 +1,40 @@
+.question-wrapper {
+  box-sizing: border-box;
+  height: 155px;
+  width: 212px;
+  border: 1px solid #ba5b08;
+  border-radius: 8px;
+  background-color: #fbf1e9;
+
+  .question-info-box {
+    margin-top: 8px;
+    margin-left: 11px;
+    height: 120px;
+    width: 190px;
+    color: #352103;
+    font-size: 14px;
+    font-variant: lining-nums;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    .sr-only {
+      width: 150px;
+    }
+  }
+}
+.mcq-question-area .inner-wrapper .question {
+  font-variant: lining-nums;
+  .sr-only {
+    width: 150px;
+  }
+}
+
+.mcq-question-area
+  .inner-wrapper
+  .radiobuttons
+  .radiobutton
+  .radiobutton-inner-wrapper
+  input[type="radio"]
+  + div
+  + label {
+  font-variant: lining-nums;
+}

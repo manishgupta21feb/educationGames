@@ -1,0 +1,73 @@
+.bottom {
+  .mcq-question-area {
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .inner-wrapper {
+      .question {
+        margin-bottom: 8px;
+        font-variant: lining-nums;
+      }
+      .bottomarea {
+        .cbHolder {
+          display: flex;
+        }
+        .questionCount {
+          height: 16px;
+          color: #35374c;
+          font-size: 12px;
+          font-style: italic;
+          font-variant: lining-nums;
+          font-weight: 500;
+        }
+        > p {
+          margin-top: 8px;
+          color: #052978;
+
+          font-weight: 500;
+        }
+        .checkbox-container {
+          display: flex;
+          flex-direction: column;
+          margin-top: 8px;
+          .chkBoxRowHeading {
+            height: 20px;
+            width: 112px;
+            color: #052978;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 5px;
+          }
+
+          .checkbox {
+            width: 170px;
+            height: 30px;
+            padding-left: 6px;
+            label {
+              height: 20px;
+              width: 230px;
+              color: #35374c;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Custom checkbox //
+.check-buttons {
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  .check-button {
+    list-style: none;
+    position: relative;
+    margin-bottom: 16px;
+  }
+}

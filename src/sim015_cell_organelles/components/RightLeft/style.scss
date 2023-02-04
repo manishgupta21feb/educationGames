@@ -1,0 +1,424 @@
+.screen1-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.left-area {
+    background:var(--header-button-background);
+    position: relative;
+    height: 100%;
+    .whole-cell{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 53px;
+      position: relative;
+      list-style: none;
+       .label{
+        height: 20px;
+        width: 98px;
+        color: var(--lightgreyshade);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+         &.animal{
+          margin-top: 236px;         }
+         &.plant{
+         margin-top: 253px;
+         }
+       }
+     
+    }
+    .animal-div{
+      height: 219px;
+      width: 316px;
+      border: 2px solid transparent;
+      position: absolute;
+    }
+    .animal-cell {
+        background: url("../../assets/images/animalcell/animalempty.png");
+        height: 204px;
+        width: 302px;
+        background-size: cover;
+        z-index: 0;
+        // position: absolute;
+        position: relative;
+        left: 6px;
+        top: 8px;
+        background-repeat: no-repeat;
+        //border: 2px solid transparent;
+      }
+      .drag-item {
+        position: absolute;
+        z-index: 16;
+        left: 44px;
+        top: 262px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid var(--question-text-blue);
+        border-radius: 4px;
+        background-color:var(--white);
+        text-align: center;
+        cursor: grab;
+        img{
+          height: 45px;
+          width: 45px;
+        }
+      }
+      .plant-cell {
+        background: url("../../assets/images/plantcell/pempty.png");
+        // height: 172px;
+        // width: 216px;
+        height: 220px;
+        width: 290px;
+        top: 30px;
+        left: 119px;    
+        z-index: 0;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid transparent;
+     }
+       
+     .show-plant{
+      // height: 154px;
+      // width: 219px;
+      height: 216px;
+      width: 290px;
+      position: absolute;
+      left: 121px;
+      top: 339px;
+        }
+    .show-animal{
+      width: 302px;
+      height: 204px;
+      position: absolute;
+      left: 119px;
+      top: 61px;
+    }
+    
+    .highlight {
+      box-sizing: border-box;
+      border: 2px solid var(--question-text-blue);
+      border-style: dashed;
+      border-radius: 4px;
+      background-color: rgba(217,235,255,0.24);
+  }
+  .drop-target{
+    background: red; /* for testing */
+  }
+  .ui-state-hover{
+    box-sizing: border-box;
+    border: 2px solid var(--question-text-blue);
+    border-style: solid;
+    border-radius: 2px;
+    background-color: pink;
+  }
+
+}
+
+  
+  .right-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    padding-top: 57px;
+   
+   
+      .heading-text{
+        // height: 40px;
+        // width: 212px;
+        color: var(--question-text-blue);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+      .wrapper{
+      display: flex;
+      width: 212px;
+      height: 200px;
+      flex-wrap: wrap;
+      .option-container {
+        display: flex;
+        // justify-content: space-around;
+        // height: 47px;
+        // width: 47px;
+        .draggable-btn-wrapper {
+          display: flex;
+          width: 212px;
+          height: 200px;
+          flex-wrap: wrap;
+        }
+        &.draggable {
+          position: relative;
+         
+          // .option:not(:disabled) {
+          //   &:focus {
+          //     border: 1px dashed var(--primary-blue);
+          //     background-color: var(--hover-state-color);
+          
+          //   }
+    
+          //   &:hover {
+          //     border: 1px dashed var(--primary-blue);
+          //     background-color: var(--hover-state-color);
+          //   }
+          // }
+    
+          .accessible-button {
+            height: 47px;
+            width: 47px;
+            background-color:transparent;
+            border: none;
+            // position: absolute;
+            box-shadow: none;
+            margin:3px;
+            z-index: 1;
+            &.nucleusOne {
+              background: url("../../assets/images/dragitems/neuclus_both.png");
+            
+           
+             }
+             &.cellMembraneAnimal{
+              background: url("../../assets/images/dragitems/cell_mem_animal.png");
+           
+            
+             }
+             &.cellWall{
+              background: url("../../assets/images/dragitems/cell_wall_plant.png");
+             
+           
+             }
+             &.vacuole{
+              background: url("../../assets/images/dragitems/vacules_plant.png");
+           
+           
+             }
+             &.mitochondriaOne{
+              background: url("../../assets/images/dragitems/mitochondria_both.png");
+             
+             }
+             &.ribosomesOne{
+              background: url("../../assets/images/dragitems/ribosome_both.png");
+              
+            
+            }
+            &.cytoplasmOne{
+              background: url("../../assets/images/dragitems/cytoplasm_animal.png");
+            
+             }
+             &.nucleusTwo {
+              background: url("../../assets/images/dragitems/neuclus_both.png");
+            
+           
+             }
+             &.cellMembranePlant{
+              background: url("../../assets/images/dragitems/cell_mem_plant.png");
+              
+             }
+             &.cellMembranePlant{
+              background: url("../../assets/images/dragitems/cell_mem_plant.png");
+             
+             }
+             &.chlroplast{
+              background: url("../../assets/images/dragitems/chloroplast.png");
+            
+             }
+             &.vacuoles{
+              background: url("../../assets/images/dragitems/vacules_animal.png");
+           
+             }
+             &.mitochondriaTwo{
+              background: url("../../assets/images/dragitems/mitochondria_both.png");
+             
+             }
+             &.ribosomesTwo{
+              background: url("../../assets/images/dragitems/ribosome_both.png");
+              
+            }
+            &.cytoplasmTwo{
+              background: url("../../assets/images/dragitems/cytoplasm_plant.png");
+             
+             }
+          
+            &.btn:not(:disabled){
+             border-radius: 4px  !important;
+             border: 1px var(--primary-blue);
+              border-style: dashed;
+              border-radius: 4px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              &:focus {
+                outline: none;
+               background-color: var(--hover-state-color) !important;
+               //background-color: #d9ebff70;
+                box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue)
+              }
+              &:hover{
+              background-color: var(--hover-state-color);
+            
+              }
+            }
+            &.btn:disabled{
+              border: 2px solid var( --dark-grey);
+              border-radius: 4px;
+              background-color: var(--white);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+            
+           
+    
+           
+          }
+        }
+      }
+      }
+  
+      .dragItems{
+        height: 47px;
+        width: 47px;
+        margin: 3px;
+        background:transparent;
+        border: 1px var(--primary-blue);
+        border-style: dashed;
+         border-radius:4px ;
+         position: absolute;
+         pointer-events: none;
+         
+         &.not-accessible-button:not(:disabled){
+          border-radius: 4px  !important;
+          border: 1px var(--primary-blue);
+           border-style: dashed;
+           background-size: contain;
+           background-repeat: no-repeat;
+           &:focus {
+             outline: none;
+            background-color: var(--hover-state-color);
+             box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue)
+           }
+           
+         }
+         &.not-accessible-button:disabled{
+          border: 2px solid var( --dark-grey);
+          border-radius: 4px;
+          background-color: var(--white);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+     
+      }
+      .wrapper-1 {
+        margin-top: 28px;
+        box-shadow: 0 0 0 1px var(--secondary-attention-orange);
+        border: 1px solid var(--secondary-attention-orange);
+        border-radius: 8px;
+        background-color: var( --secondary-attention-light);
+        display: inline-block;
+        opacity: 0;
+        max-height: 260px;
+        overflow-y: scroll;
+        &.show {
+          opacity: 1;
+        }
+    
+        p {
+          color: #352103;
+          font-size: 14px;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+          padding: 8px 12px;
+        }
+      }
+      .dropdown{
+        border: 1px solid var(--dark-grey);
+        border-radius: 8px;
+        background-color:var(--white);
+        height: auto;
+        position: absolute;
+        top: 55px;
+        z-index: 5;
+        float: left;
+        width: auto;
+        min-width: 110px;
+        max-width: 100%;
+        list-style: none;
+        .option {
+          width: auto;
+          box-shadow: inset 0 -1px 0 0 var(--dark-grey);
+          list-style: none;
+          height: 100%;
+          position: relative;
+          cursor: pointer;
+          color: var(--lightgreyshade);
+          padding: 6px 11px;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+          display: block;
+          &:hover {
+            background-color:var(--primary-blue);
+            color:var(--white) !important;
+        }
+        &:focus {
+          background-color:var(--primary-blue);
+          color:var(--white) !important;
+        }
+      }
+      a {
+        color: var(--lightgreyshade);
+        letter-spacing: 0.25px;
+        line-height: 20px;
+        text-decoration: none;
+        //padding-top: 1px;
+        padding: 4px;
+        z-index: 10;
+        font-size: 14px;
+        &:focus {
+          background-color:var(--primary-blue);
+          color:var(--white) !important;
+        }
+        &:hover{
+          color:var(--white) !important;
+          
+        }
+        &:focus-within {
+          background-color:var(--primary-blue);
+          color:var(--white) !important;        }
+    }
+      }
+  }
+  .btn {
+    &.hotspot-btn {
+      &.close {
+        margin: 0 12px 8px 0;
+        &:not(:disabled) {
+          &:hover {
+            padding: 6px 16px;
+            border-radius: 8px;
+            border-radius: 30px;
+            margin: 0 12px 8px 0;
+            border: 2px solid #352103;
+            box-shadow: 0 0 0 1px var(--white),
+              0 0 0 2px var(--secondary-attention-dark);
+            background-color: transparent;
+          }
+          &:focus {
+            &:hover {
+              padding: 6px 16px;
+              border-radius: 8px;
+              border-radius: 30px;
+              margin: 0 12px 8px 0;
+              border: 2px solid #352103;
+              box-shadow: 0 0 0 1px var(--white),
+                0 0 0 2px var(--secondary-attention-dark) !important;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }

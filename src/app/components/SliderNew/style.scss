@@ -1,0 +1,200 @@
+/* CSS Document */
+.slider-container {
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .slider {
+    height: 50px;
+    position: relative;
+    width: calc(100% - 50px);
+    .rail-wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      .rail {
+        width: 100%;
+        height: 8px;
+        border-radius: 4px;
+        position: relative;
+        background-color: rgba(#0056b3, 0.15);
+        border: 1px solid #0056b3;
+      }
+    }
+
+    .datalist {
+      left: 0;
+      top: 21px;
+      width: 100%;
+      height: 35px;
+      position: absolute;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        width: 14px;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        > span {
+          position: relative;
+          display: inline-block;
+          &:first-child {
+            height: 8px;
+            position: relative;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            > span {
+              display: block;
+              height: calc(100% - 3px);
+              border-left: 1px solid #265867;
+            }
+          }
+
+          &:last-child {
+            font-size: 12px;
+            padding-top: 8px;
+            line-height: 16px;
+            align-self: center;
+            font-variant: lining-nums;
+          }
+        }
+      }
+    }
+
+    .thumb-wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .thumb-click-handler {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 10px;
+        cursor: pointer;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      .thumb {
+        width: 12px;
+        height: 12px;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        background: #0056b3;
+        box-shadow: 0 0 0 1px white, 0 0 0 2px #052978;
+
+        -ms-overflow-style: none;
+        -ms-scroll-chaining: none;
+        scroll-snap-type: mandatory;
+        -ms-scroll-snap-type: mandatory;
+
+        > span {
+          display: none;
+        }
+
+        &:focus,
+        &:hover {
+          outline: none;
+          box-shadow: 0 0 0 2px white, 0 0 0 4px #052978;
+        }
+      }
+    }
+  }
+
+  &.selected-value-only {
+    .slider {
+      .datalist {
+        div {
+          // width: 35px;
+          > span {
+            &:last-child {
+              opacity: 0;
+            }
+          }
+
+          &.selected {
+            > span {
+              &:last-child {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.disabled {
+    opacity: 0.8;
+    .slider {
+      .thumb-wrapper {
+        > div {
+          cursor: default;
+          pointer-events: none;
+        }
+        .thumb {
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 0 1px white, 0 0 0 2px #052978;
+          }
+        }
+      }
+    }
+  }
+
+  &.vertical {
+    .slider {
+      height: 160px;
+      transform: rotate(270deg);
+
+      .datalist {
+        top: 76px;
+      }
+    }
+  }
+}
+
+.no-outline {
+  .slider-container {
+    .slider {
+      .thumb-wrapper {
+        .thumb {
+          outline: none;
+          box-shadow: 0 0 0 1px white, 0 0 0 2px #052978 !important;
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #052978 !important;
+          }
+          &:hover {
+            outline: none;
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #052978 !important;
+          }
+        }
+      }
+    }
+  }
+}

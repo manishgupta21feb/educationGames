@@ -1,0 +1,129 @@
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 316px;
+  width: 516px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/smallmap.png);
+  height: 100%;
+  width: 100%;
+}
+.image-button2 {
+  position: absolute;
+  margin-top: 24px;
+  box-sizing: border-box;
+  height: 156px;
+  width: 212px;
+  border: 2px solid #979797;
+  border-radius: 7px;
+  .buttonset {
+    position: absolute;
+    &.buttonS {
+      top: 60px;
+      left: 14px;
+    }
+    &.buttonM {
+      top: 66px;
+      left: 98px;
+    }
+    &.buttonT {
+      top: 90px;
+      left: 60px;
+    }
+    &.buttonP {
+      top: 40px;
+      left: 20px;
+    }
+    &.buttonB {
+      top: 60px;
+      left: 80px;
+    }
+    &.buttonW {
+      top: 40px;
+      left: 40px;
+    }
+  }
+  .bullets {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #352103;
+    border-radius: 50%;
+
+    transform-style: preserve-3d;
+    &.bulletsS {
+      top: 28px;
+      left: 23px;
+    }
+    &.bulletsM {
+      top: 33px;
+      left: 182px;
+    }
+    &.bulletsT {
+      top: 62px;
+      left: 125px;
+    }
+    &.bulletsP {
+      top: 90px;
+      left: 35px;
+    }
+    &.bulletsB {
+      top: 120px;
+      left: 91px;
+    }
+    &.bulletsW {
+      top: 80px;
+      left: 162px;
+    }
+  }
+  .dottedlines {
+    border-left: 2px dotted #352103;
+    position: relative;
+    transform-style: preserve-3d;
+    &.dottedlinesS {
+      height: 35px;
+      width: 0px;
+      top: 32px;
+      left: 41px;
+      transform: rotate(140deg);
+    }
+    &.dottedlinesM {
+      height: 35px;
+      width: 0px;
+      top: 32px;
+      left: 180px;
+      transform: rotate(20deg);
+    }
+    &.dottedlinesT {
+      height: 30px;
+      width: 0px;
+      top: 62px;
+      left: 125px;
+      transform: rotate(16deg);
+    }
+    &.dottedlinesP {
+      height: 30px;
+      width: 0px;
+      top: 62px;
+      left: 46px;
+      transform: rotate(24deg);
+    }
+    &.dottedlinesB {
+      height: 40px;
+      width: 0px;
+      top: 82px;
+      left: 104px;
+      transform: rotate(24deg);
+    }
+    &.dottedlinesW {
+      height: 40px;
+      width: 0px;
+      top: 55px;
+      left: 152px;
+      transform: rotate(124deg);
+    }
+  }
+}

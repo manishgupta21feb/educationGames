@@ -1,0 +1,118 @@
+.chem-equation-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  // font-family: Verdana, sans-serif;
+
+  .atom-image {
+    margin-right: 12px;
+    // position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: -70px;
+    left: 5px;
+
+    width: 65px;
+    height: 65px;
+
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+
+    &.bird-egg {
+      background-image: url(../../../assets/images/bird/bird_egg.png);
+    }
+    &.bird-young {
+      background-image: url(../../../assets/images/bird/young_bird.png);
+    }
+    &.bird-adult {
+      background-image: url(../../../assets/images/bird/pigeon.png);
+    }
+    &.bird-newlyborn {
+      background-image: url(../../../assets/images/bird/chick.png);
+    }
+    &.fish-egg {
+      background-image: url(../../../assets/images/fish/fish_eggs_tab.png);
+    }
+    &.fish-young {
+      background-image: url(../../../assets/images/fish/young_fish.png);
+    }
+    &.fish-adult {
+      background-image: url(../../../assets/images/fish/adult_fish.png);
+    }
+    &.fish-newlyborn {
+      background-image: url(../../../assets/images/fish/newly_born_fish.png);
+    }
+    &.dog-embryo {
+      background-image: url(../../../assets/images/dog/embryo_dog.png);
+    }
+    &.dog-young {
+      background-image: url(../../../assets/images/dog/young_dog.png);
+    }
+    &.dog-adult {
+      background-image: url(../../../assets/images/dog/adult_dog.png);
+    }
+    &.dog-newlyborn {
+      background-image: url(../../../assets/images/dog/newly_born_dog.png);
+    }
+  }
+
+  .chem-equation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    position: relative;
+    .number-style {
+      margin-right: 4px;
+      color: #000000;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 20px;
+      text-align: right;
+    }
+    // .symbol-style {
+    //   color: #000000;
+    //   font-size: 16px;
+    //   font-weight: 500;
+    //   letter-spacing: 0;
+    //   line-height: 24px;
+    //   display: flex;
+    // }
+
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+    &.gamma {
+      > div:last-child {
+        margin-top: -7px;
+      }
+    }
+  }
+}
+.background-container {
+  .chem-equation-wrapper {
+    .chem-equation {
+      .number-style {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .symbol-style {
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      &.gamma {
+        > div {
+          &:last-child {
+            margin-top: -16px;
+          }
+        }
+      }
+    }
+  }
+}

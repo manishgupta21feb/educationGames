@@ -1,0 +1,340 @@
+@mixin staticImagePosition {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  position: absolute;
+}
+
+.left-area {
+  background: #c2d0d2;
+  height: 100%;
+}
+
+// .left-static {
+// position: relative;
+// height: 100%;
+// width: 100%;
+
+// .organism-seal-image {
+//   background-image: url(../../assets/images/singleleopardseal.png);
+//   @include staticImagePosition();
+// }
+
+// .population-fish-image {
+//   background-image: url(../../assets/images/severalsilverfishinwater.png);
+//   @include staticImagePosition();
+// }
+
+// .penguin-silverfish-image {
+//   background-image: url(../../assets/images/penguinandsilverfish.png);
+//   @include staticImagePosition();
+// }
+
+// .multiple-silverfish {
+//   background-image: url(../../assets/images/multiplesilverfish.png);
+//   @include staticImagePosition();
+// }
+
+// .penguin-leopardseal-image {
+//   background-image: url(../../assets/images/penguinsandleopardseal.png);
+//   @include staticImagePosition();
+// }
+// }
+
+.left-interactive {
+  height: 100%;
+  position: relative;
+  .organism-penguin {
+    height: 384px;
+    width: 196px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(../../assets/images/orgainism/penguin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    #penguin {
+      height: calc(100% + 15px);
+      width: calc(100% + 15px);
+      background: transparent;
+      color: transparent;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 4px;
+    }
+  }
+
+  .organism-population {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/population/penguinInner.png);
+    height: 288px;
+    width: 194px;
+
+    &.change-width {
+      width: 450px;
+    }
+
+    button {
+      // border: none;
+      // background: none;
+      position: absolute;
+    }
+
+    #circulatory-system {
+      left: 27px;
+      top: 134px;
+      height: 88px;
+      width: 128px;
+      border: 1px solid #052978;
+      border-radius: 4px;
+      z-index: 2;
+      animation: opPSmall 1.75s steps(20) infinite;
+      // background-color: transparent;
+      background-color: rgba(217, 235, 255, 0.24);
+    }
+
+    #skeletal-system {
+      // background-image: url(../../assets/images/population/p1_sprite.png);
+      top: -30px;
+      left: 30px;
+      height: 88px;
+      width: 128px;
+      border: 1px solid #052978;
+      border-radius: 4px;
+      animation: opP1Anim 1.75s steps(20) infinite;
+      // background-color: transparent;
+      background-color: rgba(217, 235, 255, 0.24);
+      z-index: 1;
+    }
+
+    .text-position-skeletal-system {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: -56px;
+      // left: 53px;
+      height: 288px;
+      width: 194px;
+
+      &.position2 {
+        left: 264px;
+      }
+
+      .system-label-skeletal-system {
+        height: 288px;
+        width: 194px;
+        position: absolute;
+        top: 57px;
+        left: 1px;
+        color: #35374c;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../assets/images/population/skeletal.png);
+
+        // .pointer-skeletal-system {
+        //   width: 104px;
+        //   height: 5px;
+        //   border-bottom: 1px solid #35374c;
+        //   position: absolute;
+        //   top: -8px;
+        //   left: -69px;
+        //   transform: rotate3d(1, 1, 1, 33deg);
+        //   z-index: 0;
+        // }
+      }
+    }
+
+    .text-position-circulatory-system {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+      position: absolute;
+      top: 159px;
+      left: -4px;
+      height: 288px;
+      width: 194px;
+
+      &.position2 {
+        left: 264px;
+      }
+
+      .system-label-circulatory-system {
+        height: 288px;
+        width: 194px;
+        position: absolute;
+        top: -159px;
+        left: 1px;
+        color: #35374c;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../assets/images/population/circulatory.png);
+
+        // .pointer-circulatory-system {
+        //   width: 104px;
+        //   height: 5px;
+        //   border-bottom: 1px solid #35374c;
+        //   position: absolute;
+        //   top: 201px;
+        //   left: -103px;
+        //   transform: rotate3d(1, 1, 1, 326deg);
+        //   z-index: 0;
+        // }
+      }
+    }
+  }
+
+  .organism-community {
+    background-image: url(../../assets/images/ecosystem/circulatorySystem.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 293px;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    button {
+      position: absolute;
+      // background: none;
+      // border: none;
+    }
+
+    .heart {
+      top: 30px;
+      right: 160px;
+      // height: 28px;
+      // width: 65px;
+      // border-radius: 14px;
+    }
+
+    .blood-vessels {
+      bottom: 190px;
+      right: -106px;
+      // height: 28px;
+      // width: 108px;
+      // border-radius: 14px;
+    }
+
+    .kidney {
+      bottom: 18px;
+      right: 175px;
+      // height: 28px;
+      // width: 73px;
+      // border-radius: 14px;
+    }
+  }
+
+  .heart-system {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 365px;
+    width: 308px;
+    background-size: contain;
+    background-image: url(../../assets/images/ecosystem/heart.png);
+
+    button {
+      position: absolute;
+      // border: none;
+      // background: none;
+    }
+
+    #blood-tissue {
+      top: 127px;
+      left: -88px;
+      // right: 290px;
+      // height: 28px;
+      // width: 105px;
+      // border-radius: 14px;
+    }
+
+    #cardiac-tissue {
+      top: 320px;
+      right: -79px;
+      // left: 275px;
+      // height: 28px;
+      // width: 114px;
+      // border-radius: 14px;
+    }
+
+    #nerve-tissue {
+      top: 350px;
+      left: -71px;
+      // right: 275px;
+      // height: 28px;
+      // width: 105px;
+      // border-radius: 14px;
+    }
+  }
+  .heart-open {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 420px;
+    width: 412px;
+    background-size: contain;
+    background-image: url(../../assets/images/ecosystem/heart-open.png);
+
+    button {
+      position: absolute;
+      // border: none;
+      // background: none;
+    }
+    #blood-cells {
+      top: 9px;
+      left: 0;
+      // height: 28px;
+      // width: 94px;
+      // border-radius: 14px;
+    }
+    #cardiac-cells {
+      top: 365px;
+      right: -32px;
+      // left: 290px;
+      // height: 28px;
+      // width: 148px;
+      // border-radius: 14px;
+    }
+    #nerve-cells {
+      top: 425px;
+      left: 18px;
+      // height: 28px;
+      // width: 95px;
+      // border-radius: 14px;
+    }
+  }
+}
+
+.item-selected {
+  // position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  // top: -5px;
+  // left: -5px;
+  box-shadow: 0 0 0 2px var(--primary-blue);
+  background-color: #ba5b08 !important;
+  border: 1px double #352103 !important;
+  outline: 2px solid #ffffff;
+  outline-offset: -9px;
+}

@@ -1,0 +1,199 @@
+.top-area {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+
+  .bg-img-screen2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/foodchain2.png);
+  }
+
+  .highlighter {
+    border: 2px dashed var(--question-text-blue);
+    border-radius: 4px;
+    opacity: 0;
+    background-color: rgba(217, 235, 255, 0.24);
+    position: absolute;
+    &.no-border {
+      border: none;
+    }
+    &.producers1 {
+      height: 77px;
+      width: 80px;
+      left: 48px;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+    }
+    &.primary1 {
+      height: 108px;
+      width: 145px;
+      left: 34px;
+      bottom: 0px;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    &.secondary1 {
+      height: 100px;
+      width: 96px;
+      left: 220px;
+      bottom: 0px;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+    }
+    &.secondary2 {
+      height: 73px;
+      width: 118px;
+      left: 357px;
+      bottom: 0px;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
+    &.tertairy2 {
+      height: 118px;
+      width: 142px;
+      left: 448px;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      animation-delay: 4s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+.bottom-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .pyramid-wrapper {
+    margin-top: 24px;
+
+    .sr-readonly {
+      width: 324px;
+      height: 276px;
+      overflow: hidden;
+      position: absolute;
+    }
+  }
+  .empty-pyramid {
+    position: relative;
+    background-image: url(../../assets/images/pyramid_empty.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 276px;
+    width: 324px;
+  }
+  .pyramid-sections {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 324px;
+    height: 276px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    animation: fadeIn 1s linear forwards;
+    &.pyramid-plant {
+      animation-delay: 1s;
+      background-image: url(../../assets/images/pyramid_plant.png);
+    }
+
+    &.pyramid-rabbit {
+      animation-delay: 2s;
+      background-image: url(../../assets/images/pyramid_rabbit.png);
+    }
+
+    &.pyramid-snake {
+      animation-delay: 3s;
+      background-image: url(../../assets/images/pyramid_snake_.png);
+    }
+
+    &.pyramid-eagle {
+      animation-delay: 4s;
+      background-image: url(../../assets/images/pyramid_eagle.png);
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    &.pyramid-plant {
+      top: 225px;
+      left: 297px;
+    }
+    &.pyramid-rabbit {
+      top: 155px;
+      left: 255px;
+    }
+
+    &.pyramid-snake {
+      top: 88px;
+      left: 216px;
+    }
+
+    &.pyramid-eagle {
+      top: 23px;
+      left: 178px;
+    }
+  }
+  .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-attention-dark);
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  .pyramid-button {
+    position: relative;
+    height: 28px;
+    width: fit-content;
+    border-radius: 14px;
+    background-color: var(--secondary-attention-dark);
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .dotted-line {
+    box-sizing: border-box;
+    height: 1px;
+    width: 26px;
+    border-bottom: 1px dashed var(--secondary-attention-dark);
+    position: relative;
+    z-index: 1;
+  }
+  .text-info {
+    color: #35374c;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 8px;
+  }
+}
+@keyframes fadeIn {
+  // 0% {
+  //   opacity: 0;
+  // }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,219 @@
+.slider-container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  /* margin-top: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+
+  .slider {
+    @import "./slider/all";
+    height: 33px;
+    position: relative;
+    width: calc(100% - 16px);
+    .slider-custom-track {
+      top: 0;
+      left: 0;
+      height: 9px;
+      border-radius: 4px;
+      position: absolute;
+      width: calc(100% - 4px);
+      border: 1px solid var(--primary-blue);
+      background: rgba(114, 135, 156, 0.15);
+    }
+    input[type="range"] {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      z-index: 0;
+      position: absolute;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    input[type="range"] {
+      &.transparent {
+        &::-webkit-slider-thumb {
+          color: transparent;
+        }
+      }
+    }
+
+    .datalist-bars {
+      top: 0;
+      left: 50%;
+      position: relative;
+      width: calc(98% - 12px);
+      transform: translateX(-50%);
+
+      display: flex;
+      flex-direction: row;
+      .data-list-bar {
+        height: 4px;
+        position: relative;
+        border-right: 2px solid #265867;
+      }
+    }
+
+    .datalist {
+      // left: 50%;
+      position: relative;
+      // margin: 0 5px 0 5px;
+      pointer-events: none;
+      // transform: translateX(-50%);
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .list-item {
+        width: 14px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .marker {
+          height: 9px;
+          position: relative;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .line {
+            height: 8px;
+            display: block;
+            position: relative;
+            border-left: 1px solid var(--primary-blue);
+          }
+
+          // .cube {
+          //   top: 50%;
+          //   left: 50%;
+          //   width: 2px;
+          //   height: 2px;
+          //   content: "";
+          //   background: red;
+          //   position: absolute;
+          //   display: inline-block;
+          //   transform: translate(-50%, -50%);
+          // }
+        }
+
+        .value {
+          font-size: 12px;
+          margin-top: 3px;
+          line-height: 16px;
+          position: relative;
+          font-family: inherit;
+          font-variant-numeric: lining-nums;
+          color: var(--range-slider-unselected-value);
+
+          .list-value {
+            position: relative;
+          }
+
+          .list-label {
+            top: 0;
+            left: 0;
+            display: none;
+            position: absolute;
+          }
+        }
+
+        &.selected {
+          .value {
+            color: var(--question-text-blue);
+          }
+        }
+      }
+
+      &.selected-value-only {
+        .list-item {
+          .value {
+            opacity: 0;
+          }
+
+          &.selected {
+            .value {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &.show-label-only {
+        .list-item {
+          .value {
+            .list-value {
+              display: none;
+            }
+
+            .list-label {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &.disabled {
+      input[type="range"] {
+        pointer-events: none;
+        .slider-custom-track {
+          opacity: 0.6;
+        }
+        // &::-webkit-slider-runnable-track {
+        //   opacity: 0.6;
+        // }
+        // &::-moz-range-track {
+        //   opacity: 0.6;
+        // }
+        // &::-ms-track {
+        //   opacity: 0.6;
+        // }
+
+        &::-webkit-slider-thumb {
+          opacity: 0.8;
+        }
+
+        &::-moz-range-thumb {
+          opacity: 0.8;
+        }
+
+        &::-ms-thumb {
+          opacity: 0.8;
+        }
+      }
+      .datalist {
+        opacity: 0.8;
+        .list-item {
+          &.selected {
+            .marker {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.vertical {
+    margin-top: 95px;
+    transform: rotate(270deg);
+
+    .slider {
+      input[type="range"] {
+        &::-webkit-slider-thumb {
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}

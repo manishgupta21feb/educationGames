@@ -1,0 +1,30 @@
+.intro-popup {
+  display: flex;
+  flex-direction: row;
+
+  .intro-popup-image {
+    width: 379px;
+    height: 270px;
+    margin-top: 16px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/reaction.png);
+  }
+}
+
+.mcq-wrapper {
+  &.hide-submit {
+    .mcq-question-area {
+      .inner-wrapper {
+        .submit-button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.select-dropdown > div {
+  margin-bottom: 4px;
+}

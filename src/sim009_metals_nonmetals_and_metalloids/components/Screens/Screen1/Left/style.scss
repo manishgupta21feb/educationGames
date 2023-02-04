@@ -1,0 +1,44 @@
+.left-area {
+    background: var(--header-button-background);
+    position: relative;
+    height: 100%;
+    .left-element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 157px;
+        position: relative;
+        list-style: none;
+        // position: relative;
+        // height: 100%;
+        // background-size: contain;
+        .Carbon{
+            width: 345px;
+            height: 325px;
+         }
+            .Aluminum{
+                width: 370px;
+               height: 270px;  
+            }
+            .Silicon{
+                width: 405px;
+                height: 305px;
+             }
+
+        
+        .label{
+            height: 20px;
+            width: 100%;
+            color: var(--secondary-attention-dark);
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 46px;
+            // top: 490px;
+            // position: absolute;
+        }
+    }
+    
+}

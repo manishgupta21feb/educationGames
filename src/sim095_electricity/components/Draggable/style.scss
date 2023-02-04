@@ -1,0 +1,272 @@
+.draggables--series {
+  position: absolute;
+  top: 399px;
+  left: 57px;
+  .draggables-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    .draggable {
+      margin: 16px;
+      width: 120px;
+      height: 120px;
+      position: relative;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      button {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        position: relative;
+      }
+
+      .draggable-item {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        box-sizing: border-box;
+        height: 120px;
+        width: 120px;
+        border: 2px dashed #052978;
+        border-radius: 4px;
+        background-color: rgba(217, 235, 255, 0.24);
+        outline: solid 1px transparent;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &.ui-draggable {
+          cursor: grab;
+        }
+        &.ui-draggable-dragging {
+          z-index: 2;
+          cursor: grabbing;
+        }
+        &.selectedItem {
+          background: #d9ebff;
+        }
+        &:focus {
+          border: none;
+          outline: none !important;
+          box-shadow: none !important;
+        }
+        &:not(:disabled) {
+          cursor: grab;
+        }
+        &.disabled {
+          cursor: default;
+          opacity: 0.6;
+        }
+
+        .images {
+          width: 40px;
+          height: 28px;
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          &.fan {
+            background-image: url("../../assets/images/fan.png");
+            width: 85px;
+            height: 85px;
+          }
+          &.bulb {
+            background-image: url("../../assets/images/bulbnowire.png");
+            width: 85px;
+            height: 85px;
+          }
+          &.bell {
+            background-image: url("../../assets/images/bell.png");
+            width: 85px;
+            height: 85px;
+          }
+
+          &.wire {
+            background-image: url("../../assets/images/wire.png");
+
+            height: 94px;
+
+            width: 90px;
+
+            left: 13px;
+            top: 22px;
+          }
+
+          &.battery {
+            background-image: url("../../assets/images/battery.png");
+            top: 44px;
+            left: 7px;
+            transform: rotate(-46deg);
+            width: 104px;
+            height: 36px;
+          }
+
+          &.switch {
+            background-image: url("../../assets/images/switch.png");
+          }
+        }
+      }
+
+      .accessible-button {
+        padding: 0;
+        width: 120px;
+        height: 120px;
+        border: none;
+        box-shadow: none;
+
+        position: absolute;
+        justify-content: center;
+        background-color: transparent;
+
+        &:not(:disabled) {
+          border-radius: 4px;
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+          }
+        }
+      }
+    }
+  }
+}
+
+.draggables--parallel {
+  .draggables-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    .draggable {
+      width: 65px;
+      height: 77px;
+      position: relative;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      button {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        position: relative;
+      }
+
+      .draggable-item {
+        top: 0;
+        left: 0;
+        width: 65px;
+        height: 65px;
+        position: absolute;
+
+        border-radius: 4px;
+        background: white;
+        border: 1px dashed var(--primary-blue);
+        outline: solid 1px transparent;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &.selectedItem {
+          background: #d9ebff;
+        }
+        &:not(:disabled) {
+          cursor: grab;
+        }
+        &.ui-draggable {
+          cursor: grab;
+        }
+        &.ui-draggable-dragging {
+          z-index: 10;
+          cursor: grabbing;
+        }
+        &:focus {
+          border: none;
+          outline: none !important;
+          box-shadow: none !important;
+        }
+
+        &.disabled {
+          cursor: default;
+          opacity: 0.6;
+        }
+
+        .images {
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          &.bulb {
+            background-image: url("../../assets/images/bulbnowire.png");
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            left: 4px;
+          }
+
+          &.wire {
+            background-image: url("../../assets/images/wire.png");
+            width: 54px;
+            height: 46px;
+            position: absolute;
+            top: 11px;
+            left: 4px;
+          }
+
+          &.battery {
+            background-image: url("../../assets/images/battery.png");
+            width: 65px;
+            height: 19px;
+            transform: rotate(-47deg);
+          }
+        }
+      }
+
+      .accessible-button {
+        padding: 0;
+        width: 65px;
+        height: 65px;
+        border: none;
+        box-shadow: none;
+
+        position: absolute;
+        justify-content: center;
+        background-color: transparent;
+
+        &:not(:disabled) {
+          border-radius: 4px;
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+          }
+        }
+      }
+
+      .label {
+        top: 66px;
+        font-size: 12px;
+        margin-left: 2px;
+        color: #35374c;
+        position: absolute;
+      }
+    }
+  }
+}

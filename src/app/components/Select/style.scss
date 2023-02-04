@@ -1,0 +1,195 @@
+.select-dropdown {
+  width: 100%;
+  position: relative;
+  color: var(--primary-blue);
+
+  > div {
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: var(--lightgreyshade);
+    font-weight: 500;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    color: var(--question-text-blue);
+    border-radius: 4px;
+    position: relative;
+    background: transparent;
+    border: 1px solid var(--primary-blue) !important;
+
+    span {
+      font-size: 12px;
+      font-variant: lining-nums;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    &::after {
+      top: 50%;
+      right: 8px;
+      content: "";
+      position: absolute;
+      transition: all 0.1s;
+      background: transparent;
+      transform: translateY(-50%);
+      vertical-align: -webkit-baseline-middle;
+
+      width: 0;
+      height: 0;
+      border-top: 8px solid var(--question-text-blue);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+
+    &:focus:not(:disabled) {
+      box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary-blue);
+    }
+    &:hover:not(:disabled) {
+      box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue);
+    }
+  }
+
+  &.incorrect {
+    button {
+      border: 1px solid #c00d01 !important;
+    }
+  }
+
+  &.opened {
+    button {
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  .button-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    border-radius: 4px;
+    position: absolute;
+    background: transparent;
+  }
+
+  .accessible-list {
+    top: 36px;
+    left: -1px;
+    overflow-y: auto;
+    min-height: 80px;
+    min-height: 111px;
+    max-height: 134px;
+    border-radius: 4px;
+    width: calc(100% + 2px);
+
+    .list {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        // padding: 4px;
+        height: 36px;
+        display: block;
+        border-bottom: 1px solid #d3d3d3;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          padding: 0;
+          height: 102%;
+          display: block;
+          box-shadow: none;
+          overflow: hidden;
+          font-size: unset;
+          border-radius: 0;
+          line-height: unset;
+          text-decoration: none;
+          // padding: 4px 4px 3px 4px;
+          font-variant: lining-nums;
+          color: var(--question-text-blue);
+
+          position: relative;
+
+          > div {
+            width: 100%;
+            height: 101%;
+            padding: 8px;
+            display: block;
+            border-radius: 8px;
+            position: absolute;
+            pointer-events: none;
+
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-start;
+            span {
+              width: 16px;
+              height: 16px;
+              margin-right: 4px;
+              display: inline-block;
+
+              &.selected {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url(../../../app/assets/images/dropdown_tick.svg);
+              }
+
+              &:nth-child(2) {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+
+          &:focus,
+          &:hover,
+          &:active {
+            > div {
+              background: none;
+              color: var(--question-text-blue);
+              box-shadow: inset 0 0 0 4px white,
+                inset 0 0 0 6px var(--primary-blue);
+            }
+          }
+
+          &:hover {
+            > div {
+              box-shadow: inset 0 0 0 4px white,
+                inset 0 0 0 5px var(--primary-blue) !important;
+            }
+          }
+
+          &:focus-visible {
+            outline: none;
+            > div {
+              outline: none;
+            }
+          }
+        }
+
+        &.selected {
+          a {
+            > div {
+              background-color: #bde4ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

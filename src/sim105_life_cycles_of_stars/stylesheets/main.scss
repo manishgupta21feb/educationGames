@@ -1,0 +1,299 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/fonts/open_sans_regular.ttf") format("truetype");
+}
+
+.activity-container {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+
+  div[role="main"] {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .leftright {
+      .left {
+        .left-wrapper {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .hotspot-wrapper {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.hotspot1 {
+              top: 218px;
+              left: 14px;
+              z-index: 1;
+            }
+
+            &.hotspot2 {
+              top: 494px;
+              left: 434px;
+            }
+
+            &.hotspot3 {
+              top: 390px;
+              left: 158px;
+            }
+
+            &.hotspot4 {
+              top: 302px;
+              left: 250px;
+            }
+
+            &.hotspot5 {
+              top: 264px;
+              left: 440px;
+            }
+
+            &.hotspot6 {
+              top: 124px;
+              left: 326px;
+            }
+          }
+
+          .label-wrapper {
+            position: absolute;
+            p {
+              color: white;
+            }
+
+            &.hotspot1 {
+              top: 310px;
+              left: -52px;
+              transform: rotate(270deg);
+            }
+
+            &.hotspot2 {
+              left: 50%;
+              top: 492px;
+              transform: translateX(-50%);
+
+              p {
+                white-space: nowrap;
+              }
+            }
+
+            &.hotspot3 {
+              top: 390px;
+              right: 254px;
+            }
+
+            &.hotspot4 {
+              top: 290px;
+              left: 276px;
+              width: 70px;
+              text-align: center;
+            }
+
+            &.hotspot5 {
+              top: 262px;
+              left: 380px;
+            }
+
+            &.hotspot6 {
+              top: 96px;
+              left: 296px;
+            }
+          }
+
+          .graph {
+            p {
+              color: white;
+              font-size: 10px;
+              font-variant: lining-nums;
+            
+            }
+
+            &.x-axis {
+              left: 24px;
+              top: 180px;
+              width: 32px;
+              height: 288px;
+              position: absolute;
+
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: space-between;
+
+              p {
+                position: absolute;
+                &:nth-child(1) {
+                  top: 0;
+                }
+                &:nth-child(2) {
+                  top: 204px;
+                }
+                &:nth-child(3) {
+                  top: 136px;
+                }
+                &:nth-child(4) {
+                  top: 68px 
+                }
+                &:nth-child(1) {
+                  top: 264px;
+                }
+              }
+            }
+
+            &.y-axis {
+              left: 112px;
+              width: 406px;
+              bottom: 126px;
+              position: absolute;
+
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: space-between;
+
+              p {
+                color: black;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        overflow: unset;
+        .right-wrapper {
+          width: 100%;
+          height: 100%;
+          // padding-top: 80px;
+          position: relative;
+
+          .mcq-question-area {
+            .inner-wrapper {
+              .radiobuttons {
+                .radiobutton {
+                  .radiobutton-inner-wrapper {
+                    input[type="radio"] + div + label {
+                      margin-top: 3px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .ost-instruction {
+            color: #052978;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 16px;
+            letter-spacing: 0.25px;
+          }
+
+          .draggable {
+            width: 102px;
+            height: 102px;
+            position: relative;
+            &:first-child {
+              margin-right: 8px;
+              margin-bottom: 8px;
+            }
+            .accessible-button {
+              width: 100%;
+              height: 100%;
+              border: none;
+              outline: none;
+              overflow: hidden;
+              border-radius: 1px;
+              color: transparent;
+              background: transparent;
+              border: 1px solid transparent;
+
+              &:not(:disabled) {
+                &:focus {
+                  outline: none;
+                  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary-blue);
+                }
+              }
+            }
+            .draggable-element {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              position: absolute;
+              background: white;
+              font-variant: lining-nums;
+              border: 1px dashed var(--primary-blue);
+
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
+
+              font-size: 10px;
+              color: #000000;
+              font-weight: 500;
+              line-height: 14px;
+              text-align: center;
+              letter-spacing: 0.6px;
+
+              .circle {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background: rgba(217, 235, 255, 0.24);
+                border: 1px solid var(--question-text-blue);
+
+                display: flex;
+                padding-top: 2px;
+                padding-left: 2px;
+                align-items: center;
+                justify-content: center;
+              }
+
+              .text-node {
+                margin-top: 8px;
+              }
+
+              &.ui-draggable {
+                &:not(.ui-draggable-disabled) {
+                  cursor: grab;
+                }
+                &-dragging {
+                  z-index: 2;
+                }
+              }
+            }
+          }
+
+          .btn {
+            &.toast-secondary-button {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .opensans-label {
+    font-family: OpenSans;
+  }
+
+  @import "./activity/main.scss";
+}

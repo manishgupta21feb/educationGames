@@ -1,0 +1,410 @@
+.activity_area {
+  margin: 80px 24px;
+  .headinglevelDiv {
+    height: 40px;
+    margin-bottom: 14px;
+
+    .headingLevel2 {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      color: #052978;
+    }
+  }
+
+  .accessible-list {
+    top: 325px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    &.drop_list {
+      width: 752px;
+      height: 116px;
+      ul {
+        .listitem {
+          height: 112px;
+          position: absolute;
+          padding: 9px 11px;
+          width: 132px;
+          //visibility: hidden;
+          // &.selected{
+          //  visibility: visible;
+          // }
+          &.mon_day {
+            left: 9px;
+            width: 132px;
+          }
+          &.tues_day {
+            left: 159px;
+          }
+          &.wed_day {
+            left: 309px;
+          }
+          &.thurs_day {
+            left: 459px;
+          }
+          &.fri_day {
+            right: 11px;
+          }
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .headerRow {
+    .wrapperContainer {
+      display: flex;
+      .section-wrapper {
+        .button-wrapper {
+          width: 150px;
+          padding: 4px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-top: 1px solid var(--dark-grey);
+          background: linear-gradient(180deg, #fff 0%, #f0f0f0 100%);
+          box-shadow: inset 1px 0 0 0 var(--dark-grey);
+          &.wrapper_4 {
+            box-shadow: inset -1px 0 0 0 var(--dark-grey),
+              inset 1px 0 0 0 var(--dark-grey);
+          }
+          .btn {
+            height: 32px;
+            padding: 6px 16px;
+            &.weekButton {
+              border: 2px solid var(--primary-blue);
+              border-radius: 18px;
+              background-color: var(--white);
+              cursor: pointer;
+              &.visited {
+                border: 2px solid #c9c9cf;
+                background-color: #ffffff;
+                .text {
+                  color: #6b6b76;
+                }
+              }
+            }
+
+            .text {
+              color: var(--primary-blue);
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 0.25px;
+              line-height: 20px;
+            }
+            &:focus:not(:disabled) {
+              box-shadow: 0 0 0 1px var(--white), 0 0 0 3px var(--primary-blue);
+            }
+            &:hover:not(:disabled) {
+              box-shadow: 0 0 0 1px var(--white), 0 0 0 2px var(--primary-blue);
+            }
+            &:disabled {
+              opacity: 1;
+            }
+            &.active {
+              background-color: var(--primary-blue);
+              cursor: default;
+              border: none;
+              .text {
+                color: var(--white);
+              }
+            }
+            &.not-visited {
+              opacity: 0.6;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottomContainer {
+    display: flex;
+
+    .droppable-containers {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      align-items: flex-start;
+      justify-content: space-between;
+      .bottom-wrapper {
+        height: 273px;
+        width: 150px;
+        box-shadow: inset 1px 0 0 0 var(--dark-grey),
+          inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+        padding: 9px 9px;
+        background-color: rgba(217, 235, 255, 0.24);
+        flex-direction: column;
+        &.wrapper_4 {
+          box-shadow: inset -1px 0 0 0 var(--dark-grey),
+            inset 1px 0 0 0 var(--dark-grey), inset 0 -1px 0 0 var(--dark-grey),
+            inset 0 1px 0 0 var(--dark-grey);
+        }
+        .drop_img {
+          width: 132px;
+          height: 111px;
+          border: 1px dashed #0056b3;
+          border-radius: 4px;
+          background-color: #ffffff;
+          margin-top: 12px;
+         
+        
+          &.ui-droppable-hover {
+            background-color: rgba(0, 86, 179, 0.12);
+          
+          }
+          &.season1,
+          &.season2,
+          &.season3,
+          &.season4 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+
+            &.showImg {
+              opacity: 1;
+            }
+          }
+        }
+        &.season1 {
+          .day_img {
+            width: 132px;
+            height: 132px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            &.Monday {
+              background-image: url("../../assets/images/mon_data1.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Tuesday {
+              background-image: url("../../assets/images/tues_data1.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Wednesday {
+              background-image: url("../../assets/images/wed_data1.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Thursday {
+              background-image: url("../../assets/images/thur_data1.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Friday {
+              background-image: url("../../assets/images/fri_data1.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+          }
+          .dropped_img {
+            width: 132px;
+            height: 132px;
+            margin: 0px auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.mon_day {
+              background-image: url("../../assets/images/dragRain_summer.png");
+            }
+            &.tues_day,
+            &.thurs_day,
+            &.fri_day {
+              background-image: url("../../assets/images/dragSun_summer.png");
+            }
+            &.wed_day {
+              background-image: url("../../assets/images/dragRainbow_summer.png");
+            }
+          }
+        }
+        &.season2 {
+          .day_img {
+            width: 132px;
+            height: 132px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            &.Monday {
+              background-image: url("../../assets/images/mon_data2.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Tuesday {
+              background-image: url("../../assets/images/tues_data2.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Wednesday {
+              background-image: url("../../assets/images/wed_data2.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Thursday {
+              background-image: url("../../assets/images/thur_data2.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Friday {
+              background-image: url("../../assets/images/fri_data2.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+          }
+          .dropped_img {
+            width: 132px;
+            height: 132px;
+            margin: 0px auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.mon_day,
+            &.wed_day,
+            &.thurs_day,
+            &.fri_day {
+              background-image: url("../../assets/images/drag_redThermo.png");
+            }
+            &.tues_day {
+              background-image: url("../../assets/images/drag_windsock.png");
+            }
+          }
+        }
+        &.season3 {
+          .day_img {
+            width: 132px;
+            height: 132px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            &.Monday {
+              background-image: url("../../assets/images/mon_data3.png");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Tuesday {
+              background-image: url("../../assets/images/tues_data3.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Wednesday {
+              background-image: url("../../assets/images/wed_data3.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Thursday {
+              background-image: url("../../assets/images/thur_data3.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Friday {
+              background-image: url("../../assets/images/fri_data3.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+          }
+          .dropped_img {
+            width: 132px;
+            height: 132px;
+            margin: 0px auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.mon_day,
+            &.wed_day,
+            &.thurs_day {
+              background-image: url("../../assets/images/drag_windsock.png");
+            }
+            &.tues_day {
+              background-image: url("../../assets/images/drag_rainCloud.png");
+            }
+            &.fri_day {
+              background-image: url("../../assets/images/drag_clouds.png");
+            }
+          }
+        }
+        &.season4 {
+          .day_img {
+            width: 132px;
+            height: 132px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            &.Monday {
+              background-image: url("../../assets/images/mon_data4.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Tuesday {
+              background-image: url("../../assets/images/tues_data4.png");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Wednesday {
+              background-image: url("../../assets/images/wed_data4.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Thursday {
+              background-image: url("../../assets/images/thur_data4.png");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+            &.Friday {
+              background-image: url("../../assets/images/fri_data4.jpg");
+              &.showImg {
+                opacity: 1;
+              }
+            }
+          }
+          .dropped_img {
+            width: 132px;
+            height: 132px;
+            margin: 0px auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.wed_day,
+            &.thurs_day,
+            &.tues_day {
+              background-image: url("../../assets/images/drag_blueThermo.png");
+            }
+            &.mon_day,
+            &.fri_day {
+              background-image: url("../../assets/images/drag_snowflakes.png");
+            }
+          }
+        }
+      }
+    }
+  }
+}

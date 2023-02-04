@@ -1,0 +1,254 @@
+.droppables-wrapper {
+  //   width: 90%;
+  height: 104px;
+  position: relative;
+  top: 100px;
+  left: 24px;
+  display: flex;
+  margin-left: 20px;
+
+  .dropzones {
+    border-radius: 4px;
+    background: #d9ebff;
+    border: 1px dashed var(--primary-blue);
+    outline: solid 1px transparent;
+    width: 104px;
+    height: 104px;
+    margin-right: 48px;
+
+    .images {
+      position: absolute;
+      width: 104px;
+      height: 104px;
+      display: flex;
+      align-items: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &.sun {
+        background-image: url("../../../assets/images/sun_dropzone.png");
+      }
+
+      &.sunflower {
+        background-image: url("../../../assets/images/flower_dropzone.png");
+      }
+
+      &.mouse {
+        background-image: url("../../../assets/images/mouse_dropzone.png");
+      }
+
+      &.snake {
+        background-image: url("../../../assets/images/snake_dropzone.png");
+      }
+      &.hawk {
+        background-image: url("../../../assets/images/hawk_dropzone.png");
+      }
+    }
+
+    &.white-background {
+      background: white;
+    }
+  }
+
+  .accessible-list {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      li {
+        position: relative;
+        height: 104px;
+        width: 104px;
+
+        a {
+          padding: 0;
+          line-height: unset;
+          width: 100%;
+          height: 100%;
+          display: block;
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+
+          div {
+            display: none;
+          }
+        }
+
+        &:nth-child(1) {
+          position: absolute;
+          left: 0px;
+          top: 1px;
+        }
+
+        &:nth-child(2) {
+          position: absolute;
+          left: 153px;
+          top: 1px;
+        }
+
+        &:nth-child(3) {
+          position: absolute;
+          left: 303px;
+          top: 1px;
+        }
+
+        &:nth-child(4) {
+          position: absolute;
+          left: 455px;
+          top: 1px;
+        }
+
+        &:nth-child(5) {
+          position: absolute;
+          left: 608px;
+          top: 1px;
+        }
+      }
+    }
+  }
+
+  .arrow1 {
+    &.arrow {
+      position: absolute;
+      width: 55px;
+      height: 13px;
+      top: 90px;
+      left: 50px;
+      display: flex;
+
+      .arrow-tail {
+        top: 21px;
+        left: -12px;
+        height: 2px;
+        position: absolute;
+        transform: rotate(90deg);
+        border-right: 34px solid #052978;
+      }
+
+      &.arrow-head {
+        top: 48px;
+        left: 137px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: rotate(90deg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../../../assets/images/arrow-head.svg");
+      }
+    }
+  }
+
+  .arrow2 {
+    &.arrow {
+      position: absolute;
+      width: 55px;
+      height: 13px;
+      top: 90px;
+      left: 290px;
+      display: flex;
+
+      .arrow-tail {
+        top: 21px;
+        left: -12px;
+        height: 2px;
+        position: absolute;
+        transform: rotate(90deg);
+        border-right: 34px solid #052978;
+      }
+
+      &.arrow-head {
+        top: 48px;
+        // left: 290px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: rotate(90deg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../../../assets/images/arrow-head.svg");
+      }
+    }
+  }
+
+  .arrow3 {
+    &.arrow {
+      position: absolute;
+      width: 55px;
+      height: 13px;
+      top: 90px;
+      left: 442px;
+      display: flex;
+
+      .arrow-tail {
+        top: 21px;
+        left: -12px;
+        height: 2px;
+        position: absolute;
+        transform: rotate(90deg);
+        border-right: 34px solid #052978;
+      }
+
+      &.arrow-head {
+        top: 48px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: rotate(90deg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../../../assets/images/arrow-head.svg");
+      }
+    }
+  }
+
+  .arrow4 {
+    &.arrow {
+      position: absolute;
+      width: 55px;
+      height: 13px;
+      top: 90px;
+      left: 594px;
+      display: flex;
+
+      .arrow-tail {
+        top: 21px;
+        left: -12px;
+        height: 2px;
+        position: absolute;
+        transform: rotate(90deg);
+        border-right: 34px solid #052978;
+      }
+
+      &.arrow-head {
+        top: 48px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: rotate(90deg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../../../assets/images/arrow-head.svg");
+      }
+    }
+  }
+}

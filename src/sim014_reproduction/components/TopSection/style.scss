@@ -1,0 +1,65 @@
+.top-interactive {
+  height: 100%;
+  position: relative;
+  .outdoor-screen {
+    width: 800px;
+    height: 318px;
+    background-image: url("../../assets/images/reproduction_main_screen.png");
+    background-size: contain;
+    #wildflower {
+      bottom: 130px;
+      left: 64px;
+    }
+    #bunnies {
+      right: 115px;
+      bottom: 143px;
+    }
+    #strawberry-plant {
+      left: 176px;
+      top: 24px;
+    }
+    #hydra {
+      left: 310px;
+      top: 118px;
+    }
+    .btn {
+      &.hotspot-btn {
+        position: absolute;
+      }
+    }
+  }
+
+  .sr-only-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: transparent;
+    position: absolute;
+  }
+}
+
+.top-static {
+  .hydra-image,
+  .bunnies-image,
+  .wildflower-image,
+  .strawberry-plant-image {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+  }
+  .hydra-image {
+    background-image: url(../../assets/images/reproduction_hydra.png);
+  }
+  .bunnies-image {
+    background-image: url(../../assets/images/reproduction_bunnies.png);
+  }
+  .wildflower-image {
+    background-image: url(../../assets/images/reproduction_wildflower.png);
+  }
+  .strawberry-plant-image {
+    background-image: url(../../assets/images/reproduction_strawberry.png);
+  }
+}

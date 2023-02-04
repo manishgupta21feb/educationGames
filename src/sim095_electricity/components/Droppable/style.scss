@@ -1,0 +1,1007 @@
+.droppables--series {
+  .droppables-wrapper {
+    .dropzones {
+      top: 106px;
+      width: 490px;
+      bottom: 97px;
+      height: 295px;
+
+      position: absolute;
+
+      .dropped-objects {
+        width: 161px;
+        height: 34px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.fan {
+          top: -42px;
+          width: 527px;
+          left: -198px;
+          height: 146px;
+          overflow: hidden;
+          position: absolute;
+          background-size: auto;
+          transform: scale(0.32);
+          background-repeat: no-repeat;
+          background-image: url("../../assets/images/fan_sprite.png");
+
+          &.dropzone1 {
+            left: -188px;
+          }
+          &.dropzone2 {
+            left: -189px;
+          }
+          &.dropzone4 {
+            left: -187px;
+            top: -46px;
+          }
+          &.dropzone5 {
+            left: -191px;
+            top: -46px;
+          }
+          &.dropzone6 {
+            top: -44px;
+            left: -196px;
+          }
+          &.dropzone7 {
+            top: -35px;
+          }
+        }
+
+        &.fan-animation {
+          animation: fan-on 1s steps(9) infinite;
+        }
+        &.fan-animation-1 {
+          animation: fan-on 1s steps(9) infinite;
+        }
+
+        &.wire {
+          left: 54px;
+          top: -47px;
+          width: 26px;
+          height: 166px;
+          transform: rotate(90deg);
+          position: absolute;
+          background-image: url("../../assets/images/wire_droppable.png");
+          &.dropzone1 {
+            top: -50px;
+            left: 59px;
+          }
+          &.dropzone2 {
+            left: 61px;
+            top: -50px;
+          }
+          &.dropzone4 {
+            left: 61px;
+            top: -53px;
+          }
+          &.dropzone5 {
+            top: -52px;
+            left: 58px;
+          }
+          &.dropzone7 {
+            left: 54px;
+            top: -38px;
+          }
+        }
+
+        &.battery {
+          top: 16px;
+          left: -18px;
+          width: 166px;
+          height: 30px;
+          position: absolute;
+          background-image: url("../../assets/images/battery_wire.png");
+          &.dropzone1 {
+            transform: rotate(180deg);
+            left: -9px;
+          }
+          &.dropzone2 {
+            transform: rotate(180deg);
+            left: -9px;
+            top: 17px;
+          }
+          &.dropzone3 {
+            left: -18px;
+            top: 20px;
+          }
+
+          &.dropzone4 {
+            left: -8px;
+            top: 14px;
+          }
+
+          &.dropzone5 {
+            top: 14px;
+            left: -13px;
+          }
+          &.dropzone6 {
+            transform: rotate(180deg);
+            top: 17px;
+            left: -14px;
+          }
+          &.dropzone7 {
+            transform: rotate(180deg);
+            top: 25px;
+            left: -15px;
+          }
+        }
+        &.bulbs-wrapper {
+          top: 16px;
+          left: -18px;
+          width: 166px;
+          height: 30px;
+          position: absolute;
+          .bulb_verticle {
+            background-image: url("../../assets/images/bulb_off.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 57px;
+            height: 157px;
+            transform: rotate(90deg);
+            &.dropzone3 {
+              top: -65px;
+              left: 55px;
+              position: absolute;
+            }
+            &.dropzone6 {
+              top: -67px;
+              left: 59px;
+              position: absolute;
+            }
+            &.dropzone7 {
+              top: -58px;
+              left: 58px;
+              position: absolute;
+            }
+          }
+          .bulb_verticle_on {
+            background-image: url("../../assets/images/bulb_on.png") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone3 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -65px;
+              left: 55px;
+              position: absolute;
+            }
+            &.dropzone6 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -67px;
+              left: 59px;
+              position: absolute;
+            }
+            &.dropzone7 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -59px;
+              left: 58px;
+              position: absolute;
+            }
+          }
+          .bulb_verticle_on_brighter {
+            background-image: url("../../assets/images/bulb_on.png") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone3 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -65px;
+              left: 55px;
+              position: absolute;
+            }
+            &.dropzone6 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -69px;
+              left: 53px;
+              position: absolute;
+            }
+            &.dropzone7 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -64px;
+              left: 53px;
+              position: absolute;
+            }
+          }
+          .bulb_hori {
+            background-image: url("../../assets/images/bulb1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone1 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 9px;
+              position: absolute;
+            }
+            &.dropzone2 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 9px;
+              position: absolute;
+            }
+            &.dropzone4 {
+              width: 164px;
+              height: 56px;
+              top: -31px;
+              left: 9px;
+              position: absolute;
+            }
+            &.dropzone5 {
+              width: 164px;
+              height: 56px;
+              top: -31px;
+              left: 8px;
+              position: absolute;
+            }
+          }
+          .bulb_hori_on {
+            background-image: url("../../assets/images/bulb1_on.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 164px;
+            height: 56px;
+            &.dropzone1 {
+              top: -25px;
+              left: 10px;
+              position: absolute;
+            }
+            &.dropzone2 {
+              top: -25px;
+              left: 11px;
+              position: absolute;
+            }
+            &.dropzone4 {
+              top: -31px;
+              left: 11px;
+              position: absolute;
+            }
+            &.dropzone5 {
+              top: -31px;
+              left: 9px;
+              position: absolute;
+            }
+          }
+          .bulb_hori_on_brighter {
+            background-image: url("../../assets/images/bulb1_on.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 164px;
+            height: 56px;
+            &.dropzone1 {
+              top: -25px;
+              left: 2px;
+              position: absolute;
+            }
+            &.dropzone2 {
+              top: -25px;
+              left: 3px;
+              position: absolute;
+            }
+            &.dropzone4 {
+              top: -28px;
+              left: 4px;
+              position: absolute;
+            }
+            &.dropzone5 {
+              top: -28px;
+              left: 1px;
+              position: absolute;
+            }
+          }
+
+          .show {
+            opacity: 1;
+          }
+          .hide {
+            opacity: 0;
+          }
+        }
+
+        &.bell {
+          top: -42px;
+          width: 527px;
+          left: -198px;
+          height: 146px;
+          overflow: hidden;
+          position: absolute;
+          background-size: auto;
+          transform: scale(0.32);
+          background-repeat: no-repeat;
+          background-image: url("../../assets/images/Spritehorizonalbell.png");
+          &.bell-animation {
+            animation: bell-on 1s steps(5) infinite;
+          }
+          &.bell-animation-1 {
+            animation: bell-on-1 1s steps(5) infinite;
+          }
+          &.dropzone1 {
+            background-image: url("../../assets/images/Spritehorizonalbell.png");
+            top: -83px;
+            left: -210px;
+
+            transform: scale(0.3);
+            width: 565px;
+            height: 192px;
+          }
+          &.dropzone2 {
+            background-image: url("../../assets/images/Spritehorizonalbell.png");
+            top: -83px;
+            left: -210px;
+
+            transform: scale(0.3);
+            width: 565px;
+            height: 192px;
+          }
+          &.dropzone3 {
+            background-image: url("../../assets/images/Spriteverticalbell.png");
+            transform: scale(0.3) rotate(270deg);
+            width: 164px;
+            height: 559px;
+            top: -261px;
+            left: -18px;
+          }
+
+          &.dropzone4 {
+            background-image: url("../../assets/images/Spritehorizonalbell.png");
+            top: -83px;
+            left: -210px;
+
+            transform: scale(0.3);
+            width: 565px;
+            height: 192px;
+          }
+
+          &.dropzone5 {
+            background-image: url("../../assets/images/Spritehorizonalbell.png");
+            top: -83px;
+            left: -210px;
+
+            transform: scale(0.3);
+            width: 565px;
+            height: 192px;
+          }
+          &.dropzone6 {
+            background-image: url("../../assets/images/Spriteverticalbell.png");
+            transform: scale(0.3) rotate(270deg);
+            width: 164px;
+            height: 559px;
+            top: -261px;
+            left: -18px;
+          }
+          &.dropzone7 {
+            background-image: url("../../assets/images/Spriteverticalbell.png");
+            transform: scale(0.3) rotate(270deg);
+            width: 164px;
+            height: 559px;
+            top: -253px;
+            left: -16px;
+          }
+        }
+      }
+
+      &.dropzone1 {
+        top: 103px;
+        left: 110px;
+        height: 60px;
+        width: 143px;
+      }
+
+      &.dropzone2 {
+        top: 103px;
+        left: 283px;
+        height: 60px;
+        width: 143px;
+      }
+
+      &.dropzone3 {
+        top: 195px;
+        left: 373px;
+        width: 132px;
+        height: 60px;
+        transform: rotate(-90deg);
+      }
+
+      &.dropzone4 {
+        top: 293px;
+        left: 282px;
+        height: 54px;
+        width: 143px;
+      }
+
+      &.dropzone5 {
+        top: 293px;
+        left: 111px;
+        height: 54px;
+        width: 143px;
+      }
+
+      &.dropzone6 {
+        top: 199px;
+        left: 27px;
+        width: 132px;
+        height: 60px;
+        transform: rotate(-90deg);
+      }
+
+      &.dropzone7 {
+        top: 194px;
+        left: 197px;
+        width: 131px;
+        height: 69px;
+        transform: rotate(-90deg);
+      }
+
+      @keyframes fan-on {
+        from {
+          background-position: 0px;
+        }
+        to {
+          background-position: -4743px;
+        }
+      }
+      @keyframes bell-on {
+        from {
+          background-position: 0px;
+        }
+        to {
+          background-position: -2825px;
+        }
+      }
+      @keyframes bell-on-1 {
+        from {
+          background-position: 0px;
+        }
+        to {
+          background-position: -820px;
+        }
+      }
+    }
+
+    .accessible-list {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+
+      ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        li {
+          position: relative;
+          height: 55px;
+          width: 155px;
+
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: none;
+            &:focus,
+            &:hover {
+              color: transparent;
+              background-color: transparent;
+            }
+
+            div {
+              display: none;
+            }
+          }
+
+          &:nth-child(1) {
+            position: absolute;
+            left: 105px;
+            top: 109px;
+          }
+
+          &:nth-child(2) {
+            position: absolute;
+            left: 278px;
+            top: 109px;
+          }
+
+          &:nth-child(3) {
+            position: absolute;
+            left: 413px;
+            top: 167px;
+            width: 63px;
+            height: 125px;
+            transform: rotate(180deg);
+          }
+
+          &:nth-child(4) {
+            position: absolute;
+            left: 278px;
+            top: 298px;
+          }
+
+          &:nth-child(5) {
+            position: absolute;
+            left: 106px;
+            top: 295px;
+          }
+
+          &:nth-child(6) {
+            top: 167px;
+            left: 72px;
+            width: 63px;
+            height: 125px;
+            position: absolute;
+            transform: rotate(180deg);
+          }
+
+          &:nth-child(7) {
+            top: 167px;
+            left: 235px;
+            width: 63px;
+            height: 125px;
+            position: absolute;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.droppables--parallel {
+  .droppables-wrapper {
+    .dropzones {
+      top: 106px;
+      width: 490px;
+      bottom: 97px;
+      height: 295px;
+
+      position: absolute;
+
+      .dropped-objects {
+        width: 161px;
+        height: 34px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.bulbs-wrapper {
+          top: 16px;
+          left: -18px;
+          width: 166px;
+          height: 30px;
+          position: absolute;
+          .bulb_verticle {
+            background-image: url("../../assets/images/bulb_off.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone3 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -65px;
+              left: 55px;
+              position: absolute;
+            }
+            &.dropzone6 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -69px;
+              left: 53px;
+              position: absolute;
+            }
+            &.dropzone7 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -64px;
+              left: 53px;
+              position: absolute;
+            }
+          }
+          .bulb_verticle_on {
+            background-image: url("../../assets/images/bulb_on.png") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone3 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -65px;
+              left: 55px;
+              position: absolute;
+            }
+            &.dropzone6 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -69px;
+              left: 53px;
+              position: absolute;
+            }
+            &.dropzone7 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -64px;
+              left: 53px;
+              position: absolute;
+            }
+          }
+          .bulb_verticle_on_brighter {
+            background-image: url("../../assets/images/bulb_on.png") !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone3 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -65px;
+              left: 55px;
+              position: absolute;
+            }
+            &.dropzone6 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -69px;
+              left: 53px;
+              position: absolute;
+            }
+            &.dropzone7 {
+              width: 57px;
+              height: 157px;
+              transform: rotate(90deg);
+              top: -64px;
+              left: 53px;
+              position: absolute;
+            }
+          }
+          .bulb_hori {
+            background-image: url("../../assets/images/bulb1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone1 {
+              width: 164px;
+              height: 56px;
+              top: -25px;
+              left: 2px;
+              position: absolute;
+            }
+            &.dropzone2 {
+              width: 164px;
+              height: 56px;
+              top: -25px;
+              left: 3px;
+              position: absolute;
+            }
+            &.dropzone4 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 4px;
+              position: absolute;
+            }
+            &.dropzone5 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 1px;
+              position: absolute;
+            }
+          }
+          .bulb_hori_on {
+            background-image: url("../../assets/images/bulb1_on.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone1 {
+              width: 164px;
+              height: 56px;
+              top: -25px;
+              left: 2px;
+              position: absolute;
+            }
+            &.dropzone2 {
+              width: 164px;
+              height: 56px;
+              top: -25px;
+              left: 3px;
+              position: absolute;
+            }
+            &.dropzone4 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 4px;
+              position: absolute;
+            }
+            &.dropzone5 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 1px;
+              position: absolute;
+            }
+          }
+          .bulb_hori_on_brighter {
+            background-image: url("../../assets/images/bulb1_on.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.dropzone1 {
+              width: 164px;
+              height: 56px;
+              top: -25px;
+              left: 2px;
+              position: absolute;
+            }
+            &.dropzone2 {
+              width: 164px;
+              height: 56px;
+              top: -25px;
+              left: 3px;
+              position: absolute;
+            }
+            &.dropzone4 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 4px;
+              position: absolute;
+            }
+            &.dropzone5 {
+              width: 164px;
+              height: 56px;
+              top: -28px;
+              left: 1px;
+              position: absolute;
+            }
+          }
+
+          .show {
+            opacity: 1;
+          }
+          .hide {
+            opacity: 0;
+          }
+        }
+
+        &.wire {
+          left: 54px;
+          top: -47px;
+          width: 26px;
+          height: 166px;
+          transform: rotate(90deg);
+          position: absolute;
+          background-image: url("../../assets/images/wire_droppable.png");
+          &.dropzone3 {
+            left: 51px;
+            top: -45px;
+          }
+          &.dropzone6 {
+            left: 50px;
+            top: -48px;
+          }
+          &.dropzone7 {
+            top: -44px;
+            left: 50px;
+          }
+        }
+
+        &.battery {
+          top: 19px;
+          left: -18px;
+          width: 166px;
+          height: 30px;
+          position: absolute;
+          background-image: url("../../assets/images/battery_wire.png");
+          &.dropzone1 {
+            top: 21px;
+            left: -16px;
+          }
+          &.dropzone2 {
+            left: -16px;
+            top: 23px;
+          }
+          &.dropzone3 {
+            transform: rotate(180deg);
+          }
+
+          &.dropzone4 {
+            transform: rotate(180deg);
+            left: -15px;
+          }
+
+          &.dropzone5 {
+            transform: rotate(180deg);
+            top: 15px;
+          }
+          &.dropzone7 {
+            left: -20px;
+            top: 22px;
+          }
+        }
+        &.bulb_on {
+          background-color: red;
+        }
+      }
+
+      &.dropzone1 {
+        top: 172px;
+        left: 110px;
+        height: 60px;
+        width: 143px;
+      }
+
+      &.dropzone2 {
+        top: 172px;
+        left: 283px;
+        height: 60px;
+        width: 143px;
+      }
+
+      &.dropzone3 {
+        top: 267px;
+        left: 366px;
+        width: 132px;
+        height: 60px;
+        transform: rotate(-90deg);
+      }
+
+      &.dropzone4 {
+        top: 362px;
+        left: 282px;
+        height: 54px;
+        width: 143px;
+      }
+
+      &.dropzone5 {
+        top: 362px;
+        left: 111px;
+        height: 54px;
+        width: 143px;
+      }
+
+      &.dropzone6 {
+        top: 266px;
+        left: 24px;
+        width: 132px;
+        height: 60px;
+        transform: rotate(-90deg);
+      }
+
+      &.dropzone7 {
+        top: 262px;
+        left: 197px;
+        width: 131px;
+        height: 69px;
+        transform: rotate(-90deg);
+      }
+
+      @keyframes fan-on {
+        from {
+          background-position: 0px;
+        }
+        to {
+          background-position: -4743px;
+        }
+      }
+    }
+
+    .accessible-list {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+
+      ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        li {
+          position: relative;
+          height: 55px;
+          width: 155px;
+
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: none;
+            &:focus,
+            &:hover {
+              color: transparent;
+              background-color: transparent;
+            }
+
+            div {
+              display: none;
+            }
+          }
+
+          &:nth-child(1) {
+            position: absolute;
+            left: 100px;
+            top: 173px;
+          }
+
+          &:nth-child(2) {
+            position: absolute;
+            left: 273px;
+            top: 173px;
+          }
+
+          &:nth-child(3) {
+            position: absolute;
+            left: 409px;
+            top: 224px;
+            width: 63px;
+            height: 125px;
+            transform: rotate(180deg);
+          }
+
+          &:nth-child(4) {
+            position: absolute;
+            left: 273px;
+            top: 358px;
+          }
+
+          &:nth-child(5) {
+            position: absolute;
+            left: 101px;
+            top: 358px;
+          }
+
+          &:nth-child(6) {
+            top: 230px;
+            left: 64px;
+            width: 63px;
+            height: 125px;
+            position: absolute;
+            transform: rotate(180deg);
+          }
+
+          &:nth-child(7) {
+            top: 231px;
+            left: 233px;
+            width: 63px;
+            height: 125px;
+            position: absolute;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

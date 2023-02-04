@@ -1,0 +1,34 @@
+.right-section {
+  margin-top: 80px;
+  .radiobutton-inner-wrapper {
+    label {
+      padding-top: 3px;
+    }
+  }
+  .mcq-question-area {
+    .inner-wrapper {
+      margin-top: 10px;
+      .heading {
+        margin-bottom: 3px;
+      }
+      .radiobuttons {
+        .radiobutton {
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .submit-button {
+        margin-top: 20px;
+      }
+    }
+  }
+  .instruction-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: #052978;
+  }
+}

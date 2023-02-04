@@ -1,0 +1,69 @@
+.left-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #effcfc;
+
+  .all-part {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 86%;
+    // border: 2px solid;
+    height: 100%;
+    left: 38px;
+
+    .root {
+      top: 339px;
+      position: absolute;
+      left: 92px;
+      width: 278px;
+    }
+    .fruit {
+      position: absolute;
+      top: 179px;
+      left: 155px;
+      height: 70px;
+      z-index: 5;
+    }
+    .leaf {
+      top: 94px;
+      position: absolute;
+      width: 311px;
+      left: 70px;
+      z-index: 1;
+    }
+    .flower {
+      top: 9px;
+      left: 82px;
+      position: absolute;
+      height: 225px;
+      z-index: 2;
+    }
+    .seed {
+      left: 281px;
+      top: 250px;
+      height: 40px;
+      position: absolute;
+      z-index: 3;
+    }
+    .stem {
+      height: 180px;
+      top: 200px;
+      top: 188px;
+      left: 193px;
+      width: 70px;
+      position: absolute;
+      z-index: 4;
+    }
+  }
+
+  .finish-label {
+    right: 33px;
+    bottom: 100px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+  }
+}

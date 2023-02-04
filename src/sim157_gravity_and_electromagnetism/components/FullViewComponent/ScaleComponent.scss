@@ -1,0 +1,64 @@
+.result-container {
+  width: 100%;
+  height: 348px;
+  position: relative;
+
+  .scale-image {
+    bottom: 59px;
+    width: 800px;
+    height: 44px;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/images/scale.png");
+  }
+
+  .keys {
+    margin-left: 24px;
+    bottom: 14px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    color: #052978;
+    line-height: 20px;
+    position: absolute;
+    letter-spacing: 0.21px;
+
+    div + div {
+      margin-left: 32px;
+    }
+
+    .electrical-force {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 12px;
+      }
+      .arrow-electrical {
+        width: 34px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/arrow_red.png");
+      }
+    }
+
+    .gravitational-force {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 12px;
+      }
+      .arrow-gravitational {
+        width: 34px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/arrow_yellow.png");
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.full-container {
+  padding: 0 24px;
+}
+.screen-heading {
+  height: 40px;
+
+  color: #052978;
+  margin-top: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+.infoTable {
+  margin-top: 16px;
+  height: 100px;
+
+  table {
+    border-collapse: collapse;
+    position: relative;
+
+    border: 0px;
+  }
+
+  td {
+    height: 16px;
+
+    color: #35374c;
+    position: relative;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    text-align: left;
+  }
+  .table-id {
+    height: 40px;
+
+    position: relative;
+
+    &.tableid0 {
+      border-radius: 2px 2px 0 0;
+      background-color: #f0f0f0;
+    }
+    &.tableid1 {
+      border-radius: 0 0 2px 2px;
+      background-color: #f9f9f9;
+    }
+  }
+  .row-table {
+    height: 16px;
+
+    color: #35374c;
+    position: relative;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    text-align: left;
+  }
+
+  th {
+    height: 16px;
+
+    color: #052978;
+    position: relative;
+
+    padding-left: 5px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+  }
+
+  .col-table {
+    height: 16px;
+
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+  }
+}
+.radiobuttons .radiobutton {
+  list-style: none;
+  position: relative;
+  margin-bottom: 7px;
+  margin-right: 16px;
+}
+
+.radiobuttons {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  overflow: hidden;
+}
+.activity-container .mcq-question-area .inner-wrapper {
+  height: 340px;
+}
+.radiobuttons .radiobutton {
+  list-style: none;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  right: 0px;
+}

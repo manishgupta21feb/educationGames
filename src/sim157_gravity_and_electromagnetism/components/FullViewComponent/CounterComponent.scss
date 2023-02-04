@@ -1,0 +1,22 @@
+.counter-area {
+  height: 137px;
+  min-width: 300px;
+  margin-left: 24px;
+  position: relative;
+
+  .counters {
+    display: flex;
+    &.mass-counter1 {
+      position: relative;
+    }
+
+    &.mass-counter2 {
+      top: 22px;
+      position: relative;
+    }
+
+    &.mass {
+      margin-left: 35px;
+    }
+  }
+}

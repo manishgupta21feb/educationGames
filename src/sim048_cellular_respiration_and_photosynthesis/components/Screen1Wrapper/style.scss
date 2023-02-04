@@ -1,0 +1,280 @@
+.screen1wrapper {
+  height: 100%;
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  .instructor {
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    bottom: 24px;
+    position: absolute;
+    margin-left: -24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s1images {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    > div {
+      height: 140px;
+      width: 260px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .chloroplast {
+      background-image: url("../../assets/images/choloroplast_1.png");
+    }
+    .mitochondrion {
+      background-image: url("../../assets/images/mitochondria_1.png");
+    }
+  }
+
+  .draggable-container {
+    display: flex;
+    .draggable-button {
+      .button-label-wrapper {
+        margin-right: 12px;
+        .buttons-wrapper {
+          height: 54px;
+          width: 302px;
+          border: 1px dashed var(--primary-blue);
+          background-color: var(--white);
+          cursor: grab;
+
+          .draggable-element {
+            &.ui-draggable-dragging {
+              height: 54px;
+              width: 302px;
+              border: 2px solid var(--question-text-blue);
+              z-index: 100;
+            }
+            .photosynthesis {
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              background-image: url(../../assets/images/photosynthesis.png);
+
+              .labels {
+                display: flex;
+                font-size: 10px;
+                line-height: 0.9;
+                > span {
+                  max-width: 50px;
+                  position: absolute;
+                  top: 34px;
+                  text-align: center;
+                }
+
+                :nth-child(1) {
+                  left: 6px;
+                  top: 33px;
+                }
+                :nth-child(2) {
+                  left: 70px;
+                  top: 35px;
+                }
+                :nth-child(3) {
+                  left: 118px;
+                  top: 30px;
+                }
+                :nth-child(4) {
+                  left: 188px;
+                }
+                :nth-child(5) {
+                  left: 240px;
+                }
+              }
+            }
+
+            .cellularRespiration {
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              background-image: url(../../assets/images/respiration.png);
+
+              .labels {
+                display: flex;
+                font-size: 10px;
+
+                line-height: 0.9;
+                > span {
+                  max-width: 50px;
+                  position: absolute;
+                  top: 32px;
+                }
+
+                :nth-child(1) {
+                  left: 16px;
+                }
+                :nth-child(2) {
+                  left: 69px;
+                }
+                :nth-child(3) {
+                  left: 131px;
+                }
+                :nth-child(4) {
+                  left: 182px;
+                }
+                :nth-child(5) {
+                  left: 241px;
+                }
+              }
+            }
+          }
+        }
+        > label {
+          width: 100%;
+          color: var(--lightgreyshade);
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.21px;
+          line-height: 17px;
+          text-align: center;
+        }
+      }
+
+      &.disabled {
+        .button-label-wrapper {
+          .buttons-wrapper {
+            border: 2px solid var(--dark-grey);
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+
+  .droppable-region {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 14px;
+    margin-right: 38px;
+    justify-content: space-around;
+    .droppable-element,
+    .dropped {
+      height: 60px;
+      width: 336px;
+      border: 1px dashed var(--question-text-blue);
+      border-radius: 4px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.photosynthesis {
+        background-image: url(../../assets/images/photosynthesis.png);
+        .labels {
+          display: flex;
+          font-size: 10px;
+          line-height: 0.9;
+          position: absolute;
+          > span {
+            max-width: 50px;
+            top: 38px;
+            position: absolute;
+            text-align: center;
+          }
+
+          :nth-child(1) {
+            left: 24px;
+          }
+          :nth-child(2) {
+            left: 79px;
+          }
+          :nth-child(3) {
+            left: 138px;
+          }
+          :nth-child(4) {
+            left: 214px;
+          }
+          :nth-child(5) {
+            left: 270px;
+          }
+        }
+      }
+      &.cellularRespiration {
+        background-image: url(../../assets/images/respiration.png);
+        .labels {
+          display: flex;
+          font-size: 10px;
+          line-height: 0.9;
+          position: absolute;
+          > span {
+            max-width: 50px;
+            top: 38px;
+            position: absolute;
+            text-align: center;
+          }
+
+          :nth-child(1) {
+            left: 24px;
+          }
+          :nth-child(2) {
+            left: 79px;
+          }
+          :nth-child(3) {
+            left: 150px;
+          }
+          :nth-child(4) {
+            left: 204px;
+          }
+          :nth-child(5) {
+            left: 270px;
+          }
+        }
+      }
+    }
+  }
+
+  .accessible-list {
+    z-index: 1;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 60px;
+    width: 686px;
+    top: 437px;
+    left: 45px;
+
+    ul {
+      height: 100%;
+      li {
+        position: absolute;
+        height: 100%;
+        width: 336px;
+        a {
+          border: 1px dashed var(--question-text-blue);
+          border-radius: 4px;
+          width: 100%;
+          height: 100%;
+          display: block;
+          div {
+            display: none;
+          }
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+        }
+      }
+      .listitem:nth-child(2) {
+        left: 350px;
+      }
+    }
+  }
+}

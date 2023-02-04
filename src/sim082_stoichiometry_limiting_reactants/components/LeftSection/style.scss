@@ -1,0 +1,90 @@
+.left-section {
+  background-color: #e9e6e6;
+  height: 100vh;
+  padding: 80px 24px 0;
+  .equation-section {
+    margin-bottom: 24px;
+    .equation-heading {
+      font-size: 16px;
+      color: #35374C;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .equation-text {
+      color: #35374C;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      font-variant-numeric: lining-nums;
+    }
+    .custom-arrow-wrapper {
+      position: relative;
+      width: 36px;
+      margin: 10px 15px 0;
+      .line {
+        content: '';
+        width: 35px;
+        height: 1px;
+        background-color: #35374C;
+        position: absolute;
+      }
+      .arrow {
+        border: solid #35374C;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(-45deg);
+        position: absolute;
+        right: 0;
+        top: -2px;
+      }
+    }
+  }
+  .reactants-wrapper {
+    background-color: white;
+    border: 1px solid #35374C;
+    border-radius: 8px;
+    height: 420px;
+    position: relative;
+    .reactants-heading {
+      font-size: 16px;
+      color: #35374C;
+      font-weight: 500;
+      margin-left: 12px;
+      margin-top: 15px;
+      position: absolute;
+    } 
+    .reactants-icon {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 419px;
+      width: 491px;
+      &.first-reactants {
+        background-image: url('../../assets/images/first-reactants.png');
+      }
+      &.second-reactants {
+        background-image: url('../../assets/images/second-reactants.png');
+      }
+      &.third-reactants {
+        background-image: url('../../assets/images/third-reactants.png');
+      }
+      &.fourth-reactants {
+        background-image: url('../../assets/images/fourth-reactants.png');
+      }
+      &.fifth-reactants {
+        background-image: url('../../assets/images/fifth-reactants.png');
+        background-size: contain;
+        height: 390px;
+        margin-top: 29px;
+      }
+      &.sixth-reactants {
+        background-image: url('../../assets/images/sixth-reactants.png');
+        background-size: contain;
+        height: 398px;
+        margin-top: 20px;
+      } 
+    }
+  }
+}
+

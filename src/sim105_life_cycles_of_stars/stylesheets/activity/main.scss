@@ -1,0 +1,60 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      width: 48px;
+      height: 48px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: blueviolet;
+    }
+  }
+}
+
+.introduction-popup-image {
+  width: 368px;
+  height: 321px;
+  margin-top: 16px;
+  position: relative;
+  background: {
+    size: contain;
+    repeat: no-repeat;
+    image: url(../assets/images/introduction_popup.png);
+  }
+}
+
+.dialogbox-container
+  .dialog-container[aria-labelledby="dialog-description-introductionpopup"] {
+  animation-duration: 1.4s;
+}
+
+.hidden-images {
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  pointer-events: none;
+
+  > div {
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-size: contain;
+  }
+
+  .image1 {
+    background-image: url(../assets/images/hertzsprung-russell-diagram.png);
+  }
+  .image2 {
+    background-image: url(../assets/images/star_life_cycles.png);
+  }
+}
+
+.draggable-item-containment {
+  left: 0;
+  top: 50px;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  height: calc(100% - 50px);
+}

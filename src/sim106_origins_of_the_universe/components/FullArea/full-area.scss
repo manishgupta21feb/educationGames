@@ -1,0 +1,137 @@
+@import "../../stylesheets/common/functions.scss";
+
+// .full-area {
+//   padding: 0 20px;
+.secondScreenActivity {
+  .topbottom {
+    .top {
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom {
+      > div {
+        position: relative;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.universeTop {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .universeImage {
+    position: absolute;
+    height: 177px;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .universeText {
+    position: relative;
+    color: #052978;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 210px;
+  }
+}
+// }
+
+.bottom {
+  .universeBottom {
+    height: 100%;
+    width: 100%;
+    .paragraphSecond {
+      position: absolute;
+      height: 60px;
+      width: 752px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      font-variant: lining-nums;
+    }
+    .paragraphThird{
+      position: absolute;
+      top: 70px;
+      height: 60px;
+      width: 752px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      font-variant: lining-nums;
+
+    }
+  }
+}
+
+.top {
+  .imageTop {
+    height: 176px;
+    width: 297px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bigBang {
+    position: relative;
+    top: 10px;
+    height: 24px;
+    width: 98px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+  }
+  .bigBang_screen2 {
+    position: absolute;
+    top: 278px;
+    right: 142px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .stateModel {
+    position: absolute;
+    top: 278px;
+    left: 166px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+}
+
+.buttoninfo {
+  height: 60px;
+  width: 752px;
+  color: #052978;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  font-variant: lining-nums;
+}
+//  }

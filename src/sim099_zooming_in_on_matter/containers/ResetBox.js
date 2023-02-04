@@ -1,0 +1,33 @@
+import { connect } from "react-redux";
+import DialogBox from "../../app/components/DialogBox";
+
+import data from "../data";
+import { common, thunk } from "../actions";
+
+const mapState = (state) => {
+  return {
+    id: "resetDialog",
+    dialogType: "attention",
+    resetButtonText: data.buttonLabels.yes,
+    resetButtonTextLabel: data.buttonLabels.yes,
+    buttonContinueText: data.buttonLabels.no,
+    buttonContinueLabel: data.buttonLabels.no,
+    resetDialog: true,
+  };
+};
+
+const matchDispatch = (dispatch) => ({
+  onClick: () => {
+    dispatch(common.togglePopup(3));
+    EventManager.broadcast("SECONDARY_CLICK");
+  },
+  onClick2: () => {
+    dispatch(thunk.resetActivity());
+    dispatch(common.togglePopup(3));
+    dispatch(common.updateResetBtnState(true));
+    EventManager.broadcast("SECONDARY_CLICK");
+    dispatch(thunk.resetAllActivity());
+  },
+});
+
+export default connect(mapState, matchDispatch)(DialogBox);

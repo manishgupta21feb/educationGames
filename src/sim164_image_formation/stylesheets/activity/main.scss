@@ -1,0 +1,88 @@
+.start-info:first-child {
+  margin-bottom: 8px;
+}
+
+.infoImageHolder {
+  background-color: #fff;
+  margin-top: 11px;
+  width: 559px;
+  height: 237px;
+  position: relative;
+  p {
+    position: absolute !important;
+    top: 0px;
+  }
+  .text1 {
+    margin-left: 229px;
+  }
+  .text2 {
+    top: 38px;
+    left: 91px;
+  }
+  .text3 {
+    top: 185px;
+    right: 22px;
+  }
+  .text4 {
+    top: 88px;
+    left: 85px;
+  }
+  .text5 {
+    top: 88px;
+    left: 370px;
+  }
+  .text6 {
+    top: 88px;
+    left: 183px;
+  }
+  .text7 {
+    left: 460px;
+    top: 88px;
+  }
+  .infoImage {
+    width: inherit;
+  }
+}
+
+.topbottom .bottom {
+  padding: 14px 12px 0px;
+}
+
+// Animation timing changed for longer slidepopup
+
+.dialog-container {
+  animation: slide-down 1.6s ease-in-out forwards !important;
+}
+
+.hidden-images {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.image0 {
+    background-image: url(../assets/images/sim164_page1.png);
+  }
+  &.image1 {
+    background-image: url(../assets/images/sim164_page2.png);
+  }
+  &.image2 {
+    background-image: url(../assets/images/sim164_page3.png);
+  }
+  &.image3 {
+    background-image: url(../assets/images/sim164_page4.png);
+  }
+  &.image4 {
+    background-image: url(../assets/images/sim164_page5.png);
+  }
+  &.image5 {
+    background-image: url(../assets/images/sim164_page6.png);
+  }
+  &.image6 {
+    background-image: url(../assets/images/sim164_page7.png);
+  }
+}

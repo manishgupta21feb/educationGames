@@ -1,0 +1,72 @@
+.view-container {
+  .full-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+
+    .full-view-wrapper {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .video-container {
+      z-index: 0;
+      position: absolute;
+      top: 0px;
+
+      .video-wrapper {
+        z-index: 0;
+      }
+    }
+
+    .main-heading {
+      z-index: 1;
+      font-size: 14px;
+      font-weight: 500;
+      color: #052978;
+      line-height: 20px;
+      position: relative;
+      margin: 80px 24px 0;
+      letter-spacing: 0.25px;
+    }
+
+    .play-pause-buttons {
+      opacity: 1;
+      .btn {
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
+
+    .radiobuttons {
+      z-index: 1;
+      position: relative;
+      margin: 16px 0 0 24px;
+      flex-direction: row;
+
+      .radiobutton-inner-wrapper {
+        align-items: center;
+
+        label {
+          font-weight: 500;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
+  .full-view-seesaw {
+    background-image: url(../../assets/images/See-saw-screen1.png);
+  }
+
+  .full-view-baseball {
+    background-image: url(../../assets/images/Base-ball-screen-1.png);
+  }
+}

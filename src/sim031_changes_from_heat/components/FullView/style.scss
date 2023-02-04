@@ -1,0 +1,676 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .full-view-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .bg-image {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../assets/images/main.png);
+
+      &.ice-cream0 {
+        background-image: url(../../assets/images/thermomete/cold.png),
+          url(../../assets/images/bowlnew/chocolate_bowl_room_temp.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/chocolate.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 110px,
+          bottom 85px left 223px, bottom 86px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 154px 216px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+      &.ice-cream1 {
+        background-image: url(../../assets/images/thermomete/normal.png),
+          url(../../assets/images/bowlnew/chocolate_bowl_room_temp.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 110px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+      &.ice-cream2 {
+        background-image: url(../../assets/images/thermomete/hot.png),
+          url(../../assets/images/bowlnew/chocolate_bowl_room_temp.png),
+          url(../../assets/images/hot_plate/chocolatehotplate.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 110px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.completed1 {
+        &.show {
+          background-image: url(../../assets/images/thermomete/hot.png),
+            url(../../assets/images/bowlnew/chocolate_bowl_room_temp.png),
+            url(../../assets/images/hot_plate/chocolatehotplate.png),
+            url(../../assets/images/ice_box/chocolate.png),
+            url(../../assets/images/Bg3x.png);
+
+          overflow: hidden, hidden hidden;
+          background-position: left 40px, bottom 85px left 110px,
+            bottom 85px left 223px, bottom 86px right 3px, left;
+          background-size: 70px 300px, 83px 60px, 150px 160px, 154px 216px,
+            contain;
+          background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
+            no-repeat;
+        }
+      }
+
+      &.chocolate0 {
+        background-image: url(../../assets/images/thermomete/cold.png),
+          url(../../assets/images/bowlnew/chess_bowl_room_temp.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/cheese.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 100px,
+          bottom 85px left 223px, bottom 86px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.chocolate1 {
+        background-image: url(../../assets/images/thermomete/normal.png),
+          url(../../assets/images/bowlnew/chess_bowl_room_temp.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 100px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.chocolate2 {
+        background-image: url(../../assets/images/thermomete/hot.png),
+          url(../../assets/images/bowlnew/chess_bowl_room_temp.png),
+          url(../../assets/images/hot_plate/chesshotplate.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 100px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.completed2 {
+        &.show {
+          background-image: url(../../assets/images/thermomete/hot.png),
+            url(../../assets/images/bowlnew/chess_bowl_room_temp.png),
+            url(../../assets/images/hot_plate/chesshotplate.png),
+            url(../../assets/images/ice_box/cheese.png),
+            url(../../assets/images/Bg3x.png);
+
+          overflow: hidden, hidden hidden;
+          background-position: left 40px, bottom 85px left 100px,
+            bottom 85px left 223px, bottom 86px right 3px, left;
+          background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+            contain;
+          background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
+            no-repeat;
+        }
+      }
+
+      &.ice0 {
+        background-image: url(../../assets/images/thermomete/cold.png),
+          url(../../assets/images/bowlnew/water_bowl.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/water.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 98px,
+          bottom 85px left 223px, bottom 86px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+      &.ice1 {
+        background-image: url(../../assets/images/thermomete/normal.png),
+          url(../../assets/images/bowlnew/water_bowl.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 98px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+      &.ice2 {
+        background-image: url(../../assets/images/thermomete/hot.png),
+          url(../../assets/images/bowlnew/water_bowl.png),
+          url(../../assets/images/hot_plate/waterhotplate.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 98px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.completed3 {
+        &.show {
+          background-image: url(../../assets/images/thermomete/hot.png),
+            url(../../assets/images/bowlnew/water_bowl.png),
+            url(../../assets/images/hot_plate/waterhotplate.png),
+            url(../../assets/images/ice_box/water.png),
+            url(../../assets/images/Bg3x.png);
+
+          overflow: hidden, hidden hidden;
+          background-position: left 40px, bottom 85px left 98px,
+            bottom 85px left 223px, bottom 86px right 3px, left;
+          background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+            contain;
+          background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
+            no-repeat;
+        }
+      }
+
+      &.cheese0 {
+        background-image: url(../../assets/images/thermomete/cold.png),
+          url(../../assets/images/bowl/fruit_juice_bowl.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/fruit_juice.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 109px,
+          bottom 85px left 223px, bottom 86px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.cheese1 {
+        background-image: url(../../assets/images/thermomete/normal.png),
+          url(../../assets/images/bowl/fruit_juice_bowl.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 109px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.cheese2 {
+        background-image: url(../../assets/images/thermomete/hot.png),
+          url(../../assets/images/bowl/fruit_juice_bowl.png),
+          url(../../assets/images/hot_plate/fruit_juicehotplate.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 109px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.completed4 {
+        &.show {
+          background-image: url(../../assets/images/thermomete/hot.png),
+            url(../../assets/images/bowl/fruit_juice_bowl.png),
+            url(../../assets/images/hot_plate/fruit_juicehotplate.png),
+            url(../../assets/images/ice_box/fruit_juice.png),
+            url(../../assets/images/Bg3x.png);
+
+          overflow: hidden, hidden hidden;
+          background-position: left 40px, bottom 85px left 109px,
+            bottom 85px left 223px, bottom 86px right 3px, left;
+          background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+            contain;
+          background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
+            no-repeat;
+        }
+      }
+
+      &.pearlerbeads0 {
+        background-image: url(../../assets/images/thermomete/cold.png),
+          url(../../assets/images/bowl/prepler_bead_bowl.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/beads.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 115px,
+          bottom 85px left 223px, bottom 86px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.pearlerbeads1 {
+        background-image: url(../../assets/images/thermomete/normal.png),
+          url(../../assets/images/bowl/prepler_bead_bowl.png),
+          url(../../assets/images/hot_plate/hot_plate_new.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 115px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.pearlerbeads2 {
+        background-image: url(../../assets/images/thermomete/hot.png),
+          url(../../assets/images/bowl/prepler_bead_bowl.png),
+          url(../../assets/images/hot_plate/prepler_bead_hotplate.png),
+          url(../../assets/images/ice_box/ice_box.png),
+          url(../../assets/images/Bg3x.png);
+
+        overflow: hidden, hidden hidden;
+        background-position: left 40px, bottom 85px left 115px,
+          bottom 85px left 223px, bottom 85px right 3px, left;
+        background-size: 70px 300px, 83px 60px, 150px 160px, 155px 109px,
+          contain;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      }
+
+      &.completed5 {
+        &.show {
+          background-image: url(../../assets/images/thermomete/hot.png),
+            url(../../assets/images/bowl/prepler_bead_bowl.png),
+            url(../../assets/images/hot_plate/prepler_bead_hotplate.png),
+            url(../../assets/images/ice_box/beads.png),
+            url(../../assets/images/Bg3x.png);
+
+          overflow: hidden, hidden hidden;
+          background-position: left 40px, bottom 85px left 115px,
+            bottom 85px left 223px, bottom 86px right 3px, left;
+          background-size: 70px 300px, 83px 60px, 150px 160px, 154px 218px,
+            contain;
+          background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,
+            no-repeat;
+        }
+      }
+
+      &.hide {
+        opacity: 0;
+      }
+
+      &.show {
+        opacity: 1;
+      }
+    }
+
+    .bg-shadow {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      background: white;
+      -webit-box-shadow: 0 0 75px 170px white;
+      box-shadow: 0 0 75px 170px white;
+      z-index: 1;
+    }
+
+    .instructions {
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      overflow: hidden;
+      font-weight: 500;
+      line-height: 20px;
+      position: absolute;
+      margin: 80px 24px 0 24px;
+      color: var(--question-text-blue);
+      z-index: 1;
+      > p {
+        overflow: hidden;
+        &:nth-child(2) {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .image-alt {
+      left: 0;
+      top: 160px;
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      position: absolute;
+
+      &.ice-cream {
+        top: 370px;
+        left: 245px;
+        width: 320px;
+        height: 140px;
+      }
+
+      &.chocolate {
+        top: 250px;
+        left: 285px;
+        width: 200px;
+        height: 320px;
+      }
+
+      &.ice {
+        top: 190px;
+        left: 275px;
+        width: 220px;
+        height: 380px;
+      }
+    }
+
+    .highlighter {
+      z-index: 1;
+      // width: 240px;
+      // height: 200px;
+      bottom: 116px;
+      // cursor: pointer;
+      // border-radius: 4px;
+      position: absolute;
+      // border: 2px dotted #052978;
+      // background: rgba(217, 235, 255, 0.24);
+      height: 85px;
+      width: 100px;
+      border-radius: 4px;
+      border: 2px dotted #052978;
+      background-color: rgba(217, 235, 255, 0.24);
+
+      &:not(:disabled) {
+        cursor: pointer;
+      }
+
+      &:disabled {
+        opacity: 1;
+        border: 2px solid #c9c9cf;
+        background-color: rgba(255, 255, 255, 0.24);
+      }
+
+      &.ice-cream {
+        left: 10px;
+        top: 460px;
+      }
+
+      &.chocolate {
+        top: 460px;
+        left: 117px;
+      }
+
+      &.ice {
+        top: 460px;
+        left: 222px;
+      }
+
+      &.cheese {
+        top: 460px;
+        left: 327px;
+      }
+
+      &.pearlerbeads {
+        top: 460px;
+        left: 432px;
+      }
+    }
+
+    .btn {
+      z-index: 2;
+      &.hotspot-btn {
+        &.label {
+          position: absolute;
+          font-variant: lining-nums;
+
+          &.ice-cream {
+            left: 86px;
+          }
+          &.chocolate {
+            left: 359px;
+          }
+          &.ice {
+            left: 644px;
+          }
+          &.ice-cream,
+          &.chocolate,
+          &.ice {
+            bottom: 73px;
+          }
+        &.active:focus{
+          box-shadow:  0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue) !important;
+        }
+        }
+      }
+    }
+
+    .itemname {
+      height: 20px;
+      width: 95px;
+      margin-left: 8px;
+      // color: var(--label);
+      color: #35374c;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      text-align: center;
+      margin-top: 8px;
+      position: absolute;
+
+      &.ice-cream {
+        left: 5px;
+        top: 540px;
+      }
+
+      &.chocolate {
+        top: 540px;
+        left: 112px;
+      }
+
+      &.ice {
+        top: 540px;
+        left: 217px;
+      }
+
+      &.cheese {
+        top: 540px;
+        left: 322px;
+      }
+
+      &.pearlerbeads {
+        top: 540px;
+        left: 427px;
+      }
+    }
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .btn {
+    &.temp-button-one {
+      top: 40px;
+      left: 57px;
+    }
+
+    &.temp-button-two {
+      top: 170px;
+      left: 60px;
+    }
+
+    &.temp-button-three {
+      top: 290px;
+      left: 60px;
+    }
+
+    &.temp-button-four {
+      top: 40px;
+      left: 60px;
+    }
+
+    &.temp-button-five {
+      top: 180px;
+      left: 60px;
+    }
+
+    &.temp-button-six {
+      top: 310px;
+      left: 60px;
+    }
+
+    &.temp-button-seven {
+      top: 40px;
+      left: 57px;
+    }
+
+    &.temp-button-eight {
+      top: 170px;
+      left: 60px;
+    }
+
+    &.temp-button-nine {
+      top: 290px;
+      left: 60px;
+    }
+  }
+
+  .label-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 520px;
+    left: 118px;
+    width: calc(100% - 132px);
+  }
+
+  .label-state {
+    z-index: 1;
+
+    height: 20px;
+    width: 100px;
+    color: #35374c;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+
+    // &.chocolate2 {
+    //   position: absolute;
+    //   left: 10px;
+    // }
+
+    // &.labelhotplate {
+    //   position: absolute;
+    //   left: 145px;
+    // }
+
+    > p {
+      display: inline-block;
+      position: relative;
+
+      .labelitemname {
+        margin-right: 12px;
+      }
+    }
+  }
+  .right-container {
+    margin-top: 40px;
+  }
+  .leftright {
+    .right {
+      .right-container {
+        margin-top: 80px;
+
+        h4 {
+          margin-top: 80px;
+          height: 60px;
+          width: 212px;
+          color: #052978;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+        }
+
+        .item-details {
+          h3 {
+            color: #052978;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            margin-bottom: 4px;
+            letter-spacing: 0.4px;
+          }
+          > p {
+            color: #052978;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 16px;
+            margin-bottom: 4px;
+            letter-spacing: 0.4px;
+
+            .info {
+              .datatable {
+                display: flex;
+                flex-direction: column;
+                .buttoninfo {
+                  display: flex;
+                  flex-direction: column;
+                  width: 10px;
+                }
+
+                .buttonvalue {
+                  display: flex;
+                  flex-direction: column;
+                  width: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

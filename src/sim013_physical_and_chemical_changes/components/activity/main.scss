@@ -1,0 +1,163 @@
+.container {
+  width: 800px;
+  height: 318px;
+  background-image: url("../../assets/images/bg_2x.png");
+  background-size: contain;
+  display: flex;
+  background-repeat: no-repeat;
+  position: relative;
+  .digitalText {
+    font-family: "digital7";
+    position: absolute;
+    top: 209px;
+    left: 67px;
+    font-size: 22px;
+    color: var(--grey-text);
+    pointer-events: none;
+    touch-action: none;
+  }
+  .optionBtn {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    &.optionBtn1 {
+      top: 5px;
+      left: 71px;
+      width: 173px;
+      height: 300px;
+    }
+    &.optionBtn2 {
+      top: 185px;
+      left: 356px;
+      width: 138px;
+      height: 118px;
+    }
+    &.optionBtn3 {
+      top: 115px;
+      left: 547px;
+      width: 230px;
+      height: 188px;
+    }
+  }
+
+  .labbutton0 {
+    background: url("../../assets/images/boilingwater_2x.png");
+    width: 173px;
+    height: 260px;
+    left: 0px;
+    top: 0px;
+  }
+  .labbutton1 {
+    background: url("../../assets/images/banana_2x.png");
+    width: 138px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+  }
+  .labbutton2 {
+    background: url("../../assets/images/vineger_2x.png");
+    width: 136px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+  }
+  .labbutton3 {
+    background: url("../../assets/images/bakingsoda_2x.png");
+    width: 85px;
+    height: 33px;
+    left: 140px;
+    top: 105px;
+  }
+  .labItems {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  .label1 {
+    width: 111px;
+    height: 28px;
+    left: 102px;
+  }
+  .label2 {
+    width: 123px;
+    height: 28px;
+    left: 358px;
+    &.es{
+    width: 200px;
+    left: 321px;
+    }
+  }
+  .label3 {
+    width: 75px;
+    height: 28px;
+    left: 578px;
+    &.es{
+      left: 569px;
+    }
+  }
+  .label4 {
+    width: 103px;
+    height: 28px;
+    left: 678px;
+    &.es{
+      width: 150px;
+      left: 648px;
+    }
+  }
+  .labels {
+    position: absolute;
+    background-color: var(--secondary-attention-dark);
+    color: var(--secondary-attention-light);
+    font-size: 14px;
+    top: 271px;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    border-radius: 16px;
+    pointer-events: none;
+    touch-action: none;
+  }
+  [disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .overlay {
+    position: absolute;
+    background-color: var(--dark-grey);
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+  }
+}
+
+.questionIntroHeading {
+  color: var(--question-heading-bluish);
+  letter-spacing: 0.15px;
+  width: 752px;
+  margin-top: 5px;
+}
+.questionIntroSubHead {
+  color: var(--question-text-blue);
+  letter-spacing: 0.15px;
+  margin-top: 15px;
+}
+
+.questionHeading {
+  font-size: 20px;
+  letter-spacing: 0.15px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  color: var(--question-text-blue);
+}
+.radiobuttons {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.physical-class {
+  overflow: hidden;
+  height: 100%;
+}

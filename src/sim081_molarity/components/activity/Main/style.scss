@@ -1,0 +1,116 @@
+.right {
+  .right-view {
+    .right-content {
+      height: 80px;
+      width: 212px;
+      margin-top: 61px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    .molarity {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 148px;
+
+      .currentMolarity {
+        height: 20px;
+        width: 97px;
+        color: #35374c;
+        font-size: 12px;
+        letter-spacing: 0.21px;
+        line-height: 20px;
+      }
+      .currentMolarityValue {
+        position: absolute;
+        left: 175px;
+        height: 20px;
+        width: 42px;
+        text-align: right;
+        font-variant: lining-nums;
+        color: #35374c;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.21px;
+        line-height: 20px;
+      }
+    }
+
+    .volume {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 177px;
+
+      .currentVolume {
+        height: 20px;
+        color: #35374c;
+        font-size: 12px;
+        letter-spacing: 0.21px;
+        line-height: 20px;
+      }
+      .currentVolumeValue {
+        position: absolute;
+        left: 175px;
+        height: 20px;
+        width: 42px;
+        text-align: right;
+        font-variant: lining-nums;
+        color: #35374c;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.21px;
+        line-height: 20px;
+      }
+    }
+
+    .desired {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 204px;
+
+      .desiredMolarity {
+        height: 20px;
+        width: 97px;
+        color: #35374c;
+        font-size: 12px;
+        letter-spacing: 0.21px;
+        line-height: 20px;
+      }
+
+      .desiredMolarityValue {
+        position: absolute;
+        left: 175px;
+        height: 20px;
+        width: 42px;
+        text-align: right;
+        font-variant: lining-nums;
+        color: #35374c;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.21px;
+        line-height: 20px;
+      }
+    }
+
+    .amountSolvent {
+      height: 20px;
+      width: 152px;
+      margin-top: 8px;
+      color: #35374c;
+      font-size: 12px;
+      letter-spacing: 0.21px;
+      line-height: 20px;
+    }
+    .submitAnswer {
+      position: absolute;
+      top: 320px;
+      left: 25px;
+    }
+  }
+}

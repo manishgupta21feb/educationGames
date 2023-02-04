@@ -1,0 +1,37 @@
+.right {
+  .mcq-question-area .inner-wrapper .submit-button {
+    bottom: unset;
+    margin-top: 4px;
+    position: relative;
+    justify-content: flex-start;
+  }
+  .mcq-question-area .inner-wrapper .heading {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    font-style: italic;
+    margin-bottom: 6px;
+    letter-spacing: 0.4px;
+    color: var(--question-heading-bluish);
+    font-variant: lining-nums;
+  }
+  .mcq-question-area .inner-wrapper {
+    height: auto;
+    margin-top: 70px;
+  }
+  .mcq-question-area .inner-wrapper .question {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 6px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: var(--question-text-blue);
+  }
+  .radiobuttons .radiobutton {
+    list-style: none;
+    position: relative;
+    margin-bottom: 5px;
+    margin-right: 16px;
+  }
+}

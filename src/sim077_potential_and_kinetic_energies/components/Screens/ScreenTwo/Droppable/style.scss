@@ -1,0 +1,99 @@
+.droppable-stage1 {
+  .dropZone-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    color: var(--primary-blue);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    .dropping-Area {
+      .option {
+        &.option-1 {
+          margin-left: 51px;
+        }
+        &.option-3 {
+          margin-right: 60px;
+        }
+      }
+      .ui-droppable {
+        box-sizing: border-box;
+        height: 255px;
+        border-radius: 16px;
+        position: absolute;
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        top: 323px;
+        &.droppable-1 {
+          left: 98px;
+          padding: 28px 27px;
+          width: 193px;
+          div {
+            height: 167px;
+            width: 178px;
+            left: 13px;
+            top: 15px;
+          }
+          .label {
+            padding: 6px 10px;
+          }
+        }
+        &.droppable-2 {
+          width: 144px;
+          left: 314px;
+          padding: 26px 2px;
+          div {
+            height: 167px;
+            width: 146px;
+            left: 0px;
+            top: 15px;
+          }
+          .label {
+            padding: 6px 10px;
+          }
+        }
+        &.droppable-3 {
+          right: 123px;
+          width: 195px;
+          padding: 28px 13px;
+          div {
+            left: 0px;
+            width: 176px;
+            height: 166px;
+            top: 16px;
+          }
+          .label {
+            padding: 6px 10px;
+            &.dropped_item {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .imagesDiv {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    .bg-img {
+      width: 400px;
+      height: 262px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      &.left-background {
+        left: 80px;
+        background-image: url("../../../../assets/images/left_new.png");
+      }
+      &.right-background {
+        right: 108px;
+        background-image: url("../../../../assets/images/right_new.png");
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@each $name, $startPoint, $endPoint in $items {
+  .#{$name} {
+    animation: $name linear 1 forwards;
+  }
+
+  @keyframes #{$name} {
+    from {
+      transform: rotate($startPoint);
+    }
+    to {
+      transform: rotate($endPoint);
+    }
+  }
+}

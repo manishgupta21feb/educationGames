@@ -1,0 +1,314 @@
+.top-section {
+  width: 100%;
+  height: 100%;
+  background-color: #FDD480;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .top-img-wrapper {
+    background-image: url('../../../../assets/images/top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 470px;
+    height: 230px;
+    position: relative;
+    .top-img-right-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 18px;
+      span {
+        &.arrow {
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 25px;
+          width: 52px;
+          position: absolute;
+          &.blue {
+            background-image: url('../../../../assets/images/blue-down-arrow.png');
+            left: 42px;
+            top: 30px;
+          }
+          &.green {
+            background-image: url('../../../../assets/images/green-down-arrow.png');
+            left: 42px;
+            top: 143px;
+          }
+        }
+        &.text-round-box {
+          position: absolute;
+          left: 6px;
+          top: 88px;
+          background-color: white;
+          border: 1px solid #E60000;
+          font-size: 10px;
+          height: 21px;
+          padding: 0 12px;
+          border-radius: 20px;
+          display: inline-flex;
+          align-items: center;
+          color: #E60000;
+          font-weight: 500;
+        }
+      } 
+    }
+    .text-box-wrapper {
+      .text-box {
+        position: absolute;
+        min-width: 70px;
+        height: 22px;
+        margin-bottom: 0;
+        color: black;
+        font-weight: 700;
+        padding: 6px;
+        &.first {
+          top: 0px;
+          left: 75px;
+        }
+        &.second {
+          top: 115px;
+          left: 14px;
+        }
+        &.third {
+          top: 221px;
+          left: 66px;
+        }
+      }
+    }
+    .text-box {
+      min-width: 100px;
+      font-size: 10px;
+      padding: 6px 12px;
+      height: 27px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      color: white;
+    }
+    .only-text {
+      position: absolute;
+      font-size: 10px;
+      font-weight: 600;
+      color: black;
+      &.text-1 {
+        top: 100px;
+        left: 134px;
+      }
+      &.text-2 {
+        top: 178px;
+        left: 223px;
+      }
+      &.text-3 {
+        top: 215px;
+        left: 200px;
+      }
+    } 
+    .hotspot-btn {
+      position: absolute;
+      height: 30px;
+      border: 1px solid transparent;
+      &#dna {
+        top: 48px;
+        left: 270px;
+      }
+      &#nucleus {
+        left: -88px;
+        top: 77px;
+      }
+      &#mrna {
+        left: 490px;
+        top: 100px;
+      }
+      &#transcription {
+        left: 259px;
+        top: 150px;
+      }
+      &.visited {
+        opacity: 1 !important;  
+      }
+      &:disabled {
+        opacity: 0.8;
+      }
+      &:hover {
+        background-color: #BA5B08;
+        border:1px solid #0056B3;
+        padding: 5px 16px;
+      }
+    }
+    .bullet-line-wrapper {
+      position: absolute;
+      &.dna {
+        left: 390px;
+        top: 28px;
+        transform: rotate(-21deg);
+        .dotted-line {
+          top: 3px;
+          left: -65px;
+          height: 1px;
+          width: 65px;
+        }
+      }
+      &.nucleus {
+        left: 121px;
+        top: 47px;
+        transform: rotate(-17deg);
+        .dotted-line {
+          top: 3px;
+          left: -135px;
+          height: 1px;
+          width: 135px;
+        }
+      }
+      &.mrna {
+        left: 441px;
+        top: 88px;
+        transform: rotate(-160deg);
+        .dotted-line {
+          top: 3px;
+          left: -45px;
+          height: 1px;
+          width: 45px;
+        }
+      }
+      &.transcription {
+        left: 365px;
+        top: 116px;
+        transform: rotate(-34deg);
+        .dotted-line {
+          top: 3px;
+          left: -59px;
+          height: 1px;
+          width: 57px;
+        }
+      }
+      .bullet {
+        width: 8px;
+        height: 8px;
+        background-color: #352103;
+        border-radius: 50%;
+      }
+      .dotted-line {
+        border-bottom: 1px dashed #352103;
+        position: absolute;
+      }
+    }
+  }
+  &.screen-5-top-section {
+    background-color: #FDC934;
+    .hotspot-btn {
+      &#trna {
+        left: 284px;
+        top: 165px;
+      }
+      &#protein {
+        left: 488px;
+        top: 174px;
+      }
+      &#ribosomes {
+        top: 223px;
+        left: 281px;
+      }
+      &#codon {
+        top: 54px;
+        left: 271px;
+      }
+      &#translation {
+        left: 475px;
+        top: 238px;
+      }
+    }
+    .bullet-line-wrapper {
+      &.trna {
+        left: 313px;
+        top: 127px;
+        transform: rotate(-89deg);
+        .dotted-line {
+          top: 3px;
+          left: -30px;
+          height: 1px;
+          width: 36px;
+        }
+      }
+      &.protein {
+        left: 442px;
+        top: 198px;
+        transform: rotate(-195deg);
+        .dotted-line {
+          top: 3px;
+          left: -46px;
+          height: 1px;
+          width: 50px;
+        }
+      }
+      &.ribosomes {
+        left: 226px;
+        top: 228px;
+        transform: rotate(-172deg);
+        .dotted-line {
+          top: 3px;
+          left: -48px;
+          height: 1px;
+          width: 52px;
+        }
+      } 
+      &.codon {
+        left: 222px;
+        top: 138px;
+        transform: rotate(136deg);
+        .dotted-line {
+          top: -4px;
+          left: -79px;
+          height: 9px;
+          width: 83px;
+        }
+      }
+      &.translation {
+        left: 432px;
+        top: 241px;
+        transform: rotate(192deg);
+        .dotted-line {
+          top: 3px;
+          left: -36px;
+          height: 1px;
+          width: 35px;
+        }
+      } 
+    }
+    .only-text {
+      &.text-4 {
+        text-transform: uppercase;
+        top: 208px;
+        left: 12px;
+      }
+    }
+    .forth {
+      left: 281px;
+      top: 100px;
+    }
+  }
+}
+.bg-color-1 {
+  background-color: #506CE7;
+}
+.bg-color-2 {
+  background-color: #DD3131;
+}
+.bg-color-3 {
+  background-color: #1D8724;
+}
+.text-color-1 {
+  color: #F17839;
+}
+.text-color-2 {
+  color: #917A59;
+}
+
+// screen-3-top-wrapper
+.screen-3-top-wrapper {
+  padding: 60px 24px 0;
+  .instruction-text {
+    margin-bottom: 50px;
+  }
+}

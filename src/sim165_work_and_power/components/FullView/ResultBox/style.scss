@@ -1,0 +1,26 @@
+.resultBox {
+  box-sizing: border-box;
+  height: 36px;
+  width: 186px;
+  border: 2px solid #352103;
+  border-radius: 4px;
+  position: relative;
+  top: 41px;
+  left: 446px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #352103;
+    font-size: 14px;
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+  }
+  .sr-Boundary {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 10px;
+    min-height: 10px;
+  }
+}

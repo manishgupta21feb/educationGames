@@ -1,0 +1,19 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  left: 0;
+
+  div[role="main"] {
+    // z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  @import "./activity/main.scss";
+}

@@ -1,0 +1,60 @@
+@import "../../stylesheets/common/functions.scss";
+
+.video-container .play-pause-buttons {
+  .btn {
+    @extend %center-both, %opacity-show;
+  }
+}
+
+.video-container {
+  @extend %full-width, %absolute, %bottom-zero;
+  height: 600px;
+  width: 540px;
+
+  .play-pause-buttons .btn {
+    /* top: 26px;
+    right: 24px;
+    left: initial;
+    transform: initial; */
+    display: none;
+  }
+  .video-wrapper {
+    video {
+      &.friction_poster_1 {
+        background: transparent
+          url("../../assets/images/fifteen_ounce_part1.png") center / cover
+          no-repeat;
+      }
+      &.friction_poster_2 {
+        background: transparent
+          url("../../assets/images/fifteen_ounce_part2.png") center / cover
+          no-repeat;
+      }
+      &.friction_poster_3 {
+        background: transparent
+          url("../../assets/images/twenty_ounce_part1.png") center / cover
+          no-repeat;
+      }
+      &.friction_poster_4 {
+        background: transparent
+          url("../../assets/images/twenty_ounce_part2.png") center / cover
+          no-repeat;
+      }
+      &.gravity_poster_1 {
+        background: transparent
+          url("../../assets/images/Start_screen1wth_ball.png") center / cover
+          no-repeat;
+      }
+      &.gravity_poster_2 {
+        background: transparent
+          url("../../assets/images/Start_screen2wth_ball.png") center / cover
+          no-repeat;
+      }
+      &.gravity_poster_3 {
+        background: transparent
+          url("../../assets/images/Start_screen3wth_ball.png") center / cover
+          no-repeat;
+      }
+    }
+  }
+}

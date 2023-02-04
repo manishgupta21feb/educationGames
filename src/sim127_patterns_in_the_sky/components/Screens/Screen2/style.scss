@@ -1,0 +1,66 @@
+.screen2 {
+  .topbottom {
+    .top {
+      height: 320px;
+      .screen2-top {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.question1 {
+          background-image: url(../../../assets/images/screen1_star.png);
+        }
+        &.question2 {
+          background-image: url(../../../assets/images/screen1_cloud.png);
+        }
+        &.question3 {
+          background-image: url(../../../assets/images/screen1_moon.png);
+        }
+        &.question4 {
+          background-image: url(../../../assets/images/screen1_sun.png);
+        }
+        &.question5 {
+          background-image: url(../../../assets/images/screen2_day_school_cloud_sun.png);
+        }
+        &.question6 {
+          background-image: url(../../../assets/images/screen2_night_home_star_moon.png);
+        }
+      }
+    }
+
+    .bottom {
+      .screen2-bottom {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .mcq-question-area {
+          .inner-wrapper {
+            .radiobuttons {
+              flex-direction: row;
+              .radiobutton {
+                margin-right: 0;
+                &:first-child {
+                  margin-right: 112px;
+                }
+
+                .radiobutton-inner-wrapper {
+                  input[type="radio"] + div + label {
+                    margin-top: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .btn {
+          &.positive {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

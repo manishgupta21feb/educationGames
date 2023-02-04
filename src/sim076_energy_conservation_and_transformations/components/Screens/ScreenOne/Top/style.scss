@@ -1,0 +1,137 @@
+.top-container {
+  width: 100%;
+  height: 318px;
+  .hotspot-area {
+    width: 800px;
+    height: 320px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../../assets/images/main.png");
+
+    .btn {
+      position: absolute;
+      z-index: 1;
+      &:disabled {
+        opacity: unset;
+      }
+      &.hotspot0 {
+        top: 207px;
+        left: 429px;
+      }
+      &.hotspot1 {
+        top: 222px;
+        left: 256px;
+      }
+      &.hotspot2 {
+        top: 102px;
+        left: 330px;
+      }
+    }
+    .dotted-lines {
+      width: 35px;
+      border-top: 2px dotted #352103;
+      position: absolute;
+      &.hotspot0 {
+        top: 250px;
+        left: 412px;
+        transform: rotate(117deg);
+      }
+      &.hotspot1 {
+        top: 264px;
+        transform: rotate(117deg);
+        left: 235px;
+      }
+      &.hotspot2 {
+        top: 89px;
+        left: 376px;
+        transform: rotate(117deg);
+      }
+    }
+    .dot-circle {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #352103;
+      padding: 0;
+      &.hotspot0 {
+        top: 267px;
+        left: 415px;
+      }
+      &.hotspot1 {
+        top: 281px;
+        left: 238px;
+      }
+      &.hotspot2 {
+        top: 69px;
+        left: 398px;
+      }
+    }
+  }
+  .video-container {
+    .video-wrapper {
+      video {
+        &.video0 {
+          background: transparent url("../../../../assets/images/battery.png")
+            center / contain no-repeat;
+        }
+        &.video1 {
+          background: transparent url("../../../../assets/images/wire.png")
+            center / contain no-repeat;
+        }
+        &.video2 {
+          background: transparent url("../../../../assets/images/bulb.png")
+            center / contain no-repeat;
+        }
+        &.video3 {
+          background: transparent url("../../../../assets/images/main_new.png")
+            center / contain no-repeat;
+        }
+      }
+    }
+    .play-pause-buttons {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+  .VideoLabel {
+    position: absolute;
+    top: 251px;
+    right: 179px;
+    color: #35374c;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    &.labelFor_hotspot0 {
+      &.label_0 {
+        right: 359px;
+      }
+    }
+    &.labelFor_hotspot1 {
+      &.label_0 {
+        top: 187px;
+        left: 135px;
+      }
+    }
+    &.labelFor_hotspot2 {
+      &.label_0 {
+        top: 275px;
+        left: 237px;
+      }
+    }
+    &.EndlabelFor_hotspot2{
+      &.label_0 {
+        top: 139px;
+        left: 340px;
+      }
+      &.label_1 {
+        top: 163px;
+        left:339px;
+      }
+    }
+  }
+
+}

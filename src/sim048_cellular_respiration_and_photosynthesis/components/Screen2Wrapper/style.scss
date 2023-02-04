@@ -1,0 +1,211 @@
+.screen2wrapper {
+  height: 100%;
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  .instructor {
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    bottom: 24px;
+    position: absolute;
+    margin-left: -24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .draggable-container {
+    display: flex;
+    .draggable-button {
+      .button-label-wrapper {
+        margin-right: 12px;
+        .buttons-wrapper {
+          height: 47px;
+          width: 47px;
+          border: 1px dashed var(--primary-blue);
+          background-color: var(--white);
+          cursor: grab;
+
+          .draggable-element {
+            background-color: var(--white);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &.ui-draggable-dragging {
+              height: 47px;
+              width: 47px;
+              border: 2px solid var(--question-text-blue);
+              background-color: var(--white);
+              z-index: 100;
+            }
+          }
+        }
+        > label {
+          width: 100%;
+          color: var(--lightgreyshade);
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.21px;
+          line-height: 17px;
+          text-align: center;
+        }
+      }
+
+      &.disabled {
+        .button-label-wrapper {
+          .buttons-wrapper {
+            border: 2px solid var(--dark-grey);
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      &.mitochondrion {
+        .button-label-wrapper {
+          .buttons-wrapper {
+            .draggable-element {
+              background-image: url(../../assets/images/mitochondria_1_tab.png);
+              &.ui-draggable-dragging {
+                background-image: url(../../assets/images/mitochondria_1_tab.png);
+              }
+            }
+          }
+        }
+      }
+
+      &.chloroplast {
+        .button-label-wrapper {
+          .buttons-wrapper {
+            .draggable-element {
+              background-image: url(../../assets/images/choloroplast_tab.png);
+              &.ui-draggable-dragging {
+                background-image: url(../../assets/images/choloroplast_tab.png);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .droppable-region {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 14px;
+    margin-right: 38px;
+    justify-content: space-around;
+
+    .droppable-element {
+      height: 235px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.showDrop{
+        border: 1px dashed var(--question-text-blue);
+        border-radius: 4px;
+        background-color: #f6faff;
+      }
+
+      > div {
+        height: 140px;
+        width: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .plantCell {
+        background-image: url("../../assets/images/plant_cell.png");
+      }
+      .animalCell {
+        background-image: url("../../assets/images/animal_cell.png");
+      }
+    }
+
+    .cell{
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 47px;
+      width: 47px;
+
+      &.plantCell {
+        &.mitochondrion {
+          top: 302px;
+          left: 177px;
+          background-image: url(../../assets/images/mitochondria_1_tab.png);
+        }
+  
+        &.chloroplast{
+          top: 314px;
+          left: 224px;
+          background-image: url(../../assets/images/choloroplast_tab.png);
+        }
+      }
+
+      &.animalCell {
+        &.mitochondrion {
+          top: 314px;
+          left: 520px;
+          background-image: url(../../assets/images/mitochondria_1_tab.png);
+        }
+  
+        &.chloroplast{
+          top: 314px;
+          left: 603px;
+          background-image: url(../../assets/images/choloroplast_tab.png);
+        }
+      }
+    }
+  }
+
+  .accessible-list {
+    z-index: 1;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    height: 235px;
+    width: 651px;
+    top: 242px;
+    left: 63px;
+
+    ul {
+      height: 100%;
+      li {
+        position: absolute;
+        width: 300px;
+        height: 235px;
+        a {
+          border: 1px dashed var(--question-text-blue);
+          border-radius: 4px;
+          width: 300px;
+          height: 235px;
+          display: block;
+          div {
+            display: none;
+          }
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+        }
+      }
+      .listitem:nth-child(2) {
+        left: 350px;
+      }
+    }
+  }
+}

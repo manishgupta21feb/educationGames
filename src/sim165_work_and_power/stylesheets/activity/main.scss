@@ -1,0 +1,35 @@
+.full-view {
+  height: 100%;
+}
+.hidden-images {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.image0 {
+    background-image: url(../assets/images/box.png);
+  }
+  &.image1 {
+    background-image: url(../assets/images/defaultStand.png);
+  }
+  &.image2 {
+    background-image: url(../assets/images/down_ani_spr.png);
+  }
+  &.image3 {
+    background-image: url(../assets/images/intro.png);
+  }
+  &.image4 {
+    background-image: url(../assets/images/man_slide_ani.png);
+  }
+  &.image5 {
+    background-image: url(../assets/images/up_ani_spr.png);
+  }
+  &.image6 {
+    background-image: url(../assets/images/base.png);
+  }
+}

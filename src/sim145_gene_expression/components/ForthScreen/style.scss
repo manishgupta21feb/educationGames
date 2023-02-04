@@ -1,0 +1,650 @@
+.forth-screen-right-main {
+  margin-top: 80px;
+  .forth-screen-right-text {
+    height: 320px;
+    width: 218px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}
+
+.forth-screen-left-main {
+  background-color: #effcfc;
+  width: 540px;
+  height: 600px;
+
+  .image-BG {
+    background-image: url("../../assets/images/GeneExpression.png");
+    width: 540px;
+    height: 600px;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .forthScreenText {
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .forthScreenText-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 20px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+  }
+
+  .forth-screen-container-1 {
+    position: absolute;
+    height: 180px;
+    width: 230px;
+    top: 40px;
+    left: 0px;
+
+    .forth-screen-img1-header {
+      width: 100%;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 9px;
+      color: black !important;
+    }
+
+    .forthScreenTextImg1-up-container-0 {
+      top: 41px;
+      left: 28px;
+    }
+
+    .forthScreenTextImg1-up-container-1 {
+      top: 41px;
+      left: 44px;
+    }
+
+    .forthScreenTextImg1-up-container-2 {
+      top: 44px;
+      left: 59.5px;
+    }
+    .forthScreenTextImg1-up-container-3 {
+      top: 46px;
+      left: 77px;
+    }
+
+    .forthScreenTextImg1-up-container-4 {
+      top: 48px;
+      left: 94px;
+    }
+    .forthScreenTextImg1-up-container-5 {
+      top: 47px;
+      left: 110.5px;
+    }
+
+    .forthScreenTextImg1-up-container-6 {
+      top: 46px;
+      left: 126px;
+    }
+
+    .forthScreenTextImg1-up-container-7 {
+      top: 44px;
+      left: 141px;
+    }
+
+    .forthScreenTextImg1-up-container-8 {
+      top: 42px;
+      left: 157.5px;
+    }
+
+    .forthScreenTextImg1-up-container-9 {
+      top: 40px;
+      left: 172.5px;
+    }
+
+    .forthScreenTextImg1-up-container-10 {
+      top: 38px;
+      left: 183.5px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-0 {
+      top: 103px;
+      left: 28px;
+    }
+    .forthScreenTextImg1-Bottom-container-1 {
+      top: 103px;
+      left: 44px;
+    }
+    .forthScreenTextImg1-Bottom-container-2 {
+      top: 104px;
+      left: 59.5px;
+    }
+    .forthScreenTextImg1-Bottom-container-3 {
+      top: 106px;
+      left: 77px;
+    }
+    .forthScreenTextImg1-Bottom-container-4 {
+      top: 106px;
+      left: 93.5px;
+    }
+    .forthScreenTextImg1-Bottom-container-5 {
+      top: 107px;
+      left: 110px;
+    }
+    .forthScreenTextImg1-Bottom-container-6 {
+      top: 106px;
+      left: 126px;
+    }
+    .forthScreenTextImg1-Bottom-container-7 {
+      top: 102px;
+      left: 141.5px;
+    }
+    .forthScreenTextImg1-Bottom-container-8 {
+      top: 102px;
+      left: 157px;
+    }
+    .forthScreenTextImg1-Bottom-container-9 {
+      top: 101px;
+      left: 172px;
+    }
+    .forthScreenTextImg1-Bottom-container-10 {
+      top: 99px;
+      left: 183.5px;
+    }
+  }
+  .forth-screen-container-2 {
+    position: absolute;
+    height: 180px;
+    width: 230px;
+    top: 40px;
+    right: 0px;
+
+    .forth-screen-img2-header {
+      width: 100%;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 9px;
+      color: black !important;
+    }
+
+    .forthScreenTextImg1-up-container-0 {
+      top: 32px;
+      left: 40px;
+    }
+
+    .forthScreenTextImg1-up-container-1 {
+      top: 32px;
+      left: 55.5px;
+    }
+
+    .forthScreenTextImg1-up-container-2 {
+      top: 34px;
+      left: 71px;
+    }
+    .forthScreenTextImg1-up-container-3 {
+      top: 36px;
+      left: 88px;
+    }
+
+    .forthScreenTextImg1-up-container-4 {
+      top: 38px;
+      left: 106px;
+    }
+    .forthScreenTextImg1-up-container-5 {
+      top: 37px;
+      left: 122.5px;
+    }
+
+    .forthScreenTextImg1-up-container-6 {
+      top: 36px;
+      left: 138px;
+    }
+
+    .forthScreenTextImg1-up-container-7 {
+      top: 32px;
+      left: 153px;
+    }
+
+    .forthScreenTextImg1-up-container-8 {
+      top: 31px;
+      left: 169px;
+    }
+
+    .forthScreenTextImg1-up-container-9 {
+      top: 30px;
+      left: 184px;
+    }
+
+    .forthScreenTextImg1-up-container-10 {
+      top: 28px;
+      left: 195px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-0 {
+      top: 93px;
+      left: 40px;
+    }
+    .forthScreenTextImg1-Bottom-container-1 {
+      top: 93px;
+      left: 55px;
+    }
+    .forthScreenTextImg1-Bottom-container-2 {
+      top: 95px;
+      left: 71px;
+    }
+    .forthScreenTextImg1-Bottom-container-3 {
+      top: 97px;
+      left: 88px;
+    }
+    .forthScreenTextImg1-Bottom-container-4 {
+      top: 98px;
+      left: 104px;
+    }
+    .forthScreenTextImg1-Bottom-container-5 {
+      top: 97px;
+      left: 123px;
+    }
+    .forthScreenTextImg1-Bottom-container-6 {
+      top: 100px;
+      left: 137px;
+    }
+    .forthScreenTextImg1-Bottom-container-7 {
+      top: 95px;
+      left: 154px;
+    }
+    .forthScreenTextImg1-Bottom-container-8 {
+      top: 93px;
+      left: 169px;
+    }
+    .forthScreenTextImg1-Bottom-container-9 {
+      top: 91px;
+      left: 183px;
+    }
+    .forthScreenTextImg1-Bottom-container-10 {
+      top: 90px;
+      left: 194.5px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-11 {
+      top: 132px;
+      right: 67px;
+      transform: rotate(19deg);
+    }
+    .forthScreenTextImg1-Bottom-container-12 {
+      top: 138px;
+      right: 54px;
+      transform: rotate(19deg);
+    }
+    .forthScreenTextImg1-Bottom-container-13 {
+      top: 143px;
+      right: 39px;
+      transform: rotate(19deg);
+    }
+  }
+
+  .forth-screen-container-3 {
+    position: absolute;
+    height: 145px;
+    width: 230px;
+    top: 230px;
+    left: 0px;
+
+    .forth-screen-img3-header {
+      width: 100%;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 3px;
+      color: black !important;
+    }
+
+    .forthScreenTextImg1-up-container-0 {
+      top: 26px;
+      left: 28px;
+    }
+
+    .forthScreenTextImg1-up-container-1 {
+      top: 25px;
+      left: 44px;
+    }
+
+    .forthScreenTextImg1-up-container-2 {
+      top: 27px;
+      left: 59.5px;
+    }
+    .forthScreenTextImg1-up-container-3 {
+      top: 30px;
+      left: 77px;
+    }
+
+    .forthScreenTextImg1-up-container-4 {
+      top: 31px;
+      left: 94px;
+    }
+    .forthScreenTextImg1-up-container-5 {
+      top: 30px;
+      left: 111px;
+    }
+
+    .forthScreenTextImg1-up-container-6 {
+      top: 29px;
+      left: 126px;
+    }
+
+    .forthScreenTextImg1-up-container-7 {
+      top: 26px;
+      left: 141px;
+    }
+
+    .forthScreenTextImg1-up-container-8 {
+      top: 25px;
+      left: 157px;
+    }
+
+    .forthScreenTextImg1-up-container-9 {
+      top: 23px;
+      left: 172px;
+    }
+
+    .forthScreenTextImg1-up-container-10 {
+      top: 21px;
+      left: 183px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-0 {
+      top: 87px;
+      left: 28px;
+    }
+    .forthScreenTextImg1-Bottom-container-1 {
+      top: 87px;
+      left: 44px;
+    }
+    .forthScreenTextImg1-Bottom-container-2 {
+      top: 88px;
+      left: 60px;
+    }
+    .forthScreenTextImg1-Bottom-container-3 {
+      top: 91px;
+      left: 77px;
+    }
+    .forthScreenTextImg1-Bottom-container-4 {
+      top: 91px;
+      left: 93px;
+    }
+    .forthScreenTextImg1-Bottom-container-5 {
+      top: 90px;
+      left: 110px;
+    }
+    .forthScreenTextImg1-Bottom-container-6 {
+      top: 89px;
+      left: 126px;
+    }
+    .forthScreenTextImg1-Bottom-container-7 {
+      top: 90px;
+      left: 142px;
+    }
+    .forthScreenTextImg1-Bottom-container-8 {
+      top: 87px;
+      left: 157px;
+    }
+    .forthScreenTextImg1-Bottom-container-9 {
+      top: 84px;
+      left: 171px;
+    }
+    .forthScreenTextImg1-Bottom-container-10 {
+      top: 82px;
+      left: 183px;
+    }
+  }
+  .forth-screen-container-4 {
+    position: absolute;
+    height: 145px;
+    width: 230px;
+    top: 230px;
+    right: 0px;
+
+    .forth-screen-img4-header {
+      width: 100%;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 3px;
+      color: black !important;
+    }
+
+    .framshift-text {
+      position: absolute;
+      font-size: 9px;
+      top: 61px;
+      right: 41px;
+      color: black !important;
+    }
+
+    .forthScreenTextImg1-up-container-0 {
+      top: 25px;
+      left: 31px;
+    }
+
+    .forthScreenTextImg1-up-container-1 {
+      top: 25px;
+      left: 46px;
+    }
+
+    .forthScreenTextImg1-up-container-2 {
+      top: 27px;
+      left: 62px;
+    }
+    .forthScreenTextImg1-up-container-3 {
+      top: 29px;
+      left: 79px;
+    }
+
+    .forthScreenTextImg1-up-container-4 {
+      top: 31px;
+      left: 97px;
+    }
+    .forthScreenTextImg1-up-container-5 {
+      top: 31px;
+      left: 113px;
+    }
+
+    .forthScreenTextImg1-up-container-6 {
+      top: 29px;
+      left: 129px;
+    }
+
+    .forthScreenTextImg1-up-container-7 {
+      top: 26px;
+      left: 144px;
+    }
+
+    .forthScreenTextImg1-up-container-8 {
+      top: 24px;
+      left: 160px;
+    }
+
+    .forthScreenTextImg1-up-container-9 {
+      top: 23px;
+      left: 175px;
+    }
+
+    .forthScreenTextImg1-up-container-10 {
+      top: 21px;
+      left: 185.5px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-0 {
+      top: 86px;
+      left: 31px;
+    }
+    .forthScreenTextImg1-Bottom-container-1 {
+      top: 86px;
+      left: 46px;
+    }
+    .forthScreenTextImg1-Bottom-container-2 {
+      top: 88px;
+      left: 62px;
+    }
+    .forthScreenTextImg1-Bottom-container-3 {
+      top: 91px;
+      left: 79px;
+    }
+    .forthScreenTextImg1-Bottom-container-4 {
+      top: 91px;
+      left: 93px;
+    }
+    .forthScreenTextImg1-Bottom-container-5 {
+      top: 92px;
+      left: 112px;
+    }
+    .forthScreenTextImg1-Bottom-container-6 {
+      top: 91px;
+      left: 128px;
+    }
+    .forthScreenTextImg1-Bottom-container-7 {
+      top: 88px;
+      left: 144px;
+    }
+    .forthScreenTextImg1-Bottom-container-8 {
+      top: 86px;
+      left: 160px;
+    }
+    .forthScreenTextImg1-Bottom-container-9 {
+      top: 83px;
+      left: 173px;
+    }
+    .forthScreenTextImg1-Bottom-container-10 {
+      top: 80px;
+      left: 185px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-11 {
+      top: 78px;
+      left: 196px;
+    }
+  }
+
+  .forth-screen-container-5 {
+    position: absolute;
+    height: 160px;
+    width: 230px;
+    top: 380px;
+    left: 136px;
+
+    .forth-screen-img5-header {
+      width: 100%;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 3px;
+      color: black !important;
+    }
+
+    .framshift-text {
+      position: absolute;
+      font-size: 9px;
+      top: 59px;
+      right: 43px;
+      color: black !important;
+    }
+
+    .forthScreenTextImg1-up-container-0 {
+      top: 27px;
+      left: 34px;
+    }
+
+    .forthScreenTextImg1-up-container-1 {
+      top: 27px;
+      left: 49px;
+    }
+
+    .forthScreenTextImg1-up-container-2 {
+      top: 29px;
+      left: 65px;
+    }
+    .forthScreenTextImg1-up-container-3 {
+      top: 31px;
+      left: 82px;
+    }
+
+    .forthScreenTextImg1-up-container-4 {
+      top: 33px;
+      left: 100px;
+    }
+    .forthScreenTextImg1-up-container-5 {
+      top: 32px;
+      left: 116px;
+    }
+
+    .forthScreenTextImg1-up-container-6 {
+      top: 31px;
+      left: 132px;
+    }
+
+    .forthScreenTextImg1-up-container-7 {
+      top: 27px;
+      left: 147px;
+    }
+
+    .forthScreenTextImg1-up-container-8 {
+      top: 25px;
+      left: 163px;
+    }
+
+    .forthScreenTextImg1-up-container-9 {
+      top: 24px;
+      left: 178px;
+    }
+
+    .forthScreenTextImg1-up-container-10 {
+      top: 23px;
+      left: 189px;
+    }
+
+    .forthScreenTextImg1-Bottom-container-0 {
+      top: 79px;
+      left: 33.5px;
+    }
+    .forthScreenTextImg1-Bottom-container-1 {
+      top: 79px;
+      left: 49px;
+    }
+    .forthScreenTextImg1-Bottom-container-2 {
+      top: 81px;
+      left: 65px;
+    }
+    .forthScreenTextImg1-Bottom-container-3 {
+      top: 83px;
+      left: 82px;
+    }
+    .forthScreenTextImg1-Bottom-container-4 {
+      top: 84px;
+      left: 99px;
+    }
+    .forthScreenTextImg1-Bottom-container-5 {
+      top: 84px;
+      left: 114px;
+    }
+    .forthScreenTextImg1-Bottom-container-6 {
+      top: 83px;
+      left: 132.5px;
+    }
+    .forthScreenTextImg1-Bottom-container-7 {
+      top: 82px;
+      left: 148px;
+    }
+    .forthScreenTextImg1-Bottom-container-8 {
+      top: 80px;
+      left: 163px;
+    }
+    .forthScreenTextImg1-Bottom-container-9 {
+      top: 76px;
+      left: 177px;
+    }
+    .forthScreenTextImg1-Bottom-container-10 {
+      top: 128px;
+      left: 122px;
+      transform: rotate(45deg);
+    }
+  }
+}

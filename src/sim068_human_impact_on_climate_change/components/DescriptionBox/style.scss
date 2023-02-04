@@ -1,0 +1,39 @@
+.instruction-text-wrapper {
+  position: absolute;
+  left: 24px;
+  top: 152px;
+
+  width: 752px;
+  border: 2px solid var(--secondary-attention-orange);
+  border-radius: 8px;
+  background-color: var(--secondary-attention-light);
+  display: inline-block;
+
+  z-index: 1;
+  padding: 8px 12px;
+
+  .closeButton {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -13px;
+    left: 15px;
+  }
+  .info-text {
+    color: #352103;
+    font-size: 14px;
+    font-variant: lining-nums;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: -46px;
+    margin-right: 33px;
+    position: relative;
+  }
+  .button-css {
+    background: transparent;
+    border: none;
+    text-decoration: underline dotted;
+    color: var(--primary-blue);
+    font-size: 12px;
+  }
+}

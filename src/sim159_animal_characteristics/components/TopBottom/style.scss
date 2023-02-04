@@ -1,0 +1,324 @@
+.topbottom {
+  .top {
+    .top-wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      > div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.screen0 {
+          &.bear {
+            background-image: url(../../assets/images/bear.png);
+          }
+          &.penguin {
+            background-image: url(../../assets/images/penguin.png);
+          }
+        }
+        &.screen1 {
+          &.bear {
+            background-image: url(../../assets/images/bear_and_cub.png);
+          }
+          &.penguin {
+            background-image: url(../../assets/images/penguin_with_young.png);
+          }
+        }
+
+        .frame {
+          padding: 8px;
+          position: absolute;
+          border-radius: 8px;
+          border: 2px solid #ba5b08;
+          background-color: #fbf1e9;
+
+          > div {
+            border-radius: 8px;
+            background-size: contain;
+            background-color: white;
+            border: 1px solid #ba5b08;
+            background-repeat: no-repeat;
+          }
+
+          &.fur {
+            top: 6px;
+            left: 360px;
+            > div {
+              width: 122px;
+              height: 129px;
+              background-image: url(../../assets/images/black_bear_fur.png);
+            }
+          }
+          &.teeth {
+            top: 4px;
+            left: 422px;
+            > div {
+              width: 122px;
+              height: 130px;
+              background-image: url(../../assets/images/bear_teeth.png);
+            }
+          }
+          &.claws {
+            top: 200px;
+            left: 370px;
+            > div {
+              width: 122px;
+              height: 83px;
+              background-image: url(../../assets/images/bear_claw.png);
+            }
+          }
+          &.claws_legs {
+            right: 53px;
+            bottom: 18px;
+            > div {
+              width: 309px;
+              height: 85px;
+              background-image: url(../../assets/images/four_black_bear_legs_with_short_claws_visible.png);
+            }
+          }
+          &.feathers {
+            top: 8px;
+            left: 210px;
+            > div {
+              width: 131px;
+              height: 131px;
+              background-image: url(../../assets/images/penguin_feathers.png);
+            }
+          }
+          &.flippers {
+            top: 26px;
+            left: 200px;
+            > div {
+              width: 131px;
+              height: 131px;
+              background-image: url(../../assets/images/penguin_flipper.png);
+            }
+          }
+          &.legs {
+            top: 86px;
+            left: 556px;
+            > div {
+              width: 131px;
+              height: 131px;
+              background-image: url(../../assets/images/penguin_legs.png);
+            }
+          }
+          &.beak {
+            top: 8px;
+            left: 210px;
+            > div {
+              width: 131px;
+              height: 131px;
+              background-image: url(../../assets/images/penguin_beak.png);
+            }
+          }
+        }
+
+        .connector {
+          position: relative;
+          box-sizing: border-box;
+          height: 4px;
+          width: 34px;
+          border: 1px solid #fbf1e9;
+          background-color: #ba5b08;
+          border-right: none;
+          border-left: none;
+
+          &.claws {
+            top: 247px;
+            left: 337px;
+          }
+          &.beak {
+            top: 43px;
+            left: 361px;
+            width: 59px;
+          }
+
+          &.feathers {
+            top: 97px;
+            width: 81px;
+            left: 361px;
+          }
+
+          &.fur {
+            top: 126px;
+            left: 288px;
+            width: 72px;
+          }
+
+          &.legs {
+            top: 212px;
+            left: 484px;
+            width: 72px;
+          }
+
+          &.flippers {
+            left: 351px;
+            top: 106px;
+            width: 76px;
+          }
+
+          &.teeth {
+            top: 250px;
+            left: 342px;
+            width: 77px;
+          }
+
+          &.claws_legs {
+            top: 119px;
+            left: 381px;
+            width: 4px;
+            border: 1px solid #fbf1e9;
+            border-top: none;
+            height: 90px;
+            border-bottom: none;
+
+            &::before {
+              content: " ";
+              background-color: #ba5b08;
+              position: absolute;
+              top: 88px;
+              left: -44px;
+              padding: 1px;
+              border: 1px solid #fbf1e9;
+              width: 43px;
+            }
+
+            &::after {
+              padding: 1px;
+              content: " ";
+              background-color: #ba5b08;
+              border: 1px solid #fbf1e9;
+              width: 37px;
+              position: absolute;
+              top: -4px;
+              left: -1px;
+              border-right: none;
+            }
+          }
+        }
+
+        .oval {
+          box-sizing: border-box;
+          height: 6px;
+          width: 6px;
+          border: 1px solid #fbf1e9;
+          background-color: #ba5b08;
+          position: relative;
+          border-radius: 50%;
+
+          &.claws_legs {
+            left: 334px;
+            top: 116px;
+          }
+          &.flippers {
+            left: 423px;
+            top: 101px;
+          }
+
+          &.claws {
+            top: 242px;
+            left: 336px;
+          }
+
+          &.beak {
+            top: 39px;
+            left: 419px;
+          }
+
+          &.feathers {
+            top: 92px;
+            left: 439px;
+          }
+
+          &.fur {
+            top: 121px;
+            left: 287px;
+            height: 6px;
+            width: 6px;
+          }
+          &.legs {
+            top: 207px;
+            left: 482px;
+          }
+
+          &.teeth {
+            top: 245px;
+            left: 339px;
+          }
+        }
+      }
+
+      .connecting-line {
+        z-index: 1;
+        position: absolute;
+        border: 1px solid #fbf1e9;
+        background-color: #ba5b08;
+        &::after {
+          width: 7px;
+          height: 7px;
+          display: block;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    .bottom-wrapper {
+      width: 100%;
+      height: 100%;
+
+      .question-text {
+        color: #052978;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+
+        &:first-of-type {
+          margin-bottom: 28px;
+        }
+
+        &:nth-of-type(2) {
+          margin-bottom: 16px;
+        }
+      }
+
+      .radiobuttons {
+        flex-direction: row;
+        .radiobutton {
+          width: 32%;
+          .radiobutton-inner-wrapper input[type="radio"] + div + label {
+            margin-top: 1px;
+          }
+        }
+      }
+
+      .checkboxes {
+        display: flex;
+        flex-direction: row;
+
+        .checkbox {
+          align-items: flex-start;
+          input[type="checkbox"] + div + label {
+            margin-top: 4px;
+          }
+        }
+
+        &.bear {
+          &:nth-child(2),
+          &:nth-child(3) {
+            label {
+              padding-right: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

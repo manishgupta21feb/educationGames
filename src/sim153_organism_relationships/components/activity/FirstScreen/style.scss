@@ -1,0 +1,281 @@
+.first-screen {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url(../../../assets/images/mainimg.png);
+
+  .dnd-heading {
+    position: absolute;
+    top: 64px;
+    left: 24px;
+    right: 24px;
+    color: aliceblue;
+  }
+  .dropped-objects {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.show {
+      opacity: 1;
+    }
+    &.understoryplants {
+      background-image: url(../../../assets/images/mainunderstory.png);
+    }
+    &.kapoktree {
+      background-image: url(../../../assets/images/mainkapok.png);
+    }
+    &.vine {
+      background-image: url(../../../assets/images/mainvines.png);
+    }
+    &.bromeliad {
+      background-image: url(../../../assets/images/mainbromelaid.png);
+    }
+    &.frog {
+      background-image: url(../../../assets/images/mainfrog.png);
+    }
+    &.ant {
+      background-image: url(../../../assets/images/mainant.png);
+    }
+  }
+
+  .mainHeading {
+    position: absolute;
+    top: 64px;
+    left: 24px;
+    right: 26px;
+    color: aliceblue;
+  }
+  .wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 165px;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    left: 24px;
+  }
+  .draggable-container-wrapper {
+    position: relative;
+    .draglabel {
+      display: flex;
+      justify-content: center;
+      margin-top: -6px;
+
+      &.understoryplants {
+        width: 70px;
+      }
+
+      &.ant {
+        margin-right: 4px;
+      }
+      p {
+        font-size: 12px;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    .draggable-items {
+      position: relative;
+
+      margin-right: 5px;
+      margin-bottom: 10px;
+      width: 65px;
+      height: 65px;
+    }
+    .draggable-button {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      position: absolute;
+      outline: 1px solid transparent;
+      border: 1px dashed white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+
+      &.understoryplants {
+        position: relative;
+        background: transparent
+          url(../../../assets/images/understory-plants.png) center / contain
+          no-repeat;
+      }
+      &.kapoktree {
+        position: relative;
+        background: transparent url(../../../assets/images/Kapok-tree.png)
+          center / contain no-repeat;
+      }
+      &.vine {
+        position: relative;
+        background: transparent url(../../../assets/images/Vine.png) center /
+          contain no-repeat;
+      }
+      &.bromeliad {
+        position: relative;
+        background: transparent url(../../../assets/images/Bromeliad.png) center /
+          contain no-repeat;
+      }
+      &.frog {
+        position: relative;
+        background: transparent url(../../../assets/images/Frog.png) center /
+          contain no-repeat;
+      }
+      &.ant {
+        position: relative;
+        background: transparent url(../../../assets/images/Leaf-cutter-ant.png)
+          center / contain no-repeat;
+      }
+      &:not(:disabled) {
+        cursor: grab;
+      }
+     
+
+
+      span {
+        display: block;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
+
+      &.ui-draggable {
+        cursor: grab;
+      }
+      &.ui-draggable-dragging {
+      
+        cursor: grabbing;
+        border: 1px solid black;
+      }
+      &.ui-draggable-disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      &.selectedItem {
+        background-color: #d9ebff;
+      }
+    }
+    .accessible-button {
+      position: absolute;
+      padding: 0;
+      width: 65px;
+      height: 65px;
+      border: none;
+      box-shadow: none;
+      justify-content: center;
+      background-color: transparent;
+
+      &:not(:disabled) {
+        border-radius: 4px;
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+        }
+      }
+    }
+  }
+}
+.droppables {
+  height: 443px;
+  width: 596px;
+
+  .accessible-list {
+    top: 0;
+    left: -80px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    ul {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      li {
+        position: relative;
+        height: 250px;
+        width: 680px;
+
+        a {
+          padding: 0;
+          line-height: unset;
+          width: 100%;
+          height: 100%;
+          display: block;
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+
+          div {
+            display: none;
+          }
+        }
+        &:nth-child(1) {
+          left: 120px;
+          top: 320px;
+        }
+      }
+    }
+  }
+  .droppables-wrapper {
+    .dropzones {
+      top: 275px;
+      left: 20px;
+      height: 50%;
+      width: 95%;
+      position: absolute;
+      position: absolute;
+    }
+  }
+}
+.instruction-text-wrapper {
+  position: relative;
+  top: -30px;
+  max-height: 148px;
+  left: 20px;
+  box-sizing: border-box;
+  width: 752px;
+  border: 2px solid var(--secondary-attention-orange);
+  border-radius: 8px;
+  background-color: var(--secondary-attention-light);
+  display: inline-block;
+  z-index: 1;
+  padding: 8px 12px;
+  .scroll-bar {
+    overflow: auto;
+  }
+
+  .info-text {
+    color: #352103;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    max-height: 80px;
+    width: 696px;
+  }
+  .close-button {
+    display: flex;
+    flex-direction: row;
+    margin: unset;
+    position: relative;
+    left: 636px;
+  }
+}

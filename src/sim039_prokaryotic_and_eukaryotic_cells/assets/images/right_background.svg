@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450px" height="290px" viewBox="0 0 450 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M420,272 L631,272 C711.081289,272 776,336.918711 776,417 C776,497.081289 711.081289,562 631,562 L420,562 C368.085234,562 326,519.914766 326,468 L326,366 C326,314.085234 368.085234,272 420,272 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="450" height="290" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Sim-039---HS---Prokaryotic-and-Eukaryotic-Cells" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.24" stroke-dasharray="3,2">
+        <g id="Start" transform="translate(-326.000000, -272.000000)" fill="#D9EBFF" stroke="#052978" stroke-width="2">
+            <use id="Background-Copy-2" mask="url(#mask-2)" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

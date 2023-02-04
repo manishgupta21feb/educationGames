@@ -1,0 +1,184 @@
+.left-area {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.image1 {
+    background-image: url(../../../assets/images/image1.png);
+  }
+  &.image2 {
+    background-image: url(../../../assets/images/image2.png);
+  }
+  &.show {
+    opacity: 1;
+  }
+
+  .left-text {
+    &.question1 {
+      position: absolute;
+      top: 175px;
+      left: 100px;
+      .text0 {
+        position: absolute;
+        top: -60px;
+        left: 195px;
+      }
+      .text1 {
+        position: absolute;
+        top: 215px;
+        left: 340px;
+      }
+    }
+    &.question2 {
+      position: absolute;
+      top: 255px;
+      left: 58px;
+      .text0 {
+        position: absolute;
+        top: -142px;
+        left: 237px;
+      }
+      .text1 {
+        position: absolute;
+        top: 134px;
+        left: 379px;
+      }
+    }
+    &.question3 {
+      position: absolute;
+      top: 380px;
+      left: 3px;
+      .text0 {
+        position: absolute;
+        top: -261px;
+        left: 294px;
+      }
+      .text1 {
+        position: absolute;
+        top: -117px;
+        left: 380px;
+      }
+    }
+    &.question4 {
+      position: absolute;
+      top: 251px;
+      left: 63px;
+      .text0 {
+        position: absolute;
+        top: -135px;
+        left: 230px;
+      }
+      .text1 {
+        position: absolute;
+        top: 140px;
+        left: 375px;
+      }
+    }
+    &.question5 {
+      position: absolute;
+      top: 100px;
+      left: 150px;
+      .text0 {
+        position: absolute;
+        top: 88px;
+        left: 188px;
+      }
+      .text1 {
+        position: absolute;
+        top: 285px;
+        left: 290px;
+      }
+    }
+    &.question6 {
+      position: absolute;
+      top: 180px;
+      left: 102px;
+      .text0 {
+        position: absolute;
+        top: -70px;
+        left: 193px;
+      }
+      .text1 {
+        position: absolute;
+        top: 215px;
+        left: 337px;
+      }
+    }
+    &.question7 {
+      position: absolute;
+      top: 105px;
+      left: 150px;
+      .text0 {
+        position: absolute;
+        top: 88px;
+        left: 190px;
+      }
+      .text1 {
+        position: absolute;
+        top: 288px;
+        left: 288px;
+      }
+    }
+    &.question8 {
+      position: absolute;
+      top: 381px;
+      left: 2px;
+      .text0 {
+        position: absolute;
+        top: -271px;
+        left: 290px;
+      }
+      .text1 {
+        position: absolute;
+        top: -115px;
+        left: 381px;
+      }
+    }
+  }
+  .arrow {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/path.svg);
+  }
+}
+.text-value {
+  font-variant: lining-nums;
+  width: 600px;
+}
+.instruction-text-wrapper {
+  position: absolute;
+  left: 27px;
+  bottom: 61px;
+  width: 489px;
+  border: 2px solid var(--secondary-attention-orange);
+  border-radius: 8px;
+  background-color: var(--secondary-attention-light);
+  display: inline-block;
+  padding: 8px 12px;
+  .help-hint {
+    left: 8px;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../../app/assets/images/attention_icon.svg);
+  }
+  .info-text {
+    width: 433px;
+    position: relative;
+    color: #352103;
+    margin-left: 38px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}

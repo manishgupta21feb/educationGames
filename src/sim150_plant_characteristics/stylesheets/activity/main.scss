@@ -1,0 +1,301 @@
+.sim150 {
+  .viewAPanel {
+    width: 100%;
+    position: relative;
+    border: 1px solid #979797;
+    img {
+      width: inherit;
+    }
+
+    .planet_focus {
+      position: absolute;
+      .planet_focus__btn {
+        padding: 10px;
+        min-width: 174px;
+        max-width: 200px;
+      }
+      .tail {
+        &::before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: #352103;
+          position: absolute;
+          top: -5.3px;
+          left: 48px;
+          border-radius: 50%;
+        }
+      }
+
+      &:nth-child(4) {
+        top: 267px;
+        left: 239.5px;
+        .planet_focus__btn {
+          padding: 10px;
+        }
+
+        .tail {
+          transform: translate(38px, 9px) rotate(215deg);
+        }
+      }
+      &:nth-child(2) {
+        top: 3px;
+        left: 246px;
+
+        .tail {
+          transform: translate(36px, 40px) rotate(108deg);
+        }
+      }
+      &:nth-child(3) {
+        top: 187px;
+        left: 341px;
+        z-index: 1;
+        .tail {
+          transform: translate(20px, 9px) rotate(197deg);
+          width: 96px;
+          &::before {
+            top: -5.3px;
+            left: 92px;
+          }
+        }
+      }
+      &:nth-child(5) {
+        top: 322px;
+        left: 17px;
+
+        .tail {
+          transform: translate(108px, 9px) rotate(337deg);
+        }
+      }
+      &:nth-child(7) {
+        top: 512px;
+        left: 225px;
+
+        .tail {
+          transform: translate(28px, 9px) rotate(252deg);
+        }
+      }
+      &:nth-child(8) {
+        top: 245px;
+        left: 418px;
+
+        .tail {
+          transform: translate(28px, 9px) rotate(252deg);
+        }
+      }
+      &:nth-child(6) {
+        top: 339px;
+        left: 318.5px;
+
+        .tail {
+          transform: translate(15px, 38px) rotate(127deg);
+        }
+      }
+      &__btn {
+        position: absolute;
+        overflow: hidden;
+      }
+      .tail {
+        position: absolute;
+        width: 48px;
+        border-top: 2px dashed #352103;
+        transform-origin: 0;
+      }
+      .selected {
+        border-radius: 14px;
+        background-color: #0056b3;
+        .text {
+          color: #fff;
+        }
+      }
+    }
+    .imageContent {
+      position: absolute;
+      bottom: 6%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 20px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .selectData {
+      position: absolute;
+      top: 11px;
+      left: 30px;
+      width: 110px;
+      .tail {
+        position: absolute;
+        width: 48px;
+        border-top: 2px dashed #352103;
+        transform-origin: 0;
+        &::before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          background-color: #352103;
+          position: absolute;
+          top: -5.3px;
+          left: 48px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .roots {
+      top: 378px;
+      left: 181px;
+      .tail {
+        transform: translate(54px, -9px) rotate(449deg);
+      }
+    }
+    .stem {
+      top: 252px;
+      left: 276.5px;
+      .tail {
+        transform: translate(1px, -31px) rotate(215deg);
+      }
+    }
+    .leaves {
+      top: 172px;
+      left: 361px;
+      .tail {
+        transform: translate(0px, -29px) rotate(197deg);
+        width: 96px;
+        &::before {
+          top: -5.3px;
+          left: 92px;
+        }
+      }
+    }
+    .flowers {
+      left: 229px;
+      top: -1px;
+      .tail {
+        transform: translate(52px, -10px) rotate(108deg);
+      }
+    }
+    .fruits {
+      top: 305px;
+      left: 14px;
+      .tail {
+        transform: translate(110px, -28px) rotate(-22deg);
+      }
+    }
+    .seeds {
+      top: 332px;
+      left: 318.5px;
+      .tail {
+        transform: translate(15px, -8px) rotate(127deg);
+      }
+    }
+  }
+  .view-a-question-panel {
+    margin-top: 80px;
+    .question-content {
+      width: 212px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+
+  .viewBAssessment {
+    .questionHeader {
+      height: 60px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+    .questionCount {
+      height: 16px;
+      color: #35374c;
+      font-weight: 500;
+      font-size: 12px;
+      font-style: italic;
+      font-variant: lining-nums;
+    }
+  }
+}
+
+.dialog-container {
+  animation: slide-down 1.6s ease-in-out forwards !important;
+}
+
+// Hotspot btn Custom setting //
+
+/* .btn.hotspot-btn.label {
+  border: 2px solid #0056b3;
+  background-color: #ffffff;
+  .text {
+    color: #0056b3;
+  }
+} */
+
+// == //
+
+.selectData {
+  button {
+    background-color: #fff;
+  }
+}
+
+.removePointer {
+  pointer-events: none;
+}
+
+// Custom checkbox //
+.check-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  .check-button {
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+  }
+}
+
+// Select component //@at-root
+
+.select-dropdown > div {
+  &:first-child {
+    span {
+      display: none;
+    }
+  }
+}
+
+.hidden-images {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.image0 {
+    background-image: url(../assets/images/1.png);
+  }
+  &.image1 {
+    background-image: url(../assets/images/2.png);
+  }
+  &.image2 {
+    background-image: url(../assets/images/3.png);
+  }
+  &.image3 {
+    background-image: url(../assets/images/4.png);
+  }
+  &.image4 {
+    background-image: url(../assets/images/5.png);
+  }
+}

@@ -1,0 +1,520 @@
+.zoom-view-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.36);
+  height: 100%;
+  width: 100%;
+}
+.zoom-view-container {
+  position: relative;
+  // top: 123px;
+  // left: 71px;
+  height: 354px;
+  width: 658px;
+  background-color: #ffffff;
+  .close-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    .btn {
+      &:hover {
+        .icon {
+          box-shadow: -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+            -2px 4px 8px 0 rgba(53, 55, 76, 0.08) !important;
+        }
+      }
+    }
+  }
+}
+.zoomview {
+  top: 32px;
+  left: 81px;
+  opacity: 0;
+  width: 489px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.show {
+    opacity: 1;
+  }
+  &.chart1 {
+    height: 290px;
+    background-image: url(../../../assets/images/co2emission.png);
+    .zoom-heading {
+      top: -20px;
+      left: 130px;
+    }
+
+    .zoom-imageAlt {
+      height: 274px;
+      width: 461px;
+      position: absolute;
+      left: 20px;
+    }
+    .zoom-hidden-part1 {
+      top: 2px;
+      height: 270px;
+      left: 22px;
+
+      // &.slider0 {
+      //   width: 247px;
+      // }
+      &.slider1 {
+        width: 145px;
+      }
+      &.slider2 {
+        width: 340px;
+      }
+      &.slider3 {
+        width: 405px;
+      }
+    }
+    .zoom-hidden-part2 {
+      top: 2px;
+      height: 270px;
+
+      &.slider0 {
+        left: 76px;
+        width: 392px;
+      }
+      &.slider1 {
+        left: 238px;
+        width: 230px;
+      }
+      &.slider2 {
+        left: 416px;
+        width: 53px;
+      }
+      // &.slider3 {
+      //   width: 200px;
+      // }
+    }
+
+    .zoom-yaxis {
+      left: -125px;
+      top: 128px;
+    }
+    .zoom-xaxis {
+      top: 302px;
+    }
+    .zoom-year {
+      position: absolute;
+      top: 280px;
+      font-size: 12px;
+      font-variant: lining-nums;
+    }
+    .zoomchart11900 {
+      left: 10px;
+    }
+    .zoomchart11920 {
+      left: 80px;
+    }
+    .zoomchart11940 {
+      left: 156px;
+    }
+    .zoomchart11960 {
+      left: 228px;
+    }
+    .zoomchart11980 {
+      left: 305px;
+    }
+    .zoomchart12000 {
+      left: 384px;
+    }
+    .zoomchart12020 {
+      left: 450px;
+    }
+    .zoom-read {
+      left: -10px;
+      &.zoomchart10 {
+        top: -4px;
+      }
+      &.zoomchart11 {
+        top: 9px;
+      }
+      &.zoomchart12 {
+        top: 44px;
+      }
+      &.zoomchart13 {
+        top: 82px;
+      }
+      &.zoomchart14 {
+        top: 119px;
+      }
+      &.zoomchart15 {
+        top: 154px;
+      }
+      &.zoomchart16 {
+        top: 192px;
+      }
+      &.zoomchart17 {
+        top: 230px;
+      }
+      &.zoomchart18 {
+        top: 262px;
+      }
+    }
+  }
+  &.chart2 {
+    height: 281px;
+    background-image: url(../../../assets/images/globalsealevelchange.png);
+    .zoom-heading {
+      left: 176px;
+      top: -20px;
+    }
+    .zoom-imageAlt {
+      height: 272px;
+      width: 460px;
+      position: absolute;
+      left: 18px;
+    }
+    .zoom-hidden-part1 {
+      top: 4px;
+      height: 267px;
+
+      left: 20px;
+
+      // &.slider0 {
+      //   width: 247px;
+      // }
+      &.slider1 {
+        width: 150px;
+      }
+      &.slider2 {
+        width: 332px;
+      }
+      &.slider3 {
+        width: 400px;
+      }
+    }
+    .zoom-hidden-part2 {
+      top: 4px;
+      height: 267px;
+
+      &.slider0 {
+        left: 54px;
+        width: 415px;
+      }
+      &.slider1 {
+        left: 244px;
+        width: 226px;
+      }
+      &.slider2 {
+        left: 422px;
+        width: 47px;
+      }
+      // &.slider3 {
+      //   width: 200px;
+      // }
+    }
+
+    .zoom-yaxis {
+      left: -96px;
+      top: 130px;
+    }
+    .zoom-xaxis {
+      top: 298px;
+    }
+    .zoom-year {
+      position: absolute;
+      top: 276px;
+      font-size: 12px;
+      font-variant: lining-nums;
+    }
+    .zoomchart21900 {
+      left: 10px;
+    }
+    .zoomchart21920 {
+      left: 83px;
+    }
+    .zoomchart21940 {
+      left: 158px;
+    }
+    .zoomchart21960 {
+      left: 232px;
+    }
+    .zoomchart21980 {
+      left: 306px;
+    }
+    .zoomchart22000 {
+      left: 378px;
+    }
+    .zoomchart22020 {
+      left: 454px;
+    }
+    .zoom-read {
+      left: -12px;
+      &.zoomchart20 {
+        top: -2px;
+      }
+      &.zoomchart21 {
+        top: 42px;
+      }
+      &.zoomchart22 {
+        top: 88px;
+      }
+      &.zoomchart23 {
+        top: 130px;
+      }
+      &.zoomchart24 {
+        top: 175px;
+      }
+      &.zoomchart25 {
+        top: 218px;
+      }
+      &.zoomchart26 {
+        top: 260px;
+        left: -17px;
+      }
+    }
+  }
+  &.chart3 {
+    height: 281px;
+    background-image: url(../../../assets/images/averageglobaltemperature.png);
+    .zoom-heading {
+      top: -20px;
+      left: 176px;
+    }
+    .zoom-imageAlt {
+      height: 271px;
+      width: 460px;
+      position: absolute;
+      left: 18px;
+    }
+
+    .zoom-hidden-part1 {
+      top: 2px;
+      height: 268px;
+      left: 21px;
+
+      // &.slider0 {
+      //   width: 247px;
+      // }
+      &.slider1 {
+        width: 149px;
+      }
+      &.slider2 {
+        width: 340px;
+      }
+      &.slider3 {
+        width: 400px;
+      }
+    }
+    .zoom-hidden-part2 {
+      top: 2px;
+      height: 268px;
+
+      &.slider0 {
+        left: 62px;
+        width: 406px;
+      }
+      &.slider1 {
+        left: 244px;
+        width: 224px;
+      }
+      &.slider2 {
+        left: 418px;
+        width: 50px;
+      }
+    }
+
+    .zoom-yaxis {
+      left: -115px;
+      top: 130px;
+    }
+    .zoom-xaxis {
+      top: 294px;
+    }
+    .zoom-year {
+      position: absolute;
+      top: 274px;
+      font-size: 12px;
+      font-variant: lining-nums;
+    }
+    .zoomchart31900 {
+      left: 8px;
+    }
+    .zoomchart31920 {
+      left: 84px;
+    }
+    .zoomchart31940 {
+      left: 158px;
+    }
+    .zoomchart31960 {
+      left: 232px;
+    }
+    .zoomchart31980 {
+      left: 306px;
+    }
+    .zoomchart32000 {
+      left: 380px;
+    }
+    .zoomchart32020 {
+      left: 454px;
+    }
+    .zoom-read {
+      left: -12px;
+      &.zoomchart30 {
+        top: -2px;
+      }
+      &.zoomchart31 {
+        top: 62px;
+      }
+      &.zoomchart32 {
+        top: 126px;
+      }
+      &.zoomchart33 {
+        top: 195px;
+      }
+      &.zoomchart34 {
+        top: 258px;
+        left: -16px;
+      }
+    }
+  }
+  &.chart4 {
+    height: 290px;
+    background-image: url(../../../assets/images/globalarcticseaiceminimum.png);
+    .zoom-heading {
+      top: -20px;
+      left: 176px;
+    }
+    .zoom-imageAlt {
+      height: 271px;
+      width: 451px;
+      position: absolute;
+      left: 18px;
+    }
+    .zoom-hidden-part1 {
+      top: 3px;
+      height: 267px;
+      left: 18px;
+
+      // &.slider0 {
+      //   width: 247px;
+      // }
+      &.slider1 {
+        width: 450px;
+      }
+      &.slider2 {
+        width: 236px;
+      }
+      &.slider3 {
+        width: 451px;
+      }
+    }
+    .zoom-hidden-part2 {
+      top: 3px;
+      height: 267px;
+
+      &.slider0 {
+        left: 58px;
+        width: 410px;
+      }
+      // &.slider1 {
+      //   left: 228px;
+      //   width: 212px;
+      // }
+      &.slider2 {
+        left: 324px;
+        width: 144px;
+      }
+      // &.slider3 {
+      //   width: 200px;
+      // }
+    }
+
+    .zoom-yaxis {
+      left: -156px;
+      top: 129px;
+    }
+    .zoom-xaxis {
+      top: 300px;
+    }
+    .zoom-year {
+      position: absolute;
+      top: 278px;
+      font-size: 12px;
+      font-variant: lining-nums;
+    }
+    .zoomchart41900 {
+      left: 8px;
+    }
+    .zoomchart41980 {
+      left: 106px;
+    }
+    .zoomchart41984 {
+      left: 140px;
+    }
+    .zoomchart41992 {
+      left: 204px;
+    }
+    .zoomchart42000 {
+      left: 268px;
+    }
+    .zoomchart42008 {
+      left: 328px;
+    }
+    .zoomchart42016 {
+      left: 400px;
+    }
+    .zoom-read {
+      left: -14px;
+      &.zoomchart40 {
+        top: -2px;
+      }
+      &.zoomchart41 {
+        top: 48px;
+      }
+      &.zoomchart42 {
+        top: 102px;
+      }
+      &.zoomchart43 {
+        top: 156px;
+      }
+      &.zoomchart44 {
+        top: 207px;
+      }
+      &.zoomchart45 {
+        top: 262px;
+      }
+    }
+  }
+}
+.zoom-heading {
+  position: absolute;
+  // height: 20px;
+  // width: 225px;
+  color: #35374c;
+  // font-family: "Tisa Pro";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.11px;
+  line-height: 18px;
+}
+.zoom-yaxis {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+.zoom-read {
+  position: absolute;
+  font-variant: lining-nums;
+  font-size: 12px;
+}
+.zoom-xaxis {
+  position: absolute;
+  top: 170px;
+  left: 228px;
+  font-size: 12px;
+}
+.zoom-hidden-part1 {
+  position: absolute;
+  top: 11px;
+  background-color: #c1c1c1;
+}
+.zoom-hidden-part2 {
+  position: absolute;
+  top: 11px;
+  background-color: #c1c1c1;
+}

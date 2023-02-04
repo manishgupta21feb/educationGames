@@ -1,0 +1,64 @@
+.screen1,
+.screen2,
+.screen3 {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+
+  .wrapper {
+    margin-top: 80px;
+    padding-left: 16px;
+    min-height: 520px;
+    min-width: 800px;
+
+    .instructor {
+      padding-left: 8px;
+      .heading {
+        color: var(--question-text-blue);
+        margin-bottom: 8px;
+        margin-right: 24px;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.wrapper2 {
+  margin-top: 80px;
+  padding-left: 16px;
+  min-height: 520px;
+  min-width: 800px;
+  .instructor {
+    padding-left: 8px;
+  }
+  .heading {
+    color: var(--question-text-blue);
+    margin-bottom: 8px;
+    margin-right: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+  .submit-button {
+    width: 100%;
+    bottom: 24px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

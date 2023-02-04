@@ -1,0 +1,108 @@
+.left-static {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+
+  .element {
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    color: #052978;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .dotted-box {
+    top: 46%;
+    left: 50%;
+    width: 317px;
+    height: 317px;
+    border-radius: 5px;
+    position: absolute;
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    border: 2px dashed var(--primary-blue);
+
+    &.question1 {
+      background-image: url(../../../assets/images/carbon1.png);
+    }
+
+    &.question2 {
+      background-image: url(../../../assets/images/sulfur1.png);
+    }
+  }
+
+  .image-footer {
+    top: 456px;
+    left: 180px;
+    width: 180px;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      font-size: 12px;
+      color: #35374c;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      font-variant: lining-nums;
+    }
+  }
+
+  .left-bottom {
+    width: 270px;
+    height: 16px;
+    bottom: 60px;
+    left: 135px;
+    display: flex;
+    font-size: 12px;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--question-heading-bluish);
+
+    .labels {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      > div {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+        margin-bottom: 4px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.protons {
+        > div {
+          background-image: url(../../../assets/images/proton.png);
+        }
+      }
+
+      &.neutrons {
+        > div {
+          background-image: url(../../../assets/images/neutron.png);
+        }
+      }
+
+      &.electrons {
+        > div {
+          background-image: url(../../../assets/images/electron.png);
+        }
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.screen15-top {
+  height: 100%;
+  position: relative;
+
+  .video-container {
+    .video-wrapper {
+      video {
+        &.sd_15 {
+          background: transparent url(../../assets/images/video2_img.png) center /
+            contain no-repeat;
+        }
+      }
+    }
+    .play-pause-buttons {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.screen14-top {
+  height: 100%;
+  position: relative;
+
+  .video-container {
+    .video-wrapper {
+      video {
+        &.sd_14 {
+          background: transparent url(../../assets/images/video1_img.png) center /
+            contain no-repeat;
+        }
+      }
+    }
+    .play-pause-buttons {
+      .btn {
+        opacity: 1;
+      }
+    }
+
+    .bond_lbl {
+      position: relative;
+      font-size: 12px;
+      font-weight: 500;
+      color: red;
+      transition-timing-function: ease-out;
+      opacity: 0;
+    }
+
+    .peptide_bond {
+      top: -190px;
+      left: 365px;
+      transition-timing-function: ease-out;
+      animation: mymove 4s;
+      animation-fill-mode: forwards;
+    }
+
+    .water {
+      top: -119px;
+      left: 515px;
+      transition-timing-function: ease-out;
+      animation: mymove 4s;
+      animation-fill-mode: forwards;
+    }
+
+    .protein {
+      top: -116px;
+      left: 337px;
+      transition-timing-function: ease-out;
+      animation: mymove 4s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes mymove {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .alanine {
+      top: -116px;
+      left: 337px;
+      transition-timing-function: ease-out;
+      animation: mymove1 4s;
+      animation-fill-mode: forwards;
+    }
+
+    .dipeptide {
+      top: -116px;
+      left: 337px;
+      transition-timing-function: ease-out;
+      animation: mymove1 4s;
+      animation-fill-mode: forwards;
+    }
+
+    .glycine {
+      top: -116px;
+      left: 337px;
+      transition-timing-function: ease-out;
+      animation: mymove1 4s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes mymove1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

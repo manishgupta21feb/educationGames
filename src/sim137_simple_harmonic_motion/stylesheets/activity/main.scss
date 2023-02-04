@@ -1,0 +1,44 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      background-color: blueviolet;
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.hidden-images {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.image0 {
+    background-image: url(../assets/images/Pendulam1.png);
+  }
+  &.image1 {
+    background-image: url(../assets/images/Pendulam2.png);
+  }
+  &.image2 {
+    background-image: url(../assets/images/Protector.png);
+  }
+  &.image3 {
+    background-image: url(../assets/images/Pundulam_buttn.png);
+  }
+  &.image4 {
+    background-image: url(../assets/images/Ruler.png);
+  }
+  &.image5 {
+    background-image: url(../assets/images/Tab1.png);
+  }
+  &.image6 {
+    background-image: url(../assets/images/Tab2.png);
+  }
+}

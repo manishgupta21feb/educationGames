@@ -1,0 +1,87 @@
+.screen-0 {
+  .hotspots-container {
+    .hotspot-wrapper {
+      position: absolute;
+      z-index: 1;
+      &.hotspot-3 {
+        top: 383px;
+        .bullet {
+          top: 0px;
+          left: 75px;
+        }
+        .dotted-line {
+          height: 65px;
+          width: 0px;
+          left: 78px;
+        }
+        .label {
+          left: 50px;
+        }
+      }
+      &.hotspot-1 {
+        top: 158px;
+        left: 60px;
+        .bullet {
+          top: 95px;
+          left: 33px;
+        }
+        .dotted-line {
+          height: 65px;
+          width: 0px;
+          top: 20px;
+          left: 37px;
+        }
+        .label {
+          left: 0;
+          bottom: 72px;
+        }
+      }
+      &.hotspot-2 {
+        top: 187px;
+        left: 190px;
+        .bullet {
+          top: 0px;
+          left: 0px;
+        }
+        .dotted-line {
+          height: 180px;
+          width: 0px;
+          top: -31px;
+          left: 68px;
+          transform: rotate(135deg);
+        }
+        .label {
+          top: -60px;
+          left: 85px;
+        }
+      }
+      &.hotspot-0 {
+        right: -10px;
+        top: 35px;
+        .bullet {
+          top: 125px;
+          left: 12px;
+        }
+        .dotted-line {
+          height: 142px;
+          width: 0px;
+          top: 0;
+          transform: rotate(135deg);
+          right: 35px;
+        }
+        .label {
+          right: 110px;
+          bottom: 140px;
+        }
+      }
+    }
+  }
+
+  .leftright {
+    .right {
+      .toast-secondary-button {
+        right: 0;
+      }
+    }
+  }
+}

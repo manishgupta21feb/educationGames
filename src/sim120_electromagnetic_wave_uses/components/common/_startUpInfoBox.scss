@@ -1,0 +1,30 @@
+.infobox {
+  display: flex;
+  flex-direction: column;
+  .info-img {
+    position: relative;
+    height: 399px;
+    width: 630px;
+    margin-top: 8px;
+    background: url(../../assets/images/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    > p {
+      color: #052978 !important;
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0 !important;
+      text-align: center;
+      &.bottom {
+        top: 76px;
+      }
+    }
+    .image-label {
+      position: absolute;
+      color: white;
+      left: 154px;
+      top: 40px;
+      font-size: 12px;
+    }
+  }
+}

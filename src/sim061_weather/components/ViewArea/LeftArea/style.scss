@@ -1,0 +1,131 @@
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 316px;
+  width: 516px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/largemap.png);
+}
+.image-button {
+  opacity: 0;
+  width: 540px;
+  height: 600px;
+  background-color: #f4f4f4;
+
+  &.show {
+    opacity: 1;
+  }
+
+  .button {
+    position: absolute;
+    &.seattle-wa {
+      top: 30px;
+      .bullets {
+        top: -3px;
+        left: 40px;
+      }
+      .dottedlines {
+        height: 30px;
+        width: 0px;
+        top: 3px;
+        left: 53px;
+        transform: rotate(150deg);
+      }
+    }
+    &.parker-az {
+      top: 190px;
+      left: 37px;
+      .bullets {
+        top: 2px;
+        left: 40px;
+      }
+      .dottedlines {
+        height: 34px;
+        width: 0px;
+        top: 4px;
+        left: 53px;
+        transform: rotate(150deg);
+      }
+    }
+    &.brownsville-tx {
+      top: 300px;
+      left: 196px;
+      .bullets {
+        top: -2px;
+        left: 39px;
+      }
+      .dottedlines {
+        height: 32px;
+        width: 0px;
+        top: 1px;
+        left: 52px;
+        transform: rotate(150deg);
+      }
+    }
+    &.terre-aute-in {
+      top: 125px;
+      left: 260px;
+      .bullets {
+        top: -8px;
+        left: 66px;
+      }
+      .dottedlines {
+        height: 46px;
+        width: 0px;
+        top: 0px;
+        left: 62px;
+        transform: rotate(18deg);
+      }
+    }
+    &.medway-me {
+      top: -70px;
+      left: 410px;
+      .bullets {
+        top: 108px;
+        left: 86px;
+      }
+
+      .dottedlines {
+        height: 47px;
+        width: 0px;
+        top: 70px;
+        left: 70px;
+        transform: rotate(136deg);
+      }
+    }
+    &.wilmington-nc {
+      top: 232px;
+      left: 364px;
+      .bullets {
+        top: -53px;
+        left: 73px;
+      }
+      .dottedlines {
+        position: absolute;
+        height: 46px;
+        width: 0px;
+        top: -46px;
+        left: 71px;
+        transform: rotate(14deg);
+      }
+    }
+  }
+
+  .bullets {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+
+    transform-style: preserve-3d;
+  }
+  .dottedlines {
+    border-left: 2px dotted #352103;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+}

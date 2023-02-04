@@ -1,0 +1,19 @@
+@import "../../stylesheets/common/functions.scss";
+
+.ecosystemScreen {
+  @extend %relative;
+  &__img {
+    @extend %full-object;
+    object-fit: cover;
+  }
+  &__title {
+    @extend %center-hrzn;
+    background-color: black;
+    top: 10px;
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 19px;
+    padding: 4px 14px;
+    font-variant: lining-nums;
+  }
+}

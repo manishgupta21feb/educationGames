@@ -1,0 +1,92 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      height: 48px;
+      width: 48px;
+      border: 1px dashed var(--primary-blue);
+      background-color: var(--white);
+      cursor: grab;
+      margin-right: 23px;
+
+      .draggable-element {
+        left: 3px;
+        top: 3px;
+        height: 40px;
+        width: 40px;
+        background-color: var(--white);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.ui-draggable-dragging {
+          height: 150px;
+          width: 150px;
+          border: 2px solid #052978;
+          background-color: #ffffff;
+          background-size: 122px 122px;
+          background-position: 12px;
+          z-index: 100;
+        }
+      }
+    }
+    > label {
+      color: var(--lightgreyshade);
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      line-height: 16px;
+      margin-top: 4px;
+      font-variant: lining-nums;
+    }
+  }
+
+  &.disabled {
+    .button-label-wrapper {
+      .buttons-wrapper {
+        border: 2px solid var(--dark-grey);
+        cursor: not-allowed;
+        .draggable-element {
+          left: 2px;
+          top: 2px;
+        }
+      }
+    }
+  }
+
+  &.carbon-12 {
+    .button-label-wrapper {
+      .buttons-wrapper {
+        .draggable-element {
+          background-image: url(../../assets/images/drg_c12.png);
+          &.ui-draggable-dragging {
+            background-image: url(../../assets/images/dropped_c12.png);
+          }
+        }
+      }
+    }
+  }
+
+  &.carbon-13 {
+    .button-label-wrapper {
+      .buttons-wrapper {
+        .draggable-element {
+          background-image: url(../../assets/images/drg_c13.png);
+          &.ui-draggable-dragging {
+            background-image: url(../../assets/images/dropped_13.png);
+          }
+        }
+      }
+    }
+  }
+
+  &.carbon-14 {
+    .button-label-wrapper {
+      .buttons-wrapper {
+        .draggable-element {
+          background-image: url(../../assets/images/drg_c14.png);
+          &.ui-draggable-dragging {
+            background-image: url(../../assets/images/dropped_c14.png);
+          }
+        }
+      }
+    }
+  }
+}

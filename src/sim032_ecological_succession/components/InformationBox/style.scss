@@ -1,0 +1,99 @@
+.wrapper-1 {
+  position: absolute;
+  width: 752px;
+  height: auto;
+  margin-top: 8px;
+  padding: 12px;
+  padding-top: 6px;
+  border: 1px solid var(--secondary-attention-orange);
+  border-radius: 8px;
+  background-color: var(--secondary-attention-light);
+  display: inline-block;
+  left: 0;
+
+  .close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .content {
+    color: var(--secondary-attention-dark);
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin: 0px 32px 12px 0px;
+  }
+
+  .graph-container {
+    display: flex;
+    font-size: 12px;
+
+    .graph {
+      height: 60px !important;
+      width: 60px !important;
+      position: relative;
+    }
+
+    .label-container {
+      margin-left: 24px;
+
+      .title {
+        color: var(--secondary-attention-dark);
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.21px;
+      }
+
+      .labels {
+        display: flex;
+        flex-wrap: wrap;
+
+        .label {
+          min-width: 175px;
+          display: flex;
+          margin-right: 33px;
+          margin-top: 8px;
+
+          .label-box {
+            height: 12px;
+            width: 12px;
+            border-radius: 2px;
+            margin-right: 8px;
+            background: none;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+
+            &.pattern1 {
+              background-image: url(../../assets/images/textures0001.png);
+            }
+            &.pattern2 {
+              background-image: url(../../assets/images/textures0002.png);
+            }
+            &.pattern3 {
+              background-image: url(../../assets/images/textures0003.png);
+            }
+            &.pattern4 {
+              background-image: url(../../assets/images/textures0004.png);
+            }
+            &.pattern5 {
+              background-image: url(../../assets/images/textures0005.png);
+            }
+            &.pattern6 {
+              background-image: url(../../assets/images/textures0006.png);
+            }
+            &.pattern7 {
+              background-image: url(../../assets/images/textures0007.png);
+            }
+          }
+          > p {
+            color: var(--lightgreyshade);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}

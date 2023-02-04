@@ -1,0 +1,70 @@
+.marginTop-9 {
+  margin-top: 9px;
+}
+.instruction-area {
+  display: flex;
+  margin-top: 8px;
+
+  img {
+    height: 264px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imgLabel1 {
+    position: absolute !important;
+    font-size: 8px !important;
+    font-weight: bold !important;
+    width: 250px;
+    height: 30px;
+    top: 211px;
+    left: 307px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      background-image: url("../../assets/images/location.png");
+      background-size: cover;
+      height: 11px;
+      width: 8px;
+      margin-left: -13px;
+      top: 1px;
+    }
+  }
+  .imgLabel2 {
+    position: absolute !important;
+    font-size: 8px !important;
+    font-weight: bold !important;
+
+    top: 243px;
+    left: 333px;
+    &:before {
+      content: " ";
+      position: absolute;
+      background-image: url("../../assets/images/location.png");
+      background-size: cover;
+      height: 11px;
+      width: 8px;
+      margin-left: -13px;
+      top: 1px;
+    }
+  }
+  .imgLabel3 {
+    position: absolute !important;
+    font-size: 8px !important;
+    font-weight: bold !important;
+    top: 290px;
+    left: 357px;
+    &:before {
+      content: " ";
+      position: absolute;
+      background-image: url("../../assets/images/location.png");
+      background-size: cover;
+      height: 11px;
+      width: 8px;
+      margin-left: -13px;
+      top: 1px;
+    }
+  }
+}

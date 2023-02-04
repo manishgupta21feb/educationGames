@@ -1,0 +1,44 @@
+.right-static {
+  //   background: #000aaa;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  .intstruction-area {
+    position: relative;
+    .instruction-text {
+      position: relative;
+      top: 80px;
+      left: 0;
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    // .instruction-blue-text {
+    //   position: relative;
+    //   top: 95px;
+    //   left: 0;
+    //   color: var(--primary-blue);
+    //   font-family: "TisaPro";
+    //   font-size: 16px;
+    //   letter-spacing: 0.15px;
+    //   line-height: 24px;
+    // }
+  }
+}
+
+.right-interactive {
+  .radiobuttons {
+    .radiobutton {
+      .radiobutton-inner-wrapper {
+        // align-items: center;
+        input[type="radio"] + div + label {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

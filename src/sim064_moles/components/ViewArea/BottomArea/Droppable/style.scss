@@ -1,0 +1,138 @@
+.container {
+  .drop-zone {
+    padding: 0;
+    border: 1px dashed #0056b3;
+    font-variant: lining-nums;
+    > p {
+      color: #ffffff;
+
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+
+      margin: 7px auto 0 10px;
+    }
+    .border-style {
+      width: 100%;
+      height: 100%;
+      border: 1px dashed #0056b3;
+      padding: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .span-border {
+        display: inline-block;
+        .span-border-inner {
+          display: inline-block;
+          margin-left: 8px;
+          margin-top: 8px;
+          p {
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+    .redcolor {
+      box-sizing: border-box;
+
+      border: 1px solid #d93025 !important;
+      border-radius: 0 0 2px 2px;
+      background-color: #ffffff;
+      color: #d93025;
+
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      > p {
+        color: #d93025;
+
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+    }
+  }
+  .ui-droppable-disabled {
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid #021644;
+    border-radius: 0 0 2px 2px;
+    background-color: #052978;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+
+    font-weight: 500;
+  }
+  .redcolor {
+    box-sizing: border-box;
+
+    border: 1px solid #d93025;
+    border-radius: 0 0 2px 2px;
+    background-color: #ffffff;
+    color: #d93025;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    > p {
+      color: #d93025;
+
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+  }
+  .static-drop-zone {
+    border-radius: 0 0 2px 2px;
+    background-color: #f2f2f2;
+    margin: 0 auto 0 0;
+
+    text-align: left;
+    color: #35374c;
+
+    > p {
+      color: #35374c;
+
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+  }
+  position: relative;
+  bottom: 50px;
+
+  width: 100%;
+  height: 36px;
+
+  .drop1 {
+    position: absolute;
+
+    width: 174px;
+    height: 36px;
+    left: 4px;
+  }
+  .drop2 {
+    position: absolute;
+
+    width: 172px;
+    height: 36px;
+    left: 184px;
+  }
+  .drop3 {
+    position: absolute;
+    width: 173px;
+    height: 36px;
+    left: 364px;
+  }
+  .drop4 {
+    position: absolute;
+    width: 203px;
+    height: 36px;
+    left: 545px;
+  }
+}

@@ -1,0 +1,143 @@
+.top {
+  background-color: #eeeded;
+  height: 100%;
+  .Radioisotopes_for_diagnostic {
+    background-image: url("../../../assets/images/Radioisotopes_for_diagnostic.png");
+    background-size: cover;
+    position: relative;
+    top: 48px;
+    left: 138px;
+    height: 227.6px;
+    width: 568.8px;
+  }
+
+  .nuclear_pacemakers {
+    background-image: url("../../../assets/images/nuclear_pacemakers.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .smoke_detector {
+    background-image: url("../../../assets/images/smoke_detector.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .medical_equipment_sterilization {
+    background-image: url("../../../assets/images/medical_equipment_sterilization.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nuclear_surgery {
+    background-image: url("../../../assets/images/nuclear_surgery.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .Tumor {
+    color: #ffffff;
+    background: #000000;
+    background-size: contain;
+
+    width: 35px;
+    font-size: 10px;
+    letter-spacing: 0.09px;
+    line-height: 14px;
+    position: relative;
+    top: 115px;
+    left: 388px;
+    padding-left: 2px;
+  }
+  .Tumor::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    transform: rotate(20deg);
+    bottom: -25px;
+    left: -14%;
+    background-color: #000000;
+    clip-path: polygon(0 0, 23% 0, -36% 141%);
+  }
+
+  .Helmet {
+    color: #ffffff;
+    background-color: #000000;
+    background-size: contain;
+    padding-left: 2px;
+    width: 40px;
+    font-size: 10px;
+    letter-spacing: 0.09px;
+    line-height: 14px;
+    position: relative;
+    top: 139px;
+    left: 275px;
+  }
+  .Helmet::before {
+    content: "";
+
+    position: absolute;
+    height: 22px;
+    width: 18px;
+    top: 11px;
+    left: 74%;
+    background-color: #000000;
+    clip-path: polygon(0 0, 55% 0, 92% 49%);
+  }
+
+  .imgText5 {
+    position: relative;
+    top: 260px;
+    left: 349px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .imgText4 {
+    top: 276px;
+    position: relative;
+    left: 355px;
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+  }
+  .imgText3 {
+    position: relative;
+    bottom: -282px;
+    left: 300px;
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-align: center;
+  }
+
+  .imgText1 {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: 279px;
+    left: 349px;
+  }
+  .imgText2 {
+    position: relative;
+    top: 231px;
+    left: 172px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+}

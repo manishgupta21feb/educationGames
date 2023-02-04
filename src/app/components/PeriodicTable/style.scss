@@ -1,0 +1,351 @@
+.periodic-table-container {
+  position: absolute;
+  left: 36px;
+  bottom: 25px;
+
+  caption {
+    display: table-caption;
+  }
+
+  table {
+    width: auto;
+    border-width: 0px;
+    border-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  tr {
+    border-width: 0px;
+    padding: 0px;
+
+    &:nth-child(8) {
+      td {
+        opacity: 0;
+      }
+    }
+  }
+  th,
+  td {
+    border-width: 0px;
+    padding: 0px;
+    // font-family: sans-serif;
+    font-size: small;
+    margin: 4px;
+    .hiddenElement {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 90%;
+      height: 90%;
+      font-size: 6px;
+      text-align: justify;
+      opacity: 0;
+    }
+  }
+
+  .elements {
+    position: relative;
+    width: 41px;
+    height: 41px;
+    text-align: center;
+    border: 1px solid var(--question-text-blue);
+    font-variant-numeric: lining-nums;
+  }
+
+  .hideElement,
+  // .cell8_1 {
+  //   opacity: 0;
+  // }
+
+  .cell8_1 {
+    height: 15px;
+  }
+
+  .symbol {
+    color: var(--question-text-blue);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 3px;
+    line-height: 1;
+    width: 39px;
+  }
+
+  .cell6_3 .atomicNumber {
+    margin-top: 3px;
+  }
+
+  .cell7_3 .atomicNumber {
+    margin-top: 3px;
+    width: 110%;
+    padding-left: 1px;
+  }
+
+  .atomicNumber {
+    color: var(--question-text-blue);
+    font-size: 10px;
+    padding-left: 2px;
+    text-align: left;
+    margin-top: -6px;
+  }
+
+  .opacity0 {
+    opacity: 0;
+  }
+
+  .groupText {
+    position: absolute;
+    margin-top: -51px;
+    width: 41px;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--question-heading-bluish);
+  }
+
+  .periodText {
+    position: absolute;
+    margin-top: -21px;
+    margin-left: -67px;
+    width: 41px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--question-heading-bluish);
+  }
+
+  .atomicMass {
+    left: 50%;
+    font-size: 8px;
+    font-weight: 500;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  .cell1_1 .periodText,
+  .cell2_1 .periodText,
+  .cell3_1 .periodText,
+  .cell4_1 .periodText,
+  .cell5_1 .periodText,
+  .cell6_1 .periodText,
+  .cell7_1 .periodText,
+  .cell1_1 .groupText,
+  .cell2_2 .groupText,
+  .cell4_3 .groupText,
+  .cell4_4 .groupText,
+  .cell4_5 .groupText,
+  .cell4_6 .groupText,
+  .cell4_7 .groupText,
+  .cell4_8 .groupText,
+  .cell4_9 .groupText,
+  .cell4_10 .groupText,
+  .cell4_11 .groupText,
+  .cell4_12 .groupText,
+  .cell2_13 .groupText,
+  .cell2_14 .groupText,
+  .cell2_15 .groupText,
+  .cell2_16 .groupText,
+  .cell2_17 .groupText,
+  .cell1_18 .groupText {
+    opacity: 1;
+  }
+
+  .cell1_1,
+  .cell1_18,
+  .cell9_3,
+  .cell9_4,
+  .cell9_5,
+  .cell9_6,
+  .cell9_7,
+  .cell9_8,
+  .cell9_9,
+  .cell9_10,
+  .cell9_11,
+  .cell9_12,
+  .cell9_13,
+  .cell9_14,
+  .cell9_15,
+  .cell9_16,
+  .cell9_17 {
+    border-top-width: 2px;
+  }
+
+  .cell1_1,
+  .cell2_1,
+  .cell3_1,
+  .cell4_1,
+  .cell5_1,
+  .cell6_1,
+  .cell7_1,
+  .cell9_3,
+  .cell10_3,
+  .cell3_1 {
+    border-left-width: 2px;
+  }
+
+  .cell1_18,
+  .cell2_18,
+  .cell3_18,
+  .cell4_18,
+  .cell5_18,
+  .cell6_18,
+  .cell7_18,
+  .cell9_17,
+  .cell10_17 {
+    border-right-width: 2px;
+  }
+
+  .cell7_1,
+  .cell7_2,
+  .cell7_3,
+  .cell7_4,
+  .cell7_5,
+  .cell7_6,
+  .cell7_7,
+  .cell7_8,
+  .cell7_9,
+  .cell7_10,
+  .cell7_11,
+  .cell7_12,
+  .cell7_13,
+  .cell7_14,
+  .cell7_15,
+  .cell7_16,
+  .cell7_17,
+  .cell7_18,
+  .cell10_3,
+  .cell10_4,
+  .cell10_5,
+  .cell10_6,
+  .cell10_7,
+  .cell10_8,
+  .cell10_9,
+  .cell10_10,
+  .cell10_11,
+  .cell10_12,
+  .cell10_13,
+  .cell10_14,
+  .cell10_15,
+  .cell10_16,
+  .cell10_17 {
+    border-bottom-width: 2px;
+  }
+
+  .cell1_1,
+  .cell3_2 {
+    box-shadow: 1px 0px 0px 0px var(--question-text-blue);
+  }
+
+  .cell1_18,
+  .cell3_13 {
+    box-shadow: -1px 0px 0px 0px var(--question-text-blue);
+  }
+
+  .cell2_14,
+  .cell2_15,
+  .cell2_16,
+  .cell2_17,
+  .cell4_3,
+  .cell4_4,
+  .cell4_5,
+  .cell4_6,
+  .cell4_7,
+  .cell4_8,
+  .cell4_9,
+  .cell4_10,
+  .cell4_11,
+  .cell4_12 {
+    box-shadow: 0px -1px 0px 0px var(--question-text-blue);
+  }
+
+  .cell2_2 {
+    box-shadow: 1px 0px 0px 0px var(--question-text-blue),
+      1px -1px 0px 0px var(--question-text-blue);
+  }
+
+  .cell2_13 {
+    box-shadow: 1px -1px 0px 0px var(--question-text-blue),
+      -1px -1px 0px 0px var(--question-text-blue),
+      -1px 1px 0px 0px var(--question-text-blue);
+  }
+
+  &.colorByCategory {
+    .non-metal {
+      background-color: var(--periodic-table-color1);
+    }
+
+    .alkali-metal {
+      background-color: var(--periodic-table-color2);
+    }
+
+    .alkaline-earth-metal {
+      background-color: var(--periodic-table-color3);
+    }
+
+    .transition-metal {
+      background-color: var(--periodic-table-color4);
+    }
+
+    .metal {
+      background-color: var(--periodic-table-color5);
+    }
+
+    .metalloid {
+      background-color: var(--periodic-table-color6);
+    }
+
+    .halogen {
+      background-color: var(--periodic-table-color7);
+    }
+
+    .noble-gas {
+      background-color: var(--periodic-table-color8);
+    }
+
+    .lanthanide {
+      background-color: var(--periodic-table-color9);
+    }
+
+    .actinide {
+      background-color: var(--periodic-table-color10);
+    }
+  }
+
+  &.colorByBlock {
+    .s-block {
+      background-color: var(--periodic-table-color1);
+    }
+
+    .p-block {
+      background-color: var(--periodic-table-color5);
+    }
+
+    .d-block {
+      background-color: var(--periodic-table-color4);
+    }
+
+    .f-block {
+      background-color: var(--periodic-table-color10);
+    }
+  }
+
+  &.atomicmass {
+    .symbol {
+      margin-top: -2px;
+    }
+    .atomicNumber {
+      margin-top: -10px;
+    }
+
+    .groupText {
+      margin-top: -45px;
+    }
+
+    .periodText {
+      margin-top: -15px;
+    }
+  }
+}

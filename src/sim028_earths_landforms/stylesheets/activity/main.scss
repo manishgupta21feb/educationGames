@@ -1,0 +1,13 @@
+.dialog-container {
+  > div {
+    p {
+      font-variant: lining-nums;
+    }
+  }
+}
+
+.help-popup-text {
+  &:nth-child(2) {
+    // margin-top: 4px;
+  }
+}

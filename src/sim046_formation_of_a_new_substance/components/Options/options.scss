@@ -1,0 +1,18 @@
+@import '../../stylesheets/common/functions.scss';
+
+.options{
+  @extend %full-width,
+  %absolute;
+  height: 28px;
+  justify-content: space-evenly;
+  padding: 0 12px;
+  bottom: 14px;
+  .btn{
+    &:disabled{
+      @extend %opacity-show;
+    }
+    + .btn{
+      margin-left: 0.4rem;
+    }
+  }
+}

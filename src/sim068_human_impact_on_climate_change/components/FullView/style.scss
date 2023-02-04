@@ -1,0 +1,638 @@
+.main-heading {
+  margin-top: 60px;
+  margin-left: 24px;
+  height: 40px;
+  width: 752px;
+  color: #052978;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+.chart-area {
+  height: 459px;
+  width: 813px;
+  background-color: #f4f4f4;
+  .zoom-button {
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+
+    right: 17px;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    &:hover:not(:disabled) {
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--primary-blue);
+    }
+    &:focus:not(:disabled) {
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--primary-blue);
+    }
+    span {
+      height: 16px;
+      width: 16px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../../assets/images/plus_sign.png);
+      pointer-events: none;
+    }
+  }
+  .chart-image {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &.chart1 {
+      top: 180px;
+      left: 40px;
+      height: 166px;
+      width: 280px;
+      background-image: url(../../assets/images/chart.png);
+
+      .imageAlt {
+        height: 156px;
+        width: 256px;
+        position: absolute;
+        left: 12px;
+      }
+      .heading {
+        top: -18px;
+        left: 28px;
+      }
+      .hidden-part1 {
+        height: 154px;
+        left: 12px;
+        top: 1px;
+
+        &.slider1 {
+          width: 83px;
+        }
+        &.slider2 {
+          width: 192px;
+        }
+        &.slider3 {
+          width: 226px;
+        }
+      }
+      .hidden-part2 {
+        height: 154px;
+        top: 1px;
+
+        &.slider0 {
+          left: 30px;
+          width: 239px;
+        }
+        &.slider1 {
+          left: 136px;
+          width: 132px;
+        }
+        &.slider2 {
+          left: 240px;
+          width: 28px;
+        }
+      }
+      .yaxis {
+        left: -100px;
+        top: 70px;
+      }
+      .xaxis {
+        top: 180px;
+        left: 126px;
+      }
+      .year {
+        position: absolute;
+        top: 162px;
+        font-size: 10px;
+        font-variant: lining-nums;
+      }
+      .chart11900 {
+        left: 2px;
+      }
+      .chart11920 {
+        left: 43px;
+      }
+      .chart11940 {
+        left: 84px;
+      }
+      .chart11960 {
+        left: 126px;
+      }
+      .chart11980 {
+        left: 172px;
+      }
+      .chart12000 {
+        left: 216px;
+      }
+      .chart12020 {
+        left: 256px;
+      }
+      .read {
+        position: absolute;
+        left: -2px;
+        &.chart10 {
+          top: -5px;
+        }
+        &.chart11 {
+          top: 4px;
+        }
+        &.chart12 {
+          top: 26px;
+        }
+        &.chart13 {
+          top: 45px;
+        }
+        &.chart14 {
+          top: 66px;
+        }
+        &.chart15 {
+          top: 88px;
+        }
+        &.chart16 {
+          top: 108px;
+        }
+        &.chart17 {
+          top: 129px;
+        }
+        &.chart18 {
+          top: 148px;
+        }
+      }
+    }
+    &.chart2 {
+      top: 180px;
+      right: 12px;
+      height: 166px;
+      width: 280px;
+      background-image: url(../../assets/images/image3.png);
+
+      .heading {
+        top: -18px;
+        left: 75px;
+      }
+      .imageAlt {
+        height: 156px;
+        width: 257px;
+        position: absolute;
+        left: 11px;
+      }
+      .hidden-part1 {
+        left: 11px;
+        height: 153px;
+        top: 2px;
+
+        &.slider1 {
+          width: 86px;
+        }
+        &.slider2 {
+          width: 192px;
+        }
+        &.slider3 {
+          width: 228px;
+        }
+      }
+      .hidden-part2 {
+        height: 153px;
+        top: 2px;
+
+        &.slider0 {
+          left: 34px;
+          width: 235px;
+        }
+        &.slider1 {
+          left: 140px;
+          width: 129px;
+        }
+        &.slider2 {
+          left: 244px;
+          width: 25px;
+        }
+      }
+      .yaxis {
+        top: 72px;
+        left: -84px;
+      }
+      .xaxis {
+        top: 175px;
+        left: 130px;
+      }
+      .year {
+        position: absolute;
+        top: 160px;
+        font-size: 10px;
+        font-variant: lining-nums;
+      }
+
+      .chart21900 {
+        left: 2px;
+      }
+      .chart21920 {
+        left: 45px;
+      }
+      .chart21940 {
+        left: 86px;
+      }
+      .chart21960 {
+        left: 130px;
+      }
+      .chart21980 {
+        left: 172px;
+      }
+      .chart22000 {
+        left: 214px;
+      }
+      .chart22020 {
+        left: 256px;
+      }
+      .read {
+        position: absolute;
+        left: -10px;
+        &.chart20 {
+          top: -2px;
+        }
+        &.chart21 {
+          top: 22px;
+        }
+        &.chart22 {
+          top: 48px;
+        }
+        &.chart23 {
+          top: 73px;
+        }
+        &.chart24 {
+          top: 98px;
+        }
+        &.chart25 {
+          top: 123px;
+        }
+        &.chart26 {
+          top: 146px;
+          left: -10px;
+        }
+      }
+    }
+    &.chart3 {
+      top: 402px;
+      left: 47px;
+      height: 157px;
+      width: 273px;
+      background-image: url(../../assets/images/image2.png);
+
+      .heading {
+        top: -18px;
+        left: 50px;
+      }
+      .imageAlt {
+        height: 150px;
+        width: 250px;
+        position: absolute;
+        left: 12px;
+      }
+      .hidden-part1 {
+        height: 149px;
+        left: 12px;
+        top: 1px;
+
+        &.slider1 {
+          width: 86px;
+        }
+        &.slider2 {
+          width: 190px;
+        }
+        &.slider3 {
+          width: 220px;
+        }
+      }
+      .hidden-part2 {
+        height: 149px;
+        top: 1px;
+
+        &.slider0 {
+          left: 36px;
+          width: 225px;
+        }
+        &.slider1 {
+          left: 136px;
+          width: 126px;
+        }
+        &.slider2 {
+          left: 238px;
+          width: 24px;
+        }
+      }
+      .yaxis {
+        top: 72px;
+        left: -91px;
+      }
+      .xaxis {
+        top: 171px;
+        left: 126px;
+      }
+      .year {
+        top: 154px;
+        position: absolute;
+        font-size: 10px;
+        font-variant: lining-nums;
+      }
+
+      .chart31900 {
+        left: 0px;
+      }
+      .chart31920 {
+        left: 43px;
+      }
+      .chart31940 {
+        left: 85px;
+      }
+      .chart31960 {
+        left: 126px;
+      }
+      .chart31980 {
+        left: 168px;
+      }
+      .chart32000 {
+        left: 208px;
+      }
+      .chart32020 {
+        left: 250px;
+      }
+      .read {
+        position: absolute;
+        left: -10px;
+        &.chart30 {
+          top: -4px;
+        }
+        &.chart31 {
+          top: 32px;
+        }
+        &.chart32 {
+          top: 70px;
+        }
+        &.chart33 {
+          top: 108px;
+        }
+        &.chart34 {
+          top: 144px;
+          left: -14px;
+        }
+      }
+    }
+    &.chart4 {
+      top: 403px;
+      right: 10px;
+      height: 162px;
+      width: 273px;
+      background-image: url(../../assets/images/image4.png);
+      .heading {
+        top: -18px;
+        left: 54px;
+      }
+      .imageAlt {
+        height: 151px;
+        width: 250px;
+        position: absolute;
+        left: 11px;
+      }
+      .xaxis {
+        top: 172px;
+        left: 130px;
+      }
+      .hidden-part1 {
+        height: 149px;
+        top: 2px;
+        left: 10px;
+
+        &.slider1 {
+          width: 252px;
+        }
+        &.slider2 {
+          width: 129px;
+        }
+        &.slider3 {
+          width: 252px;
+        }
+      }
+      .hidden-part2 {
+        height: 149px;
+        top: 2px;
+
+        &.slider0 {
+          left: 30px;
+          width: 232px;
+        }
+
+        &.slider2 {
+          left: 176px;
+          width: 86px;
+        }
+      }
+
+      .yaxis {
+        width: 128px;
+        left: -104px;
+        top: 64px;
+        text-align: center;
+      }
+      .year {
+        position: absolute;
+        top: 154px;
+        font-size: 10px;
+        font-variant: lining-nums;
+      }
+
+      .chart41900 {
+        left: 2px;
+      }
+      .chart41980 {
+        left: 52px;
+      }
+      .chart41984 {
+        left: 76px;
+      }
+      .chart41992 {
+        left: 110px;
+      }
+      .chart42000 {
+        left: 146px;
+      }
+      .chart42008 {
+        left: 178px;
+      }
+      .chart42016 {
+        left: 224px;
+      }
+      .read {
+        position: absolute;
+        left: -14px;
+        &.chart40 {
+          top: -4px;
+        }
+        &.chart41 {
+          top: 26px;
+        }
+        &.chart42 {
+          top: 56px;
+        }
+        &.chart43 {
+          top: 86px;
+        }
+        &.chart44 {
+          top: 114px;
+        }
+        &.chart45 {
+          top: 142px;
+        }
+      }
+    }
+  }
+  .heading {
+    position: absolute;
+    color: #35374c;
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.11px;
+    line-height: 18px;
+  }
+  .yaxis {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 10px;
+  }
+  .read {
+    position: absolute;
+    font-variant: lining-nums;
+    font-size: 10px;
+  }
+  .xaxis {
+    position: absolute;
+    top: 170px;
+    left: 123px;
+    font-size: 10px;
+  }
+  .hidden-part1 {
+    position: absolute;
+    background-color: #c1c1c1;
+  }
+  .hidden-part2 {
+    position: absolute;
+    background-color: #c1c1c1;
+  }
+}
+.btn.toast-secondary-button {
+  right: 358px;
+  bottom: 24px;
+  position: absolute;
+}
+.slider-container {
+  .slider {
+    width: 752px;
+    & {
+      input[type="range"] {
+        padding: 0 58px;
+      }
+    }
+
+    &.disabled {
+      .slider-custom-track {
+        border: 1px solid #6b6b76;
+        opacity: 1;
+        background-color: #f0f0f0;
+      }
+      .datalist {
+        .list-item {
+          &.selected {
+            .value {
+              .list-label {
+                color: #6b6b76;
+                font-weight: 500;
+              }
+            }
+          }
+          .marker {
+            .line {
+              border-left: 2px solid #6b6b76;
+            }
+          }
+        }
+      }
+      & {
+        input[type="range"]::-webkit-slider-thumb {
+          background: #6b6b76;
+          opacity: 1;
+          box-shadow: 0 0 0 2px white, 0 0 0 3px #6b6b76;
+        }
+        input[type="range"]::-moz-range-thumb {
+          background: #6b6b76;
+          opacity: 1;
+          box-shadow: 0 0 0 2px white, 0 0 0 3px #6b6b76;
+        }
+      }
+    }
+    .datalist {
+      .list-item {
+        &.selected {
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: 0.4px;
+          line-height: 16px;
+          text-align: center;
+        }
+        &.item0 {
+          .value {
+            .list-label {
+              left: -42px;
+            }
+          }
+          .marker {
+            left: -32px;
+          }
+        }
+        &.item1 {
+          .value {
+            .list-label {
+              left: -23px;
+            }
+          }
+          .marker {
+            left: -12px;
+          }
+        }
+        &.item2 {
+          .value {
+            .list-label {
+              left: -6px;
+            }
+          }
+          .marker {
+            left: 10px;
+          }
+        }
+        &.item3 {
+          .value {
+            .list-label {
+              left: 15px;
+            }
+          }
+          .marker {
+            left: 28px;
+          }
+        }
+        &.item0,
+        &.item1,
+        &.item2,
+        &.item3 {
+          .value {
+            .list-label {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+      &.sliderClasses {
+        justify-content: space-around;
+      }
+    }
+  }
+}

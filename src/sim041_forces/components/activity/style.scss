@@ -1,0 +1,220 @@
+.ball-wrapper {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/main_bg.png);
+
+  .top {
+    width: 100%;
+    height: 128px;
+    position: relative;
+    background: white;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .instructions {
+      color: #052978;
+      font-weight: 500;
+      text-align: center;
+
+      h1 {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    height: 472px;
+    overflow: hidden;
+    position: relative;
+
+    .sr-only {
+      clip: unset;
+      color: transparent;
+    }
+
+    .beachball-container {
+      top: 0;
+      left: 50%;
+      z-index: 1;
+      height: 100%;
+      position: absolute;
+      transform: translateX(-50%);
+
+      .sprite-container {
+        top: 205px;
+        width: 66px;
+        height: 66px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ball-sprite {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          transform: scale(0.9);
+          background-image: url(../../assets/images/rolling_sprite.png);
+          &.hide {
+            opacity: 0;
+          }
+        }
+      }
+
+      @keyframes ball-roll-pull {
+        to {
+          background-position: 528px;
+        }
+      }
+
+      @keyframes ball-roll-push {
+        from {
+          background-position: 0px;
+        }
+        to {
+          background-position: -528px;
+        }
+      }
+
+      .sprite-container.animate-push {
+        animation: move-container-push 1s linear forwards;
+      }
+
+      .sprite-container.animate-pull {
+        animation: move-container-pull 1s linear forwards;
+      }
+
+      .sprite-container.animate-push .ball-sprite {
+        animation: ball-roll-push 1s steps(8) infinite;
+      }
+
+      .sprite-container.animate-pull .ball-sprite {
+        animation: ball-roll-pull 1s steps(8) infinite;
+      }
+
+      @keyframes move-container-push {
+        100% {
+          transform: translateY(-164px);
+        }
+      }
+
+      @keyframes move-container-pull {
+        100% {
+          transform: translateY(164px);
+        }
+      }
+
+      @keyframes beachball-rolldown {
+        100% {
+          transform: translate(-50%, 220px) rotate(-60deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes beachball-rollup {
+        100% {
+          transform: translate(-50%, -240px) rotate(130deg);
+          opacity: 0;
+        }
+      }
+
+      .ball-final {
+        left: 3px;
+        opacity: 0;
+        width: 60px;
+        height: 60px;
+        transform: scale(0.9);
+        position: absolute;
+        background-image: url(../../assets/images/ball_final.png);
+
+        &.push {
+          top: 14px;
+        }
+
+        &.pull {
+          bottom: 14px;
+        }
+
+        &.hide {
+          opacity: 1;
+        }
+      }
+    }
+
+    .hole {
+      left: 50%;
+      z-index: 0;
+      width: 76px;
+      height: 76px;
+      position: absolute;
+      background-size: contain;
+      transform: translateX(-50%);
+      background-repeat: no-repeat;
+      &.hole-top {
+        top: 10px;
+        background-image: url(../../assets/images/hole_top.png);
+      }
+      &.hole-bottom {
+        bottom: 10px;
+        background-image: url(../../assets/images/hole_bottom.png);
+      }
+    }
+
+    > .slider {
+      top: 136px;
+      left: 135px;
+      height: 200px;
+      overflow: hidden;
+      position: absolute;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .bg-color {
+        top: 0;
+        left: 47%;
+        width: 60px;
+        height: 100%;
+        border-radius: 8px;
+        position: absolute;
+        background: white;
+        transform: translateX(-50%);
+      }
+
+      .slider-container {
+        &.vertical {
+          width: 200px;
+          margin-left: 8px;
+          margin-top: unset;
+          .slider {
+            .datalist {
+              > div {
+                width: 28px;
+                .value {
+                  opacity: 0;
+                }
+              }
+            }
+            input[type="range"] {
+              &::-webkit-slider-runnable-track {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

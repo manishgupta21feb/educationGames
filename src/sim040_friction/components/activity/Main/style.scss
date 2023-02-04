@@ -1,0 +1,219 @@
+.left-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .bg-image {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.show {
+      opacity: 1;
+    }
+
+    &.none {
+      background-image: url(../../../assets/images/none.png);
+    }
+
+    &.ice {
+      background-image: url(../../../assets/images/ice.png);
+    }
+
+    &.grass {
+      background-image: url(../../../assets/images/grass.png);
+    }
+
+    &.sandpaper {
+      background-image: url(../../../assets/images/sandpaper.png);
+    }
+  }
+
+  .reading-meters {
+    top: 80px;
+    right: 24px;
+    width: 188px;
+    height: 204px;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .force-gauge-wrapper {
+      margin-right: 16px;
+      .force-gauge {
+        width: 103px;
+        width: 77px;
+        height: 166px;
+        height: 124px;
+        background-image: url(../../../assets/images/force_gauge.png);
+      }
+    }
+
+    .thermometer-wrapper {
+      .thermometer {
+        width: 98px;
+        width: 73px;
+        height: 158px;
+        height: 118px;
+        background-image: url(../../../assets/images/thermometer.png);
+      }
+
+      > p {
+        margin-top: 17px !important;
+      }
+    }
+
+    .force-gauge-wrapper,
+    .thermometer-wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      div {
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        p {
+          color: #052978;
+          position: absolute;
+          font-variant: lining-nums;
+        }
+        .value {
+          font-size: 14px;
+          font-size: 18px;
+          line-height: 21px;
+
+          &.force {
+            top: 26px;
+            left: 18px;
+          }
+
+          &.farenheit {
+            top: 48px;
+            left: 20px;
+
+            top: 54px;
+            left: 18px;
+          }
+        }
+        .unit {
+          font-size: 12px;
+          line-height: 16px;
+
+          &.force {
+            top: 30px;
+            right: 30px;
+          }
+
+          &.farenheit {
+            top: 52px;
+            right: 20px;
+
+            top: 40px;
+            right: 20px;
+          }
+        }
+      }
+      > p {
+        font-size: 14px;
+        margin-top: 8px;
+        padding: 2px 4px;
+        line-height: 24px;
+        border-radius: 2px;
+        background: white;
+      }
+    }
+  }
+
+  .girl-sprite {
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    bottom: 115px;
+    height: 406px;
+    position: absolute;
+    -webkit-transform: translate(-75px, 104px) scale(0.5);
+    transform: translate(-75px, 104px) scale(0.5);
+    background: url(../../../assets/images/animation_sprite.png);
+
+    &.animate {
+      -webkit-animation: girlPushSprite 1s steps(21);
+      animation: girlPushSprite 1s steps(21);
+    }
+
+    &.box-pushed {
+      background-position: -6300px !important;
+    }
+  }
+
+  .wooden-box {
+    z-index: 0;
+    left: 106px;
+    width: 147px;
+    height: 130px;
+    bottom: 109px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/wooden_box.png);
+
+    &.slide {
+      -webkit-animation: slide 1s linear;
+      animation: slide 1s linear;
+    }
+
+    &.box-pushed {
+      left: 500px !important;
+    }
+  }
+
+  @-webkit-keyframes girlPushSprite {
+    from {
+      background-position: 0;
+    }
+    to {
+      background-position: -6300px;
+    }
+  }
+
+  @keyframes girlPushSprite {
+    from {
+      background-position: 0;
+    }
+    to {
+      background-position: -6300px;
+    }
+  }
+
+  @-webkit-keyframes slide {
+    to {
+      left: 500px;
+    }
+  }
+
+  @keyframes slide {
+    to {
+      left: 500px;
+    }
+  }
+}
+
+.right-view {
+  .mcq-question-area {
+    padding-bottom: 10px;
+    .inner-wrapper {
+      .radiobutton {
+        padding-top: 2px;
+      }
+    }
+  }
+}

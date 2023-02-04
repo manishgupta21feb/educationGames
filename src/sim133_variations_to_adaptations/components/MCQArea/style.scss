@@ -1,0 +1,114 @@
+.mcq-question-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .inner-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .heading {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      font-style: italic;
+      margin-bottom: 8px;
+      letter-spacing: 0.4px;
+      color: var(--question-heading-bluish);
+      font-variant: lining-nums;
+    }
+
+    .question {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 18px;
+      letter-spacing: 0.25px;
+      font-weight: 500;
+      color: var(--question-text-blue);
+    }
+
+    .graph-container {
+      height: 200px;
+      align-items: center;
+      width: 255px;
+      position: relative;
+      top: 25px;
+      left: 245px;
+    }
+
+    .img-container {
+      width: 100%;
+      height: 290px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .firstScreen-img {
+        background-size: contain;
+        width: 300px;
+        height: 300px;
+        position: relative;
+      }
+
+      .firstScreen-img_Herons {
+        bottom: 30px;
+      }
+
+      .firstScreen-img_Cardinal {
+        top: 15px;
+      }
+
+      .firstScreen-img_Woodpeckers {
+        bottom: 10px;
+      }
+    }
+
+    .submit-button {
+      width: 100%;
+      bottom: -12px;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .submit-button-secondScreen {
+      bottom: -25px !important;
+    }
+
+    .radiobuttons {
+      flex-direction: row;
+      .radiobutton {
+        margin-right: 48px;
+
+        .radiobutton-inner-wrapper {
+          align-items: center;
+          input[type="radio"] + div + label {
+            font-size: 14px;
+            color: #35374c;
+            font-weight: 500;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.right {
+  .mcq-question-area {
+    .inner-wrapper {
+      height: auto;
+      margin-top: 80px;
+      .submit-button {
+        bottom: unset;
+        margin-top: 24px;
+        position: relative;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

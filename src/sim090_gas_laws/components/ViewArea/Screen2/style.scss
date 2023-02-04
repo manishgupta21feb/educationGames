@@ -1,0 +1,370 @@
+.main-container {
+  margin-top: 80px;
+  > h2 {
+    margin-left: 24px;
+
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    width: 95%;
+
+    .frameContainer {
+      display: flex;
+      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+
+      .blockImg {
+        box-sizing: border-box;
+        height: 124px;
+        width: 153px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+      }
+      .button {
+        &--daltonLaw {
+          height: 28px;
+          width: 110px;
+          border-radius: 16px;
+          background-color: #352103;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          .text {
+            color: #fbf1e9;
+
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+            font-weight: unset;
+          }
+        }
+        &--idealGasLaw {
+          height: 28px;
+          width: 115px;
+          border-radius: 16px;
+          background-color: #352103;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          .text {
+            color: #fbf1e9;
+            font-weight: unset;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+          }
+        }
+        &--boylesLaw {
+          height: 28px;
+          width: 103px;
+          border-radius: 16px;
+          background-color: #352103;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          .text {
+            color: #fbf1e9;
+            font-weight: unset;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+          }
+        }
+        &--charlesLaw {
+          height: 28px;
+          width: 111px;
+          border-radius: 16px;
+          background-color: #352103;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          .text {
+            color: #fbf1e9;
+            font-weight: unset;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+          }
+        }
+        &--gayLussacLaw {
+          height: 28px;
+          width: 139px;
+          border-radius: 16px;
+          background-color: #352103;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          .text {
+            color: #fbf1e9;
+            font-weight: unset;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+          }
+        }
+        &--avogadrosLaw {
+          height: 28px;
+          width: 129px;
+          border-radius: 16px;
+          background-color: #352103;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          .text {
+            color: #fbf1e9;
+            font-weight: unset;
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .disabledImg {
+        box-sizing: border-box;
+        height: 124px;
+        width: 153px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        opacity: 0.6;
+      }
+      .disabledBtn {
+        &--daltonLaw {
+          height: 28px;
+          width: 110px;
+          border-radius: 16px;
+          background-color: #ffffff;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border: 2px solid #c9c9cf;
+          .text {
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: unset;
+            line-height: 20px;
+            margin-right: 8px;
+
+            letter-spacing: 0.25px;
+            color: #6b6b76;
+          }
+        }
+        &--idealGasLaw {
+          height: 28px;
+          width: 115px;
+          border-radius: 16px;
+          background-color: #ffffff;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border: 2px solid #c9c9cf;
+          .text {
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: unset;
+            line-height: 20px;
+            margin-right: 8px;
+
+            letter-spacing: 0.25px;
+            color: #6b6b76;
+          }
+        }
+        &--boylesLaw {
+          height: 28px;
+          width: 103px;
+          border-radius: 16px;
+          background-color: #ffffff;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border: 2px solid #c9c9cf;
+          .text {
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: unset;
+            line-height: 20px;
+            margin-right: 8px;
+
+            letter-spacing: 0.25px;
+            color: #6b6b76;
+          }
+        }
+        &--charlesLaw {
+          height: 28px;
+          width: 111px;
+          border-radius: 16px;
+          background-color: #ffffff;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border: 2px solid #c9c9cf;
+          .text {
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: unset;
+            line-height: 20px;
+            margin-right: 8px;
+
+            letter-spacing: 0.25px;
+            color: #6b6b76;
+          }
+        }
+        &--gayLussacLaw {
+          height: 28px;
+          width: 139px;
+          border-radius: 16px;
+          background-color: #ffffff;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border: 2px solid #c9c9cf;
+          .text {
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: unset;
+            line-height: 20px;
+            margin-right: 8px;
+
+            letter-spacing: 0.25px;
+            color: #6b6b76;
+          }
+        }
+        &--avogadrosLaw {
+          height: 28px;
+          width: 129px;
+          border-radius: 16px;
+          background-color: #ffffff;
+          white-space: nowrap;
+          margin-left: 30px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          border: 2px solid #c9c9cf;
+          .text {
+            font-size: 14px;
+            margin-left: 8px;
+            font-weight: unset;
+            line-height: 20px;
+            margin-right: 8px;
+
+            letter-spacing: 0.25px;
+            color: #6b6b76;
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        margin-left: 55px;
+        margin-top: 24px;
+      }
+      &:nth-child(even) {
+        margin-left: 48px;
+        margin-top: 24px;
+      }
+      &:nth-child(2) {
+        margin-right: 15px;
+      }
+      &:nth-child(4) {
+        margin-right: 19px;
+      }
+
+      .img {
+        &--daltonLaw {
+          height: 80%;
+          width: 80%;
+          background-image: url("../../../assets/images/Daltonlawsmallframe.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        &--idealGasLaw {
+          height: 80%;
+          width: 80%;
+          background-image: url("../../../assets/images/6.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        &--boylesLaw {
+          height: 80%;
+          width: 80%;
+          background-image: url("../../../assets/images/4.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        &--charlesLaw {
+          height: 80%;
+          width: 80%;
+          background-image: url("../../../assets/images/charleslaw.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+          top: -3px;
+        }
+        &--gayLussacLaw {
+          height: 80%;
+          width: 80%;
+          background-image: url("../../../assets/images/5.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        &--avogadrosLaw {
+          height: 80%;
+          width: 80%;
+          background-image: url("../../../assets/images/8.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+      }
+    }
+  }
+}

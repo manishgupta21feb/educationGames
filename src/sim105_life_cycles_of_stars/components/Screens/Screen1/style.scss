@@ -1,0 +1,174 @@
+.leftright.screen1 {
+  .left {
+    .left-wrapper {
+      .screen1mainlabel {
+        top: 384px;
+        position: absolute;
+        left: 30px;
+
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+      .screenonelabels {
+        position: absolute;
+        top: 100px;
+        &.average_star {
+          top: 240px;
+          left: 122px;
+          width: 36px;
+          text-align: center;
+        }
+        &.red_giant {
+          top: 264px;
+          left: 216px;
+        }
+        &.planetary_nebula {
+          top: 289px;
+          left: 328px;
+        }
+        &.white_dwarf {
+          top: 235px;
+          left: 475px;
+          width: 30px;
+        }
+        &.massive_star {
+          top: 438px;
+          left: 112px;
+        }
+        &.red_supergiant {
+          top: 480px;
+          left: 210px;
+        }
+        &.supernova {
+          top: 456px;
+          left: 350px;
+        }
+        &.neutron_star {
+          top: 444px;
+    left: 460px;
+        }
+        &.black_hole {
+          top: 460px;
+          left: 466px;
+        }
+        P {
+          color: #ffffff;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      .stellar-nebula {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/images/stellar_nebula.png);
+
+        &.hide {
+          opacity: 0;
+          z-index: -1;
+          pointer-events: none;
+        }
+      }
+      .accessible-list {
+        top: 250px;
+        left: 2px;
+      }
+      .accessible-list ul .dropzone0,
+      .dropzone {
+        left: 2px;
+        top: 250px;
+        width: 134px;
+        height: 124px;
+        position: absolute;
+        border-radius: 4px;
+        border: 1px solid #052978;
+        background-color: rgba(217, 235, 255, 0.24);
+
+        &.ui-droppable-hover {
+          background-color: rgba(217, 235, 255, 0.3);
+        }
+      }
+
+      .accessible-list ul .dropzone0 {
+        top: 0;
+        left: 0;
+      }
+      .accessible-list ul .dropzone0 a {
+        // top: 234px;
+        border-radius: 0;
+        display: block;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        position: absolute;
+
+        &.show {
+          visibility: visible;
+        }
+
+        .video-container {
+          div {
+            .video-wrapper {
+              video {
+                &.video-item0 {
+                  background: transparent
+                    url(../../../assets/images/white_dwarf.png) center / contain
+                    no-repeat;
+                }
+                &.video-item1 {
+                  background: transparent
+                    url(../../../assets/images/neutron_star.png) center /
+                    contain no-repeat;
+                }
+                &.video-item2 {
+                  background: transparent
+                    url(../../../assets/images/black_hole.png) center / contain
+                    no-repeat;
+                }
+              }
+            }
+          }
+          .play-pause-buttons {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    .right-wrapper {
+      padding-top: 80px;
+      .draggables {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .draggable {
+          &.inactive {
+            .draggable-element {
+              touch-action: none;
+              pointer-events: none;
+              width: calc(100% + 1px);
+              height: calc(100% + 1px);
+              border: 2px solid #c9c9cf;
+            }
+          }
+        }
+      }
+    }
+  }
+}

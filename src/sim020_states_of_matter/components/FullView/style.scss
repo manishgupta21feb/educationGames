@@ -1,0 +1,251 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .full-view-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .bg-image {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../assets/images/kitchen.png);
+
+      &.ice-cream0 {
+        background-image: url(../../assets/images/ice_cream1.png);
+      }
+      &.ice-cream1 {
+        background-image: url(../../assets/images/ice_cream2.png);
+      }
+      &.ice-cream2 {
+        background-image: url(../../assets/images/ice_cream3.png);
+      }
+
+      &.chocolate0 {
+        background-image: url(../../assets/images/chocolate1.png);
+      }
+      &.chocolate1 {
+        background-image: url(../../assets/images/chocolate2.png);
+      }
+      &.chocolate2 {
+        background-image: url(../../assets/images/chocolate3.png);
+      }
+
+      &.ice0 {
+        background-image: url(../../assets/images/ice1.png);
+      }
+      &.ice1 {
+        background-image: url(../../assets/images/ice2.png);
+      }
+      &.ice2 {
+        background-image: url(../../assets/images/ice3.png);
+      }
+
+      &.hide {
+        opacity: 0;
+      }
+
+      &.show {
+        opacity: 1;
+      }
+    }
+
+    .bg-shadow {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      background: white;
+      -webit-box-shadow: 0 0 75px 170px white;
+      box-shadow: 0 0 75px 170px white;
+      z-index: 1;
+    }
+
+    .instructions {
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      overflow: hidden;
+      font-weight: 500;
+      line-height: 20px;
+      position: absolute;
+      margin: 80px 24px 0 24px;
+      color: var(--question-text-blue);
+      z-index: 1;
+      > p {
+        overflow: hidden;
+        &:nth-child(2) {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .image-alt {
+      left: 0;
+      top: 160px;
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      position: absolute;
+
+      &.ice-cream {
+        top: 370px;
+        left: 245px;
+        width: 320px;
+        height: 140px;
+      }
+
+      &.chocolate {
+        top: 250px;
+        left: 285px;
+        width: 200px;
+        height: 320px;
+      }
+
+      &.ice {
+        top: 190px;
+        left: 275px;
+        width: 220px;
+        height: 380px;
+      }
+    }
+
+    .highlighter {
+      z-index: 1;
+      width: 240px;
+      height: 200px;
+      bottom: 116px;
+      cursor: pointer;
+      border-radius: 4px;
+      position: absolute;
+      border: 2px dotted #052978;
+      background: rgba(217, 235, 255, 0.24);
+
+      &.ice-cream {
+        left: 20px;
+      }
+
+      &.chocolate {
+        left: 281px;
+      }
+
+      &.ice {
+        left: 544px;
+      }
+    }
+
+    .btn {
+      z-index: 2;
+      &.hotspot-btn {
+        &.label {
+          position: absolute;
+          font-variant: lining-nums;
+
+          &.ice-cream {
+            left: 96px;
+          }
+          &.chocolate {
+            left: 359px;
+          }
+          &.ice {
+            left: 644px;
+          }
+          &.ice-cream,
+          &.chocolate,
+          &.ice {
+            bottom: 73px;
+          }
+        }
+      }
+    }
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .btn {
+    &.temp-button-one {
+      top: 324px;
+      left: 99px;
+    }
+
+    &.temp-button-two {
+      top: 413px;
+      left: 99px;
+    }
+
+    &.temp-button-three {
+      top: 448px;
+      left: 99px;
+    }
+
+    &.temp-button-four {
+      top: 14px;
+      left: 99px;
+    }
+
+    &.temp-button-five {
+      top: 324px;
+      left: 99px;
+    }
+
+    &.temp-button-six {
+      top: 448px;
+      left: 99px;
+    }
+
+    &.temp-button-seven {
+      top: 235px;
+      left: 99px;
+    }
+
+    &.temp-button-eight {
+      top: 270px;
+      left: 99px;
+    }
+
+    &.temp-button-nine {
+      top: 424px;
+      left: 99px;
+    }
+  }
+
+  .label-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 497px;
+    left: 169px;
+    width: calc(100% - 169px);
+  }
+
+  .label-state {
+    z-index: 1;
+
+    color: black;
+    font-size: 14px;
+    padding: 4px 8px;
+    font-weight: 500;
+    border-radius: 2px;
+    background: white;
+
+    > p {
+      display: inline-block;
+      position: relative;
+    }
+  }
+}

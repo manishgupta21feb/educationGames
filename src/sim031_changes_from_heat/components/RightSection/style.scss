@@ -1,0 +1,88 @@
+.leftright {
+  .right {
+    .right-container {
+      margin-top: 80px;
+
+      .instructions {
+        margin-top: 80px;
+        height: 60px;
+        width: 212px;
+        color: #052978;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+
+      .item-details {
+        h3 {
+          color: #052978;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 16px;
+          margin-bottom: 4px;
+          letter-spacing: 0.4px;
+        }
+
+        .info {
+          .item-information-table {
+            position: relative;
+            margin-top: 12px;
+          }
+        }
+        > p {
+          color: #052978;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 16px;
+          margin-bottom: 4px;
+          letter-spacing: 0.4px;
+
+          .info {
+            border: 2px solid red;
+            .item-information-table {
+              position: relative;
+              margin-top: 12px;
+            }
+            // > div {
+            //   padding: 4px 8px 4px 8px;
+            //   display: flex;
+            //   flex-direction: row;
+            //   align-items: center;
+            //   justify-content: space-between;
+            //   &:nth-child(odd) {
+            //     background: #f0f0f0;
+            //     height: 24px;
+            //     width: 212px;
+            //     border-radius: 2px 2px 0 0;
+            //   }
+            //   &:nth-child(even) {
+            //     background: #f9f9f9;
+            //     height: 24px;
+            //     width: 212px;
+            //     border-radius: 0 0 2px 2px;
+            //   }
+            //   .parent {
+            //     min-width: 72px;
+            //     display: flex;
+            //     justify-content: space-between;
+            //   }
+
+            //   p {
+            //     font-size: 12px;
+            //     color: #35374c;
+            //     font-weight: 500;
+            //     line-height: 16px;
+            //     letter-spacing: 0.2px;
+            //     font-variant: lining-nums;
+
+            //     &.buttoninfo {
+            //     }
+          }
+        }
+      }
+    }
+  }
+}
+//   }
+// }

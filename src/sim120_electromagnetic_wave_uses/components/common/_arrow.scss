@@ -1,0 +1,48 @@
+.arrow1 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  .arrow-container {
+    width: 747px;
+    position: relative;
+    height: 4px;
+    background-color: #979797;
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 24px solid #979797;
+      position: absolute;
+      right: -5px;
+      top: -10px;
+    }
+  }
+  &.part2 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    .arrow {
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 14px solid #979797;
+      right: -3px;
+      top: -5px;
+    }
+  }
+  &.part1 {
+    .arrow-container {
+      width: 630px;
+    }
+  }
+}
+
+.xx {
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 18px solid #979797;
+  position: absolute;
+  right: -10px;
+  top: -7px;
+}

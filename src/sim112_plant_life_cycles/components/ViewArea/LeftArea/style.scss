@@ -1,0 +1,220 @@
+@mixin droppables-css(
+  $top1,
+  $left1,
+  $height1,
+  $width1,
+  $height2,
+  $width2,
+  $left2,
+  $top2,
+  $left3,
+  $top3,
+  $left4,
+  $top4
+) {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  .droppables {
+    position: relative;
+    top: $top1;
+    left: $left1;
+    //overflow: hidden;
+    // margin-right: 135px;
+    width: 476px;
+    .accessible-list {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 4px;
+      background: transparent;
+      ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // position: relative;
+        // flex-direction: row;
+        // align-items: flex-start;
+        // justify-content: space-around;
+        li {
+          position: relative;
+          height: $height2;
+          width: $width2;
+
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: none;
+            &:focus,
+            &:hover {
+              color: transparent;
+              background-color: transparent;
+            }
+
+            div {
+              display: none;
+            }
+          }
+          &:nth-child(1) {
+            // position: absolute;
+            left: $left2;
+            top: $top2;
+          }
+          &:nth-child(2) {
+            // position: absolute;
+            left: $left4;
+            top: $top4;
+          }
+          &:nth-child(3) {
+            // position: absolute;
+            left: 40px;
+            top: 1px;
+          }
+          &:nth-child(4) {
+            // position: absolute;
+            left: 60px;
+            top: 1px;
+          }
+        }
+      }
+    }
+
+    .droppables-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // position: relative;
+      // top: 73px;
+      // left: 41px;
+      margin-right: 154px;
+      width: 100%;
+
+      .dropzones {
+        box-sizing: border-box;
+        height: $height1;
+        width: $width1;
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 18px;
+        &.dropzone1 {
+          left: $left2;
+          top: $top2;
+        }
+        &.dropzone2 {
+          left: $left3;
+          top: $top3;
+        }
+        &.no-drop {
+          border: 1px dashed #052978;
+          border-radius: 4px;
+          background-color: #d9ebff;
+        }
+        .dropped-objects {
+          position: relative;
+          top: 1px;
+          width: $width1;
+          height: $height1;
+          background-size: contain;
+          background-repeat: no-repeat;
+          &.soil {
+            background-image: url(../../../assets/images/page2pot4.png);
+          }
+          &.planting_seed {
+            background-image: url(../../../assets/images/page2pot2.png);
+          }
+          &.watering_seed {
+            background-image: url(../../../assets/images/page2pot3.png);
+          }
+          &.sunlight_for_seed {
+            background-image: url(../../../assets/images/page2pot1.png);
+          }
+          &.seedling {
+            background-image: url(../../../assets/images/page3pot1.png);
+          }
+          &.adult_plant {
+            background-image: url(../../../assets/images/page3pot2.png);
+          }
+          &.adult_plant_with_flowers {
+            background-image: url(../../../assets/images/page3pot3.png);
+          }
+          &.adult_plant_with_fruit {
+            background-image: url(../../../assets/images/page3pot4.png);
+          }
+          &.young_tomato_plant {
+            background-image: url(../../../assets/images/page4plant1.png);
+          }
+          &.young_flower_plant {
+            background-image: url(../../../assets/images/page4plant2.png);
+          }
+        }
+        &.ui-droppables {
+          height: 70px;
+          width: 70px;
+          background-color: aquamarine;
+        }
+      }
+    }
+  }
+}
+.left-area {
+  height: 100%;
+  width: 100%;
+  background-color: #dcf5e9;
+  .left-container {
+    width: 540px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    &.image2 {
+      height: 600px;
+      background-image: url(../../../assets/images/page4bg.png);
+      @include droppables-css(
+        414px,
+        80px,
+        55px,
+        55px,
+        55px,
+        55px,
+        12px,
+        -16px,
+        190px,
+        -70px,
+        208px,
+        -70px
+      );
+    }
+    &.image1 {
+      height: 254px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url(../../../assets/images/Page2.png);
+      @include droppables-css(
+        73px,
+        41px,
+        100px,
+        100px,
+        98px,
+        98px,
+        0,
+        0,
+        0,
+        0,
+        20px,
+        1px
+      );
+    }
+  }
+}

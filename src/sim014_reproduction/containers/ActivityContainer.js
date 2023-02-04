@@ -1,0 +1,27 @@
+import { connect } from "react-redux";
+import Activity from "../components/activity";
+
+import data from "../data/index";
+import { common } from "../actions";
+
+const mapState = (state) => ({
+  data: data,
+  isSimulationStart: state.startSimulation,
+  isPopupActive: !!state.currentPopup.length,
+  showToastMessage: state.showToastMessage,
+  correctAttempt: state.correctAnswer,
+  answerAttempted: state.answerAttempted,
+  selectedQuestion: state.selectedQuestion,
+  audioStatePlay: state.audioStatePlay,
+  visitedHotspots: state.visitedHotspots,
+  activityHeading: data.activityHeading,
+});
+
+const mapDispatch = (dispatch) => ({
+  onStartActivity: () => {
+    EventManager.broadcast("OUTDOOR_SCREEN");
+    dispatch(common.togglePopup(1));
+  },
+});
+
+export default connect(mapState, mapDispatch)(Activity);

@@ -1,0 +1,50 @@
+.initial-info-popup {
+  &:nth-child(2) {
+    margin-top: 8px;
+  }
+}
+
+.hidden-image {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.image0 {
+    background-image: url(../assets/images/blue_wavelength.png);
+  }
+  &.image1 {
+    background-image: url(../assets/images/electron.png);
+  }
+  &.image2 {
+    background-image: url(../assets/images/flash1.png);
+  }
+  &.image3 {
+    background-image: url(../assets/images/grey_wavelength.png);
+  }
+  &.image4 {
+    background-image: url(../assets/images/helium.png);
+  }
+  &.image5 {
+    background-image: url(../assets/images/helium_empty.png);
+  }
+  &.image6 {
+    background-image: url(../assets/images/hydrogen.png);
+  }
+  &.image7 {
+    background-image: url(../assets/images/hydrogen_empty.png);
+  }
+  &.image8 {
+    background-image: url(../assets/images/light.png);
+  }
+  &.image9 {
+    background-image: url(../assets/images/red_wavelength.png);
+  }
+  &.image10 {
+    background-image: url(../assets/images/yellow_wavelength.png);
+  }
+}

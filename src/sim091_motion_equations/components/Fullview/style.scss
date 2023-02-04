@@ -1,0 +1,62 @@
+.view-container {
+  .full-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: contain;
+    background-image: url(../../assets/images/intro.png);
+
+    .full-view-wrapper {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    .video-container {
+      z-index: 0;
+      position: absolute;
+      .video-wrapper {
+        z-index: 0;
+      }
+    }
+    .btn.toast-secondary-button {
+      left: 50%;
+      top: unset;
+      z-index: 1;
+      right: unset;
+      position: absolute;
+      background-color: #0056b3;
+      transform: translateX(-50%);
+    }
+
+    .main-heading {
+      z-index: 1;
+      font-size: 14px;
+      font-weight: 500;
+      color: #052978;
+      line-height: 20px;
+      position: relative;
+      margin: 80px 24px 0;
+      letter-spacing: 0.25px;
+    }
+    .play-pause-buttons {
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+    }
+    .radiobuttons {
+      z-index: 1;
+      position: relative;
+      margin: 16px 0 0 24px;
+      flex-direction: row;
+      .radiobutton-inner-wrapper {
+        align-items: center;
+        label {
+          font-weight: 500;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}

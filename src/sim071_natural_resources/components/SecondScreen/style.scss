@@ -1,0 +1,526 @@
+.left {
+  .left-sideview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 540px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/building.png);
+  }
+
+  .image-sidebutton {
+    height: 600px;
+    width: 540px;
+    // background-color: #f4f4f4;
+    .sideimg {
+      > .btn-chip {
+        pointer-events: none;
+      }
+    }
+    .btn.btn-chip.selected:disabled {
+      opacity: 1;
+      border-color: var(--primary-blue) !important;
+    }
+
+    .sideimg {
+      > .btn-chip {
+        pointer-events: none;
+      }
+    }
+    .btn-chip {
+      position: absolute;
+
+      &.glass {
+        top: 62px;
+        left: 460px;
+        min-width: 150px;
+        .correcttick {
+          top: 37px;
+          left: 48px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+        .bullets {
+          top: 86px;
+          left: -48px;
+          .bullet {
+            top: -3px;
+            left: 30px;
+          }
+        }
+        .dottedlines {
+          height: 51px;
+          width: 0px;
+          top: 56px;
+          left: -22px;
+          transform: rotate(65deg);
+        }
+      }
+      &.oil {
+        top: 505px;
+        left: 54px;
+        min-width: 150px;
+
+        .correcttick {
+          top: 32px;
+          left: 28px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 36px;
+          left: 83px;
+
+          .bullet {
+            top: 36px;
+            left: 82px;
+          }
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 25px;
+          left: 66px;
+          transform: rotate(68deg);
+        }
+      }
+
+      &.car {
+        top: 492px;
+        left: 247px;
+        min-width: 150px;
+        .correcttick {
+          top: 26px;
+          left: 35px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 45px;
+          left: -30px;
+
+          &.bullet {
+            top: 45px;
+            left: -27px;
+          }
+        }
+        .dottedlines {
+          height: 32px;
+          width: 0px;
+          top: 30px;
+          left: -6px;
+          transform: rotate(80deg);
+        }
+      }
+      &.iron {
+        top: 470px;
+        left: 321px;
+        min-width: 150px;
+        .correcttick {
+          top: 32px;
+          left: 35px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: -1px;
+          left: 66px;
+        }
+        .dottedlines {
+          height: 46px;
+          width: 0px;
+          top: 5px;
+          left: 62px;
+          transform: rotate(18deg);
+        }
+      }
+      &.wooden_chair {
+        top: 294px;
+        left: 1px;
+        .correcttick {
+          top: 36px;
+          left: 105px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        min-width: 130px;
+        .bullets {
+          top: 87px;
+          left: 135px;
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 55px;
+          left: 120px;
+          transform: rotate(125deg);
+        }
+      }
+      &.plastic_cell_phone {
+        top: 220px;
+        left: 364px;
+        min-width: 180px;
+        .correcttick {
+          top: -12px;
+          left: 123px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 46px;
+          left: 43px;
+          &.bullet {
+            // top: 37px;
+            // left: 45px;
+          }
+        }
+        .dottedlines {
+          position: absolute;
+          height: 46px;
+          width: 0px;
+          top: 8px;
+          left: 65px;
+          transform: rotate(40deg);
+        }
+      }
+      &.vegetables {
+        top: 237px;
+        left: 49px;
+        .correcttick {
+          top: 34px;
+          left: 76px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 108px;
+          left: 117px;
+          &.bullet {
+            // top: 108px;
+            // left: 86px;
+          }
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 70px;
+          left: 101px;
+          transform: rotate(136deg);
+        }
+      }
+      &.potted_plant {
+        top: 60px;
+        left: 48px;
+        min-width: 150px;
+        .correcttick {
+          top: 32px;
+          left: 85px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          // top: 108px;
+          // left: 86px;
+
+          &.bullet {
+            top: 106px;
+            left: 86px;
+          }
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 69px;
+          left: 70px;
+          transform: rotate(136deg);
+        }
+      }
+
+      &.curtain {
+        top: 129px;
+        left: 22px;
+        min-width: 150px;
+        .correcttick {
+          top: 37px;
+          left: 55px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 108px;
+          left: 86px;
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 70px;
+          left: 70px;
+          transform: rotate(136deg);
+        }
+      }
+      &.rocks {
+        top: 202px;
+        left: 268px;
+        min-width: 150px;
+        .correcttick {
+          top: -11px;
+          left: 48px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 62px;
+          left: 21px;
+        }
+        .dottedlines {
+          position: absolute;
+          height: 46px;
+          width: 0px;
+          top: 25px;
+          left: 38px;
+          transform: rotate(33deg);
+        }
+      }
+
+      &.water {
+        top: 331px;
+        left: 357px;
+        min-width: 150px;
+        .correcttick {
+          top: -11px;
+          left: 45px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 66px;
+          left: 5px;
+        }
+        .dottedlines {
+          position: absolute;
+          height: 46px;
+          width: 0px;
+          top: 25px;
+          left: 25px;
+          transform: rotate(33deg);
+        }
+      }
+
+      &.tree {
+        top: 280px;
+        left: 456px;
+        min-width: 150px;
+        .correcttick {
+          top: 32px;
+          left: 37px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 114px;
+          left: 36px;
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 70px;
+          left: 33px;
+          transform: rotate(166deg);
+        }
+      }
+
+      &.garden_soil {
+        top: 370px;
+        left: 2px;
+        min-width: 150px;
+        .correcttick {
+          top: 32px;
+          left: 80px;
+          height: 24px;
+          width: 24px;
+          opacity: 0;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../../../app/assets/images/positive_icon.svg);
+          &.show {
+            opacity: 1;
+          }
+        }
+
+        .bullets {
+          top: 105px;
+          left: 45px;
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 60px;
+          left: 49px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .bullets {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+
+    transform-style: preserve-3d;
+  }
+  .dottedlines {
+    border-left: 2px dotted #352103;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+}
+
+.right {
+  .right-sideview {
+    .right-sidecontent {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-top: 80px;
+    }
+  }
+
+  .right-view {
+    .mcq-question-area {
+      .inner-wrapper {
+        .radiobuttons {
+          .radiobutton {
+            .radiobutton-inner-wrapper {
+              input[type="radio"] + div + label {
+                margin-top: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.droppable {
+  width: 100%;
+  height: 204px;
+
+  position: relative;
+
+  .option {
+    box-sizing: border-box;
+    height: 32px;
+    width: 125px;
+    border: 1px dashed var(--primary-blue);
+    border-radius: 16px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &.dropped {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--question-text-blue);
+      background-color: var(--primary-blue);
+      color: var(--white);
+
+      position: relative;
+
+      &.option-2,
+      &.option-7 {
+        width: 150px;
+      }
+      &.option-2 {
+        left: 301px;
+      }
+    }
+
+    > span {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    &.setBlueHoverColor {
+      background-color: var(--hover-state-color);
+    }
+
+    &.option-1 {
+      left: 94px;
+    }
+    &.option-2 {
+      top: -32px;
+      left: 313px;
+    }
+    &.option-3 {
+      top: -64px;
+      left: 517px;
+    }
+    &.option-5 {
+      top: -58px;
+    }
+    &.option-6 {
+      top: -90px;
+      left: 196px;
+    }
+    &.option-7 {
+      top: -122px;
+      left: 416px;
+    }
+    &.option-8 {
+      top: -154px;
+      left: 626px;
+    }
+  }
+}

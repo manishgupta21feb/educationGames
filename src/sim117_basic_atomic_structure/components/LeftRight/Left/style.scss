@@ -1,0 +1,742 @@
+.left-container {
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid #d9ebff;
+
+  .heading {
+    color: #052978;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    top: 35px;
+  }
+  .orbit-alt {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    top: 58px;
+    left: 111px;
+    .show {
+      opacity: 1;
+    }
+    .hide {
+      opacity: 0;
+    }
+    .orbit3base {
+      background-image: url("../../../assets/images/RING_3.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 287px;
+      height: 287px;
+      position: absolute;
+      top: 17px;
+      left: 15px;
+    }
+    .orbit2base {
+      background-image: url("../../../assets/images/RING_2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 204px;
+      height: 204px;
+      position: absolute;
+      top: 59px;
+      left: 56px;
+    }
+    .orbit1base {
+      background-image: url("../../../assets/images/RING_1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 123px;
+      height: 123px;
+      position: absolute;
+      top: 102px;
+      left: 95px;
+    }
+    .nucleusbase {
+      background-image: url("../../../assets/images/RING_0.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 61px;
+      height: 61px;
+      position: absolute;
+      top: 133px;
+      left: 126px;
+    }
+    .hydrogen--orbit1 {
+      background-image: url("../../../assets/images/hydrogen_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 123px;
+      height: 134px;
+      position: absolute;
+      top: 102px;
+      left: 95px;
+    }
+
+    .hydrogen--nucleus {
+      background-image: url("../../../assets/images/Proton0002.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 158px;
+      left: 148px;
+    }
+    .magnesium--orbit1 {
+      background-image: url("../../../assets/images/Magnesium_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 122px;
+      height: 134px;
+      position: absolute;
+      top: 97px;
+      left: 96px;
+    }
+    .magnesium--orbit2 {
+      background-image: url("../../../assets/images/Magnesium_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 213px;
+      height: 216px;
+      position: absolute;
+      top: 53px;
+      left: 52px;
+    }
+    .magnesium--orbit3 {
+      background-image: url("../../../assets/images/Magnesium_Ring_03.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 286px;
+      height: 298px;
+      position: absolute;
+      top: 12px;
+      left: 15px;
+    }
+    .magnesium--nucleus {
+      background-image: url("../../../assets/images/Magnesium.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 48px;
+      height: 47px;
+      position: absolute;
+      top: 140px;
+      left: 133px;
+    }
+    .lithium--orbit1 {
+      background-image: url("../../../assets/images/Lithium_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 122px;
+      height: 134px;
+      position: absolute;
+      top: 98px;
+      left: 96px;
+    }
+    .lithium--orbit2 {
+      background-image: url("../../../assets/images/Lithium_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 208px;
+      height: 204px;
+      position: absolute;
+      top: 59px;
+      left: 53px;
+    }
+
+    .lithium--nucleus {
+      background-image: url("../../../assets/images/Lithium.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 29px;
+      position: absolute;
+      top: 150px;
+      left: 142px;
+    }
+    .oxygen--orbit1 {
+      background-image: url("../../../assets/images/Oxygen_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 123px;
+      height: 135px;
+      position: absolute;
+      top: 96px;
+      left: 95px;
+    }
+    .oxygen--orbit2 {
+      background-image: url("../../../assets/images/Oxygen_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 204px;
+      height: 216px;
+      position: absolute;
+      top: 53px;
+      left: 56px;
+    }
+
+    .oxygen--nucleus {
+      background-image: url("../../../assets/images/Oxygen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 48px;
+      height: 46px;
+      position: absolute;
+      top: 141px;
+      left: 134px;
+    }
+    .boron--orbit1 {
+      background-image: url("../../../assets/images/Boron_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 123px;
+      height: 136px;
+      position: absolute;
+      top: 97px;
+      left: 95px;
+    }
+    .boron--orbit2 {
+      background-image: url("../../../assets/images/Boron_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 208px;
+      height: 204px;
+      position: absolute;
+      top: 60px;
+      left: 52px;
+    }
+
+    .boron--nucleus {
+      background-image: url("../../../assets/images/Boron.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 147px;
+      left: 141px;
+    }
+    .carbon--orbit1 {
+      background-image: url("../../../assets/images/Carbon_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 122px;
+      height: 134px;
+      position: absolute;
+      top: 97px;
+      left: 96px;
+    }
+    .carbon--orbit2 {
+      background-image: url("../../../assets/images/Carbon_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 215px;
+      height: 215px;
+      position: absolute;
+      top: 54px;
+      left: 51px;
+    }
+
+    .carbon--nucleus {
+      background-image: url("../../../assets/images/Carbon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 37px;
+      position: absolute;
+      top: 147px;
+      left: 139px;
+    }
+    .nitrogen--orbit1 {
+      background-image: url("../../../assets/images/Nitrogen_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 122px;
+      height: 134px;
+      position: absolute;
+      top: 98px;
+      left: 96px;
+    }
+    .nitrogen--orbit2 {
+      background-image: url("../../../assets/images/Nitrogen_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 208px;
+      height: 207px;
+      position: absolute;
+      top: 59px;
+      left: 52px;
+    }
+
+    .nitrogen--nucleus {
+      background-image: url("../../../assets/images/Nitrogen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 37px;
+      height: 35px;
+      position: absolute;
+      top: 146px;
+      left: 137px;
+    }
+    .phosphorus--orbit1 {
+      background-image: url("../../../assets/images/Phosphorus_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 123px;
+      height: 136px;
+      position: absolute;
+      top: 97px;
+      left: 95px;
+    }
+    .phosphorus--orbit2 {
+      background-image: url("../../../assets/images/Phosphorus_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 213px;
+      height: 216px;
+      position: absolute;
+      top: 54px;
+      left: 52px;
+    }
+    .phosphorus--orbit3 {
+      background-image: url("../../../assets/images/Phosphorus_Ring_03.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 289px;
+      height: 292px;
+      position: absolute;
+      top: 17px;
+      left: 15px;
+    }
+    .phosphorus--nucleus {
+      background-image: url("../../../assets/images/Phosphorus.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 61px;
+      position: absolute;
+      top: 134px;
+      left: 127px;
+    }
+    .fluorine--orbit1 {
+      background-image: url("../../../assets/images/Fluorine_Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 122px;
+      height: 134px;
+      position: absolute;
+      top: 96px;
+      left: 98px;
+    }
+    .fluorine--orbit2 {
+      background-image: url("../../../assets/images/Fluorine_Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 211px;
+      height: 209px;
+      position: absolute;
+      top: 59px;
+      left: 52px;
+    }
+
+    .fluorine--nucleus {
+      background-image: url("../../../assets/images/Fluorine.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 45px;
+      height: 46px;
+      position: absolute;
+      top: 140px;
+      left: 136px;
+    }
+    .beryllium--orbit1 {
+      background-image: url("../../../assets/images/Beryllium\ _Ring_01.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 122px;
+      height: 134px;
+      position: absolute;
+      top: 97px;
+      left: 96px;
+    }
+    .beryllium--orbit2 {
+      background-image: url("../../../assets/images/Beryllium\ _Ring_02.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 213px;
+      height: 204px;
+      position: absolute;
+      top: 59px;
+      left: 52px;
+    }
+
+    .beryllium--nucleus {
+      background-image: url("../../../assets/images/Beryllium.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 33px;
+      height: 34px;
+      position: absolute;
+      top: 146px;
+      left: 141px;
+    }
+  }
+
+  .protons {
+    position: relative;
+    top: -210px;
+    left: 22px;
+    height: 29px;
+    width: 125px;
+  }
+  .neutrons {
+    position: relative;
+    top: -239px;
+    left: 177px;
+    height: 29px;
+    width: 133px;
+  }
+  .valance-electrons {
+    position: relative;
+    top: -268px;
+    left: 340px;
+    height: 29px;
+    width: 180px;
+  }
+  .droppable-container {
+    width: 300px;
+    height: 320px;
+    position: relative;
+    top: -261px;
+    left: 119px;
+    p {
+      top: 0;
+    }
+    .drop {
+      box-sizing: border-box;
+      height: 33px;
+      width: 33px;
+      border: 1px dashed #052978;
+      border-radius: 4px;
+      background-color: #d9ebff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .sr-only {
+        height: 33px;
+        width: 33px;
+      }
+      .hold-drag {
+        background-image: url("../../../assets/images/Electron.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 12px;
+        width: 12px;
+      }
+      &.orbit3DropOne {
+        position: absolute;
+        top: -1px;
+        left: 132px;
+      }
+      &.orbit3DropTwo {
+        position: absolute;
+        top: 45px;
+        left: 236px;
+      }
+      &.orbit3DropThree {
+        position: absolute;
+        top: 144px;
+        left: 275px;
+      }
+      &.orbit3DropFour {
+        position: absolute;
+        top: 240px;
+        left: 236px;
+      }
+      &.orbit3DropFive {
+        position: absolute;
+        top: 285px;
+        left: 132px;
+      }
+      &.orbit3DropSix {
+        position: absolute;
+        top: 240px;
+        left: 30px;
+      }
+      &.orbit3DropSeven {
+        position: absolute;
+        top: 144px;
+        left: -9px;
+      }
+      &.orbit3DropEight {
+        position: absolute;
+        top: 47px;
+        left: 30px;
+      }
+      &.orbit2DropOne {
+        position: absolute;
+        top: 43px;
+        left: 132px;
+      }
+      &.orbit2DropTwo {
+        position: absolute;
+        top: 72px;
+        left: 203px;
+      }
+      &.orbit2DropThree {
+        position: absolute;
+        top: 144px;
+        left: 234px;
+      }
+      &.orbit2DropFour {
+        position: absolute;
+        top: 214px;
+        left: 203px;
+      }
+      &.orbit2DropFive {
+        position: absolute;
+        top: 243px;
+        left: 132px;
+      }
+      &.orbit2DropSix {
+        position: absolute;
+        top: 214px;
+        left: 63px;
+      }
+      &.orbit2DropSeven {
+        position: absolute;
+        top: 144px;
+        left: 33px;
+      }
+      &.orbit2DropEight {
+        position: absolute;
+        top: 75px;
+        left: 63px;
+      }
+      &.orbit1DropOne {
+        position: absolute;
+        top: 86px;
+        left: 132px;
+      }
+      &.orbit1DropTwo {
+        position: absolute;
+        top: 204px;
+        left: 132px;
+      }
+    }
+    .accessible-list {
+      z-index: 2;
+
+      background: transparent;
+      border: none;
+
+      .list {
+        .listitem {
+          a {
+            padding: 7px 14px;
+          }
+        }
+        .orbit3DropOne {
+          position: absolute;
+          top: 5px;
+          left: 135px;
+        }
+        .orbit3DropTwo {
+          position: absolute;
+          top: 50px;
+          left: 239px;
+        }
+        .orbit3DropThree {
+          position: absolute;
+          top: 149px;
+          left: 277px;
+        }
+        .orbit3DropFour {
+          position: absolute;
+          top: 245px;
+          left: 239px;
+        }
+        .orbit3DropFive {
+          position: absolute;
+          top: 290px;
+          left: 135px;
+        }
+        .orbit3DropSix {
+          position: absolute;
+          top: 245px;
+          left: 33px;
+        }
+        .orbit3DropSeven {
+          position: absolute;
+          top: 149px;
+          left: -7px;
+        }
+        .orbit3DropEight {
+          position: absolute;
+          top: 52px;
+          left: 33px;
+        }
+        .orbit2DropOne {
+          position: absolute;
+          top: 48px;
+          left: 134px;
+        }
+        .orbit2DropTwo {
+          position: absolute;
+          top: 77px;
+          left: 206px;
+        }
+        .orbit2DropThree {
+          position: absolute;
+          top: 150px;
+          left: 237px;
+        }
+        .orbit2DropFour {
+          position: absolute;
+          top: 219px;
+          left: 206px;
+        }
+        .orbit2DropFive {
+          position: absolute;
+          top: 248px;
+          left: 134px;
+        }
+        .orbit2DropSix {
+          position: absolute;
+          top: 219px;
+          left: 66px;
+        }
+        .orbit2DropSeven {
+          position: absolute;
+          top: 149px;
+          left: 35px;
+        }
+        .orbit2DropEight {
+          position: absolute;
+          top: 80px;
+          left: 66px;
+        }
+        .orbit1DropOne {
+          position: absolute;
+          top: 91px;
+          left: 135px;
+        }
+        .orbit1DropTwo {
+          position: absolute;
+          top: 209px;
+          left: 135px;
+        }
+      }
+    }
+  }
+  .legends-base {
+    height: 16px;
+    width: 270px;
+
+    position: absolute;
+
+    bottom: 50px;
+
+    left: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .container--legendproton {
+      width: 65px;
+      height: 16px;
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+
+      .legendproton {
+        background-image: url("../../../assets/images/proton_legend.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        color: #35374c;
+
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+        top: 1px;
+      }
+    }
+    .container--legendneutron {
+      width: 74px;
+      height: 16px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .legendneutron {
+        background-image: url("../../../assets/images/neutron_legend.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        color: #35374c;
+
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+        top: 1px;
+      }
+    }
+    .container--legendelelectron {
+      width: 78px;
+      height: 16px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .legendelelectron {
+        background-image: url("../../../assets/images/electron_legend.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        color: #35374c;
+
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+        top: 1px;
+      }
+    }
+  }
+}
+
+.select-dropdown {
+  display: flex;
+  justify-content: space-between;
+  > div {
+    width: 65px;
+  }
+  > div:nth-child(1) {
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+  button {
+    padding: 4px 0px 4px 8px !important;
+    border: 1px solid #052978 !important;
+  }
+  .accessible-list {
+    min-height: 73px !important;
+    max-height: 73px !important;
+  }
+}

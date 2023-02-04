@@ -1,0 +1,32 @@
+.top-static {
+  .prompt-one-image,
+  .prompt-two-image,
+  .prompt-three-image,
+  .prompt-four-image,
+  .prompt-five-image,
+  .prompt-six-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  .prompt-one-image {
+    background-image: url(../../assets/images/questionOne.png);
+  }
+  .prompt-two-image {
+    background-image: url(../../assets/images/answerOne.png);
+  }
+  .prompt-three-image {
+    background-image: url(../../assets/images/questionTwo.png);
+  }
+  .prompt-four-image {
+    background-image: url(../../assets/images/answerTwo.png);
+  }
+  .prompt-five-image {
+    background-image: url(../../assets/images/questionThree.png);
+  }
+  .prompt-six-image {
+    background-image: url(../../assets/images/answerThree.png);
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../stylesheets/common/functions.scss";
+
+
+.triangle-line {
+  @extend %absolute;
+  width: 2px;
+  background-color: #eb5f00;
+  transform-origin: 0 0;
+
+  &--1 {
+    left: 29%;
+    top: 31.5%;
+    height: 119px;
+    transform: rotate(29deg);
+  }
+  &--2 {
+    left: 63%;
+    top: 25.5%;
+    height: 275px;
+    transform: rotate(58deg);
+  }
+  &--3 {
+    left: 19%;
+    top: 60.5%;
+    height: 90px;
+    transform: rotate(-10deg);
+  }
+  &--4 {
+    left: 41%;
+    top: 54.5%;
+    height: 139px;
+    transform: rotate(32deg);
+  }
+  &--5 {
+    left: 46%;
+    top: 73.5%;
+    height: 89px;
+    transform: rotate(59deg);
+  }
+  &--6 {
+    left: 50%;
+    top: 60%;
+    height: 68px;
+    transform: rotate(-18deg);
+  }
+  &--7 {
+    left: 74%;
+    top: 58%;
+    height: 114px;
+    transform: rotate(44deg);
+  }
+  &--8 {
+    left: 58%;
+    top: 76.3%;
+    height: 90px;
+    transform: rotate(-53deg);
+  }
+  &--9 {
+    left: 55.5%;
+    top: 55.5%;
+    height: 185px;
+    transform: rotate(-30deg);
+  }
+  &--10 {
+    left: 76.5%;
+    top: 39%;
+    height: 90px;
+    transform: rotate(-10deg);
+  }
+}
+
+$basic-distance: -7px;
+$distance-manager: 25px;
+
+.triangle-line__triangle {
+  @extend %none-object, %absolute;
+  @include triangle(4px, #eb5f00);
+  left: -3px;
+
+  &:first-child {
+    top: $basic-distance;
+  }
+}
+@for $count from 1 to 11 {
+  .triangle-line__triangle:nth-child(#{$count + 1}) {
+    top: $basic-distance + $distance-manager * $count;
+  }
+}

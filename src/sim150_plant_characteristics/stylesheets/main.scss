@@ -1,0 +1,52 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+
+  div[role="main"] {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .infoBoxCl {
+    .infoImg {
+      margin-top: 24px;
+      width: 382.76px;
+    }
+    .headingBanner {
+      width: 190px;
+      height: 50px;
+      border: 1px solid #623d46;
+      border-radius: 14px;
+      background: #fbe5cf;
+      position: absolute;
+      top: 100px;
+      left: 108px;
+      text-align: center;
+      font-size: 14px;
+      padding: 14px;
+    }
+    .headingBoard {
+      width: 100px;
+      /* height: 44px; */
+      border: 1px solid #623d46;
+      border-radius: 8px;
+      background: #fff;
+      position: absolute;
+      top: 180px;
+      left: 154px;
+      text-align: center;
+      font-size: 11px;
+      padding: 9px;
+    }
+  }
+  @import "./activity/main.scss";
+}

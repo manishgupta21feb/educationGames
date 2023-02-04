@@ -1,0 +1,104 @@
+.screen3-top {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .videoContainer-screen1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    &[aria-hidden="true"] {
+      visibility: hidden;
+    }
+
+    .video-container {
+      height: 100%;
+
+      .play-pause-buttons {
+        top: 0;
+        right: 705px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .play-pause-buttons .btn {
+        top: 26px;
+        right: 730px;
+        left: initial;
+        transform: initial;
+      }
+
+      .video-wrapper {
+        video {
+          &.question1 {
+            background: transparent url("../../assets/images/redshift.png")
+              center / cover no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+.mcqContainer-screen1,
+.mcqContainer-screen2,
+.mcqContainer-screen3 {
+  height: 100%;
+  position: relative;
+  .mcq-question-area {
+    .inner-wrapper {
+      .radiobuttons {
+        .radiobutton {
+          .radiobutton-inner-wrapper {
+            align-items: flex-start;
+            input[type="radio"] + div + label {
+              margin-top: 6px;
+            }
+          }
+
+          &:first-child {
+            .radiobutton-inner-wrapper {
+              align-items: flex-start;
+              input[type="radio"] + div + label {
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pieChart {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.textContent {
+  color: #052978;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+.cosmic {
+  height: 320px;
+  width: 800px;
+  background-color: #f4f4f4;
+  .cosmicImage {
+    height: 239px;
+    width: 248px;
+    margin-top: 30px;
+    margin-left: 264px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: transparent url("../../assets/images/microwave.png") center /
+      cover no-repeat;
+  }
+}

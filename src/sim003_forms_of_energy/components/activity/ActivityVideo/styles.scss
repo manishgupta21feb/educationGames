@@ -1,0 +1,32 @@
+.video-container {
+  div {
+    .video-wrapper {
+      video {
+        &.basketball {
+          background: transparent url(../../../assets/images/basketball.png)
+            center / contain no-repeat;
+        }
+        &.bicycle {
+          background: transparent url(../../../assets/images/bicycle.png) center /
+            contain no-repeat;
+        }
+        &.marquee {
+          background: transparent url(../../../assets/images/marquee.png) center /
+            contain no-repeat;
+        }
+        &.waterfall {
+          background: transparent url(../../../assets/images/waterfall.png)
+            center / contain no-repeat;
+        }
+      }
+    }
+  }
+
+  .play-pause-buttons {
+    .btn {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

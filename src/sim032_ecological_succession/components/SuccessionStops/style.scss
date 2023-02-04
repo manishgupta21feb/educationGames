@@ -1,0 +1,330 @@
+.wildfire-container {
+  height: 520px;
+  width: 100%;
+  padding: 80px 24px 0px;
+  .cont-btn-wrraper {
+    position: absolute;
+    bottom: 159px;
+    right: 311px;
+  }
+
+  .stop-container {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+
+    .stop-wrapper {
+      .button-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+        box-shadow: inset 1px 0 0 0 var(--dark-grey);
+
+        .stop-button {
+          height: 32px;
+          padding: 6px 14px;
+          border: 2px solid var(--primary-blue);
+          border-radius: 18px;
+          background-color: var(--white);
+          cursor: pointer;
+
+          > p {
+            color: var(--primary-blue);
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            font-variant: lining-nums;
+          }
+
+          &:hover:not(:disabled),
+          &:focus:not(:disabled) {
+            box-shadow: 0 0 0 1px var(--white), 0 0 0 2px var(--primary-blue);
+          }
+
+          &.selected {
+            border: none;
+            cursor: default;
+            padding: 6px 16px;
+            background-color: var(--primary-blue);
+            > p {
+              margin-top: 1px;
+              color: var(--white);
+            }
+            &:hover:not(:disabled),
+            &:focus:not(:disabled) {
+              box-shadow: none;
+            }
+          }
+
+          &:disabled {
+            border: 2px solid #c9c9cf;
+            border-radius: 18px;
+            background-color: #ffffff;
+            pointer-events: none;
+
+            > p {
+              color: #c9c9cf;
+            }
+          }
+        }
+      }
+
+      .stop-img {
+        height: 228px;
+        background-color: rgba(217, 235, 255, 0.24);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &.stop1 {
+        .stop-img {
+          width: 80px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/wildfire1.png");
+            background-position: 0 0;
+          }
+        }
+      }
+      &.stop2 {
+        .stop-img {
+          width: 140px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/wildfire1.png");
+            background-position: -80px 0;
+          }
+        }
+      }
+      &.stop3 {
+        .stop-img {
+          width: 125px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/wildfire1.png");
+            background-position: -220px 0;
+          }
+        }
+      }
+      &.stop4 {
+        .stop-img {
+          width: 195px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/wildfire1.png");
+            background-position: -345px 0;
+          }
+        }
+      }
+      &.stop5 {
+        .stop-img {
+          width: 210px;
+          box-shadow: inset -1px 0 0 0 var(--dark-grey),
+            inset 1px 0 0 0 var(--dark-grey), inset 0 -1px 0 0 var(--dark-grey),
+            inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/wildfire1.png");
+            background-position: -534px 0;
+          }
+        }
+
+        .button-wrapper {
+          box-shadow: inset -1px 0 0 0 var(--dark-grey),
+            inset 1px 0 0 0 var(--dark-grey);
+        }
+      }
+    }
+  }
+}
+
+.volcanic-container {
+  height: 520px;
+  width: 100%;
+  padding: 80px 24px 0px;
+
+  .cont-btn-wrraper {
+    position: absolute;
+
+    right: 311px;
+    &.es {
+      bottom: 148px;
+    }
+    &.en {
+      bottom: 166px;
+    }
+  }
+
+  .stop-container {
+    display: flex;
+    margin-top: 22px;
+    position: relative;
+
+    .stop-wrapper {
+      .button-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+        box-shadow: inset 1px 0 0 0 var(--dark-grey);
+
+        .stop-button {
+          height: 32px;
+          padding: 6px 14px;
+          border: 2px solid var(--primary-blue);
+          border-radius: 18px;
+          background-color: var(--white);
+          cursor: pointer;
+
+          > p {
+            color: var(--primary-blue);
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            font-variant: lining-nums;
+          }
+
+          &:hover:not(:disabled),
+          &:focus:not(:disabled) {
+            box-shadow: 0 0 0 1px var(--white), 0 0 0 2px var(--primary-blue);
+          }
+
+          &.selected {
+            border: none;
+            cursor: default;
+            padding: 6px 16px;
+            background-color: var(--primary-blue);
+            > p {
+              margin-top: 1px;
+              color: var(--white);
+            }
+            &:hover:not(:disabled),
+            &:focus:not(:disabled) {
+              box-shadow: none;
+            }
+          }
+
+          &:disabled {
+            border: 2px solid #c9c9cf;
+            border-radius: 18px;
+            background-color: #ffffff;
+            pointer-events: none;
+
+            > p {
+              color: #c9c9cf;
+            }
+          }
+        }
+      }
+
+      .stop-img {
+        height: 228px;
+        background-color: rgba(217, 235, 255, 0.24);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &.stop1 {
+        .stop-img {
+          width: 80px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/volcanic1.png");
+
+            background-position: 0 0;
+          }
+        }
+      }
+      &.stop2 {
+        .stop-img {
+          width: 95px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/volcanic1.png");
+            background-position: -80px 0;
+          }
+        }
+      }
+      &.stop3 {
+        .stop-img {
+          width: 95px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/volcanic1.png");
+            background-position: -175px 0;
+          }
+        }
+      }
+      &.stop4 {
+        .stop-img {
+          width: 95px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/volcanic1.png");
+            background-position: -270px 0;
+          }
+        }
+      }
+      &.stop5 {
+        .stop-img {
+          width: 195px;
+          box-shadow: inset 1px 0 0 0 var(--dark-grey),
+            inset 0 -1px 0 0 var(--dark-grey), inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/volcanic1.png");
+            background-position: -365px 0;
+          }
+        }
+      }
+      &.stop6 {
+        .stop-img {
+          width: 190px;
+          box-shadow: inset -1px 0 0 0 var(--dark-grey),
+            inset 1px 0 0 0 var(--dark-grey), inset 0 -1px 0 0 var(--dark-grey),
+            inset 0 1px 0 0 var(--dark-grey);
+          &.show {
+            box-shadow: none;
+            border: 1px solid var(--question-text-blue);
+            background-image: url("../../assets/images/volcanic1.png");
+            background-position: -553px 0;
+          }
+        }
+
+        .button-wrapper {
+          box-shadow: inset -1px 0 0 0 var(--dark-grey),
+            inset 1px 0 0 0 var(--dark-grey);
+        }
+      }
+    }
+  }
+}

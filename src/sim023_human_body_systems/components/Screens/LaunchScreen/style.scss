@@ -1,0 +1,102 @@
+.screen0-container {
+  height: 100%;
+  width: 100%;
+  .hospital-img {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../../assets/images/hospital.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title {
+      color: white;
+      font-weight: bold;
+      position: absolute;
+      left: 209px;
+      top: 47px;
+    }
+
+    .labels {
+      position: relative;
+      top: 83px;
+      padding-right: 6px;
+      > div {
+        // margin-top: 3px;
+        position: relative;
+      }
+      .key,
+      .name {
+        line-height: 15px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+      }
+    }
+    .labels {
+      > div:nth-child(1) {
+        top: 0px;
+      }
+      > div:nth-child(2) {
+        top: 4px;
+      }
+      > div:nth-child(3) {
+        top: 10px;
+      }
+      > div:nth-child(4) {
+        top: 15px;
+      }
+      > div:nth-child(5) {
+        top: 20px;
+      }
+      > div:nth-child(6) {
+        top: 25px;
+      }
+      > div:nth-child(7) {
+        top: 31px;
+      }
+      > div:nth-child(8) {
+        top: 36px;
+      }
+      > div:nth-child(9) {
+        top: 41px;
+      }
+      > div:nth-child(10) {
+        top: 46px;
+      }
+      > div:nth-child(11) {
+        top: 52px;
+      }
+    }
+  }
+
+  .departments {
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .btn {
+    &.btn-chip {
+      margin-bottom: 8px;
+    }
+    &.visited {
+      border: 2px solid var(--lightgreyshade);
+      .text {
+        color: var(--lightgreyshade);
+      }
+      &:hover:not(:disabled) {
+        box-shadow: 0 0 0 1px var(--white), 0 0 0 2px var(--lightgreyshade);
+        border: 2px solid var(--lightgreyshade);
+      }
+
+      &:focus:not(:disabled) {
+        box-shadow: 0 0 0 1px var(--white), 0 0 0 3px var(--lightgreyshade);
+        border: 2px solid var(--lightgreyshade);
+        &:hover {
+          box-shadow: 0 0 0 1px var(--white), 0 0 0 2px var(--lightgreyshade) !important;
+          border: 2px solid var(--lightgreyshade);
+        }
+      }
+    }
+  }
+}

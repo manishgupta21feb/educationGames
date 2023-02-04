@@ -1,0 +1,1448 @@
+.images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 54px;
+  margin-left: 24px;
+  font-variant: lining-nums;
+  .content-container {
+    width: 243px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    .ambulance {
+      &--option_a {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+        .img-only {
+          background-image: url("../../../assets/images/Ambulence/graph1.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 174px;
+          width: 175px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 182px;
+          left: 36px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 164px;
+          left: 32px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 148px;
+          left: 31px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 131px;
+          left: 31px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 115px;
+          left: 31px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 98px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 82px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 66px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 49px;
+          left: 31px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 32px;
+          left: 31px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 16px;
+          left: 27px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 198px;
+          left: 49px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 198px;
+          left: 64px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 198px;
+          left: 80px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 198px;
+          left: 97px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 198px;
+          left: 113px px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 198px;
+          left: 130px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 198px;
+          left: 146px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 198px;
+          left: 163px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 198px;
+          left: 179px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 198px;
+          left: 196px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 198px;
+          left: 211px;
+        }
+      }
+      &--option_b {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/Ambulence/graph2.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 176px;
+          width: 176px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 182px;
+          left: 36px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 164px;
+          left: 32px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 148px;
+          left: 31px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 131px;
+          left: 31px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 115px;
+          left: 31px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 98px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 82px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 66px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 49px;
+          left: 31px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 32px;
+          left: 31px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 16px;
+          left: 27px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 198px;
+          left: 49px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 198px;
+          left: 64px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 198px;
+          left: 80px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 198px;
+          left: 97px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 198px;
+          left: 113px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 198px;
+          left: 130px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 198px;
+          left: 146px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 198px;
+          left: 163px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 198px;
+          left: 179px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 198px;
+          left: 196px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 198px;
+          left: 211px;
+        }
+      }
+      &--option_c {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/Ambulence/graph3.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 176px;
+          width: 177px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 182px;
+          left: 36px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 164px;
+          left: 32px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 148px;
+          left: 31px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 131px;
+          left: 31px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 115px;
+          left: 31px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 98px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 82px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 66px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 49px;
+          left: 31px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 32px;
+          left: 31px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 16px;
+          left: 27px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 198px;
+          left: 50px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 198px;
+          left: 66px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 198px;
+          left: 83px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 198px;
+          left: 99px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 198px;
+          left: 115px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 198px;
+          left: 132px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 198px;
+          left: 148px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 198px;
+          left: 165px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 198px;
+          left: 181px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 198px;
+          left: 198px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 198px;
+          left: 213px;
+        }
+      }
+    }
+    .lawn_mover {
+      &--option_a {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/lawn_mower/lawn_graph1.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 178px;
+          width: 177px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 183px;
+          left: 37px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 166px;
+          left: 33px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 149px;
+          left: 32px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 133px;
+          left: 32px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 117px;
+          left: 32px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 100px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 83px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 67px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 50px;
+          left: 32px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 33px;
+          left: 32px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 17px;
+          left: 28px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 198px;
+          left: 50px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 198px;
+          left: 65px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 198px;
+          left: 81px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 198px;
+          left: 98px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 198px;
+          left: 114px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 198px;
+          left: 131px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 198px;
+          left: 147px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 198px;
+          left: 164px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 198px;
+          left: 180px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 198px;
+          left: 197px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 198px;
+          left: 212px;
+        }
+      }
+      &--option_b {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/lawn_mower/lawn_graph2.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 178px;
+          width: 178px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 183px;
+          left: 37px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 166px;
+          left: 33px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 149px;
+          left: 32px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 133px;
+          left: 32px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 117px;
+          left: 32px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 100px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 83px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 67px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 50px;
+          left: 32px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 33px;
+          left: 32px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 17px;
+          left: 28px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 198px;
+          left: 50px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 198px;
+          left: 65px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 198px;
+          left: 81px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 198px;
+          left: 98px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 198px;
+          left: 114px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 198px;
+          left: 131px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 198px;
+          left: 147px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 198px;
+          left: 164px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 198px;
+          left: 180px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 198px;
+          left: 197px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 198px;
+          left: 212px;
+        }
+      }
+      &--option_c {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/lawn_mower/lawn_graph3.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 174px;
+          width: 177px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 179px;
+          left: 40px;
+        }
+
+        .val1--left {
+          position: absolute;
+          top: 163px;
+          left: 36px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 147px;
+          left: 35px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 131px;
+          left: 35px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 114px;
+          left: 35px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 98px;
+          left: 35px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 82px;
+          left: 35px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 66px;
+          left: 35px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 49px;
+          left: 34px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 34px;
+          left: 34px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 17px;
+          left: 29px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 193px;
+          left: 53px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 193px;
+          left: 67px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 193px;
+          left: 83px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 193px;
+          left: 99px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 193px;
+          left: 115px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 193px;
+          left: 132px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 193px;
+          left: 148px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 193px;
+          left: 165px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 193px;
+          left: 181px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 193px;
+          left: 198px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 193px;
+          left: 213px;
+        }
+      }
+    }
+    .truck {
+      &--option_a {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/ice_cream/ice_graph1.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 173px;
+          width: 174px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 180px;
+          left: 37px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 163px;
+          left: 33px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 147px;
+          left: 32px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 131px;
+          left: 32px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 115px;
+          left: 32px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 99px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 83px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 66px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 50px;
+          left: 32px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 33px;
+          left: 32px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 17px;
+          left: 28px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 194px;
+          left: 50px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 194px;
+          left: 65px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 194px;
+          left: 80px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 194px;
+          left: 97px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 194px;
+          left: 113px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 194px;
+          left: 130px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 194px;
+          left: 146px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 194px;
+          left: 162px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 194px;
+          left: 179px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 194px;
+          left: 195px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 194px;
+          left: 209px;
+        }
+      }
+      &--option_b {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/ice_cream/ice_graph2.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 173px;
+          width: 175px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 180px;
+          left: 37px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 163px;
+          left: 33px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 147px;
+          left: 32px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 131px;
+          left: 32px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 115px;
+          left: 32px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 99px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 83px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 66px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 50px;
+          left: 32px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 33px;
+          left: 32px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 17px;
+          left: 28px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 194px;
+          left: 50px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 194px;
+          left: 65px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 194px;
+          left: 80px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 194px;
+          left: 97px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 194px;
+          left: 113px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 194px;
+          left: 130px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 194px;
+          left: 146px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 194px;
+          left: 162px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 194px;
+          left: 179px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 194px;
+          left: 195px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 194px;
+          left: 209px;
+        }
+      }
+      &--option_c {
+        box-sizing: border-box;
+        height: 239px;
+        width: 243px;
+        border: 1px solid #35374c;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .img-only {
+          background-image: url("../../../assets/images/ice_cream/ice_graph3.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          height: 170px;
+          width: 174px;
+          position: absolute;
+          top: 24px;
+          left: 44px;
+        }
+        .size {
+          color: #352103;
+
+          font-size: 9px;
+          font-weight: 500;
+          letter-spacing: 0.16px;
+          line-height: 20px;
+        }
+        .distance-left {
+          position: absolute;
+          white-space: nowrap;
+          transform: scaleX(-1) scaleY(-1) rotate(90deg);
+          left: -15px;
+          top: 102px;
+        }
+        .time-bottom {
+          white-space: nowrap;
+          position: absolute;
+          left: 100px;
+          top: 213px;
+        }
+        .val0--left {
+          position: absolute;
+          top: 178px;
+          left: 37px;
+        }
+        .val1--left {
+          position: absolute;
+          top: 162px;
+          left: 33px;
+        }
+        .val2--left {
+          position: absolute;
+          top: 146px;
+          left: 32px;
+        }
+        .val3--left {
+          position: absolute;
+          top: 130px;
+          left: 32px;
+        }
+        .val4--left {
+          position: absolute;
+          top: 114px;
+          left: 32px;
+        }
+        .val5--left {
+          position: absolute;
+          top: 98px;
+          left: 32px;
+        }
+        .val6--left {
+          position: absolute;
+          top: 81px;
+          left: 31px;
+        }
+        .val7--left {
+          position: absolute;
+          top: 65px;
+          left: 32px;
+        }
+        .val8--left {
+          position: absolute;
+          top: 49px;
+          left: 32px;
+        }
+        .val9--left {
+          position: absolute;
+          top: 33px;
+          left: 32px;
+        }
+        .val10--left {
+          position: absolute;
+          top: 17px;
+          left: 28px;
+        }
+        .val0--bottom {
+          position: absolute;
+          top: 192px;
+          left: 50px;
+        }
+        .val1--bottom {
+          position: absolute;
+          top: 192px;
+          left: 65px;
+        }
+        .val2--bottom {
+          position: absolute;
+          top: 192px;
+          left: 80px;
+        }
+        .val3--bottom {
+          position: absolute;
+          top: 192px;
+          left: 97px;
+        }
+        .val4--bottom {
+          position: absolute;
+          top: 192px;
+          left: 113px;
+        }
+        .val5--bottom {
+          position: absolute;
+          top: 192px;
+          left: 130px;
+        }
+        .val6--bottom {
+          position: absolute;
+          top: 192px;
+          left: 146px;
+        }
+        .val7--bottom {
+          position: absolute;
+          top: 192px;
+          left: 162px;
+        }
+        .val8--bottom {
+          position: absolute;
+          top: 192px;
+          left: 179px;
+        }
+        .val9--bottom {
+          position: absolute;
+          top: 192px;
+          left: 195px;
+        }
+        .val10--bottom {
+          position: absolute;
+          top: 192px;
+          left: 209px;
+        }
+      }
+    }
+
+    .hot-spot {
+      > span {
+        color: #fbf1e9;
+
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.mcqs {
+  width: 100%;
+  height: 100%;
+  .mcq-question-area {
+    height: 86%;
+
+    .inner-wrapper {
+      .mcq-custom-head {
+        margin-top: 82px;
+        margin-left: 24px;
+        color: #052978;
+
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+
+      .radiobuttons {
+        margin-left: 24px;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 10px;
+        .radiobutton {
+          margin-right: 75px;
+          .radiobutton-inner-wrapper {
+            label {
+              padding-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+@import "../../stylesheets/common/functions.scss";
+.labels {
+  @extend %full-object, %absolute, %top-zero;
+  padding: 24px;
+
+  &__tableContainer {
+    @extend %left;
+    &:nth-child(odd) {
+      width: 56.5%;
+    }
+    &:nth-child(even) {
+      width: 43.5%;
+    }
+  }
+  &__tableTitle {
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-align: left;
+  }
+  &__text {
+    color: #35374c;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    &--one {
+      margin: 32px 0 0 39px;
+    }
+    &--two {
+      @extend %absolute;
+      left: 63px;
+      bottom: 50px;
+    }
+  }
+  %names {
+    max-width: 78px;
+    text-align: center;
+  }
+  &__label {
+    color: #352103;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    border-radius: 9.5px;
+    background-color: rgba(255, 255, 255, 0.79);
+    padding: 2px 8px;
+    @extend %absolute;
+    &--1 {
+      right: 195px;
+      top: 270px;
+    }
+    &--2 {
+      left: 70px;
+      bottom: 115px;
+    }
+    &--3 {
+      right: 50px;
+      bottom: 108px;
+    }
+    &--4 {
+      top: 45%;
+      left: 31%;
+    }
+    &--5 {
+      top: 45%;
+      right: 17%;
+    }
+    &--6 {
+      bottom: 11%;
+      left: 16%;
+    }
+    &--7 {
+      bottom: 11%;
+      right: 32%;
+    }
+    &--8 {
+      bottom: 12%;
+      right: 8%;
+    }
+    &--9 {
+      top: 45%;
+      right: 28%;
+    }
+    &--10 {
+      top: 45%;
+      left: 21%;
+    }
+    &--11 {
+      bottom: 11%;
+      left: 41%;
+    }
+    &--12 {
+      bottom: 12%;
+      right: 17.5%;
+    }
+    &--13 {
+      bottom: 12%;
+      left: 1.5%;
+    }
+    &--14 {
+      bottom: 12%;
+      right: 63.5%;
+    }
+    &--15 {
+      bottom: 8.5%;
+      right: 41.5%;
+      @extend %names;
+    }
+    &--16 {
+      bottom: 8.5%;
+      right: 20%;
+      @extend %names;
+    }
+    &--17 {
+      bottom: 12%;
+      right: 4%;
+    }
+    &--18 {
+      bottom: 18%;
+      left: 38.5%;
+    }
+    &--19 {
+      top: 1%;
+      left: 61%;
+    }
+    &--20 {
+      top: 16%;
+      left: 61%;
+      transform: rotate(-90deg);
+    }
+    &--21 {
+      top: 32%;
+      right: 45px;
+    }
+    &--22 {
+      bottom: 12%;
+      right: 33%;
+    }
+  }
+  &__table {
+    color: #35374c;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    width: 214px;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    font-variant: lining-nums;
+    tr {
+      height: 24px;
+      &:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+      &:nth-child(even) {
+        background-color: #f0f0f0;
+      }
+      td {
+        padding-right: 8px;
+        text-align: right;
+        font-weight: 500;
+      }
+      th {
+        padding-left: 8px;
+        text-align: left;
+        font-weight: normal;
+      }
+    }
+  }
+  &__indicator {
+    @extend %absolute;
+    border: 1px dashed #35374c;
+    transform-origin: 0 0;
+    &:before {
+      content: "";
+      @extend %absolute;
+      @include circle(10px, #000);
+      bottom: -11px;
+      left: -5px;
+    }
+    &--1 {
+      height: 100px;
+      left: 44%;
+      transform: rotate(-13deg);
+    }
+    &--2 {
+      height: 59px;
+      left: 33%;
+      transform: rotate(214deg);
+      bottom: 13px;
+    }
+  }
+  &__beaker {
+    @extend %absolute;
+    li {
+      list-style-type: none;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.21px;
+      line-height: 2.55em;
+      color: #35374c;
+    }
+    &--1 {
+      bottom: 17.7%;
+      left: 33%;
+    }
+    &--2 {
+      bottom: 17.7%;
+      left: 15%;
+    }
+    &--3 {
+      bottom: 17.7%;
+      left: 54%;
+    }
+    &--4 {
+      bottom: 17.7%;
+      left: 38.5%;
+    }
+    &--5 {
+      bottom: 24.7%;
+      left: 41.5%;
+    }
+  }
+  &__reading {
+    @extend %absolute;
+    top: 33.8%;
+    left: 36.2%;
+    width: 30px;
+    font-variant: lining-nums;
+    span {
+      @extend %absolute;
+      font-size: 10px;
+      font-variant: lining-nums;
+    }
+    &--small {
+      top: 59.5%;
+      left: 16%;
+      font-size: 9px;
+      width: 19px;
+      span {
+        font-size: 7px;
+      }
+    }
+  }
+}

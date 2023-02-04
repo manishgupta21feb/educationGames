@@ -1,0 +1,155 @@
+.intro-popup {
+  display: flex;
+  flex-direction: row;
+}
+
+.mcq-wrapper {
+  .mcq-question-area {
+    .inner-wrapper {
+      .select-dropdown.incorrect {
+        button {
+          height: 33px;
+          width: 212px;
+          border: 1px solid #ff0000 !important;
+        }
+      }
+      .select-dropdown {
+        button {
+          border: 1px solid #052978 !important;
+          height: 33px;
+          width: 212px;
+          span {
+            font-family: "Tisa Pro";
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 16px;
+            color: #052978;
+            font-variant: lining-nums;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .initialClass {
+        button {
+          border: 1px solid #052978 !important;
+          height: 33px;
+          width: 212px;
+          span {
+            font-family: "Tisa Pro";
+            font-size: 14px;
+            letter-spacing: 0.25px;
+            line-height: 16px;
+            color: #35374c;
+            font-variant: lining-nums;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .inputTxtMain1 {
+      margin-bottom: 10px;
+
+      .txt1Label {
+        position: relative;
+        font-size: 12px;
+        margin-bottom: 8px;
+        color: var(--lightgreyshade);
+        font-weight: 500;
+      }
+
+      .txt1 {
+        -webkit-user-select: text;
+        box-sizing: border-box;
+        height: 33px;
+        width: 212px;
+        border: 1px solid #052978;
+        border-radius: 4px;
+        color: #052978;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 16px;
+        padding: 16px 8px;
+        font-family: "Tisa Pro";
+        font-weight: 500;
+        box-shadow: none;
+        background-color: white;
+      }
+      .mt-txt1 {
+        margin-top: 0px;
+        margin-bottom: 4px;
+      }
+
+      .incorrect_txt {
+        border: 1px solid #ff0000;
+      }
+      .txtDisabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    }
+    .inputTxtMain2 {
+      margin-bottom: 10px;
+      .txt2Label {
+        position: relative;
+        font-size: 12px;
+        margin-bottom: 8px;
+        color: var(--lightgreyshade);
+        font-weight: 500;
+        margin-top: 10px;
+      }
+
+      .mt-txt2 {
+        margin-top: 8px;
+        margin-bottom: 6px;
+      }
+
+      .txt2 {
+        -webkit-user-select: text;
+        padding: 16px 8px;
+        box-sizing: border-box;
+        height: 33px;
+        width: 212px;
+        border: 1px solid #052978;
+
+        border-radius: 4px;
+        margin-top: 10px;
+        color: #052978;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 16px;
+        margin-top: -4px;
+        font-family: "Tisa Pro";
+        font-weight: 500;
+        background-color: white;
+      }
+
+      .incorrect_txt {
+        border: 1px solid #ff0000;
+      }
+      .txtDisabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    }
+
+    .accessible-list {
+      min-height: 75px;
+    }
+  }
+
+  &.hide-submit {
+    .mcq-question-area {
+      .inner-wrapper {
+        .submit-button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.select-dropdown > div {
+  margin-bottom: 4px;
+}

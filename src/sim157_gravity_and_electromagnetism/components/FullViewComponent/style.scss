@@ -1,0 +1,64 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+
+  .dndArea {
+    top: 80px;
+    height: 500px;
+    position: relative;
+
+    .submit-button {
+      position: absolute;
+      bottom: 24px;
+      left: 323px;
+    }
+  }
+
+  .heading {
+    position: relative;
+    padding: 80px 24px 0 24px;
+    h2 {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+    }
+  }
+
+  .full-view-container {
+    width: 100%;
+    height: 80%;
+    position: relative;
+
+    .radiobuttons .radiobutton {
+      list-style: none;
+      position: relative;
+      margin-bottom: 7px;
+      margin-right: 16px;
+    }
+
+    .radiobuttons {
+      width: 100%;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      overflow: hidden;
+      padding: 12px 0 0 24px;
+    }
+    .mcq-question-area .inner-wrapper {
+      height: 100%;
+
+      .heading {
+        margin-bottom: 2px;
+      }
+    }
+    .radiobuttons .radiobutton {
+      list-style: none;
+      position: relative;
+      margin-bottom: 16px;
+      right: 0px;
+      margin-right: 80px;
+    }
+  }
+}

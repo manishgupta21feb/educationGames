@@ -1,0 +1,295 @@
+.top-interactive {
+  height: 100%;
+  position: relative;
+  .outdoor-screen {
+    width: 800px;
+    height: 318px;
+    background-image: url("../../assets/images/main_screen.png");
+    background-size: cover;
+    .hotspotarea {
+      .lineA {
+        position: absolute;
+        height: 55px;
+        width: 0px;
+        top: 160px;
+        right: 220px;
+        transform: rotate(-54deg);
+        border-left: 2px dotted white;
+        transform-style: preserve-3d;
+      }
+      .dotA{
+        height: 7px;
+        width: 7px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        left: -5px;
+        top: -6px;
+        position: absolute;
+      }
+      #A {
+       
+        bottom: 90px;
+        right: 162px;
+      }
+      .lineB {
+        position: absolute;
+        height: 56px;
+        width: 0px;
+        top: -5px;
+        right: 339px;
+        transform: rotate(-100deg);
+        border-left: 2px dotted white;
+        transform-style: preserve-3d;
+      }
+      .dotB{
+        height: 7px;
+        width: 7px;
+        left: -4px;
+        top: -9px;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      #B {
+        right: 272px;
+        top: 6px;
+      }
+      .lineC {
+        position: absolute;
+        height: 60px;
+        width: 0px;
+        top: 108px;
+        left: 252px;
+        transform: rotate(-54deg);
+        border-left: 2px dotted white;
+        transform-style: preserve-3d;
+      }
+      .dotC{
+        height: 7px;
+        width: 7px;
+        left: -4px;
+        top: 63px;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      #C {
+        left: 196px;
+        top: 93px;
+      }
+      .lineD {
+        position: absolute;
+        height: 60px;
+        width: 0px;
+        bottom: -5px;
+        left: 379px;
+        transform: rotate(-89deg);
+        border-left: 2px dotted white;
+        transform-style: preserve-3d;
+      }
+      .dotD{
+        height: 7px;
+        width: 7px;
+        left: -4px;
+        top: 61px;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      #D {
+        left: 309px;
+        bottom: 12px;
+      }
+      .btn {
+        &.hotspot-btn {
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .sr-only-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: transparent;
+    position: absolute;
+  }
+}
+
+.top-static {
+  .hotspot-d,
+  .hotspot-c,
+  .hotspot-b,
+  .hotspot-a {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    .sun1,
+    .sun2,
+    .sun3,
+    .sun4{
+      position: absolute;
+      top: 153px;
+      left: 735px;
+      color: #000000;
+      font-weight: 600;
+    }
+    .earth1,
+    .earth2,
+    .earth3,
+    .earth4{
+      position: absolute;
+      top: 210px;
+      left: 405px;
+      &.es {
+        left: 403px;
+      }
+
+    }
+    .tideText1,
+    .tideText2,
+    .tideText3,
+    .tideText4{
+      position: absolute;
+      top: 188px;
+      left: 12px;
+      &.es {
+        left: 10px;
+      }
+
+    }
+    .hightideText1,
+    .hightideText2,
+    .hightideText3,
+    .hightideText4{
+      bottom: 0px;
+      left: 110px;
+      position: absolute;
+      &.es {
+        left: 104px;
+      }
+
+
+    }
+    .lowtideText1,
+    .lowtideText2,
+    .lowtideText3,
+    .lowtideText4{
+      bottom: 0px;
+    left: 16px;
+    position: absolute;
+    &.es {
+      left: 12px;
+    }
+    
+
+    }
+   
+  }
+  .hotspot-d {
+    background-image: url(../../assets/images/hotspot_d.png);
+    .moon4{
+      position: absolute;
+      left:400px;
+       bottom:-5px;
+       &.es {
+        left: 405px;
+      }
+    }  
+    .moonStage4{
+      position: absolute;
+      left:310px;
+       bottom:16px;
+       &.es {
+        left: 270px;
+      }
+    }
+  }
+  .hotspot-c {
+    background-image: url(../../assets/images/hotspot_c.png);
+    .moon3{
+      position: absolute;
+      left:275px;
+       top:190px;
+    }  
+    .moonStage3{
+      position: absolute;
+      left:205px;
+       top:155px;
+    }
+  }
+  .hotspot-b {
+    background-image: url(../../assets/images/hotspot_b.png);
+    .moon2{
+      position: absolute;
+      left: 440px;
+      top:22px
+    }  
+    .moonStage2{
+      position: absolute;
+left:275px;
+top:16px;
+    }
+  }
+  .hotspot-a {
+    background-image: url(../../assets/images/hotspot_a.png);
+    .moon1{
+      position: absolute;
+      left: 535px;
+      top:188px
+    }  
+    .moonStage1{
+      position: absolute;
+left:580px;
+top:153px;
+    }
+  
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+  }
+}
+
+///////////////////
+
+.bottom {
+  .bottom-static {
+   
+    .intstruction-area {
+     
+      .btn.toast-secondary-button {
+        right: 24 px;
+        bottom: 24 px;
+        position: absolute;
+      }
+
+      .instruction-text,
+      .instruction-blue-text {
+        position: relative;
+        left: 0;
+        color: var(--question-text-blue);
+
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+     
+    }
+  }
+
+  
+}

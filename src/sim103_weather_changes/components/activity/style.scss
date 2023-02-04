@@ -1,0 +1,18 @@
+.sim103_activity{
+    .intro-popup {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    .intro-popup-image {
+        // width: 800px;
+        // height: 600px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/dialog_img.png");
+        width: 479px;
+        height: 359px;
+    }
+}
+}

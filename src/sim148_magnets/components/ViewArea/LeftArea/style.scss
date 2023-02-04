@@ -1,0 +1,226 @@
+.left-area {
+  height: 100%;
+  width: 100%;
+  background-color: #eef7f0;
+  .thingimg {
+    position: absolute;
+    left: 186px;
+    &.pin-image {
+      height: 161px;
+      width: 140px;
+      top: 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/paperclip.png);
+      &.slider8 {
+        top: 64px;
+      }
+    }
+    &.coin-image {
+      height: 132px;
+      width: 128px;
+      position: absolute;
+      left: 200px;
+      top: 75px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/penny.png);
+    }
+  }
+  .glowing-button {
+    position: relative;
+    top: 175px;
+    left: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .magnet-image {
+    height: 218px;
+    width: 114px;
+    position: absolute;
+    left: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/magnet.png);
+
+    &.slider0 {
+      top: 356px;
+    }
+    &.slider1 {
+      top: 350px;
+    }
+    &.slider2 {
+      top: 330px;
+    }
+    &.slider3 {
+      top: 310px;
+    }
+    &.slider4 {
+      top: 290px;
+    }
+    &.slider5 {
+      top: 270px;
+    }
+    &.slider6 {
+      top: 250px;
+    }
+    &.slider7 {
+      top: 230px;
+    }
+    &.slider8 {
+      top: 210px;
+    }
+  }
+
+  .lineOne {
+    height: 71px;
+    position: absolute;
+    left: 272px;
+    top: 190px;
+    border-left: 2px solid var(--secondary-attention-orange);
+    z-index: 1;
+  }
+  .lineTwo {
+    height: 60px;
+    position: absolute;
+    left: 302px;
+    top: 230px;
+    border-left: 2px solid var(--secondary-attention-orange);
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+  .dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--secondary-attention-orange);
+    position: relative;
+    top: 149px;
+    left: 270px;
+    z-index: 1;
+  }
+  .instruction-text-wrapper {
+    position: absolute;
+    top: 202px;
+    left: 321px;
+    box-sizing: border-box;
+    width: 208px;
+    border: 2px solid var(--secondary-attention-orange);
+    border-radius: 8px;
+    background-color: var(--secondary-attention-light);
+    display: inline-block;
+    z-index: 1;
+    padding: 8px 12px;
+
+    .info-text {
+      color: #352103;
+      font-size: 14px;
+
+      letter-spacing: 0.25px;
+      line-height: 20px;
+
+      margin-bottom: 6px;
+    }
+    .close-button {
+      display: flex;
+      flex-direction: row;
+      margin: unset;
+      position: relative;
+      left: -14px;
+    }
+  }
+  > .slider {
+    top: 199px;
+    left: 0;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg-color {
+      top: 0;
+      left: 47%;
+      width: 60px;
+      height: 100%;
+      border-radius: 8px;
+      border: 1px solid #0056b3;
+      position: absolute;
+      background: white;
+      transform: translateX(-50%);
+    }
+
+    .slider-container {
+      &.vertical {
+        width: 200px;
+        margin-left: 8px;
+        margin-top: unset;
+
+        // &.selected-value-only {
+        .slider {
+          width: calc(100% - 12px);
+          & {
+            input[type="range"] {
+              top: 1px;
+              padding: 0 9px;
+            }
+          }
+          &.disabled {
+            opacity: 0.7;
+          }
+          .datalist {
+            width: calc(100% - 4px);
+            .list-item {
+              .value {
+                display: none;
+              }
+              .marker {
+                display: none;
+              }
+              &.item0 {
+                .marker {
+                  display: flex;
+                }
+              }
+              &.item8 {
+                .marker {
+                  display: flex;
+                }
+              }
+              &.selected {
+                .value {
+                  display: block;
+                  .list-value {
+                    display: none;
+                  }
+
+                  .list-label {
+                    width: 34px;
+                    display: block;
+                    margin-left: -8px;
+
+                    font-size: 12px;
+                    font-weight: 500;
+                  }
+                }
+
+                &.item1 {
+                  .value {
+                    .list-label {
+                      margin-left: -6px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

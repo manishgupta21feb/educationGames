@@ -1,0 +1,245 @@
+.left-area-container {
+  height: 100%;
+
+  .drop {
+    &--condensationdrop {
+      height: 150px;
+      width: 154px;
+
+      position: absolute;
+      top: 428px;
+      left: 311px;
+
+      .condensationdrop {
+        box-sizing: border-box;
+        height: 129px;
+        width: 154px;
+        border: 1px dashed #0056b3;
+        background-color: #ffffff;
+      }
+    }
+    &--evoporationdrop {
+      height: 150px;
+      width: 154px;
+      position: absolute;
+      top: 211px;
+      left: 366px;
+
+      .evoporationdrop {
+        box-sizing: border-box;
+        height: 129px;
+        width: 154px;
+        border: 1px dashed #0056b3;
+        background-color: #ffffff;
+      }
+    }
+    &--sunenergydrop {
+      height: 150px;
+      width: 154px;
+      position: absolute;
+      top: 20px;
+      left: 186px;
+
+      .sunenergydrop {
+        box-sizing: border-box;
+        height: 129px;
+        width: 154px;
+        border: 1px dashed #0056b3;
+        background-color: #ffffff;
+      }
+    }
+    &--precipitationdrop {
+      height: 150px;
+      width: 154px;
+      position: absolute;
+      top: 428px;
+      left: 73px;
+
+      .precipitationdrop {
+        box-sizing: border-box;
+        height: 129px;
+        width: 154px;
+        border: 1px dashed #0056b3;
+        background-color: #ffffff;
+      }
+    }
+    &--groundwaterdrop {
+      height: 150px;
+      width: 154px;
+      position: absolute;
+      top: 211px;
+      left: 18px;
+
+      .groundwaterdrop {
+        box-sizing: border-box;
+        height: 129px;
+        width: 154px;
+        border: 1px dashed #0056b3;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .dropzone-img {
+    &--condensation {
+      background-image: url("../../assets/images/10004.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    &--evoporation {
+      background-image: url("../../assets/images/10003.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    &--sunenergy {
+      background-image: url("../../assets/images/10002.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    &--precipitation {
+      background-image: url("../../assets/images/10005.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    &--groundwater {
+      background-image: url("../../assets/images/10001.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  label {
+    color: #0056b3;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 132px;
+    left: 30px;
+  }
+  .label-groundwater {
+    left: 18px;
+  }
+  .top-left {
+    background-image: url("../../assets/images/arrow1.png");
+    position: absolute;
+    height: 97.8px;
+    width: 100.97px;
+    top: 87px;
+    left: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .top-right {
+    background-image: url("../../assets/images/arrow2.png");
+    height: 98.04px;
+    width: 102.82px;
+    background-size: contain;
+    position: absolute;
+    top: 90px;
+    left: 367px;
+    background-repeat: no-repeat;
+  }
+  .down-left {
+    background-image: url("../../assets/images/arrow3.png");
+    height: 87px;
+    width: 69px;
+    background-size: contain;
+    position: absolute;
+    top: 376px;
+    left: 31px;
+    background-repeat: no-repeat;
+  }
+  .down-right {
+    background-image: url("../../assets/images/arrow4.png");
+    height: 72px;
+    width: 69.48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 387px;
+    left: 476px;
+  }
+  .mid {
+    background-image: url("../../assets/images/arrow5.png");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 45.52px;
+    width: 50.65px;
+    position: absolute;
+    top: 485px;
+    left: 244px;
+  }
+
+  .accessible-list {
+    z-index: 2;
+
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .list {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: transparent;
+
+      li:nth-child(1) {
+        height: 150px;
+        width: 154px;
+        position: absolute;
+        top: 20px;
+        left: 186px;
+      }
+      li:nth-child(2) {
+        height: 150px;
+        width: 154px;
+        position: absolute;
+        top: 211px;
+        left: 366px;
+      }
+      li:nth-child(3) {
+        height: 150px;
+        width: 154px;
+
+        position: absolute;
+        top: 428px;
+        left: 311px;
+      }
+      li:nth-child(4) {
+        height: 150px;
+        width: 154px;
+        position: absolute;
+        top: 428px;
+        left: 73px;
+      }
+      li:nth-child(5) {
+        height: 150px;
+        width: 154px;
+        position: absolute;
+        top: 211px;
+        left: 18px;
+      }
+    }
+  }
+}

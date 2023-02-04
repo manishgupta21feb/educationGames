@@ -1,0 +1,40 @@
+.bottom_area {
+  position: relative;
+  height: 100%;
+  > div {
+    position: relative;
+    height: 100%;
+  }
+  .bottom_area_scenerio4mcq5 {
+    .mcq-question-area {
+      .inner-wrapper {
+        .radiobuttons {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .bottom_area_scenerio4mcq7 {
+    .mcq-question-area {
+      .inner-wrapper {
+        .radiobuttons {
+          width: 50%;
+        }
+      }
+    }
+  }
+  // .mcq-question-area{
+  //     .inner-wrapper{
+
+  // //   .submit-button{
+  // //       bottom: -100px;
+  // //   }
+  //   }
+  //  }
+
+  p {
+    color: var(--question-text-blue);
+    font-variant: lining-nums;
+    font-size: 14px;
+  }
+}

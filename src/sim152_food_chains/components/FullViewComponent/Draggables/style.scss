@@ -1,0 +1,102 @@
+.draggable-wrapper {
+  top: 28px;
+  left: 24px;
+  height: 80px;
+  width: 504px;
+  position: relative;
+  display: flex;
+
+  .draggable-item {
+    width: 80px;
+    height: 80px;
+    margin-right: 26px;
+
+    border-radius: 4px;
+    background: white;
+    border: 1px dashed var(--primary-blue);
+    outline: solid 1px transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:disabled) {
+      cursor: grab;
+    }
+
+    &.ui-draggable {
+      cursor: grab;
+    }
+    &.ui-draggable-dragging {
+      z-index: 2;
+      cursor: grabbing;
+    }
+    &.selectedItem {
+      background: #d9ebff;
+    }
+    &:focus {
+      border: none;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    &.disabled {
+      cursor: default;
+      opacity: 0.6;
+    }
+
+    &.images {
+      //   position: absolute;
+      display: flex;
+      align-items: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &.sun {
+        background-image: url("../../../assets/images/sun.png");
+      }
+
+      &.sunflower {
+        background-image: url("../../../assets/images/flower.png");
+      }
+
+      &.mouse {
+        background-image: url("../../../assets/images/mouse.png");
+      }
+
+      &.snake {
+        background-image: url("../../../assets/images/snake.png");
+      }
+      &.hawk {
+        background-image: url("../../../assets/images/hawk.png");
+      }
+
+      &.hide {
+        pointer-events: none;
+        background-image: none;
+      }
+    }
+  }
+
+  .accessible-button {
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    border: none;
+    box-shadow: none;
+    z-index: -1;
+    // touch-action: none;
+    position: absolute;
+    justify-content: center;
+    background-color: transparent;
+    // border: 1px dashed var(--primary-blue);
+
+    &:not(:disabled) {
+      border-radius: 4px;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+      }
+    }
+  }
+}

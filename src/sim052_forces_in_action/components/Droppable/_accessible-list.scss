@@ -1,0 +1,22 @@
+.accessible-list {
+  @extend %bg-transparent, %border-none;
+
+  & > .list {
+    @extend %no-margin;
+    & > .listitem {
+      @extend %block;
+      width: 332px;
+      height: 219px;
+      a {
+        @extend %inline-block, %full-object;
+      }
+      > a:focus {
+        @extend %bg-transparent;
+      }
+      &:first-child > a {
+        top: -27px;
+        left: -88px;
+      }
+    }
+  }
+}

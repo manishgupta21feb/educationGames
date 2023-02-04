@@ -1,0 +1,28 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  left: 0;
+
+  div[role="main"] {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .toast-container {
+    z-index: 5 !important;
+  }
+  // .popup-button.attention.right-arrow {
+  //   border: 2px solid #352103;
+  //   &:hover, &:focus {
+  //     padding: 8px;
+  //   }
+  // }
+  @import "./activity/main.scss";
+}

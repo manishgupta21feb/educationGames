@@ -1,0 +1,108 @@
+.screen2-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .view-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .heading-ally {
+    // top: 0;
+    // left: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    overflow: hidden;
+    color: var(--question-text-blue);
+    position: absolute;
+    font-size: 14px;
+    margin-left: 32px;
+    margin-top: 80px;
+  }
+  .periodic-table-container {
+    position: relative;
+    left: 30px;
+    // top: 80px;
+    top: 120px;
+    &.colorByCategory {
+      .non-metal,
+      .halogen,
+      .noble-gas {
+        background-color: var(--periodic-table-color9);
+      }
+      .metal,
+      .alkaline-earth-metal,
+      .alkali-metal,
+      .transition-metal,
+      .actinide,
+      .lanthanide {
+        background-color: var(--periodic-table-color3);
+      }
+
+      .metalloid {
+        background-color: var(--periodic-table-color6);
+      }
+      .cell2_14 {
+        background-color: var(--periodic-table-color8);
+      }
+      .cell3_13 {
+        background-color: var(--periodic-table-color1);
+      }
+      .cell3_14 {
+        background-color: var(--periodic-tabel-metalloids-dark);
+      }
+    }
+  }
+  .label-container {
+    // display: flex;
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   justify-content: center;
+    left: 246px;
+    bottom: 0px;
+    position: absolute;
+    .periodic-labels {
+      position: absolute;
+      bottom: 55px;
+      bottom: 24px;
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+      li {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        .color-box {
+          height: 13px;
+          width: 13px;
+          border-radius: 2px;
+          margin-right: 6px;
+          border: 1px solid var(--question-text-blue);
+          background-size: contain;
+          background-repeat: no-repeat;
+          &.metal {
+            background-color: var(--periodic-table-color3);
+          }
+          &.nonmetal {
+            background-color: var(--periodic-table-color8);
+          }
+          &.metalloids {
+            background-color: var(--periodic-table-color6);
+          }
+        }
+        .text {
+          color: #6b6b76;
+          font-size: 12px;
+          letter-spacing: 0.4px;
+          line-height: 16px;
+          margin-right: 23px;
+        }
+      }
+    }
+  }
+  .toast-secondary-button {
+    bottom: 13px;
+  }
+}

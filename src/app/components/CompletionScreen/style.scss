@@ -1,0 +1,111 @@
+.completion-screen-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(#35374c, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .completion-screen {
+    width: 360px;
+    position: relative;
+
+    .grass-left,
+    .leaves-left,
+    .grass-leaves-right {
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .grass-left {
+      top: 60px;
+      left: -90px;
+      width: 109px;
+      height: 122px;
+      background-image: url(../../assets/images/grass_left.svg);
+    }
+
+    .leaves-left {
+      top: -50px;
+      left: -57px;
+      width: 66px;
+      height: 218px;
+      background-image: url(../../assets/images/leaves_left.svg);
+    }
+
+    .grass-leaves-right {
+      top: -25px;
+      right: -55px;
+      width: 286px;
+      height: 123px;
+      background-image: url(../../assets/images/grass_leaves_right.svg);
+    }
+
+    .completion-screen-content {
+      width: 100%;
+      padding: 32px;
+      position: relative;
+      border-radius: 32px;
+      background: transparent;
+      border: 2px solid transparent;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      div.icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .heading {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 36px;
+      }
+
+      .content {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .completion-screen-button {
+        margin-top: 18px;
+      }
+    }
+
+    &.positive {
+      .completion-screen-content {
+        border-color: var(--secondary-positive-dark);
+        div.icon {
+          background-image: url(../../assets/images/positive_icon.svg);
+        }
+        color: var(--secondary-positive-dark);
+        background: var(--secondary-positive-light);
+      }
+    }
+
+    &.attention {
+      .grass-leaves-right {
+        background-image: url(../../assets/images/grass_leaves_right_attention.svg);
+      }
+      .completion-screen-content {
+        border-color: var(--secondary-attention-dark);
+        div.icon {
+          background-image: url(../../assets/images/attention_right_icon.svg);
+        }
+        color: var(--secondary-attention-dark);
+        background: var(--secondary-attention-light);
+      }
+    }
+  }
+}

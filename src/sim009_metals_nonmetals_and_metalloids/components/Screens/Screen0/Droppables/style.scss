@@ -1,0 +1,87 @@
+
+        .experiment-container{
+            position: absolute;
+            background-color: transparent;
+            border: none;   
+            
+            &.drop0{
+                width: 150px;
+                height: 235px;
+                left: 96px;
+                top: 0px;
+            }
+            &.drop1{
+                width: 223px;
+                height: 116px;
+                top: 115px;
+                left: 292px;
+            }
+            &.drop2{
+                width: 210px;
+                height: 82px; 
+                top: 135px;
+                left: 524px;
+            }
+
+            .drop-area-0{
+                width: 151px;
+                height: 63px;
+                top: 173px;
+                position: absolute;
+            }
+            .drop-area-1{
+                width: 117px;
+                height: 83px;
+                left: 18px;
+                top: 21px;
+                position: absolute;
+         
+            }
+            .drop-area-2{
+                width: 100px;
+                height: 54px;
+                left: 62px;
+                top: 45px;
+                position: absolute;
+               
+            }
+
+         &:focus:not(:disabled) {
+                 outline: none; 
+                box-shadow: 0 0 0 2px var(--white),0 0 0 4px var(--primary-blue),-2px 2px 6px 0 rgba(53,55,76,0.2),-2px 4px 8px 0 rgba(53,55,76,0.08);
+            }
+        }
+
+        .droppable {
+            // align-items: center;
+            // position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline-block;
+            &.icon-only {
+              &.luster{
+                  background-image: url("../../../../assets/images/activity_screen1/luster_machine_3x.png");
+                  width: 150px;
+                  height: 235px;
+              
+            }
+              &.malleability {
+                  background-image: url("../../../../assets/images/activity_screen1/malabily_machine_3x.png");
+                  width: 223px;
+                  height: 116px;
+                
+              }
+    
+              &.electrical-conductivity{
+                  background-image: url("../../../../assets/images/activity_screen1/conductive_machine_3x.png");
+                  width: 210px;
+                  height: 82px;
+                
+              }   
+            }
+          
+        
+       }
+       
+    
+  

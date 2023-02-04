@@ -1,0 +1,89 @@
+.droppable-stage1 {
+  width: 768px;
+  height: 144px;
+  position: absolute;
+  top: 373px;
+
+  .option {
+    box-sizing: border-box;
+    height: 32px;
+    width: 120px;
+    width: 136px;
+    border: 1px dashed var(--primary-blue);
+    border-radius: 16px;
+    position: absolute;
+    cursor: pointer;
+
+    &.dropped {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--question-text-blue);
+      background-color: var(--primary-blue);
+      color: var(--white);
+      position: absolute;
+    }
+
+    > span {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    &.es {
+      span {
+        font-size: 12px;
+      }
+    }
+
+    &.setBlueHoverColor {
+      background-color: var(--hover-state-color);
+    }
+
+    &.option-1 {
+      top: 48px;
+      left: 0;
+      left: -8px;
+    }
+    &.option-2 {
+      top: 112px;
+      left: 81px;
+      left: 73px;
+    }
+    &.option-3 {
+      top: 48px;
+      left: 162px;
+      left: 154px;
+    }
+    &.option-4 {
+      top: 112px;
+      left: 243px;
+      left: 235px;
+    }
+    &.option-5 {
+      top: 48px;
+      left: 324px;
+      left: 316px;
+    }
+    &.option-6 {
+      top: 112px;
+      left: 405px;
+      left: 397px;
+    }
+    &.option-7 {
+      top: 48px;
+      left: 486px;
+      left: 478px;
+    }
+    &.option-8 {
+      top: 112px;
+      left: 567px;
+      left: 559px;
+    }
+    &.option-9 {
+      top: 48px;
+      left: 648px;
+      left: 640px;
+    }
+  }
+}

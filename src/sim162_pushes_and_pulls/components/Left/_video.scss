@@ -1,0 +1,71 @@
+@import "../../stylesheets/common/functions.scss";
+
+.video-container .play-pause-buttons {
+  .btn {
+    display: none;
+  }
+}
+
+.video-container {
+  @extend %full-width, %absolute, %bottom-zero;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  .play-pause-buttons .btn {
+    top: 26px;
+    right: 24px;
+    left: initial;
+    transform: initial;
+  }
+}
+
+.screen-0 {
+  .video-container {
+    div {
+      .video-wrapper {
+        video {
+          &.poster1,
+          &.poster2,
+          &.poster3 {
+            background: transparent url("../../assets/images/push_2x.png")
+              center / cover no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.screen-1 {
+  .video-container {
+    div {
+      .video-wrapper {
+        video {
+          &.poster1,
+          &.poster2,
+          &.poster3 {
+            background: transparent url("../../assets/images/pull_2x.png")
+              center / cover no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.screen-2 {
+  .video-container {
+    div {
+      .video-wrapper {
+        video {
+          &.poster1,
+          &.poster2,
+          &.poster3 {
+            background: transparent url("../../assets/images/collide_2x.png")
+              center / cover no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+.draggable {
+  .draggable-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    justify-content: center;
+    .option {
+      height: 90px;
+      width: 90px;
+      box-sizing: border-box;
+      border: 1px dashed var(--primary-blue);
+      border-radius: 4px;
+      background-color: var(--white);
+      padding: 0px 15px;
+      padding-top: 2px;
+      margin-bottom: 8px;
+
+      &.accessible-button {
+        position: absolute;
+        z-index: -1;
+        border-color: transparent;
+        &.non-intractive {
+          border: 1px dashed var(--dark-grey);
+        }
+        &:disabled {
+          //  visibility: hidden;
+          // opacity: 0;
+        }
+        &:not(:disabled) {
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+              -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+              -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+          }
+        }
+      }
+
+      &.element-dragging {
+        border: 1px dashed var(--primary-blue);
+        background-color: var(--hover-state-color);
+      }
+
+      &.ui-draggable {
+        cursor: grab;
+        // z-index: 1;
+      }
+
+      &.ui-draggable-dragging {
+        border: 1px solid var(--question-text-blue) !important;
+        background-color: var(--primary-blue) !important;
+        color: var(--white);
+        cursor: grabbing;
+        height: 70px;
+        width: 70px;
+        z-index: 999;
+      }
+    }
+    .bgButton {
+      width: 90px;
+      height: 90px;
+      margin-right: 24px;
+      cursor: grabbing;
+      border: 1px dashed var(--primary-blue);
+      border-radius: 4px;
+      background-color: var(--white);
+      &:disabled {
+        visibility: hidden;
+      }
+      &:not(:disabled) {
+        &:hover {
+          background-color: #d9ebff;
+        }
+      }
+      &.ui-draggable-dragging {
+        border: 1px solid var(--question-text-blue) !important;
+        color: var(--white);
+        height: 70px;
+        width: 70px;
+        z-index: 999;
+        background-color: white !important;
+      }
+      &.season1 {
+        span {
+          display: block;
+          pointer-events: none;
+          width: calc(100% + 6px);
+          height: calc(100% - 1px);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        &.drag0,
+        &.drag2,
+        &.drag4 {
+          .bgImg {
+            background-image: url(../../../assets/images/dragSun_summer.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+        &.drag1 {
+          .bgImg {
+            background-image: url(../../../assets/images/dragRain_summer.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+        &.drag3 {
+          .bgImg {
+            background-image: url(../../../assets/images/dragRainbow_summer.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      &.season2 {
+        span {
+          display: block;
+          pointer-events: none;
+          width: calc(100% + 6px);
+          height: calc(100% - 6px);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.drag0,
+        &.drag1,
+        &.drag2,
+        &.drag4 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_redThermo.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+        &.drag3 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_windsock.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      &.season3 {
+        span {
+          display: block;
+          pointer-events: none;
+          width: calc(100% + 6px);
+          height: calc(100% - 3px);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.drag1,
+        &.drag2,
+        &.drag4 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_windsock.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+        &.drag0 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_rainCloud.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+        &.drag3 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_clouds.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      &.season4 {
+        span {
+          display: block;
+          pointer-events: none;
+          width: calc(100% + 6px);
+          height: calc(100% - 6px);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.drag0,
+        &.drag2,
+        &.drag4 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_blueThermo.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+        &.drag1,
+        &.drag3 {
+          .bgImg {
+            background-image: url(../../../assets/images/drag_snowflakes.png);
+            &.non-intractive {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+
+    .option.non-intractiveBtn + .bgButton {
+      border: 1px dashed var(--dark-grey);
+      pointer-events: none;
+    }
+  }
+}

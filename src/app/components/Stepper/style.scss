@@ -1,0 +1,133 @@
+.stepper {
+  position: absolute;
+  top: 263px;
+  height: 33px;
+  width: 212px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  color: #052978;
+  font-size: 12px;
+  align-items: flex-start;
+  justify-content: center;
+  font-variant: lining-nums;
+  background-color: #ffffff;
+  border: 1px solid #052978;
+  box-sizing: border-box;
+
+  &.incorrect {
+    border: 1px solid #c00d01 !important;
+}
+
+  .heading {
+    position: absolute;
+    top: -30px;
+    color: #35374c;
+  }
+
+  .stepperCount {
+    top: 56px;
+    .count {
+      position: absolute;
+      top: 8px;
+      left: 12px;
+    }
+
+    .buttondiv {
+      position: absolute;
+      top: -297px;
+
+      :first-child {
+        z-index: 1;
+        position: absolute;
+        top: 274px;
+
+        &::after {
+          top: 4px;
+          right: 5px;
+          content: "";
+          position: absolute;
+          background: transparent;
+          transform: translateY(-50%);
+          vertical-align: -webkit-baseline-middle;
+
+          width: 1px;
+          height: 3px;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid var(--question-text-blue);
+        }
+      }
+
+      :last-child {
+        z-index: 1;
+        position: absolute;
+        top: 306px;
+
+        &::after {
+          top: 4px;
+          right: 6px;
+          content: "";
+          position: absolute;
+          background: transparent;
+          transform: translateY(-50%);
+          vertical-align: -webkit-baseline-middle;
+
+          width: 1px;
+          height: 3px;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid var(--question-text-blue);
+        }
+
+      }
+      button {     
+        &.uparrow {
+          width: 26px;
+          height: 10px;
+          top: 302px;
+          left: 179px;
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          &:focus:not(:disabled) {
+            box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary-blue);
+          }
+          &:focus-visible{
+                 outline: none ;
+          }
+
+          &:disabled {
+            opacity: 0.6;
+            cursor: default;
+          }
+    
+      
+        }
+        &.downarrow {
+          width: 26px;
+          height: 10px;
+          top: 315px;
+          left: 180px;
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+
+          &:focus-visible{
+            outline:none ;
+        }
+          &:focus:not(:disabled) {
+              box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue);
+        
+          } 
+          
+          &:disabled {
+            opacity: 0.6;
+            cursor: default;
+          }
+    
+        }       
+      }
+    }
+  }
+}

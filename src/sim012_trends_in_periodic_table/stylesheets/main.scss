@@ -1,0 +1,130 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  left: 0;
+}
+
+.popups-container {
+  #dialog-description-StartInfo {
+    div[role="img"] {
+      display: inline-block;
+      overflow: hidden;
+    }
+    .periodic-table-container {
+      position: relative;
+      left: 0px;
+      top: 30px;
+      margin-bottom: 30px;
+      display: inline-block;
+      .elements {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  #dialog-description-infoDialogPT {
+    .periodic-table-container {
+      position: relative;
+      left: 0px;
+      top: 25px;
+      margin-bottom: 40px;
+      .symbol {
+        width: 35px;
+      }
+    }
+  }
+}
+
+.info-horizontal-arrow {
+  position: relative;
+  height: 0px;
+  width: 390px;
+  left: 0px;
+  top: 12px;
+  background: #382000;
+  border: 3px solid #382000;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    bottom: -8px;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 9px solid #382000;
+    border-bottom: 8px solid transparent;
+    border-radius: 3px;
+  }
+}
+
+.info-vertical-arrow {
+  position: absolute;
+  height: 215px;
+  width: 6px;
+  left: 410px;
+  bottom: 20px;
+  background: #382000;
+  border: 3px solid #382000;
+  &:after {
+    content: "";
+    position: absolute;
+    left: -9px;
+    bottom: -9px;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-left: 9px solid transparent;
+    border-top: 8px solid #382000;
+    border-radius: 3px;
+  }
+}
+.info-horizontal-text {
+  position: relative;
+  top: 4px;
+}
+
+.info-vertical-text {
+  position: absolute;
+  top: 182px;
+  left: 424px;
+}
+
+.mcq-question-area {
+  .periodic-table-container {
+    left: unset;
+    right: unset;
+    bottom: unset;
+    position: relative;
+    transform: scale(0.8);
+    &.colorByCategory {
+      &.ionization-energy-highlighter {
+        .cell2_17,
+        .cell3_1,
+        .cell4_2,
+        .cell4_17,
+        .cell5_11,
+        .cell6_1 {
+          background-color: #00267d;
+          .atomicNumber,
+          .symbol {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.dialogbox-container .dialog-container.attention {
+  &[aria-labelledby="dialog-description-StartInfo"],
+  &[aria-labelledby="dialog-description-infoDialogPT"] {
+    animation-duration: 1.6s;
+  }
+}

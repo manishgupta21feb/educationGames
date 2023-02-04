@@ -1,0 +1,398 @@
+.layout_1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .full-view {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: contain;
+    background-image: url("../../../assets/images/main.png");
+    background-repeat: no-repeat;
+    &.selectedView {
+      visibility: visible;
+      pointer-events: auto;
+      display: block;
+    }
+    &.hiddenView {
+      display: none;
+      pointer-events: none;
+    }
+    .full-view--heading {
+      position: absolute;
+      margin: 80px 24px 8px 24px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      text-align: left;
+      color: var(--question-text-blue);
+    }
+    .sub--heading {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      text-align: left;
+      color: var(--question-text-blue);
+      margin: 108px 24px 8px 24px;
+    }
+    .hotspot-btn-wrapper {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.hotspot_1 {
+        left: 715px;
+        top: 95px;
+      }
+      &.hotspot_2 {
+        left: 285px;
+        top: 90px;
+      }
+      &.hotspot_3 {
+        right: 532px;
+        top: 116px;
+      }
+      &.hotspot_4 {
+        left: 460px;
+        top: 98px;
+      }
+      &.hotspot_5 {
+        left: 335px;
+        top: 150px;
+      }
+      &.hotspot_6 {
+        left: 585px;
+        top: 211px;
+      }
+
+      .vistedHotSpot {
+        width: 4px;
+        height: 4px;
+        padding: 6px !important;
+        transition: all 0.3s;
+        border-radius: 50%;
+        position: relative;
+        background: var(--white);
+        border: 2px solid #ff3366 !important;
+        box-shadow: 0 0 0 4px #ff33663d, 0 0 0 8px #ff336629 !important;
+        max-width: 48px;
+        max-height: 48px;
+        justify-content: center;
+        display: block;
+      }
+
+      .vistedHotSpot::after {
+        content: "";
+        position: absolute;
+        background: #ff3366;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 4px;
+        transform: translate(-50%, -50%);
+        height: 4px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  &.selectedView {
+    visibility: visible;
+    pointer-events: auto;
+    display: block;
+  }
+  &.hiddenView {
+    display: none;
+    pointer-events: none;
+  }
+
+  .full-view--heading {
+    height: 20px;
+    width: 752px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}
+
+.videoOutputContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+  &.selectedView {
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .fullViewVideoContainers {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .videoSection {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+
+      &.hotspot_1 {
+        .topAreaImage {
+          position: relative;
+          width: 800px;
+          height: 320px;
+          background-size: contain;
+          background-image: url("../../../assets/images/lake.png");
+          background-repeat: no-repeat;
+        }
+      }
+
+      &.hotspot_2 {
+        .topAreaImage {
+          position: relative;
+          width: 800px;
+          height: 320px;
+          background-size: contain;
+          background-image: url("../../../assets/images/stream.png");
+          background-repeat: no-repeat;
+        }
+      }
+      &.hotspot_3 {
+        .topAreaImage {
+          position: relative;
+          width: 800px;
+          height: 320px;
+          background-size: contain;
+          background-image: url("../../../assets/images/river.png");
+          background-repeat: no-repeat;
+        }
+      }
+      &.hotspot_4 {
+        .topAreaImage {
+          position: relative;
+          width: 800px;
+          height: 320px;
+          background-size: contain;
+          background-image: url("../../../assets/images/pond.png");
+          background-repeat: no-repeat;
+        }
+      }
+      &.hotspot_5 {
+        .topAreaImage {
+          position: relative;
+          width: 800px;
+          height: 320px;
+          background-size: contain;
+          background-image: url("../../../assets/images/pubble.png");
+          background-repeat: no-repeat;
+        }
+      }
+      &.hotspot_6 {
+        .topAreaImage {
+          position: relative;
+          width: 800px;
+          height: 320px;
+          background-size: contain;
+          background-image: url("../../../assets/images/ocean.png");
+          background-repeat: no-repeat;
+        }
+      }
+      &.show {
+        display: block;
+      }
+      &.hide {
+        display: none;
+      }
+      .video-description {
+        color: var(--question-text-blue);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+        position: absolute;
+        margin: 24px 24px 176px 24px;
+      }
+      .videoGraph_hotspot_1 {
+        .label_0 {
+          top: 259px;
+          right: 219px;
+          position: absolute;
+        }
+        .label_1 {
+          top: 410px;
+          right: 219px;
+          position: absolute;
+        }
+        .graphLabel {
+          position: absolute;
+          top: 428px;
+          font-size: 12px;
+          &.graphLabel_0 {
+            right: 198px;
+            width: 11px;
+          }
+          &.graphLabel_1 {
+            right: 22px;
+            width: 131px;
+          }
+        }
+      }
+      .videoGraph_hotspot_2 {
+        .label_0 {
+          top: 261px;
+          right: 276px;
+          position: absolute;
+        }
+        .label_1 {
+          top: 420px;
+          right: 276px;
+          position: absolute;
+        }
+        .graphLabel {
+          position: absolute;
+          top: 439px;
+          font-size: 12px;
+          &.graphLabel_0 {
+            right: 251px;
+            width: 11px;
+          }
+          &.graphLabel_1 {
+            right: 94px;
+            width: 98px;
+          }
+        }
+      }
+      .videoGraph_hotspot_3 {
+        .label_0 {
+          top: 271px;
+          right: 214px;
+          position: absolute;
+        }
+        .label_1 {
+          top: 410px;
+          right: 212px;
+          position: absolute;
+        }
+        .graphLabel {
+          position: absolute;
+          top: 431px;
+          font-size: 12px;
+          &.graphLabel_0 {
+            right: 189px;
+            width: 11px;
+          }
+          &.graphLabel_1 {
+            right: 48px;
+            width: 98px;
+          }
+        }
+      }
+      .videoGraph_hotspot_4 {
+        .label_0 {
+          top: 238px;
+          right: 222px;
+          position: absolute;
+        }
+        .label_1 {
+          top: 375px;
+          right: 223px;
+          position: absolute;
+        }
+        .graphLabel {
+          position: absolute;
+          top: 396px;
+          font-size: 12px;
+          &.graphLabel_0 {
+            right: 198px;
+            width: 11px;
+          }
+          &.graphLabel_1 {
+            right: 50px;
+            width: 104px;
+          }
+        }
+      }
+      .videoGraph_hotspot_5 {
+        .label_0 {
+          top: 248px;
+          right: 232px;
+          position: absolute;
+        }
+        .label_1 {
+          top: 248px;
+          left: 232px;
+          position: absolute;
+        }
+        .graphLabel {
+          position: absolute;
+          top: 396px;
+          font-size: 12px;
+          &.graphLabel_0 {
+            right: 198px;
+            width: 11px;
+          }
+          &.graphLabel_1 {
+            right: 50px;
+            width: 104px;
+          }
+        }
+      }
+      .videoGraph_hotspot_6 {
+        .label_0 {
+          top: 258px;
+          right: 234px;
+          position: absolute;
+        }
+        .label_1 {
+          top: 375px;
+          right: 223px;
+          position: absolute;
+        }
+        .graphLabel {
+          position: absolute;
+          top: 396px;
+          font-size: 12px;
+          &.graphLabel_0 {
+            right: 198px;
+            width: 11px;
+          }
+          &.graphLabel_1 {
+            right: 50px;
+            width: 104px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nextbutton {
+  position: relative;
+  .btn:disabled {
+    display: none;
+  }
+}
+
+.continue-btn {
+  &:disabled {
+    display: none;
+  }
+}

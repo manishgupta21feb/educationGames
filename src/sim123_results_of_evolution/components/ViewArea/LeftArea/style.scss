@@ -1,0 +1,322 @@
+.left-area {
+  height: 600px;
+  width: 540px;
+  background-color: #c79e7a;
+}
+.default-image {
+  position: absolute;
+  opacity: 0;
+  margin-top: 40px;
+  margin-left: 24px;
+  &.show {
+    opacity: 1;
+  }
+  .scenerio-image {
+    height: 600px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 0;
+    &.ratShow {
+      opacity: 1;
+    }
+    &.column1 {
+      height: 120px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &.column2 {
+      height: 60px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &.column3 {
+      height: 120px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &.column4 {
+      height: 60px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &.column5 {
+      padding-bottom: 20px;
+      height: 120px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .brown-mouse {
+    height: 48px;
+    width: 78px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/2_1.png);
+  }
+  .grey-mouse {
+    height: 48px;
+    width: 78px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/3.png);
+  }
+  .white-mouse {
+    height: 48px;
+    width: 78px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/4.png);
+  }
+  .red-mouse {
+    height: 65px;
+    width: 91px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/5.png);
+  }
+  .orange-mouse {
+    height: 65px;
+    width: 91px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/1.png);
+  }
+  .row1 {
+    width: 58%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .row2 {
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .row3 {
+    margin-top: 60px;
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: 27px;
+  }
+  .row4 {
+    margin-top: 60px;
+    width: 46%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .rowcolumn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  .rowcolumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .columnrow {
+    height: 100%;
+    width: 100%;
+  }
+  .arrow1 {
+    position: absolute;
+    left: 240px;
+    width: 20px;
+    height: 44px;
+    top: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+
+  .arrow2 {
+    position: absolute;
+    left: 280px;
+    width: 20px;
+    top: 110px;
+    transform: rotate(-43deg);
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+  .arrow3 {
+    position: absolute;
+    left: 240px;
+    width: 20px;
+    height: 44px;
+    top: 290px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+
+  .arrow4 {
+    position: absolute;
+    left: 280px;
+    width: 20px;
+    top: 290px;
+    transform: rotate(-43deg);
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+  .arrow5 {
+    position: absolute;
+    left: 210px;
+    width: 20px;
+    height: 44px;
+    top: 144px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+
+  .arrow6 {
+    position: absolute;
+    left: 250px;
+    width: 20px;
+    top: 144px;
+    transform: rotate(-43deg);
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+  .arrow7 {
+    position: absolute;
+    left: 240px;
+    width: 20px;
+    height: 44px;
+    top: 310px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+
+  .arrow8 {
+    position: absolute;
+    left: 280px;
+    width: 20px;
+    top: 310px;
+    transform: rotate(-43deg);
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+  .arrow9 {
+    position: absolute;
+    left: 240px;
+    width: 20px;
+    height: 44px;
+    top: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+
+  .arrow10 {
+    position: absolute;
+    left: 280px;
+    width: 20px;
+    top: 130px;
+    transform: rotate(-43deg);
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+  .arrow11 {
+    position: absolute;
+    left: 240px;
+    width: 20px;
+    height: 44px;
+    top: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+
+  .arrow12 {
+    position: absolute;
+    left: 280px;
+    width: 20px;
+    top: 300px;
+    transform: rotate(-43deg);
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/arrow.png);
+  }
+ 
+  .text-image {
+    position: absolute;
+    color: #052978;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+  
+
+    &.column10 {
+      left: 60px;
+      top: -25px;
+    }
+    &.column11 {
+      right: 45px;
+      top: -20px;
+    }
+    &.column20 {
+      left: 244px;
+      top: 180px;
+    }
+
+    &.column30 {
+      left: 215px;
+      top: 154px;
+    }
+   
+    &.column33 {
+      left: 218px;
+      top: 154px;
+    }
+    &.column40 {
+      left: 62px;
+      top: 204px;
+    }
+    &.column41 {
+      left: 330px;
+      top: 204px;
+    }
+    &.column50 {
+      left: 220px;
+      top: 356px;
+
+    }
+    &.column60 {
+      left: 220px;
+      top: 335px;
+
+    }
+    &.column51 {
+      left: 222px;
+      top: 355px;
+
+    }
+  }
+}

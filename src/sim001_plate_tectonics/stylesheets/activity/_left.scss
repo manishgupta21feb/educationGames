@@ -1,0 +1,919 @@
+.left-container {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/backgroundPT.png);
+
+  .video-player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/stillPT.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    &.hidden {
+      opacity: 0;
+    }
+    .video-container {
+      div .video-wrapper {
+        z-index: 0;
+      }
+      .play-pause-buttons .btn {
+        opacity: 1;
+        z-index: 1;
+        left: unset;
+        right: 10px;
+      }
+    }
+    .video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      &.hidden {
+        opacity: 0;
+      }
+    }
+  }
+  .gridWapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0px);
+    // overflow: hidden;
+    &.hidden {
+      opacity: 0;
+    }
+    .quesCont {
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+    }
+    .grid-block {
+      position: absolute;
+      margin: auto;
+      // 200 years map
+      &.southAmerica-200 {
+        width: 114px;
+        height: 198px;
+        left: 92px;
+        top: 265px;
+        .southAmerica {
+          opacity: 1;
+        }
+      }
+      &.northAmerica-200 {
+        width: 147px;
+        height: 144px;
+        top: 85px;
+        left: 115px;
+        .northAmerica {
+          opacity: 1;
+        }
+      }
+      &.africa-200 {
+        width: 172px;
+        height: 230px;
+        left: 156px;
+        top: 214px;
+        .africa {
+          opacity: 1;
+        }
+      }
+      &.eurasia-200 {
+        width: 239px;
+        height: 274px;
+        left: 197px;
+        top: 36px;
+        .eurasia {
+          opacity: 1;
+        }
+      }
+      &.australia-200 {
+        width: 128px;
+        height: 141px;
+        top: 446px;
+        left: 295px;
+        .australia {
+          opacity: 1;
+        }
+      }
+      &.antarctica-200 {
+        width: 175px;
+        height: 133px;
+        top: 421px;
+        left: 174px;
+        .antarctica {
+          opacity: 1;
+        }
+      }
+      &.india-200 {
+        width: 94px;
+        height: 88px;
+        top: 369px;
+        left: 293px;
+        .india {
+          opacity: 1;
+        }
+      }
+
+      // 150 years map
+      &.southAmerica-150 {
+        width: 151px;
+        height: 169px;
+        top: 385px;
+        left: 57px;
+        .southAmerica {
+          opacity: 1;
+        }
+      }
+      &.africa-150 {
+        width: 216px;
+        height: 235px;
+        top: 276px;
+        left: 92px;
+        z-index: 0;
+        .africa {
+          opacity: 1;
+        }
+      }
+      &.australia-150 {
+        width: 73px;
+        height: 105px;
+        top: 432px;
+        left: 361px;
+        .australia {
+          opacity: 1;
+        }
+      }
+      &.antarctica-150 {
+        width: 154px;
+        height: 115px;
+        top: 442px;
+        left: 231px;
+        .antarctica {
+          opacity: 1;
+        }
+      }
+      &.india-150 {
+        width: 75px;
+        height: 68px;
+        top: 378px;
+        left: 290px;
+        .india {
+          opacity: 1;
+        }
+      }
+      &.madagascar-150 {
+        width: 19px;
+        height: 39px;
+        top: 402px;
+        left: 277px;
+        .madagascar {
+          opacity: 1;
+        }
+      }
+      &.northAmerica-150 {
+        width: 216px;
+        height: 204px;
+        top: 61px;
+        left: 26px;
+        .northAmerica {
+          opacity: 1;
+        }
+      }
+      &.eurasia-150 {
+        width: 345px;
+        height: 249px;
+        top: 92px;
+        left: 171px;
+        .eurasia {
+          opacity: 1;
+        }
+      }
+      // 100 year map
+
+      &.africa-100 {
+        width: 168px;
+        height: 175px;
+        top: 260px;
+        left: 238px;
+        .africa {
+          opacity: 1;
+        }
+      }
+      &.eurasia-100 {
+        width: 302px;
+        height: 260px;
+        top: 111px;
+        left: 197px;
+        z-index: 0;
+        .eurasia {
+          opacity: 1;
+        }
+      }
+      &.antarctica-100 {
+        width: 137px;
+        height: 117px;
+        top: 439px;
+        left: 318px;
+        .antarctica {
+          opacity: 1;
+        }
+      }
+      &.australia-100 {
+        width: 82px;
+        height: 124px;
+        top: 409px;
+        left: 429px;
+        .australia {
+          opacity: 1;
+        }
+      }
+      &.northAmerica-100 {
+        width: 215px;
+        height: 215px;
+        top: 85px;
+        left: 5px;
+        .northAmerica {
+          opacity: 1;
+        }
+      }
+      &.southAmerica-100 {
+        width: 117px;
+        height: 183px;
+        top: 300px;
+        left: 158px;
+        .southAmerica {
+          opacity: 1;
+        }
+      }
+      &.madagascar-100 {
+        width: 36px;
+        height: 44px;
+        top: 374px;
+        left: 327px;
+        .madagascar {
+          opacity: 1;
+        }
+      }
+      &.india-100 {
+        width: 64px;
+        height: 53px;
+        top: 378px;
+        left: 345px;
+        .india {
+          opacity: 1;
+        }
+      }
+      &.drop-hover {
+        border: 1.5px dashed #000c19;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+      &.drop-disable {
+        border: none !important;
+        outline: none !important;
+        border-radius: 0px !important;
+        background-color: transparent !important;
+      }
+
+      .label-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: auto;
+        min-width: 135px;
+        &.hidden {
+          opacity: 0;
+        }
+        &.shown {
+          opacity: 1;
+        }
+        .dot {
+          width: 12px;
+          height: 12px;
+          background: #352103;
+          border-radius: 25px;
+          position: relative;
+          margin: auto;
+          z-index: 2;
+          &.india-200 {
+            top: 30px;
+          }
+          &.australia-200 {
+            top: 50px;
+            left: 20px;
+          }
+          &.eurasia-200 {
+            top: 70px;
+          }
+          &.northAmerica-200 {
+            top: 75px;
+          }
+          &.africa-200 {
+            top: 90px;
+            left: 25px;
+          }
+          &.antarctica-200 {
+            top: 55px;
+          }
+          &.southAmerica-200 {
+            top: 61px;
+          }
+          &.eurasia-150 {
+            top: 100px;
+            left: 30px;
+          }
+          &.northAmerica-150 {
+            top: 90px;
+          }
+          &.africa-150 {
+            top: 70px;
+          }
+          &.southAmerica-150 {
+            top: 45px;
+          }
+          &.australia-150 {
+            top: 30px;
+            right: 25px;
+          }
+          &.antarctica-150 {
+            top: 55px;
+          }
+          &.madagascar-150 {
+            top: 20px;
+            right: 60px;
+          }
+          &.india-150 {
+            top: 35px;
+            right: 35px;
+          }
+          &.northAmerica-100 {
+            top: 80px;
+          }
+          &.eurasia-100 {
+            top: 60px;
+            left: 40px;
+          }
+          &.southAmerica-100 {
+            top: 80px;
+          }
+          &.africa-100 {
+            top: 80px;
+          }
+          &.antarctica-100 {
+            top: 45px;
+          }
+          &.australia-100 {
+            top: 45px;
+            right: 25px;
+          }
+          &.madagascar-100 {
+            top: 25px;
+            right: 56px;
+          }
+          &.india-100 {
+            top: 18px;
+            right: 35px;
+          }
+        }
+        .line {
+          border: 2px solid #352103;
+          border-style: none none dashed;
+          height: 1px;
+          position: relative;
+          margin: auto;
+          z-index: 5;
+          &.india-200 {
+            transform: rotate(10deg);
+            top: 27px;
+            left: 27px;
+            width: 58px;
+          }
+          &.australia-200 {
+            top: 45px;
+            left: 45px;
+            transform: rotate(10deg);
+            width: 60px;
+          }
+          &.eurasia-200 {
+            transform: rotate(145deg);
+            top: 30px;
+            width: 125px;
+            left: 47px;
+          }
+          &.northAmerica-200 {
+            transform: rotate(33deg);
+            top: 43px;
+            width: 85px;
+            right: 38px;
+          }
+          &.africa-200 {
+            transform: rotate(15deg);
+            width: 75px;
+            top: 92px;
+            left: 62px;
+          }
+          &.antarctica-200 {
+            transform: rotate(159deg);
+            width: 100px;
+            top: 65px;
+            right: 47px;
+          }
+          &.southAmerica-200 {
+            transform: rotate(49deg);
+            width: 98px;
+            top: 10px;
+            right: 37px;
+          }
+          &.eurasia-150 {
+            transform: rotate(71deg);
+            width: 118px;
+            top: 40px;
+            left: 12px;
+          }
+          &.northAmerica-150 {
+            width: 100px;
+            transform: rotate(100deg);
+            top: 35px;
+            left: 10px;
+          }
+          &.africa-150 {
+            transform: rotate(30deg);
+            width: 120px;
+            right: 60px;
+            top: 32px;
+          }
+          &.southAmerica-150 {
+            transform: rotate(125deg);
+            width: 70px;
+            top: 70px;
+            right: 25px;
+          }
+          &.australia-150 {
+            width: 40px;
+            transform: rotate(150deg);
+            top: 10px;
+          }
+          &.antarctica-150 {
+            width: 85px;
+            transform: rotate(45deg);
+            top: 80px;
+            left: 35px;
+          }
+          &.madagascar-150 {
+            width: 88px;
+            transform: rotate(130deg);
+            bottom: 22px;
+            right: 30px;
+          }
+          &.india-150 {
+            width: 50px;
+            transform: rotate(160deg);
+            top: 20px;
+            right: 13px;
+          }
+          &.northAmerica-100 {
+            width: 90px;
+            transform: rotate(60deg);
+            top: 25px;
+            right: 25px;
+          }
+          &.southAmerica-100 {
+            width: 55px;
+            transform: rotate(150deg);
+            top: 90px;
+            right: 30px;
+          }
+          &.africa-100 {
+            transform: rotate(60deg);
+            top: 20px;
+            right: 30px;
+            width: 125px;
+          }
+          &.madagascar-100 {
+            width: 25px;
+            transform: rotate(65deg);
+            top: 30px;
+            right: 53px;
+          }
+          &.antarctica-100 {
+            width: 45px;
+            transform: rotate(160deg);
+            top: 47px;
+            right: 25px;
+          }
+          &.australia-100 {
+            width: 65px;
+            transform: rotate(60deg);
+            top: 12px;
+            right: 40px;
+          }
+          &.india-100 {
+            width: 40px;
+            transform: rotate(145deg);
+            right: 20px;
+          }
+          &.eurasia-100 {
+            width: 104px;
+            transform: rotate(65deg);
+            left: 15px;
+          }
+        }
+        .label {
+          position: relative;
+          background: transparent;
+          border-radius: 16px;
+          background-color: #352103;
+          text-align: center;
+          color: #fbf1e9;
+          font-size: 14px;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+          padding: 6px 14px;
+          border: none;
+          z-index: 6;
+          &.india-200 {
+            left: 100px;
+            top: 21px;
+          }
+          &.australia-200 {
+            top: 38px;
+            left: 135px;
+          }
+          &.eurasia-200 {
+            left: 210px;
+            bottom: 20px;
+          }
+          &.northAmerica-200 {
+            right: 105px;
+            top: 0;
+          }
+          &.africa-200 {
+            top: 90px;
+            left: 185px;
+          }
+          &.antarctica-200 {
+            top: 70px;
+            right: 103px;
+          }
+          &.southAmerica-200 {
+            bottom: 45px;
+            right: 65px;
+          }
+          &.eurasia-150 {
+            left: 130px;
+            bottom: 40px;
+          }
+          &.northAmerica-150 {
+            bottom: 40px;
+            left: 60px;
+          }
+          &.africa-150 {
+            right: 65px;
+            bottom: 10px;
+          }
+          &.southAmerica-150 {
+            top: 100px;
+            right: 45px;
+          }
+          &.australia-150 {
+            bottom: 10px;
+            left: 70px;
+          }
+          &.antarctica-150 {
+            top: 95px;
+            left: 130px;
+          }
+          &.madagascar-150 {
+            bottom: 70px;
+            left: 34px;
+          }
+          &.india-150 {
+            left: 75px;
+            /* bottom: 0px; */
+          }
+          &.northAmerica-100 {
+            bottom: 30px;
+          }
+          &.southAmerica-100 {
+            right: 95px;
+            top: 90px;
+          }
+          &.africa-100 {
+            bottom: 40px;
+          }
+          &.antarctica-100 {
+            top: 45px;
+            right: 60px;
+          }
+          &.australia-100 {
+            bottom: 31px;
+            right: 22px;
+          }
+          &.antarctica-100 {
+            top: 45px;
+            right: 60px;
+          }
+          &.madagascar-100 {
+            top: 43px;
+            right: 40px;
+          }
+          &.eurasia-100 {
+            bottom: 65px;
+            left: 115px;
+          }
+          &.india-100 {
+            bottom: 40px;
+            left: 31px;
+          }
+        }
+      }
+    }
+
+    .draggable-wrapper {
+      z-index: 3;
+      width: auto;
+      height: auto;
+      outline: 1px solid transparent;
+      display: flex;
+      white-space: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute !important;
+      &.dropped-200-southAmerica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-200-northAmerica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-200-africa {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-200-eurasia {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-200-australia {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-200-antarctica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-200-india {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-southAmerica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-africa {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-australia {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-antarctica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-india {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-madagascar {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-northAmerica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-150-eurasia {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-africa {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-eurasia {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-antarctica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-australia {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-northAmerica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-southAmerica {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-madagascar {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      &.dropped-100-india {
+        &.hidden {
+          opacity: 0 !important;
+        }
+      }
+      .plate-st {
+        z-index: 2;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 1px solid #052978;
+        outline: 1px solid transparent;
+        background-color: rgba(217, 235, 255, 0.24);
+        overflow: hidden;
+        &.africa-200-hori {
+          margin-left: 20px;
+        }
+        &.eurasia-200-hori {
+          margin-left: 11px;
+        }
+        &.southAmerica-200-hori {
+          margin-left: 27px;
+        }
+        &.australia-150-hori {
+          margin-left: 9px;
+        }
+        &.eurasia-150-hori {
+          margin-left: -32px;
+          position: absolute;
+        }
+        &.southAmerica-100-hori {
+          margin-left: 20px;
+        }
+        &.australia-100-hori {
+          margin-left: 15px;
+        }
+        &.eurasia-100-hori {
+          margin-left: -28px;
+          position: absolute;
+        }
+        &.antarctica-200-hori {
+          position: absolute;
+          margin-left: -28px;
+        }
+        &.southAmerica-150-hori {
+          margin-left: 7px;
+        }
+        &.antarctica-150-hori {
+          position: absolute;
+          margin-left: -26px;
+        }
+        &.antarctica-100-hori {
+          position: absolute;
+          margin-left: -29px;
+        }
+        &.northAmerica-150-hori {
+          position: absolute;
+          margin-left: -28px;
+        }
+      }
+      .btn-wrap {
+        z-index: 2;
+        width: 24px;
+        height: 100%;
+        margin-left: 4px;
+        min-height: 70px;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        &.antarctica-200-hori {
+          left: 66px;
+        }
+        &.africa-200-hori {
+          left: 9px;
+        }
+        &.eurasia-200-hori {
+          left: 4px;
+        }
+        &.southAmerica-200-hori {
+          left: 12px;
+        }
+        &.eurasia-150-hori {
+          left: 122px;
+        }
+        &.southAmerica-150-hori {
+          left: 2px;
+        }
+        &.australia-150-hori {
+          left: 4px;
+        }
+        &.antarctica-150-hori {
+          left: 58px;
+        }
+
+        &.antarctica-100-hori {
+          left: 58px;
+        }
+        &.australia-100-hori {
+          left: 6px;
+        }
+        &.southAmerica-100-hori {
+          left: 10px;
+        }
+        &.eurasia-100-hori {
+          left: 130px;
+        }
+        &.northAmerica-150-hori {
+          left: 102px;
+        }
+        .rotate-btn {
+          padding: 0;
+          border: none;
+          margin-top: 4px;
+          position: relative;
+          margin-bottom: 8px;
+          border-radius: 50%;
+          .icon {
+            background-image: url(../assets/images/rotate.svg);
+            border: 2px solid #35374c;
+            border-radius: 50%;
+          }
+          &:hover,
+          &:focus {
+            .icon {
+              background-image: url(../assets/images/rotate-hover.svg);
+              border: none;
+            }
+          }
+        }
+        .submit {
+          opacity: 1;
+          padding: 0;
+          border: none;
+          position: relative;
+          border-radius: 50%;
+          background: #1b8338;
+          &.hidden {
+            opacity: 0;
+          }
+
+          .icon {
+            background-image: url(../assets/images/chk.svg);
+            border: 2px solid #1b8338;
+            border-radius: 50%;
+          }
+          &:hover,
+          &:focus {
+            .icon {
+              border-color: #002e0e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

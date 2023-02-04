@@ -1,0 +1,115 @@
+@import "../../stylesheets/common/functions.scss";
+
+.radiobuttons {
+  flex-direction: row !important;
+  .radiobutton + .radiobutton {
+    margin-left: 78px;
+  }
+}
+
+.mcq-question-area .inner-wrapper .submit-button {
+  bottom: -410px !important;
+  @extend %index-1;
+}
+
+.question-img {
+  @extend %flex, %full-width;
+  background-color: #f4f4f4;
+  height: 434px;
+  justify-content: center;
+  &--multiple {
+    @extend %flex;
+    justify-content: space-around;
+    padding-top: 5px;
+  }
+  &__img {
+    @extend %relative;
+    background: {
+      repeat: no-repeat;
+      position: center;
+    }
+    &--couple {
+      @extend %bg-contain;
+      width: 305px;
+      height: 247px;
+      border: 1px solid #35374c;
+      border-radius: 9px;
+      margin-top: 64px;
+      &:last-child {
+        margin-left: 36px;
+      }
+    }
+    &--single {
+      height: 192px;
+      background-size: cover;
+      width: 240px;
+    }
+  }
+
+  &__text {
+    @extend %absolute;
+    font-size: 10px;
+    color: #000;
+    background-color: white;
+    padding: 2px 5px 0;
+    box-shadow: 0px 0px 4px #a1a1a1;
+    &--spain {
+      top: 61%;
+      left: 45px;
+    }
+    &--zealand {
+      top: 68%;
+      right: 21px;
+    }
+    &--spain-1 {
+      top: 61%;
+      left: 45px;
+    }
+    &--zealand-1 {
+      top: 68%;
+      right: 21px;
+    }
+  }
+  &__option {
+    @extend %full-width,
+    %center-text,
+    %absolute;
+    bottom: -30px;
+    font-size: 14px;
+  }
+  & + .positive {
+    @extend %index-1;
+  }
+
+  #ques2_img_1 {
+    span:first-child {
+      top: 49%;
+      left: 79px;
+    }
+    span:nth-child(2) {
+      top: 51.2%;
+      right: 105px;
+    }
+  }
+  #ques2_img_2 {
+    span:first-child {
+      top: 38.7%;
+      left: 134px;
+    }
+    span:nth-child(2) {
+      top: 61%;
+      right: 156px;
+    }
+  }
+}
+
+.question-img--multiple > .question-img__img {
+  span:first-child {
+    top: 55.7%;
+    left: 73px;
+  }
+  span:nth-child(2) {
+    top: 43%;
+    right: 51px;
+  }
+}

@@ -1,0 +1,36 @@
+.item-information-table {
+  position: relative;
+  h3 {
+    font-size: 14px;
+    color: #052978;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.25px;
+  }
+
+  .item-details {
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 4px 28px 4px 8px;
+      justify-content: space-between;
+      &:nth-child(odd) {
+        background: #f0f0f0;
+      }
+      &:nth-child(even) {
+        background: #f9f9f9;
+      }
+
+      p {
+        font-size: 12px;
+        color: #35374c;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        font-variant: lining-nums;
+      }
+    }
+  }
+}

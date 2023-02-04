@@ -1,0 +1,94 @@
+@import "../../stylesheets/common/functions.scss";
+
+.video-container .play-pause-buttons {
+  .btn {
+    @extend %center-both, %opacity-show;
+  }
+}
+.hideVideo {
+  display: none;
+}
+.video-container {
+  @extend %full-width, %absolute;
+  top: 0px;
+
+  .play-pause-buttons .btn {
+    top: 26px;
+    right: 24px;
+    left: initial;
+    transform: initial;
+    display: none;
+  }
+  .video-wrapper {
+    video {
+      &.poster1 {
+        background: transparent url("../../assets/images/combination1.png")
+          center / cover no-repeat;
+      }
+      &.poster2 {
+        background: transparent url("../../assets/images/combination2.png")
+          center / cover no-repeat;
+      }
+      &.poster3 {
+        background: transparent url("../../assets/images/combination3.png")
+          center / cover no-repeat;
+      }
+      &.poster4 {
+        background: transparent url("../../assets/images/combination4.png")
+          center / cover no-repeat;
+      }
+      &.poster5 {
+        background: transparent url("../../assets/images/combination5.png")
+          center / cover no-repeat;
+      }
+      &.poster6 {
+        background: transparent url("../../assets/images/combination6.png")
+          center / cover no-repeat;
+      }
+      &.poster7 {
+        background: transparent url("../../assets/images/combination7.png")
+          center / cover no-repeat;
+      }
+      &.poster8 {
+        background: transparent url("../../assets/images/combination8.png")
+          center / cover no-repeat;
+      }
+      &.poster9 {
+        background: transparent url("../../assets/images/combination9.png")
+          center / cover no-repeat;
+      }
+      &.poster10 {
+        background: transparent url("../../assets/images/combination10.png")
+          center / cover no-repeat;
+      }
+      &.poster11 {
+        background: transparent url("../../assets/images/combination11.png")
+          center / cover no-repeat;
+      }
+      &.poster12 {
+        background: transparent url("../../assets/images/combination12.png")
+          center / cover no-repeat;
+      }
+      &.poster13 {
+        background: transparent url("../../assets/images/combination13.png")
+          center / cover no-repeat;
+      }
+      &.poster14 {
+        background: transparent url("../../assets/images/combination14.png")
+          center / cover no-repeat;
+      }
+      &.ballPoster1 {
+        background: transparent url("../../assets/images/slow.png") center /
+          cover no-repeat;
+      }
+      &.ballPoster2 {
+        background: transparent url("../../assets/images/medium.png") center /
+          cover no-repeat;
+      }
+      &.ballPoster3 {
+        background: transparent url("../../assets/images/fast.png") center /
+          cover no-repeat;
+      }
+    }
+  }
+}

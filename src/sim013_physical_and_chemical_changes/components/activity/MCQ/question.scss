@@ -1,0 +1,155 @@
+
+  .radiobuttons .radiobutton .radiobutton-inner-wrapper{
+    height: 32px;
+    width: 234px !important;
+     }
+
+    .radiobuttons .radiobutton .radiobutton-inner-wrapper label{
+      height: 24px;
+      width: 194px;
+      color:var(--question-heading-bluish) !important;
+      letter-spacing: 0.15px;
+      margin-top: 4px;
+    }
+    .backgroundContainer {
+      width: 100%;
+      height: 318px;
+      position: relative;
+      // top: -6px;
+      .video-container {
+        .video-wrapper {
+          video {
+            &.Ques1 {
+              background: transparent url(../../../assets/images/pp_boilingwater.png);
+                // center / contain no-repeat;
+                background-size: cover;    
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 317px;
+                width: 800px;
+            }
+            &.Ques3 {
+              background: transparent url(../../../assets/images/pp_vinsoda.png)
+                center / contain no-repeat;
+                height: 317px;
+                width: 800px;
+            }
+          }
+        }
+        .play-pause-buttons {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          .btn {
+            opacity: 0;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            justify-content: center;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%);
+            .icon {
+              border-radius: 50%;
+            }
+          }
+        }
+        &:hover {
+          .play-pause-button {
+            .btn {
+              opacity: 1;
+            }
+          }
+        }
+      }
+  // .topMainContainer{
+  //   width: 100%;
+  //   z-index: -1;
+  //   height: 318px;
+  //   overflow: hidden;
+  //   position: absolute;
+  //   &.bg1{
+  //     background: url("../../../assets/images/pp_boilingwater.png");
+  //     background-size: cover;
+
+  //   }
+  //   &.bg2{
+  //     background: url("../../../assets/images/pp_vinsoda.png");
+  //     background-size: cover;
+
+  //   }
+  //   img{
+  //     top: 0;
+  //     left: 0;
+  //     width: 800px;
+  //     height: 318px;
+  //     overflow: hidden;
+  //     position: absolute;
+  //   }
+  //   video {
+  //     top: 0;
+  //     left: 0;
+  //     width: 800px;
+  //     height: 317px;
+  //     position: absolute;
+  //     overflow: hidden;
+
+  //   }
+   
+   
+  // }
+  
+  // .play-pause-buttons {
+  //   top: 136px;
+  //   left: 376px;
+  //   position: absolute;
+  //   .btn {
+  //     opacity: 0;
+  //     &:focus:not(:disabled) {
+  //       opacity: 1;
+  //     }
+  //   }
+  // }
+
+  // &:hover {
+  //   .play-pause-buttons {
+  //     .btn {
+  //       opacity: 1;
+  //     }
+  //   }
+  // }
+  
+ 
+  .digitalText {
+    font-family: "digital7";
+    position: absolute;
+    top: 69%;
+    left: 376px;
+    font-size: 22px;
+    color: var(--grey-text);
+    pointer-events: none;
+    touch-action: none;
+  }
+.questionImage{
+  width:800px;
+  height: 318px;
+  background:url(../../../assets/images/p_banana.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+}
+
+.imageContainer{
+  width: 100%;
+  height: 100%; 
+  
+  img{
+    width:800px;
+    height: 318px;
+  }
+}
+  

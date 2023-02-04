@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/images/logo.svg" />
+  <style>.loader {width: 100%;height: 100%; position: absolute; background-color: white;z-index: 1;} .sk-chase{width:120px;height:120px;position:relative;animation:sk-chase 2.5s infinite linear both;top: calc(50% - 60px);left: calc(50% - 60px);}.sk-chase-dot{width:100%;height:100%;position:absolute;left:0;top:0;animation:sk-chase-dot 2s infinite ease-in-out both}.sk-chase-dot:before{content:'';display:block;width:25%;height:25%;background-color:#333;border-radius:100%;animation:sk-chase-dot-before 2s infinite ease-in-out both}.sk-chase-dot:nth-child(1){animation-delay:-1.1s}.sk-chase-dot:nth-child(2){animation-delay:-1s}.sk-chase-dot:nth-child(3){animation-delay:-.9s}.sk-chase-dot:nth-child(4){animation-delay:-.8s}.sk-chase-dot:nth-child(5){animation-delay:-.7s}.sk-chase-dot:nth-child(6){animation-delay:-.6s}.sk-chase-dot:nth-child(1):before{animation-delay:-1.1s}.sk-chase-dot:nth-child(2):before{animation-delay:-1s}.sk-chase-dot:nth-child(3):before{animation-delay:-.9s}.sk-chase-dot:nth-child(4):before{animation-delay:-.8s}.sk-chase-dot:nth-child(5):before{animation-delay:-.7s}.sk-chase-dot:nth-child(6):before{animation-delay:-.6s}@keyframes sk-chase{100%{transform:rotate(360deg)}}@keyframes sk-chase-dot{100%,80%{transform:rotate(360deg)}}@keyframes sk-chase-dot-before{50%{transform:scale(.4)}0%,100%{transform:scale(1)}}</style>
+  <title>
+    <%= ACTIVITY_CONFIG.title %>
+  </title>
+
+</head>
+
+<body class="no-outline">
+  <div class="loader">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+  <div id="root"></div>
+  <% if (PRECACHE_IMAGES) { %>
+    <script type="text/javascript" src="image-list.js"></script>
+    <% } %>
+      <% if (PRECACHE_AUDIOS) { %>
+        <script type="text/javascript" src="audio-list.js"></script>
+        <% } %>
+          <% if (PRECACHE_VIDEOS) { %>
+            <script type="text/javascript" src="video-list.js"></script>
+            <% } %>
+</body>
+
+</html>

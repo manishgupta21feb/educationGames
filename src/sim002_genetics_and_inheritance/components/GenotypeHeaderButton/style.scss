@@ -1,0 +1,21 @@
+.genotype-button {
+  .icon {
+    background-image: url("../../assets/images/genotype_icon.svg");
+  }
+
+  // &:hover:not(:disabled) {
+  //   .icon {
+  //     background-image: url("../../assets/images/genotype_icon_selected.svg");
+  //   }
+  // }
+
+  &.geno-selected {
+    background-color: var(----dark-grey);
+  }
+
+  &.non-a11y-button {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}

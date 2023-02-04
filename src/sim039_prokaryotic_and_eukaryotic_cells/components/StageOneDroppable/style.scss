@@ -1,0 +1,222 @@
+.droppable-stage1 {
+  width: 768px;
+  height: 324px;
+  position: absolute;
+  top: 274px;
+
+  .images-div {
+    width: 100%;
+    .bg-img {
+      width: 450px;
+      height: 290px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      &.left-background {
+        left: 0;
+        background-image: url("../../assets/images/left_background.svg");
+      }
+      &.right-background {
+        right: 0;
+        background-image: url("../../assets/images/right_background.svg");
+      }
+    }
+  }
+
+  .option {
+    box-sizing: border-box;
+    height: 270px;
+    width: 295px;
+    // border: 1px dashed var(--primary-blue);
+    border-radius: 16px;
+    position: absolute;
+    // cursor: pointer;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &.dropped {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--question-text-blue);
+      background-color: var(--primary-blue);
+      color: var(--white);
+      position: absolute;
+    }
+
+    > span {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    &.setBlueHoverColor {
+      background-color: var(--hover-state-color);
+    }
+
+    &.option-1 {
+      top: 10px;
+      left: 20px;
+      padding: 32px 27px;
+    }
+    &.option-2 {
+      width: 117px;
+      top: 10px;
+      left: 326px;
+      padding: 32px 10px;
+    }
+    &.option-3 {
+      top: 10px;
+      left: 451px;
+      padding: 32px 27px;
+    }
+
+    .label {
+      margin-bottom: 8px;
+    }
+    .accessibleListScreen {
+      position: absolute;
+      &.dropzone1 {
+        left: 44px;
+        width: 246px;
+        height: 175px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      &.dropzone2 {
+        height: 175px;
+        width: 91px;
+        margin-left: 16px;
+        left: -3px;
+        margin-bottom: 16px;
+      }
+
+      &.dropzone3 {
+        width: 246px;
+        height: 175px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .accessible-list {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      li {
+        position: relative;
+        height: 290px;
+        width: 295px;
+
+        a {
+          padding: 0;
+          line-height: unset;
+          width: 100%;
+          height: 100%;
+          display: block;
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+          div {
+            display: none;
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 16px;
+          padding: 32px 27px;
+        }
+
+        &:nth-child(1) {
+          position: absolute;
+          left: 45px;
+          padding: 32px 27px;
+        }
+
+        &:nth-child(2) {
+          width: 125px;
+          margin-left: 16px;
+          position: absolute;
+          left: 305px;
+        }
+
+        &:nth-child(3) {
+          position: absolute;
+          left: 430px;
+          padding: 32px 27px;
+        }
+      }
+    }
+  }
+}
+.color-strip-header {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+  margin-right: 24px;
+  > h2 {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    text-align: center;
+    z-index: 1;
+    padding: 0 56px 0 56px;
+    // padding-inline: 56px;
+  }
+
+  // > div {
+  //   position: absolute;
+  //   top: 8px;
+  //   width: 752px;
+  //   height: 8px;
+  //   border: solid 1px var(--dark-grey);
+  //   border-bottom: none;
+  //   border-top-left-radius: 2px;
+  //   border-top-right-radius: 2px;
+  // }
+
+  &.prokaryotic {
+    position: absolute;
+    transform: translate(80px, -21px);
+  }
+
+  &.both {
+    position: absolute;
+    transform: translate(313px, -21px);
+  }
+
+  &.eukaryotic {
+    position: absolute;
+    transform: translate(515px, -21px);
+  }
+}

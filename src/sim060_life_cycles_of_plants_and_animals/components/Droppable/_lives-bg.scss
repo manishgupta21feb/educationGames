@@ -1,0 +1,106 @@
+$cricketEggs: "../../assets/images/cricket/cricketEggs.png";
+$cricketNymph: "../../assets/images/cricket/nymph.png";
+$cricket: "../../assets/images/cricket/cricket.png";
+
+$beenSeed: "../../assets/images/lima_bean/seed.png";
+$beenGermination: "../../assets/images/lima_bean/germination.png";
+$beenPlant: "../../assets/images/lima_bean/plant.png";
+$bean: "../../assets/images/lima_bean/bean.png";
+
+$beetleEggs: "../../assets/images/beetle/beetleEggs.png";
+$beetleLarva: "../../assets/images/beetle/larva.png";
+$beetlePupa: "../../assets/images/beetle/pupa.png";
+$beetle: "../../assets/images/beetle/beetle.png";
+
+$butterflyEggs: "../../assets/images/butterfly/butterflyEggs.png";
+$butterflyCaterpillar: "../../assets/images/butterfly/caterpillar.png";
+$butterflyChrysalis: "../../assets/images/butterfly/chrysalis.png";
+$butterfly: "../../assets/images/butterfly/butterfly.png";
+
+$frogEggs: "../../assets/images/frog/frogEggs.png";
+$frogTadpole: "../../assets/images/frog/tadpole.png";
+$frogTadpoleTwoLegs: "../../assets/images/frog/tadpole_with_2_legs.png";
+$frog: "../../assets/images/frog/frog.png";
+
+.droppable {
+  div {
+    @extend %full-object,
+    %opacity-hide,
+    %absolute;
+    
+    background: {
+      size: 75%;
+      repeat: no-repeat;
+      position: center;
+    }
+
+    &.active{
+      opacity: 1;
+    }
+  }
+}
+
+.frog-one {
+  background-image: url($frogEggs);
+}
+.frog-two {
+  background-image: url($frogTadpole);
+}
+.frog-three {
+  background-image: url($frogTadpoleTwoLegs);
+}
+.frog-four {
+  background-image: url($frog);
+}
+
+.butterfly-one {
+  background-image: url($butterflyEggs);
+}
+.butterfly-two {
+  background-image: url($butterflyCaterpillar);
+}
+.butterfly-three {
+  background-image: url($butterflyChrysalis);
+  background-size: 50% !important;
+}
+.butterfly-four {
+  background-image: url($butterfly);
+}
+
+.beetle-one {
+  background-image: url($beetleEggs);
+}
+.beetle-two {
+  background-image: url($beetleLarva);
+}
+.beetle-three {
+  background-image: url($beetlePupa);
+  background-size: 50% !important;
+}
+.beetle-four {
+  background-image: url($beetle);
+}
+
+.limaBean-one {
+  background-image: url($beenSeed);
+}
+.limaBean-two {
+  background-image: url($beenGermination);
+}
+.limaBean-three {
+  background-image: url($beenPlant);
+}
+.limaBean-four {
+  background-image: url($bean);
+  background-size: 30% !important;
+}
+
+.cricket-one {
+  background-image: url($cricketEggs);
+}
+.cricket-two {
+  background-image: url($cricketNymph);
+}
+.cricket-three {
+  background-image: url($cricket);
+}

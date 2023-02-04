@@ -1,0 +1,85 @@
+.accessible-list {
+  left: 22px;
+  bottom: 114px;
+  @extend %bg-transparent, %border-none, %left-zero;
+  & > .list {
+    @extend %full-width, %flex;
+    @extend %no-margin;
+    & > .listitem {
+      @extend %block;
+      width: 122px;
+      height: 84px;
+      margin-right: 4px;
+      border: 1px solid transparent;
+      > a:focus {
+        @extend %bg-transparent;
+      }
+      & > a {
+        @extend %absolute, %full-width, %top-zero, %full-height;
+      }
+    }
+  }
+
+  &.sedimentary {
+    left: 55px;
+    width: 86%;
+    bottom: 114px;
+  }
+}
+.oil {
+  .listitem {
+    &:first-child {
+      left: 0px;
+    }
+    &:nth-child(2) {
+      left: 4px;
+    }
+    &:nth-child(3) {
+      left: 2px;
+    }
+    &:nth-child(4) {
+      left: 2px;
+    }
+    &:nth-child(5) {
+      left: 2px;
+    }
+    &:last-child {
+      left: 2px;
+    }
+  }
+}
+.coal {
+  .listitem {
+    &:first-child {
+      left: 16px;
+    }
+    &:nth-child(2) {
+      left: 41px;
+    }
+    &:nth-child(3) {
+      left: 66px;
+    }
+    &:nth-child(4) {
+      left: 90px;
+    }
+    &:last-child {
+      left: 112px;
+    }
+  }
+}
+.sedimentary {
+  .listitem {
+    &:first-child {
+      left: 0px;
+    }
+    &:nth-child(2) {
+      left: 64px;
+    }
+    &:nth-child(3) {
+      left: 124px;
+    }
+    &:last-child {
+      left: 188px;
+    }
+  }
+}

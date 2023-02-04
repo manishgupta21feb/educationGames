@@ -1,0 +1,10 @@
+.color-strip-container {
+  padding-left: 8px;
+  margin-top: 12px;
+  .color-box-container {
+    display: flex;
+    padding-right: 24px;
+    height: 120px;
+    justify-content: space-between;
+  }
+}

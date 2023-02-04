@@ -1,0 +1,162 @@
+.droppable-stage1 {
+  position: relative;
+
+  .droppable-containers {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .droppable-container {
+      width: 212px;
+      height: 200px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .dropzone {
+        top: 10px;
+        width: 104px;
+        height: 104px;
+        // border-radius: 4px;
+        position: absolute;
+        // border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: #d9ebff;
+        border: 1px dashed #052978;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        transform: translateX(2px);
+
+        .dropped-item {
+          width: 104px;
+          height: 102px;
+          position: relative;
+          background: white;
+          border-radius: 4px;
+          background-color: white;
+          pointer-events: none;
+          // border: 1px dashed #052978;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          .img {
+            width: 62px;
+            height: 62px;
+            padding: 4px;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            &.beef_patty {
+              background-image: url(../../assets/images/beef_patty.png);
+            }
+            &.bun_top {
+              background-image: url(../../assets/images/bun_top.png);
+            }
+            &.lettuce {
+              background-image: url(../../assets/images/lettuce.png);
+            }
+            &.cheese {
+              background-image: url(../../assets/images/cheese.png);
+            }
+            &.bun_bottom {
+              background-image: url(../../assets/images/bun_bottom.png);
+            }
+            &.hydrogen {
+              background-image: url(../../assets/images/hydrogen.png);
+            }
+            &.oxygen {
+              background-image: url(../../assets/images/oxygen.png);
+            }
+          }
+        }
+        &.ui-droppable-active,
+        &.hover {
+          border-radius: 4px;
+          background-color: #d9ebff;
+          border: 1px dashed #052978;
+          .dropped-item {
+            display: none;
+          }
+        }
+      }
+
+      .bg-image {
+        width: 100%;
+        height: 125px;
+        background-image: url(../../assets/images/machine.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 40px;
+
+        .item-details {
+          margin-left: 63px;
+          margin-top: 83px;
+          font-variant: lining-nums;
+          &.hover {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .accessible-list {
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+
+      ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: flex-start;
+        justify-content: center;
+
+        li {
+          position: relative;
+          height: 104px;
+          width: 104px;
+          transform: translateX(2px);
+
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: none;
+            &:focus,
+            &:hover {
+              color: transparent;
+              background-color: transparent;
+            }
+            div {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

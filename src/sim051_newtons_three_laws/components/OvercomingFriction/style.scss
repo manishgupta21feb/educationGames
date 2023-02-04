@@ -1,0 +1,91 @@
+.overcoming-friction {
+  height: 100%;
+  width: 100%;
+
+  .heading {
+    color: var(--question-text-blue);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+
+    .heading-1 {
+      font-size: 18px;
+    }
+  }
+
+  .play-button {
+    width: 100%;
+    bottom: 24px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .next-button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wooden-box {
+    z-index: 0;
+    width: 147px;
+    height: 130px;
+    left: 302px;
+    bottom: 100px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/box.png);
+
+    &.slide-100 {
+      -webkit-animation: slide 3s linear;
+      animation: slide 3s linear;
+    }
+
+    &.slide-120 {
+      -webkit-animation: slide 2s linear;
+      animation: slide 2s linear;
+    }
+
+    &.slide-140 {
+      -webkit-animation: slide 1s linear;
+      animation: slide 1s linear;
+    }
+
+    &.box-pushed {
+      left: 2px !important;
+    }
+  }
+
+  @-webkit-keyframes slide {
+    from {
+      left: 302px;
+    }
+    to {
+      left: 2px;
+    }
+  }
+
+  @keyframes slide {
+    from {
+      left: 302px;
+    }
+    to {
+      left: 2px;
+    }
+  }
+
+  .bottom-box {
+    margin-top: 210px;
+    height: 136px;
+    width: 752px;
+    background-image: url(../../assets/images/table.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

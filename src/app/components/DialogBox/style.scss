@@ -1,0 +1,155 @@
+.dialogbox-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  background: transparent;
+
+  &.bg-with-opacity {
+    background: rgba(#35374c, 0.6);
+  }
+
+  .dialog-container {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    pointer-events: auto;
+    background: transparent;
+    padding: 16px 60px 24px 60px;
+    // transform: translateY(-1000px);
+    top: -1000px;
+    animation: slide-down 1s ease-in-out forwards;
+
+    display: flex;
+    flex-direction: row;
+    > div {
+      position: relative;
+      &:first-child {
+        span {
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          vertical-align: middle;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: transparent;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-left: 12px;
+        margin-top: 4px;
+
+        > div {
+          // Edited due to periodic table component
+          position: relative;
+        }
+        h1,
+        h2,
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          position: relative;
+          color: transparent;
+          letter-spacing: 0.15px;
+        }
+
+        h2 {
+          font-weight: bold;
+          margin-bottom: 8px;
+          margin-top: 1px;
+        }
+
+        div.dialogbox-buttons {
+          margin-top: 16px;
+          position: relative;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+
+          button {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+
+    &.positive {
+      background: var(--secondary-positive-light);
+      -webkit-box-shadow: inset 0 -2px 0 0 #1b8338;
+      box-shadow: inset 0 -2px 0 0 #1b8338;
+      > div {
+        &:first-child {
+          span {
+            background-image: url(../../assets/images/positive_icon.svg);
+          }
+        }
+
+        h1,
+        h2,
+        p {
+          color: var(--secondary-positive-dark);
+        }
+      }
+    }
+
+    &.help,
+    &.attention {
+      background: var(--secondary-attention-light);
+      -webkit-box-shadow: inset 0 -2px 0 0 #ba5b08;
+      box-shadow: inset 0 -2px 0 0 #ba5b08;
+      > div {
+        &:first-child {
+          span {
+            background-image: url(../../assets/images/attention_icon.svg);
+          }
+        }
+
+        h1,
+        h2,
+        p {
+          color: var(--secondary-attention-dark);
+        }
+      }
+    }
+
+    &.help {
+      > div {
+        &:first-child {
+          span {
+            background-image: url(../../assets/images/help_icon.svg);
+          }
+        }
+      }
+    }
+
+    &.warning {
+      background-color: var(--secondary-warning-light);
+      -webkit-box-shadow: inset 0 -2px 0 0 #d93025;
+      box-shadow: inset 0 -2px 0 0 #d93025;
+      > div {
+        &:first-child {
+          span {
+            background-image: url(../../assets/images/warning_icon.svg);
+          }
+        }
+        h1,
+        h2,
+        p {
+          color: var(--secondary-warning-dark);
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-down {
+  to {
+    // transform: translateY(0);
+    top: 0;
+  }
+}

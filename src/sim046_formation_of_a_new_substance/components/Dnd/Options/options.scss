@@ -1,0 +1,55 @@
+@import "../../../stylesheets/common/functions.scss";
+
+.drag-options {
+  margin-top: 8px;
+  &__option {
+    height: 32px;
+    border: 1px dashed var(--primary-blue);
+    border-radius: 16px;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    white-space: nowrap;
+    padding: 0px 15px;
+    padding-top: 2px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    outline: 1px solid transparent;
+    &:focus {
+      outline: unset;
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+    }
+    &:not(:disabled):hover {
+      border: 1px dashed var(--primary-blue);
+      background-color: var(--hover-state-color);
+    }
+    &.accessible {
+      @extend %absolute;
+      z-index: -1;
+    }
+    &.non-accessible {
+      cursor: grab;
+      &.hide{
+        visibility: hidden;
+      }
+    }
+    &.ui-draggable-dragging {
+      border: 1px solid #052978 !important;
+      background-color: var(--primary-blue) !important;
+      @extend %index-9, %color-white;
+    }
+    &:disabled {
+      color: var(--range-slider-unselected-value);
+      border: 1px solid var(--dark-grey);
+      cursor: default;
+    }
+  }
+}
+
+.no-outline{
+  .drag-options__option{
+    border: 1px dashed var(--primary-blue) !important;
+    &:disabled {
+      border: 1px solid var(--dark-grey) !important;
+    }
+  }
+}

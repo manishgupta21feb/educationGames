@@ -1,0 +1,42 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  left: 0;
+
+  div[role="main"] {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    // .full-Wrap {
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   position: relative;
+    //   opacity: 0;
+    //   pointer-events: none;
+    // }
+    //   .topbottom-wrap {
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     opacity: 0;
+    //     pointer-events: none;
+    //   }
+    //   .show {
+    //     opacity: 1;
+    //   }
+  }
+
+  @import "./activity/main.scss";
+}

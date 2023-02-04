@@ -1,0 +1,130 @@
+.top {
+  .top-view {
+    height: 100%;
+    width: 100%;
+
+    IMAGES STARTED //
+
+
+p{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--question-text-blue);
+}
+    .imagequestion1 {
+    
+    
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: transparent
+        url("../../assets/images/question1.png") center / cover
+        no-repeat;
+        .stageTextquestion1{
+        position: absolute;
+        top:150px;
+        left: 348px;
+        &.es {
+          left: 344px;
+        }
+        }
+        
+        &.hide {
+          display: none;
+          
+        }
+        
+    }
+    .imagequestion2 {
+
+ 
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: transparent
+        url("../../assets/images/question2.png") center / cover
+        no-repeat;
+        .stageTextquestion2{
+          position: absolute;
+          top:228px;
+          left: 520px;
+         
+        }
+       
+        &.hide {
+          display: none;
+          
+        }
+    }
+    .imagequestion3 {
+
+
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: transparent url("../../assets/images/question3.png")
+        center / cover no-repeat;
+        .stageTextquestion3{
+          position: absolute;
+          top:15px;
+          left: 320px;
+          &.es {
+            left: 270px;
+          }
+        }
+       
+        &.hide {
+          display: none;
+          
+        }
+    }
+    .imagequestion4 {
+   
+    
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: transparent
+        url("../../assets/images/question4.png") center / cover
+        no-repeat;
+        .stageTextquestion4{
+          position: absolute;
+          top:150px;
+          left: 560px;
+          &.es {
+            left: 558px;
+          }
+        }
+      
+        &.hide {
+          display: none;
+          
+        }
+    }
+  }
+}
+.bottom {
+  .commonHeadingText {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: var(--question-text-blue);
+  }
+  .mcq-question-area {
+    .inner-wrapper {
+      .heading {
+        margin-bottom: 2px;
+      }
+      .radiobuttons {
+        display: flex;
+        flex-direction: row;
+      }
+      .btn {
+        bottom: 24px;
+      }
+    }
+  }
+}

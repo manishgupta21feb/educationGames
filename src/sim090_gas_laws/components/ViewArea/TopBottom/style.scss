@@ -1,0 +1,449 @@
+.top-area {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  position: relative;
+  font-variant: lining-nums;
+
+  .daltonLaw {
+    width: 80%;
+    height: 80%;
+
+    background-image: url("../../../assets/images/Daltonslaw.png");
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+  }
+  .staticdaltontxt1 {
+    position: absolute;
+    top: 295px;
+    left: 176px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .staticdaltontxt2 {
+    position: absolute;
+    top: 295px;
+    left: 319px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .staticdaltontxt3 {
+    position: absolute;
+    top: 225px;
+    left: 415px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+  .staticdaltontxt4 {
+    position: absolute;
+    top: 295px;
+    left: 521px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .staticlussactxt1 {
+    position: absolute;
+    top: 20px;
+    left: 259px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .staticlussactxt2 {
+    position: absolute;
+    top: 20px;
+    left: 463px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .daltonLawquestion1 {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 17px;
+    left: 190px;
+    background-image: url("../../../assets/images/10.png");
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mcqdaltontxt1 {
+    position: absolute;
+    top: 272px;
+    left: 239px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    p:nth-child(2) {
+      position: absolute;
+      left: 11px;
+    }
+  }
+  .mcqdaltontxt2 {
+    position: absolute;
+    top: 272px;
+    left: 369px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    p:nth-child(2) {
+      position: absolute;
+      left: 12px;
+    }
+  }
+  .mcqdaltontxt3 {
+    position: absolute;
+    top: 272px;
+    left: 499px;
+    color: #052978;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    p:nth-child(2) {
+      position: absolute;
+      left: 15px;
+    }
+  }
+  .staticavogardotxt1 {
+    position: absolute;
+    top: 262px;
+    left: 160px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .staticavogardotxt2 {
+    position: absolute;
+    top: 262px;
+    left: 380px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .staticavogardotxt3 {
+    position: absolute;
+    top: 262px;
+    left: 610px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mcqavogardotxt1 {
+    position: absolute;
+    top: 173px;
+    left: 225px;
+    color: #35374c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mcqavogardotxt2 {
+    position: absolute;
+    top: 121px;
+    left: 349px;
+    color: #35374c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mcqavogardotxt3 {
+    position: absolute;
+    top: 63px;
+    left: 507px;
+    color: #35374c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mcqavogardotxt4 {
+    position: absolute;
+    top: 272px;
+    left: 228px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mcqavogardotxt5 {
+    position: absolute;
+    top: 272px;
+    left: 352px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mcqavogardotxt6 {
+    position: absolute;
+    top: 272px;
+    left: 507px;
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .staticigltxt1 {
+    position: absolute;
+    top: 93px;
+    left: 240px;
+  }
+  .staticigltxt2 {
+    position: absolute;
+    top: 156px;
+    left: 487px;
+  }
+  .staticigltxt3 {
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 134px;
+    left: 322px;
+  }
+  .staticigltxt4 {
+    color: #052978;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 17px;
+    position: absolute;
+    top: 216px;
+    left: 322px;
+  }
+}
+
+.idealGasLaw {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  background-image: url("../../../assets/images/Ideallargeframe.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-variant: lining-nums;
+}
+.idealGasLawquestion1 {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  background-image: url("../../../assets/images/ideal.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-variant: lining-nums;
+}
+.gayLussacLaw {
+  width: 730px;
+  height: 205px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background-image: url("../../../assets/images/24.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-variant: lining-nums;
+}
+.gayLussacLawquestion1,
+.gayLussacLawquestion2 {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  background-image: url("../../../assets/images/car.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.avogadrosLaw {
+  width: 696px;
+  height: 196px;
+  overflow: hidden;
+  position: absolute;
+  top: 52px;
+  left: 50px;
+  background-image: url("../../../assets/images/47.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.avogadrosLawquestion1,
+.avogadrosLawquestion2 {
+  width: 733px;
+  height: 260px;
+  overflow: hidden;
+  position: absolute;
+  top: 17px;
+  left: 36px;
+  background-image: url("../../../assets/images/48.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bottom-paraScreen1 {
+  font-variant: lining-nums;
+  color: #052978;
+
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  p:nth-child(2) {
+    margin-top: 10px;
+  }
+}
+
+.bottom-area {
+  position: relative;
+  height: 100%;
+  font-variant: lining-nums;
+
+  .mcq-question-area {
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-top: 5px;
+      margin-bottom: unset;
+      letter-spacing: 0.25px;
+      font-weight: 500;
+      color: var(--question-text-blue);
+    }
+    .inner-wrapper {
+      .question {
+        margin-bottom: unset;
+      }
+      .radiobuttons {
+        justify-content: space-between;
+        flex-direction: row;
+
+        .radiobutton {
+          width: unset;
+
+          label {
+            font-variant: lining-nums;
+            margin-top: 4px;
+          }
+        }
+      }
+      .submit-button {
+        top: 535px;
+
+        position: fixed;
+      }
+    }
+  }
+}

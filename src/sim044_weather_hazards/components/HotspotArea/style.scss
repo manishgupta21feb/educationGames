@@ -1,0 +1,55 @@
+.hotspot-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/map_img.png);
+
+  .sr-only-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: transparent;
+  }
+
+  .sr-image {
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .hotspot-btn-wrapper {
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.tarantula {
+      top: 330px;
+      left: 122px;
+    }
+
+    &.differentrocklayers {
+      top: 310px;
+      left: 245px;
+    }
+
+    &.stingray {
+      left: 365px;
+      top: 280px;
+    }
+
+    // &.pottery {
+    //   top: 477px;
+    //   left: 282px;
+    // }
+
+    &.coyotetracks {
+      top: 350px;
+      left: 380px;
+    }
+  }
+}

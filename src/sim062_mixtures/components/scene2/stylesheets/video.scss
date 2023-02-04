@@ -1,0 +1,66 @@
+.video-container {
+  .video-wrapper {
+    video {
+      &.poster1 {
+        background: transparent url("../../../assets/images/water_vinegar.png")
+          center / contain no-repeat;
+      }
+      &.poster2 {
+        background: transparent url("../../../assets/images/water_sugar.png")
+          center / contain no-repeat;
+      }
+      &.poster3 {
+        background: transparent url("../../../assets/images/water_iron.png")
+          center / contain no-repeat;
+      }
+      &.poster4 {
+        background: transparent url("../../../assets/images/water_soda.png")
+          center / contain no-repeat;
+      }
+      &.poster5 {
+        background: transparent url("../../../assets/images/water_beads.png")
+          center / contain no-repeat;
+      }
+      &.poster6 {
+        background: transparent url("../../../assets/images/vinegar_sugar.png")
+          center / contain no-repeat;
+      }
+      &.poster7 {
+        background: transparent url("../../../assets/images/vinegar_iron.png")
+          center / contain no-repeat;
+      }
+      &.poster8 {
+        background: transparent url("../../../assets/images/vinegar_soda.png")
+          center / contain no-repeat;
+      }
+      &.poster9 {
+        background: transparent url("../../../assets/images/vinegar_beads.png")
+          center / contain no-repeat;
+      }
+      &.poster10 {
+        background: transparent url("../../../assets/images/sugar_iron.png")
+          center / contain no-repeat;
+      }
+      &.poster11 {
+        background: transparent url("../../../assets/images/sugar_soda.png")
+          center / contain no-repeat;
+      }
+      &.poster12 {
+        background: transparent url("../../../assets/images/sugar_beads.png")
+          center / contain no-repeat;
+      }
+      &.poster13 {
+        background: transparent url("../../../assets/images/iron_soda.png")
+          center / contain no-repeat;
+      }
+      &.poster14 {
+        background: transparent url("../../../assets/images/iron_beads.png")
+          center / contain no-repeat;
+      }
+      &.poster15 {
+        background: transparent url("../../../assets/images/soda_beads.png")
+          center / contain no-repeat;
+      }
+    }
+  }
+}

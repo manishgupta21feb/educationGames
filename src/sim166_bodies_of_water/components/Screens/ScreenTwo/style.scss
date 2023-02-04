@@ -1,0 +1,86 @@
+.layout_2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .layout_inside {
+    margin: 80px 24px 14px 24px;
+    min-height: 520px;
+    overflow: hidden;
+    .heading {
+      height: 40px;
+      width: 752px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    .dragable_Container {
+      margin-top: 14px;
+      .dropbox {
+        box-sizing: border-box;
+        height: 114px;
+        width: 752px;
+        border-radius: 4px;
+        .title_box {
+          display: flex;
+          background-color: var(--question-text-blue);
+          height: 24px;
+          width: 752px;
+          .title {
+            margin: 2px 2px 2px 12px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            color: white;
+          }
+        }
+      }
+    }
+    .droppable_container {
+      margin-top: 36px;
+    }
+    .accessible-list {
+      left: 60px;
+      width: 656px;
+      height: 271px;
+      border: none;
+      top: 308px;
+      background: transparent;
+      ul {
+        li {
+          height: 261px;
+          position: absolute;
+          padding: 28px 27px;
+          top: 6px;
+
+          &:nth-child(1) {
+            left: 45px;
+            width: 185px;
+          }
+          &:nth-child(2) {
+            width: 139px;
+            left: 259px;
+            padding: 26px 15px;
+          }
+          &:nth-child(3) {
+            left: 419px;
+            width: 192px;
+          }
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: none;
+            div {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

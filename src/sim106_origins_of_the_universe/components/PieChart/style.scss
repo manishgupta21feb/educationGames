@@ -1,0 +1,151 @@
+.mainContaint {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  height: 250px;
+  width: 400px;
+
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+  .containtFirst,
+  .containtSecond {
+
+    padding-top: 96px;
+    padding-left: 45px;
+
+
+    .graph-container {
+      width: 350px;
+      margin-top: 26px;
+      display: flex;
+      flex-direction: row;
+      .graph {
+        height: 114px !important;
+        width: 114px !important;
+        position: relative;
+      }
+      .label-container {
+        margin-left: 20px;
+        .labels {
+          display: flex;
+          flex-direction: column;
+          .label {
+            display: flex;
+            margin-top: 21px;
+            .label-box {
+              height: 12px;
+              width: 12px;
+              border-radius: 2px;
+              margin-right: 8px;
+              background: none;
+              &.pattern1 {
+                background-color: #ba5b08;
+              }
+              &.pattern2 {
+                background-color: #35374c;
+              }
+              &.pattern3 {
+                background-color: #0056b3;
+              }
+              &.pattern4 {
+                background-color: #35374c;
+              }
+            }
+            .patternLabel {
+              height: 16px;
+              color: #35374c;
+              font-size: 14px;
+              letter-spacing: 0.47px;
+              line-height: 16px;
+              font-variant: lining-nums;
+            }
+          }
+        }
+      }
+    }
+    .main-vid {
+      width: 478px;
+      height: 247px;
+      margin-top: 14px;
+      margin-left: 66px;
+      .video-container {
+        .video-wrapper {
+          video {
+            &.Ques1 {
+              background: url() transparent center / contain no-repeat;
+            }
+            &.Ques2 {
+              background: url() transparent center/ contain no-repeat;
+            }
+            &.Ques3 {
+              background: url() transparent center / contain no-repeat;
+            }
+            &.Ques4 {
+              background: url() transparent center/ contain no-repeat;
+            }
+          }
+        }
+        .play-pause-buttons {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          .btn {
+            opacity: 1;
+            border-radius: 50%;
+            justify-content: center;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%);
+            .icon {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    .currentSpace {
+      width: 77px;
+      bottom: 22px;
+      right: 249px;
+      position: absolute;
+      color: #052978;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .earlySpace {
+      left: 78px;
+      width: 77px;
+      bottom: 22px;
+      position: absolute;
+      color: #052978;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
+.main-text {
+  max-height: 144px;
+  margin-top: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 720px;
+  p {
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #352103;
+  }
+  .para-second,
+  .para-third {
+    margin-top: 12px;
+  }
+}

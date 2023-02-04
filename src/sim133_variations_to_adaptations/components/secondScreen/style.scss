@@ -1,0 +1,44 @@
+.sim133 .SecondScreenText {
+  position: relative;
+  height: 186px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    height: 60px;
+    width: 752px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 80px;
+  }
+}
+
+.sim133 .SecondScreenImg {
+  background-image: url("../../assets/images/5.png");
+  width: 724px;
+  height: 246px;
+  background-size: contain;
+  position: relative;
+}
+
+.sim133 .birdText {
+  height: 20px;
+  width: 122px;
+  color: #352103;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  position: relative;
+}
+
+.largeBeakedBirdTxt {
+  left: 115px;
+}
+.smallBeakedBirdTxt {
+  left: 510px;
+  bottom: 23px;
+}

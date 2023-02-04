@@ -1,0 +1,289 @@
+@import './variables';
+@import './mixins';
+
+
+//Background
+%bg-white {
+  background-color: #ffffff;
+}
+
+%bg-black {
+  background-color: #000000;
+}
+
+%bg-transparent {
+  background-color: transparent;
+}
+
+%bg-size-full {
+  background-size: 100% 100%;
+}
+
+%bg-cover {
+  background-size: cover;
+}
+
+%bg-contain {
+  background-size: contain;
+}
+
+%bg-unset {
+  background-image: unset;
+}
+
+%bg-position-center {
+  background-position: center center;
+}
+
+%bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+%no-bg-color {
+  background-color: unset;
+}
+
+//Colors
+%color-white {
+  color: #ffffff;
+}
+
+%color-black {
+  color: #000000;
+}
+
+//Gaps
+%no-padding {
+  padding: 0px;
+}
+
+%no-margin {
+  margin: 0px;
+}
+
+%margin-auto {
+  margin: auto;
+}
+
+%margin-zero-auto {
+  margin: 0px auto;
+}
+
+// Positions
+%relative {
+  position: relative;
+}
+
+%absolute {
+  position: absolute;
+}
+
+%fixed {
+  position: fixed;
+}
+
+// Display
+%inline {
+  display: inline;
+}
+
+%block {
+  display: block;
+}
+
+%inline-block {
+  display: inline-block;
+}
+
+%none {
+  display: none;
+}
+
+%visibility-hidden {
+  visibility: hidden;
+}
+
+%visibility-visible {
+  visibility: visible;
+}
+
+%overflow-hidden {
+  overflow: hidden;
+}
+
+%opacity-show {
+  opacity: 1;
+}
+
+%opacity-hide {
+  opacity: 0;
+}
+
+%flex {
+  display: flex;
+}
+
+%flex-center-both {
+	@extend %flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%flex-center-horizontal {
+	@extend %flex;
+	justify-content: center;
+}
+%flex-center-vertical {
+	@extend %flex;
+	align-items: center;
+}
+
+
+//Float Directio
+%left {
+  float: left;
+}
+
+%right {
+  float: right;
+}
+
+//Full Object
+%full-object {
+  width: 100%;
+  height: 100%;
+}
+
+%full-object-max {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+%none-object {
+  width: 0;
+  height: 0;
+}
+
+%full-height {
+  height: 100%;
+}
+
+
+%full-width {
+  width: 100%;
+}
+
+%full-screen-height {
+  height: 100vh;
+}
+
+// Center
+%center-text {
+  text-align: center;
+}
+
+%list-none {
+  list-style-type: none;
+}
+
+%center-both {
+  @extend %absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%center-hrzn {
+  @extend %absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%center-vert {
+  @extend %absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%center-both-text {
+  @extend %center-vert;
+  @extend %center-text;
+  width: 100%;
+}
+
+%center-image {
+  @extend %center-both;
+  @extend %full-object-max;
+}
+
+//Overlay
+%overlay {
+  @extend %absolute;
+  @extend %full-object;
+  top: 0;
+  left: 0;
+}
+
+%ba-overlay {
+  content: '';
+  @extend %overlay;
+}
+
+//Cursor
+%cursor-pointer {
+  cursor: pointer;
+}
+
+%pointer-event-none {
+  pointer-events: none;
+}
+
+//Border
+%border-none {
+  border: none;
+}
+
+//perserve3d
+%preservethreeD {
+  transform-style: preserve-3d;
+}
+
+//Zero Position
+$directions: top,
+right,
+bottom,
+left;
+
+@each $direction in $directions {
+  %#{$direction}-zero {
+    #{$direction}: 0px;
+  }
+}
+
+//Zero Position !important
+@each $direction in $directions {
+  %#{$direction}-zero-imp {
+    #{$direction}: 0px !important;
+  }
+}
+
+%all-directions-zero {
+  @extend %top-zero;
+  @extend %right-zero;
+  @extend %bottom-zero;
+  @extend %left-zero;
+}
+
+
+//IE & safari Does not support this - use, if mentioned browser are not in you tragted list
+%all-directions-zero-not-ie-s {
+  inset: 0;
+}
+
+//Index 0 to 11 (We Don't Need More Than 11 Index)
+@for $count from 0 to 11 {
+  %index-#{$count} {
+    z-index: $count;
+  }
+}
+

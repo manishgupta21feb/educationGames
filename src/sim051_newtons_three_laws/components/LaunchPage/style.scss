@@ -1,0 +1,105 @@
+.heading {
+  color: var(--question-text-blue);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+.experiment-box-container {
+  margin-top: 83px;
+  display: flex;
+  justify-content: space-evenly;
+  .box-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .experiment-box {
+      position: relative;
+      height: 234px;
+      width: 312px;
+      border: 1px solid #979797;
+      border-radius: 4px;
+      margin-bottom: 18px;
+      .arrows{
+        left: 0px;
+        top: 0px;
+
+        .left-text {
+          left: 72px;
+          top: 146px;
+        }
+
+        .arrow {
+          &.left {
+            top: 146px;
+            left: 82px;
+          }
+          &.top {
+            top: 93px;
+            left: 134px;
+          }
+          &.right {
+            top: 151px;
+            left: 198px;
+          }
+          &.bottom {
+            top: 204px;
+            left: 141px;
+          }
+        }
+      }
+
+      .bottom-tab{
+        background-image: url(../../assets/images/table.png);
+        height: 68px;
+        width: 311px;
+        position: absolute;
+        bottom: -12px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.overcomingFriction{
+        .bottom-tab{
+          bottom: -12px;
+          left: -1px;
+        }
+      }
+      &.netForce {
+        .bottom-tab{
+          bottom: -12px;
+        }
+        .right-text {
+          position: absolute;
+          font-variant: lining-nums;
+          left: 235px;
+          top: 151px;
+        }
+
+        .arrow {
+          &.right {
+            .head {
+              border-right-color: var(--secondary-positive-green);
+            }
+            .tail {
+              background-color: var(--secondary-positive-green);
+            }
+          }
+        }
+      }
+
+      .box-img {
+        height: 89px;
+        width: 90px;
+        background-image: url(../../assets/images/box.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 106px;
+        left: 111px;
+        z-index: 1;
+      }
+    }
+  }
+}

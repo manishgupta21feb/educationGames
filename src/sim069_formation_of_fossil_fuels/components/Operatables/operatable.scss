@@ -1,0 +1,102 @@
+@import "../../stylesheets/common/functions.scss";
+
+.operatable {
+  @include rectangle(117px, 66px, 1px dashed #0056b3);
+  @extend %cursor-pointer, %relative;
+  &.opacDown {
+    opacity: 0.6;
+  }
+  div {
+    @extend %absolute, %top-zero, %left-zero;
+  }
+  div,
+  button {
+    @extend %full-object;
+    background: {
+      color: #fff;
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    }
+  }
+  button {
+    &:disabled + div {
+      pointer-events: none;
+    }
+    &:focus:not(:disabled) {
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+      outline: none;
+    }
+  }
+
+  & + & {
+    margin-left: 8px;
+  }
+}
+
+.no-outline {
+  .operatable,
+  .placement {
+    &:focus {
+      border: 1px dashed #0056b3;
+    }
+  }
+}
+
+.discription-box {
+  @extend %absolute, %inline-block;
+  width: 752px;
+  height: auto;
+  padding: 8px 44px 16px 12px;
+  border: 1px solid var(--secondary-attention-orange) !important;
+  border-radius: 8px;
+  background-color: var(--secondary-attention-light);
+  top: 85px;
+  left: 24px;
+  .icon-only {
+    @extend %absolute, %right-zero, %top-zero;
+  }
+
+  &::before {
+    content: "";
+    @extend %absolute, %index-1;
+    width: 23px;
+    height: 18px;
+    background-color: #fbf1e9;
+    border-top-left-radius: 4px;
+    top: -10px;
+    transform: rotate(37deg);
+    border: {
+      width: 1px 0 0 1px;
+      style: solid;
+      color: #ba5b08;
+    }
+  }
+
+  &.active0::before {
+    left: 6.5%;
+  }
+  &.active1::before {
+    left: 23%;
+  }
+  &.active2::before {
+    left: 39.5%;
+  }
+  &.active3::before {
+    left: 56%;
+  }
+  &.active4::before {
+    left: 73%;
+  }
+  &.active5::before {
+    left: 89%;
+  }
+}
+
+.wrapper--operatable {
+  padding: 0 24px;
+
+  .operatable-wrapper {
+    display: flex;
+  }
+}

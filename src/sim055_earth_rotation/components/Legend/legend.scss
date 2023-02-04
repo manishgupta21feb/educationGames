@@ -1,0 +1,30 @@
+@import '../../stylesheets/common/functions.scss';
+
+.legend{
+  @extend %absolute,
+  %full-width,
+  %flex-center-horizontal;
+  bottom: 10px;
+  &__item{
+    @extend %inline-block;
+    &:last-child{
+      margin-left: 25px;
+    }
+  }
+  &__icon{
+    width: 14px;
+    margin-right: 3px;
+
+    @extend %inline-block;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__title{
+    @extend %color-white,
+    %relative,
+    %inline;
+    font-size: 11px;
+    top: -2px;
+  }
+}

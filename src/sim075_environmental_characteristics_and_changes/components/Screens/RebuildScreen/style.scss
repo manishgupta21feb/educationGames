@@ -1,0 +1,116 @@
+.screen2-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.q1-one-q2-one {
+    background-image: url(../../../assets/images/art_5.jpg);
+  }
+  &.q1-one-q2-two {
+    background-image: url(../../../assets/images/art_4.jpg);
+  }
+  &.q1-one-q2-three {
+    background-image: url(../../../assets/images/art_3.jpg);
+  }
+  &.q1-one-q2-four {
+    background-image: url(../../../assets/images/art_2.jpg);
+  }
+
+  &.q1-two-q2-one {
+    background-image: url(../../../assets/images/art_13.jpg);
+  }
+  &.q1-two-q2-two {
+    background-image: url(../../../assets/images/art_12.jpg);
+  }
+  &.q1-two-q2-three {
+    background-image: url(../../../assets/images/art_11.jpg);
+  }
+  &.q1-two-q2-four {
+    background-image: url(../../../assets/images/art_10.jpg);
+  }
+
+  &.q1-three-q2-one {
+    background-image: url(../../../assets/images/art_9.jpg);
+  }
+  &.q1-three-q2-two {
+    background-image: url(../../../assets/images/art_8.jpg);
+  }
+  &.q1-three-q2-three {
+    background-image: url(../../../assets/images/art_7.jpg);
+  }
+  &.q1-three-q2-four {
+    background-image: url(../../../assets/images/art_6.jpg);
+  }
+
+  .instructor {
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .radiobuttons {
+    padding-top: 1px;
+    flex-direction: row;
+    padding-right: 150px;
+    justify-content: space-between;
+    .radiobutton {
+      margin-right: 0px;
+      max-width: 234px;
+      .radiobutton-inner-wrapper {
+        align-items: center !important;
+        input[type="radio"] + div + label {
+          font-size: 14px;
+          color: #35374c;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .infoBox {
+    width: 752px;
+    padding: 12px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+    .content {
+      color: #35374c;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+  }
+
+  .ratingBox {
+    bottom: 88px;
+    right: 24px;
+  }
+
+  .submit-button {
+    width: 100%;
+    bottom: 24px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .finish-button {
+  }
+}

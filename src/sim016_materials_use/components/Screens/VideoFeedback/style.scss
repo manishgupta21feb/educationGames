@@ -1,0 +1,10 @@
+.video-container {
+  .video-wrapper {
+    video {
+      &.wooden-material {
+        background: transparent url(../../../assets/images/vid_thumb.png) center /
+          contain no-repeat;
+      }
+    }
+  }
+}

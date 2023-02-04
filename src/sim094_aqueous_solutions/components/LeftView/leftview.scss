@@ -1,0 +1,8 @@
+@import "../../stylesheets/common/functions.scss";
+
+.object {
+  @extend %full-object;
+  &__img {
+    @extend %full-object;
+  }
+}

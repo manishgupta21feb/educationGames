@@ -1,0 +1,562 @@
+.left-area-treeBG {
+  background-image: url("../../assets/images/plant/tree_bg.png") !important;
+  background-size: contain;
+}
+
+.left-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #effcfc;
+
+  .bg-dropzone {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .monkey-final-img {
+    background-image: url("../../assets/images/monkey/8.png");
+    width: 399px;
+    height: 499px;
+    background-size: contain;
+  }
+
+  .tree-final-img {
+    background-image: url("../../assets/images/plant/2.png");
+    width: 288px;
+    height: 564px;
+    background-size: contain;
+  }
+
+  .moneky-bg {
+    background-image: url("../../assets/images/monkey/18.png");
+    width: 400px;
+    height: 500px;
+    background-size: contain;
+  }
+
+  .tree-bg {
+    background-image: url("../../assets/images/plant/extra\ 1.png");
+    width: 286px;
+    height: 563px;
+    background-size: contain;
+  }
+
+  .start-label {
+    top: 18px;
+    left: 120px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+  }
+
+  .dropped-item-label {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+
+    &.dropzone1 {
+      top: 134px;
+      left: 71px;
+      width: 163px;
+      height: 146px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/11.png");
+    }
+    &.dropzone2 {
+      top: 122px;
+      left: 227px;
+      width: 40px;
+      height: 50.33px;
+      background-size: cover;
+      background-image: url("../../assets/images/monkey/13.png");
+    }
+    &.dropzone3 {
+      top: 375px;
+      left: 169px;
+      width: 93px;
+      height: 174px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/10.png");
+    }
+    &.dropzone4 {
+      top: 115px;
+      left: 351px;
+      width: 39px;
+      height: 48px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/16.png");
+    }
+    &.dropzone5 {
+      top: 305px;
+      left: 93px;
+      width: 120px;
+      height: 84px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/17.png");
+    }
+    &.dropzone6 {
+      top: 134px;
+      left: 312px;
+      width: 157px;
+      height: 146px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/12.png");
+    }
+    &.dropzone7 {
+      top: 122px;
+      left: 282.5px;
+      width: 40px;
+      height: 50.33px;
+      background-size: cover;
+      background-image: url("../../assets/images/monkey/14.png");
+    }
+    &.dropzone8 {
+      top: 364px;
+      left: 292px;
+      width: 107px;
+      height: 186px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/9.png");
+    }
+    &.dropzone9 {
+      top: 115px;
+      left: 160px;
+      width: 39px;
+      height: 48px;
+      background-size: contain;
+      background-image: url("../../assets/images/monkey/15.png");
+    }
+
+    //______________________________________
+
+    &.treeDropzone1 {
+      bottom: 19px;
+      left: 165px;
+      width: 213px;
+      height: 173px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/5.png");
+    }
+
+    &.treeDropzone2 {
+      top: 82px;
+      left: 147px;
+      width: 222px;
+      height: 328px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/6.png");
+    }
+
+    &.treeDropzone3 {
+      top: 18px;
+      left: 125px;
+      width: 285px;
+      height: 372px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/3.png");
+    }
+
+    &.treeDropzone4 {
+      top: 18px;
+      left: 285px;
+      width: 128px;
+      height: 137px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/4.png");
+    }
+
+    &.treeDropzone5 {
+      top: 125px;
+      left: 251px;
+      width: 88px;
+      height: 131px;
+      z-index: 1;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/7.png");
+    }
+  }
+
+  .dropzone-label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &.label-dropzone1 {
+      top: 184px;
+      left: 92px;
+      width: 110px;
+      height: 98px;
+    }
+    &.label-dropzone2 {
+      top: 120px;
+      left: 224px;
+      width: 42px;
+      height: 53px;
+    }
+    &.label-dropzone3 {
+      top: 390px;
+      left: 177px;
+      width: 84px;
+      height: 174px;
+    }
+    &.label-dropzone4 {
+      top: 112px;
+      left: 357px;
+      width: 32px;
+      height: 52px;
+    }
+    &.label-dropzone5 {
+      top: 298px;
+      left: 88px;
+      width: 120px;
+      height: 82px;
+    }
+    &.label-dropzone6 {
+      top: 183px;
+      left: 330px;
+      width: 110px;
+      height: 98px;
+    }
+    &.label-dropzone7 {
+      top: 120px;
+      left: 281px;
+      width: 42px;
+      height: 53px;
+    }
+    &.label-dropzone8 {
+      top: 390px;
+      left: 296px;
+      width: 84px;
+      height: 174px;
+    }
+    &.label-dropzone9 {
+      top: 112px;
+      left: 160px;
+      width: 32px;
+      height: 52px;
+    }
+
+    &.label-treeDropzone1 {
+      bottom: 23px;
+      left: 169px;
+      width: 207px;
+      height: 167px;
+    }
+
+    &.label-treeDropzone2 {
+      // top: 100px;
+      // left: 155px;
+      // width: 209px;
+      // height: 310px;
+
+      top: 100px;
+      left: 216px;
+      width: 120px;
+      height: 310px;
+    }
+
+    &.label-treeDropzone3 {
+      top: 154px;
+      left: 92px;
+      width: 320px;
+      height: 226px;
+    }
+
+    &.label-treeDropzone4 {
+      top: 35px;
+      left: 304px;
+      width: 92px;
+      height: 110px;
+    }
+
+    &.label-treeDropzone5 {
+      top: 132px;
+      left: 250px;
+      width: 90px;
+      height: 131px;
+    }
+
+    .dropzone {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+
+      &.ui-droppable {
+        opacity: 0.4;
+        background: var(--hover-state-color);
+      }
+    }
+  }
+  .ui-droppable-hover.temp {
+    &.label-dropzone1 {
+      background-image: url("../../assets/images/monkey/extra\ 4.png");
+      top: 134px;
+      left: 71px;
+      width: 163px;
+      height: 146px;
+      background-size: contain;
+    }
+    &.label-dropzone2 {
+      background-image: url("../../assets/images/monkey/extra\ 10.png");
+      top: 122px;
+      left: 227px;
+      width: 40px;
+      height: 50px;
+      background-size: contain;
+    }
+    &.label-dropzone3 {
+      background-image: url("../../assets/images/monkey/extra\ 7.png");
+      top: 375px;
+      left: 169px;
+      width: 93px;
+      height: 174px;
+      background-size: contain;
+    }
+    &.label-dropzone4 {
+      background-image: url("../../assets/images/monkey/extra\ 6.png");
+      top: 115px;
+      left: 351px;
+      width: 39px;
+      height: 48px;
+      background-size: contain;
+    }
+    &.label-dropzone5 {
+      background-image: url("../../assets/images/monkey/extra\ 9.png");
+      top: 305px;
+      left: 93px;
+      width: 120px;
+      height: 84px;
+      background-size: contain;
+    }
+    &.label-dropzone6 {
+      background-image: url("../../assets/images/monkey/extra\ 2.png");
+      top: 134px;
+      left: 312px;
+      width: 157px;
+      height: 146px;
+      background-size: contain;
+    }
+    &.label-dropzone7 {
+      background-image: url("../../assets/images/monkey/extra\ 11.png");
+      top: 122px;
+      left: 282.5px;
+      width: 40px;
+      height: 50px;
+      background-size: contain;
+    }
+    &.label-dropzone8 {
+      background-image: url("../../assets/images/monkey/extra\ 8.png");
+      top: 364px;
+      left: 292px;
+      width: 107px;
+      height: 186px;
+      background-size: contain;
+    }
+    &.label-dropzone9 {
+      background-image: url("../../assets/images/monkey/extra\ 5.png");
+      top: 115px;
+      left: 160px;
+      width: 39px;
+      height: 48px;
+      background-size: contain;
+    }
+
+    &.label-treeDropzone1 {
+      bottom: 19px;
+      left: 165px;
+      width: 213px;
+      height: 173px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/extra\ 15.png");
+    }
+    &.label-treeDropzone2 {
+      top: 82px;
+      left: 147px;
+      width: 222px;
+      height: 328px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/extra\ 16.png");
+    }
+
+    &.label-treeDropzone3 {
+      top: 18px;
+      left: 125px;
+      width: 285px;
+      height: 372px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/extra\ 14.png");
+    }
+
+    &.label-treeDropzone4 {
+      top: 18px;
+      left: 285px;
+      width: 128px;
+      height: 137px;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/extra\ 12.png");
+    }
+    &.label-treeDropzone5 {
+      top: 132px;
+      left: 251px;
+      width: 88px;
+      height: 119px;
+      z-index: 1;
+      background-size: contain;
+      background-image: url("../../assets/images/plant/extra\ 13.png");
+    }
+  }
+
+  .finish-label {
+    right: 33px;
+    bottom: 100px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+  }
+
+  .accessible-list {
+    top: 0;
+    left: 0;
+    border: none;
+    background: transparent;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        &.treeDropzone1 {
+          top: 423px;
+          left: 169px;
+          width: 207px;
+          height: 167px;
+        }
+        &.treeDropzone2 {
+          top: 100px;
+          left: 250px;
+          width: 50px;
+          height: 310px;
+        }
+        &.treeDropzone3 {
+          top: 154px;
+          left: 92px;
+          width: 320px;
+          height: 226px;
+        }
+        &.treeDropzone4 {
+          top: 35px;
+          left: 304px;
+          width: 92px;
+          height: 110px;
+        }
+        &.treeDropzone5 {
+          top: 154px;
+          left: 264px;
+          width: 65px;
+          height: 87px;
+        }
+
+        &.dropzone1 {
+          top: 184px;
+          left: 92px;
+          width: 110px;
+          height: 98px;
+        }
+        &.dropzone2 {
+          top: 120px;
+          left: 224px;
+          width: 42px;
+          height: 53px;
+        }
+        &.dropzone3 {
+          top: 390px;
+          left: 177px;
+          width: 84px;
+          height: 174px;
+        }
+        &.dropzone4 {
+          top: 112px;
+          left: 357px;
+          width: 32px;
+          height: 52px;
+        }
+        &.dropzone5 {
+          top: 305px;
+          left: 88px;
+          width: 120px;
+          height: 82px;
+        }
+        &.dropzone6 {
+          top: 183px;
+          left: 330px;
+          width: 110px;
+          height: 98px;
+        }
+        &.dropzone7 {
+          top: 120px;
+          left: 281px;
+          width: 42px;
+          height: 53px;
+        }
+        &.dropzone8 {
+          top: 390px;
+          left: 296px;
+          width: 84px;
+          height: 174px;
+        }
+        &.dropzone9 {
+          top: 112px;
+          left: 160px;
+          width: 32px;
+          height: 52px;
+        }
+
+        a {
+          padding: 0;
+          line-height: unset;
+          width: 100%;
+          height: 100%;
+          display: block;
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+
+          div {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &.highlight {
+    box-sizing: border-box;
+    border: 1px solid var(--question-text-blue);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: rgba(217, 235, 255, 0.24);
+  }
+}

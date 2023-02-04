@@ -1,0 +1,467 @@
+.screen14-center {
+  .heading {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    position: relative;
+    top: 76px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .animation-area {
+    .atom1 {
+      top: 141px;
+      left: 18px;
+      animation: myfirst 4s linear forwards;
+    }
+    @keyframes myfirst {
+      0% {
+        left: 14px;
+      }
+      100% {
+        left: 107px;
+        opacity: 0;
+      }
+    }
+
+    .atom2 {
+      top: 141px;
+      left: 487px;
+      animation: mySecond 4s linear forwards;
+    }
+    @keyframes mySecond {
+      0% {
+        left: 449px;
+      }
+      100% {
+        left: 355px;
+        opacity: 0;
+      }
+    }
+
+    .atom3 {
+      left: 167px;
+      border: 2px solid transparent;
+      width: 37%;
+      position: absolute;
+      height: 20%;
+      top: 139px;
+      opacity: 0;
+      animation: myThird 3s ease-out forwards;
+      animation-delay: 4s;
+    }
+    @keyframes myThird {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .atom4 {
+      position: absolute;
+      top: 226px;
+      width: 59px;
+      left: 318px;
+      transform: rotate(-69deg);
+      animation: myFour 3s ease-out forwards;
+      animation-delay: 5s;
+      opacity: 0;
+      height: 14px;
+    }
+
+    .atom5 {
+      font-size: 14px;
+      position: absolute;
+      top: 268px;
+      font-weight: 600;
+      left: 290px;
+      animation: myFour 3s ease-out forwards;
+      animation-delay: 5s;
+      opacity: 0;
+    }
+
+    @keyframes myFour {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.screen15-center {
+  .heading {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    position: relative;
+    top: 76px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .animation-area {
+    .hidden {
+      opacity: 0;
+      animation: 3s ease-out;
+    }
+    .upperbond {
+      .bond1 {
+        position: relative;
+        height: 56px;
+        width: 78px;
+        top: 123px;
+        left: 378px;
+        z-index: 1;
+        .upperbond1 {
+          font-weight: 600;
+          position: relative;
+          font-size: 13px;
+          top: -2px;
+          left: 31px;
+        }
+        .upperbond2 {
+          font-weight: 600;
+          position: relative;
+          top: 152px;
+          left: 371px;
+          font-size: 13px;
+          top: -29px;
+          left: -9px;
+        }
+        .upperbond4 {
+          background: black;
+          width: 2px;
+          height: 20px;
+          position: relative;
+          transform: rotate(-44deg);
+          left: 19px;
+          top: -36px;
+        }
+      }
+
+      @keyframes bondOneAni {
+        0% {
+          top: 92px;
+        }
+        100% {
+          top: 257px;
+          left: 336px;
+          opacity: 0;
+        }
+      }
+
+      .bond2 {
+        position: relative;
+        height: 56px;
+        width: 78px;
+        top: -37px;
+        left: 2px;
+        top: 28px;
+        left: 377px;
+        z-index: 1;
+        .upperbond3 {
+          font-weight: 600;
+          position: relative;
+          font-size: 13px;
+          top: 9px;
+          left: 56px;
+        }
+        .upperbond5 {
+          background: black;
+          width: 2px;
+          height: 20px;
+          position: relative;
+          transform: rotate(35deg);
+          top: 2px;
+          left: 49px;
+        }
+      }
+      @keyframes bondTwoAni {
+        0% {
+          top: 55px;
+        }
+        100% {
+          top: 221px;
+          opacity: 0;
+        }
+      }
+    }
+
+    .atomImg1 {
+      position: relative;
+      left: 155px;
+      top: 64px;
+    }
+
+    @keyframes atomImg1Ani {
+      0% {
+        left: 155px;
+      }
+      99% {
+        left: 96px;
+      }
+      100% {
+        left: 96px;
+        opacity: 0;
+      }
+    }
+
+    .atomImg2 {
+      position: relative;
+      left: 401px;
+      top: -82px;
+    }
+    @keyframes atomImg2Ani {
+      0% {
+        left: 401px;
+      }
+      99% {
+        left: 448px;
+      }
+      100% {
+        left: 96px;
+        opacity: 0;
+      }
+    }
+
+    .atomImg3 {
+      position: relative;
+      top: -227px;
+      left: 92px;
+      opacity: 0;
+      animation-delay: 2s;
+      .glycineImg {
+        width: 78%;
+        position: relative;
+        top: 1px;
+        left: -3px;
+      }
+
+      .lbl1 {
+        font-weight: 600;
+        position: relative;
+        top: -80px;
+        left: 3px;
+        font-size: 12px;
+      }
+
+      .lbl2 {
+        font-weight: 600;
+        position: relative;
+        top: -79px;
+        left: 33px;
+        font-size: 12px;
+      }
+      .lbl3 {
+        font-weight: 600;
+        position: relative;
+        top: -91px;
+        left: 24px;
+        font-size: 12px;
+      }
+      .lbl4 {
+        font-weight: 600;
+        position: relative;
+        top: -37px;
+        left: 13px;
+        font-size: 12px;
+      }
+      .lbl5 {
+        font-weight: 600;
+        position: relative;
+        top: -79px;
+        left: 48px;
+        font-size: 12px;
+      }
+      .lbl6 {
+        font-weight: 600;
+        position: relative;
+        top: -121px;
+        left: 39px;
+        font-size: 12px;
+      }
+      .lbl7 {
+        font-weight: 600;
+        position: relative;
+        top: -37px;
+        left: 28px;
+        font-size: 12px;
+      }
+      .lbl8 {
+        font-weight: 600;
+        position: relative;
+        top: -121px;
+        left: 60px;
+        font-size: 12px;
+      }
+      .lbl9 {
+        font-weight: 600;
+        position: relative;
+        top: -123px;
+        left: 45px;
+        font-size: 13px;
+      }
+      .lbl10 {
+        font-weight: 600;
+        position: relative;
+        top: -122px;
+        left: 56px;
+        font-size: 13px;
+      }
+      .lbl11 {
+        font-weight: 600;
+        position: relative;
+        top: -80px;
+        left: 43px;
+        font-size: 12px;
+      }
+      .lbl12 {
+        font-weight: 600;
+        position: relative;
+        top: -80px;
+        left: 77px;
+        font-size: 12px;
+      }
+      .lbl13 {
+        font-weight: 600;
+        position: relative;
+        top: -91px;
+        left: 68px;
+        font-size: 13px;
+      }
+      .lbl14 {
+        font-weight: 600;
+        position: relative;
+        top: -75px;
+        left: 60px;
+        font-size: 13px;
+      }
+      .lbl15 {
+        font-weight: 600;
+        position: relative;
+        top: -80px;
+        left: 90px;
+        font-size: 12px;
+      }
+    }
+
+    @keyframes atomImg3Ani {
+      0% {
+        // left: 401px;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .alanineArea {
+      position: relative;
+      left: 357px;
+      top: -384px;
+      border: 2px solid;
+      width: 333px;
+      height: 272px;
+      border: none;
+      animation-delay: 2s;
+      opacity: 0;
+
+      .alanineImg {
+        height: 40%;
+        position: relative;
+        top: 8px;
+        left: 61px;
+      }
+
+      .lbl1 {
+        font-weight: 600;
+        position: absolute;
+        top: 31px;
+        left: 59px;
+        font-size: 12px;
+      }
+      .lbl2 {
+        font-weight: 600;
+        position: absolute;
+        top: 77px;
+        left: 59px;
+        font-size: 12px;
+      }
+      .lbl3 {
+        font-weight: 600;
+        position: absolute;
+        top: 55px;
+        left: 108px;
+        font-size: 12px;
+      }
+      .lbl4 {
+        font-weight: 600;
+        position: absolute;
+        top: 55px;
+        left: 150px;
+        font-size: 12px;
+      }
+
+      .lbl5 {
+        font-weight: 600;
+        position: absolute;
+        top: 17px;
+        left: 150px;
+        font-size: 12px;
+      }
+
+      .lbl6 {
+        font-weight: 600;
+        position: absolute;
+        top: 95px;
+        left: 146px;
+        font-size: 12px;
+      }
+      .lbl7 {
+        font-weight: 600;
+        position: absolute;
+        top: 98px;
+        left: 164px;
+        font-size: 12px;
+      }
+      .lbl8 {
+        font-weight: 600;
+        position: absolute;
+        top: 56px;
+        left: 195px;
+        font-size: 12px;
+      }
+      .lbl9 {
+        font-weight: 600;
+        position: absolute;
+        top: 26px;
+        left: 228px;
+        font-size: 12px;
+      }
+
+      .lbl10 {
+        font-weight: 600;
+        position: absolute;
+        top: 84px;
+        left: 228px;
+        font-size: 12px;
+      }
+    }
+
+    @keyframes atomImg4Ani {
+      0% {
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

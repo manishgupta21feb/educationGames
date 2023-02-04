@@ -1,0 +1,51 @@
+.right-section {
+  padding-top: 60px;
+}
+
+.leftright {
+  .right {
+    overflow: unset;
+  }
+} 
+
+// custom-table
+.custom-table {
+  margin-top: 10px;
+  table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  tbody {
+    td {
+      &:last-child {
+        background-color: #DCDCDC;
+      }
+    }
+  }
+  th {
+    &:first-child {
+      width: 40px;
+    }
+    &:last-child {
+      width: 40px;
+    }
+  }
+  th, td {
+    border: 1px solid black;
+    font-size: 9px;
+    color: black;
+    font-weight: bold;
+    background-color: #FEE9B5;
+    &[rowSpan] {
+      background-color: #DCDCDC;
+    }
+  }
+}
+
+// screen6-submit-btn
+.screen6-submit-btn {
+  right: 24px;
+  bottom: 24px;
+  position: absolute;
+}

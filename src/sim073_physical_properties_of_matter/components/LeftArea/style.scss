@@ -1,0 +1,255 @@
+@mixin imageProperties {
+  height: inherit;
+  width: inherit;
+  background-repeat: no-repeat;
+}
+.left-area {
+  background-color: var(--header-button-background);
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.left-interactive {
+  .top {
+    height: 437px;
+    .physical-properties {
+      height: inherit;
+      width: inherit;
+      // height: 437px;
+      // width: 540px;
+      &.mass {
+        background-image: url(../../assets/images/first_screen_mass.png);
+        @include imageProperties;
+        background-size: cover;
+      }
+      &.volume {
+        background-image: url(../../assets/images/start_screen_Volume.png);
+        @include imageProperties;
+        background-size: cover;
+      }
+      &.magnetism {
+        background-image: url(../../assets/images/Magnetism_Screen.png);
+        @include imageProperties;
+        background-size: cover;
+        &.hide {
+          opacity: 0;
+        }
+      }
+      &.relative {
+        // background-image: url(../../assets/images/density.jpg);
+        background-image: url(../../assets/images/starting_Density.png);
+        @include imageProperties;
+        background-size: cover;
+      }
+      &.electrical {
+        background-image: url(../../assets/images/electric_conductivity.png);
+        &.hide {
+          opacity: 0;
+        }
+
+        &.glass-jar,
+        &.die,
+        &.cork {
+          background-image: url(../../assets/images/Off_bulb_Conductivity_Screen-_02_1620X1800_updated.png);
+        }
+        @include imageProperties;
+        background-size: cover;
+        &.iron-nail,
+        &.metal-toy-car,
+        &.nickel,
+        &.pencil {
+          // background-image: url(../../assets/images/On_bulb.png),
+          //   url(../../assets/images/Off_bulb_Conductivit.png);
+          background-image: url(../../assets/images/On_bulb.png),
+            url(../../assets/images/Off_bulb_Conductivity.png);
+          background-size: 81px 94px, cover;
+          background-position: 137px 45px, 0px 0px;
+        }
+      }
+
+      .video-container {
+        height: 600px;
+        width: 100%;
+        position: absolute;
+        // z-index: 2;
+      }
+      .metal-toy-car-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/car.png);
+        background-size: 54px 27px;
+        background-position: 230px 330px;
+      }
+      .glass-jar-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/marbel.png);
+        background-size: 40px 40px;
+        // background-size: 21px 52px;
+        background-position: 235px 360px;
+      }
+      .iron-nail-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/iron_nail.png);
+        background-size: 56px 28px;
+        background-position: 230px 330px;
+      }
+      .die-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/die.png);
+        background-size: 40px 40px;
+        background-position: 235px 360px;
+      }
+      .cork-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/cork.png);
+        background-size: 28px 40px;
+        background-position: 240px 360px;
+      }
+      .nickel-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/nickel.png);
+        background-size: 47px 46px;
+        background-position: 230px 330px;
+      }
+      .pencil-Magnetism {
+        @include imageProperties;
+        background-image: url(../../assets/images/pencil.png);
+        background-size: 56px 26px;
+        background-position: 230px 380px;
+      }
+      .metal-toy-car-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/car_conductivity.png);
+        background-size: 189px 37px;
+        background-position: 276px 100px;
+      }
+      .glass-jar-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/glass_marbel_conductivity.png);
+        background-size: 189px 43px;
+        background-position: 276px 100px;
+      }
+      .iron-nail-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/iron_nail_conductivity.png);
+        background-size: 190px 35px;
+        background-position: 276px 100px;
+      }
+      .die-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/die_conductivity.png);
+        background-size: 182px 47px;
+        background-position: 276px 100px;
+      }
+      .cork-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/cork_conductivity.png);
+        background-size: 189px 43px;
+        background-position: 276px 100px;
+      }
+      .nickel-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/nickel_conductivity.png);
+        background-size: 189px 54px;
+        background-position: 276px 100px;
+      }
+      .pencil-Electrical {
+        @include imageProperties;
+        background-image: url(../../assets/images/pencil_conductivity.png);
+        background-size: 192px 35px;
+        background-position: 276px 100px;
+      }
+    }
+  }
+  .bottom {
+    box-sizing: border-box;
+    height: 163px;
+    width: 540px;
+    border: 1px solid #979797;
+    background-color: #bfbfbf;
+    z-index: 2;
+    position: absolute;
+    .bottom-container {
+      display: flex;
+      height: 89px;
+      width: 509px;
+      margin-top: 37px;
+      margin-left: 15px;
+      .item-conatainer {
+        margin-right: 9px;
+        text-align: center;
+        .box {
+          box-sizing: border-box;
+          width: 65px;
+          height: 65px;
+          border: 2px dotted var(--primary-blue);
+          border-radius: 4px;
+          background-color: #f1f5fa;
+          overflow: hidden;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-position: center;
+          &.metal-toy-car {
+            background-image: url(../../assets/images/car.png);
+            background-size: 54px 27px;
+          }
+          &.glass-jar {
+            background-image: url(../../assets/images/marbel.png);
+            background-size: 40px 40px;
+            // background-size: 21px 52px;
+          }
+          &.iron-nail {
+            background-image: url(../../assets/images/iron_nail.png);
+            background-size: 56px 28px;
+          }
+          &.die {
+            background-image: url(../../assets/images/die.png);
+            background-size: 40px 40px;
+          }
+          &.cork {
+            background-image: url(../../assets/images/cork.png);
+            background-size: 28px 40px;
+          }
+          &.nickel {
+            background-image: url(../../assets/images/nickel.png);
+            background-size: 47px 46px;
+          }
+          &.pencil {
+            background-image: url(../../assets/images/pencil.png);
+            background-size: 56px 26px;
+          }
+          &.visited {
+            opacity: 0.6;
+          }
+          &.selected-metal-toy-car,
+          &.selected-glass-jar,
+          &.selected-iron-nail,
+          &.selected-die,
+          &.selected-cork,
+          &.selected-nickel,
+          &.selected-pencil {
+            opacity: 1;
+            background-image: none;
+            background-color: var(--hover-state-color);
+          }
+          .text {
+            opacity: 0;
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          color: var(--lightgreyshade);
+          letter-spacing: 0.25px;
+          &:nth-child(2) {
+            letter-spacing: 0.15px;
+          }
+        }
+      }
+    }
+  }
+}
+// .hide {
+//   opacity: 0;
+// }

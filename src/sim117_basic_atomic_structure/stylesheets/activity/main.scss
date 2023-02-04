@@ -1,0 +1,119 @@
+.legend-container {
+  width: 38px;
+  height: 50px;
+  font-variant: lining-nums;
+  position: absolute;
+  top: 96px;
+  left: 190px;
+  box-sizing: border-box;
+
+  border: 1px solid #052978;
+  background-color: #fedc00;
+  .noble-gas {
+    width: 100%;
+    height: 100%;
+    .atomicNumber {
+      margin-top: 0px;
+    }
+    .symbol {
+      margin-left: 9px;
+      margin-top: 0px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+    .atomicMass {
+      margin-top: 1px;
+    }
+  }
+  .atomic-number-line {
+    box-sizing: border-box;
+    height: 1px;
+    width: 62px;
+    border: 1px solid #2e2d2d;
+    position: absolute;
+    top: 5px;
+    left: 17px;
+  }
+  .symbol-line {
+    box-sizing: border-box;
+    height: 1px;
+    width: 47px;
+    border: 1px solid #2e2d2d;
+    position: absolute;
+    top: 23px;
+    left: 32px;
+  }
+  .atomic-mass-line {
+    box-sizing: border-box;
+    height: 1px;
+    width: 48px;
+    border: 1px solid #2e2d2d;
+    position: absolute;
+    top: 40px;
+    left: 31px;
+  }
+  .atomic-number {
+    color: #35374c;
+
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    position: absolute;
+    top: -2px;
+    left: 86px;
+    white-space: nowrap;
+  }
+  .atomic-symbol {
+    color: #35374c;
+
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 86px;
+  }
+  .atomic-mass {
+    color: #35374c;
+
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    position: absolute;
+    top: 32px;
+    left: 86px;
+    white-space: nowrap;
+  }
+}
+
+.full-tabel-container {
+  width: 714px;
+  height: 414px;
+  margin-left: -45px;
+  position: relative;
+  z-index: 0;
+  .periodic-table-container {
+    left: -3px;
+    bottom: 0px;
+    .elements {
+      width: 40px;
+      height: 40px;
+    }
+    .symbol {
+      font-size: 14px;
+      width: 37px;
+    }
+  }
+}
+
+.leftright {
+  .left,
+  .right {
+    overflow: unset;
+  }
+}
+
+.dialogbox-container
+  .dialog-container[aria-labelledby="dialog-description-infoBox"] {
+  animation-duration: 1.6s;
+}

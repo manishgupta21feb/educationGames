@@ -1,0 +1,264 @@
+.sim096 {
+  .launchContainer {
+    padding-top: 80px;
+    padding-left: 24px;
+    h2 {
+      height: 20px;
+      width: 752px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .blocksContainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 88px;
+      div + div {
+        margin-left: 40px;
+      }
+      .forceBlock {
+        box-sizing: border-box;
+        width: 312.24px;
+        height: 286px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .imgHolder {
+          width: inherit;
+          height: 100%;
+          background-size: cover;
+        }
+        .btn {
+          margin-top: 17.82px;
+        }
+      }
+    }
+  }
+  .gravityRightHolder,
+  .frictionRightHolder {
+    padding-top: 80px;
+    height: 100%;
+    p {
+      width: 212px;
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    #mcq-question-heading {
+      margin-top: 10px;
+    }
+    .ballContainer {
+      margin-top: 29px;
+      display: flex;
+      justify-content: center;
+      .ballBox {
+        width: 65px;
+        display: flex;
+
+        flex-direction: column;
+        & + .ballBox {
+          margin-left: 9px;
+        }
+        .ballName {
+          color: #35374c;
+          font-size: 12px;
+          font-weight: 500;
+          text-align: center;
+          width: 100%;
+          margin-top: 8px;
+        }
+      }
+      .balls {
+        box-sizing: border-box;
+        height: 65px;
+        width: 65px;
+        border: 1px solid #0056b3;
+        border-radius: 4px;
+        background-size: cover;
+        cursor: pointer;
+        background-color: transparent;
+
+        &--selected {
+          background-color: rgba(217, 235, 255, 0.5);
+        }
+        &:disabled {
+          cursor: default;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  .gravityLeftHolder {
+    height: 600px;
+    width: 540px;
+    .poll {
+      height: 443px;
+      width: 116px;
+      background-color: rgb(236, 229, 126);
+      position: absolute;
+      top: 56px;
+      left: 324px;
+    }
+    .dropBall {
+      width: 50px;
+      height: 50px;
+      border: 1px dashed #000;
+      position: absolute;
+      top: 67px;
+      left: 355px;
+      border-radius: 50%;
+      outline: 1px dashed #000;
+      outline-offset: 5px;
+    }
+    .fallAnimation {
+      animation: runBall;
+      animation-duration: 4.45s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    .testBtn {
+      position: absolute;
+      top: 506px;
+      left: 357px;
+    }
+    .dataTable {
+      position: absolute;
+      top: 209px;
+      left: 117px;
+
+      .data_header {
+        text-align: left;
+        font-variant: lining-nums;
+        padding: 4px 8px;
+
+        color: #052978;
+        font-size: 12px;
+        font-weight: 500;
+
+        height: 24px;
+        width: 116px;
+        border-radius: 2px 2px 0 0;
+        background-color: #f9f9f9;
+      }
+      .data_body {
+        p {
+          color: #052978;
+          font-size: 12px;
+          height: 24px;
+          width: 116px;
+
+          text-align: left;
+          font-variant: lining-nums;
+          padding: 4px 8px;
+          &:nth-child(odd) {
+            background-color: #f0f0f0;
+          }
+          &:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+        }
+      }
+
+      .timer {
+        height: 61.13px;
+        width: 116px;
+        background-color: #223649;
+        .timeCount {
+          text-align: center;
+          font-size: 33px;
+          color: #fff;
+          font-variant: lining-nums;
+        }
+        .countName {
+          display: flex;
+          justify-content: space-evenly;
+          height: 10px;
+          p {
+            height: 12px;
+            font-size: 10px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .z-shifter {
+      opacity: 0;
+    }
+  }
+  .frictionLeftHolder {
+    background-color: grey;
+    height: 600px;
+    width: 540px;
+    .testBtn {
+      position: absolute;
+      left: calc(100% - 54%);
+      bottom: 60px;
+    }
+    .video-wrapper {
+      z-index: unset;
+    }
+    .conclusionContainer {
+      position: absolute;
+      top: 82px;
+      right: 15px;
+      box-sizing: border-box;
+      padding: 12px 12px 12px;
+      width: 212px;
+      border: 2px solid #ba5b08;
+      border-radius: 8px;
+      background-color: #fbf1e9;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .btn {
+        background-color: #0000;
+        border: 2px solid #352103;
+        .text {
+          color: #352103;
+        }
+      }
+      p {
+        color: #352103;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+    }
+  }
+  .baseImage {
+    height: 600px;
+    background-size: cover;
+  }
+  .frictionRightHolder {
+    .radiobuttons {
+      flex-direction: row;
+      margin-top: 24px;
+      label {
+        margin-top: 3px;
+      }
+    }
+  }
+}
+.hideVideo {
+  display: none;
+}
+.testClass {
+  /* margin-left: -240px; */
+}
+.break {
+  margin-bottom: 8px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@keyframes runBall {
+  from {
+    top: 67px;
+  }
+  to {
+    top: 442px;
+  }
+}

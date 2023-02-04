@@ -1,0 +1,635 @@
+.screen1wrapper {
+  padding-top: 80px;
+  font-variant: lining-nums;
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    > button {
+      width: 100%;
+      height: 40px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      &.disabled {
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+    &.section1 {
+      width: 86px;
+      height: 280px;
+      left: 25px;
+      top: 118px;
+
+      .option1 {
+        width: 50%;
+      }
+
+      .option2 {
+        position: absolute;
+        width: 50%;
+        left: 713px;
+      }
+    }
+    &.section3 {
+      width: 420px;
+      height: 160px;
+      left: 109px;
+      top: 238px;
+    }
+
+    &.section2 {
+      width: 252px;
+      height: 240px;
+      left: 528px;
+      top: 158px;
+    }
+  }
+
+  .instructor {
+    padding-left: 24px;
+    padding-right: 16px;
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    bottom: 36px;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .continue-button {
+    .btn.toast-secondary-button {
+      bottom: 36px;
+    }
+  }
+
+  .periodic-table-container {
+    position: relative;
+    left: 25px;
+    top: 10px;
+
+    td {
+      font-family: inherit;
+    }
+    .row8 {
+      .elements {
+        height: 15px;
+      }
+    }
+
+    .elements {
+      height: 40px;
+      width: 42px;
+    }
+
+    .symbol {
+      line-height: 1;
+    }
+    &.colorByBlock {
+      .f-block {
+        background-color: var(--periodic-table-color9);
+      }
+    }
+    &.section1option3 {
+      .elements {
+        &.cell2_1,
+        &.cell2_2 {
+          background-color: #f41215;
+        }
+      }
+    }
+    &.section1option7 {
+      .elements {
+        &.cell6_1,
+        &.cell6_2 {
+          background-color: #f47718;
+        }
+      }
+    }
+    &.section2option2 {
+      .elements {
+        &.cell3_13,
+        &.cell3_14,
+        &.cell3_15,
+        &.cell3_16,
+        &.cell3_17,
+        &.cell3_18 {
+          background-color: #f9f913;
+        }
+      }
+    }
+
+    &.section3option1 {
+      .elements {
+        &.cell4_3,
+        &.cell4_4,
+        &.cell4_5,
+        &.cell4_6,
+        &.cell4_7,
+        &.cell4_8,
+        &.cell4_9,
+        &.cell4_10,
+        &.cell4_11,
+        &.cell4_12 {
+          background-color: #f9f913;
+        }
+      }
+    }
+
+    &.section3option2 {
+      .elements {
+        &.cell5_3,
+        &.cell5_4,
+        &.cell5_5,
+        &.cell5_6,
+        &.cell5_7,
+        &.cell5_8,
+        &.cell5_9,
+        &.cell5_10,
+        &.cell5_11,
+        &.cell5_12 {
+          background-color: #25f827;
+        }
+      }
+    }
+
+    &.section1 {
+      &.option1,
+      &.option2 {
+        .elements {
+          &.cell1_1,
+          &.cell1_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.option3 {
+        .elements {
+          &.cell2_1,
+          &.cell2_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.option4 {
+        .elements {
+          &.cell3_1,
+          &.cell3_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.option5 {
+        .elements {
+          &.cell4_1,
+          &.cell4_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.option6 {
+        .elements {
+          &.cell5_1,
+          &.cell5_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.option7 {
+        .elements {
+          &.cell6_1,
+          &.cell6_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.option8 {
+        .elements {
+          &.cell7_1,
+          &.cell7_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .elements {
+        &.cell1_1,
+        &.cell1_18,
+        &.cell2_1,
+        &.cell3_1,
+        &.cell4_1,
+        &.cell5_1,
+        &.cell6_1,
+        &.cell7_1,
+        &.cell2_2,
+        &.cell3_2,
+        &.cell4_2,
+        &.cell5_2,
+        &.cell6_2,
+        &.cell7_2 {
+          border: 3px dashed var(--question-text-blue);
+          // opacity: 0.8;
+          box-shadow: none;
+          .symbol {
+            margin-top: 0px;
+            width: 36px;
+          }
+        }
+        &.cell2_1,
+        &.cell3_1,
+        &.cell4_1,
+        &.cell5_1,
+        &.cell6_1,
+        &.cell7_1 {
+          border-right: 1px solid var(--question-text-blue);
+          .symbol {
+            width: 38px;
+          }
+        }
+        &.cell2_2,
+        &.cell3_2,
+        &.cell4_2,
+        &.cell5_2,
+        &.cell6_2,
+        &.cell7_2 {
+          border-left: 1px solid var(--question-text-blue);
+          .symbol {
+            width: 38px;
+          }
+        }
+      }
+    }
+
+    &.section2 {
+      &.option1 {
+        .elements {
+          &.cell2_13,
+          &.cell2_14,
+          &.cell2_15,
+          &.cell2_16,
+          &.cell2_17,
+          &.cell2_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell3_13,
+          &.cell3_14,
+          &.cell3_15,
+          &.cell3_16,
+          &.cell3_17,
+          &.cell3_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell4_13,
+          &.cell4_14,
+          &.cell4_15,
+          &.cell4_16,
+          &.cell4_17,
+          &.cell4_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell5_13,
+          &.cell5_14,
+          &.cell5_15,
+          &.cell5_16,
+          &.cell5_17,
+          &.cell5_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option5 {
+        .elements {
+          &.cell6_13,
+          &.cell6_14,
+          &.cell6_15,
+          &.cell6_16,
+          &.cell6_17,
+          &.cell6_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option6 {
+        .elements {
+          &.cell7_13,
+          &.cell7_14,
+          &.cell7_15,
+          &.cell7_16,
+          &.cell7_17,
+          &.cell7_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .elements {
+        &.cell2_13,
+        &.cell3_13,
+        &.cell4_13,
+        &.cell5_13,
+        &.cell6_13,
+        &.cell7_13 {
+          // opacity: 0.8;
+          border: 3px dashed var(--question-text-blue);
+          border-right: 1px solid var(--question-text-blue);
+          .symbol {
+            margin-top: 0px;
+            width: 38px;
+          }
+        }
+        &.cell2_18,
+        &.cell3_18,
+        &.cell4_18,
+        &.cell5_18,
+        &.cell6_18,
+        &.cell7_18 {
+          // opacity: 0.8;
+          border: 3px dashed var(--question-text-blue);
+          border-left: 1px solid var(--question-text-blue);
+          .symbol {
+            margin-top: 0px;
+            width: 38px;
+          }
+        }
+        &.cell2_13,
+        &.cell2_14,
+        &.cell2_15,
+        &.cell2_16,
+        &.cell2_17,
+        &.cell3_13{
+          box-shadow: none;
+        }
+        &.cell2_14,
+        &.cell2_15,
+        &.cell2_16,
+        &.cell2_17,
+        &.cell3_14,
+        &.cell3_15,
+        &.cell3_16,
+        &.cell3_17,
+        &.cell4_14,
+        &.cell4_15,
+        &.cell4_16,
+        &.cell4_17,
+        &.cell5_14,
+        &.cell5_15,
+        &.cell5_16,
+        &.cell5_17,
+        &.cell6_14,
+        &.cell6_15,
+        &.cell6_16,
+        &.cell6_17,
+        &.cell7_14,
+        &.cell7_15,
+        &.cell7_16,
+        &.cell7_17 {
+          // opacity: 0.8;
+          border-top: 3px dashed var(--question-text-blue);
+          border-bottom: 3px dashed var(--question-text-blue);
+          border-left: 1px solid var(--question-text-blue);
+          border-right: 1px solid var(--question-text-blue);
+          .symbol {
+            margin-top: 0px;
+            width: 39px;
+          }
+        }
+      }
+    }
+    &.section3 {
+      &.option1 {
+        .elements {
+          &.cell4_3,
+          &.cell4_4,
+          &.cell4_5,
+          &.cell4_6,
+          &.cell4_7,
+          &.cell4_8,
+          &.cell4_9,
+          &.cell4_10,
+          &.cell4_11,
+          &.cell4_12 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell5_3,
+          &.cell5_4,
+          &.cell5_5,
+          &.cell5_6,
+          &.cell5_7,
+          &.cell5_8,
+          &.cell5_9,
+          &.cell5_10,
+          &.cell5_11,
+          &.cell5_12 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell6_3,
+          &.cell6_4,
+          &.cell6_5,
+          &.cell6_6,
+          &.cell6_7,
+          &.cell6_8,
+          &.cell6_9,
+          &.cell6_10,
+          &.cell6_11,
+          &.cell6_12 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell7_3,
+          &.cell7_4,
+          &.cell7_5,
+          &.cell7_6,
+          &.cell7_7,
+          &.cell7_8,
+          &.cell7_9,
+          &.cell7_10,
+          &.cell7_11,
+          &.cell7_12 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      .elements {
+        &.cell4_3,
+        &.cell4_4,
+        &.cell4_5,
+        &.cell4_6,
+        &.cell4_7,
+        &.cell4_8,
+        &.cell4_9,
+        &.cell4_10,
+        &.cell4_11,
+        &.cell4_12,
+        &.cell5_3,
+        &.cell5_4,
+        &.cell5_5,
+        &.cell5_6,
+        &.cell5_7,
+        &.cell5_8,
+        &.cell5_9,
+        &.cell5_10,
+        &.cell5_11,
+        &.cell5_12,
+        &.cell6_3,
+        &.cell6_4,
+        &.cell6_5,
+        &.cell6_6,
+        &.cell6_7,
+        &.cell6_8,
+        &.cell6_9,
+        &.cell6_10,
+        &.cell6_11,
+        &.cell6_12,
+        &.cell7_3,
+        &.cell7_4,
+        &.cell7_5,
+        &.cell7_6,
+        &.cell7_7,
+        &.cell7_8,
+        &.cell7_9,
+        &.cell7_10,
+        &.cell7_11,
+        &.cell7_12 {
+          // opacity: 0.8;
+          border-top: 3px dashed var(--question-text-blue);
+          border-bottom: 3px dashed var(--question-text-blue);
+          box-shadow: none;
+          .symbol {
+            margin-top: 0px;
+          }
+        }
+        &.cell4_3,
+        &.cell5_3,
+        &.cell6_3,
+        &.cell7_3 {
+          // opacity: 0.8;
+          border-left: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 38px;
+          }
+        }
+        &.cell4_12,
+        &.cell5_12,
+        &.cell6_12,
+        &.cell7_12 {
+          // opacity: 0.8;
+          border-right: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 38px;
+          }
+        }
+      }
+    }
+  }
+}

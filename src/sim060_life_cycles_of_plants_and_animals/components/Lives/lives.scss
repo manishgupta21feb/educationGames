@@ -1,0 +1,23 @@
+@import "../../stylesheets/common/functions.scss";
+
+.life{
+  &__container{
+    @include square(120px);
+    border: 1px solid #979797;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background: {
+      size: 60%;
+      position: center;
+      repeat: no-repeat;
+    }
+  }
+  &:nth-child(4){
+    .life__container{
+      background-size: 25%;
+    }
+  }
+  &__btn{
+    @extend %margin-zero-auto;
+  }
+}

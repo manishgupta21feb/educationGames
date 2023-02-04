@@ -1,0 +1,18 @@
+.radiobuttons {
+  // flex-wrap: wrap;
+  flex-direction: column;
+  .radiobutton {
+    width: 60%;
+    margin-right: 0px;
+    .radiobutton-inner-wrapper {
+      align-items: center;
+      input[type="radio"] + div {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+.select-dropdown {
+  margin-bottom: 10px;
+}

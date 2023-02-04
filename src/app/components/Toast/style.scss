@@ -1,0 +1,115 @@
+.toast-wrapper {
+  top: -1px;
+  left: -1px;
+  z-index: 1;
+  position: absolute;
+  width: calc(100% + 1px);
+
+  .toast-container {
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 12px 60px;
+    position: absolute;
+    color: transparent;
+    background: transparent;
+    // transform: translate3d(0, 0, 0) translateY(-300px);
+    top: -85px;
+    animation: slide-down 200ms linear forwards,
+      slide-up 200ms linear 4s forwards;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid transparent;
+
+    div {
+      display: block;
+      position: relative;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      span {
+        width: 32px;
+        height: 32px;
+        display: block;
+        margin-right: 12px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+      }
+    }
+
+    &.positive {
+      background: var(--secondary-positive-light);
+      border-bottom-color: var(--secondary-positive-green);
+      div {
+        span {
+          background-image: url(../../assets/images/positive_icon.svg);
+        }
+
+        p {
+          color: var(--secondary-positive-dark);
+        }
+      }
+    }
+
+    &.attention {
+      background: var(--secondary-attention-light);
+      border-bottom-color: var(--secondary-attention-orange);
+      div {
+        span {
+          background-image: url(../../assets/images/attention_icon.svg);
+        }
+        p {
+          color: var(--secondary-attention-dark);
+        }
+      }
+    }
+
+    &.warning {
+      background-color: var(--secondary-warning-light);
+      border-bottom-color: var(--secondary-warning-red);
+      div {
+        span {
+          background-image: url(../../assets/images/warning_icon.svg);
+        }
+
+        p {
+          color: var(--secondary-warning-dark);
+        }
+      }
+    }
+  }
+
+  > .btn {
+    opacity: 0;
+    animation: fade-in 2.5s linear forwards;
+  }
+}
+
+@keyframes slide-down {
+  to {
+    top: 0;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  to {
+    top: -85px;
+  }
+}

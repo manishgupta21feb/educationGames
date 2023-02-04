@@ -1,0 +1,26 @@
+import Activity from "../components/activity";
+import { connect } from "react-redux";
+
+import data from "../data/index";
+import { common } from "../actions";
+
+const mapState = (state) => {
+    return {
+        isSimulationStart: state.startSimulation,
+        data: data,
+        isPopupActive: !!state.currentPopup.length,
+        showToastMessage: state.showToastMessage,
+        correctAttempt: state.correctAnswer,
+        answerAttempted: state.answerAttempted,
+        selectedQuestion: state.selectedQuestion,
+        audioStatePlay: state.audioStatePlay,
+    }
+};
+
+const mapDispatch = (dispatch) => ({
+    onStartActivity: () => {
+        dispatch(common.togglePopup(1));
+    },
+});
+
+export default connect(mapState, mapDispatch)(Activity);

@@ -1,0 +1,35 @@
+@import "../../stylesheets/common/functions.scss";
+
+.wrapper {
+  @extend %flex;
+  &--full {
+    @extend %full-height;
+  }
+  &--contain{
+    flex: 1;
+  }
+  &--row{
+    flex-direction: row;
+  }
+  &--column{
+    flex-direction: column;
+  }
+  &--center-hrzn{
+    justify-content: center;
+  }
+  &--center-vert{
+    align-items: center;
+  }
+  &--wrap{
+    flex-wrap: wrap;
+  }
+  &--space-around{
+    justify-content: space-around
+  }
+  &--space-between{
+    justify-content: space-between
+  }
+  &.relative{
+    @extend %relative;
+  }
+}

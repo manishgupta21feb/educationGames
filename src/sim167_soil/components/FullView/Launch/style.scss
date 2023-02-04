@@ -1,0 +1,45 @@
+.launchContainer {
+  display: grid;
+  height: 800px;
+  .pageImage {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    height: 600px;
+    width: 800px;
+    border: 1px solid #35374c;
+    border-radius: 4px;
+    justify-self: center;
+    z-index: -1;
+  }
+  .heading {
+    height: 20px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-top: 83px;
+  }
+  .content-container {
+    position: absolute;
+    top: 275px;
+    left: 598px;
+    p,
+    h2 {
+      height: 20px;
+      color: #352103;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .content-dis {
+      margin-top: 35px;
+    }
+  }
+  .button-section {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    top: 358px;
+  }
+}

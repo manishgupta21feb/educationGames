@@ -1,0 +1,326 @@
+.left-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/main_bg.png);
+
+  .moon-phases-container {
+    top: 8px;
+    left: 8px;
+    width: 215px;
+    height: 104px;
+    padding: 0 8px;
+    position: absolute;
+    border-radius: 16px;
+    border: 1px solid #8e8d8d;
+
+    .moon-phases-wrapper {
+      width: 90px;
+      height: 100%;
+      position: relative;
+
+      align-items: center;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .moon-phase {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 4px;
+        position: relative;
+
+        .moon-phase-img {
+          top: 0;
+          left: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          @for $image from 1 through 30 {
+            &.img#{$image} {
+              background-image: url(../../assets/images/moon_phase_#{$image}.png);
+            }
+          }
+
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+
+      p {
+        color: white;
+        font-size: 12px;
+      }
+    }
+
+    .moon-phase-label {
+      top: 41%;
+      left: 86px;
+      position: absolute;
+      align-items: center;
+      display: inline-flex;
+      justify-content: flex-start;
+      transform: translateY(-50%);
+
+      .hr-line {
+        width: 15px;
+        margin-right: 1px;
+        position: relative;
+        display: inline-block;
+        border-top: 1px solid white;
+      }
+
+      p {
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .progress-ring,
+  .moon-wrapper,
+  .moon-phases,
+  .moon-rotation-container {
+    left: 35px;
+    bottom: 50px;
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px dashed #979797;
+  }
+
+  .progress-ring {
+    border: none;
+    border-radius: 0;
+
+    canvas {
+      width: calc(368px + 11px);
+      height: calc(368px + 11px);
+    }
+  }
+
+  .moon-wrapper {
+    border: none;
+    transform: rotate(0deg);
+    .moon {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      top: calc(-28px / 2);
+      transform: rotate(0deg);
+      left: calc(184px - 14px);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-image: url(../../assets/images/rotating_moon.png);
+    }
+  }
+
+  .moon-phases {
+    border: none;
+    transform: rotate(90deg);
+
+    .moon-phase-marker {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+
+      .marker-wrapper {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        border-radius: 50%;
+        top: calc(-30px / 2);
+        transform: rotate(0deg);
+        background: transparent;
+        left: calc(184px - 14px);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .marker {
+          width: 10px;
+          height: 10px;
+          position: relative;
+          border-radius: 50%;
+          background: #cccccc;
+          border: 1px solid #3333ff;
+        }
+      }
+    }
+  }
+
+  .earth-image-wrapper {
+    top: 50%;
+    left: 50%;
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    .earth-image {
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../assets/images/earth.png);
+    }
+  }
+  // }
+  .earth-label {
+    left: 16px;
+    bottom: 12px;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+    letter-spacing: 0.21px;
+  }
+}
+
+.right-section {
+  margin-top: 80px;
+  position: relative;
+  font-variant: lining-nums;
+
+  h2 {
+    font-size: 14px;
+    color: #052978;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.25px;
+  }
+
+  .calendar {
+    position: relative;
+
+    table {
+      border-spacing: 0;
+      thead,
+      tbody {
+        tr {
+          td,
+          th {
+            padding: 0;
+          }
+        }
+        tr th {
+          border-collapse: collapse;
+          p {
+            font-size: 10px;
+            color: #35374c;
+            font-weight: 600;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.18px;
+          }
+        }
+      }
+    }
+
+    .calendar-month-label {
+      font-size: 14px;
+      color: #052978;
+      font-weight: bold;
+      line-height: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 0.25px;
+    }
+
+    .calendar-days-label {
+      position: relative;
+      margin-bottom: 8px;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      p {
+        font-size: 10px;
+        color: #35374c;
+        font-weight: 600;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.18px;
+      }
+    }
+
+    .calendar-days {
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      button {
+        border: none;
+        padding: 4px 0;
+        font-size: 14px;
+        cursor: pointer;
+        color: #35374c;
+        line-height: 21px;
+        text-align: center;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 8px;
+        background: #f0f0f0;
+        letter-spacing: 0.25px;
+
+        &.active {
+          color: white;
+          background: #0056b3;
+        }
+
+        &:focus:not(:disabled) {
+          outline: none;
+          box-shadow: 0 0 0 1px white, 0 0 0 3px #0056b3;
+        }
+
+        span {
+          top: 0;
+          left: 0;
+          display: block;
+          position: absolute;
+          font-variant: lining-nums;
+
+          &:first-child {
+            width: 100%;
+            height: 100%;
+          }
+
+          &:last-child {
+            top: 50%;
+            left: 50%;
+
+            padding-top: 2px;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+
+    .calendar-days-label,
+    .calendar-days {
+      p,
+      button {
+        width: 24px;
+        display: block;
+        margin-right: 6px;
+      }
+      button {
+        height: 24px;
+      }
+    }
+  }
+}

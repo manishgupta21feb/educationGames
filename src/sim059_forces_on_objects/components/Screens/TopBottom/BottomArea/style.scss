@@ -1,0 +1,22 @@
+.bottomArea {
+  .introductionText {
+    height: 60px;
+    width: 726px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+  .description{
+    width: 752px;
+    color: #35374C;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    font-variant: lining-nums;
+    &.addScroll{
+      height: 172px;
+      overflow-y: auto;
+    }
+  }
+}

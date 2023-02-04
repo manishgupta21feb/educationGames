@@ -1,0 +1,16 @@
+.dynamic{
+    position: relative;
+    width: 212px;
+    height: auto;
+    margin-top: 20px;
+    padding: 12px;
+    padding-top: 6px;
+    border: 1px solid var(--secondary-attention-orange);
+    border-radius: 8px;
+    background-color: var(--secondary-attention-light);
+    display: inline-block;
+    left: 0;
+    max-height: 260px;
+    overflow: hidden;
+    overflow-y: scroll;
+}

@@ -1,0 +1,64 @@
+.bottom {
+  .mcq-question-area {
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .inner-wrapper {
+      .question {
+        margin-bottom: 8px;
+        font-variant: lining-nums;
+      }
+      .bottomarea {
+        .olcontent3 {
+          margin-left: 24px;
+          color: #35374c;
+          font-variant: lining-nums;
+
+          li::marker {
+            font-variant: lining-nums;
+          }
+        }
+        .olcontent5 {
+          list-style-type: none;
+          color: #35374c;
+          display: flex;
+          .liitem2 {
+            margin-left: 64px;
+          }
+          .liitem3 {
+            margin-left: 64px;
+          }
+          .liitem4 {
+            margin-left: 64px;
+          }
+        }
+
+        > p {
+          margin-top: 8px;
+          color: #052978;
+
+          font-weight: 500;
+        }
+        .checkbox-container {
+          display: flex;
+
+          flex-direction: row;
+
+          margin-top: 8px;
+
+          .checkbox {
+            width: initial;
+            + .checkbox {
+              margin-left: 64px;
+            }
+
+            &:last-child {
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

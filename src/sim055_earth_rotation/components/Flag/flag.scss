@@ -1,0 +1,21 @@
+@import "../../stylesheets/common/functions.scss";
+@import "./animation";
+
+.flag {
+  @extend %bg-contain, %bg-no-repeat, %center-hrzn;
+  background-image: url("../../assets/images/Flag.png");
+  width: 240px;
+  height: 232.88px;
+  top: 90px;
+  &__shadow {
+    @extend %absolute;
+    width: 4px;
+    height: 220px;
+    background-color: #8b8b8b;
+    border-radius: 6px;
+    top: 225px;
+    left: 120px;
+    transform-origin: 50% 0;
+    transform: rotate(-275deg);
+  }
+}

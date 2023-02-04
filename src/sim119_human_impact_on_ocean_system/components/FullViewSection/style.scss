@@ -1,0 +1,19 @@
+.full-section {
+  height: calc(100% - 118px);
+  width: 100%; 
+  padding: 0 24px;
+  .instruction-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 18px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: #052978;
+    margin-top: 80px;
+  }
+  .radiobutton {
+    label {
+      padding-top: 2px;
+    }
+  } 
+}

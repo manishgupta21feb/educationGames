@@ -1,0 +1,512 @@
+.hotspot-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .earth,
+  .landform {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .earth {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+
+    .earth-animation {
+      width: 670px;
+      height: 670px;
+      background: none;
+      position: absolute;
+      top: calc(50% - 335px);
+      left: calc(50% - 335px);
+      -webkit-transform: scale(0.5) rotate(23.5deg);
+      transform: scale(0.5) rotate(23.5deg);
+      background-image: url(../../assets/images/earth_rotation.png);
+
+      &.animate {
+        -webkit-animation: earthAnimation 3s steps(40) infinite;
+        animation: earthAnimation 3s steps(40) infinite;
+      }
+
+      &.pause-animation {
+        animation-play-state: paused;
+      }
+    }
+
+    @-webkit-keyframes earthAnimation {
+      from {
+        background-position: 0;
+      }
+
+      to {
+        background-position: -26800px;
+      }
+    }
+
+    @keyframes earthAnimation {
+      from {
+        background-position: 0;
+      }
+
+      to {
+        background-position: -26800px;
+      }
+    }
+
+    .play-pause-button {
+      top: 10px;
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      position: absolute;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .landform {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/map.png);
+
+    &.show {
+      opacity: 1;
+    }
+
+    // &.landform-ice {
+    // }
+    // &.landform-wind {
+    //   background-image: url(../../assets/images/map.png);
+    // }
+    // &.landform-water {
+    //   background-image: url(../../assets/images/map.png);
+    // }
+    // &.landform-vegetation {
+    //   background-image: url(../../assets/images/map.png);
+    // }
+
+    .glowing-wrapper {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn {
+      &.hotspot-btn {
+        position: absolute;
+      }
+    }
+
+    .label {
+      overflow: unset;
+      position: absolute;
+
+      &::after {
+        z-index: 0;
+        content: "";
+        position: absolute;
+        border-right: 2px dotted var(--secondary-attention-dark);
+      }
+      &::before {
+        z-index: 1;
+        width: 5px;
+        content: "";
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        background: var(--secondary-attention-dark);
+      }
+    }
+
+    &.landform-ice {
+      .hotspot-btn-wrapper {
+        &.the_matterhorn {
+          .glowing-wrapper {
+            top: 90px;
+            right: 206px;
+          }
+          .label {
+            top: 216px;
+            right: 170px;
+            &.es {
+              top: 214px;
+              right: 174px;
+            }
+            &::before {
+              top: -36px;
+              left: 20px;
+            }
+
+            &::after {
+              top: -36px;
+              left: 33px;
+              height: 40px;
+              transform: rotate(-35deg);
+            }
+          }
+        }
+        &.geiranger_fjord {
+          .glowing-wrapper {
+            top: 39px;
+            right: 195px;
+          }
+          .label {
+            top: 50px;
+            right: 170px;
+            &.es {
+              top: 51px;
+              right: 146px;
+            }
+
+            &::before {
+              top: 52px;
+              left: 38px;
+            }
+
+            &::after {
+              top: 26px;
+              left: 50px;
+              height: 32px;
+              transform: rotate(219deg);
+            }
+          }
+        }
+        &.glacier_national_park {
+          .glowing-wrapper {
+            top: 78px;
+            left: 10px;
+          }
+          .label {
+            top: 202px;
+            left: 16px;
+
+            &::before {
+              top: -32px;
+              left: 68px;
+            }
+
+            &::after {
+              top: -30px;
+              left: 70px;
+              height: 31px;
+              transform: rotate(-6deg);
+            }
+          }
+        }
+      }
+    }
+
+    &.landform-water {
+      .hotspot-btn-wrapper {
+        &.white_sands_national_park {
+          .glowing-wrapper {
+            top: 104px;
+            left: 18px;
+          }
+
+          .label {
+            top: 96px;
+            left: 8px;
+
+            &::before {
+              top: 60px;
+              left: 80px;
+            }
+
+            &::after {
+              top: 26px;
+              left: 70px;
+              height: 40px;
+              transform: rotate(144deg);
+            }
+          }
+        }
+
+        &.motlatse_canyon {
+          .glowing-wrapper {
+            right: 162px;
+            bottom: 244px;
+          }
+
+          .label {
+            top: 268px;
+            right: 66px;
+            &.es {
+              right: 53px;
+            }
+
+            &::before {
+              top: 8px;
+              left: -28px;
+            }
+
+            &::after {
+              top: -5px;
+              left: -11px;
+              height: 32px;
+              transform: rotate(-89deg);
+            }
+          }
+        }
+
+        &.mammoth_caves {
+          .glowing-wrapper {
+            top: 106px;
+            left: 56px;
+          }
+
+          .label {
+            top: 172px;
+            right: 154px;
+            &.es {
+              right: 141px;
+            }
+
+            &::before {
+              top: 4px;
+              left: -34px;
+            }
+
+            &::after {
+              top: -13px;
+              left: -13px;
+              height: 40px;
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+
+    &.landform-wind {
+      .hotspot-btn-wrapper {
+        &.sahara_sand_dune {
+          .glowing-wrapper {
+            right: 172px;
+            top: 124px;
+          }
+
+          .label {
+            top: 246px;
+            right: 56px;
+            // &.es {
+            //   right: -20px;
+            // }
+
+            &::before {
+              top: -34px;
+              left: -4px;
+            }
+
+            &::after {
+              top: -50px;
+              left: 30px;
+              height: 70px;
+              transform: rotate(-64deg);
+            }
+            &.es {
+              &::before {
+                top: -35px;
+                left: 73px;
+              }
+              &::after {
+                left: 110px;
+              }
+            }
+          }
+        }
+
+        &.mushroom_rock_park {
+          .glowing-wrapper {
+            top: 98px;
+            left: 34px;
+          }
+
+          .label {
+            top: 82px;
+            left: 10px;
+
+            &::before {
+              top: 68px;
+              left: 86px;
+            }
+
+            &::after {
+              top: 25px;
+              left: 74px;
+              height: 50px;
+              transform: rotate(146deg);
+            }
+          }
+        }
+      }
+    }
+
+    &.landform-vegetation {
+      .hotspot-btn-wrapper {
+        &.great_plains {
+          .glowing-wrapper {
+            top: 102px;
+            left: 28px;
+          }
+
+          .label {
+            top: 96px;
+            left: 48px;
+
+            &::before {
+              top: 58px;
+              left: 48px;
+            }
+
+            &::after {
+              top: 22px;
+              left: 46px;
+              height: 36px;
+              transform: rotate(170deg);
+            }
+          }
+        }
+
+        &.eldhraun_lava_field {
+          .glowing-wrapper {
+            top: 34px;
+            right: 233px;
+          }
+
+          .label {
+            top: 153px;
+            right: 160px;
+            &.es {
+              right: 107px;
+            }
+
+            &::before {
+              top: -30px;
+              left: -4px;
+            }
+
+            &::after {
+              top: -39px;
+              left: 16px;
+              height: 50px;
+              transform: rotate(-55deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hotspot-btn-wrapper {
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    position: absolute;
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hotspot-location-image {
+    opacity: 0;
+    left: 16px;
+    bottom: 16px;
+    width: 301px;
+    height: 200px;
+    border-radius: 4px;
+    position: absolute;
+    background-size: contain;
+    border: 1px solid #0056b3;
+    background-repeat: no-repeat;
+
+    &.show {
+      opacity: 1;
+    }
+
+    &.the_matterhorn {
+      background-image: url(../../assets/images/the_matterhorn.png);
+    }
+
+    &.geiranger_fjord {
+      background-image: url(../../assets/images/geiranger_fjord.png);
+    }
+
+    &.glacier_national_park {
+      background-image: url(../../assets/images/glacier_national_park.png);
+      &.weathering {
+        background-image: url(../../assets/images/hanging_valley_glacier_national_park.png);
+      }
+
+      &.erosion {
+        background-image: url(../../assets/images/st_mary_lake_glacier_national_park.png);
+      }
+    }
+
+    &.white_sands_national_park {
+      background-image: url(../../assets/images/white_sands_national_park.png);
+    }
+
+    &.motlatse_canyon {
+      background-image: url(../../assets/images/motlatse_canyon.png);
+    }
+
+    &.mammoth_caves {
+      background-image: url(../../assets/images/mammoth_caves.png);
+    }
+
+    &.sahara_sand_dune {
+      background-image: url(../../assets/images/sahara_sand_dune.png);
+    }
+
+    &.mushroom_rock_park {
+      background-image: url(../../assets/images/mushroom_rock_park.png);
+    }
+
+    &.great_plains {
+      background-image: url(../../assets/images/great_plains.png);
+    }
+
+    &.eldhraun_lava_field {
+      background-image: url(../../assets/images/eldhraun_lava_field.png);
+    }
+  }
+}
+
+.no-outline {
+  .hotspot-area {
+    .btn {
+      &.icon {
+        &.icon-only {
+          &.glowing-hotspot {
+            &:focus:not(:disabled) {
+              .icon {
+                border: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

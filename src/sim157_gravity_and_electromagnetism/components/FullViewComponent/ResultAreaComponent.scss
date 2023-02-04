@@ -1,0 +1,1602 @@
+.action-area {
+  display: flex;
+
+  .balls {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.mass {
+      background-image: url("../../assets/images/100kg.png");
+
+      &.mass100 {
+        background-image: url("../../assets/images/100kg.png");
+      }
+
+      &.mass200 {
+        top: -141px;
+        left: -17px;
+        width: 110px;
+        height: 110px;
+        background-image: url("../../assets/images/200kg.png");
+      }
+
+      &.mass300 {
+        top: -340px;
+        left: -32px;
+        width: 140px;
+        height: 140px;
+        background-image: url("../../assets/images/300kg.png");
+      }
+    }
+
+    &.container-one {
+      top: 29px;
+      transform: translateX(113px);
+
+      &.move_8_6 {
+        animation: ballForwardOne1 2s forwards;
+      }
+
+      &.move_8_4 {
+        animation: ballForwardTwo1 2s forwards;
+      }
+
+      &.move_6_4 {
+        animation: ballForwardThree1 2s forwards;
+      }
+
+      &.move_4_6 {
+        animation: ballForwardFour1 2s forwards;
+      }
+
+      &.move_4_8 {
+        animation: ballForwardFive1 2s forwards;
+      }
+
+      &.move_6_8 {
+        animation: ballForwardSix1 2s forwards;
+      }
+
+      &.move_2_0 {
+        animation: ballForwardSeven1 2s forwards;
+      }
+
+      &.move_2_1 {
+        animation: ballForwardEight1 2s forwards;
+      }
+
+      &.move_1_0 {
+        animation: ballForwardNine1 2s forwards;
+      }
+
+      &.move_3_0 {
+        animation: ballForwardTen1 2s forwards;
+      }
+
+      &.move_3_1 {
+        animation: ballForwardEleven1 2s forwards;
+      }
+
+      &.move_3_2 {
+        animation: ballForwardTwelve1 2s forwards;
+      }
+
+      &.arrow-container1 {
+        top: -83px;
+        left: -25px;
+        width: 145px;
+        height: 117px;
+        overflow: hidden;
+        position: absolute;
+
+        .arrowOne1 {
+          top: 0px;
+          width: 128px;
+          height: 38px;
+          overflow: hidden;
+          position: relative;
+          backface-visibility: hidden;
+
+          .image1 {
+            width: 128px;
+            height: 38px;
+            position: absolute;
+            background-size: cover;
+            transform-origin: left;
+            backface-visibility: hidden;
+            transform: translateX(-50px);
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/arrow_red_long.png");
+
+            &.charge_2_3 {
+              animation: forwardOne2 1s forwards;
+            }
+
+            &.charge_2_4 {
+              animation: forwardTwo2 1s forwards;
+            }
+
+            &.charge_2_5 {
+              animation: forwardThree2 1s forwards;
+            }
+
+            &.charge_2_6 {
+              animation: forwardFour2 1s forwards;
+            }
+
+            &.charge_3_4 {
+              animation: forwardFive2 1s forwards;
+            }
+
+            &.charge_3_5 {
+              animation: forwardSix2 1s forwards;
+            }
+
+            &.charge_3_6 {
+              animation: forwardSeven2 1s forwards;
+            }
+
+            &.charge_4_5 {
+              animation: forwardEight2 1s forwards;
+            }
+
+            &.charge_4_6 {
+              animation: forwardNine2 1s forwards;
+            }
+
+            &.charge_5_6 {
+              animation: forwardTen2 1s forwards;
+            }
+
+            &.charge_6_5 {
+              animation: reverseOne2 1s forwards;
+            }
+
+            &.charge_6_4 {
+              animation: reverseTwo2 1s forwards;
+            }
+
+            &.charge_6_3 {
+              animation: reverseThree2 1s forwards;
+            }
+
+            &.charge_6_2 {
+              animation: reverseFour2 1s forwards;
+            }
+
+            &.charge_5_4 {
+              animation: reverseFive2 1s forwards;
+            }
+
+            &.charge_5_3 {
+              animation: reverseSix2 1s forwards;
+            }
+
+            &.charge_5_2 {
+              animation: reverseSeven2 1s forwards;
+            }
+
+            &.charge_4_3 {
+              animation: reverseEight2 1s forwards;
+            }
+
+            &.charge_4_2 {
+              animation: reverseNine2 1s forwards;
+            }
+
+            &.charge_3_2 {
+              animation: reverseTen2 1s forwards;
+            }
+
+            //for distance movement
+            &.distance_8_6 {
+              animation: distanceOne 1s forwards;
+            }
+
+            &.distance_6_4 {
+              animation: distanceTwo 1s forwards;
+            }
+
+            &.distance_8_4 {
+              animation: distanceThree 2s forwards;
+            }
+
+            &.distance_4_6 {
+              animation: distanceFour 1s forwards;
+            }
+
+            &.distance_4_8 {
+              animation: distanceFive 1s forwards;
+            }
+
+            &.distance_6_8 {
+              animation: distanceSix 1s forwards;
+            }
+
+            @keyframes increaseOne1 {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-20px);
+              }
+            }
+
+            @keyframes increaseTwo1 {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(0px);
+              }
+            }
+
+            @keyframes increaseThree1 {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(0px);
+              }
+            }
+
+            @keyframes reverseOne1 {
+              from {
+                transform: translateX(0px);
+              }
+              to {
+                transform: translateX(-20px);
+              }
+            }
+
+            @keyframes reverseTwo1 {
+              from {
+                transform: translateX(0px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+
+            @keyframes reverseThree1 {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+
+            //distance
+
+            @keyframes distanceOne {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-38px);
+              }
+            }
+
+            @keyframes distanceTwo {
+              from {
+                transform: translateX(-38px);
+              }
+              to {
+                transform: translateX(-25px);
+              }
+            }
+
+            @keyframes distanceThree {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-25px);
+              }
+            }
+
+            @keyframes distanceFour {
+              from {
+                transform: translateX(-25px);
+              }
+              to {
+                transform: translateX(-38px);
+              }
+            }
+
+            @keyframes distanceFive {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+
+            @keyframes distanceSix {
+              from {
+                transform: translateX(-38px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+          }
+        }
+
+        .arrowTwo1 {
+          top: 39px;
+          width: 200px;
+          height: 38px;
+          position: relative;
+          backface-visibility: hidden;
+
+          .arrow-end {
+            left: 0px;
+            top: -24px;
+            z-index: 1;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            border-left: 2px solid #5b4f4f;
+          }
+
+          .image2 {
+            width: 128px;
+            height: 38px;
+            position: relative;
+            background-size: cover;
+            backface-visibility: hidden;
+            transform: translateX(-50px);
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/arrow_yellow_long.png");
+
+            &.mass_200_300 {
+              animation: forwardOne2 1s forwards;
+            }
+
+            &.mass_200_400 {
+              animation: forwardTwo2 1s forwards;
+            }
+
+            &.mass_200_500 {
+              animation: forwardThree2 1s forwards;
+            }
+
+            &.mass_200_600 {
+              animation: forwardFour2 1s forwards;
+            }
+
+            &.mass_300_400 {
+              animation: forwardFive2 1s forwards;
+            }
+
+            &.mass_300_500 {
+              animation: forwardSix2 1s forwards;
+            }
+
+            &.mass_300_600 {
+              animation: forwardSeven2 1s forwards;
+            }
+
+            &.mass_400_500 {
+              animation: forwardEight2 1s forwards;
+            }
+
+            &.mass_400_600 {
+              animation: forwardNine2 1s forwards;
+            }
+
+            &.mass_500_600 {
+              animation: forwardTen2 1s forwards;
+            }
+
+            &.mass_600_500 {
+              animation: reverseOne2 1s forwards;
+            }
+
+            &.mass_600_400 {
+              animation: reverseTwo2 1s forwards;
+            }
+
+            &.mass_600_300 {
+              animation: reverseThree2 1s forwards;
+            }
+
+            &.mass_600_200 {
+              animation: reverseFour2 1s forwards;
+            }
+
+            &.mass_500_400 {
+              animation: reverseFive2 1s forwards;
+            }
+
+            &.mass_500_300 {
+              animation: reverseSix2 1s forwards;
+            }
+
+            &.mass_500_200 {
+              animation: reverseSeven2 1s forwards;
+            }
+
+            &.mass_400_300 {
+              animation: reverseEight2 1s forwards;
+            }
+
+            &.mass_400_200 {
+              animation: reverseNine2 1s forwards;
+            }
+
+            &.mass_300_200 {
+              animation: reverseTen2 1s forwards;
+            }
+
+            //for distance movement
+            &.distance_8_6 {
+              animation: distanceOne 1s forwards;
+            }
+
+            &.distance_6_4 {
+              animation: distanceTwo 1s forwards;
+            }
+
+            &.distance_8_4 {
+              animation: distanceThree 2s forwards;
+            }
+
+            &.distance_4_6 {
+              animation: distanceFour 1s forwards;
+            }
+
+            &.distance_4_8 {
+              animation: distanceFive 1s forwards;
+            }
+
+            &.distance_6_8 {
+              animation: distanceSix 1s forwards;
+            }
+
+            @keyframes forwardOne2 {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-40px);
+              }
+            }
+
+            @keyframes forwardTwo2 {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-30px);
+              }
+            }
+
+            @keyframes forwardThree2 {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-20px);
+              }
+            }
+
+            @keyframes forwardFour2 {
+              from {
+                transform: translateX(-50px);
+              }
+              to {
+                transform: translateX(-2px);
+              }
+            }
+
+            @keyframes forwardFive2 {
+              from {
+                transform: translateX(-40px);
+              }
+              to {
+                transform: translateX(-30px);
+              }
+            }
+
+            @keyframes forwardSix2 {
+              from {
+                transform: translateX(-40px);
+              }
+              to {
+                transform: translateX(-20px);
+              }
+            }
+            @keyframes forwardSeven2 {
+              from {
+                transform: translateX(-40px);
+              }
+              to {
+                transform: translateX(-2px);
+              }
+            }
+            @keyframes forwardEight2 {
+              from {
+                transform: translateX(-30px);
+              }
+              to {
+                transform: translateX(-20px);
+              }
+            }
+            @keyframes forwardNine2 {
+              from {
+                transform: translateX(-30px);
+              }
+              to {
+                transform: translateX(-2px);
+              }
+            }
+            @keyframes forwardTen2 {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(-2px);
+              }
+            }
+
+            //reverse
+
+            @keyframes reverseOne2 {
+              from {
+                transform: translateX(-2px);
+              }
+              to {
+                transform: translateX(-20px);
+              }
+            }
+
+            @keyframes reverseTwo2 {
+              from {
+                transform: translateX(-2px);
+              }
+              to {
+                transform: translateX(-30px);
+              }
+            }
+
+            @keyframes reverseThree2 {
+              from {
+                transform: translateX(-2px);
+              }
+              to {
+                transform: translateX(-40px);
+              }
+            }
+
+            @keyframes reverseFour2 {
+              from {
+                transform: translateX(-2px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+
+            @keyframes reverseFive2 {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(-30px);
+              }
+            }
+
+            @keyframes reverseSix2 {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(-40px);
+              }
+            }
+            @keyframes reverseSeven2 {
+              from {
+                transform: translateX(-20px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+            @keyframes reverseEight2 {
+              from {
+                transform: translateX(-30px);
+              }
+              to {
+                transform: translateX(-40px);
+              }
+            }
+            @keyframes reverseNine2 {
+              from {
+                transform: translateX(-30px);
+              }
+              to {
+                transform: translateX(-40px);
+              }
+            }
+            @keyframes reverseTen2 {
+              from {
+                transform: translateX(-40px);
+              }
+              to {
+                transform: translateX(-50px);
+              }
+            }
+          }
+        }
+
+        &.mass_increased200 {
+          left: -14px;
+        }
+
+        &.mass_increased300 {
+          left: -3px;
+        }
+      }
+
+      .charge-container1 {
+        top: 22px;
+        left: 33px;
+        width: 18px;
+        height: 18px;
+        color: white;
+        font-size: 26px;
+        font-weight: 400;
+        position: absolute;
+
+        &.mass_plus__200 {
+          top: 9px;
+        }
+
+        &.mass_plus__300 {
+          top: 0px;
+        }
+
+        .plus_0 {
+          left: -4px;
+          top: -5px;
+          position: relative;
+        }
+
+        .plus_1 {
+          left: 10px;
+          top: -33px;
+          position: relative;
+        }
+
+        .plus_2 {
+          left: -4px;
+          top: -62px;
+          position: relative;
+        }
+      }
+    }
+
+    @keyframes ballForwardOne1 {
+      from {
+        transform: translateX(113px);
+      }
+      to {
+        transform: translateX(176px);
+      }
+    }
+
+    @keyframes ballForwardTwo1 {
+      from {
+        transform: translateX(113px);
+      }
+      to {
+        transform: translateX(239px);
+      }
+    }
+
+    @keyframes ballForwardThree1 {
+      from {
+        transform: translateX(176px);
+      }
+      to {
+        transform: translateX(239px);
+      }
+    }
+
+    @keyframes ballForwardFour1 {
+      from {
+        transform: translateX(239px);
+      }
+      to {
+        transform: translateX(176px);
+      }
+    }
+
+    @keyframes ballForwardFive1 {
+      from {
+        transform: translateX(239px);
+      }
+      to {
+        transform: translateX(113px);
+      }
+    }
+
+    @keyframes ballForwardSix1 {
+      from {
+        transform: translateX(176px);
+      }
+      to {
+        transform: translateX(113px);
+      }
+    }
+
+    @keyframes ballForwardSeven1 {
+      from {
+        transform: translateX(239px);
+      }
+      to {
+        transform: translateX(113px);
+      }
+    }
+
+    @keyframes ballForwardEight1 {
+      from {
+        transform: translateX(239px);
+      }
+      to {
+        transform: translateX(176px);
+      }
+    }
+
+    @keyframes ballForwardNine1 {
+      from {
+        transform: translateX(176px);
+      }
+      to {
+        transform: translateX(113px);
+      }
+    }
+
+    @keyframes ballForwardTen1 {
+      from {
+        transform: translateX(301px);
+      }
+      to {
+        transform: translateX(113px);
+      }
+    }
+
+    @keyframes ballForwardEleven1 {
+      from {
+        transform: translateX(301px);
+      }
+      to {
+        transform: translateX(176px);
+      }
+    }
+
+    @keyframes ballForwardTwelve1 {
+      from {
+        transform: translateX(301px);
+      }
+      to {
+        transform: translateX(239px);
+      }
+    }
+
+    &.container-two {
+      top: 29px;
+      transform: translateX(529px);
+
+      &.move2_8_6 {
+        animation: ballForwardOne2 2s forwards;
+      }
+
+      &.move2_8_4 {
+        animation: ballForwardTwo2 2s forwards;
+      }
+
+      &.move2_0_3 {
+        animation: ballForwardThree2 2s forwards;
+      }
+
+      &.move2_6_4 {
+        animation: ballForwardFour2 2s forwards;
+      }
+
+      &.move2_4_6 {
+        animation: ballForwardFive2 2s forwards;
+      }
+
+      &.move2_4_8 {
+        animation: ballForwardSix2 2s forwards;
+      }
+
+      &.move2_6_8 {
+        animation: ballForwardSeven2 2s forwards;
+      }
+
+      &.move2_2_1 {
+        animation: ballForwardEight2 2s forwards;
+      }
+
+      &.move2_1_0 {
+        animation: ballForwardNine2 2s forwards;
+      }
+
+      &.move2_3_0 {
+        animation: ballForwardTen2 2s forwards;
+      }
+
+      &.move2_3_1 {
+        animation: ballForwardEleven2 2s forwards;
+      }
+
+      &.move2_3_2 {
+        animation: ballForwardTwelve2 2s forwards;
+      }
+
+      &.mass100 {
+        background-image: url("../../assets/images/100kg.png");
+      }
+
+      &.mass200 {
+        width: 110;
+        height: 110;
+        background-image: url("../../assets/images/200kg.png");
+      }
+
+      &.mass300 {
+        width: 140;
+        height: 140;
+        background-image: url("../../assets/images/300kg.png");
+      }
+
+      &.arrow-container2 {
+        top: -51px;
+        width: 145px;
+        height: 126px;
+        overflow: hidden;
+        position: absolute;
+        transform: translateX(-154px);
+
+        .arrowOne2 {
+          top: 7px;
+          width: 200px;
+          height: 38px;
+          position: relative;
+          transform: rotate(180deg);
+          backface-visibility: hidden;
+
+          .image3 {
+            width: 128px;
+            height: 38px;
+            position: relative;
+            background-size: cover;
+            transform: translateX(7px);
+            backface-visibility: hidden;
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/arrow_red_long.png");
+
+            &.charge-right_2_3 {
+              animation: forwardOne4 1s forwards;
+            }
+
+            &.charge-right_2_4 {
+              animation: forwardTwo4 1s forwards;
+            }
+
+            &.charge-right_2_5 {
+              animation: forwardThree4 1s forwards;
+            }
+
+            &.charge-right_2_6 {
+              animation: forwardFour4 1s forwards;
+            }
+
+            &.charge-right_3_4 {
+              animation: forwardFive4 1s forwards;
+            }
+
+            &.charge-right_3_5 {
+              animation: forwardSix4 1s forwards;
+            }
+
+            &.charge-right_3_6 {
+              animation: forwardSeven4 1s forwards;
+            }
+
+            &.charge-right_4_5 {
+              animation: forwardEight4 1s forwards;
+            }
+
+            &.charge-right_4_6 {
+              animation: forwardNine4 1s forwards;
+            }
+
+            &.charge-right_5_6 {
+              animation: forwardTen4 1s forwards;
+            }
+
+            &.charge-right_6_5 {
+              animation: reverseOne4 1s forwards;
+            }
+
+            &.charge-right_6_4 {
+              animation: reverseTwo4 1s forwards;
+            }
+
+            &.charge-right_6_3 {
+              animation: reverseThree4 1s forwards;
+            }
+
+            &.charge-right_6_2 {
+              animation: reverseFour4 1s forwards;
+            }
+
+            &.charge-right_5_4 {
+              animation: reverseFive4 1s forwards;
+            }
+
+            &.charge-right_5_3 {
+              animation: reverseSix4 1s forwards;
+            }
+
+            &.charge-right_5_2 {
+              animation: reverseSeven4 1s forwards;
+            }
+
+            &.charge-right_4_3 {
+              animation: reverseEight4 1s forwards;
+            }
+
+            &.charge-right_4_2 {
+              animation: reverseNine4 1s forwards;
+            }
+
+            &.charge-right_3_2 {
+              animation: reverseTen4 1s forwards;
+            }
+
+            //for distance movement
+            &.distance2_8_6 {
+              animation: distance_One 1s forwards;
+            }
+
+            &.distance2_6_4 {
+              animation: distance_Two 1s forwards;
+            }
+
+            &.distance2_8_4 {
+              animation: distance_Three 1s forwards;
+            }
+
+            &.distance2_4_6 {
+              animation: distance_Four 1s forwards;
+            }
+
+            &.distance2_4_8 {
+              animation: distance_Five 1s forwards;
+            }
+
+            &.distance2_6_8 {
+              animation: distance_Six 1s forwards;
+            }
+
+            @keyframes increaseOne3 {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(28px);
+              }
+            }
+
+            @keyframes increaseTwo3 {
+              from {
+                transform: translateX(28px);
+              }
+              to {
+                transform: translateX(55px);
+              }
+            }
+
+            @keyframes increaseThree3 {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(55px);
+              }
+            }
+
+            @keyframes reverseOne3 {
+              from {
+                transform: translateX(55px);
+              }
+              to {
+                transform: translateX(28px);
+              }
+            }
+
+            @keyframes reverseTwo3 {
+              from {
+                transform: translateX(28px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+
+            @keyframes reverseThree3 {
+              from {
+                transform: translateX(55px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+          }
+        }
+
+        .arrowTwo2 {
+          top: 51px;
+          right: 0px;
+          width: 200px;
+          height: 38px;
+          position: relative;
+          transform: rotate(180deg);
+          // backface-visibility: hidden;
+
+          .arrow-end-two {
+            left: 47px;
+            top: -24px;
+            z-index: 1;
+            width: 10px;
+            height: 10px;
+            position: relative;
+            border-right: 2px solid #5b4f4f;
+          }
+
+          .image4 {
+            width: 128px;
+            height: 38px;
+            position: relative;
+            background-size: cover;
+            transform: translateX(7px);
+            background-position: right;
+            backface-visibility: hidden;
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/arrow_yellow_long.png");
+
+            &.mass_200_300 {
+              animation: forwardOne4 1s forwards;
+            }
+
+            &.mass_200_400 {
+              animation: forwardTwo4 1s forwards;
+            }
+
+            &.mass_200_500 {
+              animation: forwardThree4 1s forwards;
+            }
+
+            &.mass_200_600 {
+              animation: forwardFour4 1s forwards;
+            }
+
+            &.mass_300_400 {
+              animation: forwardFive4 1s forwards;
+            }
+
+            &.mass_300_500 {
+              animation: forwardSix4 1s forwards;
+            }
+            &.mass_300_600 {
+              animation: forwardSeven4 1s forwards;
+            }
+
+            &.mass_400_500 {
+              animation: forwardEight4 1s forwards;
+            }
+
+            &.mass_400_600 {
+              animation: forwardNine4 1s forwards;
+            }
+
+            &.mass_500_600 {
+              animation: forwardTen4 1s forwards;
+            }
+
+            &.mass_600_500 {
+              animation: reverseOne4 1s forwards;
+            }
+
+            &.mass_600_400 {
+              animation: reverseTwo4 1s forwards;
+            }
+
+            &.mass_600_300 {
+              animation: reverseThree4 1s forwards;
+            }
+
+            &.mass_600_200 {
+              animation: reverseFour4 1s forwards;
+            }
+
+            &.mass_500_400 {
+              animation: reverseFive4 1s forwards;
+            }
+
+            &.mass_500_300 {
+              animation: reverseSix4 1s forwards;
+            }
+
+            &.mass_500_200 {
+              animation: reverseSeven4 1s forwards;
+            }
+
+            &.mass_400_300 {
+              animation: reverseEight4 1s forwards;
+            }
+
+            &.mass_400_200 {
+              animation: reverseNine4 1s forwards;
+            }
+
+            &.mass_300_200 {
+              animation: reverseTen4 1s forwards;
+            }
+
+            //for distance movement
+            &.distance2_8_6 {
+              animation: distance_One 1s forwards;
+            }
+
+            &.distance2_6_4 {
+              animation: distance_Two 1s forwards;
+            }
+
+            &.distance2_8_4 {
+              animation: distance_Three 1s forwards;
+            }
+
+            &.distance2_4_6 {
+              animation: distance_Four 1s forwards;
+            }
+
+            &.distance2_4_8 {
+              animation: distance_Five 1s forwards;
+            }
+
+            &.distance2_6_8 {
+              animation: distance_Six 1s forwards;
+            }
+
+            @keyframes forwardOne4 {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(18px);
+              }
+            }
+
+            @keyframes forwardTwo4 {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(25px);
+              }
+            }
+
+            @keyframes forwardThree4 {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(40px);
+              }
+            }
+
+            @keyframes forwardFour4 {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(51px);
+              }
+            }
+
+            @keyframes forwardFive4 {
+              from {
+                transform: translateX(18px);
+              }
+              to {
+                transform: translateX(25px);
+              }
+            }
+
+            @keyframes forwardSix4 {
+              from {
+                transform: translateX(18px);
+              }
+              to {
+                transform: translateX(40px);
+              }
+            }
+            @keyframes forwardSeven4 {
+              from {
+                transform: translateX(18px);
+              }
+              to {
+                transform: translateX(51px);
+              }
+            }
+            @keyframes forwardEight4 {
+              from {
+                transform: translateX(25px);
+              }
+              to {
+                transform: translateX(40px);
+              }
+            }
+            @keyframes forwardNine4 {
+              from {
+                transform: translateX(25px);
+              }
+              to {
+                transform: translateX(51px);
+              }
+            }
+            @keyframes forwardTen4 {
+              from {
+                transform: translateX(40px);
+              }
+              to {
+                transform: translateX(51px);
+              }
+            }
+
+            //reverse
+
+            @keyframes reverseOne4 {
+              from {
+                transform: translateX(52px);
+              }
+              to {
+                transform: translateX(40px);
+              }
+            }
+
+            @keyframes reverseTwo4 {
+              from {
+                transform: translateX(52px);
+              }
+              to {
+                transform: translateX(25px);
+              }
+            }
+
+            @keyframes reverseThree4 {
+              from {
+                transform: translateX(52px);
+              }
+              to {
+                transform: translateX(18px);
+              }
+            }
+
+            @keyframes reverseFour4 {
+              from {
+                transform: translateX(52px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+
+            @keyframes reverseFive4 {
+              from {
+                transform: translateX(40px);
+              }
+              to {
+                transform: translateX(25px);
+              }
+            }
+
+            @keyframes reverseSix4 {
+              from {
+                transform: translateX(40px);
+              }
+              to {
+                transform: translateX(18px);
+              }
+            }
+            @keyframes reverseSeven4 {
+              from {
+                transform: translateX(40px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+            @keyframes reverseEight4 {
+              from {
+                transform: translateX(25px);
+              }
+              to {
+                transform: translateX(18px);
+              }
+            }
+            @keyframes reverseNine4 {
+              from {
+                transform: translateX(25px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+            @keyframes reverseTen4 {
+              from {
+                transform: translateX(18px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+
+            //distance
+
+            @keyframes distance_One {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(15px);
+              }
+            }
+
+            @keyframes distance_Two {
+              from {
+                transform: translateX(15px);
+              }
+              to {
+                transform: translateX(28px);
+              }
+            }
+
+            @keyframes distance_Three {
+              from {
+                transform: translateX(7px);
+              }
+              to {
+                transform: translateX(28px);
+              }
+            }
+
+            @keyframes distance_Four {
+              from {
+                transform: translateX(28px);
+              }
+              to {
+                transform: translateX(15px);
+              }
+            }
+
+            @keyframes distance_Five {
+              from {
+                transform: translateX(28px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+
+            @keyframes distance_Six {
+              from {
+                transform: translateX(15px);
+              }
+              to {
+                transform: translateX(7px);
+              }
+            }
+          }
+        }
+
+        &.mass_increased200 {
+          left: -14px;
+        }
+
+        &.mass_increased300 {
+          left: -25px;
+        }
+      }
+      .charge-container2 {
+        top: 22px;
+        left: 34px;
+        width: 18px;
+        height: 18px;
+        color: white;
+        font-size: 26px;
+        font-weight: 400;
+        position: absolute;
+
+        &.mass_plus_200 {
+          top: 9px;
+        }
+
+        &.mass_plus_300 {
+          top: -5px;
+        }
+
+        .minus_0 {
+          left: -4px;
+          top: -5px;
+          position: relative;
+        }
+
+        .minus_1 {
+          left: 10px;
+          top: -33px;
+          position: relative;
+        }
+
+        .minus_2 {
+          left: -4px;
+          top: -62px;
+          position: relative;
+        }
+      }
+    }
+
+    @keyframes ballForwardOne2 {
+      from {
+        transform: translateX(529px);
+      }
+      to {
+        transform: translateX(467px);
+      }
+    }
+
+    @keyframes ballForwardTwo2 {
+      from {
+        top: 29px;
+        transform: translateX(529px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(404px);
+      }
+    }
+
+    @keyframes ballForwardThree2 {
+      from {
+        top: 29px;
+        transform: translateX(529px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(342px);
+      }
+    }
+
+    @keyframes ballForwardFour2 {
+      from {
+        top: 29px;
+        transform: translateX(467px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(404px);
+      }
+    }
+
+    @keyframes ballForwardFive2 {
+      from {
+        top: 29px;
+        transform: translateX(404px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(467px);
+      }
+    }
+
+    @keyframes ballForwardSix2 {
+      from {
+        top: 29px;
+        transform: translateX(404px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(529px);
+      }
+    }
+
+    @keyframes ballForwardSeven2 {
+      from {
+        top: 29px;
+        transform: translateX(467px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(529px);
+      }
+    }
+
+    @keyframes ballForwardEight2 {
+      from {
+        top: 29px;
+        transform: translateX(404px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(467px);
+      }
+    }
+
+    @keyframes ballForwardNine2 {
+      from {
+        top: 29px;
+        transform: translateX(467px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(529px);
+      }
+    }
+
+    @keyframes ballForwardTen2 {
+      from {
+        top: 29px;
+        transform: translateX(342px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(529px);
+      }
+    }
+
+    @keyframes ballForwardEleven2 {
+      from {
+        top: 29px;
+        transform: translateX(342px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(467px);
+      }
+    }
+
+    @keyframes ballForwardTwelve2 {
+      from {
+        top: 29px;
+        transform: translateX(342px);
+      }
+      to {
+        top: 29px;
+        transform: translateX(404px);
+      }
+    }
+
+    .pointer {
+      top: 95px;
+      left: 33px;
+      z-index: 1;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: red;
+    }
+  }
+}

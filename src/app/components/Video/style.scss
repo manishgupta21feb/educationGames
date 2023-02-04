@@ -1,0 +1,66 @@
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .video-wrapper {
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+
+      video {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        display: block;
+        background: none;
+        overflow: hidden;
+
+        // &.question_id_here {
+        //   background: transparent url(../../../assets/images/conduction_1.png)
+        //     center / contain no-repeat;
+        // }
+      }
+    }
+  }
+
+  .play-pause-buttons {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    .btn {
+      top: 15px;
+      left: 10px;
+      opacity: 0;
+      position: absolute;
+      pointer-events: auto;
+      &:focus:not(:disabled) {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    .play-pause-buttons {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+
+  .overlay {
+  }
+}

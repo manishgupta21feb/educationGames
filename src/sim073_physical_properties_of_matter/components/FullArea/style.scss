@@ -1,0 +1,94 @@
+.text-info {
+  margin-top: 80px;
+  margin-left: 24px;
+  color: var(--question-text-blue);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.row {
+  display: flex;
+}
+.mass-box {
+  background-image: url(../../assets/images/mass.png);
+}
+.volume-box {
+  background-image: url(../../assets/images/volume.png);
+}
+.magnet-box {
+  background-image: url(../../assets/images/magnet.png);
+}
+.relative-density-box {
+  background-image: url(../../assets/images/relative_density.png);
+}
+.electric-conductivity-box {
+  background-image: url(../../assets/images/conductivty.png);
+}
+.mass-box,
+.volume-box,
+.magnet-box,
+.relative-density-box,
+.electric-conductivity-box {
+  margin-top: 25px;
+  margin-left: 67px;
+  box-sizing: border-box;
+  height: 124px;
+  width: 153px;
+  border: 1px solid #35374c;
+  border-radius: 9px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mass-container,
+.volume-container,
+.magnet-container,
+.relative-density-container,
+.electric-conductivity-container {
+  display: flex;
+  .button-mass,
+  .button-volume,
+  .button-magnet,
+  .button-relative-density,
+  .button-electric-conductivity {
+    margin-top: 71px;
+    margin-left: 26px;
+  }
+}
+.volume-container {
+  margin-left: 70px;
+}
+.relative-density-container {
+  margin-left: 30px;
+}
+.btn.hotspot-btn.label {
+  opacity: 1;
+  height: 28px;
+  margin-top: 70px;
+  margin-left: 28px;
+  .text {
+    color: #fbf1e9;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}
+// .mass-visited,
+// .volume-visited,
+// .density-visited,
+// .magnet-visited,
+// .conductivity-visited {
+.visited {
+  box-shadow: unset;
+  background-color: white !important;
+  box-sizing: border-box;
+  border: 2px solid #c9c9cf;
+  .text {
+    color: #6b6b76 !important;
+  }
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

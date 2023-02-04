@@ -1,0 +1,50 @@
+.footer-section{
+        margin-top: 12px;
+        .select-dropdown {
+            &.dropdown {
+              display: flex;
+              flex-direction: row;
+              margin-top: 12px;
+              align-items: center;
+            }
+            > div {
+              color: #052978;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 0.25px;
+              line-height: 20px;
+              margin-right: 10px;
+            }
+            div + div {
+              width: 130px;
+              height: 26px;
+              > button {
+                height: 26px;
+                padding: 3px;
+              }
+            }
+            .accessible-list{
+              top: 26px;
+              border: 1px solid #c9c9cf;
+              background-color: white;
+              min-height:106px;
+
+              ul{
+                li{
+                  height: 26px;
+                  a{
+                    height: 100%;
+                    >div{
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .submit{
+              position: absolute;
+              margin-left:308px;
+              bottom: 24px;
+          }
+}

@@ -1,0 +1,124 @@
+.draggable {
+  position: relative;
+  .draggable-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .drag-box {
+    width: 51px;
+    margin-right: 32px;
+    margin-bottom: 8px;
+
+    .geometry {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+
+      .option {
+        width: 48px;
+        height: 48px;
+        padding: 4px;
+        position: relative;
+        pointer-events: auto;
+        color: var(--primary-blue);
+        background-color: var(--white);
+        border: 1px dashed var(--primary-blue);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          width: 100%;
+          height: 100%;
+          flex-shrink: 0;
+          display: block;
+          pointer-events: none;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        &.bun_top span {
+          background-image: url(../../assets/images/bun_top.png);
+        }
+
+        &.cheese span {
+          background-image: url(../../assets/images/cheese.png);
+        }
+
+        &.beef_patty span {
+          background-image: url(../../assets/images/beef_patty.png);
+        }
+
+        &.lettuce span {
+          background-image: url(../../assets/images/lettuce.png);
+        }
+
+        &.bun_bottom span {
+          background-image: url(../../assets/images/bun_bottom.png);
+        }
+
+        &.hydrogen span {
+          background-image: url(../../assets/images/hydrogen.png);
+        }
+
+        &.oxygen span {
+          background-image: url(../../assets/images/oxygen.png);
+        }
+
+        &.accessible-button {
+          &:focus:not(:disabled) {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+              -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+              -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+          }
+        }
+
+        &.not-accessible-button {
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+
+        &.ui-draggable {
+          cursor: grab;
+        }
+
+        &.ui-draggable-dragging {
+          z-index: 1;
+          cursor: grabbing;
+        }
+
+        &.ui-draggable-disabled {
+          cursor: default;
+          border: 2px solid #c9c9cf;
+        }
+
+        .option:not(:disabled) {
+          &:focus {
+            border: 1px dashed var(--primary-blue);
+          }
+
+          &:hover {
+            border: 1px dashed var(--primary-blue);
+          }
+        }
+      }
+    }
+
+    .label {
+      font-size: 12px;
+      width: 57px;
+      margin-top: 4px;
+      color: #35374c;
+      font-weight: 500;
+      line-height: 16px;
+      position: relative;
+      letter-spacing: 0.25px;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+  }
+}

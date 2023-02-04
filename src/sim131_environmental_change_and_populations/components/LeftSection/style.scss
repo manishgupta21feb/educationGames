@@ -1,0 +1,99 @@
+.left-static-section {
+  background-color: #EFFCFC;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-interactive-section {
+  .left-image {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.first {
+      background-image: url('../../assets/images/left-background-1.png');
+    }
+    &.second {
+      background-image: url('../../assets/images/left-background-2.png');
+    }
+  }
+}
+
+.fish-chart-wrapper {
+  height: 220px;
+  width: 270px;
+  margin-left: 50px;
+  padding-top: 55px;
+  .fish-chart-title {
+    font-size: 10px;
+    margin-bottom: 14px;
+    color: #35374C;
+    font-weight: 600;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+  }
+  .fish-chart-info {
+    font-size: 10px;
+    font-weight: 600;
+    color: #35374C;
+    transform: rotate(270deg);
+    position: absolute;
+    left: -41px;
+    top: 113px;
+    span {
+      span {
+        padding: 0 1px;
+        font-size: 7px;
+      }
+    }
+  }
+  canvas {
+    top: 50px;
+    left: 45px;
+    position: absolute;
+    height: 160px !important;
+    width: 250px !important;
+    // min-height: 145px !important;
+    // min-width: 230px !important;
+    background-color: white;
+  }
+  .chart-bottom-fish-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .fish-1 {
+      background-image: url('../../assets/images/1_fish.png');
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 213px;
+      left: 90px;
+    }
+    .fish-2 {
+      background-image: url('../../assets/images/2_fish.png');
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 213px;
+      left: 165px;
+    }
+    .fish-3 {
+      background-image: url('../../assets/images/3_fish.png');
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 213px;
+      left: 242px;
+    }
+  }
+}

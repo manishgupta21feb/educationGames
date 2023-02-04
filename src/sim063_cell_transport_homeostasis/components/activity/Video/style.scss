@@ -1,0 +1,57 @@
+.video-container {
+  .video-wrapper {
+    video {
+      &.question1 {
+        background: transparent
+          url(../../../assets/images/cell_transport_homeostasis_07.png)
+          center/contain no-repeat;
+      }
+      &.question2 {
+        background: transparent url(../../../assets/images/active_transport.png)
+          center/contain no-repeat;
+      }
+      &.question3 {
+        background: transparent
+          url(../../../assets/images/endocytosis_amoeba.png) center/contain
+          no-repeat;
+      }
+      &.question4 {
+        background: transparent url(../../../assets/images/exocytosis.png)
+          center/contain no-repeat;
+      }
+      &.question5 {
+        background: transparent url(../../../assets/images/diffusion.png)
+          center/contain no-repeat;
+      }
+      &.question6 {
+        background: transparent
+          url(../../../assets/images/cell_transport_homeostasis_06.png)
+          center/contain no-repeat;
+      }
+      &.question7 {
+        background: transparent
+          url(../../../assets/images/cell_transport_homeostasis_07.png)
+          center/contain no-repeat;
+      }
+      &.question8 {
+        background: transparent url(../../../assets/images/endocytosis.png)
+          center/contain no-repeat;
+      }
+      &.question9 {
+        background: transparent
+          url(../../../assets/images/facilitated_transport.png) center/contain
+          no-repeat;
+      }
+      &.question10 {
+        background: transparent
+          url(../../../assets/images/cell_transport_homeostasis_01.png)
+          center/contain no-repeat;
+      }
+    }
+  }
+  .play-pause-buttons {
+    .btn {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.leftright.screen3 {
+  .left {
+    .left-wrapper {
+      .hertzsprung-russell-diagram {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../../assets/images/hertzsprung-russell-diagram.png);
+      }
+    }
+  }
+
+  .right {
+    .right-wrapper {
+      padding-top: 80px;
+
+      .ost-heading {
+        color: #052978;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+      }
+
+      .popup-content {
+        width: 100%;
+        > div {
+          width: 100%;
+          margin-top: 20px;
+          overflow: hidden;
+          border-radius: 8px;
+          position: relative;
+          padding: 8px 12px;
+          border: 1px solid #ba5b08;
+          background-color: #fbf1e9;
+
+          p {
+            color: #352103;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+          }
+
+          .btn {
+            &.hotspot-btn {
+              &.close {
+                margin-right: 0px;
+                margin-bottom: 6px;
+                &:hover,
+                &:focus {
+                  margin-right: 0px;
+                  margin-bottom: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

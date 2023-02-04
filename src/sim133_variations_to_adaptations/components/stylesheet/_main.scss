@@ -1,0 +1,118 @@
+@mixin contentFormatting {
+  padding-top: 2px;
+  p {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    font-variant: lining-nums;
+  }
+}
+.sim133 {
+  .view-container {
+    background-color: #daf3c2;
+  }
+  .firstScreen {
+    width: 800px;
+    height: 600px;
+    background-image: url("../../assets/images/Main.png");
+    background-size: contain;
+  }
+}
+
+.sim133 {
+  .firstScreenBottom {
+    .btn:disabled {
+      opacity: 1;
+    }
+  }
+  .firstScreenBottom {
+    position: relative;
+    .bird_focus {
+      position: absolute;
+      .bird_focus__btn {
+        padding: 10px;
+        z-index: 1;
+      }
+
+      &__btn {
+        position: absolute;
+        overflow: hidden;
+      }
+      .tail {
+        position: absolute;
+        width: 48px;
+        border-top: 1px dashed var(--secondary-attention-dark);
+        transform-origin: 0;
+      }
+      .tail-point {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50px;
+        background-color: var(--secondary-attention-dark);
+      }
+    }
+
+    .bird_focus_0 {
+      top: 47px;
+      right: 385px;
+
+      .tail {
+        transform: translate(65px, 23px) rotate(4deg);
+      }
+      .tail-point {
+        top: 22px;
+        left: 111px;
+      }
+    }
+
+    .bird_focus_1 {
+      top: 85px;
+      left: 169px;
+
+      .tail {
+        transform: translate(18px, 22px) rotate(173deg);
+        width: 57px !important;
+      }
+
+      .tail-point {
+        top: 24px;
+        left: -45px;
+      }
+    }
+
+    .bird_focus_2 {
+      top: 200px;
+      left: 82px;
+
+      .tail {
+        transform: translate(36px, 39px) rotate(150deg);
+      }
+
+      .tail-point {
+        top: 60px;
+        left: -14px;
+      }
+    }
+
+    .bird_focus_3 {
+      top: 226px;
+      right: 248px;
+      .bird_focus__btn {
+        padding: 10px;
+      }
+      .tail {
+        transform: translate(93px, 22px) rotate(0deg);
+      }
+
+      .tail-point {
+        top: 17px;
+        left: 140px;
+      }
+    }
+  }
+
+  .introContent {
+    @include contentFormatting;
+  }
+}

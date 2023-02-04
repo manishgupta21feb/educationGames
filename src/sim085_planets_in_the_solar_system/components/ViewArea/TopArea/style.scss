@@ -1,0 +1,176 @@
+.top-area {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/sim85.png);
+
+  .input-tag {
+    position: absolute;
+    box-sizing: border-box;
+    height: 33px;
+    width: 82px;
+    border: 1px solid #052978;
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-align: center;
+    -webkit-user-select: text;
+    &.show {
+      color: #052978;
+    }
+
+    &.planet1 {
+      top: 195px;
+      left: 22px;
+    }
+    &.planet2 {
+      top: 257px;
+      left: 104px;
+    }
+    &.planet3 {
+      top: 195px;
+      left: 193px;
+    }
+    &.planet4 {
+      top: 257px;
+      left: 273px;
+    }
+    &.planet5 {
+      top: 195px;
+      left: 372px;
+    }
+    &.planet6 {
+      top: 257px;
+      left: 525px;
+    }
+    &.planet7 {
+      top: 195px;
+      left: 630px;
+    }
+    &.planet8 {
+      top: 257px;
+      left: 708px;
+    }
+  }
+  .dotted-lines {
+    position: absolute;
+    transform-style: preserve-3d;
+    border-left: 3px dotted #ffffff;
+    &.planet1 {
+      height: 64px;
+      width: 1px;
+      top: 133px;
+      left: 68px;
+    }
+    &.planet2 {
+      height: 119px;
+      width: 1px;
+      top: 142px;
+      left: 147px;
+    }
+    &.planet3 {
+      height: 64px;
+      width: 1px;
+      top: 144px;
+      left: 231px;
+    }
+    &.planet4 {
+      height: 124px;
+      width: 1px;
+      top: 136px;
+      left: 311px;
+    }
+    &.planet5 {
+      height: 22px;
+      width: 1px;
+      top: 181px;
+      left: 412px;
+    }
+    &.planet6 {
+      height: 103px;
+      width: 1px;
+      top: 157px;
+      left: 564px;
+    }
+    &.planet7 {
+      height: 37px;
+      width: 1px;
+      top: 166px;
+      left: 680px;
+    }
+    &.planet8 {
+      height: 117px;
+      width: 1px;
+      top: 145px;
+      left: 755px;
+    }
+  }
+}
+.highlighted {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+
+  &.highlight-show {
+    opacity: 1;
+  }
+  &.planet1 {
+    width: 100%;
+    height: 12%;
+    left: 51px;
+    top: 102px;
+    background-image: url(../../../assets/images/earth.png);
+  }
+  &.planet2 {
+    width: 100%;
+    height: 24%;
+    left: 114px;
+    top: 84px;
+
+    background-image: url(../../../assets/images/earth.png);
+  }
+  &.planet3 {
+    width: 100%;
+    height: 28%;
+    left: 190px;
+    top: 77px;
+    background-image: url(../../../assets/images/earth.png);
+  }
+  &.planet4 {
+    width: 100%;
+    height: 17%;
+    left: 287px;
+    top: 94px;
+
+    background-image: url(../../../assets/images/earth.png);
+  }
+  &.planet5 {
+    width: 100%;
+    height: 49%;
+    left: 341px;
+    top: 44px;
+    background-image: url(../../../assets/images/jupiter.png);
+  }
+  &.planet6 {
+    width: 100%;
+    height: 33%;
+    left: 502px;
+    top: 64px;
+    background-image: url(../../../assets/images/uranus.png);
+  }
+  &.planet7 {
+    width: 100%;
+    height: 23%;
+    left: 635px;
+    top: 82px;
+    background-image: url(../../../assets/images/uranus.png);
+  }
+  &.planet8 {
+    width: 100%;
+    height: 26%;
+    left: 717px;
+    top: 81px;
+    background-image: url(../../../assets/images/earth.png);
+  }
+}

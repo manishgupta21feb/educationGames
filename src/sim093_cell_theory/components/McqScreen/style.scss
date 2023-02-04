@@ -1,0 +1,50 @@
+.full-container {
+  height: calc(100% - 80px);
+  padding: 0 24px;
+  position: relative;
+
+  .screen-heading {
+    // height: 40px;
+
+    color: #052978;
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+  .mcq-area {
+    margin-top: 24px;
+    height: calc(100% - 45px);
+
+    .radiobuttons .radiobutton {
+      list-style: none;
+      position: relative;
+      margin-bottom: 7px;
+      margin-right: 16px;
+    }
+
+    .radiobuttons {
+      width: 100%;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      overflow: hidden;
+    }
+    .mcq-question-area .inner-wrapper {
+      height: 100%;
+
+      .heading {
+        margin-bottom: 2px;
+      }
+    }
+    .radiobuttons .radiobutton {
+      list-style: none;
+      position: relative;
+      margin-bottom: 16px;
+      // margin-right: 6px;
+      right: 0px;
+      margin-right: 80px;
+    }
+  }
+}

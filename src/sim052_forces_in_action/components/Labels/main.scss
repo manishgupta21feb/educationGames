@@ -1,0 +1,20 @@
+.genericCl {
+  padding: 8px 20px;
+  color: #000;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+.teamA,
+.teamB {
+  position: absolute;
+  top: 309px;
+  border-radius: 8px;
+  z-index: 3;
+
+  &--aPos {
+    left: 152px;
+  }
+  &--bPos {
+    right: 161px;
+  }
+}

@@ -1,0 +1,40 @@
+.intial-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .info-image{
+        height: 320px;
+        width: 800px;
+        background-image: url("../../assets/images/intro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        padding: 24px;
+        height: 100%;
+        width: 100%;
+
+        :first-child{
+            margin-bottom: 8px;
+        }
+
+        .instruction-text{
+            color: var(--question-text-blue);
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            line-height: 20px;
+        }
+    }
+
+    .button-footer{
+        display: flex;
+        margin-left: 20px;
+        padding: 4px;
+        
+        :not(:first-child){
+            margin-left: 24px;
+        }
+    }
+}

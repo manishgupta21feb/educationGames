@@ -1,0 +1,26 @@
+@import "../../stylesheets/common/functions.scss";
+
+.wrapper {
+  @extend %flex;
+  &--full {
+    @extend %full-height;
+  }
+  &--row{
+    flex-direction: row;
+  }
+  &--column{
+    flex-direction: column;
+  }
+  &--center-hrzn{
+    justify-content: center;
+  }
+  &--center-vert{
+    align-items: center;
+  }
+  &--wrap{
+    flex-wrap: wrap;
+  }
+  &.relative{
+    position: relative;
+  }
+}

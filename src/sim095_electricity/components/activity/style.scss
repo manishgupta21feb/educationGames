@@ -1,0 +1,28 @@
+.start-popup {
+  ol {
+    margin-left: 18px;
+    li:nth-child(1) {
+      margin-top: 20px;
+    }
+    li:nth-child(2) {
+      margin-top: 8px;
+    }
+    li:nth-child(3) {
+      margin-top: 8px;
+    }
+  }
+  > .second-p {
+    margin-top: 20px;
+  }
+}
+.img-position {
+  height: 225px;
+  width: 409px;
+  background-repeat: no-repeat;
+  margin-top: 16px;
+  margin-left: 91px;
+}
+
+.right {
+  overflow: initial !important;
+}

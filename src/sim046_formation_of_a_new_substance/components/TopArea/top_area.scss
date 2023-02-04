@@ -1,0 +1,50 @@
+@import '../../stylesheets/common/functions.scss';
+
+$bgImg: '../../assets/images/background/main.png';
+
+.bg-img{
+  @extend %bg-cover,
+  %bg-no-repeat;
+  background-image: url($bgImg);
+}
+
+.exp{
+  @extend %bg-cover,
+  %absolute;
+  &--1{
+    width: calc(323px - 96.89px);
+    height: calc(409px - 122.69px);
+    left: 2%;
+    top: -20%;
+  }
+  &--1-start{
+    background-image: url("../../assets/images/exp/exp1-start.png");
+  }
+  &--1-end{
+    background-image: url("../../assets/images/exp/exp1-end.png");
+  }
+  &--2{
+    width: calc(261px - 86.13px);
+    height: calc(247px - 81.51px);
+    left: 39.5%;
+    top: 19%;
+  }
+  &--2-start{
+    background-image: url("../../assets/images/exp/exp2-start.png");
+  }
+  &--2-end{
+    background-image: url("../../assets/images/exp/exp2-end.png");
+  }
+  &--3{
+    width: calc(365px - 109.5px);
+    height: calc(251px - 75.3px);
+    left: 67%;
+    top: 15%;
+  }
+  &--3-start{
+    background-image: url("../../assets/images/exp/exp3-start.png");
+  }
+  &--3-end{
+    background-image: url("../../assets/images/exp/exp3-end.png");
+  }
+}

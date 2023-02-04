@@ -1,0 +1,48 @@
+.img {
+  background-color: #effcfc;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  &.question1 {
+    background-image: url("../../../assets/images/hcl.png");
+  }
+  &.question2 {
+    background-image: url("../../../assets/images/co2.png");
+  }
+  &.question3 {
+    background-image: url("../../../assets/images/beh2.png");
+  }
+  &.question4 {
+    background-image: url("../../../assets/images/bcl3.png");
+  }
+  &.question5 {
+    background-image: url("../../../assets/images/bh3.png");
+  }
+  &.question6 {
+    background-image: url("../../../assets/images/bbr3.png");
+  }
+  &.question7 {
+    background-image: url("../../../assets/images/h2o.png");
+  }
+  &.question8 {
+    background-image: url("../../../assets/images/ch4.png");
+  }
+  &.question9 {
+    background-image: url("../../../assets/images/sibr4.png");
+  }
+  &.question10 {
+    background-image: url("../../../assets/images/ch3cl.png");
+  }
+  &.question11 {
+    background-image: url("../../../assets/images/nh3.png");
+  }
+  &.question12 {
+    background-image: url("../../../assets/images/pi3.png");
+  }
+}

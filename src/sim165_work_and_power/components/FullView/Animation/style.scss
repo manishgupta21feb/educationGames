@@ -1,0 +1,172 @@
+:root {
+  --upAnimDirection: 0px;
+  --downAnimDirection: 0px;
+}
+@mixin animation-mixin-man($name, $position, $single) {
+  @keyframes #{$name} {
+    from {
+      background-position: 0px;
+    }
+
+    to {
+      background-position-x: -$position + $single;
+    }
+  }
+}
+
+@mixin animation-mixin($name, $position) {
+  @keyframes #{$name} {
+    from {
+      background-position: 0px;
+    }
+
+    to {
+      background-position-x: $position;
+    }
+  }
+}
+
+@mixin animation-box-mixin($name, $direction, $distance) {
+  @keyframes #{$name} {
+    to {
+      #{$direction}: $distance;
+    }
+  }
+}
+.animation---parent {
+  width: 100%;
+  position: absolute;
+  bottom: 206px;
+  height: 140px;
+  z-index: 1;
+  display: flex;
+  .animation {
+    opacity: 0;
+    display: none;
+    &--active {
+      opacity: 1;
+      display: initial;
+    }
+    &--defaultStand {
+      width: 432px;
+      height: 432px;
+      background: {
+        image: url("../../../assets/images/defaultStand.png");
+      }
+      transform: scale(0.4);
+      transform-origin: 0 0;
+      margin-left: 203px;
+      margin-top: 55px;
+    }
+    &--left {
+      width: 432px;
+      height: 432px;
+      background: {
+        image: url("../../../assets/images/man_slide_ani.png");
+      }
+      transform: scale(0.4) rotateY(180deg);
+      transform-origin: 0 0;
+      margin-left: 203px;
+      position: relative;
+      top: 55px;
+      left: 394px;
+    }
+    &--right {
+      width: 432px;
+      height: 432px;
+      background: {
+        image: url("../../../assets/images/man_slide_ani.png");
+      }
+      transform: scale(0.4);
+      transform-origin: 0 0;
+
+      position: relative;
+      top: 55px;
+      left: 203px;
+    }
+    &--up {
+      width: 436px;
+      height: 544px;
+      background: {
+        image: url("../../../assets/images/up_ani_spr.png");
+      }
+      transform: scale(0.42);
+      transform-origin: 0 0;
+      margin-left: 271px;
+    }
+    &--down {
+      width: 436px;
+      height: 544px;
+      background: {
+        image: url("../../../assets/images/down_ani_spr.png");
+      }
+      transform: scale(0.42);
+      transform-origin: 0 0;
+      margin-left: 271px;
+    }
+
+    &--box {
+      height: 383px;
+      width: 383px;
+      background: {
+        image: url("../../../assets/images/box.png");
+      }
+      transform: scale(0.28) translateX(-50%);
+      transform-origin: 0 0;
+      position: absolute;
+      left: 50%;
+      top: 116px;
+      transition-delay: 0.72s;
+      transition-timing-function: linear;
+    }
+
+    &--menLeftAnimation {
+      animation: leftAnimation 2s steps(22) 1 forwards;
+    }
+    &--menRightAnimation {
+      animation: leftAnimation 2s steps(22) 1 forwards;
+    }
+    &--menUpAnimation {
+      //animation: upAnimation 1.2s steps(35) 1 forwards;
+      ///animation: name duration timing-function delay iteration-count direction fill-mode;
+
+      animation-name: upAnimation;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    &--menDownAnimation {
+      // animation: downAnimation 1.2s steps(35) 1 forwards;
+      ///animation: name duration timing-function delay iteration-count direction fill-mode;
+      animation-name: downAnimation;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .sr-Boundary {
+    min-width: 10px;
+    min-height: 10px;
+  }
+}
+.push-position {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.next-position {
+  z-index: 1;
+}
+@include animation-mixin-man(leftAnimation, 9936px, 432px);
+@include animation-mixin(downAnimation, var(--downAnimDirection));
+@include animation-mixin(upAnimation, var(--upAnimDirection));
+//@include animation-box-mixin(boxLeft, left, 7%);
+//@include animation-box-mixin(boxRight, left, 93%);
+
+.hide-internal {
+  display: none;
+}
+.show-internal {
+  display: flex;
+}

@@ -1,0 +1,56 @@
+.periodic-table-container {
+  position: relative;
+  left: 0px;
+  bottom: -22px;
+  padding-left: 10px;
+  td {
+    font-family: inherit;
+  }
+  .row8 {
+    .elements {
+      height: 15px;
+    }
+  }
+
+  .elements {
+    height: 40px;
+  }
+
+  .symbol {
+    line-height: 1;
+  }
+  .elements {
+    &.cell5_1,
+    &.cell3_2,
+    &.cell6_11,
+    &.cell2_16,
+    &.cell1_18,
+    &.cell5_18,
+    &.cell4_10,
+    &.cell6_2,
+    &.cell3_17 {
+      background-color: var(--white);
+      .symbol,
+      .atomicNumber {
+        color: var(--white);
+      }
+    }
+    &.setBluecolor {
+      background-color: var(--primary-blue);
+    }
+    &.setBlueHoverColor {
+      background-color: var(--hover-state-color);
+
+      .symbol,
+      .atomicNumber {
+        color: var(--hover-state-color);
+      }
+    }
+  }
+}
+
+.start-info {
+  &:last-child {
+    margin-top: 8px;
+  }
+}

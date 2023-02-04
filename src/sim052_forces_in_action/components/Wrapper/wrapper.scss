@@ -1,0 +1,41 @@
+@import "../../stylesheets/common/functions.scss";
+
+.wrapper {
+  @extend %flex;
+  &--full {
+    @extend %full-height;
+  }
+  &--contain {
+    flex: 1;
+  }
+  &--row {
+    flex-direction: row;
+  }
+  &--column {
+    flex-direction: column;
+  }
+  &--center-hrzn {
+    justify-content: center;
+  }
+  &--center-vert {
+    align-items: center;
+  }
+  &--wrap {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &--space-around {
+    justify-content: space-around;
+  }
+  &.relative {
+    @extend %relative;
+  }
+}
+
+.draggable {
+  &--position {
+    position: absolute;
+    top: 144px;
+    left: 24px;
+  }
+}

@@ -1,0 +1,13 @@
+.dialogbox-container
+  .dialog-container[aria-labelledby="dialog-description-introductiondialog"] {
+  animation-duration: 1.4s;
+  .popup-image {
+    width: 690px;
+    height: 276px;
+    position: relative;
+    background-size: contain;
+    margin: 12px 0 18px -44px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/introduction_popup_image.png);
+  }
+}

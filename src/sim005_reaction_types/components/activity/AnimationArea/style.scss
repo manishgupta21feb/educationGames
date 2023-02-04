@@ -1,0 +1,110 @@
+.videos-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  // top: -6px;
+  .animation-container {
+    // opacity: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    // border: 2px solid green;
+
+    &.selected {
+      opacity: 1;
+    }
+
+    video {
+      top: 0;
+      left: 0;
+      opacity: 1;
+      width: 800px;
+      height: 318px;
+      overflow: hidden;
+      position: absolute;
+
+      &.question {
+        &.question1 {
+          background: transparent url(../../../assets/images/question1.png)
+            center / contain no-repeat;
+        }
+        &.question2 {
+          background: transparent url(../../../assets/images/question2.png)
+            center / contain no-repeat;
+        }
+        &.question3 {
+          background: transparent url(../../../assets/images/question3.png)
+            center / contain no-repeat;
+        }
+        &.question4 {
+          background: transparent url(../../../assets/images/question4.png)
+            center / contain no-repeat;
+        }
+        &.question5 {
+          background: transparent url(../../../assets/images/question5.png)
+            center / contain no-repeat;
+        }
+        &.question6 {
+          background: transparent url(../../../assets/images/question6.png)
+            center / contain no-repeat;
+        }
+        &.question7 {
+          background: transparent url(../../../assets/images/question7.png)
+            center / contain no-repeat;
+        }
+        &.question8 {
+          background: transparent url(../../../assets/images/question8.png)
+            center / contain no-repeat;
+        }
+        &.question9 {
+          background: transparent url(../../../assets/images/question9.png)
+            center / contain no-repeat;
+        }
+        &.question10 {
+          background: transparent url(../../../assets/images/question10.png)
+            center / contain no-repeat;
+        }
+      }
+
+      &.hide {
+        opacity: 0;
+      }
+    }
+
+    img {
+      top: 0;
+      left: 0;
+      opacity: 1;
+      width: 800px;
+      height: 318px;
+      overflow: hidden;
+      position: absolute;
+
+      &.hide {
+        // opacity: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .play-pause-buttons {
+    top: 15px;
+    left: 10px;
+    position: absolute;
+    .btn {
+      opacity: 0;
+      &:focus:not(:disabled) {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    .play-pause-buttons {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+}

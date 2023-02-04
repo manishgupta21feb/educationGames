@@ -1,0 +1,14 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      background-color: blueviolet;
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+button {
+  cursor: pointer;
+}

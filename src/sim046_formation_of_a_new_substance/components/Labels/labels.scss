@@ -1,0 +1,93 @@
+@import '../../stylesheets/common/functions.scss';
+
+%label{
+  @extend %absolute;
+  color: #352103;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  border-radius: 9.5px;
+  background-color: rgba(255,255,255,0.79);
+  padding: 2px 8px;
+}
+
+.labels{
+  @extend %absolute,
+  %full-width;
+  height: 120px;
+  top: 40%;
+
+  %bottom-position{
+    bottom: 2px;
+  }
+  %top-position{
+    top: 26%;
+    
+  }
+
+  &__label{
+    @extend %label;
+
+    &:first-child{
+      @extend %bottom-position;
+      left: 44px;
+    }
+    &:nth-child(2){
+      @extend %bottom-position;
+      left: 144px;
+    }
+    &:nth-child(3){
+      @extend %top-position;
+      left: 34%;
+      width: 62px;
+    }
+    &:nth-child(4){
+      @extend %top-position;
+      right: 35%;
+      width: 53px;
+    }
+    &:nth-child(5){
+      @extend %bottom-position;
+      right: 192px;
+    }
+    &:last-child{
+      @extend %bottom-position;
+      right: 73px;
+    }
+  }
+}
+
+.video-labels{
+  @extend %absolute,
+  %full-width;
+  top: 62%;
+  height: 40px;
+  &__label{
+    @extend %label;
+    top: 7px;
+  }
+  &--experiment1{
+    .video-labels__label:first-child{
+      left: 26%;
+    }
+    .video-labels__label:last-child{
+      right: 21%;
+    }
+  }
+  &--experiment2{
+    .video-labels__label:first-child{
+      left: 23%;
+    }
+    .video-labels__label:last-child{
+      right: 28%;
+    }
+  }
+  &--experiment3{
+    .video-labels__label:first-child{
+      left: 25%;
+    }
+    .video-labels__label:last-child{
+      right: 24%;
+    }
+  }
+}

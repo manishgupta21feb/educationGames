@@ -1,0 +1,195 @@
+.right-area {
+  width: 100%;
+  position: relative;
+  height: calc(100% - 80px);
+
+  .heading-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #052978;
+    line-height: 20px;
+    position: relative;
+    letter-spacing: 0.25px;
+
+    &:first-child {
+      margin-top: 80px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 16px;
+    }
+  }
+
+  .wrapper {
+    margin-top: 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 220px;
+    .option-container {
+      position: relative;
+      .draggables {
+        width: 65px;
+        height: 65px;
+        margin-right: 8px;
+        margin-bottom: 3px;
+        position: relative;
+
+        .draggable-button {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          position: absolute;
+          background: white;
+          outline: 1px solid transparent;
+          border: 1px dashed var(--primary-blue);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:not(:disabled) {
+            cursor: grab;
+          }
+
+          &.ui-draggable-disabled{
+            pointer-events: none;
+          }
+
+          span {
+            display: block;
+            pointer-events: none;
+            width: calc(100% - 8px);
+            height: calc(100% - 8px);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+
+          &.left-hand {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 1.png");
+            }
+          }
+          &.left-leg {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 3.png");
+            }
+          }
+          &.right-ear {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 6.png");
+            }
+          }
+
+          &.tell {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 7.png");
+            }
+          }
+          &.right-hand {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 2.png");
+            }
+          }
+          &.eye-2 {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 9.png");
+            }
+          }
+
+          &.eye-1 {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 8.png");
+            }
+          }
+          &.right-leg {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 4.png");
+            }
+          }
+          &.left-ear {
+            span {
+              background-image: url("../../assets/images/monkey/monkey\ icon\ 5.png");
+            }
+          }
+
+          &.roots {
+            span {
+              background-image: url("../../assets/images/plant/icon1.png");
+            }
+          }
+          &.stem {
+            span {
+              background-image: url("../../assets/images/plant/icon2.png");
+            }
+          }
+
+          &.leaves {
+            span {
+              background-image: url("../../assets/images/plant/icon3.png");
+            }
+          }
+
+          &.flower {
+            span {
+              background-image: url("../../assets/images/plant/icon4.png");
+            }
+          }
+
+          &.fruit {
+            span {
+              background-image: url("../../assets/images/plant/icon5.png");
+            }
+          }
+
+          &.ui-draggable {
+            cursor: grab;
+          }
+          &.ui-draggable-dragging {
+            z-index: 2;
+            cursor: grabbing;
+          }
+          &.ui-draggable-disabled {
+            border: 1px solid #c9c9cf;
+            opacity: 0.6;
+          }
+          &.selectedItem {
+            background-color: #d9ebff;
+          }
+        }
+
+        .accessible-button {
+          padding: 0;
+          width: 65px;
+          height: 65px;
+          border: none;
+          box-shadow: none;
+          justify-content: center;
+          background-color: transparent;
+
+          &:not(:disabled) {
+            border-radius: 4px;
+            &:focus {
+              outline: none;
+              box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+            }
+          }
+        }
+      }
+
+      span.label {
+        display: block;
+        max-width: 60px;
+        font-size: 14px;
+        color: #35374c;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+}

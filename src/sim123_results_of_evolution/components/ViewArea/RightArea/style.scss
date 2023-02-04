@@ -1,0 +1,38 @@
+.heading-css {
+  margin-top: 80px;
+  margin-bottom: 16px;
+  color: #052978;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+.right-button {
+  margin-bottom: 16px;
+}
+.mcq-wrapper {
+  &.scrollable-mcq {
+    .radiobutton-inner-wrapper {
+      align-items: flex-start !important;
+    }
+    .radiobuttons {
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+  }
+  &.radiobutton-css {
+    .mcq-question-area
+      .inner-wrapper
+      .radiobuttons
+      .radiobutton
+      .radiobutton-inner-wrapper {
+      align-items: normal;
+    }
+  }
+}
+.radiobuttons .radiobutton {
+  list-style: none;
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 14px;
+}

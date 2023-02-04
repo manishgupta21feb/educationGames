@@ -1,0 +1,46 @@
+.accessible-list {
+  margin-top: 10px;
+  margin-left: 3px;
+  width: 95%;
+  height: 91%;
+  @extend %bg-transparent, %border-none;
+
+  @mixin dropObjectFormat {
+    box-sizing: border-box;
+    height: 56px;
+    width: 131px;
+    color: #352103;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  & > .list {
+    @extend %no-margin;
+    & > .listitem {
+      @extend %block;
+      @include dropObjectFormat();
+      a {
+        @extend %inline-block, %full-object;
+      }
+      > a:focus {
+        @extend %bg-transparent;
+      }
+    }
+    .one {
+      top: 1px;
+      left: 2px;
+      width: 130px;
+    }
+    .two {
+      top: 20px;
+      left: 2px;
+      width: 130px;
+    }
+    .three {
+      top: 40px;
+      left: 2px;
+      width: 130px;
+    }
+  }
+}

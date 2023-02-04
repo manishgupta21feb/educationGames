@@ -1,0 +1,599 @@
+.nuclear-class {
+  height: 100%;
+  position: relative;
+}
+
+.button_class {
+  width: 100%;
+  bottom: 24px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+//Activity Area stylings
+.background-container {
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url(../../assets/images/bg.png);
+  .arrow-container {
+    position: absolute;
+    .plus,
+    .arrow {
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .arrow {
+      background-image: url(../../assets/images/arrow-right.svg);
+    }
+    .plus {
+      background-image: url(../../assets/images/plus.svg);
+    }
+    &.question1 {
+      top: 110px;
+      left: 280px;
+      .arrow {
+        left: 0;
+      }
+      .plus {
+        left: 330px;
+      }
+    }
+    &.question2 {
+      top: 146px;
+      left: 110px;
+      .arrow {
+        left: 110px;
+      }
+      .plus {
+        left: 410px;
+      }
+    }
+    &.question3 {
+      top: 146px;
+      left: 110px;
+      .arrow {
+        left: 170px;
+      }
+      .plus {
+        left: 360px;
+      }
+    }
+    &.question4 {
+      top: 130px;
+      left: 110px;
+      .arrow {
+        left: 180px;
+      }
+      .plus {
+        left: 505px;
+      }
+    }
+    &.question5 {
+      top: 125px;
+      left: 110px;
+      .arrow {
+        left: 170px;
+      }
+      .plus {
+        left: 445px;
+      }
+    }
+    &.question6 {
+      top: 146px;
+      left: 110px;
+      .arrow {
+        left: 190px;
+      }
+      .plus {
+        left: 372px;
+      }
+    }
+    &.question7 {
+      top: 140px;
+      left: 110px;
+      .arrow {
+        left: 180px;
+      }
+      .plus {
+        left: 465px;
+      }
+    }
+    &.question8 {
+      top: 120px;
+      left: 110px;
+      .arrow {
+        left: 190px;
+      }
+      .plus {
+        left: 480px;
+      }
+    }
+    &.question9 {
+      top: 125px;
+      left: 110px;
+      .arrow {
+        left: 142px;
+      }
+      .plus {
+        left: 425px;
+      }
+    }
+    &.question10 {
+      top: 115px;
+      left: 110px;
+      .arrow {
+        left: 150px;
+      }
+      .plus {
+        left: 440px;
+      }
+    }
+  }
+
+  .equation-image {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.question1 {
+      top: 18px;
+      left: 25px;
+      width: 538px;
+      height: 201px;
+      background-image: url(../../assets/images/equation1.png);
+    }
+    &.question2 {
+      top: 95px;
+      left: 30px;
+      width: 429px;
+      height: 122px;
+      background-image: url(../../assets/images/equation2.png);
+    }
+    &.question3 {
+      width: 270px;
+      height: 85px;
+      top: 115px;
+      left: 155px;
+      background-image: url(../../assets/images/equation3.png);
+    }
+    &.question4 {
+      width: 540px;
+      height: 192px;
+      top: 35px;
+      left: 30px;
+      background-image: url(../../assets/images/equation4.png);
+    }
+    &.question5 {
+      width: 441px;
+      height: 164px;
+      top: 60px;
+      left: 70px;
+      background-image: url(../../assets/images/equation5.png);
+    }
+    &.question6 {
+      width: 513px;
+      height: 133px;
+      top: 100px;
+      left: 145px;
+      background-image: url(../../assets/images/equation6.png);
+    }
+    &.question7 {
+      width: 498px;
+      height: 208px;
+      top: 35px;
+      left: 55px;
+      background-image: url(../../assets/images/equation7.png);
+    }
+    &.question8 {
+      width: 498px;
+      height: 201px;
+      top: 30px;
+      left: 65px;
+      background-image: url(../../assets/images/equation8.png);
+    }
+    &.question9 {
+      width: 423px;
+      height: 131px;
+      top: 70px;
+      left: 55px;
+      background-image: url(../../assets/images/equation9.png);
+    }
+    &.question10 {
+      width: 503px;
+      height: 205px;
+      top: 24px;
+      left: 20px;
+      background-image: url(../../assets/images/equation10.png);
+    }
+  }
+
+  &.question1 {
+    .equation-image {
+      &.question1 {
+        opacity: 1;
+      }
+    }
+    .alpha {
+      right: 4%;
+      top: 24%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 75px;
+      top: 230px;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 345px;
+      top: 0;
+      font-size: 30px;
+    }
+
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 140px;
+      top: 65%;
+      right: 15px;
+    }
+  }
+
+  &.question2 {
+    .equation-image {
+      &.question2 {
+        opacity: 1;
+      }
+    }
+    .gamma {
+      right: 10%;
+      top: 46%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 6%;
+      top: 76%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 43%;
+      top: 76%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 150px;
+      top: 65%;
+      right: 50px;
+    }
+  }
+  &.question3 {
+    .equation-image {
+      &.question3 {
+        opacity: 1;
+      }
+    }
+    .gamma {
+      right: 18%;
+      top: 47%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 20%;
+      top: 77%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 44%;
+      top: 77%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 110px;
+      top: 65%;
+      right: 160px;
+    }
+  }
+  &.question4 {
+    .equation-image {
+      &.question4 {
+        opacity: 1;
+      }
+    }
+    .alpha {
+      right: 3%;
+      top: 29%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 9%;
+      top: 77%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 53%;
+      top: 77%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 120px;
+      top: 65%;
+      right: 25px;
+    }
+  }
+  &.question5 {
+    .equation-image {
+      &.question5 {
+        opacity: 1;
+      }
+    }
+    .beta {
+      right: 18%;
+      top: 40%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 14%;
+      top: 76%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 50%;
+      top: 76%;
+      font-size: 30px;
+    }
+
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 140px;
+      top: 65%;
+      right: 30px;
+    }
+  }
+  &.question6 {
+    .equation-image {
+      &.question6 {
+        opacity: 1;
+      }
+    }
+    .alpha {
+      right: 44%;
+      top: 33%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 21%;
+      top: 79%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      right: 32%;
+      top: 79%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 120px;
+      top: 65%;
+      left: 42%;
+    }
+  }
+  &.question7 {
+    .equation-image {
+      &.question7 {
+        opacity: 1;
+      }
+    }
+    .alpha {
+      right: 10%;
+      top: 31%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 13%;
+      top: 80%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 49%;
+      top: 80%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 140px;
+      top: 65%;
+      right: 40px;
+    }
+  }
+  &.question8 {
+    .equation-image {
+      &.question8 {
+        opacity: 1;
+      }
+    }
+    .beta {
+      right: 15%;
+      top: 39%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 15%;
+      top: 76%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 51%;
+      top: 76%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 120px;
+      top: 65%;
+      right: 40px;
+    }
+  }
+  &.question9 {
+    .equation-image {
+      &.question9 {
+        opacity: 1;
+      }
+    }
+    .beta {
+      right: 18%;
+      top: 40%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 11%;
+      top: 76%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 47%;
+      top: 76%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 150px;
+      top: 65%;
+      right: 40px;
+    }
+  }
+  &.question10 {
+    .equation-image {
+      &.question10 {
+        opacity: 1;
+      }
+    }
+    .gamma {
+      right: 10%;
+      top: 38%;
+    }
+    .chem-equation {
+      position: absolute;
+      left: 9%;
+      top: 72%;
+      font-size: 30px;
+      text-align: right;
+    }
+    > span {
+      position: absolute;
+      left: 46%;
+      top: 72%;
+      font-size: 30px;
+    }
+    .blank_space {
+      position: absolute;
+      border-bottom: 2px solid black;
+      width: 150px;
+      top: 65%;
+      right: 55px;
+    }
+  }
+
+  div.mol-formula {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    &.alpha {
+      width: 97px;
+      height: 92px;
+      background-image: url(../../assets/images/alpha.png);
+
+      .chem-formula {
+        position: relative;
+        height: 100%;
+      }
+      .chem-equation {
+        position: absolute;
+        left: 25%;
+        top: 150px;
+        font-size: 30px;
+        text-align: right;
+      }
+    }
+
+    &.beta {
+      width: 22px;
+      height: 22px;
+      background-image: url(../../assets/images/beta.png);
+      .chem-formula {
+        position: relative;
+        height: 100%;
+      }
+      .chem-equation {
+        position: absolute;
+        left: -10px;
+        top: 115px;
+        font-size: 30px;
+        text-align: right;
+      }
+    }
+
+    &.gamma {
+      width: 114px;
+      height: 21px;
+      background-image: url(../../assets/images/gamma.png);
+      .chem-formula {
+        position: relative;
+        height: 100%;
+      }
+      .chem-equation {
+        position: absolute;
+        left: 25%;
+        top: 100px;
+        font-size: 30px;
+        text-align: right;
+      }
+    }
+  }
+}
+.molecules {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+}

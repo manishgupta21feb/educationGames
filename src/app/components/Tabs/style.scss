@@ -1,0 +1,78 @@
+.sp_tabs-tab-list-buttons {
+  top: 90px;
+  left: 18px;
+  width: 100%;
+  position: absolute;
+
+  li {
+    width: 135px;
+    padding: 5px;
+    display: inline-block;
+    background-color: white;
+    button {
+      width: calc(100% - 12px);
+      z-index: 1;
+    }
+
+    .sp_tabs-tab-list-button {
+      width: 135px;
+      font-size: 14px;
+      color: #0056b3;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      background-color: transparent;
+
+      &.selected {
+        height: 32px;
+        position: relative;
+        border-bottom-width: 0;
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 7px;
+        border-top: 3px solid #0056b3;
+        border-left: 2px solid #0056b3;
+        border-bottom-left-radius: 0px;
+        box-shadow: 2px 4px 0px 0 white !important;
+        &::before {
+          width: 15px;
+          content: "";
+          top: 0px;
+          right: -9px;
+          height: 35px;
+          position: absolute;
+          transform: rotate(-35deg);
+          background-color: white;
+          border-right: 3px solid #0056b3;
+          border-top-right-radius: 4px;
+        }
+        &::after {
+          content: "";
+          width: 7px;
+          height: 5px;
+          bottom: -3px;
+          right: -15px;
+          position: absolute;
+          transform: rotate(-35deg);
+          background-color: white;
+        }
+      }
+    }
+
+    .accessible-button {
+      padding: 0;
+      box-shadow: none;
+      justify-content: center;
+      background-color: white;
+      border-radius: 4px;
+      &:not(:disabled) {
+        &:focus {
+          span {
+            border-bottom: 3px solid #0056b3;
+          }
+        }
+      }
+    }
+  }
+}

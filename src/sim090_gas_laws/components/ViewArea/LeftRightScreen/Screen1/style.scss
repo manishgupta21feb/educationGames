@@ -1,0 +1,90 @@
+.topboylesLaw {
+  font-variant: lining-nums;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  background-image: url("../../../../assets/images/13.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .staticboyletxt1 {
+    position: absolute;
+    top: 99px;
+    left: 377px;
+    transform: rotate(270deg);
+    font-size: 24px;
+  }
+  .staticboyletxt2 {
+    position: absolute;
+    top: 217px;
+    left: 485px;
+
+    font-size: 24px;
+  }
+}
+.topcharlesLaw {
+  font-variant: lining-nums;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  background-image: url("../../../../assets/images/17.png");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .staticcltxt1 {
+    position: absolute;
+    top: 99px;
+    left: 377px;
+    transform: rotate(270deg);
+    font-size: 18px;
+  }
+  .staticcltxt2 {
+    position: absolute;
+    top: 189px;
+    left: 440px;
+
+    font-size: 18px;
+  }
+  .staticcharlestxt1 {
+    position: absolute;
+    top: 219px;
+    left: 108px;
+    font-size: 10px;
+    font-variant: lining-nums;
+  }
+  .staticcharlestxt2 {
+    position: absolute;
+    top: 231px;
+    left: 112px;
+    font-size: 10px;
+    color: white;
+    font-variant: lining-nums;
+  }
+  .staticcharlestxt3 {
+    position: absolute;
+    top: 219px;
+    left: 268px;
+    font-size: 10px;
+    font-variant: lining-nums;
+  }
+  .staticcharlestxt4 {
+    position: absolute;
+    top: 231px;
+    left: 274px;
+    font-size: 10px;
+    font-variant: lining-nums;
+    color: white;
+  }
+}

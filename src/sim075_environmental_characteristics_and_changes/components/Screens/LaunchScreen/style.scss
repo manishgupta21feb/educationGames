@@ -1,0 +1,109 @@
+.radio-box {
+  position: absolute;
+  height: 280px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.62) 84.85%,
+    rgba(255, 255, 255, 0.16) 100%
+  );
+}
+.images {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  > div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+  }
+  .initial {
+    background-image: url(../../../assets/images/art_1.jpg);
+  }
+  .q1-one {
+    background-image: url(../../../assets/images/art_2.jpg);
+  }
+  .q1-two {
+    background-image: url(../../../assets/images/art_10.jpg);
+  }
+  .q1-three {
+    background-image: url(../../../assets/images/art_6.jpg);
+  }
+  .q1-one-q2-one {
+    background-image: url(../../../assets/images/art_5.jpg);
+  }
+  .q1-one-q2-two {
+    background-image: url(../../../assets/images/art_4.jpg);
+  }
+  .q1-one-q2-three {
+    background-image: url(../../../assets/images/art_3.jpg);
+  }
+  .q1-one-q2-four {
+    background-image: url(../../../assets/images/art_2.jpg);
+  }
+  .q1-two-q2-one {
+    background-image: url(../../../assets/images/art_13.jpg);
+  }
+  .q1-two-q2-two {
+    background-image: url(../../../assets/images/art_12.jpg);
+  }
+  .q1-two-q2-three {
+    background-image: url(../../../assets/images/art_11.jpg);
+  }
+  .q1-two-q2-four {
+    background-image: url(../../../assets/images/art_10.jpg);
+  }
+  .q1-three-q2-one {
+    background-image: url(../../../assets/images/art_9.jpg);
+  }
+  .q1-three-q2-two {
+    background-image: url(../../../assets/images/art_8.jpg);
+  }
+  .q1-three-q2-three {
+    background-image: url(../../../assets/images/art_7.jpg);
+  }
+  .q1-three-q2-four {
+    background-image: url(../../../assets/images/art_6.jpg);
+  }
+  .show {
+    opacity: 1;
+  }
+}
+.screen0-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  .continue-button {
+    width: calc(100% - 48px);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .radiobuttons {
+    padding-top: 1px;
+    flex-direction: row;
+    justify-content: space-between;
+    .radiobutton {
+      margin-right: 0px;
+      max-width: 234px;
+      .radiobutton-inner-wrapper {
+        align-items: flex-start !important;
+        input[type="radio"] + div + label {
+          // font-size: 16px !important;
+        }
+      }
+    }
+  }
+  .ratingBox {
+    bottom: 88px;
+    right: 0px;
+  }
+}

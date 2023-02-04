@@ -1,0 +1,138 @@
+.main-container {
+  height: 100%;
+  margin: 0 16px;
+  .main-top {
+    width: 100%;
+    height: 262px;
+    display: flex;
+    .graph-container {
+      width: 237px;
+      margin-top: 26px;
+      display: flex;
+      flex-direction: column;
+      .graph {
+        height: 114px !important;
+        width: 114px !important;
+        position: relative;
+      }
+      .label-container {
+        margin-top: 16px;
+        .labels {
+          display: flex;
+          flex-direction: column;
+          .label {
+            display: flex;
+            margin-top: 10px;
+            .label-box {
+              height: 12px;
+              width: 12px;
+              border-radius: 2px;
+              margin-right: 8px;
+              background: none;
+              &.pattern1 {
+                background-color: #1b8338;
+                background-image: url("../../assets/images/pattern4.png");
+              }
+              &.pattern2 {
+                background-color: #ba5b08;
+                background-image: url("../../assets/images/pattern1.png");
+              }
+              &.pattern3 {
+                background-color: #0056b3;
+                background-image: url("../../assets/images/pattern2.png");
+              }
+              &.pattern4 {
+                background-color: #35374c;
+                background-image: url("../../assets/images/pattern3.png");
+              }
+              &.pattern5 {
+                background-color: black;
+              }
+            }
+            .patternLabel {
+              color: #35374c;
+              font-size: 14px;
+              letter-spacing: 0.47px;
+              line-height: 16px;
+              font-variant: lining-nums;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+    .main-vid {
+      width: 478px;
+      height: 247px;
+      margin-top: 14px;
+      .img-soil {
+        background: url(../../assets/images/soil.png);
+        height: inherit;
+        background-size: cover;
+      }
+      .video-container {
+        .video-wrapper {
+          video {
+            &.Ques1 {
+              background: url(../../assets/images/mineralsImg.png) transparent
+                center / contain no-repeat;
+            }
+            &.Ques2 {
+              background: url(../../assets/images/organicMaterialImg.png)
+                transparent center/ contain no-repeat;
+            }
+            &.Ques3 {
+              background: url(../../assets/images/waterImg.png) transparent
+                center / contain no-repeat;
+            }
+            &.Ques4 {
+              background: url(../../assets/images/airImg.png) transparent
+                center/ contain no-repeat;
+            }
+          }
+        }
+        .play-pause-buttons {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          .btn {
+            opacity: 1;
+            border-radius: 50%;
+            justify-content: center;
+            top: 85% !important;
+            left: 92% !important;
+            transform: translate(-50%, -50%);
+            .icon {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .main-text {
+    max-height: 144px;
+    margin-top: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 720px;
+    max-height: calc(100% - 288px);
+    p {
+      letter-spacing: 0.15px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #352103;
+    }
+    .para-second,
+    .para-third {
+      margin-top: 12px;
+    }
+  }
+}

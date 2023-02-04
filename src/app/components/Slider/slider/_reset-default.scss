@@ -1,0 +1,84 @@
+@mixin nostyle {
+  // outline: none;
+  border: 0 none;
+  cursor: pointer;
+  overflow: visible;
+  color: transparent;
+  background: transparent;
+  border-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+& {
+  input[type="range"] {
+    @include nostyle;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    @include nostyle;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    @include nostyle;
+  }
+
+  input[type="range"]::-moz-range-progress {
+    @include nostyle;
+  }
+
+  input[type="range"]::-moz-range-track {
+    @include nostyle;
+  }
+
+  input[type="range"]:focus {
+    @include nostyle;
+  }
+
+  progress[value] {
+    @include nostyle;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    @include nostyle;
+  }
+
+  progress[value]::-webkit-progress-value {
+    @include nostyle;
+  }
+
+  progress[value]::-moz-progress-bar {
+    @include nostyle;
+  }
+
+  progress[value]::-moz-progress-value {
+    @include nostyle;
+  }
+
+  /* IE 11 */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    input[type="range"]::-ms-track {
+      @include nostyle;
+      height: 32px;
+      margin-top: -15px;
+    }
+  }
+
+  /* MS Edge */
+  @supports (-ms-ime-align: auto) {
+    input[type="range"]::-ms-track {
+      @include nostyle;
+      height: 32px;
+      margin-top: -1px;
+      z-index: 24;
+    }
+  }
+
+  input[type="range"]::-ms-fill-lower {
+    @include nostyle;
+  }
+
+  input[type="range"]::-ms-tooltip {
+    @include nostyle;
+  }
+}

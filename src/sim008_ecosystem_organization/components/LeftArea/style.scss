@@ -1,0 +1,444 @@
+@mixin animPosition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin staticImagePosition {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  position: absolute;
+}
+
+.left-area {
+  background: #c2d0d2;
+  height: 100%;
+}
+
+.left-static {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .organism-seal-image {
+    background-image: url(../../assets/images/singleleopardseal.png);
+    @include staticImagePosition();
+  }
+
+  .population-fish-image {
+    background-image: url(../../assets/images/severalsilverfishinwater.png);
+    @include staticImagePosition();
+  }
+
+  .penguin-silverfish-image {
+    background-image: url(../../assets/images/penguinandsilverfish.png);
+    @include staticImagePosition();
+  }
+
+  .multiple-silverfish {
+    background-image: url(../../assets/images/multiplesilverfish.png);
+    @include staticImagePosition();
+  }
+
+  .penguin-leopardseal-image {
+    background-image: url(../../assets/images/penguinsandleopardseal.png);
+    @include staticImagePosition();
+  }
+}
+
+.left-interactive {
+  height: 100%;
+  position: relative;
+  .organism-penguin,
+  .organism-penguin + .buttons-container {
+    @include animPosition();
+    height: 461px;
+    width: 268px;
+    background-image: url(../../assets/images/orgainism/orgainsim_sprite.png);
+    &.play {
+      animation: penguinAnim 1.75s steps(20) infinite;
+    }
+    #penguin-1 {
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      // border: 2px solid black;
+      &:visited {
+        border: 1px solid black;
+      }
+    }
+  }
+
+  .organism-penguin + .buttons-container {
+    animation: none;
+    background: none;
+    position: absolute;
+  }
+
+  .organism-population,
+  .organism-population + .buttons-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    > div {
+      position: absolute;
+    }
+    .organism-1 {
+      top: 12px;
+      left: 7px;
+      height: 277px;
+      width: 278px;
+      transform: scale(0.92);
+      transform-origin: left;
+      animation: opP1Anim 1.75s steps(20) infinite;
+      background-image: url(../../assets/images/population/p1_sprite.png);
+    }
+
+    .organism-small-penguin {
+      right: 135px;
+      top: 92px;
+      height: 154px;
+      width: 133px;
+      // border: 1px solid black;
+      z-index: 2;
+      background-image: url(../../assets/images/population/p_small.png);
+      animation: opPSmall 1.75s steps(20) infinite;
+      transform: scale(0.92);
+      transform-origin: center;
+    }
+
+    .organism-big-penguin {
+      right: 7px;
+      top: 18px;
+      height: 223px;
+      width: 130px;
+      // border: 1px solid black;
+      z-index: 2;
+      background-image: url(../../assets/images/population/p_big.png);
+      animation: opPBig 1.75s steps(20) infinite;
+      transform: scale(0.92);
+      transform-origin: right;
+    }
+
+    .organism-3 {
+      background-image: url(../../assets/images/population/p3_sprite.png);
+      height: 250px;
+      width: 147px;
+      bottom: 27px;
+      left: 60px;
+      animation: opP3Anim 1.75s steps(20) infinite;
+    }
+
+    .organism-4 {
+      background-image: url(../../assets/images/population/p4_sprite.png);
+      bottom: 7px;
+      right: 35px;
+      height: 329px;
+      width: 191px;
+      animation: opP4Anim 1.75s steps(20) infinite;
+    }
+  }
+
+  .organism-population + .buttons-container {
+    top: 0;
+    left: 0;
+    animation: none;
+    background: none;
+    position: absolute;
+    .organism-1,
+    .organism-small-penguin,
+    .organism-big-penguin,
+    .organism-3,
+    .organism-4 {
+      background: none;
+      animation: none;
+      position: absolute;
+    }
+  }
+
+  .organism-community,
+  .organism-community + .buttons-container {
+    > div {
+      position: absolute;
+    }
+
+    .community-1 {
+      background-image: url(../../assets/images/ecosystem/penguin_sprite.png);
+      top: 65px;
+      right: 40px;
+      height: 170px;
+      width: 217px;
+      animation: ocPenguinAnim 1.75s steps(20) infinite;
+    }
+
+    .community-2 {
+      background-image: url(../../assets/images/ecosystem/seal_sprtie.png);
+      bottom: 188px;
+      left: 33px;
+      height: 84px;
+      width: 228px;
+      animation: sealAnim 1.75s steps(20) infinite;
+    }
+
+    .community-3 {
+      background-image: url(../../assets/images/ecosystem/fish_sprite.png);
+      bottom: 64px;
+      right: 48px;
+      height: 82px;
+      width: 243px;
+      animation: fishAnim 1.75s steps(20) infinite;
+    }
+  }
+
+  .organism-community + .buttons-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: none;
+    background: none;
+    position: absolute;
+    .community-1,
+    .community-3,
+    .community-2 {
+      background: none;
+      animation: none;
+      position: absolute;
+    }
+  }
+
+  .organism-ecosystem,
+  .organism-ecosystem + .buttons-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-image: url(../../assets/images/ecosystem/bg_2x.png);
+
+    > div {
+      position: absolute;
+    }
+
+    .ecosystem-sun {
+      top: 5px;
+      left: 6px;
+      height: 161px;
+      width: 178px;
+      background-image: url(../../assets//images/ecosystem/sun_sprite.png);
+      animation: ocSunAnim 1.75s steps(20) infinite;
+    }
+    .ecosystem-ice {
+      top: 180px;
+      left: 6px;
+      height: 120px;
+      width: 290px;
+      // background-image: url(../../assets//images/ecosystem/sun_sprite.png);
+      // animation: ocSunAnim 1.75s steps(20) infinite;
+    }
+
+    .ecosystem-1 {
+      background-image: url(../../assets/images/ecosystem/penguin_sprite.png);
+      top: 219px;
+      right: 12px;
+      height: 170px;
+      width: 217px;
+      animation: ocPenguinAnim 1.75s steps(20) infinite;
+    }
+
+    .ecosystem-2 {
+      background-image: url(../../assets/images/ecosystem/seal_sprtie.png);
+      height: 84px;
+      width: 228px;
+      bottom: 203px;
+      left: 8px;
+      animation: sealAnim 1.75s steps(20) infinite;
+    }
+
+    .ecosystem-3 {
+      background-image: url(../../assets/images/ecosystem/fish_sprite.png);
+      bottom: 83px;
+      right: 38px;
+      height: 82px;
+      width: 243px;
+      animation: fishAnim 1.75s steps(20) infinite;
+    }
+    .ecosystem-water {
+      bottom: 5px;
+      left: -3px;
+      height: 170px;
+      width: 547px;
+      transform: scale(0.96);
+      background-image: url(../../assets/images/ecosystem/water_sprite.png);
+      animation: waterAnim 1.75s steps(20) infinite;
+    }
+  }
+
+  .organism-ecosystem + .buttons-container {
+    top: 0;
+    left: 0;
+    animation: none;
+    background: none;
+    position: absolute;
+    .ecosystem-sun,
+    .ecosystem-ice,
+    .ecosystem-1,
+    .ecosystem-3,
+    .ecosystem-2,
+    .ecosystem-water {
+      background: none;
+      animation: none;
+      position: absolute;
+    }
+  }
+
+  .organism-selected {
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+    border: 2px solid #000;
+    border-radius: 4px;
+  }
+
+  //penguine keyframe
+  @keyframes penguinAnim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 5360px;
+    }
+  }
+
+  //seal keyframe
+  @keyframes sealAnim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 4560px;
+    }
+  }
+
+  //fish keyframe
+  @keyframes fishAnim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 4860px;
+    }
+  }
+
+  //p1 keyframe
+  @keyframes opP1Anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 5560px;
+    }
+  }
+
+  //p2 keyframe
+  @keyframes opPSmall {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 2660px;
+    }
+  }
+
+  @keyframes opPBig {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 2600px;
+    }
+  }
+
+  //p3 keyframe
+  @keyframes opP3Anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 2940px;
+    }
+  }
+
+  //p4 keyframe
+  @keyframes opP4Anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 3820px;
+    }
+  }
+
+  //opFish keyframe
+  @keyframes opP2Anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 5040px;
+    }
+  }
+
+  //opPenguin keyframe
+  @keyframes opP3Anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 2940px;
+    }
+  }
+
+  //opSeal keyframe
+  @keyframes opP4Anim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 3820px;
+    }
+  }
+
+  //ocPenguin keyframe
+  @keyframes ocPenguinAnim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 4340px;
+    }
+  }
+
+  //ocSunAnim keyframe
+  @keyframes ocSunAnim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 3560px;
+    }
+  }
+
+  //waterAnim keyframe
+  @keyframes waterAnim {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: 10940px;
+    }
+  }
+}

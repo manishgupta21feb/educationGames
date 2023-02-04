@@ -1,0 +1,445 @@
+.left-area {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .left-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    &.image-show {
+      background-image: url(../../../assets/images/home.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .graph-container {
+    align-items: center;
+    width: 456px;
+    position: relative;
+    top: 120px;
+    left: 48px;
+  }
+  .select-dropdown {
+    width: 21%;
+    top: -7px;
+    > div {
+      > span {
+        display: none;
+      }
+    }
+
+    background-color: white;
+    > div {
+      button {
+        padding: 3px 8px;
+      }
+    }
+  }
+  .highlighter {
+    position: absolute;
+    &.Snake {
+      top: 63px;
+      left: 114px;
+      width: 166px;
+      height: 69px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/snake_highlight.png);
+      background-color:"black";
+    }
+    &.Grasshoper {
+      top: 300px;
+      left: 61px;
+      width: 91px;
+      height: 51px;
+      background-color:"black";
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/grasshopper_highlight.png);
+    }
+    &.Wheat {
+      bottom: 37px;
+      left: 15px;  
+      width: 67px;
+      height: 128px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/wheat_highlight.png);
+      background-color:"black";
+    }
+    &.RedHawk { 
+      top: 19px;
+    left: 349px;
+      width: 172px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/red_hawk_highlight.png);
+      background-color:"black";
+    }
+    &.Wabler {
+      top: 156px;
+      left: 443px;
+      width: 90px;
+      height: 69px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/webler_highlight.png);
+      background-color:"black";
+    }
+    &.FruitFly {
+      top: 294px;
+      left: 435px;
+      width: 77px;
+      height: 62px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/fruitFly_highlight.png);
+      background-color:"black";
+    }
+  }
+  .dropdown {
+    position: relative;
+
+    &.Snake {
+      position: relative;
+      top: -164px;
+      left: 40px;
+    }
+    &.Grasshopper {
+      position: relative;
+      top: 76px;
+      left: 110px;
+    }
+    &.Wheat {
+      position: relative;
+      top: 116px;
+      left: 60px;
+    }
+    &.RedHawk {
+      position: relative;
+      top: -118px;
+      left: 330px;
+    }
+    &.Wabler {
+      position: relative;
+      top: -40px;
+      left: 418px;
+    }
+    &.FruitFly {
+      position: relative;
+      top: 52px;
+      left: 420px;
+    }
+  }
+
+  .label {
+    width: fit-content;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: var(--question-text-blue);
+    &.snake {
+      top: 75px;
+      left: 42px;
+    }
+    &.hawk {
+      top: 102px;
+      left: 332px;
+    }
+    &.grasshoppermouse {
+      top: 138px;
+      left: 10px;
+    }
+
+    &.dragonfly {
+      top: 84px;
+      left: 250px;
+    }
+    &.frog {
+      top: 172px;
+      left: 180px;
+    }
+    &.warbler {
+      top: 132px;
+      left: 420px;
+    }
+    &.grasshopper {
+      top: 228px;
+      left: 110px;
+    }
+    &.butterfly {
+      top: 236px;
+      left: 260px;
+    }
+    &.fruitfly {
+      top: 200px;
+      left: 424px;
+    }
+    &.wheat {
+      top: 244px;
+      left: 64px;
+    }
+    &.firespike {
+      top: 362px;
+      left: 184px;
+    }
+    &.coralvine {
+      top: 324px;
+      left: 264px;
+    }
+    &.melon {
+      top: 284px;
+      left: 436px;
+    }
+  }
+  .line {
+    position: absolute;
+    height: 56px;
+    width: 0px;
+    right: 339px;
+
+    border-left: 2px dotted brown;
+    transform-style: preserve-3d;
+    &.snake {
+      top: 30px;
+      left: 138px;
+      transform: rotate(120deg);
+    }
+    &.hawk {
+      top: 50px;
+      left: 424px;
+      transform: rotate(148deg);
+    }
+    &.grasshoppermouse {
+      height: 65px;
+      top: 154px;
+      left: 105px;
+      transform: rotate(30deg);
+    }
+    &.frog {
+      top: 205px;
+      left: 192px;
+      transform: rotate(30deg);
+    }
+    &.dragonfly {
+      top: 150px;
+      left: 344px;
+      transform: rotate(60deg);
+    }
+    &.warbler {
+      top: 188px;
+      left: 444px;
+      transform: rotate(30deg);
+    }
+    &.grasshopper {
+      top: 330px;
+      left: 136px;
+      transform: rotate(140deg);
+    }
+    &.butterfly {
+      top: 354px;
+      left: 286px;
+      transform: rotate(138deg);
+    }
+    &.fruitfly {
+      top: 320px;
+      left: 438px;
+      transform: rotate(30deg);
+    }
+    &.wheat {
+      top: 488px;
+      left: 84px;
+      transform: rotate(160deg);
+    }
+    &.firespike {
+      top: 513px;
+      left: 250px;
+      transform: rotate(120deg);
+    }
+    &.coralvine {
+      top: 492px;
+      left: 362px;
+      transform: rotate(120deg);
+    }
+
+    &.melon {
+      height: 40px;
+      top: 508px;
+      left: 457px;
+    }
+  }
+  .dot {
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    left: -5px;
+    top: -6px;
+    background-color: brown;
+
+    &.snake {
+      top: 70px;
+      left: 162px;
+    }
+    &.hawk {
+      top: 100px;
+      left: 437px;
+    }
+    &.grasshoppermouse {
+      top: 208px;
+      left: 88px;
+    }
+    &.frog {
+      top: 201px;
+      left: 206px;
+    }
+    &.dragonfly {
+      top: 190px;
+      left: 316px;
+    }
+    &.warbler {
+      top: 188px;
+      left: 456px;
+    }
+    &.grasshopper {
+      top: 331px;
+      left: 114px;
+    }
+    &.butterfly {
+      top: 356px;
+      left: 264px;
+    }
+    &.fruitfly {
+      top: 320px;
+      left: 450px;
+    }
+    &.wheat {
+      top: 486px;
+      left: 72px;
+    }
+    &.firespike {
+      top: 525px;
+      left: 224px;
+    }
+    &.coralvine {
+      top: 500px;
+      left: 332px;
+    }
+    &.melon {
+      top: 500px;
+      left: 455px;
+    }
+  }
+  .btn {
+    &.snake {
+      top: 20px;
+      left: 60px;
+    }
+    &.hawk {
+      left: 360px;
+    }
+    &.grasshoppermouse {
+      top: 72px;
+      left: 6px;
+    }
+    &.frog {
+      top: 130px;
+      left: 152px;
+    }
+    &.dragonfly {
+      top: 40px;
+      left: 330px;
+    }
+    &.warbler {
+      top: 86px;
+      left: 408px;
+    }
+    &.grasshopper {
+      top: 192px;
+      left: 80px;
+    }
+    &.butterfly {
+      top: 186px;
+      left: 248px;
+    }
+    &.fruitfly {
+      top: 124px;
+      left: 388px;
+    }
+    &.wheat {
+      top: 264px;
+      left: 68px;
+    }
+    &.firespike {
+      top: 242px;
+      left: 202px;
+    }
+    &.coralvine {
+      top: 191px;
+      left: 324px;
+    }
+    &.melon {
+      top: 172px;
+      left: 440px;
+    }
+  }
+  .correcttick {
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../../app/assets/images/positive_icon.svg);
+    &.show {
+      opacity: 1;
+    }
+    &.snake {
+      top: 15px;
+      left: 118px;
+    }
+    &.hawk {
+      top: 24px;
+      left: 416px;
+    }
+    &.butterfly {
+      bottom: 184px;
+      left: 322px;
+    }
+    &.grasshopper {
+      top: 366px;
+      left: 176px;
+    }
+
+    &.fruitfly {
+      top: 360px;
+      left: 456px;
+    }
+    &.wheat {
+      bottom: 42px;
+      left: 128px;
+    }
+    &.firespike {
+      bottom: 34px;
+      left: 278px;
+    }
+    &.coralvine {
+      bottom: 54px;
+      left: 406px;
+    }
+    &.melon {
+      bottom: 44px;
+      left: 496px;
+    }
+  }
+  .btn-chip.selected:disabled {
+    opacity: 1;
+  }
+}

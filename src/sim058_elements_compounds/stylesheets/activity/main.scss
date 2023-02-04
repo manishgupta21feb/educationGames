@@ -1,0 +1,22 @@
+.leftright {
+  .left,
+  .right {
+    overflow: unset;
+  }
+}
+
+.hidden-images {
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.image1 {
+    background-image: url(../assets/images/compound1.png);
+  }
+
+  &.image2 {
+    background-image: url(../assets/images/compound1.png);
+  }
+}

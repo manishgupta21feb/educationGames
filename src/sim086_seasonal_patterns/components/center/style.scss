@@ -1,0 +1,36 @@
+.left-area {
+  margin-left: 23px;
+  .graph-heading {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 18px;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    color: var(--question-text-blue);
+    margin-top: 70px;
+  }
+
+  $btn-height: 35px;
+  .border-area {
+    border: 2px solid #0056b3;
+    position: relative;
+    box-sizing: border-box;
+    height: 440.96px;
+
+    width: 751.99px;
+    border-radius: 0px 7px 7px 7px;
+    border-top: 3px solid #0056b3;
+    margin-top: $btn-height;
+    > div {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      > div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

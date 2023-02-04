@@ -1,0 +1,63 @@
+.full-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+
+  &.show {
+    opacity: 1;
+  }
+
+  .view-container {
+    .full-view {
+      .full-view-wrapper {
+        .outdoor-screen {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-image: url("../../assets/images/intro.png");
+          background-size: contain;
+        }
+        .main-heading {
+          position: absolute;
+          top: 64px;
+          left: 24px;
+          font-size: 14px;
+          line-height: 20px;
+          color: #052978;
+          letter-spacing: 0.25px;
+          font-weight: 500;
+        }
+
+        #Polymerase-chain-reaction {
+          left: 56px;
+        }
+        #Gel-electrophoresis {
+          left: 322px;
+          &.es {
+            left: 377px;
+          }
+        }
+
+        #Genetic-engineering {
+          right: 77px;
+          &.es {
+            right: 56px;
+          }
+        }
+
+        .btn {
+          &.hotspot-btn {
+            position: absolute;
+            bottom: 82px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}

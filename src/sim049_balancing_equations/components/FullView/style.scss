@@ -1,0 +1,249 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .full-view-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .activity-space {
+      top: 200px;
+      width: 100%;
+      height: 400px;
+      position: absolute;
+      // background-color: skyblue;
+
+      .equation {
+        top: 232px;
+        left: 136px;
+        font-size: 24px;
+        position: absolute;
+        font-variant: lining-nums;
+        color: var(--question-text-blue);
+
+        &.synthesis_of_water {
+          width: 440px;
+
+          div {
+            p {
+              position: absolute;
+              &:nth-child(1) {
+                left: 30px;
+              }
+              &:nth-child(2) {
+                left: 102px;
+              }
+              &:nth-child(3) {
+                left: 174px;
+              }
+              &:nth-child(4) {
+                display: inline-block;
+                left: 280px;
+                width: 80px;
+                height: 2px;
+                top: 10px;
+
+                .arrow-tail {
+                  top: 6px;
+                  left: -12px;
+                  width: 50px;
+                  height: 2px;
+                  position: absolute;
+                  svg {
+                    top: 0;
+                    left: 0;
+                    width: inherit;
+                    height: inherit;
+                    position: absolute;
+                  }
+                }
+
+                .arrow-head {
+                  top: -7px;
+                  left: 50px;
+                  width: 15px;
+                  height: 15px;
+                  position: absolute;
+                  transform: rotate(90deg);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-image: url(../../assets/images/arrow-head.svg);
+                }
+              }
+              &:nth-child(5) {
+                left: 378px;
+              }
+            }
+          }
+        }
+
+        &.combustion_of_propane {
+          div {
+            p {
+              position: absolute;
+              &:nth-child(1) {
+                left: 11px;
+              }
+              &:nth-child(2) {
+                left: 107px;
+              }
+              &:nth-child(3) {
+                left: 174px;
+              }
+              &:nth-child(4) {
+                display: inline-block;
+                left: 254px;
+                width: 80px;
+                height: 10px;
+                top: 10px;
+
+                .arrow-tail {
+                  top: 6px;
+                  left: -12px;
+                  width: 50px;
+                  height: 2px;
+                  position: absolute;
+                  svg {
+                    top: 0;
+                    left: 0;
+                    width: inherit;
+                    height: inherit;
+                    position: absolute;
+                  }
+                }
+
+                .arrow-head {
+                  top: -7px;
+                  left: 50px;
+                  width: 15px;
+                  height: 15px;
+                  position: absolute;
+                  transform: rotate(90deg);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-image: url(../../assets/images/arrow-head.svg);
+                }
+              }
+              &:nth-child(5) {
+                left: 338px;
+              }
+              &:nth-child(6) {
+                left: 423px;
+              }
+              &:nth-child(7) {
+                left: 480px;
+              }
+            }
+          }
+        }
+      }
+
+      .check-button {
+        position: absolute;
+        bottom: 28px;
+      }
+      .counters {
+        top: 275px;
+        position: absolute;
+
+        &.counter-1 {
+          left: 135px;
+        }
+
+        &.counter-2 {
+          left: 280px;
+        }
+
+        &.counter-3 {
+          left: 495px;
+        }
+
+        &.counter-4 {
+          left: 135px;
+        }
+
+        &.counter-5 {
+          left: 280px;
+        }
+
+        &.counter-6 {
+          left: 455px;
+        }
+
+        &.counter-7 {
+          left: 600px;
+        }
+      }
+
+      .seesaw {
+        position: absolute;
+        top: 100px;
+
+        &.seesaw1 {
+          left: 100px;
+        }
+
+        &.seesaw2 {
+          left: 400px;
+        }
+
+        &.seesaw3 {
+          left: 34px;
+        }
+
+        &.seesaw4 {
+          left: 274px;
+        }
+
+        &.seesaw5 {
+          left: 515px;
+        }
+      }
+    }
+
+    .instructions {
+      top: 0;
+      left: 0;
+      position: absolute;
+      margin: 80px 24px 0 24px;
+      z-index: 2;
+      color: var(--primary-blue);
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      h2 {
+        color: #052978;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+      h2 {
+        &:nth-child(2) {
+          margin-top: 8px;
+        }
+      }
+
+      .radiobuttons {
+        margin-top: 16px;
+        flex-direction: row;
+
+        .radiobutton {
+          &:last-of-type {
+            margin-left: 40px;
+          }
+          .radiobutton-inner-wrapper {
+            align-items: center;
+            input[type="radio"] + div + label {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.droppable-stage1 {
+  position: absolute;
+  top: 169px;
+  height: 257px;
+
+  .question {
+    height: 34px;
+    width: 612px;
+    color: var(--question-heading-bluish);
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-variant: lining-nums;
+  }
+
+  .accessible-list {
+    left: 628px;
+    top: 39px;
+    border: transparent;
+
+    > ul {
+      > li {
+        a {
+          position: absolute;
+          width: 121px;
+          border-radius: 17px;
+          left: 1px;
+
+          &:focus {
+            background: transparent;
+          }
+        }
+
+        &.hover {
+          color: white;
+        }
+      }
+
+      > li:nth-child(1) a {
+        top: -46px;
+      }
+
+      > li:nth-child(2) a {
+        top: 7.5px;
+      }
+
+      > li:nth-child(3) a {
+        top: 56.8px;
+      }
+    }
+  }
+  .seperator {
+    box-sizing: border-box;
+    height: 1px;
+    width: 752px;
+    border: 1px solid var(--dark-grey);
+    background: var(--dark-grey);
+  }
+
+  .option {
+    box-sizing: border-box;
+    height: 32px;
+    width: 120px;
+    border: 1px dashed var(--primary-blue);
+    border-radius: 16px;
+    position: absolute;
+    cursor: pointer;
+    //background-color: rgba(217, 235, 255, 0.24);
+    &:focus:not(:disabled) {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+        -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+        -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+      background-color: var(--hover-state-color);
+    }
+    &.dropped {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--question-text-blue);
+      background-color: var(--primary-blue);
+      color: var(--white);
+      position: absolute;
+      pointer-events: none;
+    }
+
+    > span {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    &.setBlueHoverColor {
+      background-color: var(--hover-state-color);
+    }
+
+    &.option-1 {
+      top: 7px;
+      left: 630px;
+    }
+    &.option-2 {
+      top: 60px;
+      left: 630px;
+    }
+    &.option-3 {
+      top: 111px;
+      left: 630px;
+    }
+    &.option-4 {
+      top: 162px;
+      left: 630px;
+    }
+    &.option-5 {
+      top: 213px;
+      left: 630px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.leftright,
+.topbottom,
+.view-container {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.leftright,
+.topbottom {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.leftright {
+  flex-direction: row;
+
+  .left {
+    width: 540px;
+    height: 100%;
+  }
+
+  .right {
+    width: 260px;
+    height: 100%;
+    padding: 0 24px;
+  }
+
+  .left,
+  .right {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.topbottom {
+  flex-direction: column;
+
+  .top {
+    width: 100%;
+    height: 318px;
+  }
+
+  .bottom {
+    width: 100%;
+    height: 282px;
+    padding: 24px 24px 0px;
+  }
+
+  .top,
+  .bottom {
+    position: relative;
+    overflow: hidden;
+  }
+}

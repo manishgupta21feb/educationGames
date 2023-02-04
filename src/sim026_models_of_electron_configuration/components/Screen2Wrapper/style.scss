@@ -1,0 +1,785 @@
+.screen2wrapper {
+  padding-top: 80px;
+  font-variant: lining-nums;
+
+  .instructor {
+    padding-left: 24px;
+    padding-right: 16px;
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    bottom: 36px;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .continue-button {
+    .btn.toast-secondary-button {
+      bottom: 36px;
+    }
+  }
+
+  .options {
+    position: absolute;
+    width: 760px;
+    height: 375px;
+    left: 25px;
+    top: 123px;
+    > button {
+      width: 42px;
+      height: 40px;
+      position: absolute;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      &.disabled {
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+    &.section1 {
+      .option2 {
+        left: 716px;
+      }
+      .option3 {
+        top: 40px;
+        left: 42px;
+      }
+      .option4 {
+        top: 120px;
+        left: 42px;
+      }
+      .option5 {
+        top: 120px;
+        left: 506px;
+      }
+      .option6 {
+        left: 254px;
+        top: 160px;
+      }
+      .option7 {
+        left: 590px;
+        top: 160px;
+      }
+      .option8 {
+        top: 200px;
+      }
+    }
+
+    &.section2 {
+      .option1 {
+        left: 590px;
+        top: 40px;
+      }
+      .option2 {
+        left: 43px;
+        top: 80px;
+      }
+      .option3 {
+        top: 80px;
+        left: 547px;
+      }
+      .option4 {
+        top: 80px;
+        left: 632px;
+      }
+      .option5 {
+        top: 80px;
+        left: 677px;
+      }
+      .option6 {
+        left: 211px;
+        top: 120px;
+      }
+      .option7 {
+        left: 422px;
+        top: 120px;
+      }
+      .option8 {
+        top: 120px;
+        left: 632px;
+      }
+    }
+
+    &.section3 {
+      .option1 {
+        left: 506px;
+        top: 80px;
+      }
+      .option2 {
+        left: 43px;
+        top: 120px;
+      }
+      .option3 {
+        top: 120px;
+        left: 170px;
+      }
+      .option4 {
+        top: 120px;
+        left: 296px;
+      }
+      .option5 {
+        top: 120px;
+        left: 380px;
+      }
+      .option6 {
+        left: 590px;
+        top: 120px;
+      }
+      .option7 {
+        left: 338px;
+        top: 160px;
+      }
+      .option8 {
+        top: 200px;
+        left: 422px;
+      }
+    }
+
+    &.section4 {
+      .option1 {
+        left: 42px;
+        top: 40px;
+      }
+      .option2 {
+        top: 40px;
+        left: 590px;
+      }
+      .option3 {
+        top: 40px;
+        left: 674px;
+      }
+      .option4 {
+        top: 80px;
+      }
+      .option5 {
+        top: 80px;
+        left: 590px;
+      }
+      .option6 {
+        left: 254px;
+        top: 120px;
+      }
+      .option7 {
+        left: 42px;
+        top: 160px;
+      }
+      .option8 {
+        top: 160px;
+        left: 590px;
+      }
+    }
+
+    &.section5 {
+      .option1 {
+        left: 506px;
+        top: 40px;
+      }
+      .option2 {
+        left: 632px;
+        top: 40px;
+      }
+      .option3 {
+        top: 80px;
+      }
+      .option4 {
+        top: 80px;
+        left: 506px;
+      }
+      .option5 {
+        top: 80px;
+        left: 717px;
+      }
+      .option6 {
+        top: 120px;
+      }
+      .option7 {
+        left: 85px;
+        top: 120px;
+      }
+      .option8 {
+        top: 120px;
+        left: 254px;
+      }
+    }
+  }
+
+  .periodic-table-container {
+    position: relative;
+    left: 25px;
+    top: 10px;
+
+    td {
+      font-family: inherit;
+    }
+    .row8 {
+      .elements {
+        height: 15px;
+      }
+    }
+
+    .elements {
+      height: 40px;
+    }
+
+    .symbol {
+      line-height: 1;
+      width: 40px;
+    }
+    &.colorByBlock {
+      .f-block {
+        background-color: var(--periodic-table-color9);
+      }
+    }
+    &.section1 {
+      &.option1 {
+        .elements {
+          &.cell1_1 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell1_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell2_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell4_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option5 {
+        .elements {
+          &.cell4_13 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option6 {
+        .elements {
+          &.cell5_7 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option7 {
+        .elements {
+          &.cell5_15 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option8 {
+        .elements {
+          &.cell6_1 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      .elements {
+        &.cell1_1,
+        &.cell1_18,
+        &.cell2_2,
+        &.cell4_2,
+        &.cell4_13,
+        &.cell5_7,
+        &.cell5_15,
+        &.cell6_1 {
+          background-color: #f0f7ff;
+          border: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 36px;
+          }
+        }
+        &.cell1_1,
+        &.cell1_18 {
+          box-shadow: none;
+        }
+      }
+    }
+
+    &.section2 {
+      &.option1 {
+        .elements {
+          &.cell2_15 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell3_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell3_14 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell3_16 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option5 {
+        .elements {
+          &.cell3_17 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option6 {
+        .elements {
+          &.cell4_6 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option7 {
+        .elements {
+          &.cell4_11 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option8 {
+        .elements {
+          &.cell4_16 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      .elements {
+        &.cell2_15,
+        &.cell3_2,
+        &.cell3_14,
+        &.cell3_16,
+        &.cell3_17,
+        &.cell4_6,
+        &.cell4_11,
+        &.cell4_16 {
+          background-color: #f0f7ff;
+          border: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 36px;
+          }
+        }
+      }
+    }
+
+    &.section3 {
+      &.option1 {
+        .elements {
+          &.cell3_13 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell4_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell4_5 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell4_8 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option5 {
+        .elements {
+          &.cell4_10 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option6 {
+        .elements {
+          &.cell4_15 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option7 {
+        .elements {
+          &.cell5_9 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option8 {
+        .elements {
+          &.cell6_11 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      .elements {
+        &.cell3_13,
+        &.cell4_2,
+        &.cell4_5,
+        &.cell4_8,
+        &.cell4_10,
+        &.cell4_15,
+        &.cell5_9,
+        &.cell6_11 {
+          background-color: #f0f7ff;
+          border: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 36px;
+          }
+        }
+      }
+    }
+
+    &.section4 {
+      &.option1 {
+        .elements {
+          &.cell2_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell2_15 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell2_17 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell3_1 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option5 {
+        .elements {
+          &.cell3_15 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option6 {
+        .elements {
+          &.cell4_7 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option7 {
+        .elements {
+          &.cell5_2 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option8 {
+        .elements {
+          &.cell5_15 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      .elements {
+        &.cell2_2,
+        &.cell2_15,
+        &.cell2_17,
+        &.cell3_1,
+        &.cell3_15,
+        &.cell4_7,
+        &.cell5_2,
+        &.cell5_15 {
+          background-color: #f0f7ff;
+          border: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 36px;
+          }
+        }
+      }
+    }
+
+    &.section5 {
+      &.option1 {
+        .elements {
+          &.cell2_13 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option2 {
+        .elements {
+          &.cell2_16 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option3 {
+        .elements {
+          &.cell3_1 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option4 {
+        .elements {
+          &.cell3_13 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option5 {
+        .elements {
+          &.cell3_18 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option6 {
+        .elements {
+          &.cell4_1 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option7 {
+        .elements {
+          &.cell4_3 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      &.option8 {
+        .elements {
+          &.cell4_7 {
+            background-color: var(--question-text-blue);
+            .symbol,
+            .atomicNumber {
+              color: white;
+            }
+          }
+        }
+      }
+      .elements {
+        &.cell2_13,
+        &.cell2_16,
+        &.cell3_1,
+        &.cell3_13,
+        &.cell3_18,
+        &.cell4_1,
+        &.cell4_3,
+        &.cell4_7 {
+          background-color: #f0f7ff;
+          border: 3px dashed var(--question-text-blue);
+          .symbol {
+            width: 36px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../stylesheets/common/functions.scss";
+
+.indicator {
+  @extend %full-width, %absolute;
+  bottom: 100px;
+  padding: 0 24px;
+  &__pipe {
+    @extend %full-width, %flex;
+    justify-content: space-around;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+    height: 8px;
+    background-color: rgba(59, 130, 246, 0.5);
+  }
+  &__step {
+    @extend %relative;
+    color: #052978;
+    font-size: 12px;
+    margin-top: 12px;
+    font-variant: lining-nums;
+    &::before {
+      @extend %center-hrzn;
+      content: "";
+      height: 2px;
+      border: 1px solid #0056b3;
+      top: -11px;
+    }
+  }
+}

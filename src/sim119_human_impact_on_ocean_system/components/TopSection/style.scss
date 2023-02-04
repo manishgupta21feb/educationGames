@@ -1,0 +1,194 @@
+.top-section {
+  height: 100%;
+  position: relative;
+  .main-screen {
+    background-image: url('../../assets/images/main-screen.png');
+    width: 800px;
+    height: 318px;   
+    background-size: contain;
+  }
+  .btn {
+    &.hotspot-btn {
+      padding: 5px 16px;
+      position: absolute;
+      &:hover {
+        background-color: #BA5B08;
+        border-color: #0056B3;
+        padding: 5px 16px;
+      } 
+      &#oil-drilling {
+        top: 35px;
+        left: 165px;
+      }
+      &#artificial-reef {
+        top: 200px;
+        left: 320px;
+      }
+      &#overfishing {
+        top: 75px;
+        left: 480px;
+      }
+      &.visited {
+        opacity: 1;  
+      }
+    }
+  }
+  .bullet-line-wrapper {
+    position: absolute;
+    &.oil-drilling {
+      top: 85px;
+      left: 154px;
+      transform: rotate(-42deg);
+      .dotted-line {
+        top: 3px;
+        left: 6px;
+      }
+    }
+    &.artificial-reef {
+      top: 250px;
+      left: 426px;
+      transform: rotate(-140deg);
+      .dotted-line {
+        top: 4px;
+        left: 7px;
+      }
+    }
+    &.overfishing {
+      top: 127px;
+      left: 580px;
+      transform: rotate(-140deg);
+      .dotted-line {
+        top: 4px;
+        left: 9px;
+      }
+    }
+    .bullet {
+      width: 8px;
+      height: 8px;
+      background-color: #352103;
+      border-radius: 50%;
+    }
+    .dotted-line {
+      height: 1px;
+      width: 38px;
+      border-bottom: 1px dashed #352103;
+      position: absolute;
+    }
+  }
+  .overfishing-chart-wrapper {
+    background-image: url('../../assets/images/overfishing.png');
+    width: 801px;
+    height: 318px;   
+    background-size: cover;
+    .overfishing-chart {
+      height: 220px;
+      width: 270px;
+      margin-left: 50px;
+      padding-top: 55px;
+      canvas {
+        width: 230px !important;
+        height: 195px !important;
+        background-color: white;
+      }
+    }
+    .overfishing-chart-title {
+      font-size: 10px;
+      margin-bottom: 14px;
+      color: #35374C;
+      font-weight: 600;
+      top: 25px;
+      left: 32px;
+      position: absolute;
+    }
+    .overfishing-chart-info {
+      font-size: 10px;
+      font-weight: 600;
+      color: #35374C;
+      transform: rotate(270deg);
+      position: absolute;
+      left: -22px;
+      top: 145px;
+    }
+    .label1 {
+      font-size: 10px;
+      position: absolute;
+      top: 236px;
+      left: 96px;
+    }
+    .label2 {
+      font-size: 10px;
+      position: absolute;
+      top: 236px;
+      left: 157px;
+    }
+    .label3 {
+      font-size: 10px;
+      position: absolute;
+      top: 236px;
+      left: 226px;
+    }
+  }
+  .artificial-reef-date {
+    background-color: white;
+    height: 30px;
+    min-width: 140px;
+    border: 2px solid #8b7e7e;
+    position: absolute;
+    top: 80px;
+    right: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  .play-pause-buttons {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .btn {
+      opacity: 1 !important;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      justify-content: center;
+      top: 75% !important;
+      left: 90% !important;
+      .icon {
+        border-radius: 50%;
+      }
+    }
+  }
+  .artificial-reef-container {
+    width: 800px;
+    height: 318px;   
+    background-image: url('../../assets/images/artiticial-reef-back.png');  
+    background-size: 99% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    .video-container {
+      z-index: 1;
+    }
+    .artificial-reef-date {
+      z-index: 1;
+    }
+  }
+  .oildrilling-container {
+    background-image: url('../../assets/images/oil-drilling-back.png');
+    width: 800px;
+    height: 318px;   
+    background-size: 99% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    .video-container {
+      z-index: 1;
+    }
+  }
+}

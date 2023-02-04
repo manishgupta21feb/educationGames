@@ -1,0 +1,567 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: contain;
+  background-image: url(../../assets/images/main.png);
+  background-repeat: no-repeat;
+}
+
+.full-view--heading {
+  position: absolute;
+  top: 65px;
+  margin: 0 24px;
+  font-weight: 500;
+  // width: 750px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: var(--question-text-blue);
+}
+
+.hotspot-btn-wrapper {
+  width: 67px;
+  height: 66px;
+  // overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.flatwareFruitPudding {
+    top: 420px;
+    left: 445px;
+  }
+
+  &.sodaCan {
+    top: 442px;
+    left: 570px;
+  }
+
+  &.plasticWaterBottle {
+    top: 350px;
+    left: 720px;
+  }
+
+  &.fruiteDrinkBox {
+    top: 425px;
+    left: 290px;
+  }
+
+  &.clothNapkin {
+    top: 445px;
+    left: 495px;
+  }
+
+  &.refillableWaterBottle {
+    top: 400px;
+    left: 520px;
+  }
+
+  &.reusableLunchContainer {
+    top: 426px;
+    left: 380px;
+  }
+
+  &.paperLunchBag {
+    top: 345px;
+    left: 670px;
+  }
+
+  &.foodScraps {
+    top: 325px;
+    left: 245px;
+  }
+
+  .vistedHotSpot {
+    width: 4px;
+    height: 4px;
+    padding: 6px !important;
+    transition: all 0.3s;
+    border-radius: 50%;
+    position: relative;
+    background: var(--white);
+    border: 2px solid #ff3366 !important;
+    box-shadow: 0 0 0 4px #ff33663d, 0 0 0 8px #ff336629 !important;
+    max-width: 66px;
+    max-height: 66px;
+    justify-content: center;
+    display: block;
+  }
+
+  .vistedHotSpot::after {
+    content: "";
+    position: absolute;
+    background: #ff3366;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 4px;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    border-radius: 10px;
+  }
+}
+
+.connecting-lines-outside {
+  position: absolute;
+  background: white;
+  z-index: 1;
+  .connecting-lines-inside {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background: #ba5b08;
+  }
+}
+
+.connecting-lines-outside-foodScraps {
+  width: 110px;
+  height: 110px;
+  top: 250px;
+  left: 149.5px;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 102px, 98px 102px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 100px, 98px 100px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-fruiteDrinkBox {
+  top: 310px;
+  left: 219.5px;
+  width: 110px;
+  height: 110px;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 102px, 98px 102px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 100px, 98px 100px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-reusableLunchContainer {
+  top: 320px;
+  left: 289.5px;
+  width: 110px;
+  height: 110px;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 102px, 98px 102px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 100px, 98px 100px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-flatwareFruitPudding {
+  top: 320px;
+  left: 349.5px;
+  width: 110px;
+  height: 110px;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 102px, 98px 102px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 100px, 98px 100px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-clothNapkin {
+  top: 323px;
+  left: 470.5px;
+  width: 110px;
+  height: 140px;
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 140px, 98px 140px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 138px, 98px 138px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-refillableWaterBottle {
+  top: 260px;
+  left: 465.5px;
+  width: 110px;
+  height: 140px;
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 140px, 98px 140px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 138px, 98px 138px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-sodaCan {
+  top: 300px;
+  left: 498.5px;
+  width: 110px;
+  height: 140px;
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 140px, 98px 140px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 138px, 98px 138px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-paperLunchBag {
+  top: 265px;
+  left: 625.5px;
+  width: 110px;
+  height: 110px;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 102px, 98px 102px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 100px, 98px 100px, 98px 2px, 0 2px);
+  }
+}
+
+.connecting-lines-outside-plasticWaterBottle {
+  top: 280px;
+  left: 689.5px;
+  width: 110px;
+  height: 110px;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    102px 0,
+    102px 102px,
+    98px 102px,
+    98px 4px,
+    0 4px
+  );
+  clip-path: polygon(0 0, 102px 0, 102px 102px, 98px 102px, 98px 4px, 0 4px);
+  .connecting-lines-inside {
+    -webkit-clip-path: polygon(
+      0 0,
+      100px 0,
+      100px 100px,
+      98px 100px,
+      98px 2px,
+      0 2px
+    );
+    clip-path: polygon(0 0, 100px 0, 100px 100px, 98px 100px, 98px 2px, 0 2px);
+  }
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #ba5b08;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid white;
+  position: absolute;
+  z-index: 2;
+}
+
+.dot-foodScraps {
+  top: 350px;
+  left: 246px;
+}
+.dot-fruiteDrinkBox {
+  top: 408px;
+  left: 316px;
+}
+.dot-reusableLunchContainer {
+  top: 417px;
+  left: 386px;
+}
+.dot-flatwareFruitPudding {
+  top: 417px;
+  left: 446px;
+}
+.dot-clothNapkin {
+  top: 460px;
+  left: 567px;
+}
+.dot-refillableWaterBottle {
+  top: 398px;
+  left: 562px;
+}
+.dot-sodaCan {
+  top: 436px;
+  left: 595px;
+}
+.dot-paperLunchBag {
+  top: 365px;
+  left: 722px;
+}
+.dot-plasticWaterBottle {
+  top: 376px;
+  left: 786px;
+}
+
+.item-info {
+  position: absolute;
+  width: 208px;
+  border: 2px solid #ba5b08;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f7e2e2;
+  z-index: 2;
+
+  &-foodScraps {
+    top: 115px;
+    left: 20px;
+  }
+
+  &-fruiteDrinkBox {
+    top: 205px;
+    left: 45px;
+  }
+
+  &-reusableLunchContainer {
+    top: 100px;
+    left: 290px;
+  }
+
+  &-flatwareFruitPudding {
+    top: 100px;
+    left: 345px;
+  }
+
+  &-clothNapkin {
+    top: 100px;
+    left: 295px;
+  }
+
+  &-refillableWaterBottle {
+    top: 100px;
+    left: 310px;
+  }
+
+  &-sodaCan {
+    top: 100px;
+    left: 335px;
+  }
+
+  &-paperLunchBag {
+    top: 115px;
+    left: 460px;
+  }
+
+  &-plasticWaterBottle {
+    top: 100px;
+    left: 483px;
+  }
+
+  .item-image-section {
+    height: 96px;
+    width: 184px;
+    border: 1px solid #ba5b08;
+    border-radius: 10px;
+    // padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      height: 20px;
+      color: #352103;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    .foodScraps-image {
+      width: 44px;
+      height: 63px;
+    }
+
+    .fruiteDrinkBox-image {
+      width: 36px;
+      height: 62px;
+    }
+
+    .reusableLunchContainer-image {
+      width: 64px;
+      height: 45px;
+    }
+
+    .flatwareFruitPudding-image {
+      width: 98px;
+      height: 62px;
+    }
+
+    .clothNapkin-image {
+      width: 95px;
+      height: 33px;
+    }
+
+    .refillableWaterBottle-image {
+      width: 18px;
+      height: 58px;
+    }
+
+    .sodaCan-image {
+      width: 33px;
+      height: 55px;
+    }
+
+    .paperLunchBag-image {
+      width: 48px;
+      height: 54px;
+    }
+
+    .plasticWaterBottle-image {
+      width: 23px;
+      height: 62px;
+    }
+  }
+
+  .content-para {
+    max-height: 120px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #530606;
+  }
+
+  .scroll-bar {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  button.btn.hotspot-btn.close {
+    float: unset;
+    position: relative;
+    right: -50%;
+  }
+
+  // button.btn.hotspot-btn.close:hover {
+  //   .text {
+  //     color: #fff;
+  //   }
+  // }
+}

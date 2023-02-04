@@ -1,0 +1,91 @@
+.data-table-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px 0px 0px;
+
+  .table-title {
+    // height: 20px;
+    width: 212px;
+    margin-bottom: 8px;
+    color: var(--question-text-blue);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    // line-height: 20px;
+  }
+
+  .data-table {
+    width: 212px;
+    margin-bottom: 20px;
+
+    .line-1 {
+      height: 20px;
+      color: var(--question-text-blue);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.21px;
+      line-height: 20px;
+      font-variant: lining-nums;
+    }
+    .line-2,
+    .line-3,
+    .line-4 {
+      height: 24px;
+      display: flex;
+      justify-content: space-between;
+      padding: 4px;
+      border-radius: 2px 2px 0 0;
+      background-color: var(--header-button-background);
+      > span {
+        color: var(--question-heading-bluish);
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        min-width: 55px;
+        font-variant: lining-nums;
+      }
+    }
+    .line-3 {
+      background-color: #f9f9f9;
+    }
+    .line-4 {
+      .show-btn {
+        border: none;
+        min-width: 55px;
+        text-align: left;
+        cursor: pointer;
+        background-color: transparent;
+        > span {
+          height: 14px;
+          border: none;
+          border-bottom: 1px dotted #0056b3;
+          color: #0056b3;
+          font-size: 10px;
+          letter-spacing: 0.6px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+
+  .average-mass {
+    display: flex;
+    flex-direction: column;
+    .label {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+    }
+    .value {
+      color: var(--lightgreyshade);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.47px;
+      font-variant: lining-nums;
+    }
+    .calculate-btn {
+      width: 107px;
+    }
+  }
+}

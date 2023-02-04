@@ -1,0 +1,13 @@
+@import "../../stylesheets/common/functions.scss";
+@import "./accessible-list";
+
+.droppable {
+  @include rectangle(332px, 219px, rgba(255, 255, 255, 0.11));
+  border: 1px dashed #052978;
+  $position: -27px;
+}
+.dropContainer {
+  position: absolute;
+  bottom: 26px;
+  left: 24px;
+}

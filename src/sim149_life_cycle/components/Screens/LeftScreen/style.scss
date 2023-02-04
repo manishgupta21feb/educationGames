@@ -1,0 +1,212 @@
+.left-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid #979797;
+  background-color: #effcfc;
+  .left-heading {
+    color: #352103;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.29px;
+    line-height: 20px;
+    position: relative;
+    top: 24px;
+    left: 25px;
+  }
+  .img {
+    &--butterfly {
+      background-image: url("../../../assets/images/2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 462px;
+      height: 420px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--frog {
+      background-image: url("../../../assets/images/3.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 430px;
+      height: 380px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-53%, -50%);
+    }
+  }
+
+  .btn {
+    &.hotspot-btn {
+      &.label {
+        &:disabled {
+          opacity: 0.9;
+          &.active,
+          &.visited {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .hot-spot--butter_eggs {
+    position: relative;
+    top: -234px;
+    left: 219px;
+  }
+  .hot-spot--butter_larva {
+    position: relative;
+    top: -107px;
+    left: 369px;
+  }
+  .hot-spot--butter_pupa {
+    position: relative;
+    top: 30px;
+    left: 219px;
+  }
+  .hot-spot--butter_adult {
+    position: relative;
+    top: -166px;
+    left: 74px;
+  }
+  .hot-spot--frog_eggs {
+    position: relative;
+    top: -199px;
+    left: 224px;
+  }
+  .hot-spot--frog_larva {
+    position: relative;
+    top: -62px;
+    left: 376px;
+  }
+  .hot-spot--frog_pupa {
+    position: relative;
+    top: 61px;
+    left: 224px;
+  }
+  .hot-spot--frog_adult {
+    position: relative;
+    top: -119px;
+    left: 75px;
+  }
+  .drop {
+    box-sizing: border-box;
+    height: 29px;
+    width: 111px;
+    border: 1px dashed #052978;
+    border-radius: 16px;
+    background-color: #f6faff;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    &.eggs {
+      position: absolute;
+      top: 207px;
+      left: 203px;
+    }
+    &.larva {
+      position: absolute;
+      top: 368px;
+      left: 344px;
+      width: 75px;
+    }
+    &.pupa {
+      position: absolute;
+      top: 529px;
+      left: 203px;
+    }
+    &.adult {
+      position: absolute;
+      top: 368px;
+      left: 46px;
+    }
+  }
+  .disabled-drop {
+    box-sizing: border-box;
+    height: 28px;
+    width: 63px;
+    border: 1px dashed #0056b3;
+    border-radius: 16px;
+    background-color: #0056b3;
+    > span {
+      color: #fbf1e9;
+
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    &--eggs {
+      position: absolute;
+      left: 224px !important;
+    }
+    &--larva {
+      position: absolute;
+      left: 365px !important;
+    }
+    &--pupa {
+      position: absolute;
+      left: 223px !important;
+    }
+    &--adult {
+      position: absolute;
+      top: 368px !important;
+      left: 70px !important;
+    }
+  }
+  .accessible-list {
+    z-index: 2;
+
+    border-radius: 8px;
+    background: transparent;
+    border: none;
+
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    .list {
+      width: 100%;
+      height: 100%;
+      .listitem {
+        a {
+          div {
+            width: 88px;
+          }
+        }
+      }
+      li:nth-child(1) {
+        height: 29px;
+        width: 111px;
+        position: absolute;
+        top: 207px;
+        left: 203px;
+      }
+      li:nth-child(2) {
+        height: 29px;
+        width: 111px;
+        position: absolute;
+        top: 368px;
+        left: 343px;
+      }
+      li:nth-child(3) {
+        height: 29px;
+        width: 111px;
+        position: absolute;
+        top: 529px;
+        left: 202px;
+      }
+      li:nth-child(4) {
+        height: 29px;
+        width: 111px;
+        position: absolute;
+        top: 368px;
+        left: 45px;
+      }
+    }
+  }
+}

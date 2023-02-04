@@ -1,0 +1,498 @@
+@mixin flex($height, $top, $left, $rot) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  height: $height;
+  left: $left;
+  top: $top;
+  transform: rotate($rot);
+  &.show {
+    opacity: 1;
+  }
+}
+@mixin arrowParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // position: absolute;
+  position: unset;
+  border: unset;
+}
+@mixin lines($height, $top, $left, $rot) {
+  border-width: 0 2px;
+  border-style: solid;
+  @include flex($height, $top, $left, $rot);
+  div {
+    background-color: #ffff00;
+    height: 100%;
+    width: 3px;
+  }
+}
+
+@mixin nextline($style, $bgcolor, $height, $top, $left, $rot) {
+  width: 5px;
+  background-color: #000;
+  @include flex($height, $top, $left, $rot);
+  div {
+    height: 100%;
+    width: 3px;
+    position: absolute;
+    // margin-top: 3px;
+    // left: 0.02rem;
+    border-left: 3px $style $bgcolor;
+  }
+}
+
+@mixin arrow($bgcolor) {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 0.21rem;
+  position: absolute;
+  height: unset;
+  background-color: unset;
+  transform: rotate(42deg);
+  -webkit-transform: rotate(42deg);
+  &::before {
+    content: "";
+    position: absolute;
+    border: solid $bgcolor;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 0.21rem;
+    left: 1px;
+    top: 1px;
+  }
+}
+@mixin hexagon {
+  // position: absolute;
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/hexa.png);
+}
+
+.left-area {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/backimage.png);
+  div {
+    .yelllow-line1 {
+      @include lines(210px, 83px, 208px, 0deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#ffff00);
+        }
+      }
+    }
+    .yelllow-line2 {
+      @include lines(359px, 81px, 241px, -5deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#ffff00);
+        }
+      }
+    }
+  }
+  div {
+    .green-line1 {
+      @include nextline(dotted, #2cd504, 210px, 284px, 154px, 30deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line2 {
+      @include nextline(dotted, #2cd504, 281px, 283px, 323px, -32deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line3 {
+      @include nextline(dotted, #2cd504, 211px, 263px, 316px, -42deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line4 {
+      @include nextline(dotted, #2cd504, 142px, 263px, 320px, -62deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line5 {
+      @include nextline(dotted, #2cd504, 131px, 390px, 328px, -90deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line6 {
+      @include nextline(dotted, #2cd504, 120px, 347px, 329px, 234deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line7 {
+      @include nextline(dotted, #2cd504, 134px, 442px, 354px, -52deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+    .green-line8 {
+      @include nextline(dotted, #2cd504, 143px, 396px, 197px, 74deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#2cd504);
+        }
+      }
+    }
+  }
+  div {
+    .orange-line1 {
+      @include nextline(dashed, #eb5f00, 421px, 110px, 242px, -141deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line2 {
+      @include nextline(dashed, #eb5f00, 428px, 152px, 301px, -157deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line3 {
+      @include nextline(dashed, #eb5f00, 289px, 171px, 388px, -180deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line4 {
+      @include nextline(dashed, #eb5f00, 199px, 163px, 411px, -188deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line5 {
+      @include nextline(dashed, #eb5f00, 362px, 261px, 238px, 127deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line6 {
+      @include nextline(dashed, #eb5f00, 293px, 201px, 268px, 102deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line7 {
+      @include nextline(dashed, #eb5f00, 157px, 472px, 312px, 93deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+    .orange-line8 {
+      @include nextline(dashed, #eb5f00, 270px, 380px, 246px, 104deg);
+      .arrowShow {
+        @include arrowParent;
+        .arrow {
+          @include arrow(#eb5f00);
+        }
+      }
+    }
+  }
+
+  > div {
+    > .btn.btn-chip.selected:disabled {
+      .text {
+        margin-right: 4px;
+      }
+
+      .icon {
+        left: unset;
+        top: unset;
+        margin: unset;
+        margin-right: 4px;
+        position: relative;
+      }
+    }
+  }
+
+  .button-sun {
+    position: absolute;
+    top: 80px;
+    left: 190px;
+  }
+  .button-hawk {
+    position: absolute;
+    top: 147px;
+    left: 355px;
+  }
+  .button-cactus {
+    position: absolute;
+    top: 280px;
+    left: 180px;
+  }
+  .button-coyote {
+    position: absolute;
+    top: 310px;
+    left: 65px;
+  }
+  .button-rabbit {
+    position: absolute;
+    top: 360px;
+    left: 360px;
+  }
+
+  .button-mouse {
+    position: absolute;
+    top: 465px;
+    left: 64px;
+  }
+  .button-lizard {
+    position: absolute;
+    top: 440px;
+    left: 365px;
+  }
+  .button-snake {
+    position: absolute;
+    top: 530px;
+    left: 170px;
+  }
+  .button-grass {
+    position: absolute;
+    top: 440px;
+    left: 231px;
+  }
+
+  .button-spider {
+    position: absolute;
+    top: 530px;
+    left: 380px;
+  }
+}
+.btn.btn-chip.selected:disabled {
+  opacity: 1;
+  background-color: var(--primary-blue) !important;
+}
+
+.btn.btn-chip.shaping {
+  &.sun {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      position: absolute;
+      left: 45px;
+      top: 8px;
+      display: block;
+      width: 8px;
+      height: 8px;
+      margin-bottom: 6px;
+      background: white;
+    }
+  }
+  &.cactus {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      position: absolute;
+      left: 61px;
+      top: 6px;
+      display: block;
+      width: 0;
+      height: 0;
+      margin-bottom: 8px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid white;
+    }
+  }
+  &.grass {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      position: absolute;
+      left: 54px;
+      top: 7px;
+      display: block;
+      width: 0;
+      height: 0;
+      margin-bottom: 8px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid white;
+    }
+  }
+  &.rabbit {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      @include hexagon;
+    }
+  }
+  &.lizard {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      @include hexagon();
+    }
+  }
+  &.mouse {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      @include hexagon();
+    }
+
+    &.secondary-consumer {
+      padding-right: 20px;
+      .text {
+        &:before {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          margin-bottom: 8px;
+          border-radius: 50%;
+          background: white;
+          position: absolute;
+          left: 76px;
+          top: 9px;
+        }
+      }
+    }
+  }
+  &.spider {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      @include hexagon;
+    }
+  }
+  &.hawk {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-bottom: 8px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      left: 55px;
+      top: 7px;
+    }
+  }
+  &.snake {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-bottom: 8px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      left: 55px;
+      top: 7px;
+    }
+  }
+  &.coyote {
+    .text {
+      margin-left: 4px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-bottom: 8px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      left: 62px;
+      top: 7px;
+    }
+  }
+}

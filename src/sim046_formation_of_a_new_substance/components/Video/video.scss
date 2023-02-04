@@ -1,0 +1,35 @@
+@import "../../stylesheets/common/functions.scss";
+
+.video-container .play-pause-buttons {
+  .btn {
+    @extend %center-both, %opacity-show;
+    .icon {
+      background: {
+        size: 96%;
+        position: center;
+      }
+    }
+  }
+}
+
+.video-container {
+  .video-wrapper {
+    video {
+      &.option1 {
+        background: transparent
+          url("../../assets/images/videos/experiment1.png") center / contain
+          no-repeat;
+      }
+      &.option2 {
+        background: transparent
+          url("../../assets/images/videos/experiment2.png") center / contain
+          no-repeat;
+      }
+      &.option3 {
+        background: transparent
+          url("../../assets/images/videos/experiment3.png") center / contain
+          no-repeat;
+      }
+    }
+  }
+}

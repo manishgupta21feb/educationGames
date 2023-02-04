@@ -1,0 +1,345 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  .sr-only {
+    width: 100%;
+    height: 100%;
+  }
+  .sr-only-setup {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 378px;
+    top: 150px;
+    position: absolute;
+  }
+  .full-view-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .bg-image {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../../../../assets/images/activity_screen1/Main_bg_3x.png");
+      //margin-top: 19px;
+    }
+    .bg-image-feedback {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.luster-non-metal {
+        background-image: url("../../../../assets/images/activity_popups/popups_final0004.png");
+      }
+      &.luster-metal {
+        background-image: url("../../../../assets/images/activity_popups/popups_final0005.png");
+      }
+      &.luster-metalloid {
+        background-image: url("../../../../assets/images/activity_popups/popups_final0006.png");
+      }
+      &.electrical-non-metal {
+        background-image: url("../../../../assets/images/activity_popups/popups_final0001.png");
+      }
+      &.electrical-metal {
+        background-image: url("../../../../assets/images/activity_popups/popups_final0002.png");
+      }
+      &.electrical-metalloid {
+        background-image: url("../../../../assets/images/activity_popups/popups_final0003.png");
+      }
+    }
+    .instructions,
+    .feedbackText {
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      position: absolute;
+      margin: 80px 24px 0 24px;
+      color: var(--question-text-blue);
+      z-index: 1;
+      > p {
+        &:nth-child(2) {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .bg-shadow {
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 167px;
+      z-index: 1;
+      position: absolute;
+      background: var(--white);
+      -webit-box-shadow: 0 0 75px 76px var(--white);
+      box-shadow: 0 0 75px 76px white;
+    }
+    .bg-shadow-feedback {
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 137px;
+      position: absolute;
+      background: var(--white);
+    }
+    .image-alt {
+      left: 0;
+      top: 160px;
+      width: 100%;
+      height: 285px;
+      overflow: hidden;
+      position: absolute;
+    }
+    .image-video-alt {
+      left: 0;
+      top: 138px;
+      width: 100%;
+      height: 461px;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .tested-element {
+      position: absolute;
+      color: var(--label);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      &.luster {
+        bottom: 222px;
+        left: 478px;
+      }
+      &.electrical-conductivity {
+        bottom: 135px;
+        left: 570px;
+      }
+      &.malleability {
+        right: 113px;
+        bottom: 201px;
+      }
+    }
+
+    .experiment-label {
+      position: absolute;
+      bottom: 34px;
+      width: 100%;
+      text-align: center;
+      color: var(--label);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    .draggable-setup {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      bottom: 31px;
+      position: absolute;
+      height: 142px;
+    }
+    .droppable-setup {
+      width: 100%;
+      height: 378px;
+      display: flex;
+      top: 150px;
+      position: absolute;
+    }
+    .activity-video-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .video-container {
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      //position: absolute;
+      // border: 1px solid red;
+
+      .animation-container {
+        // opacity: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+
+        .video-description {
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          position: absolute;
+          top: 137px;
+          height: 462px;
+        }
+        video {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          position: absolute;
+          &.malleable-non-metal {
+            background: transparent
+              url(../../../../assets/images/mal_carbon_firstscreen.png) center /
+              contain no-repeat;
+          }
+          &.malleable-metal {
+            background: transparent
+              url(../../../../assets/images/mal_alufirstscreen.png) center /
+              contain no-repeat;
+          }
+          &.malleable-metalloid {
+            background: transparent
+              url(../../../../assets/images/mal_silicon_firstscreen.png) center /
+              contain no-repeat;
+          }
+        }
+      }
+    }
+    .play-pause-button {
+      top: 142px;
+      //left: 50%;
+      // z-index: 1;
+      position: absolute;
+      //transform: translate(-50%, -50%) translateZ(0);
+
+      .btn {
+        opacity: 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        justify-content: center;
+        .icon {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &:hover {
+      .play-pause-button {
+        .btn {
+          opacity: 1;
+        }
+      }
+    }
+
+    .play-pause-button {
+      .btn {
+        &:focus {
+          opacity: 1;
+          box-shadow: none;
+          .icon {
+            box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary-blue);
+          }
+        }
+      }
+    }
+    .access-listing {
+      width: 681px;
+      top: 163px;
+      height: 224px;
+      left: 60px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      ul {
+        width: 100%;
+        height: 221px;
+        display: flex;
+        position: absolute;
+        list-style: none;
+        li {
+          &:nth-child(1) {
+            width: 154px;
+            height: 220px;
+            left: 31px;
+            top: 0px;
+          }
+          &:nth-child(2) {
+            left: 55px;
+            top: 100px;
+            width: 245px;
+            height: 111px;
+          }
+          &:nth-child(3) {
+            width: 211px;
+            height: 112px;
+            left: 64px;
+            top: 100px;
+          }
+          a {
+            padding: 0;
+            line-height: unset;
+            width: 100%;
+            height: 100%;
+            display: block;
+            &:focus:not(:disabled) {
+              outline: none;
+              box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+                -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+                -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+            }
+          }
+        }
+        .menuitem-0 {
+          width: 152px;
+          height: 234px;
+          left: 94px;
+          top: 0px;
+          position: absolute;
+          // border: 1px solid black;
+        }
+        .menuitem-1 {
+          width: 223px;
+          height: 116px;
+          top: 115px;
+          left: 291px;
+          //border: 1px solid black;
+          position: absolute;
+        }
+        .menuitem-2 {
+          width: 213px;
+          height: 88px;
+          top: 133px;
+          left: 521px;
+          //border: 1px solid black;
+          position: absolute;
+        }
+        // a {
+        //   z-index: 10;
+        //   text-decoration: none;
+        //   pointer-events: none;
+        //   &:focus:not(:disabled) {
+        //     outline: none;
+        //     box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+        //       -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+        //       -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+        //   }
+        // }
+      }
+    }
+
+    .continue-container {
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}

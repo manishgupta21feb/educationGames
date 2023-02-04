@@ -1,0 +1,162 @@
+.main-container {
+  position: relative;
+  background-image: url("../../assets/images/terrarium.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+
+  .white {
+    height: 227px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.72) 0%,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.94) 71.18%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    h2 {
+      position: absolute;
+      margin-top: 80px;
+      margin-left: 24px;
+      color: #35374c;
+
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      p:nth-child(2) {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .hot-spot {
+    height: 28px;
+
+    border-radius: 14px;
+    background-color: #352103;
+    > span {
+      color: #ffffff;
+
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      line-height: 16px;
+      font-weight: unset;
+      white-space: nowrap;
+    }
+    &--strawberryPlant {
+      position: absolute;
+      top: 400px;
+      left: 700px;
+    }
+    &--waterBowl {
+      position: absolute;
+      position: absolute;
+      top: 280px;
+      left: 690px;
+    }
+    &--rockCave {
+      position: absolute;
+      top: 311px;
+      left: 20px;
+    }
+    &--beardedDragon {
+      position: absolute;
+      top: 418px;
+      left: 7px;
+    }
+  }
+
+  .container--rock {
+    .bulletrock {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #352103;
+      transform-style: preserve-3d;
+
+      top: 353px;
+      left: 225px;
+    }
+    .dashrock {
+      height: 125px;
+      width: 0px;
+      top: 280px;
+      left: 168px;
+      transform: rotate(104deg);
+      border-left: 2px dotted #352103;
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+  }
+  .container--water {
+    .dashwater {
+      height: 292px;
+      width: 0px;
+      top: 225px;
+      left: 570px;
+      transform: rotate(61deg);
+      border-left: 2px dotted #352103;
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+    .bulletwater {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #352103;
+      transform-style: preserve-3d;
+      top: 440px;
+      left: 434px;
+    }
+  }
+  .container--plant {
+    .bulletplant {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #352103;
+      transform-style: preserve-3d;
+
+      top: 415px;
+      left: 528px;
+    }
+    .dashplant {
+      height: 175px;
+      width: 0px;
+      top: 330px;
+      left: 617px;
+      transform: rotate(88deg);
+      border-left: 2px dotted #352103;
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+  }
+  .container--dragon {
+    .bulletdragon {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #352103;
+      transform-style: preserve-3d;
+      position: absolute;
+      top: 429px;
+      left: 240px;
+    }
+    .dashdragon {
+      height: 117px;
+      width: 0px;
+      top: 375px;
+      left: 181px;
+      transform: rotate(91deg);
+      border-left: 2px dotted #352103;
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+  }
+}

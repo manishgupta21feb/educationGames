@@ -1,0 +1,243 @@
+.graph-area-container {
+  width: 100%;
+  height: calc(100% - 85px);
+  font-variant: lining-nums;
+  h2 {
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 62px;
+    margin-left: 24px;
+    padding-right: 40px;
+  }
+  .graph-area {
+    box-sizing: border-box;
+    height: 408px;
+    width: 752px;
+    border: 1px solid #35374c;
+    border-radius: 9px;
+    margin-top: 12px;
+    margin-left: 24px;
+    .graph-empty {
+      background-image: url("../../../assets/images/Graph.png");
+      width: 350px;
+      height: 350px;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 132px;
+      left: 121px;
+    }
+    .distance-select-container {
+      width: 162px;
+      position: absolute;
+
+      left: 546px;
+      top: 230px;
+    }
+    .time-select-container {
+      width: 162px;
+      position: absolute;
+
+      left: 546px;
+      top: 285px;
+    }
+    .graph {
+      height: 350px;
+      width: 441px;
+
+      canvas {
+        position: absolute;
+        overflow: hidden;
+        height: 333px !important;
+        width: 338px !important;
+        top: 134px;
+        left: 135px;
+      }
+    }
+    .size {
+      color: #352103;
+
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    .size-two {
+      color: #352103;
+
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.29px;
+      line-height: 20px;
+    }
+    .distance-left {
+      position: absolute;
+      white-space: nowrap;
+      transform: scaleX(-1) scaleY(-1) rotate(90deg);
+      left: 8px;
+      top: 292px;
+    }
+    .time-bottom {
+      white-space: nowrap;
+      position: absolute;
+      left: 245px;
+      top: 497px;
+    }
+    .val0--left {
+      position: absolute;
+      top: 452px;
+      left: 110px;
+    }
+    .val10--left {
+      position: absolute;
+      top: 420px;
+      left: 102px;
+    }
+    .val20--left {
+      position: absolute;
+      top: 387px;
+      left: 102px;
+    }
+    .val30--left {
+      position: absolute;
+      top: 355px;
+      left: 102px;
+    }
+    .val40--left {
+      position: absolute;
+      top: 323px;
+      left: 102px;
+    }
+    .val50--left {
+      position: absolute;
+      top: 290px;
+      left: 102px;
+    }
+    .val60--left {
+      position: absolute;
+      top: 258px;
+      left: 102px;
+    }
+    .val70--left {
+      position: absolute;
+      top: 225px;
+      left: 102px;
+    }
+    .val80--left {
+      position: absolute;
+      top: 193px;
+      left: 102px;
+    }
+    .val90--left {
+      position: absolute;
+      top: 161px;
+      left: 102px;
+    }
+    .val100--left {
+      position: absolute;
+      top: 130px;
+      left: 96px;
+    }
+    .val0--bottom {
+      position: absolute;
+      top: 478px;
+      left: 136px;
+    }
+    .val10--bottom {
+      position: absolute;
+
+      top: 478px;
+      left: 167px;
+    }
+    .val20--bottom {
+      position: absolute;
+      top: 478px;
+      left: 199px;
+    }
+    .val30--bottom {
+      position: absolute;
+      top: 478px;
+      left: 231px;
+    }
+    .val40--bottom {
+      position: absolute;
+      top: 478px;
+      left: 263px;
+    }
+    .val50--bottom {
+      position: absolute;
+      top: 478px;
+      left: 297px;
+    }
+    .val60--bottom {
+      position: absolute;
+      top: 478px;
+      left: 329px;
+    }
+    .val70--bottom {
+      position: absolute;
+      top: 478px;
+      left: 362px;
+    }
+    .val80--bottom {
+      position: absolute;
+      top: 478px;
+      left: 394px;
+    }
+    .val90--bottom {
+      position: absolute;
+      top: 478px;
+      left: 427px;
+    }
+    .val100--bottom {
+      position: absolute;
+      top: 478px;
+      left: 456px;
+    }
+    .right-pos {
+      position: absolute;
+      top: 367px;
+      left: 537px;
+    }
+  }
+  .left-pos {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+  }
+}
+
+.select-dropdown {
+  display: flex;
+  justify-content: space-between;
+  > div {
+    width: 65px;
+  }
+  > div:nth-child(1) {
+    margin-top: 6px;
+  }
+  button {
+    padding: 4px 0px 4px 8px !important;
+  }
+}
+
+.outer {
+  box-sizing: border-box;
+  height: 16px;
+  width: 16px;
+  border: 3px solid #ff3366;
+  opacity: 0.6;
+  background-color: #ffffff;
+  .inner {
+    box-sizing: border-box;
+    height: 10px;
+    width: 10px;
+    border: 2.5px solid #ff3265;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../stylesheets/common/functions.scss";
+
+%gap {
+  padding: 0 25px;
+}
+.gap {
+  @extend %gap;
+}
+
+.school {
+  @extend %flex,
+    %full-width,
+    %relative,
+    %bg-cover,
+    %bg-no-repeat,
+    %overflow-hidden;
+  height: 475px;
+  margin-top: 25px;
+  // background-image: url("../../assets/images/school.jpg");
+  background-position: center;
+  .slider-container {
+    @extend %absolute, %gap;
+    bottom: 56px;
+    .slider {
+      .datalist {
+        justify-content: space-around;
+      }
+      input[type="range"] {
+        padding: 0 30px;
+      }
+    }
+    .list-label {
+      @extend %center-text;
+      width: 40px;
+      font-size: 12px;
+      left: -19px !important;
+    }
+  }
+}
+
+.cloud {
+  @extend %index-9,
+  %full-width;
+  height: 100px;
+  @extend %opacity-hide;
+  img{
+    @extend %absolute;
+    max-width: 150px;
+  }
+  &--show{
+    opacity: 1;
+  }
+  &__1{
+    top: 4%;
+    left: 3%;
+  }
+  &__2{
+    top: 1%;
+    left: 40%;
+  }
+  &__3{
+    top: 5%;
+    left: 60%;
+  }
+  &__4{
+    left: 25%;
+    top: 9%;
+  }
+  &__5{
+    top: 8px;
+    right: 1%;
+  }
+}

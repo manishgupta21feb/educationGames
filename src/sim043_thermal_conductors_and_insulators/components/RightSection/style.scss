@@ -1,0 +1,132 @@
+.right-section {
+  padding-top: 80px;
+  .introduction-heading {
+    font-size: 14px;
+    color: #052978;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }  
+  .draggables-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .option-container {
+      margin-bottom: 5px;
+      &:nth-child(2) {
+        .label {
+          max-width: 50px;
+        }
+      }
+    }
+    .draggables {
+      position: relative;
+      .accessible-button {
+        padding: 0;
+        width: 65px;
+        height: 65px;
+        border: none;
+        box-shadow: none;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 4px;
+        &:not(:disabled) {
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #0056b3;
+          }
+        }
+      }
+      .draggable-button {
+        height: 65px;
+        width: 65px;
+        border: 1px dashed #0056B3;
+        border-radius: 4px;
+        cursor: grab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;  
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        &.selected-button {
+          background-color: #D9EBFF;
+        }
+        &.disabled {
+          cursor: default;
+          pointer-events: none;
+          border: 1px solid #c9c9cf;
+          opacity: 0.9;
+          background-color: white;
+        }
+        &.selected {
+          background-color: #D9EBFF;
+          opacity: 1;
+          border: 1px dashed #0056B3;
+        }
+        span {
+          height: 55px;
+          width: 55px;
+          display: block;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.copper {
+          span {
+            background-image: url('../../assets/images/chocolate_alpha.png');
+          }
+        }
+        &.wood_chips {
+          span {
+            background-image: url('../../assets/images/wooden_chip_alpha.png');
+          }
+        }
+        &.feathers {
+          span {
+            background-image: url('../../assets/images/feather_alpha.png');
+          }
+        }
+        &.bubbles {
+          span {
+            background-image: url('../../assets/images/bubbles_alpha.png');
+          }
+        }
+      }
+    }
+    .label {
+      font-size: 14px;
+      color: #35374C;
+      font-weight: 500;
+      margin-top: 7px;
+      display: inline-block;
+    }
+  }
+}
+.leftright {
+  .right {
+    overflow: unset;
+  }
+} 
+.ui-draggable-dragging {
+  z-index: 999 !important;
+  cursor: grabbing !important;
+}
+.accessible-list {
+  height: 217px;
+  width: 212px;
+  bottom: 28px;
+  display: block;
+  left: 179px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  li {
+    a {
+      display: block;
+      height: 217px;
+      width: 212px;
+    }
+  }
+}

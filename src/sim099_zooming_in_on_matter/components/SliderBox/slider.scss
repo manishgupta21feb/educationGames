@@ -1,0 +1,554 @@
+.school {
+  position: relative;
+  height: 100%;
+  background-position: center;
+
+  .paragraph {
+    // height: 20px;
+    // width: 752px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    // opacity: 0;
+    .sub_heading {
+      position: relative;
+      top: 5px;
+    }
+  }
+  .cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 202px;
+    top: 89px;
+    left: 140px;
+    &.viewFromSpace {
+      .bgImg {
+        &.slider1 {
+          position: relative;
+          left: 80px;
+          top: -14px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 253px;
+          width: 345px;
+          background-image: url(../../assets/images/nails.png);
+        }
+        &.slider2 {
+          position: relative;
+          left: 80px;
+          top: -14px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 253px;
+          width: 345px;
+          background-image: url(../../assets/images/nailszoomednew.png);
+        }
+        &.slider3 {
+          position: relative;
+          top: -14px;
+          left: 80px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 253px;
+          width: 345px;
+          background-image: url(../../assets/images/fe.png);
+        }
+
+        &.slider4 {
+          position: relative;
+          top: -14px;
+          position: relative;
+          left: 80px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 253px;
+          width: 345px;
+          background-image: url(../../assets/images/protonnew.png);
+        }
+      }
+    }
+    &.viewFromEarth {
+      .bgImg {
+        &.slider1 {
+          position: relative;
+          left: 85px;
+          top: -14px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 253px;
+          width: 345px;
+          background-image: url(../../assets/images/water.png);
+        }
+        &.slider2 {
+          position: relative;
+          top: -14px;
+          left: 80px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 253px;
+          width: 345px;
+          background-image: url(../../assets/images/watermoleculesnew.png);
+        }
+        &.slider3 {
+          position: relative;
+          top: -14px;
+          left: 50px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 243px;
+          width: 426px;
+          background-image: url(../../assets/images/one_water_molecule.png);
+        }
+
+        &.slider4 {
+          position: relative;
+          background-repeat: no-repeat;
+          background-image: url(../../assets/images/waterzoomedlastnew.png);
+          height: 253px;
+          width: 345px;
+          background-size: contain;
+          position: relative;
+          left: 91px;
+          &::before {
+            content: " ";
+            background: url(../../assets/images/hydrogennewz.png) no-repeat
+              center center/contain;
+            position: absolute;
+            height: 202px;
+            width: 290px;
+            left: -151px;
+            top: 35px;
+          }
+          &::after {
+            content: " ";
+            background: url(../../assets/images/hydrogennewz.png) no-repeat
+              center center/contain;
+            position: absolute;
+            height: 202px;
+            width: 290px;
+            left: 178px;
+            top: 35px;
+          }
+        }
+      }
+    }
+    .bgImg {
+      .imageTop {
+        height: 253px;
+        width: 345px;
+      }
+    }
+    .legend {
+      position: absolute;
+      top: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5px;
+      width: 133px;
+      color: #35374c;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    .text {
+      position: absolute;
+      top: 210px;
+      left: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20px;
+      width: 133px;
+      color: #35374c;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    .viewFromEarth {
+      &.slider2 {
+        &.Hydrogen {
+          position: relative;
+          top: 150px;
+          right: 184px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #35374c;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+
+          &::before {
+            content: " ";
+            background: url(../../assets/images/hydrogenlegend.png) no-repeat
+              center center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 66px;
+            top: -2px;
+          }
+        }
+
+        &.Oxygen {
+          position: relative;
+          top: 150px;
+          right: 87px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #35374c;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+
+          &::before {
+            content: " ";
+            background: url(../../assets/images/protonlegend.png) no-repeat
+              center center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 49px;
+            top: -2px;
+          }
+        }
+      }
+      &.slider3 {
+        &.Hydrogen {
+          position: relative;
+          top: 150px;
+          right: 260px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #35374c;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+
+          &::before {
+            content: " ";
+            background: url(../../assets/images/hydrogenlegend.png) no-repeat
+              center center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 66px;
+            top: -2px;
+          }
+        }
+
+        &.Oxygen {
+          position: relative;
+          top: 150px;
+          right: 165px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #35374c;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+
+          &::before {
+            content: " ";
+            background: url(../../assets/images/protonlegend.png) no-repeat
+              center center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 49px;
+            top: -2px;
+          }
+        }
+      }
+      &.slider4 {
+        position: relative;
+        top: 150px;
+        right: 255px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #35374c;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+
+        .image {
+          height: 10px;
+          width: 10px;
+          position: absolute;
+          background-color: red;
+          right: 60px;
+        }
+
+        &::before {
+          content: " ";
+          background: url(../../assets/images/protonlegend.png) no-repeat center
+            center/contain;
+          height: 20px;
+          width: 29px;
+          position: absolute;
+          right: 51px;
+          top: -2px;
+        }
+
+        &.Electrons {
+          position: relative;
+          left: -130px;
+          .image {
+            height: 10px;
+            width: 10px;
+            background-color: red;
+            position: relative;
+            right: 7px;
+          }
+          &::before {
+            content: " ";
+            background: url(../../assets/images/Electron.png) no-repeat center
+              center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 61px;
+            top: -2px;
+          }
+        }
+
+        &.Neutrons {
+          position: relative;
+          right: 185px;
+
+          .image {
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            background-color: red;
+            right: 70px;
+          }
+          &::before {
+            content: " ";
+            background: url(../../assets/images/neutron.png) no-repeat center
+              center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 61px;
+            top: -2px;
+          }
+        }
+      }
+    }
+
+    .viewFromSpace {
+      &.slider2,
+      &.slider3 {
+        &.Hydrogen {
+          position: relative;
+          top: 150px;
+          right: 192px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #35374c;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+        }
+
+        &.Oxygen {
+          position: relative;
+          top: 150px;
+          right: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #35374c;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+        }
+      }
+      &.slider4 {
+        position: relative;
+        top: 150px;
+        right: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #35374c;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+
+        .image {
+          height: 10px;
+          width: 10px;
+          position: absolute;
+          background-color: red;
+          right: 70px;
+        }
+
+        &::before {
+          content: " ";
+          background: url(../../assets/images/neutron.png) no-repeat center
+            center/contain;
+          height: 20px;
+          width: 29px;
+          position: absolute;
+          right: 61px;
+          top: -2px;
+        }
+
+        &.Electrons {
+          position: relative;
+          left: -130px;
+
+          .image {
+            height: 10px;
+            width: 10px;
+            background-color: red;
+            position: relative;
+            right: 7px;
+          }
+
+          &::before {
+            content: " ";
+            background: url(../../assets/images/Electron.png) no-repeat center
+              center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 62px;
+            top: -2px;
+          }
+        }
+
+        &.Protons {
+          position: relative;
+          right: 245px;
+
+          .image {
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            background-color: red;
+            right: 60px;
+          }
+
+          &::before {
+            content: " ";
+            background: url(../../assets/images/protonlegend.png) no-repeat
+              center center/contain;
+            height: 20px;
+            width: 29px;
+            position: absolute;
+            right: 51px;
+            top: -2px;
+          }
+        }
+      }
+    }
+  }
+  .sliderArea {
+    position: absolute;
+    height: 72px;
+    width: 504px;
+    // top: 157px;
+    bottom: 83px;
+    left: 140px;
+    border: 2px solid #979797;
+
+    .rectangle {
+      position: relative;
+      top: 34px;
+      left: 14px;
+      height: 4px;
+      width: 18px;
+      transform: scaleY(-1);
+      border-radius: 95.5px;
+      background-color: #979797;
+    }
+
+    .slider-container {
+      width: 420px;
+      left: 42px;
+      .slider {
+        top: 9px;
+        & {
+          input[type="range"] {
+            padding: 0 68px;
+          }
+        }
+
+        .datalist {
+          justify-content: space-evenly;
+          .list-item {
+            &.selected {
+              .value {
+                .list-label {
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rectanglePlus {
+      position: relative;
+      top: -33px;
+      left: 464px;
+      height: 4px;
+      width: 18px;
+      transform: scaleY(-1);
+      border-radius: 95.5px;
+      background-color: #979797;
+    }
+
+    .rectanglePlusTwo {
+      position: relative;
+      top: -37px;
+      left: 464px;
+      height: 4px;
+      width: 18px;
+      transform: scaleY(-1);
+      transform: rotateZ(90deg);
+      border-radius: 95.5px;
+      background-color: #979797;
+    }
+  }
+
+  .nextButton {
+    .show {
+      display: flex;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .btn.toast-secondary-button {
+      right: 0px;
+    }
+  }
+}

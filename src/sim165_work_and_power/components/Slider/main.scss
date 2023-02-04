@@ -1,0 +1,58 @@
+@import "../../stylesheets/common/functions.scss";
+%gap {
+  padding: 0 25px;
+}
+.main_holder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 30px;
+  padding-left: 24px;
+
+  .btn {
+    margin-left: 24px;
+  }
+  .sliderHolder {
+    background-color: white;
+
+    height: 73px;
+    width: 293px;
+    border-radius: 14px;
+    border: 1px solid #979797;
+    .speed-and-force {
+      height: 20px;
+      width: 214px;
+      color: #35374c;
+      font-size: 14px;
+      margin-left: 14px;
+      margin-top: 8px;
+    }
+    .slider-container {
+      margin-top: unset;
+      padding: 0 6px;
+      .slider {
+        .datalist {
+          justify-content: space-around;
+          .list-item {
+            .marker {
+              margin-bottom: 6px;
+            }
+          }
+        }
+
+        input[title~="Displacement"] {
+          padding: 0 20px;
+        }
+        input[title~="Time"] {
+          padding: 0 26px;
+        }
+      }
+      .list-label {
+        @extend %center-text;
+        width: 48px;
+        font-size: 12px;
+        left: -25px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+.launch-con {
+  height: 100%;
+  background-color: #f4f4f4;
+  padding: 80px 24px 14px 24px;
+
+  .instructor {
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .accessible-dropbox{
+    position: absolute;
+    width: 182px;
+    height: 182px;
+    z-index: 3;
+    border: 1px dashed var(--question-text-blue);
+    border-radius: 4px;
+    background-color: var(--hover-state-color);
+    top: 224px;
+    left: 179px;
+  }
+
+  .accessible-list {
+    position: absolute;
+    width: 182px;
+    height: 182px;
+    top: 234px;
+    left: 179px;
+    border: 1px dashed var(--question-text-blue);
+    border-radius: 4px;
+    background-color: var(--hover-state-color);
+    opacity: 0.4;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      li {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        a {
+          padding: 0;
+          line-height: unset;
+          width: 100%;
+          height: 100%;
+          display: block;
+          box-shadow: none;
+          &:focus,
+          &:hover {
+            color: transparent;
+            background-color: transparent;
+          }
+          div {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .draggable-container {
+    display: flex;
+  }
+  .carbon-drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+
+    .carbon-drop {
+      height: 182px;
+      width: 182px;
+      border: 1px dashed var(--question-text-blue);
+      border-radius: 4px;
+      background-color: var(--hover-state-color);
+      padding: 11px;
+      padding-left: 10px;
+      z-index: 2;
+      opacity: 0;
+
+      &.show{
+        opacity: 0.4;
+      }
+      
+      &.dropped {
+        background-color: white;
+        opacity: 1;
+      }
+
+      .carbon-12,
+      .carbon-13,
+      .carbon-14 {
+        height: 160px;
+        width: 160px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .carbon-12 {
+        background-image: url(../../assets//images/dropped_c12.png);
+      }
+      .carbon-13 {
+        background-image: url(../../assets//images/dropped_13.png);
+      }
+      .carbon-14 {
+        background-image: url(../../assets//images/dropped_c14.png);
+      }
+    }
+
+    .carbon-scale {
+      position: relative;
+      height: 188px;
+      width: 256px;
+      background-image: url(../../assets/images/weigh_machine.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: -64px;
+      > span {
+        position: absolute;
+        top: 128px;
+        left: 50px;
+        font-size: 20px;
+        width: 150px;
+        font-variant: lining-nums;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+    color: var(--lightgreyshade);
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    font-variant: lining-nums;
+
+    .legends {
+      display: flex;
+      margin-right: 22px;
+
+      .legend {
+        height: 12px;
+        width: 12px;
+        border-radius: 2px;
+        margin-right: 8px;
+
+        &.electron {
+          background-color: #ffde00;
+        }
+        &.nutron {
+          background-color: var(--primary-blue);
+        }
+        &.proton {
+          background-color: var(--secondary-warning-red);
+        }
+      }
+    }
+  }
+}

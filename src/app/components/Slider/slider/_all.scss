@@ -1,0 +1,8 @@
+$range-track-border: 1px solid var(--primary-blue);
+$progress-bar-background: var(--primary-blue);
+$range-track-background: #83a0a8;
+$progress-value-background: #83a0a8;
+
+@import "reset-default";
+@import "thumb";
+@import "track";

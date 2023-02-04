@@ -1,0 +1,56 @@
+.right-static {
+  //   background: #000aaa;
+  .intstruction-area {
+    position: relative;
+    .instruction-text {
+      position: relative;
+      top: 80px;
+      left: 0;
+      color: var(--question-heading-bluish);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    .instruction-blue-text {
+      position: relative;
+      top: 95px;
+      left: 0;
+      color: var(--primary-blue);
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+  }
+}
+
+.right-interactive {
+  padding: 80px 24px 0 24px;
+  height: 100%;
+  width: 100%;
+
+  .question-instruction {
+    font-size: 14px;
+    color: var(--question-text-blue);
+    margin-bottom: 24px;
+  }
+  .mcq-question-area {
+    height: calc(100% - 24px);
+    .inner-wrapper {
+      .radiobuttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .radiobutton {
+          flex-basis: 33%;
+          margin-right: 0;
+          .radiobutton-inner-wrapper {
+            align-items: center;
+          }
+        }
+      }
+      .submit-button {
+        bottom: 43px;
+      }
+    }
+  }
+}

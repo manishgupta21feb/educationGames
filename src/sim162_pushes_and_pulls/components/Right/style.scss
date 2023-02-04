@@ -1,0 +1,113 @@
+@import "../../stylesheets/common/functions.scss";
+
+.right-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+
+  .question-wrapper {
+    margin-top: 16px;
+    max-height: 130px;
+    width: 212px;
+    border: 1px solid #ba5b08;
+    border-radius: 8px;
+    background-color: #fbf1e9;
+
+    .question-info-box {
+      margin-top: 8px;
+      margin-left: 11px;
+      max-height: 80px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 190px;
+      color: #352103;
+      font-size: 14px;
+      font-variant: lining-nums;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    .close-button {
+      width: 100%;
+      height: 40px;
+      .btn.hotspot-btn.close {
+        padding: 4px 12px 2px 12px;
+        &:hover {
+          background: transparent;
+          box-shadow: 0 0 0 1px var(--white),
+            0 0 0 2px var(--secondary-attention-dark) !important;
+        }
+      }
+      .btn.hotspot-btn.label {
+        background: transparent;
+      }
+    }
+  }
+
+  .button-main {
+    display: flex;
+    flex-wrap: wrap;
+    .btn.primary-toggle-button .text {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+    }
+    .but-1 {
+      margin-left: 8px;
+    }
+    .but-2 {
+      margin-top: 8px;
+    }
+  }
+
+  .instruction {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .slider-box {
+    background-color: white;
+    height: 73px;
+    width: 209px;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #979797;
+    margin-bottom: 12px;
+
+    .slider-title {
+      color: #35374c;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+
+    .slider-container {
+      margin-top: unset;
+      .slider {
+        width: 100%;
+        .slider-custom-track {
+          background-color: #d2deed;
+        }
+        .datalist {
+          justify-content: space-around;
+          .list-item .marker .line {
+            height: 5px;
+          }
+        }
+        input[type="range"] {
+          padding: 0 24px;
+        }
+      }
+      .list-label {
+        @extend %center-text;
+        width: 48px;
+        font-size: 12px;
+        left: -25px !important;
+      }
+    }
+  }
+}

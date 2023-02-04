@@ -1,0 +1,81 @@
+@import "../../stylesheets/common/functions.scss";
+
+.left-container {
+  @extend %full-object;
+
+  .images {
+    @extend %full-object, %absolute;
+    top: 0px;
+    > div {
+      @extend %full-object, %absolute;
+      top: 0px;
+    }
+    .one {
+      background: transparent url("../../assets/images/1.png") center / cover
+        no-repeat;
+      opacity: 0;
+    }
+    .two {
+      background: transparent url("../../assets/images/2.png") center / cover
+        no-repeat;
+      opacity: 0;
+    }
+    .three {
+      background: transparent url("../../assets/images/3.png") center / cover
+        no-repeat;
+      opacity: 0;
+    }
+    .show {
+      opacity: 1;
+    }
+  }
+
+  .arrows-container {
+    @extend %relative, %full-width;
+    top: 127px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    .arrow-box {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > p {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+        margin-bottom: 14px;
+      }
+      .arrow {
+        @extend %relative;
+        height: 19px;
+        width: 84px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &.blue {
+          background-image: url("../../assets/images/magnetic_arrow.png");
+        }
+        &.yellow {
+          background-image: url("../../assets/images/rotation.png");
+        }
+        &.brown {
+          background-image: url("../../assets/images/current.png");
+        }
+      }
+    }
+  }
+
+  &.increase-width {
+    .video-container {
+      div {
+        .video-wrapper {
+          video {
+            width: 102%;
+          }
+        }
+      }
+    }
+  }
+}

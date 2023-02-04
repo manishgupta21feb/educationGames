@@ -1,0 +1,459 @@
+.left {
+  .left-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 540px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/building_bgnew.png);
+  }
+
+  .image-button {
+    height: 600px;
+    width: 540px;
+
+    .button {
+      position: absolute;
+      pointer-events: none;
+
+      .btn.hotspot-btn.label.visited{
+        opacity: 1;
+      }
+      &.glass {
+        top: 59px;
+        left: 458px;
+
+        .bullets {
+          top: 87px;
+          left: -50px;
+          .bullet {
+            top: -3px;
+            left: 30px;
+          }
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 60px;
+            left: -104px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/glass_popup_2.png);
+          
+        }
+        .dottedlines {
+          height: 51px;
+          width: 0px;
+          top: 56px;
+          left: -20px;
+          transform: rotate(65deg);
+        }
+      }
+      &.oil {
+        top: 508px;
+        left: 48px;
+        .bullets {
+          top: 33px;
+          left: 84px;
+
+          .bullet {
+            top: 33px;
+            left: 84px;
+          }
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            left: 82px;
+            top: 5px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/oil_popup_8.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 25px;
+          left: 66px;
+          transform: rotate(63deg);
+        }
+      }
+
+      &.car {
+        top: 515px;
+        left: 277px;
+        .bullets {
+          top: 22px;
+          left: -30px;
+
+          &.bullet {
+            top: 25px;
+            left: -30px;
+          }
+        }
+          .show {
+            height: 204px;
+            width: 158px;
+            position: absolute;
+            left: -161px;
+            top: -7px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/car_outline.png);
+            // background-image: url(../../../assets/images/car_popup_13.png);
+          
+        }
+        .dottedlines {
+          height: 32px;
+          width: 0px;
+          top: 23px;
+          left: -10px;
+          transform: rotate(124deg);
+        }
+      }
+      &.iron {
+        top: 470px;
+        left: 321px;
+        .bullets {
+          top: -3px;
+          left: 63px;
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: -50px;
+            left: 52px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/iron_popup_12.png);
+          
+        }
+        .dottedlines {
+          height: 46px;
+          width: 0px;
+          top: 6px;
+          left: 58px;
+          transform: rotate(18deg);
+        }
+      }
+      &.wooden_chair {
+        top: 270px;
+        left: 28px;
+        .bullets {
+          top: 101px;
+          left: 99px;
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            left: 85px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/chair_popup_6.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 67px;
+          left: 85px;
+          transform: rotate(131deg);
+        }
+      }
+      &.plastic_cell_phone {
+        top: 215px;
+        left: 373px;
+        .bullets {
+          top: 49px;
+          left: 34px;
+          &.bullet {
+            // top: 37px;
+            // left: 45px;
+          }
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 49px;
+            left: 5px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/mobile_popup_4.png);
+          
+        }
+        .dottedlines {
+          position: absolute;
+          height: 46px;
+          width: 0px;
+          top: 10px;
+          left: 57px;
+          transform: rotate(40deg);
+        }
+      }
+      &.vegetables {
+        top: 235px;
+        left: 49px;
+        .bullets {
+          top: 105px;
+          left: 116px;
+          &.bullet {
+            // top: 108px;
+            // left: 86px;
+          }
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 102px;
+            left: 99px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/vegitables_popup_5.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 66px;
+          left: 101px;
+          transform: rotate(136deg);
+        }
+      }
+      &.potted_plant {
+        top: 60px;
+        left: 48px;
+        .bullets {
+          // top: 108px;
+          // left: 86px;
+
+          &.bullet {
+            top: 108px;
+            left: 86px;
+          }
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 91px;
+            left: 67px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/pottedplant_popup_1.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 69px;
+          left: 71px;
+          transform: rotate(136deg);
+        }
+      }
+
+      &.curtain {
+        top: 130px;
+        left: 20px;
+        .bullets {
+          top: 106px;
+          left: 85px;
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 85px;
+            left: 82px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/curtain_popup_3.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 68px;
+          left: 70px;
+          transform: rotate(136deg);
+        }
+      }
+      &.rocks {
+        top: 198px;
+        left: 287px;
+        .bullets {
+          top: 66px;
+          left: 5px;
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            left: -30px;
+            top: 64px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/rocks_popup_9.png);
+          
+        }
+        .dottedlines {
+          position: absolute;
+          height: 46px;
+          width: 0px;
+          top: 22px;
+          left: 25px;
+          transform: rotate(33deg);
+        }
+      }
+
+      &.water {
+        top: 333px;
+        left: 356px;
+        .bullets {
+          top: 63px;
+          left: 5px;
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 62px;
+            left: -25px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/water_popup_10.png);
+          
+        }
+        .dottedlines {
+          position: absolute;
+          height: 46px;
+          width: 0px;
+          top: 22px;
+          left: 25px;
+          transform: rotate(33deg);
+        }
+      }
+
+      &.tree {
+        top: 280px;
+        left: 456px;
+        min-width: 150px;
+
+        .bullets {
+          top: 116px;
+          left: 39px;
+        }
+          .show {
+            height: 243px;
+            width: 103px;
+            position: relative;
+            top: 12px;
+            left: -3px;          
+            background-size: contain;
+            background-repeat: no-repeat;        
+            // background-image: url(../../../assets/images/tree_popup_11.png);
+            background-image: url(../../../assets/images/tree_outlinenew.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 70px;
+          left: 35px;
+          transform: rotate(166deg);
+        }
+      }
+
+      &.garden_soil {
+        top: 362px;
+        left: 7px;
+        .bullets {
+          top: 108px;
+          left: 41px;
+        }
+          .show {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 105px;
+            left: 12px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../../assets/images/gardensoil_popup_7.png);
+          
+        }
+
+        .dottedlines {
+          height: 47px;
+          width: 0px;
+          top: 70px;
+          left: 45px;
+          transform: rotate(180deg);
+        }
+      }
+
+    }
+  }
+
+  .bullets {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+
+    transform-style: preserve-3d;
+  }
+  .dottedlines {
+    border-left: 2px dotted #352103;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+}
+
+.right {
+  .right-view {
+    .right-content {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-top: 80px;
+    }
+
+    .questions {
+    }
+  }
+}
+
+.intro-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .intro-popup-image {
+    width: 386px;
+    height: 252px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/start.png);
+  }
+}

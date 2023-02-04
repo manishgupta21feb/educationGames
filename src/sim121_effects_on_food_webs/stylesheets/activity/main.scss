@@ -1,0 +1,26 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      background-color: blueviolet;
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.select-dropdown .accessible-list {
+  top: 36px;
+  left: -1px;
+  overflow-y: hidden;
+  min-height: 80px;
+  min-height: 111px;
+  max-height: 134px;
+  border-radius: 4px;
+  width: calc(100% + 2px);
+}
+.select-dropdown .accessible-list .list li {
+  height: 33px;
+  display: block;
+  border-bottom: 1px solid #d3d3d3;
+}

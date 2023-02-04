@@ -1,0 +1,204 @@
+.container {
+  width: 800px;
+  height: 318px;
+  background-image: url(../../../assets/images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+
+  .exp1 {
+    position: absolute;
+    width: 278px;
+    height: 117px;
+    top: 137px;
+    left: 13px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__before {
+      background-image: url(../../../assets/images/exp1_start.png);
+    }
+    &__after {
+      background-image: url(../../../assets/images/exp1_end.png);
+    }
+
+    &__meter-1 {
+      position: absolute;
+      top: 19px;
+      left: 51px;
+      font-size: 6px;
+      font-variant: lining-nums;
+      &.es {
+        left: 50px;
+      }
+    }
+    &__meter-2 {
+      position: absolute;
+      top: 19px;
+      left: 187px;
+      font-size: 6px;
+      font-variant: lining-nums;
+
+      &.es {
+        left: 186px;
+      }
+    }
+    &__cup-a {
+      position: absolute;
+      top: 74px;
+      font-size: 14px;
+      left: 81px;
+    }
+    &__cup-b {
+      position: absolute;
+      top: 74px;
+      font-size: 14px;
+      left: 163px;
+    }
+    &__degree1 {
+      //  position: absolute;
+      // top: 18px;
+      // left: 58px;
+      font-size: 5px;
+      font-variant: lining-nums;
+
+      &.es {
+        position: relative;
+        left: 1px;
+      }
+    }
+    &__degree2 {
+      // position: absolute;
+      // top: 18px;
+      // left: 194px;
+      font-size: 5px;
+      font-variant: lining-nums;
+
+      &.es {
+        position: relative;
+        left: 1px;
+      }
+    }
+
+    // &.es2 {
+    //   left: 1px;
+    //   position: relative;
+    // }
+    // &.es1 {
+    //   left: 1px;
+    //   position: relative;
+    // }
+  }
+
+  .exp2 {
+    width: 273px;
+    height: 157px;
+    top: 118px;
+    left: 284px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__before {
+      background-image: url(../../../assets/images/exp2_start.png);
+    }
+    &__after {
+      background-image: url(../../../assets/images/exp2_end.png);
+    }
+    &__degree {
+      // position: absolute;
+      // bottom: 29px;
+      // left: 115px;
+      // font-family: "digital7";
+      // font-size: 14px;
+      // color: var(--grey-text);
+      // pointer-events: none;
+      // touch-action: none;
+      font-family: "digital7";
+      position: absolute;
+      top: 108px;
+      left: 93px;
+      font-size: 14px;
+      color: var(--grey-text);
+      pointer-events: none;
+      touch-action: none;
+    }
+  }
+
+  .exp3 {
+    width: 127px;
+    height: 157px;
+    top: 104px;
+    left: 595px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__before {
+      background-image: url(../../../assets/images/exp3_start.png);
+    }
+    &__after {
+      background-image: url(../../../assets/images/exp3_start.png);
+    }
+  }
+
+  .digitalText {
+    font-family: "digital7";
+    position: absolute;
+    top: 209px;
+    left: 67px;
+    font-size: 22px;
+    color: var(--grey-text);
+    pointer-events: none;
+    touch-action: none;
+  }
+
+  .label1 {
+    left: 57px;
+    position: absolute;
+    bottom: 20px;
+  }
+  .label2 {
+    left: 322px;
+    position: absolute;
+    bottom: 20px;
+  }
+  .label3 {
+    //left: 611px;
+    position: absolute;
+    bottom: 20px;
+    right: 57px;
+  }
+  .labels {
+    position: absolute;
+    background-color: var(--secondary-attention-dark);
+    color: var(--secondary-attention-light);
+    font-size: 14px;
+    top: 271px;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    border-radius: 16px;
+
+    .labels:hover {
+      border: none;
+    }
+  }
+  [disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .overlay {
+    position: absolute;
+    background-color: var(--dark-grey);
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+  }
+}
+
+.questionIntroHeading {
+  color: var(--question-heading-bluish);
+  letter-spacing: 0.15px;
+  width: 752px;
+  margin-top: 5px;
+}

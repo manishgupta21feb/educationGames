@@ -1,0 +1,51 @@
+.accessible-list {
+  @extend %bg-transparent, %border-none;
+  right: 27px;
+  & > .list {
+    @extend %no-margin;
+    & > .listitem {
+      @extend %block;
+      width: 120px;
+      height: 120px;
+      > a:focus {
+        @extend %bg-transparent;
+      }
+      &:first-child > a {
+        top: -27px;
+        left: -88px;
+      }
+      &:nth-child(2) > a {
+        top: -5px;
+        left: 54px;
+      }
+      &:nth-child(3) > a {
+        top: 17px;
+        left: -88px;
+      }
+      &:last-child > a {
+        top: -245px;
+        left: -230px;
+      }
+      & > a {
+        @extend %absolute, %full-width;
+        height: 120px;
+      }
+    }
+  }
+}
+.box--three {
+  .accessible-list {
+    & > .list {
+      & > .listitem {
+        &:nth-child(2) > a {
+          top: 55px;
+          left: 54px;
+        }
+        &:nth-child(3) > a {
+          top: -70px;
+          left: -230px;
+        }
+      }
+    }
+  }
+}

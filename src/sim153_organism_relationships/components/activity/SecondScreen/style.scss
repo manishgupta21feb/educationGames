@@ -1,0 +1,25 @@
+.mcq-question-area{
+    .inner-wrapper{
+        height: 100%;
+        width: 100%;
+        .heading{
+        position: relative;
+        top: 80px;
+        left: 24px;
+        width: 50%;
+        }
+        .question{
+            position: relative;
+        top: 96px;
+        left: 24px;
+       
+        width:592px;
+        color: #35374C;
+        }
+        .radiobuttons{
+            position: relative;
+            top: 110px;
+            left: 24px;
+        }
+    }
+}

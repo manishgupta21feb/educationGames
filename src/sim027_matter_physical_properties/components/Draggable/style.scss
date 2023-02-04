@@ -1,0 +1,135 @@
+.draggable {
+  .draggable-btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .drag-box {
+    height: 108px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+
+    .geometry {
+      height: 65px;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+
+      .option,
+      .option-drag {
+        width: 65px;
+        height: 65px;
+        padding: 8px;
+        border-radius: 4px;
+        position: relative;
+        pointer-events: auto;
+        color: var(--primary-blue);
+        background-color: var(--white);
+        border: 1px dashed var(--primary-blue);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          width: 56px;
+          height: 56px;
+          flex-shrink: 0;
+          display: block;
+          pointer-events: none;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        &.balloon span {
+          background-image: url(../../assets/images/ballon.png);
+        }
+
+        &.baseball span {
+          background-image: url(../../assets/images/ball.png);
+        }
+
+        &.vase span {
+          background-image: url(../../assets/images/vase.png);
+        }
+
+        &.water span {
+          background-image: url(../../assets/images/water.png);
+        }
+
+        &.sandpaper span {
+          background-image: url(../../assets/images/sandpaper.png);
+        }
+
+        &.rubber_band span {
+          background-image: url(../../assets/images/rubberband.png);
+        }
+
+        &.nail_file span {
+          background-image: url(../../assets/images/nailfile.png);
+        }
+
+        &.rock span {
+          background-image: url(../../assets/images/rock.png);
+        }
+
+        &.ice_pop span {
+          background-image: url(../../assets/images/icepop.png);
+        }
+
+        &.string_ball span {
+          background-image: url(../../assets/images/stringball.png);
+        }
+
+        &.accessible-button {
+          &:focus:not(:disabled) {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue),
+              -2px 2px 6px 0 rgba(53, 55, 76, 0.2),
+              -2px 4px 8px 0 rgba(53, 55, 76, 0.08);
+          }
+        }
+
+        &.not-accessible-button {
+          top: 0;
+          left: 0;
+          position: absolute;
+        }
+
+        &.ui-draggable {
+          cursor: grab;
+          &.ui-draggable-disabled {
+            cursor: default;
+            opacity: 0.6;
+            border-color: grey;
+          }
+        }
+
+        &.ui-draggable-dragging {
+          z-index: 1;
+          cursor: grabbing;
+        }
+
+        .option:not(:disabled) {
+          &:focus {
+            border: 1px dashed var(--primary-blue);
+          }
+
+          &:hover {
+            border: 1px dashed var(--primary-blue);
+          }
+        }
+      }
+    }
+
+    .label {
+      width: 65px;
+      font-size: 14px;
+      margin-top: 4px;
+      color: #35374c;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+    }
+  }
+}

@@ -1,0 +1,237 @@
+.right-section {
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 80px);
+
+  h2 {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+
+  .close:hover {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+  }
+
+  .topbuttons {
+    margin-top: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    &.btn-chip {
+      margin-right: 8px;
+      margin-bottom: 8px;
+      padding: 4px 4px 3px 4px;
+      &:focus,
+      &:hover:not(:disabled),
+      &:focus:not(:disabled):hover {
+        padding: 4px 4px 3px 4px;
+      }
+      &.selected {
+        &:focus,
+        &:hover:not(:disabled),
+        &:focus:not(:disabled):hover {
+          padding: 4px 4px 3px 4px;
+        }
+      }
+    }
+  }
+
+  .fossil-info {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    color: #352103;
+    overflow: hidden;
+
+    .heading {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    > div {
+      width: 100%;
+      margin-top: 16px;
+      overflow: hidden;
+      position: relative;
+      background-color: white;
+
+      .hotspot-scrollable-section {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 300px;
+        padding-right: 4px;
+
+        font-size: 12px;
+        line-height: 16px;
+        // padding-block: 2px;
+        letter-spacing: 0.4px;
+        margin-top: 2px;
+        margin-left: 2px;
+        padding-top: 2px;
+        padding-left: 2px;
+
+        .weathering-erosion-text {
+          margin-top: 8px;
+          font-weight: 500;
+        }
+      }
+
+      .hotspot-options-buttons {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+
+        .btn {
+          &.btn-chip {
+            margin-right: 4px;
+            &:first-of-type {
+              margin-left: 3px;
+            }
+            border-color: #352103;
+            .text {
+              color: #352103;
+            }
+
+            &.selected {
+              background: #352103;
+              .text {
+                color: white;
+              }
+            }
+
+            &:focus:not(:disabled) {
+              box-shadow: 0 0 0 1px var(--white), 0 0 0 3px #352103;
+
+              &:hover {
+                box-shadow: 0 0 0 1px var(--white), 0 0 0 2px #352103 !important;
+              }
+            }
+            &:hover:not(:disabled) {
+              box-shadow: 0 0 0 1px var(--white), 0 0 0 2px #352103 !important;
+            }
+
+            &:disabled {
+              opacity: 0.8;
+              border-color: var(--dark-grey);
+            }
+          }
+        }
+        &.es {
+          margin-bottom: 10px;
+          .btn {
+            .text {
+              margin-left: 4px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .btn {
+      &.hotspot-btn {
+        margin: 0;
+        margin-top: 16px;
+      }
+
+      // .button {
+      // }
+    }
+  }
+
+  .speaker-button-wrapper {
+    height: 16px;
+    white-space: nowrap;
+    vertical-align: top;
+    display: inline-flex;
+
+    &.alt {
+      white-space: unset;
+
+      .speaker-button-inner {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .speaker-icon {
+    // margin: 0;
+    // padding: 0;
+    // width: 16px;
+    // height: 16px;
+    // border: none;
+    // outline: none;
+    // cursor: pointer;
+    // padding-bottom: 4px;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-color: transparent;
+    // background-image: url(../../assets/images/audio_play_speaker_icon.svg);
+
+    margin: 0;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(../../assets/images/audio_play_speaker_icon.svg);
+
+    &:focus,
+    &:hover {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+    }
+
+    &:hover {
+      margin-left: 2px;
+      -webkit-box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue);
+      box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue);
+    }
+
+    &:focus {
+      margin-left: 2px;
+      -webkit-box-shadow: 0 0 0 1px white, 0 0 0 3px var(--primary-blue);
+      box-shadow: 0 0 0 1px white, 0 0 0 3px var(--primary-blue);
+
+      &:hover {
+        margin-left: 2px !important;
+        -webkit-box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue) !important;
+        box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue) !important;
+      }
+    }
+  }
+}
+
+.no-outline {
+  .right-section {
+    .speaker-icon {
+      &:focus {
+        margin: 0;
+        margin-bottom: -5px;
+      }
+    }
+  }
+}

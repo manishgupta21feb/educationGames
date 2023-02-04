@@ -1,0 +1,28 @@
+.nuclear-class {
+  overflow: hidden;
+}
+.reaction-count {
+  // opacity: 0.72;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  font-style: italic;
+  margin-bottom: 8px;
+  letter-spacing: 0.4px;
+  color: var(--question-heading-bluish);
+}
+.questionHeading {
+  font-size: 20px;
+  letter-spacing: 0.15px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  color: var(--question-text-blue);
+}
+.radiobuttons {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  .radiobutton {
+    width: 33%;
+    margin-right: 0px !important;
+  }
+}

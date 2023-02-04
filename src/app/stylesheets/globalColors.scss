@@ -1,0 +1,86 @@
+:root {
+  --blue: hsl(212, 84%, 33%);
+  --white: #ffffff;
+
+  // // Variation Primary
+
+  --darkblue: #0e1b61;
+  --lightblue: #e6f2fc;
+
+  // // Neutrals
+
+  --darkblack-bg: #19191d;
+  --dark-grey: #c9c9cf;
+  --grey-bg: #4a4b57;
+  --lightgrey: #d2d2d6;
+  --lightestgrey: #f7f7fa;
+  --lightgreyshade: #35374c;
+
+  // //Reverse Neutrals
+
+  --darkblack-text: #19191d;
+  --grey-text: #4a4b57;
+
+  // //Disabled Style
+
+  --disabled-text: #9696a0;
+  --disabled-border: #b4b4bb;
+
+  // //Secondary Colors
+
+  --darkergreen: #29612b;
+  --forestgreen: #37833b;
+  --lightgreen: #dceddd;
+  --lightestgreen: #ecf7ed;
+
+  --darkergold: #71500e;
+  --goldenrod: #b88217;
+  --lightgold: #ffe5b2;
+  --lightestgold: #ffefd1;
+
+  --darkerred: #9e2c24;
+  --persianred: #c8372d;
+  --lightred: #fddcda;
+  --lightestred: #fee8e7;
+
+  --secondary-positive-dark: #002e0e;
+  --secondary-positive-green: #1b8338;
+  --secondary-positive-light: #eef7f0;
+
+  --secondary-attention-dark: #352103;
+  --secondary-attention-orange: #ba5b08;
+  --secondary-attention-light: #fbf1e9;
+
+  --secondary-warning-dark: #530606;
+  --secondary-warning-red: #d93025;
+  --secondary-warning-light: #fff1f0;
+
+  --header-button-background: #f0f0f0;
+
+  --box-color: #35374e;
+  --canvas-label-blue: #00267d;
+
+  --primary-blue: #0056b3;
+  --question-heading-bluish: #35374c;
+  --question-text-blue: #052978;
+
+  --hover-state-color: #d9ebff;
+  --range-slider-unselected-value: #6b6b76;
+
+  --reading-display-container-background: #0056b3;
+
+  --periodic-table-color1: #4fccf3;
+  --periodic-table-color2: #93d4cc;
+  --periodic-table-color3: #bce6fc;
+  --periodic-table-color4: #dbdff5;
+  --periodic-table-color5: #95c940;
+  --periodic-table-color6: #fbd5e5;
+  --periodic-table-color7: #f8ae7c;
+  --periodic-table-color8: #fedc00;
+  --periodic-table-color9: #fef8a2;
+  --periodic-table-color10: #fcc764;
+  --periodic-tabel-metalloids-dark: #ff9dc6;
+
+  --label: #382000;
+  --glowing-hotspot: #ff3366;
+}

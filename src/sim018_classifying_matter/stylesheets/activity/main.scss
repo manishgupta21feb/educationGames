@@ -1,0 +1,5 @@
+.initial-info-popup {
+  > p:not(:nth-child(1)) {
+    margin-top: 8px;
+  }
+}

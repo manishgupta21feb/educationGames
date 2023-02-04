@@ -1,0 +1,281 @@
+.screen1-bottom {
+  img {
+    width: 373px;
+    height: 216px;
+    position: relative;
+    top: -96px;
+  }
+  .lbl0 {
+    left: -336px;
+    position: relative;
+    top: -196px;
+    font-size: 21px;
+    color: white;
+  }
+  .lbl1 {
+    left: -276px;
+    position: relative;
+    top: -196px;
+    font-size: 21px;
+    color: white;
+  }
+  .lbl2 {
+    left: -223px;
+    position: relative;
+    top: -196px;
+    font-size: 21px;
+    color: white;
+  }
+  .lbl3 {
+    left: -161px;
+    position: relative;
+    top: -196px;
+    font-size: 21px;
+    color: white;
+  }
+  .lbl4 {
+    left: -102px;
+    position: relative;
+    top: -196px;
+    font-size: 21px;
+    color: white;
+  }
+}
+
+.screen5-bottom {
+  p {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .mcq-wrapper {
+    margin-top: 24px;
+    .mcq-question-area {
+      .inner-wrapper {
+        .submit-button {
+          position: relative;
+          top: 116px;
+        }
+        div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+
+          .initialClass {
+            height: 29px;
+            width: 114px;
+            margin-right: 30px;
+
+            button {
+              height: 29px;
+              width: 65px;
+              position: relative;
+              top: -30px;
+              left: 45px;
+
+              span {
+                position: relative;
+                top: -3px;
+              }
+            }
+
+            .accessible-list {
+              position: relative;
+              top: -28px;
+              width: 65px;
+              height: 36px;
+              left: 45px;
+              display: block;
+              ul {
+                li {
+                  a {
+                    div {
+                      div {
+                        position: relative;
+                        top: -7px;
+                        left: 18px;
+                      }
+                      span {
+                        position: relative;
+                        top: 8px;
+                        left: -5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            span {
+              color: #35374c;
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.screen9-bottom {
+  p {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .mcq-wrapper {
+    margin-top: 24px;
+    .mcq-question-area {
+      .inner-wrapper {
+        .radiobuttons {
+          flex-direction: row;
+
+          .radiobutton {
+            margin-right: 46px;
+          }
+        }
+        .submit-button {
+          position: relative;
+          top: 92px;
+        }
+        div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+
+          .initialClass {
+            height: 29px;
+            width: 114px;
+            margin-right: 30px;
+
+            button {
+              height: 29px;
+              width: 65px;
+              position: relative;
+              top: -30px;
+              left: 45px;
+
+              span {
+                position: relative;
+                top: -3px;
+              }
+            }
+
+            .accessible-list {
+              position: relative;
+              top: -28px;
+              width: 65px;
+              height: 36px;
+              left: 45px;
+              display: block;
+              ul {
+                li {
+                  a {
+                    div {
+                      div {
+                        position: relative;
+                        top: -7px;
+                        left: 18px;
+                      }
+                      span {
+                        position: relative;
+                        top: 8px;
+                        left: -5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            span {
+              color: #35374c;
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.screen11-bottom {
+  p:nth-child(1) {
+    width: 752px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}
+
+.screen10-bottom {
+  .lipids_homescreen {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .btm_cd_rd {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  .mcq-wrapper {
+    .mcq-question-area {
+      .radiobuttons {
+        flex-direction: row;
+        .radiobutton {
+          margin-right: 60px;
+        }
+      }
+      .submit-button {
+        width: 100%;
+        bottom: -163px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.screen12-bottom,
+.screen3-bottom,
+.screen15-bottom,
+.screen14-bottom {
+  .heading {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}
+
+.screen7-bottom {
+  .lipids_srn1 {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+  .lipids_srn2 {
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+  }
+}

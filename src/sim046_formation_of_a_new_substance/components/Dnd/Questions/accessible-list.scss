@@ -1,0 +1,37 @@
+@import "../../../stylesheets/common/functions.scss";
+.activity-container--sim-46 {
+  .accessible-list {
+    @extend %bg-transparent, %border-none;
+    right: 27px;
+    & > .list {
+      @extend %no-margin;
+      & > .listitem {
+        @extend %block;
+        width: 255px;
+        height: 57px;
+        > a:focus{
+          @extend %bg-transparent;
+        }
+        &:first-child > a {
+          top: 23%;
+        }
+        &:nth-child(2) > a {
+          top: 28%;
+        }
+        &:nth-child(3) > a {
+          top: 34%;
+        }
+        &:nth-child(4) > a {
+          top: 39%;
+        }
+        &:last-child > a {
+          top: 44%;
+        }
+        & > a {
+          @extend %absolute, %full-width;
+          height: 35px;
+        }
+      }
+    }
+  }
+}

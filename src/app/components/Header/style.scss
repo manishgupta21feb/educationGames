@@ -1,0 +1,39 @@
+header {
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 55px;
+  overflow: hidden;
+  padding-top: 8px;
+  padding-left: 10px;
+  position: absolute;
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  &.hide {
+    // z-index: 0;
+    animation: hide-header-buttons 1500ms linear forwards;
+  }
+
+  &.hide-without-delay {
+    z-index: 0;
+  }
+
+  @keyframes hide-header-buttons {
+    to {
+      z-index: 0;
+    }
+  }
+
+  button[type="button"] {
+    margin-right: 8px;
+    pointer-events: auto;
+
+    &:last-child {
+      margin-right: 24px;
+    }
+  }
+}

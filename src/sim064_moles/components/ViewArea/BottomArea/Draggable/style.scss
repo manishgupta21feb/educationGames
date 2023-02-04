@@ -1,0 +1,119 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-variant: lining-nums;
+  margin-top: 24px;
+
+  .drag-box {
+    height: 36px;
+    width: 172px;
+    margin-top: 20px;
+    margin: 0 8px 0 0;
+    position: relative;
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: relative;
+      background: transparent;
+      border-radius: 1px;
+    }
+
+    .card {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      cursor: grab;
+      height: 36px;
+      width: 172px;
+      background-color: #ffffff;
+      border: 1px dashed #0056b3;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      outline: 1px solid transparent;
+      span {
+        pointer-events: none;
+        color: #0056b3;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+        padding-left: 8px;
+      }
+    }
+
+    .ui-draggable-disabled {
+      opacity: 0.6;
+      cursor: default;
+      box-sizing: border-box;
+      height: 36px;
+      width: 172px;
+      border: 2px solid #c9c9cf;
+      border-radius: 2px 2px 0 0;
+      background-color: #ffffff;
+
+      > span {
+        color: #6b6b76;
+
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.ui-draggable-dragging {
+  cursor: grabbing;
+  z-index: 999;
+}
+.no-outline {
+  .card.ui-draggable-disabled {
+    border: 2px solid #c9c9cf;
+    cursor: unset;
+    .card:focus {
+      border: 1px dashed #0056b3;
+      cursor: unset;
+    }
+  }
+}
+
+.accessible-list {
+  z-index: 2;
+  position: absolute;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+
+  position: absolute;
+  width: 100%;
+  height: 7%;
+
+  background: transparent;
+
+  top: 301px;
+  left: 0px;
+
+  .list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+
+    > li {
+      height: 36px;
+      width: 500px;
+      margin: 0 auto 0 0;
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.leftright {
+  .left {
+    .left-wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../../assets/images/main_bg.png);
+
+      .egg-option1 {
+        width: 292px;
+        height: 134px;
+        position: relative;
+        top: 301px;
+        left: 110px;
+      }
+
+      .egg-option2 {
+        position: relative;
+        top: 114px;
+        left: 134px;
+        width: 284px;
+        height: 307px;
+      }
+
+      .egg-option3 {
+        position: relative;
+        top: 114px;
+        left: 134px;
+        width: 284px;
+        height: 307px;
+      }
+
+      .egg-option4 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .egg-option5 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .egg-option6 {
+        position: relative;
+        top: 7px;
+        left: -2px;
+        width: 540px;
+        height: 600px;
+      }
+
+      .ice-option1 {
+        position: relative;
+        top: 297px;
+        left: 163px;
+        width: 218px;
+        height: 134px;
+      }
+
+      .ice-option2 {
+        width: 284px;
+        height: 307px;
+        position: relative;
+        top: 114px;
+        left: 134px;
+      }
+
+      .ice-option3 {
+        position: relative;
+        top: 114px;
+        left: 134px;
+        width: 284px;
+        height: 307px;
+      }
+
+      .ice-option4 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .ice-option5 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .ice-option6 {
+        position: relative;
+        top: 7px;
+        left: -2px;
+        width: 540px;
+        height: 600px;
+      }
+
+      .main-screen-option {
+        left: 0;
+        top: 310px;
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        > div {
+          width: 164px;
+          height: 121px;
+          margin-bottom: 12px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        &.egg {
+          left: 80px;
+          > div {
+            background-image: url(../../assets/images/egg_main.png);
+          }
+        }
+        &.ice {
+          left: 300px;
+          > div {
+            background-image: url(../../assets/images/ice_main.png);
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    .right-wrapper {
+      height: 100%;
+      padding-top: 80px;
+      position: relative;
+
+      p {
+        font-size: 14px;
+        color: #052978;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+
+        & + p {
+          margin-top: 8px;
+        }
+      }
+
+      .mcq-question-area {
+        .inner-wrapper {
+          margin-top: 16px;
+          .radiobuttons {
+            .radiobutton {
+              .radiobutton-inner-wrapper {
+                input[type="radio"] {
+                  & + div + label {
+                    margin-top: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .btn.toast-secondary-button.positive {
+        right: 0;
+      }
+    }
+  }
+}

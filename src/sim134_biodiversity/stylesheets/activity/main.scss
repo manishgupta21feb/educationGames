@@ -1,0 +1,44 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      background-color: blueviolet;
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.hidden-images {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.image0 {
+    background-image: url(../assets/images/location_a.png);
+  }
+  &.image1 {
+    background-image: url(../assets/images/location_b.png);
+  }
+  &.image2 {
+    background-image: url(../assets/images/location_c.png);
+  }
+  &.image3 {
+    background-image: url(../assets/images/location_d.png);
+  }
+  &.image4 {
+    background-image: url(../assets/images/location_e.png);
+  }
+  &.image5 {
+    background-image: url(../assets/images/location_f.png);
+  }
+  &.image6 {
+    background-image: url(../assets/images/location_g.png);
+  }
+}

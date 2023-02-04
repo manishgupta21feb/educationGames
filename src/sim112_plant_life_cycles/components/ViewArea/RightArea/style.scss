@@ -1,0 +1,136 @@
+.main-heading {
+  margin-top: 80px;
+  color: #052978;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+.wrapper {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.draggable-container-wrapper {
+  position: relative;
+  .draggable-items {
+    position: relative;
+
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 65px;
+    height: 65px;
+  }
+  .draggable-button {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    background: white;
+    outline: 1px solid transparent;
+    border: 1px dashed var(--primary-blue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:disabled) {
+      cursor: grab;
+    }
+
+    span {
+      display: block;
+      pointer-events: none;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &.soil {
+      span {
+        background-image: url(../../../assets/images/page2pot4.png);
+      }
+    }
+    &.planting_seed {
+      span {
+        background-image: url(../../../assets/images/page2pot2.png);
+      }
+    }
+    &.watering_seed {
+      span {
+        background-image: url(../../../assets/images/page2pot3.png);
+      }
+    }
+    &.sunlight_for_seed {
+      span {
+        background-image: url(../../../assets/images/page2pot1.png);
+      }
+    }
+    &.seedling {
+      span {
+        background-image: url(../../../assets/images/page3pot1.png);
+      }
+    }
+    &.adult_plant {
+      span {
+        background-image: url(../../../assets/images/page3pot2.png);
+      }
+    }
+    &.adult_plant_with_flowers {
+      span {
+        background-image: url(../../../assets/images/page3pot3.png);
+      }
+    }
+    &.adult_plant_with_fruit {
+      span {
+        background-image: url(../../../assets/images/page3pot4.png);
+      }
+    }
+    &.young_tomato_plant {
+      span {
+        background-image: url(../../../assets/images/page4plant1.png);
+      }
+    }
+    &.young_flower_plant {
+      span {
+        background-image: url(../../../assets/images/page4plant2.png);
+      }
+    }
+    &.ui-draggable {
+      cursor: grab;
+    }
+    &.ui-draggable-dragging {
+      z-index: 2;
+      cursor: grabbing;
+      border: 1px solid black;
+    }
+    &.ui-draggable-disabled {
+      opacity: 0.5;
+    }
+    &.selectedItem {
+      background-color: #d9ebff;
+    }
+  }
+  .accessible-button {
+    padding: 0;
+    width: 65px;
+    height: 65px;
+    border: none;
+    box-shadow: none;
+    justify-content: center;
+    background-color: transparent;
+
+    &:not(:disabled) {
+      border-radius: 4px;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+      }
+    }
+  }
+}

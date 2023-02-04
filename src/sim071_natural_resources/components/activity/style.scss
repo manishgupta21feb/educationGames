@@ -1,0 +1,15 @@
+.intro-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .intro-popup-image {
+    width: 479px;
+    height: 301px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/intro.png);
+  }
+}

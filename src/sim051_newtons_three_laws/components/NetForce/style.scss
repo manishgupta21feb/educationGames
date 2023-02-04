@@ -1,0 +1,196 @@
+.net-force {
+  height: 100%;
+  width: 100%;
+
+  .arrows {
+    .right-text {
+      position: absolute;
+      font-variant: lining-nums;
+      top: 190px;
+      &.arrow60 {
+        left: 248px;
+      }
+      &.arrow80 {
+        left: 253px;
+      }
+      &.arrow100 {
+        left: 258px;
+      }
+      &.arrow120 {
+        left: 263px;
+      }
+      &.arrow140 {
+        left: 268px;
+      }
+    }
+
+    .arrow {
+      &.right {
+        &.arrow100 {
+          width: 52px;
+          .tail {
+            width: 32px;
+          }
+        }
+        &.arrow120 {
+          width: 57px;
+          .tail {
+            width: 37px;
+          }
+        }
+        &.arrow140 {
+          width: 62px;
+          .tail {
+            width: 42px;
+          }
+        }
+
+        .head {
+          border-right-color: var(--secondary-positive-green);
+        }
+        .tail {
+          background-color: var(--secondary-positive-green);
+        }
+      }
+    }
+  }
+
+  .heading {
+    color: var(--question-text-blue);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+
+    .heading-1 {
+      font-size: 18px;
+    }
+  }
+
+  .play-button {
+    width: 100%;
+    bottom: 24px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .next-button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wooden-box {
+    z-index: 0;
+    width: 147px;
+    height: 130px;
+    left: 302px;
+    bottom: 100px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/box.png);
+
+    &.slide-right-20 {
+      -webkit-animation: slideRight 4s linear;
+      animation: slideRight 4s linear;
+    }
+
+    &.slide-right-40 {
+      -webkit-animation: slideRight 3s linear;
+      animation: slideRight 3s linear;
+    }
+
+    &.slide-right-60 {
+      -webkit-animation: slideRight 2s linear;
+      animation: slideRight 2s linear;
+    }
+
+    &.slide-right-80 {
+      -webkit-animation: slideRight 1s linear;
+      animation: slideRight 1s linear;
+    }
+
+    &.slide-left-20 {
+      -webkit-animation: slideLeft 4s linear;
+      animation: slideLeft 4s linear;
+    }
+
+    &.slide-left-40 {
+      -webkit-animation: slideLeft 3s linear;
+      animation: slideLeft 3s linear;
+    }
+
+    &.slide-left-60 {
+      -webkit-animation: slideLeft 2s linear;
+      animation: slideLeft 2s linear;
+    }
+
+    &.slide-left-80 {
+      -webkit-animation: slideLeft 1s linear;
+      animation: slideLeft 1s linear;
+    }
+
+    &.box-pushed-left {
+      left: 2px !important;
+    }
+
+    &.box-pushed-right {
+      left: 586px !important;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    from {
+      left: 302px;
+    }
+    to {
+      left: 2px;
+    }
+  }
+
+  @keyframes slideLeft {
+    from {
+      left: 302px;
+    }
+    to {
+      left: 2px;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    from {
+      left: 302px;
+    }
+    to {
+      left: 586px;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      left: 302px;
+    }
+    to {
+      left: 586px;
+    }
+  }
+
+  .bottom-box {
+    margin-top: 210px;
+    height: 136px;
+    width: 752px;
+    background-image: url(../../assets/images/table.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

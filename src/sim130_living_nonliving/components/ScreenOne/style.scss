@@ -1,0 +1,317 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/Living_and_Nonliving.png");
+  background-size: contain;
+  .white {
+    position: fixed;
+    top: 342px;
+    height: 43%;
+    width: 100%;
+
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 15.6%,
+      #ffffff 100%
+    );
+  }
+  .static-btn {
+    bottom: 19px;
+  }
+
+  .hotspot-btn.label.visited {
+    opacity: 2;
+  }
+  .hotspot-btn.label.active {
+    opacity: 2;
+  }
+  .hot-spot {
+    > span {
+      color: #ffffff;
+
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      line-height: 16px;
+      font-weight: unset;
+      padding-top: 2px !important;
+    }
+    &--bird {
+      position: absolute;
+      top: 36px;
+      left: 270px;
+    }
+    &--sun {
+      position: absolute;
+      top: 20px;
+      left: 148px;
+    }
+    &--cloud {
+      position: absolute;
+      top: 81px;
+      left: 587px;
+    }
+    &--deer {
+      position: absolute;
+      top: 137px;
+      left: 258px;
+    }
+    &--duck {
+      position: absolute;
+      top: 143px;
+      left: 588px;
+    }
+    &--water {
+      position: absolute;
+      top: 62px;
+      left: 501px;
+    }
+    &--frog {
+      position: absolute;
+      top: 222px;
+      left: 345px;
+    }
+    &--plant {
+      position: absolute;
+      top: 79px;
+      left: 711px;
+    }
+    &--sand {
+      position: absolute;
+      top: 216px;
+      left: 148px;
+    }
+    &--fish {
+      position: absolute;
+      top: 237px;
+      left: 523px;
+    }
+    &--rock {
+      position: absolute;
+      top: 158px;
+      left: 371px;
+    }
+  }
+
+  .bulletsun {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 22px;
+    left: 240px;
+  }
+  .dashsun {
+    height: 41px;
+    width: 0px;
+    top: 10px;
+    left: 219px;
+
+    transform: rotate(84deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletbird {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 51px;
+    left: 345px;
+  }
+  .dashbird {
+    height: 20px;
+    width: 0px;
+    top: 45px;
+    left: 334px;
+    transform: rotate(96deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletwater {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 184px;
+    left: 507px;
+  }
+  .dashwater {
+    height: 100px;
+    width: 0px;
+    top: 87px;
+    left: 529px;
+    transform: rotate(200deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletcloud {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 41px;
+    left: 590px;
+  }
+  .dashcloud {
+    height: 36px;
+    width: 0px;
+    top: 50px;
+    left: 599px;
+    transform: rotate(166deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletplant {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 170px;
+    left: 738px;
+  }
+  .dashplant {
+    height: 65px;
+    width: 0px;
+    top: 108px;
+    left: 737px;
+    transform: rotate(172deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletdeer {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 121px;
+    left: 196px;
+  }
+  .dashdeer {
+    height: 65px;
+    width: 0px;
+    top: 108px;
+    left: 227px;
+    transform: rotate(115deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletrock {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 154px;
+    left: 476px;
+  }
+  .dashrock {
+    height: 43px;
+    width: 0px;
+    top: 144px;
+    left: 455px;
+    transform: rotate(73deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletduck {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 197px;
+    left: 644px;
+  }
+  .dashduck {
+    height: 33px;
+    width: 0px;
+    top: 166px;
+    left: 641px;
+    transform: rotate(-15deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletsand {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 186px;
+    left: 99px;
+  }
+  .dashsand {
+    height: 54px;
+    width: 0px;
+    top: 184px;
+    left: 125px;
+    transform: rotate(132deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletfrog {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 208px;
+    left: 437px;
+  }
+  .dashfrog {
+    height: 49px;
+    width: 0px;
+    top: 199px;
+    left: 414px;
+    transform: rotate(67deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  .bulletfish {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #352103;
+    transform-style: preserve-3d;
+    top: 290px;
+    left: 487px;
+  }
+  .dashfish {
+    height: 44px;
+    width: 0px;
+    top: 255px;
+    left: 511px;
+    transform: rotate(49deg);
+    border-left: 2px dotted #352103;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+}

@@ -1,0 +1,593 @@
+.full-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .full-view-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .full-view-inner {
+      position: relative;
+      margin: 80px 24px 0 24px;
+      height: calc(100% - 80px);
+
+      .instructions {
+        z-index: 2;
+        color: var(--primary-blue);
+        p {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        h2 {
+          color: #052978;
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+        }
+        h2 {
+          &:nth-child(2) {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .main-screen {
+        width: 634px;
+
+        margin: 0 auto;
+        display: flex;
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        .circuit-box {
+          width: 305px;
+          height: 247px;
+          border-radius: 9px;
+          border: 1px solid #35374c;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .images {
+            width: 227px;
+            height: 140px;
+            position: relative;
+            background-size: contain;
+            background-repeat: no-repeat;
+            > div {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+            }
+            &.series-circuit {
+              background-image: url("../../assets/images/series_circuit.png");
+              > div {
+                top: -53px;
+                left: -37px;
+              }
+            }
+
+            &.parallel-circuit {
+              background-image: url("../../assets/images/parallel_circuit.png");
+              > div {
+                top: -54px;
+                left: -368px;
+              }
+            }
+          }
+        }
+
+        .button-option {
+          display: flex;
+          justify-content: center;
+          margin-top: 16px;
+        }
+
+        .labels {
+          font-variant: lining-nums;
+          position: absolute;
+
+          &.label1 {
+            top: 34px;
+            left: 55px;
+          }
+
+          &.label2 {
+            top: 34px;
+            left: 149px;
+          }
+
+          &.label3 {
+            top: 34px;
+            left: 255px;
+          }
+
+          &.label4 {
+            top: 109px;
+            left: 262px;
+          }
+
+          &.label5 {
+            top: 186px;
+            left: 254px;
+          }
+
+          &.label6 {
+            top: 186px;
+            left: 150px;
+          }
+
+          &.label7 {
+            top: 186px;
+            left: 58px;
+          }
+
+          &.label01 {
+            top: 34px;
+            left: 384px;
+          }
+
+          &.label02 {
+            top: 34px;
+            left: 482px;
+          }
+
+          &.label03 {
+            top: 34px;
+            left: 532px;
+          }
+
+          &.label04 {
+            top: 34px;
+            left: 581px;
+          }
+
+          &.label05 {
+            top: 186px;
+            left: 584px;
+          }
+
+          &.label06 {
+            top: 186px;
+            left: 531px;
+          }
+
+          &.label07 {
+            top: 186px;
+            left: 482px;
+          }
+
+          &.label08 {
+            top: 186px;
+            left: 381px;
+          }
+
+          &.label09 {
+            top: 111px;
+            left: 493px;
+          }
+
+          &.label010 {
+            top: 111px;
+            left: 545px;
+          }
+
+          &.label011 {
+            top: 111px;
+            left: 595px;
+          }
+        }
+      }
+    }
+    .leftright {
+      .left {
+        height: 100%;
+        background-color: #f4f4f4;
+        .circuit-board {
+          width: 495px;
+
+          height: 295px;
+
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("../../assets/images/pcb_board.png");
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          top: 50%;
+          left: 54%;
+          transform: translate(-50%, -50%);
+
+          .pins {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/clip.png");
+
+            &.pin1 {
+              left: 38px;
+              top: 38px;
+            }
+
+            &.pin2 {
+              left: 211px;
+              top: 38px;
+            }
+
+            &.pin3 {
+              left: 384px;
+              top: 38px;
+            }
+
+            &.pin4 {
+              left: 384px;
+              top: 223px;
+            }
+
+            &.pin5 {
+              left: 211px;
+              top: 223px;
+            }
+
+            &.pin6 {
+              left: 38px;
+              top: 223px;
+            }
+          }
+        }
+        .circuit-board-mcq {
+          width: 489px;
+          height: 295px;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          top: 80px;
+          left: 50px;
+          background-image: url("../../assets/images/pcb_board.png");
+
+          .pins {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../assets/images/clip.png");
+
+            &.pin1 {
+              left: 38px;
+              top: 38px;
+            }
+
+            &.pin2 {
+              left: 211px;
+              top: 38px;
+            }
+
+            &.pin3 {
+              left: 384px;
+              top: 38px;
+            }
+
+            &.pin4 {
+              left: 384px;
+              top: 223px;
+            }
+
+            &.pin5 {
+              left: 211px;
+              top: 223px;
+            }
+
+            &.pin6 {
+              left: 38px;
+              top: 223px;
+            }
+          }
+        }
+        .table {
+          width: 540px;
+          height: 123px;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("../../assets/images/table.png");
+          bottom: 0px;
+        }
+        .battery {
+          width: 147px;
+          height: 37px;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("../../assets/images/battery.png");
+          top: 491px;
+          left: 72px;
+        }
+        .wire {
+          height: 85px;
+          width: 85px;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("../../assets/images/wire.png");
+          top: 478px;
+          left: 242px;
+        }
+      }
+      .right {
+        h2 {
+          color: #052978;
+
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0.25px;
+          line-height: 20px;
+          margin-top: 80px;
+          p:nth-child(2) {
+            margin-top: 8px;
+          }
+        }
+        .right-mcq {
+          .battery {
+            position: absolute;
+            top: 134px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            height: 65px;
+            width: 65px;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            .img--battery {
+              background-image: url("../../assets/images/battery.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 21px;
+              left: -1px;
+              transform: rotate(-35deg);
+              width: 65px;
+              height: 20px;
+            }
+          }
+          .copperwire {
+            box-sizing: border-box;
+            height: 65px;
+            width: 65px;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 219px;
+            margin-top: 12px;
+            .img--copperwire {
+              background-image: url("../../assets/images/wire.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+
+              position: absolute;
+              top: 14px;
+              left: 5px;
+              width: 51px;
+              height: 40px;
+            }
+          }
+          .magnet {
+            box-sizing: border-box;
+            height: 65px;
+            width: 65px;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 296px;
+            margin-top: 12px;
+            .img--magnet {
+              background-image: url("../../assets/images/magnet.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 11px;
+              left: 11px;
+              width: 44px;
+              height: 44px;
+            }
+          }
+          .wire {
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 174px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            .img--wire {
+              background-image: url("../../assets/images/wire.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 12px;
+              left: 4px;
+              width: 54px;
+              height: 42px;
+            }
+          }
+          .plastic {
+            box-sizing: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            height: 65px;
+            width: 65px;
+            position: absolute;
+            top: 259px;
+            margin-top: 12px;
+            .img--plastic {
+              background-image: url("../../assets/images/plasticwire.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 18px;
+              left: 6px;
+              width: 51px;
+              height: 27px;
+            }
+          }
+          .wood {
+            box-sizing: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            height: 65px;
+            width: 65px;
+            position: absolute;
+
+            top: 336px;
+            margin-top: 12px;
+            .img--wood {
+              background-image: url("../../assets/images/wood.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 12px;
+              left: 10px;
+              width: 48px;
+              height: 46px;
+            }
+          }
+          .bulb {
+            box-sizing: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            height: 65px;
+            width: 65px;
+            position: absolute;
+
+            top: 116px;
+            margin-top: 20px;
+            .img--bulb {
+              background-image: url("../../assets/images/bulbnowire.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 4px;
+              left: 4px;
+              width: 55px;
+              height: 55px;
+            }
+          }
+          .bell {
+            box-sizing: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            height: 65px;
+            width: 65px;
+            position: absolute;
+
+            top: 201px;
+            margin-top: 12px;
+            .img--bell {
+              background-image: url("../../assets/images/bell.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 4px;
+              left: 3px;
+              width: 55px;
+              height: 55px;
+            }
+          }
+          .fan {
+            box-sizing: border-box;
+            border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #ffffff;
+            height: 65px;
+            width: 65px;
+            position: absolute;
+
+            top: 278px;
+            margin-top: 12px;
+            .img--fan {
+              background-image: url("../../assets/images/fan.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 5px;
+              left: 3px;
+              width: 55px;
+              height: 55px;
+            }
+          }
+          .mcq-question-area {
+            .inner-wrapper {
+              .radiobuttons {
+                width: 65%;
+                left: 67px;
+                margin-left: 9px;
+                height: 222px;
+                li:nth-child(1) {
+                  top: 15px;
+                }
+                li:nth-child(2) {
+                  top: 43px;
+                }
+                li:nth-child(3) {
+                  top: 72px;
+                }
+              }
+              .submit-button {
+                padding-left: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkButton {
+    position: absolute;
+    height: 65px;
+    width: 408px;
+    bottom: 24px;
+    left: 365px;
+    display: flex;
+    justify-content: space-between;
+
+    .clearButton {
+      width: 74px;
+      height: 40px;
+      bottom: 28px;
+
+      .btn {
+        &.primary {
+          background: var(--primary-blue);
+        }
+      }
+    }
+
+    .check {
+      width: 74px;
+      height: 40px;
+      bottom: 28px;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+@import "../../stylesheets/common/functions.scss";
+
+.screen-mcq-2 {
+  .mcq-question-area {
+    .inner-wrapper {
+      .radiobuttons {
+        .radiobutton
+          .radiobutton-inner-wrapper
+          input[type="radio"]
+          + div
+          + label {
+          margin-top: 0px;
+        }
+      }
+
+      // .submit-button {
+      //   top: 193px;
+      // }
+    }
+  }
+}
+
+.radiobuttons {
+  flex-direction: row !important;
+  .radiobutton + .radiobutton {
+    margin-left: 78px;
+  }
+}
+
+.mcq-question-area .inner-wrapper {
+  .submit-button {
+    // width: 75%;
+    // bottom: -40px !important;
+    // @extend %index-1;
+    // .btn.primary {
+    //   margin-left: 27px;
+    //   margin-bottom: 6px;
+    // }
+  }
+}
+.question-img {
+  @extend %flex, %full-width;
+  background-color: #f4f4f4;
+  height: 320px;
+  width: 800px;
+  justify-content: center;
+
+  .ques1_img_1 {
+    @extend %bg-contain;
+    width: 400px;
+    height: 177px;
+    position: absolute;
+    left: 5px;
+    top: 84px;
+  }
+
+  .ques1_img_2 {
+    @extend %bg-contain;
+    top: 80px;
+    position: absolute;
+    right: 42px;
+    position: absolute;
+    width: 297px;
+    height: 176px;
+  }
+
+  &--multiple {
+    @extend %flex;
+    justify-content: space-around;
+    padding-top: 5px;
+  }
+  &__img {
+    @extend %relative;
+
+    &--couple {
+      @extend %bg-contain;
+      height: 262px;
+      width: 350px;
+      // border-radius: 9px;
+      margin-top: 49px;
+      &:last-child {
+        margin-left: 36px;
+      }
+    }
+    &--single {
+      height: 192px;
+      background-size: cover;
+      width: 240px;
+    }
+  }
+
+  &__text {
+    @extend %absolute;
+    font-size: 10px;
+    color: #000;
+    background-color: white;
+    padding: 2px 5px 0;
+    box-shadow: 0px 0px 4px #a1a1a1;
+    &--spain {
+      top: 61%;
+      left: 45px;
+    }
+    &--zealand {
+      top: 68%;
+      right: 21px;
+    }
+    &--spain-1 {
+      top: 61%;
+      left: 45px;
+    }
+    &--zealand-1 {
+      top: 68%;
+      right: 21px;
+    }
+  }
+  &__option {
+    @extend %full-width, %center-text, %absolute;
+    bottom: -30px;
+    font-size: 14px;
+  }
+  & + .positive {
+    @extend %index-1;
+  }
+
+  #ques2_img_1 {
+    span:first-child {
+      top: 49%;
+      left: 79px;
+    }
+    span:nth-child(2) {
+      top: 51.2%;
+      right: 105px;
+    }
+  }
+  #ques2_img_2 {
+    span:first-child {
+      top: 38.7%;
+      left: 134px;
+    }
+    span:nth-child(2) {
+      top: 61%;
+      right: 156px;
+    }
+  }
+}
+
+.question-img--multiple > .question-img__img {
+  span:first-child {
+    top: 55.7%;
+    left: 73px;
+  }
+  span:nth-child(2) {
+    top: 43%;
+    right: 51px;
+  }
+}

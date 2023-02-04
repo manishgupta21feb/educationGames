@@ -1,0 +1,181 @@
+.graph-container {
+  width: 100%;
+  height: 424.96px;
+  // display: grid;
+  padding: 15px;
+  // grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .graph-item {
+    font-size: 30px;
+    position: relative;
+
+    width: calc(50% - 2px);
+    height: calc(50% - 2px);
+    span {
+      color: #35374c;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.11px;
+      line-height: 18px;
+      float: left;
+    }
+    canvas {
+      position: absolute;
+      top: 40px;
+      right: 33px;
+      font-weight: 700;
+      // -moz-user-select: none;
+      // -webkit-user-select: none;
+      // -ms-user-select: none;
+    }
+
+    .graph-heading {
+      position: relative;
+      color: #35374c;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.11px;
+      line-height: 18px;
+
+      margin: {
+        top: 8px;
+        bottom: 0;
+        left: 19px;
+      }
+    }
+    .y-label {
+      position: absolute;
+      top: 89px;
+      transform: rotate(-90deg);
+      left: -41px;
+      color: #35374c;
+      font-size: 10px;
+      letter-spacing: 0.18px;
+      line-height: 20px;
+      opacity: 0.9;
+    }
+    .label1 {
+      position: absolute;
+      top: 166px;
+      left: 82px;
+      width: 43px;
+    }
+    .label2 {
+      position: absolute;
+      top: 166px;
+      left: 172px;
+      width: 43px;
+    }
+    .label3 {
+      position: absolute;
+      top: 166px;
+      left: 260px;
+      width: 43px;
+    }
+  }
+  .graph-item:nth-child(1) {
+    border-right: 1px solid #c9c9cf;
+    border-bottom: 1px solid #c9c9cf;
+    .y-label {
+      left: -40px;
+      font-weight: 500;
+    }
+  }
+  .graph-item:nth-child(2) {
+    // border-left: 1px solid #c9c9cf;
+    border-bottom: 1px solid #c9c9cf;
+    .y-label {
+      left: -27px;
+      font-weight: 500;
+    }
+    canvas {
+      right: 20px;
+    }
+  }
+  .graph-item:nth-child(3) {
+    border-right: 1px solid #c9c9cf;
+    .y-label {
+      left: -49px;
+      font-weight: 500;
+    }
+  }
+  .graph-item:nth-child(4) {
+    .y-label {
+      left: 3px;
+      font-weight: 500;
+    }
+    canvas {
+      right: 26px;
+    }
+  }
+}
+
+.legends-area {
+  padding: 0px 3px;
+  .legend1 {
+    position: absolute;
+    color: #35374c;
+    font-size: 10px;
+    letter-spacing: 0.33px;
+    line-height: 16px;
+    bottom: 3px;
+    left: 285px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      background-image: url("../../assets/images/point_1.jpg");
+      background-size: cover;
+      height: 10px;
+      width: 10px;
+      margin-left: -13px;
+      top: 1px;
+    }
+  }
+  .legend2 {
+    position: absolute;
+    color: #35374c;
+    font-size: 10px;
+    letter-spacing: 0.33px;
+    line-height: 16px;
+    bottom: 3px;
+    left: 357px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      background-image: url("../../assets/images/point_2.jpg");
+      background-size: cover;
+      height: 10px;
+      width: 10px;
+      margin-left: -13px;
+      top: 1px;
+    }
+  }
+  .legend3 {
+    position: absolute;
+    color: #35374c;
+    font-size: 10px;
+    letter-spacing: 0.33px;
+    line-height: 16px;
+
+    bottom: 3px;
+    left: 427px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      background-image: url("../../assets/images/point_3.jpg");
+      background-size: cover;
+      height: 10px;
+      width: 10px;
+      margin-left: -13px;
+      top: 1px;
+    }
+  }
+}

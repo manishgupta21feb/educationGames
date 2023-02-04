@@ -1,0 +1,356 @@
+.left-area {
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .position {
+    position: absolute;
+  }
+
+  .boylesLaw {
+    .pause-state {
+      animation-play-state: paused !important;
+    }
+    .point-animation0 {
+      background-image: url("../../../../assets/images/molecule1.png");
+
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .point-animation1 {
+      background-image: url("../../../../assets/images/molecule2.png");
+
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .point-animation2 {
+      background-image: url("../../../../assets/images/molecule3.png");
+
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .point-animation3 {
+      background-image: url("../../../../assets/images/molecule4.png");
+
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .point-animation4 {
+      background-image: url("../../../../assets/images/molecule5.png");
+
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .transition-animation0 {
+      background-image: url("../../../../assets/images/piston1.png");
+      width: 100%;
+      height: 100%;
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .transition-animation1 {
+      background-image: url("../../../../assets/images/piston2.png");
+      width: 100%;
+      height: 100%;
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .transition-animation2 {
+      background-image: url("../../../../assets/images/piston3.png");
+      width: 100%;
+      height: 100%;
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .transition-animation3 {
+      background-image: url("../../../../assets/images/piston4.png");
+      width: 100%;
+      height: 100%;
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .transition-animation4 {
+      background-image: url("../../../../assets/images/piston4.png");
+      width: 100%;
+      height: 100%;
+      width: 800px;
+      height: 1200px;
+      overflow: hidden;
+      position: absolute;
+
+      transform: scale(0.3) translate(-485px, -1040px) !important;
+    }
+    .anim {
+      animation: play2 1s steps(38) infinite;
+    }
+    .transition {
+      animation: play2 1s steps(38);
+    }
+    .transition-reverse {
+      animation: play2 1s steps(38) reverse;
+    }
+    .hide {
+      opacity: 0;
+    }
+    .show {
+      opacity: 1;
+    }
+  }
+  .charlesLaw {
+    .pause-state {
+      animation-play-state: paused !important;
+    }
+    .point-animation4 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesMolecule1.png");
+    }
+
+    .point-animation3 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesMolecule2.png");
+    }
+
+    .point-animation2 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesMolecule3.png");
+    }
+    .point-animation1 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesMolecule4.png");
+    }
+    .point-animation0 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesMolecule5.png");
+    }
+    .transition-animation0 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesPiston1.png");
+    }
+    .transition-animation1 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesPiston2.png");
+    }
+    .transition-animation2 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesPiston3.png");
+    }
+    .transition-animation3 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesPiston4.png");
+    }
+    .transition-animation4 {
+      width: 919px;
+      height: 1360px;
+      overflow: hidden;
+
+      overflow: hidden;
+
+      position: absolute;
+      transform: scale(0.3) translate(-700px, -1400px);
+      background-image: url("../../../../assets/images/charlesPiston5.png");
+    }
+    .anim {
+      animation: charlesInitial0 1s steps(38) infinite;
+    }
+    .transition {
+      animation: charlesInitial0 1s steps(38);
+    }
+    .transition-reverse {
+      animation: charlesInitial0 1s steps(38) reverse;
+    }
+    .hide {
+      opacity: 0;
+    }
+    .show {
+      opacity: 1;
+    }
+  }
+
+  @keyframes play2 {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: -30400px;
+    }
+  }
+
+  @keyframes charlesInitial0 {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: -34922px;
+    }
+  }
+
+  .bottom-table {
+    background-image: url("../../../../assets/images/34.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .tempText {
+    position: absolute;
+    top: 238px;
+    left: 128px;
+    font-variant: lining-nums;
+  }
+}
+
+.right-area {
+  font-variant: lining-nums;
+  h2 {
+    color: #052978;
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 74px;
+  }
+  .pressure {
+    color: #35374c;
+
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 25px;
+  }
+  .vol-temp {
+    color: #35374c;
+
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  .slider-container {
+    margin-top: 0px;
+    justify-content: flex-start;
+
+    .item0 {
+      .value {
+        .list-label {
+          left: -10px !important;
+        }
+      }
+    }
+    .item2 {
+      .value {
+        .list-label {
+          left: -20px !important;
+        }
+      }
+    }
+    .item4 {
+      .value {
+        .list-label {
+          left: -13px !important;
+        }
+      }
+    }
+  }
+}

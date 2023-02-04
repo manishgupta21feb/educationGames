@@ -1,0 +1,39 @@
+.launchContainer {
+  margin-top: 84px;
+  display: grid;
+  .pageImage {
+    box-sizing: border-box;
+    height: 247px;
+    width: 632px;
+    border: 1px solid #35374c;
+    border-radius: 4px;
+    justify-self: center;
+  }
+  .heading {
+    height: 20px;
+    color: #052978;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-bottom: 101px;
+  }
+  .content-container {
+    position: absolute;
+    top: 275px;
+    left: 598px;
+    p {
+      height: 20px;
+      color: #352103;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .content-dis {
+      margin-top: 35px;
+    }
+  }
+  .button-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 16px;
+  }
+}

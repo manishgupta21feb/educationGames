@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8BB2F953-8A40-4D4F-8767-B919C2654E23</title>
+    <g id="style-guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-sheet" transform="translate(-426.000000, -229.000000)">
+            <g id="icon" transform="translate(426.000000, 230.000000)">
+                <polygon id="Container" points="0 0 24 0 24 24 0 24"></polygon>
+                <path d="M19.611,7.292 C20.794469,7.41505114 21.9904693,7.27118939 23.111,6.871" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6.868,23.131 C7.55267914,21.23623 7.49263524,19.1522063 6.7,17.3 C5.44542715,14.2678203 6.14172651,10.7784289 8.464,8.46 C10.2206304,6.71206992 12.6735049,5.85229567 15.137,6.121" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9.137,17.9 C11.5124804,18.07797 13.8480607,17.2149001 15.537,15.535 C17.8591968,13.215257 18.5550524,9.72492752 17.3,6.692 C16.5081861,4.84257389 16.4470787,2.76170427 17.129,0.869" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0.884,17.121 C2.07703749,16.6924997 3.35521317,16.5553564 4.612,16.721" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="12.606" y1="6.238" x2="17.758" y2="11.39" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="16.821" y1="1.968" x2="22.028" y2="7.174" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="1.972" y1="16.817" x2="7.179" y2="22.024" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="9.625" y1="7.5" x2="16.497" y2="14.371" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="6.242" y1="12.601" x2="11.394" y2="17.754" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="7.503" y1="9.621" x2="14.375" y2="16.492" id="Path" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

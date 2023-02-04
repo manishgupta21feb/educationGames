@@ -1,0 +1,30 @@
+.color-strip-header {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+  margin-right: 24px;
+  > span {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    text-align: center;
+    z-index: 1;
+    padding: 0 56px 0 56px;
+    // padding-inline: 56px;
+  }
+
+  > div {
+    position: absolute;
+    top: 8px;
+    width: 752px;
+    height: 8px;
+    border: solid 1px var(--dark-grey);
+    border-bottom: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+}

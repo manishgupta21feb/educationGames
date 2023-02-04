@@ -1,0 +1,11 @@
+.video-container {
+  .video-wrapper {
+    video {
+      &.image1 {
+        background: transparent
+          url(../../../../assets/images/main_animation_firts_frame.png) center /
+          contain no-repeat;
+      }
+    }
+  }
+}

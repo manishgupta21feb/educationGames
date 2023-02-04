@@ -1,0 +1,56 @@
+.phenotype-genotype-table {
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+  table {
+    width: 100%;
+    border: none;
+    position: relative;
+    border-width: 0;
+    border-spacing: 0;
+    border-color: transparent;
+
+    thead {
+      color: var(--white);
+      background: var(--secondary-attention-orange);
+      tr {
+        th {
+          font-size: 16px;
+          text-align: left;
+          font-weight: bold;
+          line-height: 24px;
+          padding: 8px 0 8px 16px;
+
+          &:last-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: left;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          padding: 6px 0 4px 16px;
+          color: var(--secondary-attention-dark);
+          border-bottom: 1px solid var(--secondary-attention-dark);
+
+          &:last-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    tr {
+      border: none;
+      th,
+      td {
+        border: none;
+      }
+    }
+  }
+}

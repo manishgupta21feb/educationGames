@@ -1,0 +1,123 @@
+@mixin animPosition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin staticImagePosition {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  position: absolute;
+}
+
+.left-area {
+  background: #c2d0d2;
+  height: 100%;
+}
+
+.left-static {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .bg-image {
+    top: 0;
+    left: 0;
+    width: 540px;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    > span {
+      left: 50%;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      position: absolute;
+      background: white;
+      padding: 3px 6px 1px 6px;
+      transform: translateX(-50%);
+    }
+
+    &.compound {
+      background-image: url(../../assets/images/mcq_3x0001.png);
+      > span {
+        bottom: 135px;
+      }
+    }
+
+    &.homogeneous-mixture {
+      background-image: url(../../assets/images/mcq_3x0002.png);
+      > span {
+        bottom: 120px;
+      }
+    }
+
+    &.element {
+      background-image: url(../../assets/images/mcq_3x0003.png);
+      > span {
+        bottom: 140px;
+      }
+    }
+
+    &.heterogeneous-mixture {
+      background-image: url(../../assets/images/mcq_3x0004.png);
+      > span {
+        bottom: 125px;
+      }
+    }
+  }
+}
+
+.left-interactive {
+  height: 600px;
+  width: 800px;
+  position: relative;
+  background-image: url(../../assets/images/main_3x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  .gold-spoon {
+    position: absolute;
+    top: 431px;
+    left: 55px;
+    // color: --darkblack-bg;
+    color: var(--darkblack-bg);
+    // &:visited {
+    //   border: 1px solid black;
+    // }
+  }
+
+  .glass-of-water {
+    position: absolute;
+    top: 431px;
+    left: 172px;
+    color: var(--darkblack-bg);
+  }
+
+  .orange-juice {
+    position: absolute;
+    top: 431px;
+    left: 305px;
+    color: var(--darkblack-bg);
+  }
+
+  .cereals {
+    position: relative;
+    top: 431px;
+    left: 442px;
+    color: var(--darkblack-bg);
+  }
+}
+
+.item-selected {
+  width: calc(100% + 10px);
+  // width: 100px;
+  // height: 100px;
+  height: calc(100% + 10px);
+  border: 2px solid #000;
+  border-radius: 4px;
+}

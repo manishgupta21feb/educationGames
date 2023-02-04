@@ -1,0 +1,38 @@
+.tugOfWarContainer {
+  width: 100%;
+  height: 602px;
+  .imagesContainer {
+    z-index: -1;
+    position: absolute;
+    img {
+      background-size: cover;
+      width: 100%;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .headerContainer {
+    position: absolute;
+    top: 54px;
+    left: 24px;
+    z-index: 4;
+    width: 711px;
+    h2 {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    p {
+      color: #052978;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 8px;
+      font-variant: lining-nums;
+    }
+  }
+
+  .continue {
+    z-index: 2;
+  }
+}

@@ -1,0 +1,13 @@
+.leftright {
+  .right {
+    // overflow-y: auto;
+  }
+}
+
+.dialog-container {
+  > div {
+    p {
+      font-variant: lining-nums;
+    }
+  }
+}

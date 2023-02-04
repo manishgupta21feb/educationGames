@@ -1,0 +1,96 @@
+.draggable-button {
+  .button-label-wrapper {
+    .buttons-wrapper {
+      background-color: blueviolet;
+      width: 48px;
+      height: 48px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.dialogbox-container
+  .dialog-container.attention[aria-labelledby="dialog-description-introductiondialog"] {
+  animation-duration: 1.2s;
+}
+
+.hidden-images {
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+
+  > div {
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image1 {
+    background-image: url(../assets/images/bear.png);
+  }
+  .image2 {
+    background-image: url(../assets/images/bear_and_cub.png);
+  }
+  .image3 {
+    background-image: url(../assets/images/bear_claw.png);
+  }
+  .image4 {
+    background-image: url(../assets/images/bear_teeth.png);
+  }
+  .image5 {
+    background-image: url(../assets/images/black_bear_fur.png);
+  }
+  .image6 {
+    background-image: url(../assets/images/four_black_bear_legs_with_short_claws_visible.png);
+  }
+  .image7 {
+    background-image: url(../assets/images/penguin.png);
+  }
+  .image8 {
+    background-image: url(../assets/images/penguin_beak.png);
+  }
+  .image9 {
+    background-image: url(../assets/images/penguin_feathers.png);
+  }
+  .image10 {
+    background-image: url(../assets/images/penguin_flipper.png);
+  }
+  .image11 {
+    background-image: url(../assets/images/penguin_legs.png);
+  }
+  .image12 {
+    background-image: url(../assets/images/penguin_with_young.png);
+  }
+}
+
+.introduction-popup-images {
+  margin-top: 24px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  > div {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .image1 {
+    width: 232px;
+    height: 117px;
+    margin-right: 24px;
+    background-image: url(../assets/images/introduction_popup1.png);
+  }
+  .image2 {
+    width: 126px;
+    height: 117px;
+    background-image: url(../assets/images/introduction_popup2.png);
+  }
+}

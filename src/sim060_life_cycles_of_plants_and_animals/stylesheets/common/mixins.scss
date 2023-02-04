@@ -1,0 +1,56 @@
+@mixin circle($size, $color: false, $border: false) {
+	width: $size;
+	height: $size;
+	border-radius: $size/2;
+
+	@if $color {
+		background-color: $color;
+	}
+
+	@if $border {
+		border: $border;
+	}
+}
+
+@mixin square($size, $color: false, $border: false) {
+	width: $size;
+	height: $size;
+
+	@if $color {
+		background-color: $color;
+	}
+	@if $border {
+		border: $border;
+	}
+}
+
+@mixin rectangle($width, $height, $color: false) {
+	width: $width;
+	height: $height;
+
+	@if $color {
+		background-color: $color;
+	}
+}
+
+@mixin triangle($border, $color, $direction: 'top') {
+	@extend %none-object;
+
+	@if $direction== 'left' {
+		border-top: $border solid transparent;
+		border-bottom: $border solid transparent;
+		border-right: ($border * 2) solid $color;
+	} @else if $direction== 'right' {
+		border-top: $border solid transparent;
+		border-bottom: $border solid transparent;
+		border-left: ($border * 2) solid $color;
+	} @else if $direction== 'top' {
+		border-left: $border solid transparent;
+		border-right: $border solid transparent;
+		border-bottom: ($border * 2) solid $color;
+	} @else if $direction== 'bottom' {
+		border-left: $border solid transparent;
+		border-right: $border solid transparent;
+		border-top: ($border * 2) solid $color;
+	}
+}

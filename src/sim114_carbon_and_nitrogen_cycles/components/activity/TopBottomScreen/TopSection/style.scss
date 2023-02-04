@@ -1,0 +1,1207 @@
+//Top Section Wrapper
+.top-section-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+// Carbon Info Top Wrapper
+.carbon-info-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/carbon-cycle-info.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      color: #083868;
+      font-weight: 700;
+      font-size: 14px;
+      position: absolute;
+      text-align: center;
+      line-height: 1.3;
+      &.text-1 {
+        left: 123px;
+        top: 167px;
+      }
+      &.text-2 {
+        left: 266px;
+        top: 189px;
+      }
+      &.text-3 {
+        left: 339px;
+        top: 87px;
+      }
+      &.text-4 {
+        left: 343px;
+        top: 270px;
+      }
+      &.text-5 {
+        left: 364px;
+        top: 302px;
+      }
+      &.text-6 {
+        left: 458px;
+        top: 158px;
+      }
+      &.text-7 {
+        left: 533px;
+        top: 87px;
+      }
+    }
+  }
+}
+
+// Photosynthesis Top Wrapper
+.photosynthesis-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/photosynthesis.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      color: #000;
+      font-weight: 700;
+      font-size: 14px;
+      position: absolute;
+      text-align: center;
+      line-height: 1.3;
+      &.normal {
+        font-weight: 500;
+      }
+      &.sunlight {
+        font-size: 10px;
+      }
+      &.plus {
+        font-size: 18px;
+      }
+      &.green-text {
+        font-size: 11px;
+      }
+      &.arrow {
+        display: inline-block;
+        height: 3px;
+        background: #000;
+        width: 50px;
+        position: absolute;
+        &:before {
+          content: "";
+          border-top: 10px solid #000;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 10px solid transparent;
+          transform: rotateZ(270deg) translateY(175%) translateX(80%);
+          position: relative;
+          display: inline-block;
+        }
+      }
+      &.text-1 {
+        left: 65px;
+        top: 95px;
+      }
+      &.text-2 {
+        left: 53px;
+        top: 195px;
+      }
+      &.text-3 {
+        left: 84px;
+        top: 249px;
+        line-height: 1.1;
+      }
+      &.text-4 {
+        left: 277px;
+        top: 51px;
+      }
+      &.text-5 {
+        left: 289px;
+        top: 183px;
+      }
+      &.text-6 {
+        left: 260px;
+        top: 253px;
+      }
+      &.text-7 {
+        left: 547px;
+        top: 59px;
+      }
+      &.text-8 {
+        left: 580px;
+        top: 115px;
+      }
+      &.text-9 {
+        left: 457px;
+        top: 132px;
+      }
+      &.text-10 {
+        left: 520px;
+        top: 137px;
+      }
+      &.text-11 {
+        left: 576px;
+        top: 137px;    
+      }
+      &.text-12 {
+        left: 644px;
+        top: 137px;   
+      }
+      &.text-13 {
+        left: 707px;
+        top: 136px;  
+      }
+      &.text-14 {
+        left: 582px;
+        top: 198px;
+      }
+      &.text-15 {
+        left: 449px;
+        top: 224px;
+      }
+      &.text-16 {
+        left: 416px;
+        top: 241px;
+      }
+      &.text-17 {
+        left: 500px;
+        top: 222px;
+      }
+      &.text-18 {
+        left: 525px;
+        top: 224px;
+      }
+      &.text-19 {
+        left: 522px;
+        top: 241px;
+      }
+      &.text-20 {
+        left: 573px;
+        top: 231px;
+      }
+      &.text-21 {
+        left: 642px;
+        top: 223px;
+      }
+      &.text-22 {
+        left: 644px;
+        top: 241px;
+      }
+      &.text-23 {
+        left: 710px;
+        top: 221px;
+      }
+      &.text-24 {
+        left: 732px;
+        top: 223px;
+      }
+      &.text-25 {
+        left: 721px;
+        top: 239px;
+      }
+      &.text-26 {
+        left: 561px;
+        top: 252px;
+      }
+      &.text-27 {
+        left: 471px;
+        top: 284px;
+      }
+      &.text-28 {
+        left: 678px;
+        top: 284px;
+      }
+    }
+  }
+}
+
+//Respiration Top Wrapper
+.respiration-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/respiration.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      color: #000;
+      font-weight: 500;
+      font-size: 13px;
+      position: absolute;
+      text-align: center;
+      line-height: 1.2;
+      &.big {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      &.small {
+        font-size: 9px;
+        font-weight: 700;
+      }
+      &.plus {
+        font-size: 18px;
+      }
+      &.arrow {
+        display: inline-block;
+        height: 3px;
+        background: #000;
+        width: 30px;
+        position: absolute;
+        &:before {
+          content: "";
+          border-top: 10px solid #000;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 10px solid transparent;
+          transform: rotateZ(270deg) translateY(126%) translateX(80%);
+          position: relative;
+          display: inline-block;
+        }
+      }
+      &.text-1 {
+        left: 64px;
+        top: 33px;
+      }
+      &.text-2 {
+        left: 116px;
+        top: 166px;
+      }
+      &.text-3 {
+        left: 67px;
+        top: 200px;
+      }
+      &.text-4 {
+        left: 49px;
+        top: 248px;
+      }
+      &.text-5 {
+        left: 269px;
+        top: 151px;
+      }
+      &.text-6 {
+        left: 287px;
+        top: 174px;
+      }
+      &.text-7 {
+        left: 500px;
+        top: 57px;
+      }
+      &.text-8 {
+        left: 704px;
+        top: 116px;
+      }
+      &.text-9 {
+        left: 425px;
+        top: 138px;
+      }
+      &.text-10 {
+        left: 487px;
+        top: 139px;
+      }
+      &.text-11 {
+        left: 575px;
+        top: 136px;
+        line-height: 1.1;
+      }
+      &.text-12 {
+        left: 641px;
+        top: 141px;
+      }
+      &.text-13 {
+        left: 698px;
+        top: 141px;
+      }
+      &.text-14 {
+        left: 412px;
+        top: 202px;   
+      }
+      &.text-15 {
+        left: 453px;
+        top: 202px;
+      }
+      &.text-16 {
+        left: 477px;
+        top: 202px;
+      }
+      &.text-17 {
+        left: 554px;
+        top: 209px;    
+      }
+      &.text-18 {
+        left: 600px;
+        top: 202px;
+      }
+      &.text-19 {
+        left: 648px;
+        top: 201px;
+      }
+      &.text-20 {
+        left: 663px;
+        top: 202px;
+      }
+      &.text-21 {
+        left: 711px;
+        top: 201px;
+      }
+      &.text-22 {
+        left: 732px;
+        top: 202px;
+      }
+      &.text-23 {
+        left: 470px;
+        top: 238px;
+      }
+      &.text-24 {
+        left: 471px;
+        top: 255px;
+      }
+      &.text-25 {
+        left: 467px;
+        top: 269px;
+      }
+      &.text-26 {
+        left: 478px;
+        top: 220px;
+      }
+      &.text-27 {
+        left: 492px;
+        top: 237px;
+      }
+      &.text-28 {
+        left: 491px;
+        top: 250px;
+      }
+      &.text-29 {
+        left: 487px;
+        top: 258px; 
+      }
+      &.text-30 {
+        left: 492px;
+        top: 272px;
+      }
+      &.text-31 {
+        left: 491px;
+        top: 286px;
+      }
+      &.text-32 {
+        left: 521px;
+        top: 237px;
+      }
+      &.text-33 {
+        left: 520px;
+        top: 257px;
+      }
+      &.text-34 {
+        left: 521px;
+        top: 272px;
+      }
+      &.text-35 {
+        left: 517px;
+        top: 286px;
+      }
+      &.text-36 {
+        left: 540px;
+        top: 239px;
+      }
+      &.text-37 {
+        left: 541px;
+        top: 255px;
+      }
+      &.text-38 {
+        left: 537px;
+        top: 270px;
+      }
+      &.text-39 {
+        left: 732px;
+        top: 251px;
+      }
+      &.text-40 {
+        left: 401px;
+        top: 299px;
+      }
+      &.text-41 {
+        left: 485px;
+        top: 300px;
+      }
+      &.text-42 {
+        left: 597px;
+        top: 282px;
+      }
+      &.text-43 {
+        left: 667px;
+        top: 300px;
+      }
+      &.text-44 {
+        left: 728px;
+        top: 300px;
+      }
+    }
+  }
+}
+
+// Carbon Dioxide Into Top Wrapper
+.carbon-dioxide-info-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/carbon-dioxide-info.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      position: absolute;
+      &.text-1 {
+        left: 289px;
+        top: 45px;
+      }
+      &.text-2 {
+        left: 288px;
+        top: 60px;
+      }
+      &.text-3 {
+        left: 288px;
+        top: 75px;
+      }
+      &.text-4 {
+        left: 288px;
+        top: 90px;
+      }
+    }
+  }
+}
+
+//Ocean Top Wrapper
+.ocean-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/ocean.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; 
+  .text-wrapper {
+    span {
+      font-weight: 500;
+      position: absolute;
+      &.big {
+        font-size: 18px;
+      }
+      &.normal {
+        font-weight: 700;
+      }
+      &.small {
+        font-size: 14px;
+      }
+      &.white {
+        color: white;
+      }
+      &.text-1 {
+        left: 196px;
+        top: 12px;
+      }
+      &.text-2 {
+        left: 130px;
+        top: 51px;
+      }
+      &.text-3 {
+        left: 563px;
+        top: 55px;
+      }
+      &.text-4 {
+        left: 91px;
+        top: 159px;
+        transform: rotate(270deg);
+      }
+      &.text-5 {
+        left: 142px;
+        top: 126px;
+      }
+      &.text-6 {
+        left: 128px;
+        top: 229px;
+      }
+      &.text-7 {
+        left: 238px;
+        top: 158px;
+        transform: rotate(270deg);
+      }
+      &.text-8 {
+        left: 293px;
+        top: 126px;
+      }
+      &.text-9 {
+        left: 311px;
+        top: 172px;
+        transform: rotate(270deg);
+      }
+      &.text-10 {
+        left: 480px;
+        top: 140px;
+      }
+      &.text-11 {
+        left: 423px;
+        top: 227px;
+      }
+      &.text-12 {
+        left: 599px;
+        top: 155px;
+        transform: rotate(270deg);
+      }
+      &.text-13 {
+        left: 107px;
+        top: 283px;
+      }
+      &.text-14 {
+        left: 187px;
+        top: 283px;
+        line-height: 1.2;
+      }
+      &.text-15 {
+        left: 355px;
+        top: 283px;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Fossil Fuels Top Wrapper
+.fossil-fuels-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/fossil-fuels.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative; 
+  .text-wrapper {
+    span {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      font-weight: 500;
+      color: #052978; 
+      display: block;
+      position: absolute;
+      &.text-1 {
+        left: 394px;
+        top: 76px;
+      }
+      &.text-2 {
+        left: 394px;
+        top: 220px;
+      }
+    }
+  }
+}
+
+//Nitrogen Into Top Wrapper
+.nitrogen-info-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/nitrogen-info.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      font-weight: 700;
+      color: #000; 
+      display: block;
+      line-height: 1.2;
+      position: absolute;
+      text-align: center;
+      &.white {
+        color: white;
+        font-weight: 500;
+      }
+      &.big {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      &.text-1 {
+        left: 388px;
+        top: 21px;
+      }
+      &.text-2 {
+        transform: rotate(254deg);
+        left: 257px;
+        top: 181px;
+      }
+      &.text-3 {
+        transform: rotate(257deg);
+        left: 258px;
+        top: 174px;
+      } 
+      &.text-4 {
+        transform: rotate(265deg);
+        left: 257px;
+        top: 169px;
+      } 
+      &.text-5 {
+        transform: rotate(262deg);
+        left: 256px;
+        top: 164px;
+      } 
+      &.text-6 {
+        transform: rotate(266deg);
+        left: 255px;
+        top: 157px;
+      } 
+      &.text-7 {
+        transform: rotate(267deg);
+        left: 254px;
+        top: 149px;
+      } 
+      &.text-8 {
+        transform: rotate(278deg);
+        left: 255px;
+        top: 141px;
+      } 
+      &.text-9 {
+        transform: rotate(276deg);
+        left: 255px;
+        top: 133px;
+      } 
+      &.text-10 {
+        transform: rotate(275deg);
+        left: 256px;
+        top: 122px;
+      } 
+      &.text-11 {
+        transform: rotate(277deg);
+        left: 259px;
+        top: 116px;
+      } 
+      &.text-12 {
+        transform: rotate(277deg);
+        left: 258px;
+        top: 110px;
+      } 
+      &.text-13 {
+        transform: rotate(280deg);
+        left: 259px;
+        top: 102px;
+      } 
+      &.text-14 {
+        transform: rotate(280deg);
+        left: 261px;
+        top: 96px;
+      } 
+      &.text-15  {
+        transform: rotate(283deg);
+        left: 263px;
+        top: 91px;
+      }
+      &.text-16  {
+        transform: rotate(280deg);
+        left: 263px;
+        top: 85px;
+      } 
+      &.text-17  {
+        transform: rotate(283deg);
+        left: 264px;
+        top: 77px;
+      } 
+      &.text-18  {
+        transform: rotate(57deg);
+        left: 510px;
+        top: 77px;
+      }
+      &.text-19  {
+        transform: rotate(62deg);
+        left: 517px;
+        top: 84px;
+      }
+      &.text-20  {
+        transform: rotate(66deg);
+        left: 520px;
+        top: 91px;
+      } 
+      &.text-21  {
+        transform: rotate(63deg);
+        left: 524px;
+        top: 98px;
+      } 
+      &.text-22  {
+        transform: rotate(68deg);
+        left: 525px;
+        top: 103px;
+      } 
+      &.text-23  {
+        transform: rotate(66deg);
+        left: 526px;
+        top: 109px;
+      } 
+      &.text-24  {
+        transform: rotate(73deg);
+        left: 528px;
+        top: 114px;
+      } 
+      &.text-25  {
+        transform: rotate(69deg);
+        left: 528px;
+        top: 119px;
+      } 
+      &.text-26  {
+        transform: rotate(82deg);
+        left: 529px;
+        top: 124px;
+      } 
+      &.text-27  {
+        transform: rotate(80deg);
+        left: 529px;
+        top: 130px;
+      } 
+      &.text-28  {
+        transform: rotate(85deg);
+        left: 530px;
+        top: 136px;
+      } 
+      &.text-29  {
+        transform: rotate(82deg);
+        left: 531px;
+        top: 141px;
+      } 
+      &.text-30  {
+        transform: rotate(71deg);
+        left: 529px;
+        top: 148px;
+      } 
+      &.text-31 {
+        transform: rotate(85deg);
+        left: 528px;
+        top: 156px;
+      } 
+      &.text-32 {
+        left: 198px;
+        top: 233px;
+      }
+      &.text-33 {
+        left: 296px;
+        top: 181px;
+      }
+      &.text-34 {
+        left: 359px;
+        top: 248px;
+      }
+      &.text-35 {
+        left: 340px;
+        top: 300px;
+      }
+      &.text-36 {
+        left: 433px;
+        top: 191px;
+        transform: rotate(270deg);
+      }
+      &.text-37 {
+        left: 507px;
+        top: 219px;
+      }
+      &.text-38 {
+        left: 323px;
+        top: 213px;
+      }
+      &.text-39 {
+        left: 320px;
+        top: 255px;
+      }
+      &.text-40 {
+        left: 386px;
+        top: 213px;
+      }
+      &.text-41 {
+        left: 451px;
+        top: 252px;
+      }
+    }
+  }
+}
+
+//Nitrogen Fixation Top Wrapper
+.nitrogen-fixation-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/nitrogen-fixation.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: black;
+      display: block;
+      position: absolute;
+      text-align: center;
+      &.text-1 {
+        left: 374px;
+        top: 135px;
+        transform: rotate(31deg);
+      }
+      &.text-2 {
+        left: 326px;
+        top: 161px;
+        transform: rotate(31deg);
+      }
+      &.text-3 {
+        left: 515px;
+        top: 142px;
+      }
+      &.text-4 {
+        left: 405px;
+        top: 294px;
+      }
+    }
+  }
+}
+
+// Nitrogen ND Top Wrapper
+.nitrogen-N-D-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/nitrogen-ND.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      line-height: 1.2;
+      font-weight: 700;
+      color: black;
+      display: block;
+      position: absolute;
+      text-align: center;
+      &.big {
+        font-size: 20px;
+      }
+      &.normal {
+        font-size: 18px;
+      }
+      &.small {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      &.text-1 {
+        left: 130px;
+        top: 123px;
+      }
+      &.text-2 {
+        left: 281px;
+        top: 47px;
+      }
+      &.text-3 {
+        left: 281px;
+        top: 128px;
+      }
+      &.text-4 {
+        left: 281px;
+        top: 207px;
+      }
+      &.text-5 {
+        left: 324px;
+        top: 53px;
+      }
+      &.text-6 {
+        left: 323px;
+        top: 130px;
+      }
+      &.text-7 {
+        left: 323px;
+        top: 209px;
+      }
+      &.text-8 {
+        left: 403px;
+        top: 176px;
+      }
+      &.text-9 {
+        left: 488px;
+        top: 178px;
+      }
+      &.text-10 {
+        left: 582px;
+        top: 178px;
+      }
+      &.text-11 {
+        left: 379px;
+        top: 194px;
+      }
+      &.text-12 {
+        left: 465px;
+        top: 195px;
+      }
+      &.text-13 {
+        left: 562px;
+        top: 195px;
+      }
+      &.text-14 {
+        left: 398px;
+        top: 268px;
+      }
+    }
+  }
+}
+
+// Carbon Nitrogen Top Wrapper
+.carbon-nitrogen-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/carbon-and-nitrogen.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+// Climate Top Wrapper
+.climate-top-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/climate-prediction.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  .text-wrapper {
+    span {
+      line-height: 1.2;
+      color: black;
+      display: block;
+      position: absolute;
+      text-align: center;
+      font-weight: 500;
+      &.big {
+        font-size: 19px;
+      }
+      &.normal {
+        font-size: 15px;
+      }
+      &.small {
+        font-size: 11px;
+      }
+      &.text-1 {
+        left: 156px;
+        top: 35px;
+      }
+      &.text-2 {
+        left: -45px;
+        top: 153px;
+        transform: rotate(270deg);
+      }
+      &.text-3 {
+        left: 95px;
+        top: 59px;
+      } 
+      &.text-4 {
+        left: 95px;
+        top: 80px;
+      } 
+      &.text-5 {
+        left: 95px;
+        top: 99px;
+      } 
+      &.text-6 {
+        left: 95px;
+        top: 119px;
+      } 
+      &.text-7 {
+        left: 95px;
+        top: 140px;
+      } 
+      &.text-8 {
+        left: 102px;
+        top: 160px;
+      } 
+      &.text-9 {
+        left: 102px;
+        top: 180px;
+      } 
+      &.text-10 {
+        left: 102px;
+        top: 199px;
+      } 
+      &.text-11 {
+        left: 102px;
+        top: 220px;
+      } 
+      &.text-12 {
+        left: 102px;
+        top: 241px;
+      }
+      &.text-13 {
+        left: 100px;
+        top: 259px;
+      }
+      &.text-14 {
+        left: 148px;
+        top: 259px;
+      }
+      &.text-15 {
+        left: 202px;
+        top: 259px;
+      } 
+      &.text-16 {
+        left: 250px;
+        top: 259px;
+      }
+      &.text-17 {
+        left: 304px;
+        top: 259px;
+      } 
+      &.text-18 {
+        left: 357px;
+        top: 259px;
+      }
+      &.text-19 {
+        left: 175px;
+        top: 201px;
+        text-align: left;
+      }
+      &.text-20 {
+        left: 310px;
+        top: 108px;
+        text-align: left;
+      } 
+      &.text-21 {
+        left: 294px;
+        top: 180px;
+        text-align: left;
+      } 
+      &.text-22 {
+        left: 128px;
+        top: 276px;
+      }
+      &.text-23 {
+        left: 127px;
+        top: 284px;
+      }
+      &.text-24 {
+        left: 127px;
+        top: 298px;
+      }
+      &.text-25 {
+        left: 322px;
+        top: 150px;
+        transform: rotate(270deg);
+      }
+      &.text-26 {
+        left: 412px;
+        top: 71px;
+      }
+      &.text-27 {
+        left: 412px;
+        top: 92px;
+      }
+      &.text-28 {
+        left: 412px;
+        top: 114px;
+      }
+      &.text-29 {
+        left: 412px;
+        top: 137px;
+      }
+      &.text-30 {
+        left: 412px;
+        top: 160px;
+      }
+      &.text-31 {
+        left: 419px;
+        top: 182px;
+      }
+      &.text-32 {
+        left: 407px;
+        top: 205px;
+      }
+      &.text-33 {
+        left: 407px;
+        top: 229px;
+      }
+      &.text-34 {
+        left: 425px;
+        top: 259px;
+      }
+      &.text-35 {
+        left: 469px;
+        top: 259px;
+      }
+      &.text-36 {
+        left: 512px;
+        top: 259px;
+      }
+      &.text-37 {
+        left: 557px;
+        top: 259px;
+      }
+      &.text-38 {
+        left: 598px;
+        top: 259px;
+      }
+      &.text-39 {
+        left: 642px;
+        top: 259px;
+      }
+      &.text-40 {
+        left: 687px;
+        top: 259px;
+      }
+      &.text-41 {
+        left: 446px;
+        top: 181px;
+      }
+      &.text-42 {
+        left: 532px;
+        top: 181px;
+      }
+      &.text-43 {
+        left: 608px;
+        top: 181px;
+      }
+    }
+  }
+}
+
+//Top Arrow
+.top-arrow {
+  display: inline-block;
+  height: 50px;
+  background: #6B6B76;
+  width: 10px;
+  right: 100px;
+  top: 54px;
+  &:before {
+    content: "";
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #6B6B76;
+    border-bottom: 15px solid transparent;
+    transform: rotateZ(270deg) translateY(132%) translateX(0%);
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 49px;
+  }
+}
+//Bottom Arrow
+.bottom-arrow {
+  display: inline-block;
+  height: 50px;
+  background: #6B6B76;
+  width: 10px;
+  right: 100px;
+  top: 160px;
+  &:before {
+    content: "";
+    border-top: 15px solid transparent;
+    border-left: 15px solid #6B6B76;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transform: rotateZ(270deg) translateY(132%) translateX(0%);
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: -29px;
+  }
+}

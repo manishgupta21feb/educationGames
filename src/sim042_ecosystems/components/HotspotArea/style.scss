@@ -1,0 +1,252 @@
+.hotspot-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/images/main.png);
+
+  .sr-only-img {
+    width: 100%;
+    height: 100%;
+    // overflow: hidden;
+    // color: transparent;
+  }
+
+  .sr-only {
+    width: 100%;
+  }
+
+  .hotspot-btn-wrapper {
+    width: 100px;
+    height: 66px;
+    overflow: hidden;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.sun {
+      top: 5px;
+      left: calc(182px - 34px);
+    }
+
+    &.tree {
+      top: 75px;
+      left: calc(380px - 34px);
+    }
+
+    &.cloud {
+      top: -12px;
+      left: calc(500px - 34px);
+    }
+
+    &.rain {
+      top: 26px;
+      left: calc(536px - 34px);
+    }
+
+    &.crane {
+      top: 120px;
+      left: calc(660px - 34px);
+    }
+
+    &.duck {
+      top: 147px;
+      left: calc(400px - 34px);
+    }
+
+    &.pond {
+      top: 180px;
+      left: calc(550px - 34px);
+    }
+
+    &.rock {
+      top: 65px;
+      left: calc(180px - 34px);
+    }
+
+    &.soil {
+      top: 250px;
+      left: calc(35px - 34px);
+    }
+
+    &.fish {
+      top: 250px;
+      left: calc(445px - 34px);
+    }
+
+    &.algae {
+      top: 158px;
+      left: calc(100px - 34px);
+    }
+
+    &.grass {
+      bottom: 133px;
+      right: 485px;
+    }
+  }
+
+  .btn {
+    &.icon {
+      &.icon-only {
+        &.glowing-hotspot {
+          width: 4px;
+          height: 4px;
+          padding: 2px;
+          transition: all 0.5s;
+          border-radius: 50%;
+          position: relative;
+          background: white;
+          border: 6px solid #ff3366;
+          box-shadow: 0 0 0 4px rgba(#ff3366, 0.24),
+            0 0 0 8px rgba(#ff3366, 0.16) !important;
+
+          max-width: 66px;
+          max-height: 66px;
+
+          justify-content: center;
+          display: block;
+
+          .icon {
+            position: absolute;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            max-width: inherit;
+            max-height: inherit;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          &:hover:not(:disabled) {
+            .icon {
+              padding: 20px;
+              border: 1px solid #ff3366;
+            }
+          }
+
+          &.selected,
+          &:focus:not(:disabled) {
+            .icon {
+              padding: 20px;
+              pointer-events: none;
+              border: 2px solid #ff3366;
+            }
+          }
+
+          &.selected {
+          }
+          &.correct {
+            background-color: white;
+          }
+
+          &.incorrect {
+            background: white;
+          }
+        }
+      }
+    }
+    &.hotspot-btn.label.visited {
+      &:focus:not(:disabled) {
+        box-shadow: 0 0 0 2px #c9c9cf, 0 0 0 5px var(--primary-blue) !important;
+      }
+      .text {
+        font-weight: 500;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .hotspot-popup {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    background: white;
+
+    p {
+      font-size: 16px;
+      color: #35374c;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+
+    .hotspot-popup-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .btn {
+        &:first-child {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &.sun {
+      top: 62px;
+      left: 177px;
+    }
+
+    &.cloud {
+      top: 46px;
+      left: 494px;
+    }
+
+    &.rock {
+      top: 123px;
+      left: 174px;
+    }
+
+    &.tree {
+      top: 134px;
+      left: 374px;
+    }
+
+    &.grass {
+      top: 178px;
+      left: 242px;
+    }
+
+    &.duck {
+      top: 205px;
+      left: 394px;
+    }
+
+    &.algae {
+      left: 94px;
+      top: 216px;
+    }
+
+    &.soil {
+      left: 29px;
+      top: 185px;
+    }
+
+    &.fish {
+      top: 186px;
+      left: 438px;
+    }
+
+    &.pond {
+      top: 226px;
+      left: 514px;
+    }
+
+    &.crane {
+      top: 178px;
+      left: 484px;
+    }
+
+    &.rain {
+      top: 85px;
+      left: 530px;
+    }
+  }
+}

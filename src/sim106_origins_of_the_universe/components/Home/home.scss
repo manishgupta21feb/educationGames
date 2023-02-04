@@ -1,0 +1,112 @@
+@import "../../stylesheets/common/functions.scss";
+
+.paragraphHome {
+  color: #052978;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  padding: 80px 24px 0;
+  
+  .title_sub {
+    position: absolute;
+    top: 145px;
+  }
+}
+
+.mt-top {
+  margin-top: -20px;
+}
+
+.mainFrame {
+  display: flex;
+  margin-left: 39px;
+  margin-top: -30px;
+
+  .frame {
+    @extend %relative;
+    margin-top: 84px;
+    &__img {
+      @extend %overflow-hidden;
+      box-sizing: border-box;
+      height: 247px;
+      width: 305px;
+      border: 1px solid #35374c;
+      border-radius: 9px;
+      img {
+        @extend %full-object;
+        height: 122.59px;
+        width: 280px;
+        position: absolute;
+        top: 62px;
+        left: 11px;
+      }
+    }
+
+    &__img1 {
+      @extend %overflow-hidden;
+      box-sizing: border-box;
+      height: 247px;
+      width: 305px;
+      border: 1px solid #35374c;
+      border-radius: 9px;
+      img {
+        @extend %full-object;
+        height: 122.59px;
+        width: 280px;
+        position: absolute;
+        top: 62px;
+        left: 11px;
+      }
+    }
+    &__img2 {
+      @extend %overflow-hidden;
+      box-sizing: border-box;
+
+      height: 247px;
+      width: 305px;
+      border: 1px solid #35374c;
+      border-radius: 9px;
+      img {
+        @extend %full-object;
+        height: 176px;
+        width: 297px;
+        position: absolute;
+        top: 38px;
+        left: 5px;
+      }
+    }
+
+    &__text {
+      @extend %absolute, %color-white;
+      font-size: 10px;
+      &--spain {
+        top: 42%;
+        left: 88px;
+      }
+      &--zealand {
+        top: 44%;
+        right: 120px;
+      }
+    }
+    &__footer {
+      height: 50px;
+      @extend %center-text;
+      button {
+        @extend %margin-zero-auto, %cursor-pointer;
+        margin-top: 12px;
+      }
+
+      .isvisited {
+        color: black;
+        box-sizing: border-box;
+        border: 2px solid #C9C9CF;
+        border-radius: 16px;
+        background-color: #FFFFFF;      
+      }
+    }
+    &:last-child {
+      margin-left: 34px;
+    }
+  }
+}

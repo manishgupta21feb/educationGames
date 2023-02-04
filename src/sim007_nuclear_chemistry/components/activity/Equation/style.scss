@@ -1,0 +1,91 @@
+.chem-equation-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: Verdana, sans-serif;
+
+  .atom-image {
+    margin-right: 12px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &.alpha {
+      width: 65px;
+      height: 61px;
+      background-image: url(../../../assets/images/alpha.png);
+    }
+
+    &.beta {
+      width: 22px;
+      height: 22px;
+      margin: 20px 12px 19px 0;
+      background-image: url(../../../assets/images/beta.png);
+    }
+
+    &.gamma {
+      width: 114px;
+      height: 21px;
+      margin: 20px 12px 20px 0;
+      background-image: url(../../../assets/images/gamma.png);
+    }
+  }
+
+  .chem-equation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    position: relative;
+    .number-style {
+      margin-right: 4px;
+      color: #000000;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 20px;
+      text-align: right;
+    }
+    .symbol-style {
+      color: #000000;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 24px;
+      display: flex;
+    }
+
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+    &.gamma {
+      > div:last-child {
+        margin-top: -7px;
+      }
+    }
+  }
+}
+.background-container {
+  .chem-equation-wrapper {
+    .chem-equation {
+      .number-style {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .symbol-style {
+        font-size: 40px;
+        line-height: 60px;
+      }
+
+      &.gamma {
+        > div {
+          &:last-child {
+            margin-top: -16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.left-screen {
+  position: absolute;
+  height: 600px;
+  width: 540px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-image: url(../../../assets/images/background.png);
+
+  .microscope-image {
+    position: absolute;
+    background-size: contain;
+    height: 264px;
+    width: 264px;
+    top: 150px;
+    left: 10px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    background-image: url(../../../assets/images/microscope.png);
+
+    &.showed {
+      opacity: 1;
+    }
+  }
+
+  .microscopic-image {
+    position: absolute;
+    background-size: contain;
+    height: 264px;
+    width: 264px;
+    top: 150px;
+    left: 10px;
+    opacity: 0;
+    background-repeat: no-repeat;
+    &.leaf {
+      background-image: url(../../../assets/images/leafmicroscopic.png);
+    }
+    &.bacteria {
+      background-image: url(../../../assets/images/bacteriamicroscopic.png);
+    }
+    &.amoeba {
+      background-image: url(../../../assets/images/amoebamicroscopic.png);
+    }
+    &.human {
+      background-image: url(../../../assets/images/humanmicroscopic.png);
+    }
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  .circle-image {
+    box-sizing: border-box;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    border-radius: 50%;
+    height: 165px;
+    width: 165px;
+    border: 6px solid #0056b3;
+    background-color: #0056b3;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .triangle-image {
+      position: absolute;
+      top: 119px;
+      left: -30px;
+      transform: rotate(45deg);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 120px solid #0056b3;
+    }
+
+    &.show-circle {
+      opacity: 1;
+    }
+    &.leaf {
+      background-image: url(../../../assets/images/leaf_microscope.png);
+    }
+    &.bacteria {
+      background-image: url(../../../assets/images/bacteria_microscope.png);
+    }
+    &.amoeba {
+      background-image: url(../../../assets/images/amoeba_microcsope.png);
+    }
+    &.human {
+      background-image: url(../../../assets/images/human-cheek.png);
+    }
+  }
+  .highlighter {
+    position: absolute;
+    bottom: 60px;
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    border: 2px dotted var(--question-text-blue);
+    background-color: rgba(255, 255, 255, 0.24);
+
+    &.btn {
+      &.specimen-0 {
+        left: 24px;
+      }
+      &.specimen-1 {
+        left: 156px;
+      }
+      &.specimen-2 {
+        left: 285px;
+      }
+      &.specimen-3 {
+        left: 416px;
+      }
+      &.icon-only {
+        &:hover:not(:disabled) {
+          padding: 8px;
+          border: 2px solid transparent;
+        }
+        &:focus:not(:disabled) {
+          padding: 8px;
+          border: 2px solid transparent;
+        }
+        &:disabled {
+          opacity: 1;
+          border: 2px solid #c9c9cf;
+          background-color: rgba(255, 255, 255, 0.24);
+        }
+        &.leaf {
+          .icon {
+            position: absolute;
+            right: 3px;
+            background-image: url("../../../assets/images/leaf.png");
+            width: 92px;
+            height: 85px;
+            top: 37px;
+          }
+        }
+        &.bacteria {
+          .icon {
+            position: absolute;
+            right: 3px;
+            background-image: url("../../../assets/images/bacteria.png");
+            width: 92px;
+            height: 85px;
+            top: 37px;
+          }
+        }
+
+        &.amoeba {
+          .icon {
+            position: absolute;
+            right: 3px;
+            background-image: url("../../../assets/images/amoeba.png");
+            width: 92px;
+            height: 85px;
+            top: 37px;
+          }
+        }
+        &.human {
+          .icon {
+            position: absolute;
+            right: 3px;
+            background-image: url("../../../assets/images/cheeck_swab.png");
+            width: 92px;
+            height: 85px;
+            top: 37px;
+          }
+        }
+      }
+    }
+  }
+  .buttonlabel {
+    position: absolute;
+    top: 546px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    &.leaf {
+      left: 60px;
+    }
+    &.bacteria {
+      left: 175px;
+    }
+    &.amoeba {
+      left: 305px;
+    }
+    &.human {
+      height: 40px;
+      width: 99px;
+      left: 417px;
+      text-align: center;
+      &.es {
+        height: 46px;
+        width: 132px;
+        left: 403px;
+      }
+    }
+  }
+  .buttonset {
+    position: absolute;
+    top: 226px;
+    left: 137px;
+    opacity: 0;
+    &.show-image {
+      opacity: 1;
+    }
+    .bullets {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #352103;
+      border-radius: 50%;
+      top: 70px;
+      left: -28px;
+      transform-style: preserve-3d;
+    }
+    .dotted-lines {
+      border-left: 2px dotted #352103;
+      position: absolute;
+      transform-style: preserve-3d;
+      top: 17px;
+      left: 1px;
+      height: 65px;
+      transform: rotate(45deg);
+    }
+  }
+}

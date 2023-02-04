@@ -1,0 +1,51 @@
+.right-static-section {
+  padding-top: 80px;
+  .instruction-text {
+    font-size: 14px;
+    color: #052978;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.25;
+  }
+}
+
+.radiobuttons {
+  .radiobutton {
+    .radiobutton-inner-wrapper {
+      input[type="radio"] {
+        & + div + label {
+          font-variant: lining-nums;
+          padding-top: 2px;
+        }
+      }
+    }
+  }
+}
+
+.mcq-wrapper {
+  &.scrollable-mcq {
+    .radiobutton-inner-wrapper {
+      align-items: flex-start !important;
+    }
+    .radiobuttons {
+      max-height: 150px;
+      overflow-y: scroll;
+
+      .radiobutton {
+        .radiobutton-inner-wrapper {
+          input[type="radio"] {
+            & + div + label {
+              font-variant: lining-nums;
+              padding-top: 2px;
+            }
+          }
+        }
+      }
+    }
+    &.with-correct-answer {
+      .submit-button {
+        display: none;
+      }
+    }
+  }
+}

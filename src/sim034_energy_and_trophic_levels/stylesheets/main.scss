@@ -1,0 +1,33 @@
+@import "../../app/stylesheets/global.scss";
+@import "../../app/stylesheets/globalColors.scss";
+
+.activity-container {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 0;
+  left: 0;
+
+  div[role="main"] {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .intro-image {
+      height: 259px;
+      width: 635px;
+      background-image: url(../assets/images/intro.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+  }
+  header.hide-without-delay {
+    z-index: 1;
+  }
+  .btn.popup-button.attention.right-arrow {
+    margin-top: 12px;
+  }
+
+  @import "./activity/main.scss";
+}

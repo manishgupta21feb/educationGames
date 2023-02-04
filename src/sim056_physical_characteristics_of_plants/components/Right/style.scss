@@ -1,0 +1,218 @@
+.right-area {
+  position: relative;
+  height: calc(100% - 80px);
+  // .btn {
+  //   .toast-secondary-button {
+  //     right: 0px;
+  //   }
+  // }
+  .btn.toast-secondary-button {
+    right: 0px;
+  }
+  .questionNumber {
+    color: #35374c;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    margin-top: 70px;
+    font-weight: 100;
+  }
+  .introHeading {
+    margin-top: 2px;
+    color: #161616;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: relative;
+  }
+  .questionBoxArea {
+    font-size: 14px;
+    font-weight: 500;
+    color: #052978;
+    line-height: 20px;
+    position: relative;
+    letter-spacing: 0.25px;
+    .heading-text {
+      margin-top: 8px;
+      // position: absolute;
+
+      &.position-change {
+        position: absolute;
+      }
+      &.hidden {
+        opacity: 0;
+        z-index: -1;
+      }
+      .question_text1 {
+        position: absolute;
+        left: 32px;
+        font-weight: bold;
+
+        &.es {
+          left: 57px;
+        }
+      }
+      .question_text2 {
+        position: absolute;
+        left: 50px;
+        font-weight: bold;
+
+        &.es {
+          left: 38px;
+        }
+      }
+      .question_text3 {
+        position: absolute;
+        left: 38px;
+        font-weight: bold;
+
+        &.es {
+          left: 53px;
+        }
+      }
+      .question_text5 {
+        position: absolute;
+        left: 33px;
+        font-weight: bold;
+
+        &.es {
+          left: 41px;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .option-container {
+      position: relative;
+      .draggables {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 5px;
+        position: relative;
+
+        .flower_tab {
+          background-image: url("../../assets/images/flower_tab.png");
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+
+          &__disable {
+            opacity: 0.6;
+          }
+        }
+        .fruit_tab {
+          background-image: url("../../assets/images/fruit_tab.png");
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+
+          &__disable {
+            opacity: 0.6;
+          }
+        }
+        .stem_tab {
+          background-image: url("../../assets/images/stem_tab.png");
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+
+          &__disable {
+            opacity: 0.6;
+          }
+        }
+        .root_tab {
+          background-image: url("../../assets/images/root_tab.png");
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+
+          &__disable {
+            opacity: 0.6;
+          }
+        }
+        .leaf_tab {
+          background-image: url("../../assets/images/leaf_tab.png");
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+
+          &__disable {
+            opacity: 0.6;
+          }
+        }
+        .seed_tab {
+          background-image: url("../../assets/images/seed_tab.png");
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+
+          &__disable {
+            opacity: 0.6;
+          }
+        }
+        .box-button {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: white;
+          outline: 1px solid transparent;
+          border: 1px solid var(--primary-blue);
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+
+          &:not(:disabled) {
+            cursor: pointer;
+          }
+          &__disabled {
+            border: 2px solid #c9c9cf;
+            border-radius: 4px;
+          }
+          &:hover:not(:disabled) {
+            background-color: var(--hover-state-color);
+          }
+          &:disabled {
+            // background-color: ;
+          }
+        }
+
+        .accessible-button {
+          padding: 0;
+          box-shadow: none;
+          justify-content: center;
+          background-color: white;
+          border-radius: 4px;
+
+          &:not(:disabled) {
+            border-radius: 4px;
+            &:focus {
+              outline: none;
+              overflow: hidden;
+              box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--primary-blue);
+            }
+          }
+        }
+      }
+
+      span.label {
+        display: block;
+        max-width: 60px;
+        font-size: 14px;
+        color: #35374c;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../stylesheets/common/functions.scss";
+
+.select-dropdown {
+  &.horizontal {
+    @extend %flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #{$direct-child} div:nth-child(2) {
+      width: 65px;
+      button {
+        padding: 4px 8px;
+      }
+    }
+  }
+}

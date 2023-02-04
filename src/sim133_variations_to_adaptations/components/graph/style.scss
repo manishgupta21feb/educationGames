@@ -1,0 +1,60 @@
+.graph {
+  position: relative;
+  top: -30px;
+
+  .graphYaxisHeading {
+    position: relative;
+    right: 147px;
+    top: 60px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    transform: rotate(-90deg);
+  }
+  .graphXaxisHeading {
+    position: relative;
+    left: 124px;
+    top: 5px;
+    letter-spacing: 0.25px;
+    font-size: 14px;
+  }
+
+  .graph-legends {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: -10px;
+
+    .graph-legends-large-beaked {
+      display: flex;
+      margin-right: 12px;
+      height: 20px;
+      align-items: center;
+
+      .circle {
+        height: 12px;
+        width: 12px;
+        background-color: #0056b3;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      p {
+        color: #35374c;
+      }
+    }
+    .graph-legends-small-beaked {
+      display: flex;
+      height: 20px;
+      align-items: center;
+
+      .square {
+        height: 12px;
+        width: 12px;
+        background-color: #ba5b08;
+        margin-right: 5px;
+      }
+
+      p {
+        color: #35374c;
+      }
+    }
+  }
+}

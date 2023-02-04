@@ -1,0 +1,68 @@
+.video-container {
+  .video-wrapper {
+    video {
+      &.question1 {
+        background: transparent url(../../../../assets/images/6.png) center /
+          contain no-repeat;
+      }
+      &.question2 {
+        background: transparent url(../../../../assets/images/5.png) center /
+          contain no-repeat;
+      }
+      &.question3 {
+        background: transparent url(../../../../assets/images/4.png) center /
+          contain no-repeat;
+      }
+      &.question4 {
+        background: transparent url(../../../../assets/images/3.png) center /
+          contain no-repeat;
+      }
+      &.question5 {
+        background: transparent url(../../../../assets/images/2.png) center /
+          contain no-repeat;
+      }
+      &.question6 {
+        background: transparent url(../../../../assets/images/1.png) center /
+          contain no-repeat;
+      }
+    }
+  }
+  .play-pause-buttons {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.label {
+  left: 216px;
+  line-height: 1;
+  font-size: 16px;
+  position: absolute;
+  font-variant: lining-nums;
+
+  padding: 2px;
+  padding-bottom: 0;
+  border-radius: 2px;
+  background: white;
+
+  &.label1 {
+    top: 250px;
+  }
+
+  &.label2 {
+    top: 291px;
+  }
+
+  &.label3 {
+    top: 334px;
+  }
+
+  &.label4 {
+    top: 377px;
+  }
+
+  &.label5 {
+    top: 419px;
+  }
+}

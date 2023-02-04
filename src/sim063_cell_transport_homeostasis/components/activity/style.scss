@@ -1,0 +1,21 @@
+.mcq-question-area {
+    .radiobuttons {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .radiobutton{
+        width: 33%;
+      }
+      .radiobutton-inner-wrapper {
+        width: 185px;
+      }
+    }
+
+  }
+
+  .dialogbox-container .dialog-container > div:nth-child(2) > div{
+    .shapes{
+      margin-left: 15px;
+    }
+  }
+
+

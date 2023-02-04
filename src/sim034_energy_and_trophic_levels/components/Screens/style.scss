@@ -1,0 +1,11 @@
+.screen0-container,
+.screen1-container,
+.screen2-container {
+  height: 100%;
+}
+.screen1-container {
+  background-color: var(--header-button-background);
+}
+.view-container {
+  display: block;
+}

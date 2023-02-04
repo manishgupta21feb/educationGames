@@ -1,0 +1,203 @@
+.flowers-container {
+  background: url("../../assets/images/Bg.png");
+  background-size: contain;
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .flowers-area {
+    width: 603px;
+    height: 412px;
+    margin: 60px 140px 128px 57px;
+    display: flex;
+    // justify-content: center;
+    align-content: flex-start;
+    // align-items: center;
+    flex-wrap: wrap;
+
+    .flower-contain {
+      height: 98px;
+      width: 62px;
+      display: flex;
+      margin: 2.5px;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+
+  .flower-small {
+    height: 62px;
+    width: 54px;
+  }
+
+  .flower-tall {
+    height: 98px;
+    width: 62px;
+  }
+
+  .flower {
+    position: absolute;
+
+    &.tall-white {
+      background: url("../../assets/images/tall_flowers0003.png");
+      background-size: cover;
+
+      @extend .flower-tall;
+    }
+
+    &.tall-red {
+      background: url("../../assets/images/tall_flowers0005.png");
+      background-size: cover;
+
+      @extend .flower-tall;
+    }
+
+    &.tall-pink {
+      background: url("../../assets/images/tall_flowers0001.png");
+      background-size: cover;
+
+      @extend .flower-tall;
+    }
+
+    &.small-red {
+      background: url("../../assets/images/small_flowers0003.png");
+      background-size: cover;
+
+      @extend .flower-small;
+    }
+
+    &.small-pink {
+      background: url("../../assets/images/small_flowers0001.png");
+      background-size: cover;
+
+      @extend .flower-small;
+    }
+
+    &.small-white {
+      background: url("../../assets/images/small_flowers0005.png");
+      background-size: cover;
+
+      @extend .flower-small;
+    }
+
+    &.tall-pink,
+    &.tall-red,
+    &.tall-white,
+    &.small-pink,
+    &.small-red,
+    &.small-white {
+      button {
+        cursor: pointer;
+      }
+      button:first-child {
+        border: none;
+        background: none;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 1px white, 0 0 0 3px var(--primary-blue);
+        }
+      }
+
+      &.highlighted,
+      &.focused,
+      &.selected {
+        border: 2px solid var(--secondary-positive-green);
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      &.selected {
+        button:first-child {
+          span {
+            top: 2px;
+            left: 2px;
+            height: 12px;
+            width: 12px;
+            position: absolute;
+            background: url("../../assets/images/correct.svg");
+          }
+        }
+      }
+    }
+
+    &.tall-pink,
+    &.tall-red,
+    &.tall-white {
+      button:first-child {
+        width: 62px;
+        height: 98px;
+      }
+    }
+
+    &.small-pink,
+    &.small-red,
+    &.small-white {
+      button:first-child {
+        width: 54px;
+        height: 62px;
+      }
+    }
+  }
+}
+
+.cross-button {
+  position: relative;
+  border-radius: 20px;
+  top: 8px;
+  background-color: var(--secondary-positive-green);
+  display: none;
+  padding: 8px 8px;
+  border: none;
+  z-index: 3;
+
+  &.visible {
+    display: block;
+  }
+
+  .cross-text {
+    color: VAR(--white);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    height: 24px;
+    width: 43px;
+  }
+
+  &:hover:not(:disabled) {
+    box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary-blue) !important;
+  }
+}
+
+.hosrhosr {
+  &.flower1 {
+    position: absolute;
+    bottom: 50px;
+    right: 202px;
+  }
+  &.flower2 {
+    position: absolute;
+    bottom: 50px;
+    right: 140px;
+  }
+}
+
+.twtw {
+  &.flower1 {
+    position: absolute;
+    bottom: 50px;
+    right: 328px;
+  }
+  &.flower2 {
+    position: absolute;
+    bottom: 50px;
+    right: 264px;
+  }
+}
+
+.dropdown {
+  position: fixed;
+  z-index: 2;
+  top: 50px;
+  left: -1000px;
+}

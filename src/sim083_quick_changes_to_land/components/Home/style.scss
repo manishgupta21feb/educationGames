@@ -1,0 +1,51 @@
+.main {
+  width: 100%;
+  height: 100%;
+  .main-head {
+    margin-top: 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+    h2 {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      color: #052978;
+    }
+    .headTwo {
+      margin-top: 8px;
+    }
+  }
+  .image-main {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    .frame {
+      .frame-image {
+        width: 258px;
+        height: 200px;
+        padding-left: 24px;
+        img {
+          width: 100%;
+          height: 184px;
+        }
+      }
+      .frame_button {
+        padding-left: 24px;
+        align-items: center;
+        .label {
+          top: 0;
+          right: 0;
+          left: 70px;
+        }
+        .btn.hotspot-btn.visited {
+          background-color: var(--secondary-attention-dark) !important;
+          opacity: 60% !important;
+          box-shadow: none !important;
+        }
+        .btn.hotspot-btn.label.visited .text {
+          color: #fbf1e9;
+        }
+      }
+    }
+  }
+}

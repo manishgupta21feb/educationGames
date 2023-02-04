@@ -1,0 +1,124 @@
+.screen1-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &.q1-one-q2-one {
+    background-image: url(../../../assets/images/art_5.jpg);
+  }
+  &.q1-one-q2-two {
+    background-image: url(../../../assets/images/art_4.jpg);
+  }
+  &.q1-one-q2-three {
+    background-image: url(../../../assets/images/art_3.jpg);
+  }
+  &.q1-one-q2-four {
+    background-image: url(../../../assets/images/art_2.jpg);
+  }
+
+  &.q1-two-q2-one {
+    background-image: url(../../../assets/images/art_13.jpg);
+  }
+  &.q1-two-q2-two {
+    background-image: url(../../../assets/images/art_12.jpg);
+  }
+  &.q1-two-q2-three {
+    background-image: url(../../../assets/images/art_11.jpg);
+  }
+  &.q1-two-q2-four {
+    background-image: url(../../../assets/images/art_10.jpg);
+  }
+
+  &.q1-three-q2-one {
+    background-image: url(../../../assets/images/art_9.jpg);
+  }
+  &.q1-three-q2-two {
+    background-image: url(../../../assets/images/art_8.jpg);
+  }
+  &.q1-three-q2-three {
+    background-image: url(../../../assets/images/art_7.jpg);
+  }
+  &.q1-three-q2-four {
+    background-image: url(../../../assets/images/art_6.jpg);
+  }
+
+  .infoBox {
+    width: 752px;
+    padding: 12px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    .content {
+      max-width: 442px;
+      color: #35374C;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+    }
+    .ratingBox {
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+    }
+  }
+
+  .instructor {
+    .heading {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &.q2-one {
+    background-image: url(../../../assets/images/art_2.jpg);
+  }
+  &.q2-two {
+    background-image: url(../../../assets/images/art_10.jpg);
+  }
+  &.q2-three {
+    background-image: url(../../../assets/images/art_6.jpg);
+  }
+  &.q2-four {
+    background-image: url(../../../assets/images/art_6.jpg);
+  }
+
+  .disasterCards {
+    display: flex;
+    .disasterBox {
+      height: 95px;
+      width: 95px;
+      border: 1px solid #0056b3;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 24px;
+      margin-bottom: 16px;
+      .text {
+        color: #35374c;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.43px;
+        line-height: 20px;
+        font-variant: lining-nums;
+      }
+    }
+  }
+
+  .ratingBox {
+    bottom: 88px;
+    right: 24px;
+  }
+}

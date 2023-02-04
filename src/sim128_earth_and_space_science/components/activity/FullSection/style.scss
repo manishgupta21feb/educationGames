@@ -1,0 +1,111 @@
+.full-section-container {
+  background-image: url('../../../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  height: 100%;
+  .inner-wrapper {
+    .heading {
+      padding: 80px 24px 0;
+      color: white;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }    
+    .question {
+      padding: 0 24px;
+      color: white;
+      font-weight: 400;
+      margin-bottom: 40px;
+      b {
+        font-weight: 700;
+      }
+    }
+    .radiobuttons {
+      padding: 0 24px;
+      flex-direction: row;
+      justify-content: center;
+      .radiobutton-inner-wrapper {
+        flex-direction: column;
+        flex-direction: column-reverse;
+      }
+      .radiobutton {
+        margin-right: 0;
+        &:first-child {
+          margin-right: 100px;
+        }
+        input {
+          bottom: 0;
+          left: 0;
+          top: auto;
+          right: 0;
+          margin: 0 auto;
+        }
+        label {
+          span {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 140px;
+            width: 140px;
+            display: block;
+            margin-bottom: 10px;
+            &.smooth-rock {
+              background-image: url('../../../assets/images/smooth-rock.png');
+            }
+            &.rough-rock {
+              background-image: url('../../../assets/images/rough-rock.png');
+            }
+            &.small-rock {
+              background-image: url('../../../assets/images/small-rock.png');
+              height: 110px;
+              width: 110px;
+              margin-bottom: 38px;
+            }
+            &.large-rock {
+              background-image: url('../../../assets/images/large-rock.png');
+            }
+            &.round-rock {
+              background-image: url('../../../assets/images/round-rock.png');
+            }
+            &.rectangle-rock {
+              background-image: url('../../../assets/images/rectangle-rock.png');
+            }
+            &.non-black-rock {
+              background-image: url('../../../assets/images/nonblack-rock.png');
+            }
+            &.black-rock {
+              background-image: url('../../../assets/images/black-rock.png');
+            }
+            &.non-red-rock {
+              background-image: url('../../../assets/images/smooth-rock.png');
+            }
+            &.red-rock {
+              background-image: url('../../../assets/images/red-rock.png');
+            }
+          }
+        }
+      }
+    }
+  }
+  .radiobuttons {
+    input {
+      & + div {
+        span {
+          border-color: white !important;
+          &:after {
+            background: #1B6AAA !important;
+          }
+        }
+      }
+      &:checked {
+        & + div {
+          span {
+            border-color: #1B6AAA !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+

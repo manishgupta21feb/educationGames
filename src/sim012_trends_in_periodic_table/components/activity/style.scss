@@ -1,0 +1,640 @@
+.wrapper {
+  margin-top: 80px;
+  position: absolute;
+  padding-left: 24px;
+  min-height: 505px;
+  width: 776px;
+  height: 520px;
+
+  .inner-wrapper {
+    .heading {
+      // margin-bottom: 0 !important;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    width: 328px;
+    // height: 333px;
+    justify-content: space-between;
+    z-index: 2;
+    left: 212px;
+    display: flex;
+    top: 128px;
+
+    li {
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      // background-color: lightyellow;
+      // border: 1px solid red;
+      list-style: none;
+      font-size: 12px;
+      top: 0;
+      left: 0;
+      a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      &.menuitem-1 {
+        top: 0;
+        left: 0;
+      }
+      &.menuitem-2 {
+        top: 0;
+        left: 56px;
+      }
+      &.menuitem-3 {
+        top: 0;
+        left: 112px;
+      }
+      &.menuitem-4 {
+        top: 0;
+        left: 168px;
+      }
+      &.menuitem-5 {
+        top: 0;
+        left: 224px;
+      }
+      &.menuitem-6 {
+        top: 0;
+        left: 280px;
+      }
+      // &.menuitem-7 {
+      //   top: 212px;
+      //   left: 0;
+      // }
+      // &.menuitem-8 {
+      //   top: 251px;
+      //   left: 52px;
+      // }
+      // &.menuitem-9 {
+      //   top: 251px;
+      //   right: 292px;
+      // }
+    }
+  }
+
+  .instructor {
+    p {
+      color: var(--question-text-blue);
+      font-size: 14px;
+      letter-spacing: 0.15px;
+      line-height: 20px;
+      margin-bottom: 8px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+    }
+  }
+
+  .element-hint-container {
+    height: 24px;
+    margin-top: 5px;
+    position: relative;
+
+    .element-hint-text {
+      padding: 2px 12px 0px 28px;
+      display: inline-flex;
+      color: var(--secondary-attention-dark);
+      background-color: var(--secondary-attention-light);
+      border-radius: 12px;
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      height: 100%;
+      &::before {
+        position: absolute;
+        left: 5px;
+        top: 4px;
+        content: url(../../assets/images/info_icon2.svg);
+      }
+    }
+  }
+
+  .option-container {
+    display: flex;
+    // width: 440px;
+    // justify-content: space-between;
+
+    .draggable-btn-wrapper {
+      display: flex;
+      width: 328px;
+      justify-content: space-between;
+    }
+    &.draggable {
+      position: absolute !important;
+      .option {
+        display: inline-block;
+        // &:focus {
+        //   border: 1px dashed var(--primary-blue);
+        //   background-color: var(--hover-state-color);
+        // }
+      }
+
+      .accessible-button {
+        width: 48px;
+        height: 48px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        position: absolute;
+        z-index: -1;
+        @for $i from 1 through 6 {
+          &.btn-#{$i} {
+            left: #{56 * $i}px;
+          }
+        }
+      }
+
+      .option {
+        &:not(.ui-draggable-dragging):not(:disabled):hover {
+          border: 1px dashed var(--primary-blue);
+          background-color: var(--hover-state-color);
+        }
+        &:not(.ui-draggable-dragging):not(:disabled) {
+          cursor: grab;
+        }
+      }
+    }
+
+    &.droppable {
+      position: relative; // temp
+      width: 328px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 128px;
+      justify-content: space-between;
+      &.answer-screen {
+        top: 8px;
+        z-index: 0;
+      }
+      .option {
+        z-index: 1;
+        position: relative;
+        box-sizing: border-box;
+        border: 1px dashed var(--question-text-blue);
+        width: 48px;
+        height: 48px;
+        background-color: rgba(217, 235, 255, 0.24);
+
+        &.element-dropped {
+          background-color: var(--primary-blue);
+          border: 1px solid var(--question-text-blue);
+          color: var(--white);
+          &.hide {
+            opacity: 0;
+          }
+
+     
+        }
+      }
+    }
+
+    .option {
+      width: 48px;
+      height: 48px;
+      padding-top: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px dashed var(--question-text-blue);
+      background-color: var(--white);
+      color: var(--primary-blue);
+      font-weight: bold;
+      border-radius: 0;
+      outline: 1px solid transparent;
+      &.hover-drop-zone {
+        background-color: var(--hover-state-color);
+      }
+
+      &.element-dragging {
+        border: 1px dashed var(--primary-blue);
+        background-color: var(--hover-state-color);
+      }
+
+      &.element-dragged {
+        color: var(--range-slider-unselected-value);
+        border: 2px solid var(--dark-grey);
+        background-color: var(--white);
+        position: relative;
+      }
+
+      &.ui-draggable {
+        cursor: grab;
+        z-index: 1;
+      }
+
+      &.ui-draggable-dragging {
+        border: 1px solid var(--question-text-blue);
+        background-color: var(--primary-blue);
+        color: var(--white);
+        cursor: grabbing;
+        z-index: 999;
+      }
+      &.ui-draggable-disabled {
+        cursor: default;
+        &:hover {
+          border: 2px solid var(--dark-grey);
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .arrow-horizontal {
+    position: relative;
+    height: 0px;
+    width: 324px;
+    left: 212px;
+    top: 144px;
+    background: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    &.answer-screen-arrow {
+      top: 24px;
+      z-index: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 316px;
+      bottom: -8px;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-left: 9px solid var(--primary-blue);
+      border-bottom: 8px solid transparent;
+      border-radius: 3px;
+    }
+  }
+
+  .question-desc {
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translate(-50%, 55px);
+    z-index: 0;
+    p {
+      font-weight: 500;
+      color: var(--primary-blue);
+    }
+  }
+
+  .element-animation {
+    // background-image: url(../../assets/images/mockup.png);
+    width: 752px;
+    height: 204px;
+    position: absolute;
+    bottom: 180px;
+    z-index: 1;
+    .fluorine {
+      position: absolute;
+      background-image: url(../../assets/images/Fluorine_3x.png);
+      top: 72px;
+      left: 1px;
+      width: 44px;
+      height: 45px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0;
+      animation: flourineEffect 2s linear forwards;
+    }
+    .bromine {
+      background-image: url(../../assets/images/Bromine_3x.png);
+      top: 47px;
+      left: 51px;
+      width: 96px;
+      height: 96px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      opacity: 0;
+      animation: bromineEffect 2s linear 2.1s forwards;
+    }
+    .silver {
+      background-image: url(../../assets/images/Silver_3x.png);
+      top: 33px;
+      left: 153px;
+      width: 123px;
+      height: 125px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      opacity: 0;
+      animation: silverEffect 2s linear 4.2s forwards;
+    }
+    .sodium {
+      background-image: url(../../assets/images/Sodium_3x.png);
+      top: 28px;
+      left: 281px;
+      width: 134px;
+      height: 135px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      opacity: 0;
+      animation: sodiumEffect 2s linear 6.3s forwards;
+    }
+    .calcium {
+      background-image: url(../../assets/images/Calcium_3x.png);
+      top: 23px;
+      left: 421px;
+      width: 143px;
+      height: 146px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      opacity: 0;
+      animation: calciumEffect 2s linear 8.4s forwards;
+    }
+    .cesium {
+      background-image: url(../../assets/images/Cesium_3x.png);
+      top: 5px;
+      left: 570px;
+      width: 181px;
+      height: 183px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      opacity: 0;
+      animation: cesiumEffect 2s linear 10.5s forwards;
+    }
+
+    @keyframes flourineEffect {
+      0% {
+        top: -126px;
+        left: 214px;
+        transform: scale(0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 72px;
+        left: 1px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes bromineEffect {
+      0% {
+        top: -152px;
+        left: 244px;
+        transform: scale(0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 47px;
+        left: 51px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes silverEffect {
+      0% {
+        top: -166px;
+        left: 287px;
+        transform: scale(0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 33px;
+        left: 153px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes sodiumEffect {
+      0% {
+        top: -172px;
+        left: 338px;
+        transform: scale(0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 28px;
+        left: 281px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes calciumEffect {
+      0% {
+        top: -177px;
+        left: 389px;
+        transform: scale(0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 23px;
+        left: 421px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes cesiumEffect {
+      0% {
+        top: -195px;
+        left: 426px;
+        transform: scale(0);
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 5px;
+        left: 570px;
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    span {
+      font-size: 9px;
+      position: absolute;
+      left: 50%;
+      bottom: 0%;
+      white-space: nowrap;
+      transform: translate(-50%, 18px);
+    }
+  }
+
+  .answer-screen-animation {
+    div {
+      position: absolute;
+      height: 48px;
+      width: 48px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      text-align: center;
+      background-color: var(--primary-blue);
+      border: 1px solid var(--question-text-blue);
+      color: var(--white);
+      padding-top: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      z-index: 1;
+      outline: 1px solid transparent;
+    }
+    .flourine {
+      top: 8px;
+      left: 492px;
+      animation: flourineEffect2 2s linear 10.5s forwards;
+    }
+    .bromine {
+      top: 8px;
+      left: 436px;
+      animation: bromineEffect2 2s linear 8.4s forwards;
+    }
+    .silver {
+      top: 8px;
+      left: 380px;
+      animation: silverEffect2 2s linear 6.3s forwards;
+    }
+    .sodium {
+      top: 8px;
+      left: 324px;
+      animation: sodiumEffect2 2s linear 4.2s forwards;
+    }
+    .calcium {
+      top: 8px;
+      left: 268px;
+      animation: calciumEffect2 2s linear 2.1s forwards;
+    }
+    .cesium {
+      top: 8px;
+      left: 212px;
+      animation: cesiumEffect2 2s linear forwards;
+    }
+    @keyframes flourineEffect2 {
+      0% {
+        top: 151px;
+        left: 631px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 8px;
+        left: 492px;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+      }
+    }
+    @keyframes bromineEffect2 {
+      0% {
+        top: 204px;
+        left: 608px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 8px;
+        left: 436px;
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+      }
+    }
+    @keyframes silverEffect2 {
+      0% {
+        top: 260px;
+        left: 430px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 8px;
+        left: 380px;
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+      }
+    }
+    @keyframes sodiumEffect2 {
+      0% {
+        top: 193px;
+        left: 91px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 8px;
+        left: 324px;
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+      }
+    }
+    @keyframes calciumEffect2 {
+      0% {
+        top: 227px;
+        left: 125px;
+        width: 0;
+        height: 0;
+        font-size: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 8px;
+        left: 268px;
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+      }
+    }
+    @keyframes cesiumEffect2 {
+      0% {
+        top: 293px;
+        left: 93px;
+        font-size: 0;
+        width: 0;
+        height: 0;
+      }
+      5% {
+        opacity: 1;
+      }
+      100% {
+        top: 8px;
+        left: 212px;
+        font-size: 14px;
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+      }
+    }
+  }
+}
